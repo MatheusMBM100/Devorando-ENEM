@@ -304,7 +304,7 @@
       rs[0].forEach(function (d) {
         var p = d.data();
         var s = st[d.id] || { respondidas: 0, acertos: 0, simulados: 0, por_materia: {} };
-        linhas.push({ p: { id: d.id, email: p.email || "", nome: p.nome || "", is_admin: !!adm[d.id], desativado: !!p.desativado, created_at: p.createdAt }, s: s, acerto: pctDe(s), atividade: s.updatedAt || p.createdAt });
+        linhas.push({ p: { id: d.id, email: p.email || "", nome: p.nome || "", telefone: p.telefone || "", is_admin: !!adm[d.id], desativado: !!p.desativado, created_at: p.createdAt }, s: s, acerto: pctDe(s), atividade: s.updatedAt || p.createdAt });
       });
       info.textContent = linhas.length + " pessoa(s) cadastrada(s). Clique em uma linha para ver o desempenho e as questões.";
       var barra = el("div", "filtro-linha");
