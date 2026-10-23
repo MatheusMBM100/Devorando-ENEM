@@ -152,8 +152,9 @@
         if (!vis.length) corpo.appendChild(el("p", "muted", "Nenhum reporte nesta lista."));
         vis.forEach(function (r) {
           var c = el("div", "card");
-          c.appendChild(el("b", null, "ENEM " + r.d.ano + " · questão " + r.d.numero + " (" + r.d.questao + ")"));
-          c.appendChild(el("p", "muted", (r.d.materia || "") + (r.d.assunto ? " — " + r.d.assunto : "") + " · gabarito no site: " + (r.d.gabarito || "?")));
+          var geral = r.d.questao === "geral";
+          c.appendChild(el("b", null, geral ? "Erro no site (reporte geral)" : "ENEM " + r.d.ano + " · questão " + r.d.numero + " (" + r.d.questao + ")"));
+          if (!geral) c.appendChild(el("p", "muted", (r.d.materia || "") + (r.d.assunto ? " — " + r.d.assunto : "") + " · gabarito no site: " + (r.d.gabarito || "?")));
           var m = el("p", null, r.d.mensagem); m.style.whiteSpace = "pre-line"; c.appendChild(m);
           c.appendChild(el("p", "muted", "Por " + (r.d.nome || "—") + " (" + (r.d.email || "") + ") em " + dataBr(r.d.criado) + " · " + (r.d.status || "novo")));
           var ac = el("div", "acoes");

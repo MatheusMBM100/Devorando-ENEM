@@ -38,8 +38,19 @@
   function notifica() { if (typeof window.__sync === "function") window.__sync(); }
   function salvar() { try { localStorage.setItem(KEY, JSON.stringify(respostas)); } catch (e) {} notifica(); }
   var PKEY = "enem:prefs:v1";
-  var prefs = { meta: 10, atv: {} };   // meta diária e contagem de questões por dia
-  try { var pp = JSON.parse(localStorage.getItem(PKEY) || "null"); if (pp) prefs = { meta: pp.meta || 10, atv: pp.atv || {} }; } catch (e) {}
+  var prefs = { meta: 10, semana: 50, tema: "auto", notif: false, atv: {} };   // metas, tema, avisos e contagem de questões por dia
+  function normPrefs(pp) {
+    pp = pp || {};
+    return { meta: pp.meta || 10, semana: pp.semana || 50, tema: pp.tema === "claro" || pp.tema === "escuro" ? pp.tema : "auto", notif: !!pp.notif, atv: pp.atv || {} };
+  }
+  try { prefs = normPrefs(JSON.parse(localStorage.getItem(PKEY) || "null")); } catch (e) {}
+  function aplicaTema() {
+    var r = document.documentElement;
+    if (prefs.tema === "claro") r.setAttribute("data-theme", "light");
+    else if (prefs.tema === "escuro") r.setAttribute("data-theme", "dark");
+    else r.removeAttribute("data-theme");
+  }
+  aplicaTema();
   function salvarPrefs() { try { localStorage.setItem(PKEY, JSON.stringify(prefs)); } catch (e) {} notifica(); }
   function diaStr(t) { var d = new Date(t); return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate(); }
   var INTERVALOS = [1, 3, 7, 14, 30];   // dias até rever uma questão, por "caixa" (repetição espaçada)
@@ -49,6 +60,12 @@
     respostas[id] = { r: letra, ok: ok, t: Date.now(), box: box };
     var k = diaStr(Date.now()); prefs.atv[k] = (prefs.atv[k] || 0) + 1;
     salvarPrefs();
+  }
+  function feitasSemana() {   // questões respondidas na semana atual (segunda a domingo)
+    var d = new Date(); d.setDate(d.getDate() - ((d.getDay() + 6) % 7));
+    var n = 0;
+    for (var i = 0; i < 7; i++) { n += prefs.atv[diaStr(d)] || 0; d.setDate(d.getDate() + 1); }
+    return n;
   }
   function sequencia() {
     var n = 0, d = new Date();
@@ -558,6 +575,87 @@
     idx = n; renderQuestao(); renderPaletaMarca();
     window.scrollTo({ top: 0 });
   }
+  // ---------- configurações ----------
+  var subConfig = "geral";
+  function renderConfig() {
+    var p = $("painel-config"); p.textContent = "";
+    var N = window.NUVEM, logado = !!(N && N.user && N.user());
+    if (!logado) subConfig = "geral";
+    var sub = el("div", "cfg-sub");
+    [["geral", "Geral"], ["conta", "Minha conta"]].forEach(function (x) {
+      if (x[0] === "conta" && !logado) return;
+      var b = el("button", "chip" + (subConfig === x[0] ? " on" : ""), x[1]); b.type = "button";
+      b.addEventListener("click", function () { subConfig = x[0]; renderConfig(); });
+      sub.appendChild(b);
+    });
+    if (logado) p.appendChild(sub);
+    if (subConfig === "conta") { var cc = el("div", "card cfg-form"); p.appendChild(cc); N.renderConta(cc); return; }
+
+    function linha(card, titulo, dica, ctl) {
+      var l = el("div", "cfg-linha"), t = el("div"); t.appendChild(el("b", null, titulo));
+      if (dica) t.appendChild(el("small", null, dica));
+      l.appendChild(t); l.appendChild(ctl); card.appendChild(l);
+    }
+    function numero(chave, max) {
+      var i = el("input"); i.type = "number"; i.min = 1; i.max = max; i.value = prefs[chave];
+      i.addEventListener("change", function () {
+        var v = parseInt(i.value, 10);
+        if (!(v > 0 && v <= max)) { i.value = prefs[chave]; return; }
+        prefs[chave] = v; salvarPrefs();
+      });
+      return i;
+    }
+    var m = el("div", "card"); m.appendChild(el("h3", null, "Metas"));
+    linha(m, "Meta diária", "Questões por dia (até 500)", numero("meta", 500));
+    linha(m, "Meta semanal", "Questões por semana, de segunda a domingo (até 3500)", numero("semana", 3500));
+    p.appendChild(m);
+
+    var t = el("div", "card"); t.appendChild(el("h3", null, "Aparência"));
+    var sel = el("select"); sel.style.width = "auto";
+    [["auto", "Automático (do aparelho)"], ["claro", "Claro"], ["escuro", "Escuro"]].forEach(function (x) { var o = el("option", null, x[1]); o.value = x[0]; sel.appendChild(o); });
+    sel.value = prefs.tema;
+    sel.addEventListener("change", function () { prefs.tema = sel.value; aplicaTema(); salvarPrefs(); });
+    linha(t, "Tema", null, sel);
+    p.appendChild(t);
+
+    var n = el("div", "card"); n.appendChild(el("h3", null, "Notificações"));
+    var ck = el("input"); ck.type = "checkbox"; ck.checked = prefs.notif && logado; ck.disabled = !logado;
+    var aviso = el("p", "muted", logado ? "Você é avisado quando uma redação sua for corrigida, enquanto o site estiver aberto." : "Entre na sua conta para receber avisos de redação corrigida.");
+    ck.addEventListener("change", function () {
+      function grava(v) { prefs.notif = v; ck.checked = v; salvarPrefs(); if (window.NUVEM_REDACAO && window.NUVEM_REDACAO.vigia) window.NUVEM_REDACAO.vigia(); }
+      if (!ck.checked) { grava(false); return; }
+      if (!("Notification" in window)) { grava(true); aviso.textContent = "Este navegador não mostra notificações do sistema; você verá o aviso dentro do site."; return; }
+      if (Notification.permission === "granted") { grava(true); return; }
+      if (Notification.permission === "denied") { grava(true); aviso.textContent = "As notificações do sistema estão bloqueadas neste navegador; você verá o aviso dentro do site."; return; }
+      Notification.requestPermission().then(function (r) {
+        grava(true);
+        if (r !== "granted") aviso.textContent = "Sem permissão do navegador, você verá o aviso apenas dentro do site.";
+      });
+    });
+    linha(n, "Avisar quando uma redação for corrigida", null, ck);
+    n.appendChild(aviso);
+    p.appendChild(n);
+
+    var rp = el("div", "card"); rp.appendChild(el("h3", null, "Reportar erro"));
+    if (!logado) rp.appendChild(el("p", "muted", "Entre na sua conta para enviar um reporte. Para erros em uma questão específica, use o botão de reportar dentro da própria questão."));
+    else {
+      rp.appendChild(el("p", "muted", "Encontrou algo errado no site (travamento, texto, tela que não funciona)? Descreva abaixo e o responsável receberá. Para erros em uma questão, use o botão de reportar dentro dela."));
+      var rt = el("textarea"); rt.rows = 4; rt.maxLength = 1500; rt.placeholder = "O que aconteceu? Em que tela? Em qual aparelho/navegador?"; rt.style.width = "100%";
+      rp.appendChild(rt);
+      var rs = el("div", "muted"), rb = el("button", "btn", "Enviar reporte"); rb.type = "button"; rb.style.marginTop = "10px";
+      rb.addEventListener("click", function () {
+        if (!rt.value.trim()) { rs.textContent = "Escreva uma descrição antes de enviar."; rt.focus(); return; }
+        rb.disabled = true; rs.textContent = "Enviando…";
+        N.enviarReporte({ questao: "geral", ano: "", numero: "", assunto: "Erro no site", mensagem: rt.value.trim() })
+          .then(function () { rt.value = ""; rs.textContent = "✔ Reporte enviado. Obrigado por ajudar a melhorar o site!"; })
+          .catch(function () { rs.textContent = "Não foi possível enviar agora. Tente de novo em instantes."; })
+          .then(function () { rb.disabled = false; });
+      });
+      rp.appendChild(rb); rp.appendChild(rs);
+    }
+    p.appendChild(rp);
+  }
+
   function aba(qual) {
     // qual: "simulado" (início), "simq" (questões do simulado), "praticar", "stats"
     emSim = qual === "simq" && !!sim;
@@ -566,6 +664,8 @@
     $("painel-praticar").hidden = !(qual === "praticar" || qual === "simq");
     $("painel-stats").hidden = qual !== "stats";
     $("painel-alunos").hidden = qual !== "alunos";
+    $("painel-config").hidden = qual !== "config";
+    $("tab-config").classList.toggle("on", qual === "config");
     $("painel-redacao").hidden = qual !== "redacao";
     $("filtros").style.display = qual === "praticar" ? "" : "none";
     $("sim-bar").hidden = !emSim;
@@ -574,6 +674,7 @@
     $("tab-alunos").classList.toggle("on", qual === "alunos");
     $("tab-redacao").classList.toggle("on", qual === "redacao");
     if (qual === "stats") renderStats();
+    else if (qual === "config") renderConfig();
     else if (qual === "redacao") { if (window.NUVEM_REDACAO) window.NUVEM_REDACAO.render($("painel-redacao")); }
     else if (qual === "alunos") { if (window.NUVEM) window.NUVEM.renderAlunos($("painel-alunos")); }
     else if (qual === "simulado") renderInicio();
@@ -1007,11 +1108,13 @@
     lm.appendChild(el("span", "seq", "🔥 " + sequencia() + (sequencia() === 1 ? " dia seguido" : " dias seguidos")));
     cm.appendChild(lm);
     var bm = el("div", "barra"), im = el("i"); im.style.width = Math.min(100, 100 * hoje / meta) + "%"; bm.appendChild(im); cm.appendChild(bm);
-    var am = el("button", "link", "Alterar meta diária"); am.type = "button"; am.style.marginTop = "8px";
-    am.addEventListener("click", function () {
-      var v = parseInt(prompt("Quantas questões por dia você quer resolver?", String(meta)), 10);
-      if (v > 0 && v <= 500) { prefs.meta = v; salvarPrefs(); renderInicio(); }
-    });
+    var sem = feitasSemana(), msem = prefs.semana || 50;
+    var ls = el("div", "meta-topo"); ls.style.marginTop = "12px";
+    ls.appendChild(el("b", null, "Meta da semana: " + sem + " / " + msem + " questões"));
+    cm.appendChild(ls);
+    var bs = el("div", "barra"), is = el("i"); is.style.width = Math.min(100, 100 * sem / msem) + "%"; bs.appendChild(is); cm.appendChild(bs);
+    var am = el("button", "link", "Alterar metas nas configurações"); am.type = "button"; am.style.marginTop = "8px";
+    am.addEventListener("click", function () { aba("config"); });
     cm.appendChild(am);
     p.appendChild(cm);
 
@@ -1161,6 +1264,7 @@
     finalizar();
   });
   $("tab-stats").addEventListener("click", function () { aba("stats"); });
+  $("tab-config").addEventListener("click", function () { aba("config"); });
   document.addEventListener("keydown", function (e) {
     if (e.target.matches("input, select, textarea") || e.metaKey || e.ctrlKey || e.altKey) return;
     if ($("painel-praticar").hidden) return;
@@ -1181,12 +1285,13 @@
   // ---------- API para a camada de contas/nuvem (nuvem.js) ----------
   window.DEV_APP = {
     aba: aba,
+    pref: function (k) { return prefs[k]; },
     rerender: function () { if (!$("painel-simulado").hidden && !verRes && !criando) renderInicio(); },
     exportar: function () { return { respostas: respostas, marcadas: marcadas, hist: hist.slice(0, 40), novos: novos, prefs: prefs }; },
     vazio: function () { return !Object.keys(respostas).length && !hist.length && !novos.length && !Object.keys(marcadas).length; },
     importar: function (d) {
       respostas = (d && d.respostas) || {}; marcadas = (d && d.marcadas) || {}; hist = (d && d.hist) || []; novos = (d && d.novos) || [];
-      prefs = { meta: (d && d.prefs && d.prefs.meta) || 10, atv: (d && d.prefs && d.prefs.atv) || {} };
+      prefs = normPrefs(d && d.prefs); aplicaTema();
       try {
         localStorage.setItem(KEY, JSON.stringify(respostas)); localStorage.setItem(MKEY, JSON.stringify(marcadas));
         localStorage.setItem(HKEY, JSON.stringify(hist)); localStorage.setItem(NKEY, JSON.stringify(novos)); localStorage.setItem(PKEY, JSON.stringify(prefs));

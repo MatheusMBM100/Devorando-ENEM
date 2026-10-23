@@ -18,9 +18,9 @@ service cloud.firestore {
     match /users/{uid} {
       allow read: if logado() && (request.auth.uid == uid || ehAdmin());
       allow create: if logado() && request.auth.uid == uid
-        && request.resource.data.keys().hasOnly(['email', 'nome', 'createdAt']);
+        && request.resource.data.keys().hasOnly(['email', 'nome', 'telefone', 'createdAt']);
       allow update: if logado() && (
-        (request.auth.uid == uid && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['email', 'nome']))
+        (request.auth.uid == uid && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['email', 'nome', 'telefone']))
         || ehAdmin());
       allow delete: if ehAdmin();
     }

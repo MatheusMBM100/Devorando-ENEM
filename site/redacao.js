@@ -2,7 +2,7 @@
   "use strict";
   // Redação: o aluno escreve e envia; o administrador corrige pelas 5 competências do ENEM no painel.
   // Sem IA: a correção é humana. Depende de nuvem.js (window.NUVEM).
-  var N = window.NUVEM;
+  var N = window.NUVEM, APP = window.DEV_APP;
   if (!N) return;
   var db = N.db, el = N.el;
 
@@ -132,8 +132,31 @@
     return db.collection("redacoes").where("uid", "==", u.uid).get().then(function (qs) {
       cache = lista(qs).sort(function (a, b) { return String(b.d.criada).localeCompare(String(a.d.criada)); });
       atualizaAviso();
+      avisa();
+      vigia();
       return cache;
     });
+  }
+  // avisos de redação corrigida (só com o site aberto): notificação do navegador, se permitida, e um aviso na tela
+  var AKEY = "enem:redacoes-avisadas:v1", relogio = null;
+  function avisadas() { try { return JSON.parse(localStorage.getItem(AKEY) || "{}"); } catch (e) { return {}; } }
+  function avisa() {
+    if (!APP || !APP.pref("notif")) return;
+    var v = vistas(), a = avisadas(), novas = cache.filter(function (r) { return r.d.status === "corrigida" && !v[r.id] && !a[r.id]; });
+    if (!novas.length) return;
+    novas.forEach(function (r) { a[r.id] = 1; });
+    try { localStorage.setItem(AKEY, JSON.stringify(a)); } catch (e) {}
+    var txt = novas.length === 1 ? "Sua redação foi corrigida! Veja a nota na aba Redação." : novas.length + " redações suas foram corrigidas! Veja na aba Redação.";
+    if ("Notification" in window && Notification.permission === "granted") { try { new Notification("Devorando ENEM", { body: txt, icon: "apple-touch-icon.png" }); } catch (e) {} }
+    var t = el("div", "toast", txt); t.setAttribute("role", "status");
+    t.addEventListener("click", function () { t.remove(); APP.aba("redacao"); });
+    document.body.appendChild(t); setTimeout(function () { t.remove(); }, 15000);
+  }
+  function vigia() {
+    var ligado = APP && APP.pref("notif") && N.user();
+    if (ligado && !relogio) relogio = setInterval(function () { carregar().catch(function () {}); }, 120000);
+    else if (!ligado && relogio) { clearInterval(relogio); relogio = null; }
+    if (ligado) avisa();
   }
   function atualizaAviso() {
     var v = vistas(), n = cache.filter(function (r) { return r.d.status === "corrigida" && !v[r.id]; }).length;
@@ -560,7 +583,7 @@
     });
   }
 
-  window.NUVEM_REDACAO = { render: render, carregar: carregar };
+  window.NUVEM_REDACAO = { render: render, carregar: carregar, vigia: vigia };
   window.NUVEM_ADMIN = window.NUVEM_ADMIN || {};
   window.NUVEM_ADMIN.redacoes = admin;
   window.NUVEM_ADMIN.modelos = modelos;

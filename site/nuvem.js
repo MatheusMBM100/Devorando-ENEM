@@ -45,6 +45,15 @@
     return "Não foi possível concluir: " + (t || c);
   }
 
+  function soDigitos(v) { var d = String(v || "").replace(/\D/g, ""); if (d.length > 11 && d.indexOf("55") === 0) d = d.slice(2); return d; }
+  function telValido(v) { var d = soDigitos(v); return d.length === 10 || d.length === 11; }
+  function telFmt(v) {
+    var d = soDigitos(v);
+    if (d.length === 11) return "(" + d.slice(0, 2) + ") " + d.slice(2, 7) + "-" + d.slice(7);
+    if (d.length === 10) return "(" + d.slice(0, 2) + ") " + d.slice(2, 6) + "-" + d.slice(6);
+    return v || "";
+  }
+
   function mostrarLogin(modo) {
     modo = modo || "entrar";
     overlay.hidden = false;
@@ -63,13 +72,17 @@
     card.appendChild(tabs);
 
     var form = el("form"); form.noValidate = true;
-    var nome;
+    var nome, tel;
     if (modo === "criar") {
       var ln = el("label", "l", "Nome"); ln.htmlFor = "a-nome"; form.appendChild(ln);
       nome = el("input"); nome.type = "text"; nome.id = "a-nome"; nome.autocomplete = "name"; nome.maxLength = 60; form.appendChild(nome);
     }
     var le = el("label", "l", "E-mail"); le.htmlFor = "a-email"; form.appendChild(le);
     var em = el("input"); em.type = "email"; em.id = "a-email"; em.autocomplete = "email"; form.appendChild(em);
+    if (modo === "criar") {
+      var lt = el("label", "l", "Telefone (com DDD)"); lt.htmlFor = "a-tel"; form.appendChild(lt);
+      tel = el("input"); tel.type = "tel"; tel.id = "a-tel"; tel.autocomplete = "tel"; tel.placeholder = "(11) 91234-5678"; tel.maxLength = 20; form.appendChild(tel);
+    }
     var lp = el("label", "l", "Senha"); lp.htmlFor = "a-senha"; form.appendChild(lp);
     var se = el("input"); se.type = "password"; se.id = "a-senha"; se.autocomplete = modo === "criar" ? "new-password" : "current-password"; form.appendChild(se);
 
@@ -98,11 +111,14 @@
       var p;
       if (modo === "criar") {
         if (!nome.value.trim()) { msg(card, "Informe seu nome.", "erro"); ok.disabled = false; return; }
+        if (!telValido(tel.value)) { msg(card, "Informe um telefone válido com DDD, por exemplo (11) 91234-5678.", "erro"); ok.disabled = false; tel.focus(); return; }
         cadastro = p = auth.createUserWithEmailAndPassword(email, senha).then(function (cred) {
-          var nm = nome.value.trim();
+          var nm = nome.value.trim(), criado = new Date().toISOString();
           return Promise.all([
             cred.user.updateProfile({ displayName: nm }),
-            db.doc("users/" + cred.user.uid).set({ email: email, nome: nm, createdAt: new Date().toISOString() }),
+            // se as regras ainda não aceitam o telefone, grava o perfil sem ele (ele pode ser preenchido depois em Minha conta)
+            db.doc("users/" + cred.user.uid).set({ email: email, nome: nm, telefone: soDigitos(tel.value), createdAt: criado })
+              .catch(function () { return db.doc("users/" + cred.user.uid).set({ email: email, nome: nm, createdAt: criado }); }),
             cred.user.sendEmailVerification().catch(function () {})
           ]);
         });
@@ -174,7 +190,7 @@
         auth.signOut().then(function () { APP.limpar(); mostrarLogin("entrar"); msg(overlay.querySelector(".auth-card"), "Esta conta está desativada. Fale com o administrador.", "erro"); });
         throw new Error("desativado");
       }
-      perfil = { email: p.email || user.email, nome: p.nome || user.displayName || "", is_admin: !!rs[1].exists };
+      perfil = { email: p.email || user.email, nome: p.nome || user.displayName || "", telefone: p.telefone || "", createdAt: p.createdAt || "", is_admin: !!rs[1].exists };
       areaUsuario();
       if (perfil.is_admin) recarregaTurmas();
       return db.doc("userData/" + user.uid).get();
@@ -348,7 +364,7 @@
     cx.textContent = "";
     var c = el("div", "card");
     c.appendChild(el("h3", null, (l.p.nome || l.p.email)));
-    c.appendChild(el("p", "muted", l.p.email + " · " + l.s.respondidas + " respondidas · " + (l.acerto == null ? "sem dados" : l.acerto + "% de acerto") + " · " + l.s.simulados + " simulado(s)"));
+    c.appendChild(el("p", "muted", l.p.email + (l.p.telefone ? " · " + telFmt(l.p.telefone) : "") + " · " + l.s.respondidas + " respondidas · " + (l.acerto == null ? "sem dados" : l.acerto + "% de acerto") + " · " + l.s.simulados + " simulado(s)"));
     var pm = l.s.por_materia || {};
     var mats = Object.keys(pm).sort(function (a, b) { return pm[b].n - pm[a].n; });
     if (!mats.length) c.appendChild(el("p", "muted", "Ainda não respondeu questões."));
@@ -481,7 +497,60 @@
     desenha();
   }
 
-  window.NUVEM = { renderAlunos: renderAlunos, db: db, auth: auth, el: el, baixar: baixar, user: function () { return usuario; }, perfil: function () { return perfil; },
+  // ---------- configurações: minha conta ----------
+  function renderConta(cx) {
+    cx.textContent = "";
+    cx.appendChild(el("h3", null, "Minha conta"));
+    function campo(rot, id, val, opts) {
+      var l = el("label", "l", rot); l.htmlFor = id; cx.appendChild(l);
+      var i = el("input"); i.type = (opts && opts.type) || "text"; i.id = id; i.value = val || "";
+      if (opts && opts.ro) i.readOnly = true;
+      if (opts && opts.ac) i.autocomplete = opts.ac;
+      cx.appendChild(i); return i;
+    }
+    var iN = campo("Nome", "c-nome", perfil && perfil.nome, { ac: "name" }); iN.maxLength = 60;
+    campo("E-mail", "c-email", usuario.email, { ro: true });
+    var iT = campo("Telefone (com DDD)", "c-tel", telFmt(perfil && perfil.telefone), { type: "tel", ac: "tel" }); iT.maxLength = 20;
+    var criada = (perfil && perfil.createdAt) || (usuario.metadata && usuario.metadata.creationTime) || "";
+    if (criada) cx.appendChild(el("p", "muted", "Conta criada em " + new Date(criada).toLocaleDateString("pt-BR") + (usuario.emailVerified ? " · e-mail confirmado" : "")));
+    var sv = el("button", "btn", "Salvar dados"); sv.type = "button";
+    var st = el("p", "muted"); st.setAttribute("aria-live", "polite");
+    sv.addEventListener("click", function () {
+      var nm = iN.value.trim();
+      if (!nm) { st.textContent = "Informe seu nome."; return; }
+      if (!telValido(iT.value)) { st.textContent = "Informe um telefone válido com DDD, por exemplo (11) 91234-5678."; return; }
+      sv.disabled = true; st.textContent = "Salvando…";
+      var tel = soDigitos(iT.value);
+      Promise.all([usuario.updateProfile({ displayName: nm }), db.doc("users/" + usuario.uid).update({ nome: nm, telefone: tel })]).then(function () {
+        perfil.nome = nm; perfil.telefone = tel; iT.value = telFmt(tel);
+        var sp = $("user-area").firstChild; if (sp) sp.textContent = nm;
+        st.textContent = "✔ Dados salvos.";
+      }).catch(function () { st.textContent = "Não foi possível salvar. Se o problema continuar, as regras do Firestore podem precisar ser republicadas."; })
+        .then(function () { sv.disabled = false; });
+    });
+    var ac = el("div", "acoes"); ac.appendChild(sv); cx.appendChild(ac); cx.appendChild(st);
+
+    cx.appendChild(el("h3", null, "Alterar senha")).style.marginTop = "22px";
+    var pa = campo("Senha atual", "c-sa", "", { type: "password", ac: "current-password" });
+    var pn = campo("Nova senha (mínimo 6 caracteres)", "c-sn", "", { type: "password", ac: "new-password" });
+    var pc = campo("Repita a nova senha", "c-sc", "", { type: "password", ac: "new-password" });
+    var bs = el("button", "btn", "Alterar senha"); bs.type = "button";
+    var ss = el("p", "muted"); ss.setAttribute("aria-live", "polite");
+    bs.addEventListener("click", function () {
+      if (!pa.value || !pn.value) { ss.textContent = "Preencha a senha atual e a nova."; return; }
+      if (pn.value.length < 6) { ss.textContent = "A nova senha precisa ter pelo menos 6 caracteres."; return; }
+      if (pn.value !== pc.value) { ss.textContent = "As senhas novas não são iguais."; return; }
+      bs.disabled = true; ss.textContent = "Alterando…";
+      var cred = window.firebase.auth.EmailAuthProvider.credential(usuario.email, pa.value);
+      usuario.reauthenticateWithCredential(cred).then(function () { return usuario.updatePassword(pn.value); }).then(function () {
+        pa.value = pn.value = pc.value = ""; ss.textContent = "✔ Senha alterada.";
+      }).catch(function (e) { ss.textContent = /invalid-credential|wrong-password/.test((e && e.code) || "") ? "A senha atual está incorreta." : traduz(e); })
+        .then(function () { bs.disabled = false; });
+    });
+    var ac2 = el("div", "acoes"); ac2.appendChild(bs); cx.appendChild(ac2); cx.appendChild(ss);
+  }
+
+  window.NUVEM = { renderConta: renderConta, renderAlunos: renderAlunos, db: db, auth: auth, el: el, baixar: baixar, user: function () { return usuario; }, perfil: function () { return perfil; },
     logado: function () { return !!usuario; }, ehAdmin: function () { return !!(perfil && perfil.is_admin); },
     enviarReporte: enviarReporte, simuladosTurma: simuladosTurma, publicarTurma: publicarTurma, enviarResultado: enviarResultado,
     turmasAdmin: function () { return perfil && perfil.is_admin ? turmasCache : []; }, recarregaTurmas: recarregaTurmas };

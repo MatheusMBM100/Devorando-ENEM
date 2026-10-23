@@ -11,6 +11,11 @@
     --ok: #66d19a; --ok-bg: #17291f; --bad: #ff8a80; --bad-bg: #2d1b19; --warn-bg: #2f2813;
   }
 }
+:root[data-theme="dark"] {
+  --bg: #151614; --card: #1e201d; --ink: #ecebe6; --muted: #9c9a92; --line: #33362f;
+  --brand: #5fbf9a; --brand-ink: #0f1a15; --brand-soft: #1f2e27;
+  --ok: #66d19a; --ok-bg: #17291f; --bad: #ff8a80; --bad-bg: #2d1b19; --warn-bg: #2f2813;
+}
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
@@ -174,7 +179,7 @@ select, input[type="search"] { width: 100%; padding: 8px 10px; border: 1px solid
 .auth-card h1 span { color: var(--brand); }
 .auth-tabs { display: flex; gap: 6px; margin: 16px 0 6px; }
 .auth-card label.l { display: block; font-weight: 600; margin: 12px 0 4px; }
-.auth-card input[type="text"], .auth-card input[type="email"], .auth-card input[type="password"] { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); }
+.auth-card input[type="text"], .auth-card input[type="email"], .auth-card input[type="password"], .auth-card input[type="tel"] { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); }
 .auth-msg { margin: 12px 0 0; padding: 10px 12px; border-radius: 8px; font-size: .92rem; }
 .auth-msg.erro { background: var(--bad-bg); color: var(--bad); }
 .auth-msg.ok { background: var(--ok-bg); color: var(--ok); }
@@ -189,6 +194,15 @@ select, input[type="search"] { width: 100%; padding: 8px 10px; border: 1px solid
 .filtro-linha { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0; }
 .filtro-linha select { width: auto; min-width: 160px; }
 
+.cfg-sub { display: flex; gap: 6px; margin-bottom: 14px; }
+.cfg-linha { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 0; border-top: 1px solid var(--line); }
+.cfg-linha:first-of-type { border-top: 0; }
+.cfg-linha small { display: block; color: var(--muted); font-size: .85rem; }
+.cfg-linha input[type="number"] { width: 90px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--ink); }
+.cfg-form label.l { display: block; font-weight: 600; margin: 12px 0 4px; }
+.cfg-form input[type="text"], .cfg-form input[type="tel"], .cfg-form input[type="password"] { width: 100%; max-width: 380px; padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--ink); }
+.cfg-form input[readonly] { opacity: .7; }
+.toast { position: fixed; right: 16px; bottom: 16px; max-width: 320px; background: var(--brand); color: var(--brand-ink); padding: 12px 16px; border-radius: 10px; font-weight: 600; cursor: pointer; z-index: 50; box-shadow: 0 4px 16px rgba(0,0,0,.25); }
 .meta-topo { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
 .seq { font-weight: 700; }
 .card.meta .barra { height: 14px; }
