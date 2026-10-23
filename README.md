@@ -1,4 +1,4 @@
-# Banco de Questões ENEM
+# Devorando ENEM
 
 Abra `site/index.html` no navegador (duplo clique). Não precisa de servidor nem de internet.
 
