@@ -281,6 +281,14 @@
     mostra(secaoAtual);
   }
 
+  // rotula cada célula com o título da coluna, para a tabela virar "cartões" no celular
+  function rotula(tab) {
+    var ths = [].map.call(tab.querySelectorAll("thead th"), function (t) { return t.textContent.replace(/\s*[▲▼]$/, ""); });
+    [].forEach.call(tab.querySelectorAll("tbody tr"), function (tr) {
+      [].forEach.call(tr.children, function (td, i) { if (ths[i]) td.setAttribute("data-label", ths[i]); });
+    });
+  }
+
   function baixar(nome, texto, tipo) {
     var blob = new Blob([texto], { type: tipo || "text/plain;charset=utf-8" });
     var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = nome;
@@ -304,11 +312,15 @@
       var fl = el("select");
       [["todos", "Todos"], ["inativos", "Sem atividade há 7+ dias"], ["desativados", "Desativados"], ["admins", "Administradores"]].forEach(function (x) { var o = el("option", null, x[1]); o.value = x[0]; fl.appendChild(o); });
       var csv = el("button", "ghost mini", "Exportar CSV"); csv.type = "button";
-      barra.appendChild(busca); barra.appendChild(fl); barra.appendChild(csv);
+      var cols = [["nome", "Nome"], ["email", "E-mail"], ["resp", "Respondidas"], ["acerto", "Acerto"], ["sim", "Simulados"], ["ultimo", "Último simulado"], ["atividade", "Atividade"]];
+      var so = el("select", "so-mobile"); so.setAttribute("aria-label", "Ordenar por");
+      cols.forEach(function (c) { var o = el("option", null, "Ordenar por: " + c[1]); o.value = c[0]; so.appendChild(o); });
+      so.value = ordem.chave;
+      so.addEventListener("change", function () { ordem.chave = so.value; ordem.asc = ["nome", "email"].indexOf(so.value) >= 0; desenha(); });
+      barra.appendChild(busca); barra.appendChild(fl); barra.appendChild(so); barra.appendChild(csv);
       painel.appendChild(barra);
       var det = el("div");
       var tab = el("table", "tabela");
-      var cols = [["nome", "Nome"], ["email", "E-mail"], ["resp", "Respondidas"], ["acerto", "Acerto"], ["sim", "Simulados"], ["ultimo", "Último simulado"], ["atividade", "Atividade"]];
       function val(l, k) {
         return k === "nome" ? (l.p.nome || "").toLowerCase() : k === "email" ? l.p.email.toLowerCase() : k === "resp" ? l.s.respondidas :
           k === "acerto" ? (l.acerto == null ? -1 : l.acerto) : k === "sim" ? l.s.simulados : k === "ultimo" ? (l.s.ultimo_pct == null ? -1 : l.s.ultimo_pct) : (l.atividade || "");
@@ -343,7 +355,7 @@
           r.addEventListener("click", function () { detalhe(det, l, desenha); });
           tb.appendChild(r);
         });
-        tab.appendChild(tb);
+        tab.appendChild(tb); rotula(tab); so.value = ordem.chave;
       }
       busca.addEventListener("input", desenha); fl.addEventListener("change", desenha);
       csv.addEventListener("click", function () {
@@ -550,7 +562,7 @@
     var ac2 = el("div", "acoes"); ac2.appendChild(bs); cx.appendChild(ac2); cx.appendChild(ss);
   }
 
-  window.NUVEM = { renderConta: renderConta, renderAlunos: renderAlunos, db: db, auth: auth, el: el, baixar: baixar, user: function () { return usuario; }, perfil: function () { return perfil; },
+  window.NUVEM = { rotula: rotula, renderConta: renderConta, renderAlunos: renderAlunos, db: db, auth: auth, el: el, baixar: baixar, user: function () { return usuario; }, perfil: function () { return perfil; },
     logado: function () { return !!usuario; }, ehAdmin: function () { return !!(perfil && perfil.is_admin); },
     enviarReporte: enviarReporte, simuladosTurma: simuladosTurma, publicarTurma: publicarTurma, enviarResultado: enviarResultado,
     turmasAdmin: function () { return perfil && perfil.is_admin ? turmasCache : []; }, recarregaTurmas: recarregaTurmas };

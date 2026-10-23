@@ -108,7 +108,7 @@
             body.appendChild(tr);
           });
           tb.appendChild(body);
-          var w = el("div", "tabela-wrap"); w.appendChild(tb); bloco.appendChild(w);
+          N.rotula(tb); var w = el("div", "tabela-wrap"); w.appendChild(tb); bloco.appendChild(w);
         }
         if (pend.length) bloco.appendChild(el("p", "muted", "Ainda não fizeram: " + pend.map(nomeDe).join(", ")));
         var ex = el("button", "ghost mini", "Excluir simulado"); ex.type = "button";
