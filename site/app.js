@@ -506,10 +506,9 @@
         o.n++; if (r.ok) o.ok++;
       });
     });
-    var validas = Q.filter(function (q) { return q.gabarito !== "X"; }).length;
     var grid = el("div", "stats-grid");
     function stat(v, rot) { var s = el("div", "stat"); s.appendChild(el("b", null, v)); s.appendChild(el("span", null, rot)); grid.appendChild(s); }
-    stat(por.total.n + " / " + validas, "questões respondidas");
+    stat(String(por.total.n), "questões respondidas");
     stat(por.total.n ? Math.round(100 * por.total.ok / por.total.n) + "%" : "–", "taxa de acerto");
     stat(String(por.total.ok), "acertos");
     stat(String(por.total.n - por.total.ok), "erros");
