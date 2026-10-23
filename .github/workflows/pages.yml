@@ -1,8 +1,8 @@
 name: Publicar site
 
+# A publicação do site é feita no Firebase Hosting (~/atualizar-enem-site.sh).
+# Este fluxo só roda se for acionado manualmente na aba Actions do GitHub.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
