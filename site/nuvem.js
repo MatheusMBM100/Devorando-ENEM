@@ -73,10 +73,6 @@
     var lp = el("label", "l", "Senha"); lp.htmlFor = "a-senha"; form.appendChild(lp);
     var se = el("input"); se.type = "password"; se.id = "a-senha"; se.autocomplete = modo === "criar" ? "new-password" : "current-password"; form.appendChild(se);
 
-    if (modo === "criar") {
-      form.appendChild(el("p", "muted", "Ao criar a conta, seu nome, e-mail, desempenho e respostas poderão ser vistos pelo administrador do site."));
-    }
-
     var ac = el("div", "acoes");
     var ok = el("button", "btn", modo === "criar" ? "Criar conta" : "Entrar"); ok.type = "submit";
     ac.appendChild(ok); form.appendChild(ac);
