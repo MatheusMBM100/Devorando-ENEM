@@ -48,3 +48,9 @@ O Firestore permite exportação agendada para o Google Cloud Storage. Depois de
 - **Aluno:** aba **Redação** → escolhe um tema (os dos últimos ENEM ou um tema livre), escreve e envia. Acompanha o status, vê a nota por competência, os comentários e a evolução.
 - **Administrador:** Administração → **Redações** → lista de pendentes → **Corrigir**: nota de 0 a 200 (em passos de 40) em cada uma das 5 competências, comentários, casos de nota zero e a opção de zerar só a Competência 5 por desrespeito aos direitos humanos. A nota total é calculada sozinha.
 - A nota é uma estimativa feita pelo professor, sem valor oficial. As regras para `redacoes` estão em `firebase/firestore.rules` (publique-as de novo se mudarem).
+
+### Redação por foto e modelos de comentário
+
+- O aluno pode **digitar** a redação no site ou **enviar até 2 fotos** da folha manuscrita. As fotos são reduzidas no próprio navegador para caber no limite de 1 MiB por documento do Firestore (sem usar o Cloud Storage, que exige o plano Blaze).
+- Na correção, as fotos aparecem na tela e abrem ampliadas em uma nova aba.
+- **Modelos de comentário:** há frases padrão por competência e para o comentário geral; elas são inseridas com um clique no campo de comentário. Você pode salvar o seu texto como modelo (★) e gerenciar tudo em Administração → Modelos de comentário. As regras da coleção `modelos` e dos campos `tipo`/`fotos` estão em `firebase/firestore.rules`: publique-as de novo.

@@ -201,3 +201,7 @@ select, input[type="search"] { width: 100%; padding: 8px 10px; border: 1px solid
 }
 .redacao-texto { white-space: pre-line; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; max-height: 420px; overflow: auto; }
 #r-texto, .card textarea { padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); font: inherit; resize: vertical; }
+.galeria { display: flex; flex-wrap: wrap; gap: 10px; margin: 8px 0; }
+.galeria img { max-width: 100%; width: 460px; border: 1px solid var(--line); border-radius: 8px; background: #fff; cursor: zoom-in; }
+.foto-item { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+.foto-item img { width: 220px; cursor: default; }

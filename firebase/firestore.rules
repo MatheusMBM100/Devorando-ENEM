@@ -78,13 +78,19 @@ service cloud.firestore {
     // Redações: o aluno envia e lê as próprias; só o administrador corrige (update).
     match /redacoes/{id} {
       allow create: if logado() && ativa() && request.resource.data.uid == request.auth.uid
-        && request.resource.data.keys().hasOnly(['uid', 'nome', 'email', 'tema', 'texto', 'criada', 'status'])
+        && request.resource.data.keys().hasOnly(['uid', 'nome', 'email', 'tema', 'texto', 'criada', 'status', 'tipo', 'fotos'])
+        && (!('fotos' in request.resource.data) || (request.resource.data.fotos is list && request.resource.data.fotos.size() <= 2))
         && request.resource.data.status == 'enviada'
         && request.resource.data.texto is string && request.resource.data.texto.size() <= 8000
         && request.resource.data.tema is string && request.resource.data.tema.size() <= 300;
       allow read: if logado() && (resource.data.uid == request.auth.uid || ehAdmin());
       allow update: if ehAdmin();
       allow delete: if ehAdmin() || (logado() && resource.data.uid == request.auth.uid && resource.data.status == 'enviada');
+    }
+
+    // Modelos de comentário da correção de redações: só administradores.
+    match /modelos/{id} {
+      allow read, write: if ehAdmin();
     }
 
     match /{outro=**} {

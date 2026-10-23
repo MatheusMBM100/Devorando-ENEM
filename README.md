@@ -21,3 +21,4 @@ Contas e administração: veja `firebase/LEIA-ME.md` (login por e-mail e senha v
 Administração (aba “Administração”, só para administradores): alunos, turmas com simulados enviados, reportes de erro, administradores e backup. Para o aluno: meta diária, sequência de dias, revisão do dia (repetição espaçada) e exportar o resultado em PDF (Imprimir → Salvar como PDF).
 
 Redação: o aluno envia o texto (aba Redação) e o administrador corrige pelas 5 competências do ENEM em Administração → Redações. Correção humana, sem IA.
+Redação por foto (até 2 imagens, comprimidas no navegador) ou digitada, e modelos de comentário para a correção.

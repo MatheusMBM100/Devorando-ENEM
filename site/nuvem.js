@@ -251,7 +251,7 @@
     painel.appendChild(el("h2", "resumo-titulo", "Administração"));
     var abas = el("div", "chips"); painel.appendChild(abas);
     var corpo = el("div"); corpo.style.marginTop = "14px"; painel.appendChild(corpo);
-    var S = [["alunos", "Alunos"], ["turmas", "Turmas"], ["reportes", "Reportes de erro"], ["redacoes", "Redações"], ["admins", "Administradores"], ["backup", "Backup"]];
+    var S = [["alunos", "Alunos"], ["turmas", "Turmas"], ["reportes", "Reportes de erro"], ["redacoes", "Redações"], ["modelos", "Modelos de comentário"], ["admins", "Administradores"], ["backup", "Backup"]];
     function mostra(k) {
       secaoAtual = k; abas.textContent = ""; corpo.textContent = "";
       S.forEach(function (x) {
