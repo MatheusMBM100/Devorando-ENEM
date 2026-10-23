@@ -205,3 +205,6 @@ select, input[type="search"] { width: 100%; padding: 8px 10px; border: 1px solid
 .galeria img { max-width: 100%; width: 460px; border: 1px solid var(--line); border-radius: 8px; background: #fff; cursor: zoom-in; }
 .foto-item { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
 .foto-item img { width: 220px; cursor: default; }
+.top h1 { display: flex; align-items: center; gap: 10px; }
+.logo { display: block; flex: none; }
+.auth-card h1 { display: flex; align-items: center; gap: 12px; }

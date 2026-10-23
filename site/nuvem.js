@@ -50,7 +50,7 @@
     overlay.hidden = false;
     overlay.textContent = "";
     var card = el("div", "auth-card");
-    var h = el("h1"); h.appendChild(document.createTextNode("Devorando ")); h.appendChild(el("span", null, "ENEM"));
+    var h = el("h1"); var lg = el("img", "logo"); lg.src = "logo.svg"; lg.alt = ""; lg.width = 44; lg.height = 44; h.appendChild(lg); h.appendChild(document.createTextNode("Devorando ")); h.appendChild(el("span", null, "ENEM"));
     card.appendChild(h);
     card.appendChild(el("p", "muted", "Entre para guardar seus simulados e acompanhar sua evolução em qualquer aparelho."));
 
