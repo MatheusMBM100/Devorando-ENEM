@@ -231,9 +231,20 @@
   function renderImgs(container, srcs) {
     (srcs || []).forEach(function (s) {
       var im = el("img");
-      im.src = s; im.alt = "Figura da questão"; im.loading = "lazy";
+      im.src = s; im.alt = "Figura da questão"; im.loading = "lazy"; im.decoding = "async";
       container.appendChild(im);
     });
+  }
+
+  // baixa antes as imagens da próxima questão, para ela abrir sem espera
+  function precarrega() {
+    setTimeout(function () {
+      var n = lista[idx + 1]; if (!n) return;
+      var s = (n.imagem || []).slice();
+      (n.enunciado || []).forEach(function (p) { if (p.i) s.push(p.i); });
+      if (n.alts) LETRAS.forEach(function (l) { if (n.alts[l]) s = s.concat(n.alts[l].i || []); });
+      s.forEach(function (u) { var i = new Image(); i.src = u; });
+    }, 400);
   }
 
   function renderQuestao() {
@@ -249,6 +260,7 @@
       return;
     }
     var q = lista[idx];
+    precarrega();
     var feito = feitoDe(q);
     var encerrado = simPronto() && sim.fim;
     if (simPronto()) { sim.pos = idx; salvarSim(); atualizaBarra(); }
@@ -290,7 +302,7 @@
       var en = el("div", "enun");
       (q.enunciado || []).forEach(function (p) {
         if (p.t) en.appendChild(el("p", "txt", p.t));
-        else if (p.i) { var im = el("img"); im.src = p.i; im.alt = "Figura da questão"; im.loading = "lazy"; en.appendChild(im); }
+        else if (p.i) { var im = el("img"); im.src = p.i; im.alt = "Figura da questão"; im.loading = "lazy"; im.decoding = "async"; en.appendChild(im); }
       });
       box.appendChild(en);
     }

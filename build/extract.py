@@ -43,8 +43,8 @@ def clean(s):
 def save_clip(page, rect, name):
     path = os.path.join(IMG, name)
     pix = page.get_pixmap(matrix=fitz.Matrix(ZOOM, ZOOM), clip=rect, alpha=False)
-    pix.save(path)
-    return "img/" + name
+    pix.save(path)   # PNG; build/para_webp.py converte para WebP depois da extração
+    return "img/" + name.replace(".png", ".webp")
 
 
 def page_items(page):
@@ -386,8 +386,8 @@ def build_question(doc, q, year, day):
         return res.strip()
 
     if qid == "2022-118":  # a bússola-legenda (f4) vem entre as alternativas; D é f5 e E é f6
-        alts["D"]["i"] = ["img/2022-118-f5.png"]
-        stem = stem + [["t", "Legenda (bússola):"], ["i", "img/2022-118-f4.png"]]
+        alts["D"]["i"] = ["img/2022-118-f5.webp"]
+        stem = stem + [["t", "Legenda (bússola):"], ["i", "img/2022-118-f4.webp"]]
     out["enunciado"] = stem_html(stem)
     out["alts"] = {L: {"t": alts[L]["t"], **({"i": alts[L]["i"]} if alts[L]["i"] else {})} for L in alts}
     return out
