@@ -8,33 +8,71 @@ service cloud.firestore {
     function ehAdmin() {
       return logado() && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
     }
-    function camposPerfil() {
-      return request.resource.data.keys().hasOnly(['email', 'nome', 'createdAt']);
+    // conta desativada pelo administrador não grava dados
+    function ativa() {
+      return !exists(/databases/$(database)/documents/users/$(request.auth.uid))
+        || !get(/databases/$(database)/documents/users/$(request.auth.uid)).data.get('desativado', false);
     }
 
-    // Perfil: a pessoa lê e grava o próprio; o administrador lê todos.
+    // Perfil: a pessoa lê e grava o próprio (nome e e-mail); o administrador lê, altera e apaga todos.
     match /users/{uid} {
       allow read: if logado() && (request.auth.uid == uid || ehAdmin());
-      allow create, update: if logado() && request.auth.uid == uid && camposPerfil();
+      allow create: if logado() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['email', 'nome', 'createdAt']);
+      allow update: if logado() && (
+        (request.auth.uid == uid && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['email', 'nome']))
+        || ehAdmin());
+      allow delete: if ehAdmin();
     }
 
     // Resumo de desempenho: a pessoa grava o próprio; ela e o administrador leem.
     match /userStats/{uid} {
       allow read: if logado() && (request.auth.uid == uid || ehAdmin());
-      allow create, update: if logado() && request.auth.uid == uid;
+      allow create, update: if logado() && request.auth.uid == uid && ativa();
+      allow delete: if ehAdmin();
     }
 
-    // Dados completos (respostas, simulados): a pessoa lê e grava os próprios; o administrador só lê.
+    // Dados completos (respostas, simulados): a pessoa lê e grava os próprios; o administrador lê e apaga.
     match /userData/{uid} {
       allow read: if logado() && (request.auth.uid == uid || ehAdmin());
-      allow write: if logado() && request.auth.uid == uid;
+      allow create, update: if logado() && request.auth.uid == uid && ativa();
+      allow delete: if ehAdmin();
     }
 
-    // Lista de administradores: cada um só vê o próprio registro; ninguém grava pelo site.
-    // Os administradores são criados à mão no Console do Firebase.
+    // Administradores: cada um vê o próprio registro; só administradores listam e alteram.
     match /admins/{uid} {
-      allow read: if logado() && request.auth.uid == uid;
-      allow write: if false;
+      allow read: if logado() && (request.auth.uid == uid || ehAdmin());
+      allow create: if ehAdmin();
+      allow delete: if ehAdmin() && request.auth.uid != uid;
+      allow update: if false;
+    }
+
+    // Turmas: o administrador gerencia; o aluno lê as turmas em que está.
+    match /turmas/{turma} {
+      allow read: if logado() && (ehAdmin() || request.auth.uid in resource.data.alunos);
+      allow write: if ehAdmin();
+
+      match /simulados/{sim} {
+        allow read: if logado() && (ehAdmin()
+          || request.auth.uid in get(/databases/$(database)/documents/turmas/$(turma)).data.alunos);
+        allow write: if ehAdmin();
+      }
+
+      // Resultados: o aluno grava e lê o próprio; o administrador lê e apaga todos.
+      match /resultados/{res} {
+        allow read: if logado() && (ehAdmin() || resource.data.uid == request.auth.uid);
+        allow create, update: if logado() && request.resource.data.uid == request.auth.uid
+          && res.matches('.*_' + request.auth.uid) && ativa()
+          && request.auth.uid in get(/databases/$(database)/documents/turmas/$(turma)).data.alunos;
+        allow delete: if ehAdmin();
+      }
+    }
+
+    // Reportes de erro: qualquer pessoa logada cria o seu; só o administrador lê e gerencia.
+    match /reports/{id} {
+      allow create: if logado() && request.resource.data.uid == request.auth.uid
+        && request.resource.data.mensagem is string && request.resource.data.mensagem.size() <= 2000;
+      allow read, update, delete: if ehAdmin();
     }
 
     match /{outro=**} {

@@ -23,3 +23,22 @@ O site já tem tela de entrada, cadastro, recuperação de senha, sincronizaçã
 - **Privacidade (LGPD):** ao criar a conta, a pessoa marca que concorda que nome, e-mail e desempenho por matéria sejam vistos pelo administrador. O administrador vê só o resumo (respondidas, acertos, simulados, acerto por matéria), não as respostas questão a questão. Vale publicar uma política de privacidade e um e-mail para pedir exclusão de dados.
 - **Dados antigos:** quem já usava o site sem conta tem os dados locais enviados para a conta no primeiro login.
 - **Excluir uma conta:** Authentication → Usuários → excluir (os documentos dela em Firestore, `users`, `userStats` e `userData`, devem ser apagados à mão).
+
+
+## Recursos da área de Administração (aba "Administração")
+
+- **Alunos:** busca, filtros (inativos há 7+ dias, desativados, administradores), exportar CSV, e por aluno: acerto por matéria e assunto, simulados, lista de questões que acertou e errou, desativar/reativar a conta, apagar os dados, tornar administrador e imprimir/PDF.
+- **Turmas:** crie turmas, adicione alunos e envie simulados (em Simulado → Criar novo simulado → "Enviar para uma turma"). Os alunos veem o simulado na página inicial e você compara os resultados.
+- **Reportes de erro:** reportes feitos por pessoas logadas chegam aqui, com opção de marcar como resolvido. (Sem login, o botão ainda usa o FormSubmit.)
+- **Administradores:** promova ou remova administradores pelo e-mail, sem mexer no console.
+- **Backup:** baixa um arquivo JSON com todos os dados. Faça isso toda semana e guarde fora do site.
+
+**Atenção ao atualizar:** sempre que o arquivo `firebase/firestore.rules` mudar, cole o conteúdo novo em Firestore → Regras e publique.
+
+### Backup automático (opcional, exige plano Blaze)
+
+O Firestore permite exportação agendada para o Google Cloud Storage. Depois de ativar o plano Blaze (com orçamento e alerta definidos), crie um bucket em Cloud Storage e rode, no Cloud Shell do Google Cloud, `gcloud firestore export gs://NOME-DO-BUCKET/backup-$(date +%F)`. Para repetir toda semana, use o Cloud Scheduler. O backup manual do painel dispensa tudo isso.
+
+### Desativar e excluir contas
+
+"Desativar conta" impede a pessoa de entrar e gravar dados (as regras do Firestore também bloqueiam a gravação). Para apagar a conta de login por completo, exclua-a também em Authentication → Usuários.

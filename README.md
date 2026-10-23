@@ -17,3 +17,5 @@ Cobertura: 1.110 questões (2020–2025). Questões anuladas pelo INEP (9) não 
 Em 2021 as questões aparecem como imagem do caderno (a extração de texto dessa prova é ilegível).
 
 Contas e administração: veja `firebase/LEIA-ME.md` (login por e-mail e senha via Firebase, dados na nuvem e aba “Alunos” para o administrador). Enquanto `site/config.js` estiver vazio, o site funciona sem login.
+
+Administração (aba “Administração”, só para administradores): alunos, turmas com simulados enviados, reportes de erro, administradores e backup. Para o aluno: meta diária, sequência de dias, revisão do dia (repetição espaçada) e exportar o resultado em PDF (Imprimir → Salvar como PDF).

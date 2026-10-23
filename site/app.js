@@ -37,6 +37,34 @@
   try { respostas = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { respostas = {}; }
   function notifica() { if (typeof window.__sync === "function") window.__sync(); }
   function salvar() { try { localStorage.setItem(KEY, JSON.stringify(respostas)); } catch (e) {} notifica(); }
+  var PKEY = "enem:prefs:v1";
+  var prefs = { meta: 10, atv: {} };   // meta diária e contagem de questões por dia
+  try { var pp = JSON.parse(localStorage.getItem(PKEY) || "null"); if (pp) prefs = { meta: pp.meta || 10, atv: pp.atv || {} }; } catch (e) {}
+  function salvarPrefs() { try { localStorage.setItem(PKEY, JSON.stringify(prefs)); } catch (e) {} notifica(); }
+  function diaStr(t) { var d = new Date(t); return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate(); }
+  var INTERVALOS = [1, 3, 7, 14, 30];   // dias até rever uma questão, por "caixa" (repetição espaçada)
+  function registraResposta(id, letra, gab) {
+    var ant = respostas[id], ok = letra === gab;
+    var box = ok ? Math.min(((ant && ant.box != null ? ant.box : (ant && ant.ok ? 1 : 0))) + 1, INTERVALOS.length - 1) : 0;
+    respostas[id] = { r: letra, ok: ok, t: Date.now(), box: box };
+    var k = diaStr(Date.now()); prefs.atv[k] = (prefs.atv[k] || 0) + 1;
+    salvarPrefs();
+  }
+  function sequencia() {
+    var n = 0, d = new Date();
+    if (!prefs.atv[diaStr(d)]) d.setDate(d.getDate() - 1);   // a sequência só quebra quando o dia acaba
+    while (prefs.atv[diaStr(d)]) { n++; d.setDate(d.getDate() - 1); }
+    return n;
+  }
+  function devidas() {
+    var agora = Date.now();
+    return Object.keys(respostas).filter(function (id) {
+      var r = respostas[id], q = porId[id];
+      if (!r || !q || q.gabarito === "X" || !r.t) return false;
+      var box = r.box != null ? r.box : (r.ok ? 1 : 0);
+      return agora >= r.t + INTERVALOS[box] * 86400000;
+    }).sort(function (a, b) { return respostas[a].t - respostas[b].t; });
+  }
   var marcadas = {};
   try { marcadas = JSON.parse(localStorage.getItem(MKEY) || "{}"); } catch (e) { marcadas = {}; }
   function salvarMarcas() { try { localStorage.setItem(MKEY, JSON.stringify(marcadas)); } catch (e) {} notifica(); }
@@ -357,12 +385,15 @@
     env.addEventListener("click", function () {
       if (!ta.value.trim()) { ta.focus(); status.textContent = "Escreva uma descrição antes de enviar."; return; }
       env.disabled = true; status.textContent = "Enviando…";
+      var viaNuvem = window.NUVEM && window.NUVEM.enviarReporte && window.NUVEM.logado();
+      (viaNuvem ? window.NUVEM.enviarReporte({ questao: q.id, ano: q.ano, numero: q.n, materia: matDe(q), assunto: assDe(q), gabarito: q.gabarito, mensagem: ta.value.trim() })
+        .then(function () { return { ok: true, d: { success: "true" } }; }) :
       fetch(URL_REPORTE, {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify({ _subject: assunto, _captcha: "false", _template: "table", _honey: "",
           questao: q.id, ano: q.ano, numero: q.n, materia: matDe(q), gabarito_site: q.gabarito, mensagem: corpo() })
-      }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (d) { return { ok: r.ok, d: d }; }); })
+      }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (d) { return { ok: r.ok, d: d }; }); }))
         .then(function (res) {
           if (res.ok && String(res.d.success) !== "false") {
             ta.hidden = true; env.hidden = true; cn.textContent = "Fechar";
@@ -389,7 +420,7 @@
   function responder(q) {
     if (!escolha || feitoDe(q)) return;
     if (q.gabarito !== "X") {
-      respostas[q.id] = { r: escolha, ok: escolha === q.gabarito, t: Date.now() };
+      registraResposta(q.id, escolha, q.gabarito);
       salvar();
       if (simPronto()) { sim.resp[q.id] = escolha; salvarSim(); }
       atualizaChip();
@@ -634,7 +665,7 @@
     sim.fim = true; sim.fimEm = Date.now(); sim.hid = sim.fimEm; sim.pausado = false;
     if (!sim.mostrar) {  // modo prova: as respostas só entram no desempenho agora
       Object.keys(sim.resp).forEach(function (id) {
-        if (porId[id]) respostas[id] = { r: sim.resp[id], ok: sim.resp[id] === porId[id].gabarito, t: Date.now() };
+        if (porId[id]) registraResposta(id, sim.resp[id], porId[id].gabarito);
       });
       salvar();
     }
@@ -642,6 +673,7 @@
     salvarNovos();
     hist.unshift(sim); salvarHist();
     verRes = sim;
+    if (sim.turma && window.NUVEM && window.NUVEM.enviarResultado) window.NUVEM.enviarResultado(sim, pct(sim));
     aba("simulado");
     window.scrollTo({ top: 0 });
   }
@@ -776,6 +808,9 @@
         var nm = $("s-nome"); if (nm) nm.focus();
       });
       ra.appendChild(b1);
+      var bp = el("button", "ghost", "Exportar PDF"); bp.type = "button";
+      bp.addEventListener("click", function () { window.print(); });
+      ra.appendChild(bp);
       var b3 = el("button", "ghost", "Ir à página inicial"); b3.type = "button";
       b3.addEventListener("click", function () { verRes = null; renderInicio(); window.scrollTo({ top: 0 }); });
       ra.appendChild(b3);
@@ -903,6 +938,16 @@
       if (go) go.disabled = n === 0;
     }
 
+    var turmas = (window.NUVEM && window.NUVEM.turmasAdmin) ? window.NUVEM.turmasAdmin() : [];
+    if (turmas.length) {
+      var lt2 = el("label", "l", "Enviar para uma turma (administrador)"); lt2.htmlFor = "s-turma"; f.appendChild(lt2);
+      var stu = el("select"); stu.id = "s-turma";
+      var o0 = el("option", null, "Não, só para mim"); o0.value = ""; stu.appendChild(o0);
+      turmas.forEach(function (t) { var o = el("option", null, "Turma: " + t.nome); o.value = t.id; stu.appendChild(o); });
+      stu.value = cfg.turma || "";
+      stu.addEventListener("change", function () { cfg.turma = stu.value; });
+      f.appendChild(stu);
+    }
     var ac2 = el("div", "acoes");
     go = el("button", "btn", "Criar simulado"); go.type = "button";
     go.addEventListener("click", function () {
@@ -911,8 +956,17 @@
       var n = Math.max(1, Math.min(cfg.n || 1, pool.length));
       var ids = sortear(pool, n).map(function (q) { return q.id; });
       var mats = MATS.filter(function (m) { return ids.some(function (id) { return matDe(porId[id]) === m; }); });
-      var novo = novoSim(cfg.nome.trim() || "Simulado " + (novos.length + hist.length + 1), ids,
-        { mostrar: cfg.mostrar, limite: cfg.minq * 60 * ids.length, mats: mats });
+      var nomeSim = cfg.nome.trim() || "Simulado " + (novos.length + hist.length + 1);
+      var limiteSim = cfg.minq * 60 * ids.length;
+      if (cfg.turma && window.NUVEM && window.NUVEM.publicarTurma) {
+        go.disabled = true;
+        window.NUVEM.publicarTurma(cfg.turma, { nome: nomeSim, ids: ids, mostrar: cfg.mostrar, limite: limiteSim }).then(function () {
+          alert("Simulado enviado para a turma. Os alunos o verão na página inicial.");
+          cfg.nome = ""; cfg.turma = ""; criando = false; renderInicio(); window.scrollTo({ top: 0 });
+        }).catch(function () { go.disabled = false; alert("Não foi possível enviar para a turma. Tente de novo."); });
+        return;
+      }
+      var novo = novoSim(nomeSim, ids, { mostrar: cfg.mostrar, limite: limiteSim, mats: mats });
       novos.push(novo); salvarNovos();
       cfg.nome = "";
       criando = false;
@@ -950,6 +1004,69 @@
     var vd = el("button", "ghost mini", "Ver desempenho completo"); vd.type = "button";
     vd.addEventListener("click", function () { aba("stats"); });
     p.appendChild(vd);
+
+    // meta diária e sequência
+    var hoje = prefs.atv[diaStr(Date.now())] || 0, meta = prefs.meta || 10;
+    var cm = el("div", "card meta");
+    var lm = el("div", "meta-topo");
+    lm.appendChild(el("b", null, "Meta de hoje: " + hoje + " / " + meta + " questões"));
+    lm.appendChild(el("span", "seq", "🔥 " + sequencia() + (sequencia() === 1 ? " dia seguido" : " dias seguidos")));
+    cm.appendChild(lm);
+    var bm = el("div", "barra"), im = el("i"); im.style.width = Math.min(100, 100 * hoje / meta) + "%"; bm.appendChild(im); cm.appendChild(bm);
+    var am = el("button", "link", "Alterar meta diária"); am.type = "button"; am.style.marginTop = "8px";
+    am.addEventListener("click", function () {
+      var v = parseInt(prompt("Quantas questões por dia você quer resolver?", String(meta)), 10);
+      if (v > 0 && v <= 500) { prefs.meta = v; salvarPrefs(); renderInicio(); }
+    });
+    cm.appendChild(am);
+    p.appendChild(cm);
+
+    // revisão do dia (repetição espaçada)
+    var dev = devidas();
+    var cr = el("div", "card");
+    cr.appendChild(el("h3", null, "Revisão do dia"));
+    if (!dev.length) cr.appendChild(el("p", "muted", "Nada para revisar hoje. Questões que você erra voltam depois de 1 dia; as que acerta, em 3, 7, 14 e 30 dias."));
+    else {
+      cr.appendChild(el("p", null, dev.length + " questão(ões) estão no ponto de ser revistas (erradas ou já passou o intervalo)."));
+      var br = el("button", "btn", "Revisar agora (" + Math.min(dev.length, 15) + " questões)"); br.type = "button";
+      br.addEventListener("click", function () {
+        var n2 = novoSim("Revisão do dia " + fmtData(Date.now()), dev.slice(0, 15), { mostrar: true, limite: 0 });
+        novos.push(n2); salvarNovos(); abrir(n2);
+      });
+      cr.appendChild(br);
+    }
+    p.appendChild(cr);
+
+    // simulados enviados pelo professor (turmas)
+    if (window.NUVEM && window.NUVEM.simuladosTurma) {
+      var ct = el("div", "card"); ct.hidden = true;
+      p.appendChild(ct);
+      window.NUVEM.simuladosTurma().then(function (lst) {
+        var pend = lst.filter(function (x) { return !x.feito; });
+        if (!lst.length) return;
+        ct.hidden = false;
+        ct.appendChild(el("h3", null, "Simulados da turma"));
+        if (!pend.length) ct.appendChild(el("p", "muted", "Você já fez todos os simulados enviados."));
+        pend.forEach(function (x) {
+          var row = el("div", "hist-row novo");
+          var info = el("div"); info.appendChild(el("b", null, x.nome));
+          info.appendChild(el("div", "muted", x.turmaNome + " · " + x.ids.length + " questões" + (x.limite ? " · " + fmtTempo(x.limite) + " de prova" : "")));
+          row.appendChild(info);
+          var bs = el("button", "btn mini", "Começar"); bs.type = "button";
+          bs.addEventListener("click", function () {
+            var ja = novos.filter(function (n) { return n.turma && n.turma.s === x.sid && n.turma.t === x.turmaId; })[0];
+            if (!ja) {
+              ja = novoSim(x.nome, x.ids, { mostrar: x.mostrar, limite: x.limite });
+              ja.turma = { t: x.turmaId, s: x.sid, tn: x.turmaNome };
+              novos.push(ja); salvarNovos();
+            }
+            abrir(ja);
+          });
+          row.appendChild(bs); row.appendChild(el("span"));
+          ct.appendChild(row);
+        });
+      }).catch(function () {});
+    }
 
     var nv = el("div", "card"); nv.id = "lista-novos";
     nv.appendChild(el("h3", null, "Simulados novos e em andamento"));
@@ -1070,19 +1187,21 @@
   // ---------- API para a camada de contas/nuvem (nuvem.js) ----------
   window.DEV_APP = {
     aba: aba,
-    exportar: function () { return { respostas: respostas, marcadas: marcadas, hist: hist.slice(0, 40), novos: novos }; },
+    rerender: function () { if (!$("painel-simulado").hidden && !verRes && !criando) renderInicio(); },
+    exportar: function () { return { respostas: respostas, marcadas: marcadas, hist: hist.slice(0, 40), novos: novos, prefs: prefs }; },
     vazio: function () { return !Object.keys(respostas).length && !hist.length && !novos.length && !Object.keys(marcadas).length; },
     importar: function (d) {
       respostas = (d && d.respostas) || {}; marcadas = (d && d.marcadas) || {}; hist = (d && d.hist) || []; novos = (d && d.novos) || [];
+      prefs = { meta: (d && d.prefs && d.prefs.meta) || 10, atv: (d && d.prefs && d.prefs.atv) || {} };
       try {
         localStorage.setItem(KEY, JSON.stringify(respostas)); localStorage.setItem(MKEY, JSON.stringify(marcadas));
-        localStorage.setItem(HKEY, JSON.stringify(hist)); localStorage.setItem(NKEY, JSON.stringify(novos));
+        localStorage.setItem(HKEY, JSON.stringify(hist)); localStorage.setItem(NKEY, JSON.stringify(novos)); localStorage.setItem(PKEY, JSON.stringify(prefs));
       } catch (e) {}
       sim = null; verRes = null; criando = false;
       aba("simulado");
     },
     limpar: function () {
-      [KEY, MKEY, HKEY, NKEY, SKEY].forEach(function (k) { try { localStorage.removeItem(k); } catch (e) {} });
+      [KEY, MKEY, HKEY, NKEY, SKEY, PKEY].forEach(function (k) { try { localStorage.removeItem(k); } catch (e) {} });
     },
     stats: function () {
       var n = 0, ok = 0, pm = {};

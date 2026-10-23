@@ -167,15 +167,67 @@
         p = { email: user.email, nome: user.displayName || "", createdAt: new Date().toISOString() };
         refPerfil.set(p).catch(function () {});
       }
+      if (p.desativado) {
+        auth.signOut().then(function () { APP.limpar(); mostrarLogin("entrar"); msg(overlay.querySelector(".auth-card"), "Esta conta está desativada. Fale com o administrador.", "erro"); });
+        throw new Error("desativado");
+      }
       perfil = { email: p.email || user.email, nome: p.nome || user.displayName || "", is_admin: !!rs[1].exists };
       areaUsuario();
+      if (perfil.is_admin) recarregaTurmas();
       return db.doc("userData/" + user.uid).get();
     }).then(function (snap) {
       var d = null;
       try { d = snap.exists ? JSON.parse(snap.data().json) : null; } catch (e) { d = null; }
       if (d && (Object.keys(d.respostas || {}).length || (d.hist || []).length || (d.novos || []).length || Object.keys(d.marcadas || {}).length)) APP.importar(d);
       else enviar();   // primeira vez: leva para a nuvem o que já havia neste navegador
-    }).catch(function () { estado("☁!", "Não foi possível carregar seus dados da nuvem"); });
+      APP.rerender();
+    }).catch(function (e) { if (e && e.message === "desativado") return; estado("☁!", "Não foi possível carregar seus dados da nuvem"); });
+  }
+
+  // ---------- reportes, turmas e resultados ----------
+  var turmasCache = [];
+  function recarregaTurmas() {
+    return db.collection("turmas").get().then(function (qs) {
+      turmasCache = []; qs.forEach(function (d) { turmasCache.push({ id: d.id, nome: (d.data() || {}).nome || d.id }); });
+      return turmasCache;
+    }).catch(function () { return turmasCache; });
+  }
+  function enviarReporte(r) {
+    if (!usuario) return Promise.reject(new Error("sem login"));
+    return db.collection("reports").add({ uid: usuario.uid, nome: (perfil && perfil.nome) || "", email: usuario.email, questao: r.questao, ano: r.ano, numero: r.numero,
+      materia: r.materia || "", assunto: r.assunto || "", gabarito: r.gabarito || "", mensagem: String(r.mensagem || "").slice(0, 1500),
+      criado: new Date().toISOString(), status: "novo" });
+  }
+  var cacheTurmaAluno = null;
+  function simuladosTurma() {
+    if (!usuario) return Promise.resolve([]);
+    if (cacheTurmaAluno) return cacheTurmaAluno;
+    var uid = usuario.uid;
+    cacheTurmaAluno = db.collection("turmas").where("alunos", "array-contains", uid).get().then(function (ts) {
+      var tarefas = [];
+      ts.forEach(function (t) {
+        var tn = (t.data() || {}).nome || "Turma";
+        tarefas.push(Promise.all([db.collection("turmas/" + t.id + "/simulados").get(), db.collection("turmas/" + t.id + "/resultados").where("uid", "==", uid).get()]).then(function (rs) {
+          var feitos = {}; rs[1].forEach(function (r) { feitos[(r.data() || {}).sim] = true; });
+          var out = [];
+          rs[0].forEach(function (s) { var d = s.data(); out.push({ turmaId: t.id, turmaNome: tn, sid: s.id, nome: d.nome, ids: d.ids || [], mostrar: d.mostrar !== false, limite: d.limite || 0, feito: !!feitos[s.id], criado: d.criado }); });
+          return out;
+        }));
+      });
+      return Promise.all(tarefas).then(function (arr) { return [].concat.apply([], arr).sort(function (a, b) { return String(b.criado).localeCompare(String(a.criado)); }); });
+    }).catch(function () { cacheTurmaAluno = null; return []; });
+    return cacheTurmaAluno;
+  }
+  function publicarTurma(turmaId, def) {
+    return db.collection("turmas/" + turmaId + "/simulados").add({ nome: def.nome, ids: def.ids, mostrar: !!def.mostrar, limite: def.limite || 0, criado: new Date().toISOString() });
+  }
+  function enviarResultado(sim, p) {
+    if (!usuario || !sim.turma) return Promise.resolve();
+    cacheTurmaAluno = null;
+    return db.doc("turmas/" + sim.turma.t + "/resultados/" + sim.turma.s + "_" + usuario.uid).set({
+      uid: usuario.uid, nome: (perfil && perfil.nome) || usuario.email, sim: sim.turma.s, acertos: p.ac, total: sim.ids.length, pct: p.p,
+      tempo: sim.decorrido || 0, fimEm: new Date().toISOString(), respostas: sim.resp, ids: sim.ids
+    }).catch(function () {});
   }
 
   auth.onAuthStateChanged(function (user) {
@@ -189,26 +241,68 @@
   var ordem = { chave: "acerto", asc: false };
   function pctDe(s) { return s.respondidas ? Math.round(100 * s.acertos / s.respondidas) : null; }
 
+  var secaoAtual = "alunos";
   function renderAlunos(painel) {
     painel.textContent = "";
     if (!perfil || !perfil.is_admin) { painel.appendChild(el("p", "muted", "Área restrita ao administrador.")); return; }
-    painel.appendChild(el("h2", "resumo-titulo", "Alunos"));
+    painel.appendChild(el("h2", "resumo-titulo", "Administração"));
+    var abas = el("div", "chips"); painel.appendChild(abas);
+    var corpo = el("div"); corpo.style.marginTop = "14px"; painel.appendChild(corpo);
+    var S = [["alunos", "Alunos"], ["turmas", "Turmas"], ["reportes", "Reportes de erro"], ["admins", "Administradores"], ["backup", "Backup"]];
+    function mostra(k) {
+      secaoAtual = k; abas.textContent = ""; corpo.textContent = "";
+      S.forEach(function (x) {
+        var b = el("button", "chip" + (x[0] === k ? " on" : ""), x[1]); b.type = "button";
+        b.addEventListener("click", function () { mostra(x[0]); });
+        abas.appendChild(b);
+      });
+      var f = k === "alunos" ? listaAlunos : (window.NUVEM_ADMIN && window.NUVEM_ADMIN[k]);
+      if (f) f(corpo);
+    }
+    mostra(secaoAtual);
+  }
+
+  function baixar(nome, texto, tipo) {
+    var blob = new Blob([texto], { type: tipo || "text/plain;charset=utf-8" });
+    var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = nome;
+    document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  }
+
+  function listaAlunos(painel) {
     var info = el("p", "muted", "Carregando…"); painel.appendChild(info);
-    Promise.all([db.collection("users").get(), db.collection("userStats").get()]).then(function (rs) {
+    Promise.all([db.collection("users").get(), db.collection("userStats").get(), db.collection("admins").get()]).then(function (rs) {
       var st = {}; rs[1].forEach(function (d) { st[d.id] = d.data(); });
+      var adm = {}; rs[2].forEach(function (d) { adm[d.id] = true; });
       var linhas = [];
       rs[0].forEach(function (d) {
         var p = d.data();
         var s = st[d.id] || { respondidas: 0, acertos: 0, simulados: 0, por_materia: {} };
-        linhas.push({ p: { id: d.id, email: p.email || "", nome: p.nome || "", is_admin: false, created_at: p.createdAt }, s: s, acerto: pctDe(s), atividade: s.updatedAt || p.createdAt });
+        linhas.push({ p: { id: d.id, email: p.email || "", nome: p.nome || "", is_admin: !!adm[d.id], desativado: !!p.desativado, created_at: p.createdAt }, s: s, acerto: pctDe(s), atividade: s.updatedAt || p.createdAt });
       });
-      info.textContent = linhas.length + " pessoa(s) cadastrada(s). Clique em uma linha para ver o desempenho por matéria.";
+      info.textContent = linhas.length + " pessoa(s) cadastrada(s). Clique em uma linha para ver o desempenho e as questões.";
+      var barra = el("div", "filtro-linha");
+      var busca = el("input"); busca.type = "search"; busca.placeholder = "Buscar por nome ou e-mail"; busca.style.maxWidth = "260px";
+      var fl = el("select");
+      [["todos", "Todos"], ["inativos", "Sem atividade há 7+ dias"], ["desativados", "Desativados"], ["admins", "Administradores"]].forEach(function (x) { var o = el("option", null, x[1]); o.value = x[0]; fl.appendChild(o); });
+      var csv = el("button", "ghost mini", "Exportar CSV"); csv.type = "button";
+      barra.appendChild(busca); barra.appendChild(fl); barra.appendChild(csv);
+      painel.appendChild(barra);
       var det = el("div");
       var tab = el("table", "tabela");
       var cols = [["nome", "Nome"], ["email", "E-mail"], ["resp", "Respondidas"], ["acerto", "Acerto"], ["sim", "Simulados"], ["ultimo", "Último simulado"], ["atividade", "Atividade"]];
       function val(l, k) {
         return k === "nome" ? (l.p.nome || "").toLowerCase() : k === "email" ? l.p.email.toLowerCase() : k === "resp" ? l.s.respondidas :
-          k === "acerto" ? (l.acerto == null ? -1 : l.acerto) : k === "sim" ? l.s.simulados : k === "ultimo" ? (l.s.ultimo_pct == null ? -1 : l.s.ultimo_pct) : l.atividade;
+          k === "acerto" ? (l.acerto == null ? -1 : l.acerto) : k === "sim" ? l.s.simulados : k === "ultimo" ? (l.s.ultimo_pct == null ? -1 : l.s.ultimo_pct) : (l.atividade || "");
+      }
+      function visiveis() {
+        var q = busca.value.trim().toLowerCase(), agora = Date.now();
+        return linhas.filter(function (l) {
+          if (q && (l.p.nome + " " + l.p.email).toLowerCase().indexOf(q) < 0) return false;
+          if (fl.value === "inativos") return !l.atividade || agora - new Date(l.atividade).getTime() > 7 * 86400000;
+          if (fl.value === "desativados") return l.p.desativado;
+          if (fl.value === "admins") return l.p.is_admin;
+          return true;
+        });
       }
       function desenha() {
         tab.textContent = "";
@@ -220,25 +314,34 @@
         });
         thead.appendChild(tr); tab.appendChild(thead);
         var tb = el("tbody");
-        linhas.slice().sort(function (a, b) {
+        visiveis().sort(function (a, b) {
           var x = val(a, ordem.chave), y = val(b, ordem.chave);
           return (x < y ? -1 : x > y ? 1 : 0) * (ordem.asc ? 1 : -1);
         }).forEach(function (l) {
           var r = el("tr", "aluno");
-          [l.p.nome || "—", l.p.email + (l.p.is_admin ? " (admin)" : ""), String(l.s.respondidas), l.acerto == null ? "–" : l.acerto + "%", String(l.s.simulados),
+          [(l.p.nome || "—") + (l.p.desativado ? " (desativado)" : ""), l.p.email + (l.p.is_admin ? " (admin)" : ""), String(l.s.respondidas), l.acerto == null ? "–" : l.acerto + "%", String(l.s.simulados),
            l.s.ultimo_pct == null ? "–" : l.s.ultimo_pct + "%", l.atividade ? new Date(l.atividade).toLocaleDateString("pt-BR") : "–"].forEach(function (t) { r.appendChild(el("td", null, t)); });
-          r.addEventListener("click", function () { detalhe(det, l); });
+          r.addEventListener("click", function () { detalhe(det, l, desenha); });
           tb.appendChild(r);
         });
         tab.appendChild(tb);
       }
+      busca.addEventListener("input", desenha); fl.addEventListener("change", desenha);
+      csv.addEventListener("click", function () {
+        function c(v) { v = String(v == null ? "" : v); return /[",;\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }
+        var cab = ["nome", "email", "respondidas", "acertos", "acerto_pct", "simulados", "ultimo_simulado_pct", "ultima_atividade", "desativado", "admin"];
+        var rows = visiveis().map(function (l) {
+          return [l.p.nome, l.p.email, l.s.respondidas, l.s.acertos, l.acerto == null ? "" : l.acerto, l.s.simulados, l.s.ultimo_pct == null ? "" : l.s.ultimo_pct, l.atividade || "", l.p.desativado ? "sim" : "", l.p.is_admin ? "sim" : ""].map(c).join(",");
+        });
+        baixar("alunos-devorando-enem.csv", "\ufeff" + [cab.join(",")].concat(rows).join("\n"), "text/csv;charset=utf-8");
+      });
       desenha();
       var wrap = el("div", "tabela-wrap card"); wrap.appendChild(tab);
       painel.appendChild(wrap); painel.appendChild(det);
     }).catch(function (e) { info.textContent = "Não foi possível carregar os alunos: " + ((e && e.message) || e); });
   }
 
-  function detalhe(cx, l) {
+  function detalhe(cx, l, redesenha) {
     cx.textContent = "";
     var c = el("div", "card");
     c.appendChild(el("h3", null, (l.p.nome || l.p.email)));
@@ -253,6 +356,36 @@
       row.appendChild(el("span", "muted", o.ok + "/" + o.n + " (" + Math.round(100 * o.ok / o.n) + "%)"));
       c.appendChild(row);
     });
+    var acs = el("div", "acoes");
+    var bd = el("button", "ghost mini", l.p.desativado ? "Reativar conta" : "Desativar conta"); bd.type = "button";
+    bd.addEventListener("click", function () {
+      var novo = !l.p.desativado;
+      if (novo && !confirm("Desativar esta conta? A pessoa deixa de conseguir entrar e gravar dados.")) return;
+      db.doc("users/" + l.p.id).update({ desativado: novo }).then(function () { l.p.desativado = novo; bd.textContent = novo ? "Reativar conta" : "Desativar conta"; if (redesenha) redesenha(); })
+        .catch(function () { alert("Não foi possível alterar. Confira as regras do Firestore."); });
+    });
+    acs.appendChild(bd);
+    if (!l.p.is_admin) {
+      var ba = el("button", "ghost mini", "Tornar administrador"); ba.type = "button";
+      ba.addEventListener("click", function () {
+        if (!confirm("Dar acesso de administrador a " + (l.p.nome || l.p.email) + "? Ela poderá ver os dados de todos os alunos.")) return;
+        db.doc("admins/" + l.p.id).set({ ativo: true, desde: new Date().toISOString() }).then(function () { l.p.is_admin = true; ba.hidden = true; if (redesenha) redesenha(); })
+          .catch(function () { alert("Não foi possível promover."); });
+      });
+      acs.appendChild(ba);
+    }
+    var bx = el("button", "ghost mini", "Apagar dados do aluno"); bx.type = "button";
+    bx.addEventListener("click", function () {
+      if (!confirm("Apagar TODOS os dados de " + (l.p.nome || l.p.email) + " (perfil, respostas e simulados)? Não dá para desfazer.\nA conta de login continua existindo; para excluí-la de vez, remova também em Authentication no Firebase.")) return;
+      Promise.all([db.doc("userData/" + l.p.id).delete(), db.doc("userStats/" + l.p.id).delete(), db.doc("users/" + l.p.id).delete()])
+        .then(function () { cx.textContent = ""; cx.appendChild(el("p", "muted", "Dados apagados. Atualize a aba para ver a lista.")); })
+        .catch(function () { alert("Não foi possível apagar."); });
+    });
+    acs.appendChild(bx);
+    var bp = el("button", "ghost mini", "Imprimir / PDF"); bp.type = "button";
+    bp.addEventListener("click", function () { window.print(); });
+    acs.appendChild(bp);
+    c.appendChild(acs);
     var corpo = el("div"); c.appendChild(corpo);
     cx.appendChild(c);
     c.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -345,5 +478,8 @@
     desenha();
   }
 
-  window.NUVEM = { renderAlunos: renderAlunos };
+  window.NUVEM = { renderAlunos: renderAlunos, db: db, auth: auth, el: el, baixar: baixar, user: function () { return usuario; }, perfil: function () { return perfil; },
+    logado: function () { return !!usuario; }, ehAdmin: function () { return !!(perfil && perfil.is_admin); },
+    enviarReporte: enviarReporte, simuladosTurma: simuladosTurma, publicarTurma: publicarTurma, enviarResultado: enviarResultado,
+    turmasAdmin: function () { return perfil && perfil.is_admin ? turmasCache : []; }, recarregaTurmas: recarregaTurmas };
 })();

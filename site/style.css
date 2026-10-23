@@ -188,3 +188,14 @@ select, input[type="search"] { width: 100%; padding: 8px 10px; border: 1px solid
 .tabela-wrap { overflow-x: auto; }
 .filtro-linha { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0; }
 .filtro-linha select { width: auto; min-width: 160px; }
+
+.meta-topo { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+.seq { font-weight: 700; }
+.card.meta .barra { height: 14px; }
+@media print {
+  .top, .user-area, #sim-bar, .acoes, .link, .reporte, .rodape, #auth-overlay, .nav-q, #paleta { display: none !important; }
+  body { background: #fff; color: #000; }
+  .layout { display: block; padding: 0; }
+  .painel[hidden] { display: none !important; }
+  .card { border: 1px solid #999; break-inside: avoid; }
+}
