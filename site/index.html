@@ -11,6 +11,11 @@
 <meta property="og:title" content="Devorando ENEM">
 <meta property="og:description" content="Questões do ENEM 2020–2025 com explicação de cada alternativa, simulados e acompanhamento de desempenho.">
 <meta property="og:image" content="https://devorando-enem.web.app/icon-512.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1f5f4a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Devorando ENEM">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -113,5 +118,6 @@
 <script src="nuvem.js"></script>
 <script src="admin.js"></script>
 <script src="redacao.js"></script>
+<script>if ("serviceWorker" in navigator && location.protocol !== "file:") window.addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); });</script>
 </body>
 </html>

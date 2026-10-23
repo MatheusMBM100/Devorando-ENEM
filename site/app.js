@@ -41,7 +41,7 @@
   var prefs = { meta: 10, semana: 50, tema: "auto", notif: false, atv: {} };   // metas, tema, avisos e contagem de questões por dia
   function normPrefs(pp) {
     pp = pp || {};
-    return { meta: pp.meta || 10, semana: pp.semana || 50, tema: pp.tema === "claro" || pp.tema === "escuro" ? pp.tema : "auto", notif: !!pp.notif, atv: pp.atv || {} };
+    return { meta: pp.meta || 10, semana: pp.semana || 50, tema: pp.tema === "claro" || pp.tema === "escuro" ? pp.tema : "auto", notif: !!pp.notif, notifAdmin: !!pp.notifAdmin, atv: pp.atv || {} };
   }
   try { prefs = normPrefs(JSON.parse(localStorage.getItem(PKEY) || "null")); } catch (e) {}
   function aplicaTema() {
@@ -575,6 +575,8 @@
     idx = n; renderQuestao(); renderPaletaMarca();
     window.scrollTo({ top: 0 });
   }
+  window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); window.__instalar = e; });
+
   // ---------- configurações ----------
   var subConfig = "geral";
   function renderConfig() {
@@ -633,8 +635,28 @@
       });
     });
     linha(n, "Avisar quando uma redação for corrigida", null, ck);
+    if (logado && N.ehAdmin()) {
+      var ca = el("input"); ca.type = "checkbox"; ca.checked = !!prefs.notifAdmin;
+      ca.addEventListener("change", function () {
+        prefs.notifAdmin = ca.checked; salvarPrefs();
+        if (ca.checked && "Notification" in window && Notification.permission === "default") Notification.requestPermission();
+      });
+      linha(n, "Avisar quando chegar redação ou reporte novo", "Administrador: com o site aberto. Você também recebe um e-mail a cada novo envio.", ca);
+    }
     n.appendChild(aviso);
     p.appendChild(n);
+
+    var ins = el("div", "card"); ins.appendChild(el("h3", null, "Instalar no celular"));
+    var standalone = window.matchMedia && matchMedia("(display-mode: standalone)").matches || navigator.standalone;
+    if (standalone) ins.appendChild(el("p", "muted", "✔ O Devorando ENEM já está instalado neste aparelho."));
+    else if (window.__instalar) {
+      ins.appendChild(el("p", "muted", "Coloque um ícone na tela inicial e abra o site em tela cheia, como um app."));
+      var bi = el("button", "btn", "Instalar app"); bi.type = "button";
+      bi.addEventListener("click", function () { window.__instalar.prompt(); window.__instalar = null; renderConfig(); });
+      ins.appendChild(bi);
+    } else if (/iphone|ipad|ipod/i.test(navigator.userAgent)) ins.appendChild(el("p", "muted", "No iPhone/iPad, abra este site no Safari, toque no botão Compartilhar e escolha “Adicionar à Tela de Início”."));
+    else ins.appendChild(el("p", "muted", "No celular, abra o menu do navegador e escolha “Instalar app” ou “Adicionar à tela inicial”."));
+    p.appendChild(ins);
 
     var rp = el("div", "card"); rp.appendChild(el("h3", null, "Reportar erro"));
     if (!logado) rp.appendChild(el("p", "muted", "Entre na sua conta para enviar um reporte. Para erros em uma questão específica, use o botão de reportar dentro da própria questão."));
@@ -1286,6 +1308,13 @@
   window.DEV_APP = {
     aba: aba,
     pref: function (k) { return prefs[k]; },
+    // aviso na tela (e notificação do navegador, se permitida); clicar leva à aba indicada
+    avisar: function (txt, destino) {
+      if ("Notification" in window && Notification.permission === "granted") { try { new Notification("Devorando ENEM", { body: txt, icon: "apple-touch-icon.png" }); } catch (e) {} }
+      var t = el("div", "toast", txt); t.setAttribute("role", "status");
+      t.addEventListener("click", function () { t.remove(); aba(destino); });
+      document.body.appendChild(t); setTimeout(function () { t.remove(); }, 15000);
+    },
     rerender: function () { if (!$("painel-simulado").hidden && !verRes && !criando) renderInicio(); },
     exportar: function () { return { respostas: respostas, marcadas: marcadas, hist: hist.slice(0, 40), novos: novos, prefs: prefs }; },
     vazio: function () { return !Object.keys(respostas).length && !hist.length && !novos.length && !Object.keys(marcadas).length; },

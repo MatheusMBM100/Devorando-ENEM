@@ -147,10 +147,7 @@
     novas.forEach(function (r) { a[r.id] = 1; });
     try { localStorage.setItem(AKEY, JSON.stringify(a)); } catch (e) {}
     var txt = novas.length === 1 ? "Sua redação foi corrigida! Veja a nota na aba Redação." : novas.length + " redações suas foram corrigidas! Veja na aba Redação.";
-    if ("Notification" in window && Notification.permission === "granted") { try { new Notification("Devorando ENEM", { body: txt, icon: "apple-touch-icon.png" }); } catch (e) {} }
-    var t = el("div", "toast", txt); t.setAttribute("role", "status");
-    t.addEventListener("click", function () { t.remove(); APP.aba("redacao"); });
-    document.body.appendChild(t); setTimeout(function () { t.remove(); }, 15000);
+    APP.avisar(txt, "redacao");
   }
   function vigia() {
     var ligado = APP && APP.pref("notif") && N.user();
@@ -276,6 +273,7 @@
       if (modo === "foto") { dados.tipo = "foto"; dados.fotos = fotos.slice(); }
       db.collection("redacoes").add(dados)
         .then(function () {
+          N.avisaEmail("nova redação para corrigir", { de: dados.nome, tema: dados.tema, formato: modo === "foto" ? "foto (" + fotos.length + ")" : palavras(dados.texto) + " palavras" });
           ta.value = ""; conta(); fotos = []; desenhaFotos(); stF.textContent = "";
           st.textContent = "✔ Redação enviada! Você verá a correção abaixo quando o professor terminar."; env.disabled = false; depois();
         })

@@ -44,21 +44,67 @@
     }).catch(function (e) { erro(info, e); });
   }
 
+  // Visão geral da turma: médias, matérias mais fracas e quem precisa de atenção.
+  function visaoTurma(alunos, stats, res, nomeDe) {
+    var c = el("div", "card");
+    c.appendChild(el("h4", "sub", "Visão geral da turma"));
+    var resp = 0, ac = 0, mats = {}, agora = Date.now(), parados = [], baixos = [];
+    alunos.forEach(function (uid) {
+      var s = stats[uid];
+      var ult = s && s.updatedAt ? new Date(s.updatedAt).getTime() : 0;
+      if (!s || !s.respondidas) { parados.push({ uid: uid, txt: "ainda não respondeu questões" }); return; }
+      resp += s.respondidas; ac += s.acertos;
+      var p = Math.round(100 * s.acertos / s.respondidas);
+      if (agora - ult > 7 * 86400000) parados.push({ uid: uid, txt: "sem atividade há " + Math.floor((agora - ult) / 86400000) + " dias" });
+      else if (p < 50 && s.respondidas >= 20) baixos.push({ uid: uid, txt: p + "% de acerto em " + s.respondidas + " questões" });
+      var pm = s.por_materia || {};
+      Object.keys(pm).forEach(function (m) { var o = mats[m] = mats[m] || { n: 0, ok: 0 }; o.n += pm[m].n || 0; o.ok += pm[m].ok || 0; });
+    });
+    var med = res.length ? Math.round(res.reduce(function (a, r) { return a + (r.pct || 0); }, 0) / res.length) : null;
+    var grid = el("div", "stats-grid");
+    function stat(v, rot) { var s = el("div", "stat"); s.appendChild(el("b", null, v)); s.appendChild(el("span", null, rot)); grid.appendChild(s); }
+    stat(String(alunos.length), "alunos");
+    stat(resp ? Math.round(100 * ac / resp) + "%" : "–", "acerto geral da turma");
+    stat(med != null ? med + "%" : "–", "média nos simulados da turma");
+    stat(String(parados.length), "sem atividade (7+ dias)");
+    c.appendChild(grid);
+    var lm = Object.keys(mats).filter(function (m) { return mats[m].n >= 10; }).sort(function (a, b) { return mats[a].ok / mats[a].n - mats[b].ok / mats[b].n; });
+    if (lm.length) {
+      c.appendChild(el("b", null, "Matérias, da mais fraca para a mais forte"));
+      lm.forEach(function (m) {
+        var o = mats[m], pc = Math.round(100 * o.ok / o.n), row = el("div", "barra-l");
+        row.appendChild(el("span", null, m));
+        var b = el("div", "barra"), i = el("i"); i.style.width = pc + "%"; b.appendChild(i); row.appendChild(b);
+        row.appendChild(el("span", "muted", pc + "% (" + o.n + ")"));
+        c.appendChild(row);
+      });
+    } else c.appendChild(el("p", "muted", "Ainda não há respostas suficientes para comparar as matérias (mínimo de 10 por matéria)."));
+    var atencao = baixos.concat(parados);
+    if (atencao.length) {
+      var h = el("b", null, "Precisam de atenção (" + atencao.length + ")"); h.style.display = "block"; h.style.marginTop = "14px"; c.appendChild(h);
+      atencao.forEach(function (x) { c.appendChild(el("div", "muted", "• " + nomeDe(x.uid) + " — " + x.txt)); });
+    }
+    return c;
+  }
+
   function abrirTurma(cx, id) {
     cx.textContent = "";
     var info = carregando(cx);
-    Promise.all([db.doc("turmas/" + id).get(), db.collection("users").get(), db.collection("turmas/" + id + "/simulados").get(), db.collection("turmas/" + id + "/resultados").get()]).then(function (rs) {
+    Promise.all([db.doc("turmas/" + id).get(), db.collection("users").get(), db.collection("turmas/" + id + "/simulados").get(), db.collection("turmas/" + id + "/resultados").get(), db.collection("userStats").get()]).then(function (rs) {
       cx.textContent = "";
       var t = rs[0].data() || {}, alunos = t.alunos || [];
       var users = {}; rs[1].forEach(function (u) { users[u.id] = u.data() || {}; });
       var sims = lista(rs[2]).sort(function (a, b) { return String(b.d.criado).localeCompare(String(a.d.criado)); });
       var res = lista(rs[3]).map(function (r) { return r.d; });
       var nomeDe = function (uid) { var u = users[uid] || {}; return u.nome || u.email || uid; };
+      var stats = {}; rs[4].forEach(function (s) { stats[s.id] = s.data() || {}; });
 
       var voltar = el("button", "ghost mini", "← Todas as turmas"); voltar.type = "button";
       voltar.addEventListener("click", function () { turmas(cx); });
       cx.appendChild(voltar);
       cx.appendChild(el("h3", null, t.nome || id));
+
+      cx.appendChild(visaoTurma(alunos, stats, res, nomeDe));
 
       // alunos
       var ca = el("div", "card");

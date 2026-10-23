@@ -192,7 +192,7 @@
       }
       perfil = { email: p.email || user.email, nome: p.nome || user.displayName || "", telefone: p.telefone || "", createdAt: p.createdAt || "", is_admin: !!rs[1].exists };
       areaUsuario();
-      if (perfil.is_admin) recarregaTurmas();
+      if (perfil.is_admin) { recarregaTurmas(); vigiaAdmin(); }
       return db.doc("userData/" + user.uid).get();
     }).then(function (snap) {
       var d = null;
@@ -211,11 +211,46 @@
       return turmasCache;
     }).catch(function () { return turmasCache; });
   }
+  // Aviso por e-mail ao responsável (serviço FormSubmit, sem servidor próprio). Falha em silêncio.
+  var EMAIL_AVISO = "matheusbrizolamontanher@gmail.com";
+  function avisaEmail(assunto, campos) {
+    try {
+      var corpo = { _subject: "Devorando ENEM: " + assunto, _captcha: "false", _template: "table", _honey: "" };
+      Object.keys(campos).forEach(function (k) { corpo[k] = String(campos[k] == null ? "" : campos[k]).slice(0, 600); });
+      fetch("https://formsubmit.co/ajax/" + EMAIL_AVISO, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(corpo) }).catch(function () {});
+    } catch (e) {}
+  }
   function enviarReporte(r) {
     if (!usuario) return Promise.reject(new Error("sem login"));
     return db.collection("reports").add({ uid: usuario.uid, nome: (perfil && perfil.nome) || "", email: usuario.email, questao: r.questao, ano: r.ano, numero: r.numero,
       materia: r.materia || "", assunto: r.assunto || "", gabarito: r.gabarito || "", mensagem: String(r.mensagem || "").slice(0, 1500),
-      criado: new Date().toISOString(), status: "novo" });
+      criado: new Date().toISOString(), status: "novo" }).then(function (x) {
+        avisaEmail(r.questao === "geral" ? "novo reporte de erro no site" : "novo reporte de erro em questão", {
+          de: (perfil && perfil.nome) || usuario.email, questao: r.questao === "geral" ? "(erro geral)" : "ENEM " + r.ano + " questão " + r.numero, mensagem: r.mensagem });
+        return x;
+      });
+  }
+  // ---------- avisos para o administrador ----------
+  var pendAdmin = { rep: 0, red: 0 }, avisouAdmin = 0, relogioAdmin = null;
+  function atualizaAvisosAdmin() {
+    if (!perfil || !perfil.is_admin) return Promise.resolve();
+    return Promise.all([db.collection("reports").where("status", "==", "novo").get(), db.collection("redacoes").where("status", "==", "enviada").get()]).then(function (rs) {
+      var rep = rs[0].size, red = rs[1].size, tot = rep + red;
+      pendAdmin = { rep: rep, red: red };
+      var t = $("tab-alunos"); if (t) t.textContent = tot ? "Administração (" + tot + ")" : "Administração";
+      if (APP.pref("notifAdmin") && tot > avisouAdmin) {
+        var partes = [];
+        if (red) partes.push(red + (red === 1 ? " redação para corrigir" : " redações para corrigir"));
+        if (rep) partes.push(rep + (rep === 1 ? " reporte novo" : " reportes novos"));
+        APP.avisar("Pendências: " + partes.join(" e ") + ".", "alunos");
+      }
+      avisouAdmin = tot;
+    }).catch(function () {});
+  }
+  function vigiaAdmin() {
+    var ligado = perfil && perfil.is_admin;
+    if (ligado && !relogioAdmin) { relogioAdmin = setInterval(atualizaAvisosAdmin, 120000); }
+    if (ligado) atualizaAvisosAdmin();
   }
   var cacheTurmaAluno = null;
   function simuladosTurma() {
@@ -262,6 +297,7 @@
 
   var secaoAtual = "alunos";
   function renderAlunos(painel) {
+    atualizaAvisosAdmin();
     painel.textContent = "";
     if (!perfil || !perfil.is_admin) { painel.appendChild(el("p", "muted", "Área restrita ao administrador.")); return; }
     painel.appendChild(el("h2", "resumo-titulo", "Administração"));
@@ -562,7 +598,7 @@
     var ac2 = el("div", "acoes"); ac2.appendChild(bs); cx.appendChild(ac2); cx.appendChild(ss);
   }
 
-  window.NUVEM = { rotula: rotula, renderConta: renderConta, renderAlunos: renderAlunos, db: db, auth: auth, el: el, baixar: baixar, user: function () { return usuario; }, perfil: function () { return perfil; },
+  window.NUVEM = { avisaEmail: avisaEmail, atualizaAvisosAdmin: atualizaAvisosAdmin, rotula: rotula, renderConta: renderConta, renderAlunos: renderAlunos, db: db, auth: auth, el: el, baixar: baixar, user: function () { return usuario; }, perfil: function () { return perfil; },
     logado: function () { return !!usuario; }, ehAdmin: function () { return !!(perfil && perfil.is_admin); },
     enviarReporte: enviarReporte, simuladosTurma: simuladosTurma, publicarTurma: publicarTurma, enviarResultado: enviarResultado,
     turmasAdmin: function () { return perfil && perfil.is_admin ? turmasCache : []; }, recarregaTurmas: recarregaTurmas };
