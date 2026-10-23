@@ -35,13 +35,14 @@
   // ---------- estado ----------
   var respostas = {};
   try { respostas = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { respostas = {}; }
-  function salvar() { try { localStorage.setItem(KEY, JSON.stringify(respostas)); } catch (e) {} }
+  function notifica() { if (typeof window.__sync === "function") window.__sync(); }
+  function salvar() { try { localStorage.setItem(KEY, JSON.stringify(respostas)); } catch (e) {} notifica(); }
   var marcadas = {};
   try { marcadas = JSON.parse(localStorage.getItem(MKEY) || "{}"); } catch (e) { marcadas = {}; }
-  function salvarMarcas() { try { localStorage.setItem(MKEY, JSON.stringify(marcadas)); } catch (e) {} }
+  function salvarMarcas() { try { localStorage.setItem(MKEY, JSON.stringify(marcadas)); } catch (e) {} notifica(); }
   var hist = [];
   try { hist = JSON.parse(localStorage.getItem(HKEY) || "[]"); } catch (e) { hist = []; }
-  function salvarHist() { try { localStorage.setItem(HKEY, JSON.stringify(hist.slice(0, 40))); } catch (e) {} }
+  function salvarHist() { try { localStorage.setItem(HKEY, JSON.stringify(hist.slice(0, 40))); } catch (e) {} notifica(); }
 
   var SKEY = "enem:simulado:v1";   // formato antigo (um só simulado), migrado para a lista
   var NKEY = "enem:novos:v1";
@@ -52,7 +53,7 @@
     if (velho && !velho.fim) { velho.uid = velho.uid || Date.now(); novos.push(velho); }
     localStorage.removeItem(SKEY);
   } catch (e) {}
-  function salvarNovos() { try { localStorage.setItem(NKEY, JSON.stringify(novos)); } catch (e) {} }
+  function salvarNovos() { try { localStorage.setItem(NKEY, JSON.stringify(novos)); } catch (e) {} notifica(); }
   var sim = null;    // simulado em exibição
   var criando = false; // mostrando o formulário de novo simulado
   var verRes = null; // simulado concluído cujo resultado está na tela inicial
@@ -542,11 +543,14 @@
     $("painel-simulado").hidden = qual !== "simulado";
     $("painel-praticar").hidden = !(qual === "praticar" || qual === "simq");
     $("painel-stats").hidden = qual !== "stats";
+    $("painel-alunos").hidden = qual !== "alunos";
     $("filtros").style.display = qual === "praticar" ? "" : "none";
     $("sim-bar").hidden = !emSim;
     $("tab-simulado").classList.toggle("on", qual === "simulado" || qual === "simq");
     $("tab-stats").classList.toggle("on", qual === "stats");
+    $("tab-alunos").classList.toggle("on", qual === "alunos");
     if (qual === "stats") renderStats();
+    else if (qual === "alunos") { if (window.NUVEM) window.NUVEM.renderAlunos($("painel-alunos")); }
     else if (qual === "simulado") renderInicio();
     else if (qual === "praticar") aplicar(true);
     else if (qual === "simq") {
@@ -1062,6 +1066,34 @@
       if (r && !r.disabled && r.style.display !== "none") r.click();
     }
   });
+
+  // ---------- API para a camada de contas/nuvem (nuvem.js) ----------
+  window.DEV_APP = {
+    aba: aba,
+    exportar: function () { return { respostas: respostas, marcadas: marcadas, hist: hist.slice(0, 40), novos: novos }; },
+    vazio: function () { return !Object.keys(respostas).length && !hist.length && !novos.length && !Object.keys(marcadas).length; },
+    importar: function (d) {
+      respostas = (d && d.respostas) || {}; marcadas = (d && d.marcadas) || {}; hist = (d && d.hist) || []; novos = (d && d.novos) || [];
+      try {
+        localStorage.setItem(KEY, JSON.stringify(respostas)); localStorage.setItem(MKEY, JSON.stringify(marcadas));
+        localStorage.setItem(HKEY, JSON.stringify(hist)); localStorage.setItem(NKEY, JSON.stringify(novos));
+      } catch (e) {}
+      sim = null; verRes = null; criando = false;
+      aba("simulado");
+    },
+    limpar: function () {
+      [KEY, MKEY, HKEY, NKEY, SKEY].forEach(function (k) { try { localStorage.removeItem(k); } catch (e) {} });
+    },
+    stats: function () {
+      var n = 0, ok = 0, pm = {};
+      Object.keys(respostas).forEach(function (id) {
+        var q = porId[id]; if (!q) return;
+        n++; var o = pm[matDe(q)] = pm[matDe(q)] || { n: 0, ok: 0 };
+        o.n++; if (respostas[id].ok) { ok++; o.ok++; }
+      });
+      return { respondidas: n, acertos: ok, simulados: hist.length, ultimo_pct: hist.length ? pct(hist[0]).p : null, por_materia: pm };
+    }
+  };
 
   aba("simulado");
 })();

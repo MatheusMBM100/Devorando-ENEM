@@ -162,3 +162,27 @@ select, input[type="search"] { width: 100%; padding: 8px 10px; border: 1px solid
   .hist-row { grid-template-columns: 1fr auto auto; }
   .hist-row .barra { display: none; }
 }
+
+/* contas e administração */
+.user-area { display: flex; align-items: center; gap: 8px; margin-left: 12px; font-size: .85rem; color: var(--muted); }
+.user-area[hidden], .tab[hidden] { display: none; }
+.user-area .sync { font-size: .75rem; }
+#auth-overlay { position: fixed; inset: 0; z-index: 100; background: var(--bg); overflow: auto; display: flex; align-items: flex-start; justify-content: center; padding: 6vh 16px; }
+#auth-overlay[hidden] { display: none; }
+.auth-card { width: 100%; max-width: 420px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+.auth-card h1 { margin: 0 0 4px; font-size: 1.5rem; }
+.auth-card h1 span { color: var(--brand); }
+.auth-tabs { display: flex; gap: 6px; margin: 16px 0 6px; }
+.auth-card label.l { display: block; font-weight: 600; margin: 12px 0 4px; }
+.auth-card input[type="text"], .auth-card input[type="email"], .auth-card input[type="password"] { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); }
+.auth-msg { margin: 12px 0 0; padding: 10px 12px; border-radius: 8px; font-size: .92rem; }
+.auth-msg.erro { background: var(--bad-bg); color: var(--bad); }
+.auth-msg.ok { background: var(--ok-bg); color: var(--ok); }
+.auth-card .acoes .btn { width: 100%; }
+.link { background: none; border: 0; color: var(--brand); cursor: pointer; padding: 0; text-decoration: underline; font-size: .9rem; }
+.tabela { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.tabela th, .tabela td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+.tabela th { color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; cursor: pointer; }
+.tabela tr.aluno { cursor: pointer; }
+.tabela tr.aluno:hover { background: var(--brand-soft); }
+.tabela-wrap { overflow-x: auto; }

@@ -15,3 +15,5 @@ Matérias e assuntos: `build/classificar.py` gera `site/meta.js` a partir de `bu
 
 Cobertura: 1.110 questões (2020–2025). Questões anuladas pelo INEP (9) não têm gabarito nem explicação.
 Em 2021 as questões aparecem como imagem do caderno (a extração de texto dessa prova é ilegível).
+
+Contas e administração: veja `supabase/LEIA-ME.md` (login por e-mail e senha via Supabase, dados na nuvem e aba “Alunos” para o administrador). Enquanto `site/config.js` estiver vazio, o site funciona sem login.

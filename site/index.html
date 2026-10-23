@@ -13,7 +13,9 @@
     <nav>
       <button id="tab-simulado" class="tab on">Simulado</button>
       <button id="tab-stats" class="tab">Desempenho</button>
+      <button id="tab-alunos" class="tab" hidden>Alunos</button>
     </nav>
+    <div id="user-area" class="user-area" hidden></div>
   </div>
 </header>
 
@@ -81,6 +83,7 @@
   </section>
 
   <section id="painel-stats" class="painel" hidden></section>
+  <section id="painel-alunos" class="painel" hidden></section>
 </main>
 
 <footer class="rodape">
@@ -91,6 +94,9 @@
 <script src="data.js"></script>
 <script src="explicacoes.js"></script>
 <script src="meta.js"></script>
+<script src="config.js"></script>
 <script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="nuvem.js"></script>
 </body>
 </html>
