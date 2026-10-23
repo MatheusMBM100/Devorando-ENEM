@@ -1,12 +1,14 @@
 (function () {
   "use strict";
-  // Contas, sincronização na nuvem e painel do administrador (Supabase).
+  // Contas, sincronização na nuvem e painel do administrador (Firebase Authentication + Firestore).
   // Sem configuração em config.js, nada disso é ativado e o site funciona localmente, como antes.
-  var cfg = window.DEVORANDO_CFG || {};
+  var cfg = (window.DEVORANDO_CFG || {}).firebase || {};
   var APP = window.DEV_APP;
-  if (!cfg.supabaseUrl || !cfg.supabaseKey || !window.supabase || !APP) return;
+  if (!cfg.apiKey || !cfg.projectId || !window.firebase || !APP) return;
 
-  var sb = window.supabase.createClient(cfg.supabaseUrl, cfg.supabaseKey);
+  window.firebase.initializeApp(cfg);
+  var auth = window.firebase.auth();
+  var db = window.firebase.firestore();
   var $ = function (id) { return document.getElementById(id); };
   function el(tag, cls, text) {
     var e = document.createElement(tag);
@@ -18,7 +20,8 @@
   var usuario = null;   // usuário autenticado
   var perfil = null;    // linha de profiles
   var timer = null;
-  var iniciado = null;  // id do usuário já inicializado (evita repetir em renovações de sessão)
+  var iniciado = null;
+  var cadastro = null;  // promessa do cadastro em andamento (o perfil é gravado por ele)  // id do usuário já inicializado (evita repetir em renovações de sessão)
 
   // ---------- tela de entrada ----------
   var overlay = el("div"); overlay.id = "auth-overlay"; overlay.hidden = true;
@@ -31,15 +34,15 @@
     m.textContent = texto;
   }
   function traduz(e) {
-    var t = (e && e.message) || String(e);
-    if (/Invalid login credentials/i.test(t)) return "E-mail ou senha incorretos.";
-    if (/Email not confirmed/i.test(t)) return "Confirme seu e-mail pelo link que enviamos antes de entrar.";
-    if (/already registered|already been registered/i.test(t)) return "Este e-mail já tem conta. Use a aba Entrar.";
-    if (/Password should be at least/i.test(t)) return "A senha precisa ter pelo menos 6 caracteres.";
-    if (/valid email|invalid format/i.test(t)) return "Informe um e-mail válido.";
-    if (/rate limit|too many/i.test(t)) return "Muitas tentativas. Aguarde alguns minutos.";
-    if (/network|fetch/i.test(t)) return "Sem conexão. Verifique a internet e tente de novo.";
-    return "Não foi possível concluir: " + t;
+    var c = (e && e.code) || "", t = (e && e.message) || String(e);
+    if (/invalid-credential|wrong-password|user-not-found|invalid-login/.test(c)) return "E-mail ou senha incorretos.";
+    if (/email-already-in-use/.test(c)) return "Este e-mail já tem conta. Use a aba Entrar.";
+    if (/weak-password/.test(c)) return "A senha precisa ter pelo menos 6 caracteres.";
+    if (/invalid-email/.test(c)) return "Informe um e-mail válido.";
+    if (/too-many-requests/.test(c)) return "Muitas tentativas. Aguarde alguns minutos.";
+    if (/network/.test(c)) return "Sem conexão. Verifique a internet e tente de novo.";
+    if (/user-disabled/.test(c)) return "Esta conta foi desativada.";
+    return "Não foi possível concluir: " + (t || c);
   }
 
   function mostrarLogin(modo) {
@@ -87,11 +90,9 @@
       esq.style.marginTop = "12px";
       esq.addEventListener("click", function () {
         if (!em.value.trim()) { msg(card, "Digite seu e-mail acima e clique de novo.", "erro"); em.focus(); return; }
-        sb.auth.resetPasswordForEmail(em.value.trim(), { redirectTo: location.origin + location.pathname })
-          .then(function (r) {
-            if (r.error) msg(card, traduz(r.error), "erro");
-            else msg(card, "Enviamos um link para redefinir a senha, se esse e-mail tiver conta.", "ok");
-          });
+        auth.sendPasswordResetEmail(em.value.trim(), { url: location.origin + location.pathname })
+          .then(function () { msg(card, "Enviamos um link para redefinir a senha, se esse e-mail tiver conta.", "ok"); })
+          .catch(function (e) { msg(card, traduz(e), "erro"); });
       });
       form.appendChild(esq);
     }
@@ -106,37 +107,21 @@
       if (modo === "criar") {
         if (!nome.value.trim()) { msg(card, "Informe seu nome.", "erro"); ok.disabled = false; return; }
         if (!consent.checked) { msg(card, "Marque a caixa de ciência para criar a conta.", "erro"); ok.disabled = false; return; }
-        p = sb.auth.signUp({ email: email, password: senha, options: { data: { nome: nome.value.trim() }, emailRedirectTo: location.origin + location.pathname } })
-          .then(function (r) {
-            if (r.error) throw r.error;
-            if (!r.data.session) msg(card, "Conta criada! Enviamos um e-mail de confirmação. Clique no link dele e depois entre aqui.", "ok");
-          });
+        cadastro = p = auth.createUserWithEmailAndPassword(email, senha).then(function (cred) {
+          var nm = nome.value.trim();
+          return Promise.all([
+            cred.user.updateProfile({ displayName: nm }),
+            db.doc("users/" + cred.user.uid).set({ email: email, nome: nm, createdAt: new Date().toISOString() }),
+            cred.user.sendEmailVerification().catch(function () {})
+          ]);
+        });
       } else {
-        p = sb.auth.signInWithPassword({ email: email, password: senha }).then(function (r) { if (r.error) throw r.error; });
+        p = auth.signInWithEmailAndPassword(email, senha);
       }
       p.catch(function (e) { msg(card, traduz(e), "erro"); }).then(function () { ok.disabled = false; });
     });
     overlay.appendChild(card);
     setTimeout(function () { (nome || em).focus(); }, 50);
-  }
-
-  function mostrarNovaSenha() {
-    overlay.hidden = false; overlay.textContent = "";
-    var card = el("div", "auth-card");
-    card.appendChild(el("h3", null, "Definir nova senha"));
-    var form = el("form"); form.noValidate = true;
-    var lp = el("label", "l", "Nova senha"); lp.htmlFor = "a-nova"; form.appendChild(lp);
-    var se = el("input"); se.type = "password"; se.id = "a-nova"; se.autocomplete = "new-password"; form.appendChild(se);
-    var ac = el("div", "acoes"); var ok = el("button", "btn", "Salvar nova senha"); ok.type = "submit"; ac.appendChild(ok); form.appendChild(ac);
-    card.appendChild(form);
-    form.addEventListener("submit", function (ev) {
-      ev.preventDefault();
-      sb.auth.updateUser({ password: se.value }).then(function (r) {
-        if (r.error) msg(card, traduz(r.error), "erro");
-        else { overlay.hidden = true; }
-      });
-    });
-    overlay.appendChild(card);
   }
 
   // ---------- sessão ----------
@@ -146,7 +131,7 @@
     var st = el("span", "sync", "☁"); st.id = "sync-estado"; st.title = "Dados sincronizados"; a.appendChild(st);
     var sair = el("button", "ghost mini", "Sair"); sair.type = "button";
     sair.addEventListener("click", function () {
-      sb.auth.signOut().then(function () { APP.limpar(); location.reload(); });
+      auth.signOut().then(function () { APP.limpar(); location.reload(); });
     });
     a.appendChild(sair);
     var ta = $("tab-alunos");
@@ -161,13 +146,14 @@
     estado("☁…", "Sincronizando");
     var agora = new Date().toISOString();
     var s = APP.stats();
-    return sb.from("user_data").upsert({ user_id: usuario.id, data: APP.exportar(), updated_at: agora })
-      .then(function (r) {
-        if (r.error) throw r.error;
-        return sb.from("user_stats").upsert({ user_id: usuario.id, respondidas: s.respondidas, acertos: s.acertos, simulados: s.simulados,
-          ultimo_pct: s.ultimo_pct, por_materia: s.por_materia, updated_at: agora });
-      })
-      .then(function (r) { if (r && r.error) throw r.error; estado("☁✔", "Dados sincronizados"); })
+    var d = APP.exportar();
+    var json = JSON.stringify(d);
+    while (json.length > 900000 && d.hist.length > 1) { d.hist.pop(); json = JSON.stringify(d); }  // limite de 1 MiB por documento
+    return Promise.all([
+      db.doc("userData/" + usuario.uid).set({ json: json, updatedAt: agora }),
+      db.doc("userStats/" + usuario.uid).set({ respondidas: s.respondidas, acertos: s.acertos, simulados: s.simulados,
+        ultimo_pct: s.ultimo_pct, por_materia: s.por_materia, updatedAt: agora })
+    ]).then(function () { estado("☁✔", "Dados sincronizados"); })
       .catch(function () { estado("☁!", "Falha ao sincronizar; tentaremos de novo na próxima alteração"); });
   }
   window.__sync = function () {
@@ -176,31 +162,36 @@
     timer = setTimeout(enviar, 1500);
   };
 
-  function entrou(session) {
-    usuario = session.user;
-    if (iniciado === usuario.id) return;
-    iniciado = usuario.id;
+  function entrou(user) {
+    usuario = user;
+    if (iniciado === user.uid) return;
+    iniciado = user.uid;
     overlay.hidden = true;
-    sb.from("profiles").select("*").eq("id", usuario.id).maybeSingle().then(function (r) {
-      perfil = r.data || { email: usuario.email, nome: (usuario.user_metadata && usuario.user_metadata.nome) || "", is_admin: false };
+    var refPerfil = db.doc("users/" + user.uid);
+    Promise.resolve(cadastro).catch(function () {}).then(function () {
+      return Promise.all([refPerfil.get(), db.doc("admins/" + user.uid).get().catch(function () { return { exists: false }; })]);
+    }).then(function (rs) {
+      var p = rs[0].exists ? rs[0].data() : null;
+      if (!p) {
+        p = { email: user.email, nome: user.displayName || "", createdAt: new Date().toISOString() };
+        refPerfil.set(p).catch(function () {});
+      }
+      perfil = { email: p.email || user.email, nome: p.nome || user.displayName || "", is_admin: !!rs[1].exists };
       areaUsuario();
-      return sb.from("user_data").select("data").eq("user_id", usuario.id).maybeSingle();
-    }).then(function (r) {
-      var d = r && r.data && r.data.data;
+      return db.doc("userData/" + user.uid).get();
+    }).then(function (snap) {
+      var d = null;
+      try { d = snap.exists ? JSON.parse(snap.data().json) : null; } catch (e) { d = null; }
       if (d && (Object.keys(d.respostas || {}).length || (d.hist || []).length || (d.novos || []).length || Object.keys(d.marcadas || {}).length)) APP.importar(d);
-      else if (!APP.vazio()) enviar();   // primeira vez: leva para a nuvem o que já havia neste navegador
-      else enviar();
+      else enviar();   // primeira vez: leva para a nuvem o que já havia neste navegador
     }).catch(function () { estado("☁!", "Não foi possível carregar seus dados da nuvem"); });
   }
 
-  sb.auth.onAuthStateChange(function (evento, session) {
-    if (evento === "PASSWORD_RECOVERY") { mostrarNovaSenha(); return; }
-    if (evento === "SIGNED_OUT") { usuario = null; perfil = null; iniciado = null; $("user-area").hidden = true; $("tab-alunos").hidden = true; mostrarLogin("entrar"); return; }
-    if (session && (evento === "SIGNED_IN" || evento === "INITIAL_SESSION" || evento === "TOKEN_REFRESHED")) entrou(session);
-  });
-  sb.auth.getSession().then(function (r) {
-    if (r.data && r.data.session) entrou(r.data.session);
-    else mostrarLogin("entrar");
+  auth.onAuthStateChanged(function (user) {
+    if (user) { entrou(user); return; }
+    usuario = null; perfil = null; iniciado = null;
+    $("user-area").hidden = true; $("tab-alunos").hidden = true;
+    mostrarLogin("entrar");
   });
 
   // ---------- painel do administrador ----------
@@ -212,12 +203,13 @@
     if (!perfil || !perfil.is_admin) { painel.appendChild(el("p", "muted", "Área restrita ao administrador.")); return; }
     painel.appendChild(el("h2", "resumo-titulo", "Alunos"));
     var info = el("p", "muted", "Carregando…"); painel.appendChild(info);
-    Promise.all([sb.from("profiles").select("id,email,nome,is_admin,created_at"), sb.from("user_stats").select("*")]).then(function (rs) {
-      if (rs[0].error) throw rs[0].error;
-      var st = {}; (rs[1].data || []).forEach(function (s) { st[s.user_id] = s; });
-      var linhas = (rs[0].data || []).map(function (p) {
-        var s = st[p.id] || { respondidas: 0, acertos: 0, simulados: 0, por_materia: {} };
-        return { p: p, s: s, acerto: pctDe(s), atividade: s.updated_at || p.created_at };
+    Promise.all([db.collection("users").get(), db.collection("userStats").get()]).then(function (rs) {
+      var st = {}; rs[1].forEach(function (d) { st[d.id] = d.data(); });
+      var linhas = [];
+      rs[0].forEach(function (d) {
+        var p = d.data();
+        var s = st[d.id] || { respondidas: 0, acertos: 0, simulados: 0, por_materia: {} };
+        linhas.push({ p: { id: d.id, email: p.email || "", nome: p.nome || "", is_admin: false, created_at: p.createdAt }, s: s, acerto: pctDe(s), atividade: s.updatedAt || p.createdAt });
       });
       info.textContent = linhas.length + " pessoa(s) cadastrada(s). Clique em uma linha para ver o desempenho por matéria.";
       var det = el("div");

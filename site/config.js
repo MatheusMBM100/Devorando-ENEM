@@ -1,6 +1,11 @@
-// Configuração das contas (Supabase). Enquanto estiver vazio, o site funciona sem login, só neste navegador.
-// Preencha com os dados do seu projeto (Settings → API no painel do Supabase). A chave "anon" é pública por projeto.
+// Configuração das contas (Firebase). Enquanto estiver vazio, o site funciona sem login, só neste navegador.
+// Cole aqui o objeto "firebaseConfig" do seu app web (Console do Firebase → Configurações do projeto → Seus apps).
+// Esses valores são públicos por desenho; a segurança vem das regras do Firestore (firebase/firestore.rules).
 window.DEVORANDO_CFG = {
-  supabaseUrl: "",
-  supabaseKey: ""
+  firebase: {
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    appId: ""
+  }
 };

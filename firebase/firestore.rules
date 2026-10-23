@@ -1,0 +1,43 @@
+rules_version = '2';
+// Devorando ENEM: regras de segurança do Firestore.
+// Cole este conteúdo em Firestore Database → Regras e clique em Publicar.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function logado() { return request.auth != null; }
+    function ehAdmin() {
+      return logado() && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+    function camposPerfil() {
+      return request.resource.data.keys().hasOnly(['email', 'nome', 'createdAt']);
+    }
+
+    // Perfil: a pessoa lê e grava o próprio; o administrador lê todos.
+    match /users/{uid} {
+      allow read: if logado() && (request.auth.uid == uid || ehAdmin());
+      allow create, update: if logado() && request.auth.uid == uid && camposPerfil();
+    }
+
+    // Resumo de desempenho: a pessoa grava o próprio; ela e o administrador leem.
+    match /userStats/{uid} {
+      allow read: if logado() && (request.auth.uid == uid || ehAdmin());
+      allow create, update: if logado() && request.auth.uid == uid;
+    }
+
+    // Dados completos (respostas, simulados): privados, só da própria pessoa.
+    match /userData/{uid} {
+      allow read, write: if logado() && request.auth.uid == uid;
+    }
+
+    // Lista de administradores: cada um só vê o próprio registro; ninguém grava pelo site.
+    // Os administradores são criados à mão no Console do Firebase.
+    match /admins/{uid} {
+      allow read: if logado() && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    match /{outro=**} {
+      allow read, write: if false;
+    }
+  }
+}
