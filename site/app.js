@@ -549,14 +549,6 @@
       p.appendChild(ev);
     }
 
-    var reset = el("button", "ghost", "Zerar meu progresso");
-    reset.type = "button";
-    reset.addEventListener("click", function () {
-      if (confirm("Apagar todas as respostas salvas neste navegador?")) {
-        respostas = {}; salvar(); renderStats(); aplicar(false);
-      }
-    });
-    p.appendChild(reset);
   }
 
   // ---------- navegação ----------
