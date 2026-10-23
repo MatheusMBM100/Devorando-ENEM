@@ -308,11 +308,11 @@
       });
       info.textContent = linhas.length + " pessoa(s) cadastrada(s). Clique em uma linha para ver o desempenho e as questões.";
       var barra = el("div", "filtro-linha");
-      var busca = el("input"); busca.type = "search"; busca.placeholder = "Buscar por nome ou e-mail"; busca.style.maxWidth = "260px";
+      var busca = el("input"); busca.type = "search"; busca.placeholder = "Buscar por nome, e-mail ou telefone"; busca.style.maxWidth = "260px";
       var fl = el("select");
       [["todos", "Todos"], ["inativos", "Sem atividade há 7+ dias"], ["desativados", "Desativados"], ["admins", "Administradores"]].forEach(function (x) { var o = el("option", null, x[1]); o.value = x[0]; fl.appendChild(o); });
       var csv = el("button", "ghost mini", "Exportar CSV"); csv.type = "button";
-      var cols = [["nome", "Nome"], ["email", "E-mail"], ["resp", "Respondidas"], ["acerto", "Acerto"], ["sim", "Simulados"], ["ultimo", "Último simulado"], ["atividade", "Atividade"]];
+      var cols = [["nome", "Nome"], ["email", "E-mail"], ["tel", "Telefone"], ["resp", "Respondidas"], ["acerto", "Acerto"], ["sim", "Simulados"], ["ultimo", "Último simulado"], ["atividade", "Atividade"]];
       var so = el("select", "so-mobile"); so.setAttribute("aria-label", "Ordenar por");
       cols.forEach(function (c) { var o = el("option", null, "Ordenar por: " + c[1]); o.value = c[0]; so.appendChild(o); });
       so.value = ordem.chave;
@@ -322,13 +322,13 @@
       var det = el("div");
       var tab = el("table", "tabela");
       function val(l, k) {
-        return k === "nome" ? (l.p.nome || "").toLowerCase() : k === "email" ? l.p.email.toLowerCase() : k === "resp" ? l.s.respondidas :
+        return k === "nome" ? (l.p.nome || "").toLowerCase() : k === "email" ? l.p.email.toLowerCase() : k === "tel" ? (l.p.telefone || "") : k === "resp" ? l.s.respondidas :
           k === "acerto" ? (l.acerto == null ? -1 : l.acerto) : k === "sim" ? l.s.simulados : k === "ultimo" ? (l.s.ultimo_pct == null ? -1 : l.s.ultimo_pct) : (l.atividade || "");
       }
       function visiveis() {
         var q = busca.value.trim().toLowerCase(), agora = Date.now();
         return linhas.filter(function (l) {
-          if (q && (l.p.nome + " " + l.p.email).toLowerCase().indexOf(q) < 0) return false;
+          if (q && (l.p.nome + " " + l.p.email + " " + (l.p.telefone || "")).toLowerCase().indexOf(q) < 0) return false;
           if (fl.value === "inativos") return !l.atividade || agora - new Date(l.atividade).getTime() > 7 * 86400000;
           if (fl.value === "desativados") return l.p.desativado;
           if (fl.value === "admins") return l.p.is_admin;
@@ -350,7 +350,7 @@
           return (x < y ? -1 : x > y ? 1 : 0) * (ordem.asc ? 1 : -1);
         }).forEach(function (l) {
           var r = el("tr", "aluno");
-          [(l.p.nome || "—") + (l.p.desativado ? " (desativado)" : ""), l.p.email + (l.p.is_admin ? " (admin)" : ""), String(l.s.respondidas), l.acerto == null ? "–" : l.acerto + "%", String(l.s.simulados),
+          [(l.p.nome || "—") + (l.p.desativado ? " (desativado)" : ""), l.p.email + (l.p.is_admin ? " (admin)" : ""), l.p.telefone ? telFmt(l.p.telefone) : "–", String(l.s.respondidas), l.acerto == null ? "–" : l.acerto + "%", String(l.s.simulados),
            l.s.ultimo_pct == null ? "–" : l.s.ultimo_pct + "%", l.atividade ? new Date(l.atividade).toLocaleDateString("pt-BR") : "–"].forEach(function (t) { r.appendChild(el("td", null, t)); });
           r.addEventListener("click", function () { detalhe(det, l, desenha); });
           tb.appendChild(r);
@@ -360,9 +360,9 @@
       busca.addEventListener("input", desenha); fl.addEventListener("change", desenha);
       csv.addEventListener("click", function () {
         function c(v) { v = String(v == null ? "" : v); return /[",;\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }
-        var cab = ["nome", "email", "respondidas", "acertos", "acerto_pct", "simulados", "ultimo_simulado_pct", "ultima_atividade", "desativado", "admin"];
+        var cab = ["nome", "email", "telefone", "respondidas", "acertos", "acerto_pct", "simulados", "ultimo_simulado_pct", "ultima_atividade", "desativado", "admin"];
         var rows = visiveis().map(function (l) {
-          return [l.p.nome, l.p.email, l.s.respondidas, l.s.acertos, l.acerto == null ? "" : l.acerto, l.s.simulados, l.s.ultimo_pct == null ? "" : l.s.ultimo_pct, l.atividade || "", l.p.desativado ? "sim" : "", l.p.is_admin ? "sim" : ""].map(c).join(",");
+          return [l.p.nome, l.p.email, l.p.telefone ? telFmt(l.p.telefone) : "", l.s.respondidas, l.s.acertos, l.acerto == null ? "" : l.acerto, l.s.simulados, l.s.ultimo_pct == null ? "" : l.s.ultimo_pct, l.atividade || "", l.p.desativado ? "sim" : "", l.p.is_admin ? "sim" : ""].map(c).join(",");
         });
         baixar("alunos-devorando-enem.csv", "\ufeff" + [cab.join(",")].concat(rows).join("\n"), "text/csv;charset=utf-8");
       });
