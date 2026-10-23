@@ -1,0 +1,92 @@
+{
+ "2023-129": {
+  "certa": "Cada frasco tem 5,25 g ÷ 525 g/mol = 0,01 mol de Hg₂(NO₃)₂, que reage com 0,02 mol de NaCl (1,16 g) e forma até 0,01 mol de Hg₂Cl₂ (4,72 g). Até 1,16 g de NaCl, a massa de Hg₂Cl₂ cresce de forma linear, desde a origem. Depois, o NaCl está em excesso e a massa fica constante em 4,72 g. É o gráfico B.",
+  "erradas": {
+   "A": "O patamar começa em 0,6 g de NaCl, o que corresponderia a menos NaCl do que o necessário.",
+   "C": "Não mostra o patamar, e a massa continuaria crescendo mesmo com o reagente já esgotado.",
+   "D": "Não começa na origem, e sem NaCl não há precipitado.",
+   "E": "Não começa na origem e não mostra o patamar."
+  }
+ },
+ "2023-130": {
+  "certa": "Na partida, a carga tende a ficar para trás, e a corda 2 (da frente) estica. O atrito máximo é 0,2 × 200 × 10 = 400 N, e a força necessária é 200 × 3 = 600 N, então T₂ = 200 N e T₁ = 0. Na frenagem, a carga tende a ir para a frente e a corda 1 estica. A força é 200 × 5 = 1.000 N, o atrito dá 400 N, então T₁ = 600 N e T₂ = 0.",
+  "erradas": {
+   "B": "Na frenagem, T₁ = 1.400 N soma o atrito em vez de o descontar.",
+   "C": "Na partida, T₂ = 600 N ignora o atrito, que fornece 400 N.",
+   "D": "Inverte as cordas: na partida a que estica é a 2, e não a 1.",
+   "E": "Inverte as cordas e usa valores que não correspondem ao equilíbrio de forças."
+  }
+ },
+ "2023-132": {
+  "certa": "Os decompositores transformam detritos em amônia, que é a etapa 2. Sem eles, essa etapa não ocorreria.",
+  "erradas": {
+   "A": "A etapa 1, a fixação do gás nitrogênio em amônia, é feita por bactérias fixadoras, e não por decompositores.",
+   "C": "A etapa 3, de amônia a nitrito, é feita por bactérias nitrificantes.",
+   "D": "A etapa 4, de nitrito a nitrato, também é feita por bactérias nitrificantes.",
+   "E": "A etapa 5, a volta ao gás nitrogênio, é feita por bactérias desnitrificantes."
+  }
+ },
+ "2023-134": {
+  "certa": "O ibuprofeno é quiral, com isomeria óptica, pois tem um carbono assimétrico. Entre as opções, o butilbrometo de escopolamina tem vários carbonos assimétricos e apresenta o mesmo tipo de isomeria.",
+  "erradas": {
+   "A": "A fenacetina não tem carbono assimétrico.",
+   "B": "O paracetamol não tem carbono assimétrico.",
+   "C": "A dipirona sódica não tem carbono assimétrico no esqueleto da estrutura.",
+   "D": "O diclofenaco sódico não tem carbono assimétrico."
+  }
+ },
+ "2023-137": {
+  "certa": "O comprimento do cabo é c = h ÷ sen α. Opção I: 11 ÷ 0,5 = 22 m. Opção II: 12 ÷ (√2/2) = 12√2 ≈ 17 m. Opção III: 18 ÷ (√3/2) = 12√3 ≈ 20,8 m. O menor é o da opção II, 12√2 m.",
+  "erradas": {
+   "A": "22√3/3 ≈ 12,7 m não corresponde a nenhuma das opções.",
+   "B": "11√2 ≈ 15,6 m não corresponde a nenhuma das opções.",
+   "D": "12√3 ≈ 20,8 m é o cabo da opção III, maior que o da II.",
+   "E": "22 m é o cabo da opção I, o maior de todos."
+  }
+ },
+ "2023-138": {
+  "certa": "Na tela, a maior altitude ocupa 1 quadradinho, ou 1 cm, e corresponde a 5 km = 500.000 cm. A escala é 1 : 500.000.",
+  "erradas": {
+   "A": "1 : 5 usa 5 km como se fosse 5 cm.",
+   "B": "1 : 11 não decorre da relação entre 1 cm e 5 km.",
+   "C": "1 : 55 não decorre da relação entre 1 cm e 5 km.",
+   "D": "1 : 5.000 trata 5 km como 5.000 cm, em vez de 500.000 cm."
+  }
+ },
+ "2023-139": {
+  "certa": "Gasto de cada dia: segunda, 248 + 0,5·764 + 2·492 = 1.614. Terça, 0,5·248 + 764 + 0,5·356 + 492 = 1.558. Quarta, 1,5·764 + 356 + 0,5·492 = 1.748. Quinta, 2·764 = 1.528. Sexta, 0,5·764 + 2,5·492 = 1.612. O maior é o de quarta-feira.",
+  "erradas": {
+   "A": "Segunda-feira gasta 1.614 cal, menos que a quarta.",
+   "B": "Terça-feira gasta 1.558 cal.",
+   "D": "Quinta-feira gasta 1.528 cal, o menor.",
+   "E": "Sexta-feira gasta 1.612 cal."
+  }
+ },
+ "2023-142": {
+  "certa": "A área de um círculo é proporcional ao quadrado do diâmetro. A pizza do professor é maior que a soma das outras duas quando a² > b² + c², onde a é o diâmetro dela. Pela lei dos cossenos, isso ocorre quando o ângulo α oposto ao lado a é obtuso: 90° < α < 180°.",
+  "erradas": {
+   "A": "Com α agudo, a² < b² + c², e a pizza do professor seria menor.",
+   "B": "Com α = 90°, a² = b² + c² (Pitágoras), e as áreas seriam iguais.",
+   "D": "Com α = 180° não se forma um triângulo.",
+   "E": "Um ângulo maior que 180° não é um ângulo interno de um triângulo."
+  }
+ },
+ "2023-144": {
+  "certa": "O produto I cresce 10 por mês: 100 (jun), 110 (jul), 120 (ago). O produto II cai 20 por mês: 150 (jun), 130 (jul), 110 (ago). Em agosto, I (120) supera II (110) pela primeira vez. A produção de II para no mês seguinte: setembro.",
+  "erradas": {
+   "A": "Em junho, I (100) ainda vende menos que II (150).",
+   "B": "Em julho, I (110) ainda vende menos que II (130).",
+   "C": "Agosto é o mês em que I supera II, e a produção só para no mês seguinte.",
+   "E": "Em outubro a produção já teria sido interrompida."
+  }
+ },
+ "2023-145": {
+  "certa": "A moda é 3 viagens (55 motoristas, a maior barra). A mediana, em 160 motoristas, é a média do 80º e do 81º: com 10, 10, 55 e 25 motoristas nas viagens 1 a 4, os acumulados são 10, 20, 75 e 100, então ambos estão em 4 viagens. A média é (10 + 20 + 165 + 100 + 300 + 70) ÷ 160 ≈ 4,16. Assim, moda (3) < mediana (4) < média (4,16).",
+  "erradas": {
+   "A": "A moda não é a maior das três medidas.",
+   "B": "A mediana (4) não é igual à moda (3).",
+   "C": "A moda é a menor das três, e não a maior.",
+   "D": "A mediana (4) é menor que a média (4,16), e não maior."
+  }
+ }
+}

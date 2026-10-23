@@ -1,0 +1,110 @@
+{
+ "2020-106": {
+  "certa": "Para medir a corrente de fuga, o amperímetro deve ficar em série com o circuito do veículo, de modo que toda a corrente passe por ele. A bateria de 60 Ah descarrega em 5 dias (120 h) com corrente média de 60 ÷ 120 = 0,5 A. Na figura B, um fio do circuito vai direto a um terminal da bateria e o outro passa pelo amperímetro antes de chegar ao outro terminal, e a leitura é 0,5 A.",
+  "erradas": {
+   "A": "A leitura de 0,5 A é a esperada, mas o amperímetro está ligado diretamente nos terminais da bateria, em paralelo, e não em série com o circuito.",
+   "C": "A leitura de 2,5 A não é compatível com a descarga de 60 Ah em 5 dias, que dá 0,5 A.",
+   "D": "A leitura de 12 A não é compatível com uma corrente de fuga, e a ligação não está em série.",
+   "E": "A leitura de 12 A não é compatível com uma corrente de fuga, e a ligação não está em série."
+  }
+ },
+ "2020-136": {
+  "certa": "O lucro é receita − custo. Pelo gráfico: em 5 itens, 5 − 5 = 0; em 10, 25 − 45 = −20; em 15, 40 − 40 = 0; em 25, 50 − 10 = +40; em 30, 45 − 35 = +10. O gráfico A passa por esses pontos.",
+  "erradas": {
+   "B": "Mostra lucro positivo no início e negativo no fim, o inverso do que ocorre.",
+   "C": "Mostra o lucro sempre positivo, mas entre 5 e 15 itens o custo supera a receita.",
+   "D": "É o gráfico do custo, e não do lucro.",
+   "E": "É o gráfico da receita, e não do lucro."
+  }
+ },
+ "2020-137": {
+  "certa": "As três projeções ortogonais (parede esquerda, parede direita e piso) devem corresponder ao mesmo sólido de quatro cubos. Só na figura E as sombras nos três planos são coerentes com o sólido da figura.",
+  "erradas": {
+   "A": "Pelo menos uma das projeções nas paredes ou no piso não corresponde às faces do sólido.",
+   "B": "Pelo menos uma das projeções nas paredes ou no piso não corresponde às faces do sólido.",
+   "C": "Pelo menos uma das projeções nas paredes ou no piso não corresponde às faces do sólido.",
+   "D": "Pelo menos uma das projeções nas paredes ou no piso não corresponde às faces do sólido."
+  }
+ },
+ "2020-140": {
+  "certa": "O computador A informa X litros por 100 km. Em quilômetros por litro (computador B), o veículo percorre 100 km com X litros, ou seja, 100 ÷ X km por litro. Esse é o valor mostrado no tipo B, que é o inverso do consumo por quilômetro.",
+  "erradas": {
+   "A": "X · 100 daria os litros gastos em 10.000 km, e não os km por litro.",
+   "B": "X/100 é o consumo em litros por quilômetro, o que o tipo A já informa.",
+   "D": "1/X é o inverso de X, sem considerar os 100 km.",
+   "E": "1 · X = X é só o consumo em 100 km, o próprio valor do tipo A."
+  }
+ },
+ "2020-149": {
+  "certa": "O ônibus tem 42 assentos e 16 estão em preto (vendidos). A razão entre vendidos e o total é 16/42.",
+  "erradas": {
+   "B": "16/26 compara vendidos com disponíveis (26), e não com o total de 42.",
+   "C": "26/42 é a razão de assentos disponíveis para o total, e não dos vendidos.",
+   "D": "42/26 é a razão do total para os disponíveis.",
+   "E": "42/16 é a razão do total para os vendidos, a inversa da pedida."
+  }
+ },
+ "2020-159": {
+  "certa": "O telhado da Figura 2 tem três caídas: duas grandes (para cima e para baixo na planta) e uma lateral menor, em forma de triângulo, de um só lado. A planta B mostra as setas para cima, para baixo e para a esquerda, com o triângulo no lado esquerdo.",
+  "erradas": {
+   "A": "Tem apenas duas setas (duas caídas) e a divisão lateral sem escoamento indicado.",
+   "C": "Tem a caída lateral separada do retângulo central, e o telhado da figura é contínuo.",
+   "D": "Tem quatro caídas de água (telhado de quatro águas).",
+   "E": "Tem quatro caídas de água (telhado de quatro águas), duas laterais."
+  }
+ },
+ "2020-163": {
+  "certa": "Orlando (1º), Gustavo e Luana (2º e 3º), Teresa (4º), Márcia (5º), Roberto (6º). Os quatro idosos de 75 anos (Heloísa, Marisa, Pedro e João) ocupam, em ordem sorteada, as posições 7 a 10. A chance de João ficar na 7ª posição é 1/4.",
+  "erradas": {
+   "A": "1/12 seria a chance se todos os 12 fossem sorteados, mas as idades já definem as posições.",
+   "B": "7/12 não decorre do sorteio entre os 4 de 75 anos.",
+   "C": "1/8 não decorre do sorteio entre os 4 de 75 anos.",
+   "D": "5/6 não decorre do sorteio entre os 4 de 75 anos."
+  }
+ },
+ "2020-166": {
+  "certa": "O primeiro quadrado tem lado 1, e cada novo quadrado tem lado igual à metade do anterior: 1, 1/2, 1/4, ... O n-ésimo quadrado tem lado (1/2)^(n−1). O centésimo tem lado (1/2)^99.",
+  "erradas": {
+   "A": "(1/2)^100 seria o lado do 101º quadrado.",
+   "C": "(1/2)^97 seria o lado do 98º quadrado.",
+   "D": "(1/2)^(−98) = 2^98 é um número enorme, e os lados diminuem.",
+   "E": "(1/2)^(−99) = 2^99 é um número enorme, e os lados diminuem."
+  }
+ },
+ "2020-168": {
+  "certa": "Volumes iguais: πR²·hA = πr²·hB, com hB = 0,25·hA. Então R² = r² × 0,25, ou r² = 4R², e r = 2R.",
+  "erradas": {
+   "A": "R/2 resultaria se a altura de B fosse quatro vezes a de A.",
+   "C": "4R seria o raio se a altura de B fosse 1/16 da de A.",
+   "D": "5R não decorre da relação entre volumes.",
+   "E": "16R não decorre da relação entre volumes."
+  }
+ },
+ "2020-170": {
+  "certa": "'I AM POTTER' tem 9 letras: 4 vogais (I, A, O, E) e 5 consoantes (M, P, T, T, R). Para alternar, com mais consoantes, o padrão é C V C V C V C V C. As consoantes permutam em 5!/2 (o T repete) e as vogais em 4!. O total é 4! · 5!/2.",
+  "erradas": {
+   "A": "9! conta todas as permutações, sem exigir alternância.",
+   "B": "4! 5! não divide por 2 pela repetição do T.",
+   "C": "2 × 4! 5! multiplica por 2 em vez de dividir pela repetição do T.",
+   "D": "9!/2 não exige que vogais e consoantes alternem."
+  }
+ },
+ "2020-173": {
+  "certa": "A vazão é constante, então o volume cresce linearmente com o tempo. Na parte larga da garrafa (cilindro), a altura sobe a uma taxa constante (reta). Perto do gargalo, a seção diminui, e a altura sobe cada vez mais rápido. O gráfico é o B.",
+  "erradas": {
+   "A": "Mostra a altura crescendo a taxa constante o tempo todo, mas o gargalo afina.",
+   "C": "Mostra a altura subindo cada vez mais devagar, como se a seção aumentasse.",
+   "D": "Mostra uma curva que cresce desde o início, mas a parte larga da garrafa dá crescimento constante.",
+   "E": "Mostra crescimento rápido no início, como se a base fosse estreita, o contrário da garrafa."
+  }
+ },
+ "2020-177": {
+  "certa": "O capital total é 4 + 6 + 6 = 16 partes. Cada sócio deve ficar com 16/3. Antônio precisa de 16/3 − 4 = 4/3, e comprará 2/3 de cada sócio. Esse valor é 2/3 de 6, ou seja, (2/3)/6 = 1/9 do capital de cada um.",
+  "erradas": {
+   "A": "1/2 de 6 seria 3, o que passa do necessário (2/3 de parte de cada).",
+   "B": "1/3 de 6 seria 2, mais que os 2/3 necessários de cada sócio.",
+   "D": "2/3 é a quantidade em partes tirada de cada sócio, e não a fração do capital dele.",
+   "E": "4/3 é o total que Antônio precisa, e não a fração de cada sócio."
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "2021-035": {
+  "certa": "No diálogo, os personagens tentam descobrir quem é a dama a partir do estado civil ('é viúva? casada? solteira?'), do marido e da profissão que ela não exerce. A identidade e o lugar da mulher são referendados pelo homem.",
+  "erradas": {
+   "A": "A esmola é só o fato que inicia a conversa, e os personagens não a tratam como forma de dignificar-se.",
+   "B": "A idade e a conservação do corpo aparecem como curiosidade, e não como preservação da juventude por estilo de vida.",
+   "C": "Não há condicionamento do bem-estar à estabilidade do casamento.",
+   "E": "Os personagens procuram a profissão dela, excluindo as possibilidades, e não dizem que renunciou ao trabalho."
+  }
+ },
+ "2021-036": {
+  "certa": "Hazoumé usa recipientes plásticos descartados para criar máscaras, mudando a função desses objetos (de lixo a obra de arte). A obra denota o reposicionamento estético de objetos por meio da mudança de função.",
+  "erradas": {
+   "A": "A combinação de materiais não empobrece o valor artístico da obra.",
+   "C": "A obra não convida os espectadores a completar nada, e as máscaras 'não foram feitas para serem usadas'.",
+   "D": "A obra tem crítica ambiental, mas o enunciado pede o procedimento artístico, e não só a militância.",
+   "E": "O texto fala do uso de lixo como escolha e crítica, e não de precariedade de produção."
+  }
+ },
+ "2021-037": {
+  "certa": "A letra lista ordens ('você deve estampar um ar de alegria', 'baixar a cabeça', 'dizer muito obrigado') e promete 'diploma de bem-comportado'. O tom irônico mostra que a canção ironiza a incorporação de ideias e atitudes conformistas diante da ditadura.",
+  "erradas": {
+   "B": "A canção critica a obediência, e não busca convencer sobre os deveres cívicos.",
+   "C": "A menção ao juízo final é irônica, e não relaciona religião à solução de problemas.",
+   "D": "O carnaval é mencionado como distração, mas o objetivo da canção é criticar o conformismo.",
+   "E": "A canção critica quem não reage aos valores dominantes, em vez de defender a indiferença."
+  }
+ },
+ "2021-038": {
+  "certa": "O eu lírico pede ao outro que mande dizer ('É lua cheia, a casa está vazia'), evoca a memória (brilho das marés, peixes rosados, pés molhados) e termina com a esperança de se rever 'revestida de luz'. O desejo remete a um sonho de realização desenhado pela memória.",
+  "erradas": {
+   "A": "O eu lírico é esperançoso quanto ao reencontro, e não cético.",
+   "B": "O poema não manifesta tédio, e sim desejo e lembrança.",
+   "D": "O poema não julga quem se afasta, apenas pede notícias.",
+   "E": "Não há questionamento do significado do amor ausente."
+  }
+ },
+ "2021-039": {
+  "certa": "As marcas informais são 'falação' (forma coloquial para falatório) e 'pros bailes' (contração de 'para os', típica da fala).",
+  "erradas": {
+   "B": "'Você' é muito usado na fala, mas está na norma, e 'teatro de revista' é um termo formal.",
+   "C": "'Perfeito' e 'Carnaval' são palavras da norma-padrão.",
+   "D": "'Bebe bem' e 'oculista' são usos formais.",
+   "E": "'Curar' e 'falso moralista' são usos formais."
+  }
+ }
+}

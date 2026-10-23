@@ -1,0 +1,119 @@
+{
+ "2025-151": {
+  "certa": "Pela planificação, o poliedro tem 1 decágono (a base), 20 triângulos da faixa antiprismática, 5 triângulos e 5 quadrados da cúpula e 1 pentágono. São 1 + 20 + 5 + 5 + 1 = 32 faces. O número de arestas é (10 + 25 × 3 + 5 × 4 + 5) ÷ 2 = 55. Pela relação de Euler (V − A + F = 2): V = 2 + 55 − 32 = 25 vértices.",
+  "erradas": {
+   "A": "21 vértices não satisfaz a relação de Euler com 32 faces e 55 arestas.",
+   "C": "55 é o número de arestas, e não de vértices.",
+   "D": "80 vértices não satisfaz a relação de Euler.",
+   "E": "110 vértices não satisfaz a relação de Euler."
+  }
+ },
+ "2025-155": {
+  "certa": "Lendo as barras em unidades iguais, futebol soma 7 + 6 + 5 = 18, vôlei 3 + 3 + 4 = 10 e basquete 1 + 3 + 4 = 8, um total de 36 unidades. O gráfico de setores mostra que o basquete tem 80 estudantes, então 1 unidade equivale a 10 estudantes. O total é 36 × 10 = 360.",
+  "erradas": {
+   "A": "720 é o dobro do total, e resulta de usar 20 estudantes por unidade.",
+   "C": "320 não decorre das 36 unidades de 10 estudantes.",
+   "D": "288 não decorre das 36 unidades de 10 estudantes.",
+   "E": "240 não decorre das 36 unidades de 10 estudantes."
+  }
+ },
+ "2025-156": {
+  "certa": "Seja v a velocidade do barco. O ponto T difere do destino R só pelo primeiro deslocamento: T − R = 4v · (u₃₄₀ − u₁₁₀). O ângulo entre as direções 110 e 340 é 130°. Pela lei dos cossenos, |u₁₁₀ − u₃₄₀|² = 2 − 2cos130° = 2 + 2cos50° = 2 + 1,28 = 3,28, então o módulo vale cerca de 1,81 e o tempo é 4 × 1,81 ≈ 7,2 h, ou 7 h 15 min. O vetor de T para R aponta para o sudeste, direção 135.",
+  "erradas": {
+   "B": "A direção 45 aponta para o nordeste, e o ponto R está a sudeste de T.",
+   "C": "12 horas é um tempo maior que o necessário, e não decorre da lei dos cossenos.",
+   "D": "6 horas não decorre do módulo do vetor de correção (cerca de 7,2 h).",
+   "E": "A direção 45 e 6 horas erra o sentido e o tempo."
+  }
+ },
+ "2025-157": {
+  "certa": "O grupo 4 tem média 25 e desvio padrão 1, ou seja, as idades são muito próximas de 25. Com desvio padrão tão pequeno, nenhuma das 11 mulheres pode estar fora do intervalo de 20 a 30 anos. O grupo 4 certamente atende ao critério.",
+  "erradas": {
+   "A": "O grupo 1 tem média 25, mas desvio padrão 10, com idades muito dispersas.",
+   "B": "O grupo 2 tem mediana 25, mas desvio padrão 9. Pode haver muitas idades fora do intervalo.",
+   "C": "O grupo 3 tem moda 25, que pode ser repetida poucas vezes, sem garantir a maioria.",
+   "E": "O grupo 5 só tem a idade mínima (20) e a máxima (35), que não garantem a maioria."
+  }
+ },
+ "2025-158": {
+  "certa": "Com pace de 281 s/km em 5 km, o tempo total é 5 × 281 = 1.405 s. Nos 4 primeiros trechos ele gastou 1.132 s, então o 5º trecho deve ter 1.405 − 1.132 = 273 s. O 4º trecho levou 288 s, então o 5º deve ser 288 − 273 = 15 s menor.",
+  "erradas": {
+   "A": "1 s não decorre da diferença entre 288 s e 273 s.",
+   "B": "2 s não decorre da diferença entre 288 s e 273 s.",
+   "C": "8 s não decorre da diferença entre 288 s e 273 s.",
+   "D": "9 s não decorre da diferença entre 288 s e 273 s."
+  }
+ },
+ "2025-160": {
+  "certa": "A casa do amigo está no canto noroeste do quarteirão da linha 4, coluna 3. João sai do canto nordeste, vai a oeste, dobra à direita e sobe 3 quarteirões, até a rua ao norte da linha 4, depois dobra à esquerda e passa por dois quarteirões a oeste até a casa. Isso coloca o quarteirão dele três linhas abaixo da linha 4, ou seja, a linha 7, e duas colunas a leste da coluna 3, a coluna 5. Na linha inferior, esse é o quarteirão P.",
+  "erradas": {
+   "B": "Q está na linha superior e não é o quarteirão de onde o trajeto descrito leva até a casa do amigo.",
+   "C": "R está na coluna 1, na linha inferior, e não na coluna 5.",
+   "D": "S está na linha 4, na coluna 5, e o trajeto descrito parte de uma linha três quarteirões abaixo.",
+   "E": "T está na coluna 6 da linha inferior, e não na coluna 5."
+  }
+ },
+ "2025-163": {
+  "certa": "No desenho, a medida indicada é 20 cm, e na obra ela passa a ser 30 m = 3.000 cm. A escala é 20 ÷ 3.000 = 1 ÷ 150, ou seja, 1 : 150.",
+  "erradas": {
+   "A": "1 : 1,5 resulta de dividir 30 por 20 sem converter metros em centímetros.",
+   "B": "1 : 2,25 não decorre da razão entre 20 cm e 3.000 cm.",
+   "C": "1 : 10 não decorre da razão entre 20 cm e 3.000 cm.",
+   "D": "1 : 100 corresponderia a uma obra de 20 m, e não de 30 m."
+  }
+ },
+ "2025-168": {
+  "certa": "O quadrado ABCD está inscrito no círculo de diâmetro 6 cm, então sua diagonal é 6 cm e sua área é 6² ÷ 2 = 18 cm². Com espessura de 0,3 cm, o volume do cilindro é 3,1 × 3² × 0,3 = 8,37 cm³ e o do prisma é 18 × 0,3 = 5,4 cm³. O ouro de cada medalha é 8,37 − 5,4 = 2,97 cm³, e 100 medalhas usam 297 cm³.",
+  "erradas": {
+   "A": "288 cm³ resulta de um erro no volume do cilindro ou do prisma.",
+   "C": "567 cm³ resulta de um erro nas unidades (3 mm tratados como 0,5 cm, por exemplo).",
+   "D": "990 cm³ resulta de um erro nas unidades de espessura.",
+   "E": "1.134 cm³ resulta de um erro nas unidades de espessura."
+  }
+ },
+ "2025-171": {
+  "certa": "A cada rodada, o jogador na posição 1 transfere 1 moeda e recebe 4, ganhando 3 moedas. Após n rodadas, ele tem 100 + 3n.",
+  "erradas": {
+   "A": "103 + 4n parte de 103 moedas e soma 4 por rodada, o que ignora que ele também transfere 1.",
+   "B": "103 + 3n parte de 103 moedas, valor que só valeria depois da primeira rodada.",
+   "C": "100 + 4n ignora que ele também transfere 1 moeda a cada rodada.",
+   "E": "99 + 4n ignora o saldo líquido de 3 moedas por rodada."
+  }
+ },
+ "2025-172": {
+  "certa": "Em 60 km/h, o GNV rende 10 km/m³ e a gasolina, 8 km/L. Cada metade tem 120 km. O consumo de GNV é 120 ÷ 10 = 12 m³, a R$ 2,00: R$ 24,00. O de gasolina é 120 ÷ 8 = 15 L, a R$ 3,00: R$ 45,00. A diferença é 45 − 24 = R$ 21,00.",
+  "erradas": {
+   "A": "R$ 4 não decorre dos consumos obtidos dos gráficos.",
+   "B": "R$ 8 não decorre dos consumos obtidos dos gráficos.",
+   "C": "R$ 14 não decorre dos consumos obtidos dos gráficos.",
+   "E": "R$ 30 não decorre dos consumos obtidos dos gráficos."
+  }
+ },
+ "2025-173": {
+  "certa": "O custo é 20 aulas teóricas + 10 práticas + aluguel. Autoescola I: 200 + 800 + 400 = R$ 1.400. II: 600 + 500 + 200 = R$ 1.300. III: 400 + 400 + 400 = R$ 1.200. O menor é o da autoescola III, R$ 1.200.",
+  "erradas": {
+   "A": "A autoescola I custa R$ 1.400, o maior valor.",
+   "B": "R$ 280 não é o custo total da autoescola II.",
+   "C": "A autoescola II custa R$ 1.300, mais que a III.",
+   "D": "R$ 460 resulta de somar só os valores unitários (20 + 40 + 400), sem multiplicar pelas quantidades."
+  }
+ },
+ "2025-174": {
+  "certa": "O volume da caixa cheia é 2,5 × 1,5 × 2 = 7,5 dm³ = 7,5 L. Para despejar pelo menos 5 L, as garrafas podem ocupar no máximo 2,5 L = 2.500 mL. Como cada garrafa tem 300 mL, cabem 2.500 ÷ 300 ≈ 8,3, ou seja, no máximo 8 garrafas.",
+  "erradas": {
+   "A": "10 garrafas ocupariam 3 L, e a água despejada seria de 4,5 L, abaixo de 5 L.",
+   "C": "4 garrafas é um número menor que o máximo possível.",
+   "D": "3 garrafas é um número menor que o máximo possível.",
+   "E": "2 garrafas é um número menor que o máximo possível."
+  }
+ },
+ "2025-177": {
+  "certa": "No Projeto 1, os dois túneis são semicírculos: o de automóveis tem diâmetro 12 m (área 3 × 6² ÷ 2 = 54 m²) e o de bicicletas, 6 m (3 × 3² ÷ 2 = 13,5 m²), somando 67,5 m². No Projeto 2, a largura é 3 + 6 + 6 + 3 = 18 m, o raio é 9 m e a área é 3 × 9² ÷ 2 = 121,5 m². A menor área é a do Projeto 1.",
+  "erradas": {
+   "B": "O Projeto 2 tem área de 121,5 m², maior que a do Projeto 1.",
+   "C": "135 m² é o dobro de 67,5 m², e resulta de contar duas vezes a seção do Projeto 1.",
+   "D": "243 m² é o dobro de 121,5 m², e resulta de contar duas vezes a seção do Projeto 2.",
+   "E": "As áreas são diferentes: 67,5 m² e 121,5 m²."
+  }
+ }
+}

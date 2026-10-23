@@ -1,0 +1,56 @@
+{
+ "2021-147": {
+  "certa": "A caneca é um tronco de cone com R = 5 cm, r = 4 cm e h = 12 cm. V = (πh/3)(R² + Rr + r²) = (3·12/3)(25 + 20 + 16) = 12 × 61 = 732 cm³ = 732 mL.",
+  "erradas": {
+   "A": "216 mL não decorre da fórmula do tronco de cone.",
+   "B": "408 mL não decorre da fórmula do tronco de cone.",
+   "D": "2.196 mL é o triplo de 732 mL, e resulta de esquecer o fator 1/3.",
+   "E": "2.928 mL é quatro vezes 732 mL, e não decorre da fórmula."
+  }
+ },
+ "2021-148": {
+  "certa": "O limite é R$ 0,80 ÷ R$ 0,01 = 80 cm². Áreas: triângulo = (√3/4)·144 = 36 × 1,7 = 61,2; quadrado = 64; retângulo = 88 (passa); hexágono = 6 × (√3/4) × 36 = 91,8 (passa); círculo = 3 × 5² = 75. Dentro do limite, a maior é a do círculo (75 cm²).",
+  "erradas": {
+   "A": "O triângulo tem 61,2 cm², menos que o círculo.",
+   "B": "O quadrado tem 64 cm², menos que o círculo.",
+   "C": "O retângulo tem 88 cm², o que custa R$ 0,88, acima do limite.",
+   "D": "O hexágono tem 91,8 cm², o que custa R$ 0,92, acima do limite."
+  }
+ },
+ "2021-149": {
+  "certa": "O módulo volumétrico é proporcional a v² · ρ, com constante adimensional. A unidade é (m/s)² · (kg/m³) = m²·s⁻² · kg·m⁻³ = kg·m⁻¹·s⁻².",
+  "erradas": {
+   "A": "kg·m⁻²·s⁻¹ não resulta do produto de v² por ρ.",
+   "C": "kg·m⁻⁵·s² erra os expoentes de m e s.",
+   "D": "kg⁻¹·m·s² é o inverso da unidade correta.",
+   "E": "kg⁻¹·m⁵·s⁻² não resulta do produto de v² por ρ."
+  }
+ },
+ "2021-151": {
+  "certa": "O consumo anterior era 20 ÷ 16 = 1,25 L a cada 20 km. O novo motor economiza 0,1 L, então consome 1,15 L a cada 20 km, ou 20 ÷ 1,15 ≈ 17,4 km/L.",
+  "erradas": {
+   "A": "15,9 não decorre de 20 ÷ 1,15.",
+   "B": "16,1 resulta de somar uma fração pequena a 16 sem fazer a conversão correta.",
+   "C": "16,4 resulta de somar uma fração pequena a 16 sem fazer a conversão correta.",
+   "E": "18,0 corresponderia a um consumo de 1,11 L a cada 20 km."
+  }
+ },
+ "2021-152": {
+  "certa": "Dobrando o comprimento e a largura e mantendo a altura, a área do piso (a·b) fica 4 vezes maior. A área das paredes, 2(a+b)·h, fica 2 vezes maior, pois (a+b) dobra. A resposta adequada é: dobro para as paredes e quatro vezes para o piso, o fornecedor II.",
+  "erradas": {
+   "A": "Diz o dobro para o piso, mas a área do piso quadruplica.",
+   "C": "Diz quatro vezes para as paredes, mas a área das paredes só dobra.",
+   "D": "Diz quatro vezes para as paredes e o dobro para o piso, o inverso do correto.",
+   "E": "Diz oito vezes para as paredes, mas a área delas só dobra."
+  }
+ },
+ "2021-153": {
+  "certa": "O consumo em 7 dias é 100 × 120 × 7 = 84.000 L = 84 m³. A base tem raio 2,5 m: área = 3 × 2,5² = 18,75 m². A altura mínima é 84 ÷ 18,75 = 4,48 m.",
+  "erradas": {
+   "A": "1,12 m resulta de usar o consumo de um dia e o diâmetro como raio.",
+   "B": "3,10 m não decorre da divisão do volume pela área da base.",
+   "C": "4,35 m não decorre da divisão do volume pela área da base.",
+   "E": "5,60 m corresponde a 8 dias de consumo, e o reservatório precisa atender sete."
+  }
+ }
+}

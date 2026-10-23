@@ -1,0 +1,47 @@
+{
+ "2021-071": {
+  "certa": "O texto descreve a destruição das rochas, o transporte dos produtos pela água, vento e gelo e seu depósito em regiões baixas, formando pacotes rochosos. É o ciclo sedimentar: erosão, transporte e deposição.",
+  "erradas": {
+   "B": "A instabilidade sísmica envolve terremotos, o que o texto não trata.",
+   "C": "O intemperismo biológico é só a destruição das rochas por seres vivos, sem o transporte e a deposição.",
+   "D": "O derramamento basáltico é um processo vulcânico, e o texto fala de sedimentos.",
+   "E": "A compactação superficial não descreve o conjunto do processo."
+  }
+ },
+ "2021-072": {
+  "certa": "O texto defende mecanismos de inclusão de interesses de toda a sociedade nos planos diretores participativos. O fortalecimento das associações de bairro dá voz às camadas menos favorecidas e promove a participação social.",
+  "erradas": {
+   "A": "A redução de impostos municipais não promove a participação social.",
+   "B": "A privatização de espaços públicos reduz o acesso e a participação.",
+   "C": "O adensamento de áreas comerciais é uma medida de uso do solo, e não de participação.",
+   "D": "A valorização de condomínios fechados segrega e não promove a participação."
+  }
+ },
+ "2021-073": {
+  "certa": "O texto diz que, ao contrário do que os inimigos imaginavam, 'ao ruído do estampido não se seguiu o silêncio'. O suicídio de Vargas em 1954 provocou comoção e a reação popular, que reverteu a crise e frustrou o golpe.",
+  "erradas": {
+   "B": "Os militares pressionavam por sua saída antes, mas o suicídio da repercussão imediata não foi intervenção militar.",
+   "C": "A abertura democrática ocorreu em 1945, e o evento de 1954 é posterior.",
+   "D": "O anticomunismo foi usado antes, como na Intentona e no Plano Cohen, e não como repercussão imediata.",
+   "E": "A repercussão imediata foi o recuo da oposição diante da comoção popular."
+  }
+ },
+ "2021-074": {
+  "certa": "A ordem de D. João V bania ciganos, proibia o uso da língua habitual e pedia que ela desaparecesse. O tratamento da identidade cultural era pautado em suprimir formas divergentes de interação social.",
+  "erradas": {
+   "A": "O texto não trata de conversão religiosa.",
+   "C": "O texto não trata de evitar o envolvimento estrangeiro na economia.",
+   "D": "O texto não trata de revoltas nativistas.",
+   "E": "O texto trata dos ciganos, e não de comunidades autóctones."
+  }
+ },
+ "2021-075": {
+  "certa": "O texto diz que os jesuítas exerceram uma medicina híbrida, unindo a prática europeia à terapêutica indígena com a flora nativa, e que aprenderam na prática diária. A prática se caracterizava pela conjugação de saberes empíricos.",
+  "erradas": {
+   "A": "O texto não trata de rituais místicos.",
+   "B": "O texto não fala de rejeição dos dogmas cristãos.",
+   "C": "O texto mostra a incorporação da tradição popular, e não sua superação.",
+   "D": "O texto mostra a combinação dos dois saberes, e não a imposição de um deles."
+  }
+ }
+}

@@ -1,0 +1,155 @@
+{
+ "2024-152": {
+  "certa": "A reta de tendência passa por cerca de 4 milhões em 2014 e por 6 milhões em 2020, ou seja, sobe 2 milhões em 6 anos (1/3 por ano). Em 2026, seis anos depois, a reta estará em 6 + 2 = 8 milhões de reais.",
+  "erradas": {
+   "A": "7 milhões corresponde a menos que a tendência da reta para 2026.",
+   "C": "9 milhões corresponde a mais que a tendência da reta para 2026.",
+   "D": "10 milhões corresponde a mais que a tendência da reta para 2026.",
+   "E": "11 milhões corresponde a mais que a tendência da reta para 2026."
+  }
+ },
+ "2024-154": {
+  "certa": "Os tempos do quadro são 36, 17, 27, 13, 13 e 13 minutos. A soma é 119 e a média é 119 ÷ 6 ≈ 19,8 minutos.",
+  "erradas": {
+   "A": "13,0 é a moda (o valor mais frequente), e não a média.",
+   "B": "15,0 não é a média dos seis valores.",
+   "D": "20,0 é um arredondamento que não corresponde à média com uma casa decimal.",
+   "E": "23,3 resulta de somar errado ou de não incluir todos os valores."
+  }
+ },
+ "2024-155": {
+  "certa": "Com π = 3, a área do setor é (α/360) × 3 × R². Tipo I: (15/360)·3·400 = 50 m². Tipo II: (30/360)·3·484 = 121 m². Tipo III: (40/360)·3·144 = 48 m². Tipo IV: (60/360)·3·256 = 128 m². Tipo V: (90/360)·3·100 = 75 m². A menor área que cobre pelo menos 70 m² é a do tipo V, que é também o de menor preço entre os que atendem.",
+  "erradas": {
+   "A": "O tipo I cobre só 50 m².",
+   "B": "O tipo II cobre 121 m², mais que o necessário e mais caro que o V.",
+   "C": "O tipo III cobre só 48 m².",
+   "D": "O tipo IV cobre 128 m², mais que o necessário e mais caro que o V."
+  }
+ },
+ "2024-158": {
+  "certa": "O fluxo é proporcional à vazão (mL/s) e inversamente proporcional à área (cm²). Sua unidade é (mL/s) ÷ cm² = mL/(cm²·s).",
+  "erradas": {
+   "A": "mL·s·cm² multiplica as unidades, em vez de dividir a vazão pela área.",
+   "B": "(mL/s)·cm² multiplica a vazão pela área, e o fluxo é inversamente proporcional a ela.",
+   "D": "cm²·s/mL é o inverso da unidade correta.",
+   "E": "cm²/(mL·s) é o inverso da unidade correta."
+  }
+ },
+ "2024-159": {
+  "certa": "Para 20 ha: só tipo A, 20 ÷ 0,5 = 40 L, que custam 40 × 4,20 = R$ 168,00 e dão a máscara (compra de ao menos 35 L). Só tipo B, 20 ÷ 0,4 = 50 L, que custam R$ 150,00 mais R$ 12,50 da máscara, ou R$ 162,50. Misturando 35 L do tipo A (R$ 147,00, cobrem 17,5 ha) e 6,25 L do tipo B (R$ 18,75) dá R$ 165,75. O mínimo é R$ 162,50.",
+  "erradas": {
+   "A": "R$ 147,00 é o custo de só 35 L do tipo A, que não cobre os 20 ha.",
+   "B": "R$ 150,00 não inclui a máscara, que é necessária no tipo B.",
+   "D": "R$ 165,75 é o custo da combinação de 35 L do tipo A com o tipo B, mais caro que só o tipo B.",
+   "E": "R$ 168,00 é o custo só do tipo A, mais caro que o tipo B."
+  }
+ },
+ "2024-161": {
+  "certa": "Administrativo (80): 20% = 16, 30% = 24, 50% = 40. Logística (120): 25% = 30, 40% = 48, 35% = 42. Produção (200): 40% = 80, 35% = 70, 25% = 50. Até 25 anos: 16 + 30 + 80 = 126. Entre 25 e 45: 24 + 48 + 70 = 142. A partir de 45: 40 + 42 + 50 = 132. A faixa com mais funcionários é a de 25 a 45 anos.",
+  "erradas": {
+   "B": "A conclusão é correta, mas a justificativa não: a faixa de 25 a 45 anos não é a única com porcentagens maiores que as mínimas de cada setor.",
+   "C": "A faixa até 25 anos tem 126 funcionários, menos que a de 25 a 45 anos.",
+   "D": "A faixa até 25 anos tem mais funcionários só em Produção, mas no total tem menos.",
+   "E": "Somar porcentagens de setores de tamanhos diferentes não dá a quantidade de funcionários."
+  }
+ },
+ "2024-162": {
+  "certa": "Na projeção sobre a base: A fica no canto do fundo, na parede direita; B e C, na parede esquerda, um sobre o outro (BC é vertical e vira um ponto); D e E, na parede direita, e DE é um segmento ao longo dela; F fica na frente, sobre a base. A projeção é: A → B (da direita à esquerda), B → D (da esquerda à direita, na diagonal), D → E (segmento ao longo da parede direita) e E → F (diagonal para a frente), como na alternativa C.",
+  "erradas": {
+   "A": "Mostra segmentos horizontais que não existem na trajetória.",
+   "B": "Não mostra o segmento DE ao longo da parede direita.",
+   "D": "Mostra um segmento extra na parede esquerda, mas BC é vertical e se projeta em um ponto.",
+   "E": "Mostra segmentos horizontais que não existem na trajetória."
+  }
+ },
+ "2024-163": {
+  "certa": "A hemácia mede 0,007 mm = 7 µm, e o olho vê no mínimo 100 µm. A ampliação mínima é 100 ÷ 7 ≈ 14,3 vezes. Com a ocular de 10 vezes, a objetiva precisa ampliar pelo menos 1,43 vez. Entre as lentes, a de menor ampliação que atende é a I, de 2 vezes.",
+  "erradas": {
+   "B": "A lente II (10 vezes) serve, mas não é a de menor ampliação.",
+   "C": "A lente III (15 vezes) serve, mas não é a de menor ampliação.",
+   "D": "A lente IV (1,1 vez) dá aumento total de 11 vezes, abaixo de 14,3.",
+   "E": "A lente V (1,4 vez) dá aumento total de 14 vezes, ainda abaixo de 14,3."
+  }
+ },
+ "2024-165": {
+  "certa": "Os dois algarismos distintos são escolhidos entre 1, 2, 5, 7 e 0: 5 × 4 = 20 possibilidades. As letras disponíveis vêm das teclas 2 (ABC), 5 (JKL) e 7 (PQRS): 3 + 3 + 4 = 10 letras. Três letras diferentes, em ordem: 10 × 9 × 8 = 720. O total é 20 × 720 = 14.400.",
+  "erradas": {
+   "A": "11.520 não decorre de 20 × 720.",
+   "C": "18.000 resulta de contar 25 pares de algarismos, o que permitiria repetição.",
+   "D": "312.000 não decorre da contagem.",
+   "E": "390.000 não decorre da contagem."
+  }
+ },
+ "2024-166": {
+  "certa": "Um enfeite usa 2 unidades de X e 1 de Y. Loja I: 2 × 3,00 + 1,00 = R$ 7,00. Loja II: 2 × 2,00 + 4,00 = R$ 8,00. A compra deve ser na loja I, por R$ 7,00.",
+  "erradas": {
+   "B": "R$ 4,00 é o preço do componente Y na loja II, e não o valor do enfeite.",
+   "C": "O valor do enfeite na loja II é R$ 8,00, e não R$ 6,00.",
+   "D": "O menor preço de um componente isolado não define o menor valor do enfeite.",
+   "E": "A loja II tem o X mais barato, mas o enfeite sai mais caro por causa do Y."
+  }
+ },
+ "2024-168": {
+  "certa": "Com a grandeza I de 1 a 3, a grandeza II varia de 1,5 (em I = 1) a 3,5 (em I = 3), pelos segmentos do primeiro gráfico. No segundo gráfico, III = 4 − II de 0 a 3 e III = 1 + 2(II − 3) de 3 a 4. Em II = 1,5, III = 2,5. Em II = 3, III = 1. Em II = 3,5, III = 2. O máximo é 2,5.",
+  "erradas": {
+   "A": "1,0 é o menor valor de III, em II = 3.",
+   "C": "3,0 ocorre para II = 4, que não é atingido com I entre 1 e 3.",
+   "D": "3,5 não é atingido no intervalo considerado.",
+   "E": "4,0 ocorre em II = 0, que não é atingido com I entre 1 e 3."
+  }
+ },
+ "2024-171": {
+  "certa": "O trapézio retângulo tem o lado PS como eixo, com as bases PQ (menor) e SR (maior) perpendiculares a ele. Ao girar, as bases geram dois círculos de raios diferentes e o lado oblíquo QR gera a superfície lateral. O sólido é um tronco de cone.",
+  "erradas": {
+   "A": "Um cone resultaria de girar um triângulo retângulo.",
+   "B": "Um cilindro resultaria de girar um retângulo.",
+   "C": "Uma pirâmide não é um sólido de revolução.",
+   "E": "Um tronco de pirâmide não é um sólido de revolução."
+  }
+ },
+ "2024-173": {
+  "certa": "A fileira de colunas atravessa o lado de 3 m = 300 cm, e os vãos não podem passar de 15 cm. Com n colunas de diâmetro d, a condição é n·d + (n + 1)·15 ≥ 300. Loja I (d = 10): n ≥ 11,4, então 12 colunas, R$ 720. Loja II (d = 20): n ≥ 8,1, então 9 colunas, R$ 630. Loja III (d = 24): n ≥ 7,3, então 8 colunas, R$ 600. Loja IV (d = 30): n ≥ 6,3, então 7 colunas, R$ 630. Loja V (d = 40): n ≥ 5,2, então 6 colunas, R$ 720. O menor valor é o da loja III.",
+  "erradas": {
+   "A": "A loja I exige 12 colunas e custa R$ 720.",
+   "B": "A loja II exige 9 colunas e custa R$ 630.",
+   "D": "A loja IV exige 7 colunas e custa R$ 630.",
+   "E": "A loja V exige 6 colunas e custa R$ 720."
+  }
+ },
+ "2024-175": {
+  "certa": "Lendo o gráfico: em junho de 2009, exportações ≈ 14,5 e importações ≈ 10, então S1 ≈ +4,5. Em janeiro de 2010, exportações ≈ 11,3 e importações ≈ 11,6, então S2 ≈ −0,3. Em junho de 2010, 17,1 − 14,8 = S3 = +2,3. Do maior ao menor: S1, S3, S2.",
+  "erradas": {
+   "B": "S2 é o menor dos três, e não o maior.",
+   "C": "S2 é o menor dos três, e não o maior.",
+   "D": "S1 (≈ 4,5) é maior que S3 (2,3).",
+   "E": "S3 não é maior que S1, e S2 é o menor dos saldos."
+  }
+ },
+ "2024-178": {
+  "certa": "Calculando cada posição: I, 4^(1/2) = 2; II, 4 1/2 = 4,5; III, 10/45 = 2/9; IV, 18/4 = 4,5; V, 4,5; VI, 4/5 = 0,8. As três quantidades iguais (4,5) estão nas posições II, IV e V.",
+  "erradas": {
+   "A": "A posição I vale 2, e não 4,5.",
+   "C": "A posição III vale 2/9, e não 4,5.",
+   "D": "As posições III e VI não valem 4,5.",
+   "E": "As posições III e VI não valem 4,5."
+  }
+ },
+ "2024-179": {
+  "certa": "Em t = 0, T = 100, então a + 80 = 100 e a = 20. Em t = 20, T = 40, então 20 + 80·b²⁰ = 40, b²⁰ = 0,25 = (0,5)², e b = (0,5)^(2/20) = (0,5)^(1/10).",
+  "erradas": {
+   "A": "b = log(0,5) é negativo e não satisfaz T(20) = 40.",
+   "B": "a = 100 daria T(0) = 180, que não é o valor do gráfico.",
+   "D": "O valor de b não decorre de b²⁰ = 0,25.",
+   "E": "b = 40 daria uma função crescente e não o resfriamento mostrado."
+  }
+ },
+ "2024-180": {
+  "certa": "O cilindro tem volume 3 × 3² × 15 = 405 cm³. O cubo deve ter 80% disso: 0,8 × 405 = 324 cm³. A aresta é ∛324 = ∛(27 × 12) = 3∛12 cm.",
+  "erradas": {
+   "A": "6 cm daria um cubo de 216 cm³.",
+   "B": "18 cm daria um cubo de 5.832 cm³.",
+   "C": "6√6 cm não tem cubo igual a 324.",
+   "D": "6∛6 cm daria um cubo de 1.296 cm³."
+  }
+ }
+}

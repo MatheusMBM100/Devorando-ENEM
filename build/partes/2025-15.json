@@ -1,0 +1,74 @@
+{
+ "2025-136": {
+  "certa": "O comprimento da ciclovia é 2πr = 2 × 3 × 1 km = 6 km = 6.000 m. Cada policial protege o trecho de 200 m para cada lado, ou seja, 400 m. São necessários 6.000 ÷ 400 = 15 policiais.",
+  "erradas": {
+   "A": "4 policiais cobririam só 1.600 m da ciclovia.",
+   "B": "8 policiais cobririam só 3.200 m.",
+   "D": "30 policiais resulta de considerar que cada um protege apenas 200 m, e não 400 m.",
+   "E": "60 policiais protegeriam 100 m cada, e não correspondem ao enunciado."
+  }
+ },
+ "2025-139": {
+  "certa": "Em ordem crescente: 320, 340, 350, 360, 380, 380, 390, 390, 390, 400. Com dez valores, a mediana é a média do 5º e do 6º: (380 + 380) ÷ 2 = 380 MB/s.",
+  "erradas": {
+   "A": "360 é o 4º valor, e não a mediana.",
+   "B": "370 seria a média entre 360 e 380, que não são os valores centrais.",
+   "D": "390 é a moda (o valor que mais se repete), e não a mediana.",
+   "E": "400 é o maior valor."
+  }
+ },
+ "2025-140": {
+  "certa": "O sódio por pacote é: batata chips 3 × 170 = 510 mg; palitos salgados 4 × 501 = 2.004 mg; biscoito multigrãos 8 × 264 = 2.112 mg; biscoito de polvilho 6 × 175 = 1.050 mg; biscoito de água e sal 5 × 166 = 830 mg. O menor é o da batata chips.",
+  "erradas": {
+   "B": "Os palitos salgados têm 2.004 mg por pacote.",
+   "C": "O biscoito multigrãos tem 2.112 mg, o maior valor.",
+   "D": "O biscoito de polvilho tem 1.050 mg por pacote.",
+   "E": "O biscoito de água e sal tem o menor sódio por porção (166 mg), mas 830 mg por pacote, mais que a batata chips."
+  }
+ },
+ "2025-142": {
+  "certa": "O gráfico mostra a frequência constante em f1 até t1. A partir de t1, ela diminui até f2, em t2, e depois permanece constante. O comportamento é de diminuição até t2, e depois torna-se constante.",
+  "erradas": {
+   "A": "A frequência só é constante antes de t1 e depois de t2.",
+   "B": "A frequência diminui com o tempo, e não aumenta, então não é diretamente proporcional.",
+   "C": "O gráfico não mostra uma relação de proporcionalidade inversa.",
+   "E": "Após t2 a frequência é constante e não diminui, e a queda entre t1 e t2 não é uma reta."
+  }
+ },
+ "2025-147": {
+  "certa": "Os vilões estão em T e V. Pelo quadrado, S(6; 2) e V(8; 6) são vértices adjacentes e T é (2; 4). O herói fica equidistante dos vilões sobre a mediatriz de TV. O ponto médio é (5; 5), e a inclinação de TV é 1/3, então a mediatriz tem inclinação −3: y − 5 = −3(x − 5), ou y = −3x + 20. O ponto S (6; 2) pertence à reta.",
+  "erradas": {
+   "B": "y = −3x + 16 tem a inclinação correta, mas não passa pelo ponto médio de TV nem por S.",
+   "C": "y = −3x − 20 não passa pelo ponto médio nem por S.",
+   "D": "y = 3x + 16 tem a inclinação da própria direção de TV (ao inverso), e não da mediatriz.",
+   "E": "y = 3x − 16 tem a inclinação errada para ser perpendicular a TV."
+  }
+ },
+ "2025-148": {
+  "certa": "O estoque total (brasileiro + estrangeiro) é: ficção 80 + 120 = 200 (demanda 160); autoajuda 50 + 80 = 130 (demanda cerca de 135); romance 40 + 105 = 145 (demanda 140); biografia 45 + 50 = 95 (demanda 80). Só a autoajuda tem estoque inferior à demanda.",
+  "erradas": {
+   "A": "A ficção tem a maior demanda, mas o estoque (200) a supera.",
+   "B": "A biografia tem a menor demanda, mas o estoque (95) a supera.",
+   "D": "A biografia tem o menor estoque, mas ele atende a demanda.",
+   "E": "O romance tem o menor estoque de autores brasileiros, mas o estoque total atende a demanda."
+  }
+ },
+ "2025-149": {
+  "certa": "O total de matrículas em 2024 é 280 + 80 + 20 + 20 = 400. Com a distribuição de 2023, o francês tem 10%, então em 2025 serão 10% de 400 = 40 matrículas.",
+  "erradas": {
+   "A": "2 não decorre de 10% de 400.",
+   "B": "12 não decorre de 10% de 400.",
+   "C": "20 é o número de matrículas de francês em 2024.",
+   "D": "22 não decorre de 10% de 400."
+  }
+ },
+ "2025-150": {
+  "certa": "O comprimento real é o da tela vezes a escala: I = 9 × 100 = 900 cm; II = 5 × 300 = 1.500 cm; III = 5 × 600 = 3.000 cm; IV = 3 × 700 = 2.100 cm; V = 2 × 1.000 = 2.000 cm. O maior é o do deslocamento III.",
+  "erradas": {
+   "A": "O deslocamento I tem 900 cm, o menor.",
+   "B": "O deslocamento II tem 1.500 cm.",
+   "D": "O deslocamento IV tem 2.100 cm.",
+   "E": "O deslocamento V tem 2.000 cm."
+  }
+ }
+}

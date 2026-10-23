@@ -1,0 +1,20 @@
+{
+ "2022-154": {
+  "certa": "No pacote básico, gemas ÷ moedas = 2.000 ÷ 100.000 = 1/50. Seja x a quantidade de moedas de ouro a acrescentar ao pacote especial, em relação ao que o cliente teria com dois pacotes básicos. Para manter a proporção, as 6.000 gemas a mais devem ser acompanhadas de x moedas: 6.000 ÷ x = 1/50, logo x = 300.000. Observação: o enunciado não deixa totalmente claro que pede as moedas a mais em relação a dois pacotes básicos; esta é a leitura adotada. (O gabarito divulgado pelo INEP para esta questão é a alternativa E, 400.000, que corresponde a outra leitura, 500.000 − 100.000.)",
+  "erradas": {
+   "A": "50.000 não mantém a proporção de 50 moedas por gema para 6.000 gemas a mais.",
+   "B": "100.000 é a quantidade de moedas de um pacote básico, e não a de moedas acrescentadas.",
+   "C": "200.000 corresponde a 4.000 gemas, e não às 6.000 gemas acrescentadas.",
+   "E": "400.000 resulta de calcular 500.000 moedas para 10.000 gemas e subtrair 100.000 de um pacote básico, leitura que difere da adotada aqui (gabarito divulgado pelo INEP)."
+  }
+ },
+ "2022-156": {
+  "certa": "Esta questão tem uma ambiguidade no enunciado. 1ª divulgação: rede A = 3.000 × 10% × 3% = 9 compradores; rede B = 1.000 × 30% × 2% = 6; total 15. Leitura que leva ao gabarito oficial (C): tratar R$ 300,00 como o novo investimento de cada rede (e não como um acréscimo). Então A triplica (R$ 100 → R$ 300): 27 compradores; B aumenta 1,5 vez (R$ 200 → R$ 300): 9; total 36. O aumento é (36 − 15) ÷ 15 = 140%, na faixa de 100% a 150%: bom. Leitura literal do texto (“investir mais R$ 300,00”): A passa a R$ 400 (fator 4) e B a R$ 500 (fator 2,5), totalizando 36 + 15 = 51 compradores, um aumento de 240%, que não cabe em nenhuma faixa da tabela. Por isso o gabarito só se reproduz com a primeira leitura.",
+  "erradas": {
+   "A": "Não satisfatório exigiria Q ≤ 60%, abaixo de qualquer cálculo plausível aqui.",
+   "B": "Regular exigiria Q entre 60% e 100%.",
+   "D": "Muito bom exigiria Q entre 150% e 190%.",
+   "E": "Excelente exigiria Q entre 190% e 200%. O cálculo literal dá 240%, acima desta faixa, mas o gabarito oficial é C."
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "2024-104": {
+  "certa": "A corrente é paralela às arestas curtas (400 m). Nas arestas longas (800 m), o nadador aponta de modo que a componente vertical de sua velocidade (30 m/min) cancele a corrente, e a componente horizontal é √(50² − 30²) = 40 m/min, então cada aresta longa leva 800 ÷ 40 = 20 min, ou 40 min nas duas. Na aresta que sobe contra a corrente, a velocidade resultante é 50 − 30 = 20 m/min, e leva 400 ÷ 20 = 20 min. Na que desce a favor da corrente, é 50 + 30 = 80 m/min, e leva 400 ÷ 80 = 5 min. Total: 40 + 20 + 5 = 65 min.",
+  "erradas": {
+   "A": "42 min não decorre da soma dos tempos dos quatro trechos.",
+   "C": "72 min não decorre da soma dos tempos dos quatro trechos.",
+   "D": "105 min não decorre da soma dos tempos dos quatro trechos.",
+   "E": "120 min não decorre da soma dos tempos dos quatro trechos."
+  }
+ },
+ "2024-106": {
+  "certa": "Calvin toca o chão com velocidade para baixo e com uma componente horizontal. O chão exerce uma força normal, para cima, e uma força de atrito, contra a componente horizontal da velocidade, no sentido oposto a ela. A resultante aponta para cima e para o lado oposto ao do movimento horizontal, na diagonal para cima e para a direita, como no vetor A.",
+  "erradas": {
+   "B": "Esse vetor teria só a componente horizontal, mas o chão também exerce a força normal, para cima.",
+   "C": "Esse vetor aponta para cima e para a esquerda, o mesmo sentido da componente horizontal da velocidade, e o atrito se opõe a ela.",
+   "D": "Esse vetor teria só a normal, sem o atrito horizontal.",
+   "E": "Esse vetor teria só a componente horizontal para a direita, sem a normal."
+  }
+ },
+ "2024-109": {
+  "certa": "Cada LED precisa de 3,0 V e 1,0 mA. Com bateria de 4,5 V, o resistor em série com cada LED deve ter 4,5 − 3,0 = 1,5 V de queda, e 1,5 V ÷ 1,0 mA = 1,5 kΩ, que é o resistor disponível. Dois ramos em paralelo, cada um com resistor e LED em série e o LED no sentido permitido da corrente, atendem à exigência (alternativa B).",
+  "erradas": {
+   "A": "Com um só resistor na entrada, a corrente total é 2 mA, a queda no resistor é 3 V e sobra só 1,5 V para os LEDs, que não acendem.",
+   "C": "Os LEDs estão invertidos em relação ao sentido da corrente, e não acendem.",
+   "D": "Os dois LEDs em série exigiriam 6 V, mais que os 4,5 V da bateria.",
+   "E": "Os LEDs estão invertidos e compartilham um resistor, e não recebem a corrente correta."
+  }
+ },
+ "2024-110": {
+  "certa": "As lâmpadas têm a mesma corrente nominal (9 W ÷ 6 V = 18 W ÷ 12 V = 1,5 A), então, ligadas em série, L1 recebe 6 V e L2, 12 V, em um total de 18 V = VQR. O ponto P deve estar no potencial de 6 V acima de Q, ou seja, a 6/18 = 1/3 do fio. O fio de 48 cm tem 6 segmentos de 8 cm, e 1/3 do fio são 2 segmentos: o ponto B.",
+  "erradas": {
+   "A": "O ponto A está a 1/6 do fio (3 V), e L1 receberia 3 V em vez de 6 V.",
+   "C": "O ponto C está a 1/2 do fio (9 V), e L1 receberia 9 V.",
+   "D": "O ponto D está a 2/3 do fio (12 V), e L1 receberia 12 V.",
+   "E": "O ponto E está a 5/6 do fio (15 V), e L1 receberia 15 V."
+  }
+ },
+ "2024-112": {
+  "certa": "A base de Brönsted-Lowry captura um próton. Na nimesulida, o hidrogênio ligado ao nitrogênio do grupo sulfonamida é ácido, pois está ligado a um átomo muito eletronegativo e ao grupo sulfonila. Ao perdê-lo, a molécula forma um ânion, mais solúvel em água.",
+  "erradas": {
+   "B": "Os hidrogênios da metila são de uma ligação C–H e não são ácidos.",
+   "C": "Os hidrogênios da fenila estão ligados ao carbono aromático e não são ácidos.",
+   "D": "O grupo nitro não tem hidrogênio ácido.",
+   "E": "O grupo éter não tem hidrogênio para ceder."
+  }
+ },
+ "2024-114": {
+  "certa": "O centro de massa (CM) está deslocado para a direita e um pouco acima do centro geométrico. Para trazê-lo ao centro, deve-se colocar a massa do lado oposto: abaixo e à esquerda do centro. O ponto 3 é o que está nessa posição.",
+  "erradas": {
+   "A": "O ponto 1 está no alto, e deslocaria o CM ainda mais para cima.",
+   "B": "O ponto 2 está à esquerda, mas na altura do centro, e não corrige a parte de cima do desvio.",
+   "D": "O ponto 4 está embaixo, mas alinhado com o centro, e não corrige o desvio horizontal.",
+   "E": "O ponto 5 está do mesmo lado do CM e o afastaria ainda mais do centro."
+  }
+ },
+ "2024-116": {
+  "certa": "No cladograma, os monotremados (ornitorrinco) põem ovos com muito vitelo, os marsupiais têm filhotes pequenos que continuam o desenvolvimento no marsúpio e os placentários têm embriões nutridos pela placenta. Ao longo da evolução, a vesícula vitelínica diminui, enquanto se desenvolve a lactação como fonte de alimento.",
+  "erradas": {
+   "A": "O número de descendentes por ninhada diminui nos mamíferos mais recentes, e não aumenta.",
+   "B": "Todos os mamíferos têm fecundação interna.",
+   "C": "Todos os mamíferos têm reprodução sexuada, e não há redução de versatilidade que seja o foco.",
+   "D": "O desenvolvimento embrionário dos mamíferos já não é aquático, e não passa do meio aquático para o terrestre."
+  }
+ },
+ "2024-118": {
+  "certa": "Os raios saem do objeto, refletem em E2 e E1 e convergem de fato na abertura, formando uma imagem real. A imagem se forma na abertura de E2, no topo, e o objeto está no vértice de E1, no fundo. A distância vertical entre eles é 3,8 + 3,8 = 7,6 cm.",
+  "erradas": {
+   "A": "5 cm é o diâmetro da abertura, e não a distância vertical.",
+   "B": "3,8 cm é a metade da distância entre o objeto e a imagem.",
+   "D": "A imagem é real, pois os raios convergem de fato.",
+   "E": "A imagem é real, e 3,8 cm não é a distância objeto–imagem."
+  }
+ },
+ "2024-119": {
+  "certa": "Na colisão, a região deformável do carro se deforma e absorve a energia cinética do sistema, em vez de a transferir ao corpo dos ocupantes. Ela também aumenta o tempo da colisão, e reduz a força média.",
+  "erradas": {
+   "A": "Acionar os airbags é outra função, e não a razão do crumple zone.",
+   "C": "Em um sistema isolado, a quantidade de movimento total se conserva, e não é consumida.",
+   "D": "A zona deformável não cria uma barreira de proteção para os ocupantes.",
+   "E": "A velocidade do centro de massa de um sistema isolado não muda."
+  }
+ },
+ "2024-120": {
+  "certa": "No ânodo: CH₃COO⁻ + 2 H₂O → 2 CO₂ + 7 H⁺ + 8 e⁻. No cátodo, multiplicando por 2: 8 H⁺ + 2 O₂ + 8 e⁻ → 4 H₂O. Somando e cancelando 7 H⁺, 8 e⁻ e 2 H₂O, a reação global é CH₃COO⁻ + H⁺ + 2 O₂ → 2 CO₂ + 2 H₂O.",
+  "erradas": {
+   "A": "Os coeficientes de O₂ e de H⁺ e a presença de água estão errados em relação à soma das semirreações.",
+   "B": "Escreve a reação no sentido inverso, formando o acetato a partir de CO₂.",
+   "D": "Não corresponde à soma das semirreações, e o O₂ aparece como produto.",
+   "E": "Escreve a reação no sentido inverso, formando acetato a partir de CO₂."
+  }
+ }
+}

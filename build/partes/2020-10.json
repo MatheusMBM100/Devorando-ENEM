@@ -1,0 +1,128 @@
+{
+ "2020-096": {
+  "certa": "Os quatro resistores de 100 Ω em série somam 400 Ω, e a corrente é 12 ÷ 400 = 30 mA, com 3 V em cada resistor. Para 9,0 V é preciso pegar três resistores, como entre B e E (ou A e D). O equipamento de 10 kΩ, em paralelo com 300 Ω, tem a corrente que passa por ele de cerca de 9,0 ÷ 10.000 = 0,9 mA.",
+  "erradas": {
+   "A": "Entre A e C há só dois resistores, que dão 6 V, e 30 mA é a corrente do divisor, e não a do equipamento.",
+   "B": "A ligação entre B e E dá os 9 V, mas 30 mA é a corrente do divisor, e a do equipamento é 0,9 mA.",
+   "C": "Entre A e D há 9 V, mas a corrente no equipamento de 10 kΩ é 0,9 mA, e não 1,2 mA.",
+   "E": "Entre A e E a tensão é 12 V, e não 9 V."
+  }
+ },
+ "2020-102": {
+  "certa": "O melhor quimioterápico reduz bastante as células tumorais sem diminuir as normais. O composto II baixa as células tumorais de cerca de 36 para 15 milhões e mantém (ou até aumenta) as normais, em torno de 21 a 28 milhões, o melhor equilíbrio entre eficácia e baixa toxicidade.",
+  "erradas": {
+   "A": "O composto I reduz pouco as células tumorais (de 36 para cerca de 30 milhões).",
+   "C": "O composto III reduz as células tumorais (cerca de 10 milhões), mas também reduz muito as normais (de 21 para 9 milhões).",
+   "D": "O composto IV aumenta as células tumorais (acima do controle), então não tem efeito antitumoral.",
+   "E": "O composto V não reduz as células tumorais em relação ao controle (cerca de 36 milhões)."
+  }
+ },
+ "2020-113": {
+  "certa": "A densidade é massa ÷ volume deslocado. Pela proveta, A desloca 2 mL (5 → 7): d = 26 ÷ 2 = 13 g/cm³. B desloca 3 mL (7 → 10): d = 27 ÷ 3 = 9. C desloca 2 mL (10 → 12): d = 10 ÷ 2 = 5. D desloca 4 mL (12 → 16): d = 36 ÷ 4 = 9. Só B e D têm a densidade do cobre (9 g/cm³).",
+  "erradas": {
+   "A": "A tem densidade 13 g/cm³, diferente da do cobre.",
+   "B": "A (13 g/cm³) e C (5 g/cm³) têm densidade diferente da do cobre.",
+   "C": "C tem densidade 5 g/cm³, diferente da do cobre.",
+   "E": "C tem densidade 5 g/cm³, diferente da do cobre."
+  }
+ },
+ "2020-115": {
+  "certa": "O esgoto é rico em matéria orgânica e, logo após o despejo, a DBO é muito alta (microrganismos começam a consumir o oxigênio). Mais a jusante, o OD cai e a DBO diminui, quando a matéria orgânica já foi degradada. O ponto 1 tem a maior DBO e é o mais próximo do despejo.",
+  "erradas": {
+   "B": "No ponto 2 a DBO já caiu em relação ao ponto 1.",
+   "C": "No ponto 3 o OD está mínimo (decomposição ativa), e a DBO já está baixa, ou seja, bem depois do despejo.",
+   "D": "No ponto 4 o OD já está se recuperando, indicando que o rio se afastou do despejo.",
+   "E": "No ponto 5 o OD está recuperado e a DBO é baixa, o ponto mais distante do despejo."
+  }
+ },
+ "2020-117": {
+  "certa": "No experimento de Engelmann, as bactérias aeróbias se concentram onde há mais oxigênio liberado pela fotossíntese. A maior concentração está na faixa do vermelho (e outra, menor, no azul-violeta), onde a clorofila absorve mais luz.",
+  "erradas": {
+   "A": "No anil há acúmulo de bactérias, mas menor que no vermelho.",
+   "B": "No verde quase não há bactérias, porque a clorofila reflete essa luz.",
+   "C": "No violeta há acúmulo, mas menor que no vermelho.",
+   "D": "No amarelo quase não há bactérias, porque a absorção é baixa."
+  }
+ },
+ "2020-118": {
+  "certa": "Os ovos flutuam na solução quando sua densidade é menor que 1,15 g/mL. Isso vale para Ancylostoma (1,06), Ascaris lumbricoides (1,11) e Ascaris suum (1,13).",
+  "erradas": {
+   "A": "Inclui S. mansoni (1,18), mais denso que a solução, e seus ovos afundam.",
+   "B": "Inclui S. mansoni (1,18) e T. saginata (1,30), que afundam.",
+   "D": "Inclui T. saginata (1,30) e S. mansoni (1,18), que afundam.",
+   "E": "Inclui T. saginata (1,30), que afunda."
+  }
+ },
+ "2020-121": {
+  "certa": "O grupo O é 25%, então r² = 0,25 e r = 0,5. O grupo A homozigoto é 16%, então p² = 0,16 e p = 0,4. Como p + q + r = 1, q = 0,1. O grupo B (IBIB + IBi) é q² + 2qr = 0,01 + 0,10 = 0,11. Doadores compatíveis para quem é do grupo B são os grupos B e O: 11% + 25% = 36%.",
+  "erradas": {
+   "A": "11% é só o grupo B, esquecendo o grupo O.",
+   "B": "19% não decorre das frequências calculadas.",
+   "C": "26% não decorre das frequências calculadas.",
+   "E": "60% não decorre das frequências calculadas."
+  }
+ },
+ "2020-123": {
+  "certa": "A decomposição térmica do PVC (C₂H₃Cl)ₙ libera majoritariamente cloreto de hidrogênio, HCl: gás diatômico heteronuclear, que altera o indicador em meio alcalino e, por ser ácido, reage com Na₂CO₃ liberando CO₂.",
+  "erradas": {
+   "A": "O H₂ é diatômico homonuclear e não reage com carbonato liberando CO₂.",
+   "B": "O Cl₂ é diatômico homonuclear.",
+   "C": "O CO é heteronuclear, mas não é ácido, e não libera CO₂ com carbonato.",
+   "D": "O CO₂ é triatômico."
+  }
+ },
+ "2020-124": {
+  "certa": "No momento C, as subpopulações já têm diferenças de cor (fenótipos e genótipos). Em D1, mesmo sem o fator de isolamento, as duas populações mantêm suas diferenças, o que indica isolamento reprodutivo: elas já não se cruzam.",
+  "erradas": {
+   "A": "O fator de isolamento geográfico desapareceu no momento D, e não surge outro em D1.",
+   "B": "Em D1 as populações continuam distintas, e não formam um gradiente contínuo de uma única população.",
+   "D": "Em D2 há mistura entre os grupos, e a população resultante é única, com características intermediárias.",
+   "E": "Em D2 as características mudaram em relação à população original A (clara), como mostra a nova tonalidade."
+  }
+ },
+ "2020-125": {
+  "certa": "A eletrização por atrito ocorre pela transferência de elétrons de um material para outro, no atrito entre a calça e os pelos do gato: um perde e outro ganha elétrons. Os elétrons são as partículas móveis.",
+  "erradas": {
+   "A": "Átomos não são trocados, só elétrons.",
+   "B": "Os prótons ficam nos núcleos e não se movem no atrito.",
+   "C": "Não são criadas partículas, a carga total se conserva.",
+   "E": "A repulsão ocorre entre cargas de mesmo sinal, e não é a causa da eletrização."
+  }
+ },
+ "2020-134": {
+  "certa": "O bolsão está a 50 m de profundidade. A variação de pressão até a superfície é ΔP = ρ·g·h = 1.000 × 10 × 50 = 5,0 × 10⁵ Pa = 500 kPa. No gráfico, 500 kPa corresponde a 60 minutos de descompressão.",
+  "erradas": {
+   "A": "100 min corresponde a uma variação de pressão maior que a de 500 kPa.",
+   "B": "80 min corresponde a uma variação de pressão maior que a de 500 kPa.",
+   "D": "40 min corresponde a uma variação de pressão menor que a de 500 kPa.",
+   "E": "20 min corresponde a uma variação de pressão bem menor que a de 500 kPa."
+  }
+ },
+ "2020-135": {
+  "certa": "Na escala 1:100, a massa (volume) varia com L³ e a área da base, com L². A pressão é força ÷ área, ou seja, proporcional a L³/L² = L. Então a razão P_torre/P_modelo = 100 = 10².",
+  "erradas": {
+   "A": "10⁰ = 1 significaria a mesma pressão nos dois, ignorando que a massa cai mais que a área.",
+   "B": "10¹ = 10 seria a razão se a escala fosse 1:10.",
+   "D": "10⁴ usaria L⁴, o que não corresponde a L³/L².",
+   "E": "10⁶ é a razão entre as massas (L³), e não entre as pressões."
+  }
+ },
+ "2020-138": {
+  "certa": "A base do troféu é um quadrado de 50 cm de lado e deve ficar a pelo menos 1 cm das paredes. Na caixa, o lado menor mede 8 cm, então 50k + 2 ≤ 8, ou k ≤ 0,12. A maior miniatura tem escala 0,12, e altura 100 × 0,12 = 12 cm. Somando os 2 cm de folga acima da esfera, a caixa tem 14 cm de altura.",
+  "erradas": {
+   "A": "12 cm é a altura da miniatura, sem os 2 cm acima da esfera.",
+   "C": "16 cm resultaria de somar o dobro da folga ou de uma escala maior que a máxima.",
+   "D": "18 cm resultaria de uma escala de 0,16, que não cabe na caixa.",
+   "E": "20 cm resultaria de uma escala de 0,18, que não cabe na caixa."
+  }
+ },
+ "2020-139": {
+  "certa": "Com h = 16: |2·16 + b − 63,5| ≤ 1,5, ou |b − 31,5| ≤ 1,5, o que dá 30 ≤ b ≤ 33.",
+  "erradas": {
+   "A": "30 ≤ b deixa o intervalo sem limite superior, e b é limitado por 33.",
+   "B": "30 ≤ b ≤ 31,5 corta o intervalo na metade, e b pode ir até 33.",
+   "D": "31,5 ≤ b ≤ 33 corta o intervalo na metade, e b pode ser menor que 31,5.",
+   "E": "b ≤ 33 não tem limite inferior, mas b deve ser pelo menos 30."
+  }
+ }
+}

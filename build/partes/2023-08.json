@@ -1,0 +1,101 @@
+{
+ "2023-151": {
+  "certa": "A lista deste ano tem 400 × 1,10 = 440 nomes, e a do próximo ano será igual. A meta é que fique 25% menor: 440 × 0,75 = 330 nomes. É preciso, então, atender 440 − 330 = 110 crianças a mais. Cada sala atende 10, então são 110 ÷ 10 = 11 salas.",
+  "erradas": {
+   "A": "10 salas atenderiam só 100 crianças a mais e a lista ficaria em 340, acima da meta.",
+   "C": "13 salas superam o mínimo necessário.",
+   "D": "30 salas superam bastante o mínimo necessário.",
+   "E": "33 salas resultam de usar o número de nomes da lista da meta (330) como se fosse a quantidade de salas a construir."
+  }
+ },
+ "2023-155": {
+  "certa": "O lucro é L = 0,96 × (receita) − 900 − 250n, já que 4% da receita vai aos ajudantes. A pesca total é 300 kg com 1 ajudante e aumenta 100 kg por ajudante adicional. Com 3 ajudantes, são 500 kg: receita R$ 2.500, L = 2.400 − 900 − 750 = R$ 750, abaixo de R$ 800. Com 4, são 600 kg: receita R$ 3.000, L = 2.880 − 900 − 1.000 = R$ 980, acima da meta. O mínimo é 4.",
+  "erradas": {
+   "A": "Com 1 ajudante, o lucro é R$ 290, bem abaixo da meta.",
+   "B": "Com 2 ajudantes, o lucro é R$ 520, abaixo da meta.",
+   "C": "Com 3 ajudantes, o lucro é R$ 750, ainda abaixo de R$ 800.",
+   "E": "Com 5 ajudantes a meta é atingida, mas esse não é o número mínimo."
+  }
+ },
+ "2023-156": {
+  "certa": "A população é 100 × 10^k após k períodos de 3 dias. O produto X é aplicado quando há 5 × 200.000 = 1.000.000 = 10^6 larvas. Então 100 × 10^k = 10^6, o que dá 10^k = 10^4 e k = 4 períodos, ou seja, 4 × 3 = 12 dias.",
+  "erradas": {
+   "A": "2 dias não corresponde à população de 10^6 larvas.",
+   "B": "4 é o número de períodos, que precisa ser multiplicado por 3 dias.",
+   "C": "6 dias corresponde a 2 períodos, com 10^4 larvas.",
+   "E": "18 dias corresponde a 6 períodos, com 10^8 larvas."
+  }
+ },
+ "2023-157": {
+  "certa": "Há 62 + 6 = 68 caracteres. Tipo I: 68 × 67 × 66 × 65 ≈ 19,5 milhões de senhas. Tipo II: 52 × 51 × 50 × 10 × 6 = 7.956.000. Tipo III: 52 × 51 × 10 × 9 × 6 × 5 = 7.160.400. A probabilidade é 1 ÷ (número de senhas), então p1 < p2 < p3, e a menor probabilidade é a do tipo I.",
+  "erradas": {
+   "B": "O tipo I é o mais difícil de descobrir, mas o motivo é o maior número de combinações, e não ter menos caracteres.",
+   "C": "O tipo II tem menos senhas possíveis que o tipo I, portanto probabilidade maior.",
+   "D": "A ordem das probabilidades está invertida: p1 é a menor.",
+   "E": "O tipo III é o que tem menos senhas possíveis, logo a maior probabilidade, apesar de ter mais caracteres."
+  }
+ },
+ "2023-161": {
+  "certa": "A concentração é 90% da quantidade ingerida, então C = 0,9q.",
+  "erradas": {
+   "B": "C = 0,1q seria 10% da quantidade ingerida.",
+   "C": "C = 1 − 0,1q não corresponde a 90% de q.",
+   "D": "C = 1 − 0,9q não corresponde a 90% de q.",
+   "E": "C = q − 10 subtrai um valor fixo em vez de aplicar a porcentagem."
+  }
+ },
+ "2023-163": {
+  "certa": "N = 10·log(I) − 10·log(I0) = 10·log(I ÷ I0). Com I = 8 × 10⁻⁸ e I0 = 10⁻¹², I ÷ I0 = 8 × 10⁴ e log = 3 × 0,3 + 4 = 4,9. Logo, N = 49 dB, que está no intervalo (48; 55), do som moderado, e a medida preventiva é a II.",
+  "erradas": {
+   "A": "A medida I vale para N ≤ 48 dB, e a máquina tem N = 49 dB.",
+   "C": "A medida III vale para N entre 55 e 80 dB.",
+   "D": "A medida IV vale para N entre 80 e 115 dB.",
+   "E": "A medida V vale para N acima de 115 dB."
+  }
+ },
+ "2023-166": {
+  "certa": "A urna B tem 4 pretas e probabilidade de 25%, então tem 16 bolas (4 pretas e 12 brancas). Para o voucher, 0,20 × p ≤ 0,01, ou seja, p ≤ 0,05. Com 4 pretas, 4 ÷ N ≤ 0,05 dá N ≥ 80. Faltam 80 − 16 = 64 bolinhas brancas a adicionar.",
+  "erradas": {
+   "A": "20 bolinhas deixam a probabilidade em 4/36, bem acima de 5%.",
+   "B": "60 bolinhas deixam a urna com 76 bolas, e p = 4/76 ≈ 5,26%, acima do limite.",
+   "D": "68 bolinhas também são mais do que o mínimo necessário.",
+   "E": "80 é o número total de bolas, e não o número de brancas a adicionar."
+  }
+ },
+ "2023-169": {
+  "certa": "As médias de dois meses consecutivos são: out+nov = 400; nov+dez = 350; dez+jan = 650; jan+fev = 550; fev+mar = 300. A maior é a de dezembro e janeiro, então o plantio deve ser feito no início de dezembro.",
+  "erradas": {
+   "A": "Outubro e novembro somam 400 mm, menos que dezembro e janeiro.",
+   "B": "Novembro e dezembro somam 350 mm.",
+   "D": "Janeiro e fevereiro somam 550 mm, menos que dezembro e janeiro.",
+   "E": "Fevereiro e março somam 300 mm."
+  }
+ },
+ "2023-171": {
+  "certa": "O preço tem uma parte fixa (R$ 500) e uma parte variável de R$ 250 por m³: y = 250x + 500.",
+  "erradas": {
+   "A": "y = 250x omite a taxa fixa de bombeamento.",
+   "B": "y = 500x multiplica a taxa fixa pelo volume.",
+   "C": "y = 750x soma os dois valores e multiplica por x.",
+   "E": "y = 500x + 250 troca a taxa fixa pelo preço por m³."
+  }
+ },
+ "2023-173": {
+  "certa": "Como cada caixa inicia um novo atendimento agora, o tempo de espera é o número de pessoas na fila vezes o tempo de atendimento: I = 60; II = 54; III = 30; IV = 30; V = 27 minutos. O menor é o do caixa V.",
+  "erradas": {
+   "A": "O caixa I leva 5 × 12 = 60 minutos.",
+   "B": "O caixa II leva 9 × 6 = 54 minutos.",
+   "C": "O caixa III leva 6 × 5 = 30 minutos, mais que o caixa V.",
+   "D": "O caixa IV leva 2 × 15 = 30 minutos, mais que o caixa V."
+  }
+ },
+ "2023-180": {
+  "certa": "Seja a o preço do tíquete azul e v o do vermelho. Duas cartelas azuis e uma vermelha: 18a + 9v = 32,40, ou 2a + v = 3,60. A condição dá a − v = v + 0,05, ou a = 2v + 0,05. Substituindo: 4v + 0,10 + v = 3,60, então v = 0,70. A cartela vermelha custa 9 × 0,70 = R$ 6,30.",
+  "erradas": {
+   "A": "R$ 4,68 não decorre do preço de R$ 0,70 por tíquete vermelho.",
+   "C": "R$ 9,30 não decorre do preço de R$ 0,70 por tíquete vermelho.",
+   "D": "R$ 10,50 não decorre do preço de R$ 0,70 por tíquete vermelho.",
+   "E": "R$ 10,65 não decorre do preço de R$ 0,70 por tíquete vermelho."
+  }
+ }
+}

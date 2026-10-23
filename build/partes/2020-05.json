@@ -1,0 +1,155 @@
+{
+ "2020-127": {
+  "certa": "Os corredores ecológicos ligam os fragmentos de mata e permitem que os animais se desloquem, troquem genes e encontrem alimento. Eles ajudam a conservar a biodiversidade nas “ilhas” de hábitat.",
+  "erradas": {
+   "A": "Os micro-hábitats não resolvem o isolamento das populações.",
+   "B": "A ampliação do efeito de borda prejudica o interior dos fragmentos.",
+   "D": "A sucessão ecológica não resolve o isolamento das populações.",
+   "E": "Introduzir novas espécies pode causar desequilíbrios e não resolve o problema."
+  }
+ },
+ "2020-128": {
+  "certa": "A massa molar da sacarose é 342 g/mol, então 171 g são 0,5 mol em 0,5 L, ou 1,0 mol/L. A concentração cai à metade a cada 100 min, e 400 min são 4 meias-vidas: 1 ÷ 2⁴ = 0,0625 mol/L = 6,25 × 10⁻² mol/L.",
+  "erradas": {
+   "A": "2,50 × 10⁻³ mol/L resulta de um erro de ordem de grandeza.",
+   "C": "1,25 × 10⁻¹ mol/L é a concentração após 3 meias-vidas (300 min).",
+   "D": "2,50 × 10⁻¹ mol/L é a concentração após 2 meias-vidas (200 min).",
+   "E": "4,27 × 10⁻¹ mol/L não decorre da meia-vida de 100 min."
+  }
+ },
+ "2020-129": {
+  "certa": "O petróleo é formado por cadeias carbônicas aprisionadas há milhões de anos sob os sedimentos. Sua queima libera esse carbono na forma de CO2 e desequilibra o ciclo do carbono.",
+  "erradas": {
+   "A": "O petróleo não altera a nitrificação do ambiente.",
+   "B": "O uso do petróleo não aumenta os compostos nitrogenados de forma relevante.",
+   "C": "O desequilíbrio não vem do aumento de carbonatos dissolvidos, mas da liberação de carbono fóssil.",
+   "E": "O petróleo não é uma fonte relevante de fosfatos."
+  }
+ },
+ "2020-130": {
+  "certa": "A tensão induzida é proporcional à rapidez com que o fluxo magnético varia no tempo (lei de Faraday). Em um gerador, ela aumenta quando a velocidade angular das pás cresce.",
+  "erradas": {
+   "A": "Diminuir a velocidade de rotação reduz a rapidez da variação do fluxo e, portanto, a tensão.",
+   "B": "A tensão depende da variação do fluxo no tempo, e não só do valor do fluxo.",
+   "C": "Um campo mais intenso também aumentaria a tensão, mas isso exigiria trocar os ímãs. O aumento inesperado durante o funcionamento vem da velocidade de rotação.",
+   "E": "Aumentar a resistência interna reduz a tensão útil nos terminais, e não a aumenta."
+  }
+ },
+ "2020-131": {
+  "certa": "Herschel observou que o maior aquecimento ocorre na região além do vermelho, o infravermelho. No dispositivo, o recipiente A, alinhado com a faixa do vermelho e a região adjacente, recebe essa radiação e é o que alcança a maior temperatura.",
+  "erradas": {
+   "B": "O recipiente B recebe radiação de cores de menor frequência térmica efetiva, como o laranja e o amarelo, e se aquece menos.",
+   "C": "O recipiente C recebe luz verde, que aquece menos.",
+   "D": "O recipiente D recebe luz azul, que aquece menos.",
+   "E": "O recipiente E recebe luz violeta, a de maior frequência e com menor efeito de aquecimento."
+  }
+ },
+ "2020-132": {
+  "certa": "A química verde busca processos com um só produto, sem coprodutos, com poucos reagentes, solventes não agressivos e catalisadores. A reação A + ½B → C, com catalisador de metal não tóxico, tem um só produto e atende aos princípios.",
+  "erradas": {
+   "A": "A alta pressão demanda muita energia e contraria os princípios.",
+   "B": "Uma reação fortemente endotérmica demanda muita energia e forma dois produtos.",
+   "C": "O solvente orgânico pode ser agressivo ao meio ambiente.",
+   "D": "O processo tem várias etapas e produz coprodutos (D e E)."
+  }
+ },
+ "2020-133": {
+  "certa": "No condensador, o fluido refrigerante cede calor e se liquefaz. Se o refrigerador está perto de fontes de calor, o condensador troca menos calor, e a liquefação exige mais trabalho do compressor. Isso aumenta o consumo de energia.",
+  "erradas": {
+   "A": "O fluxo de calor no condensador não aumenta nem diminui por condução de forma considerável.",
+   "B": "A fonte de calor dificulta o resfriamento do refrigerante, e não o acelera.",
+   "C": "O isolamento do refrigerador evita uma elevação significativa da temperatura interna, e o problema é o maior trabalho do compressor.",
+   "E": "As correntes de convecção são afetadas, mas o aumento do consumo se explica pelo trabalho do compressor."
+  }
+ },
+ "2020-144": {
+  "certa": "O consumo é 0,05 L/km. Na ida, ele roda 500 − 80 = 420 km até o posto, gastando 21 L dos 22 L, e chega com 1 L. Depois do posto, precisa de 80 km até o destino, 200 km no destino e 80 km de volta ao posto: 360 km = 18 L. Como já tem 1 L, deve abastecer 17 L.",
+  "erradas": {
+   "A": "13 L não cobre os 360 km restantes.",
+   "B": "14 L não cobre os 360 km restantes.",
+   "D": "18 L é o combustível total necessário, sem descontar o 1 L que ainda há no tanque.",
+   "E": "21 L resulta de um erro no trecho a percorrer."
+  }
+ },
+ "2020-150": {
+  "certa": "28.080 L = 28.080 dm³ = 28,08 m³ = 28.080.000 cm³. O volume da maquete é 2 × 3,51 × 4 = 28,08 cm³. A razão entre volumes é 10⁶, e a razão linear é a raiz cúbica, 100. A escala é 1:100.",
+  "erradas": {
+   "A": "1:10 daria uma razão entre volumes de 1.000.",
+   "C": "1:1.000 daria uma razão entre volumes de 10⁹.",
+   "D": "1:10.000 daria uma razão entre volumes de 10¹².",
+   "E": "1:100.000 daria uma razão entre volumes de 10¹⁵."
+  }
+ },
+ "2020-152": {
+  "certa": "A sala tem 3,2 × 3,6 m. Com peças de 0,8 m, cabem 4 na largura e 4,5 no comprimento, ou seja, 18 peças, aproveitando os recortes. 3 caixas A e 2 caixas B têm 12 + 6 = 18 peças, sem sobra, por R$ 105 + R$ 54 = R$ 159. É a de menor preço.",
+  "erradas": {
+   "A": "5 caixas A têm 20 peças, com sobra de 2, por R$ 175.",
+   "B": "1 caixa A e 4 caixas B têm 16 peças, menos que as 18 necessárias.",
+   "D": "5 caixas A e 1 caixa B têm 23 peças, com sobra de 5, por R$ 202.",
+   "E": "6 caixas B têm 18 peças, sem sobra, mas custam R$ 162, mais que a opção C."
+  }
+ },
+ "2020-153": {
+  "certa": "Nos números de 100 a 399, o algarismo 2 aparece: nas unidades, 30 vezes (uma em cada dezena, 30 dezenas); nas dezenas, 30 vezes (de 120 a 129 em cada centena, 3 × 10); e nas centenas, 100 vezes (200 a 299). Total: 30 + 30 + 100 = 160.",
+  "erradas": {
+   "B": "157 não decorre da contagem completa dos algarismos 2.",
+   "C": "130 considera só unidades e dezenas, ou omite parte das centenas.",
+   "D": "120 não decorre da contagem completa.",
+   "E": "60 considera só unidades e dezenas."
+  }
+ },
+ "2020-158": {
+  "certa": "Um tronco reto de pirâmide de base quadrada tem duas bases quadradas (a maior e a menor) e quatro faces laterais que são trapézios isósceles. São 2 quadrados e 4 trapézios isósceles.",
+  "erradas": {
+   "A": "2 quadrados e 4 retângulos seria um prisma, e não um tronco de pirâmide.",
+   "B": "1 retângulo e 4 triângulos isósceles não descreve um tronco, pois faltam bases.",
+   "D": "O tronco de base quadrada não tem retângulos laterais nem trapézios retângulos.",
+   "E": "O tronco reto não tem retângulos nem trapézios retângulos."
+  }
+ },
+ "2020-160": {
+  "certa": "CRC = 0,7 × (EC com chuva) + 0,3 × (EC sem chuva). I: 4,2 + 0,9 = 5,1. II: 4,9 − 1,2 = 3,7. III: −1,4 + 3,0 = 1,6. IV: 1,4 + 2,4 = 3,8. V: −4,2 + 2,1 = −2,1. O maior é o do pneu I.",
+  "erradas": {
+   "B": "O pneu II tem CRC = 3,7, menor que o do I.",
+   "C": "O pneu III tem CRC = 1,6.",
+   "D": "O pneu IV tem CRC = 3,8, menor que o do I.",
+   "E": "O pneu V tem CRC = −2,1, o menor."
+  }
+ },
+ "2020-161": {
+  "certa": "A massa de uma folha é 75 g/m² × 0,062 m² = 4,65 g. Para 20.000 folhas: 20.000 × 4,65 = 93.000 g = 93 kg.",
+  "erradas": {
+   "A": "4.301 não decorre do produto entre a massa de uma folha e o número de folhas.",
+   "B": "1.500 resulta de multiplicar 75 g por 20.000 sem considerar a área da folha.",
+   "C": "930 resulta de um erro na conversão de gramas para quilogramas.",
+   "D": "267 não decorre do produto entre a massa de uma folha e o número de folhas."
+  }
+ },
+ "2020-165": {
+  "certa": "Faltam 9 L = 9.000 mL. A vazão é 5 gotas/s × 0,05 mL = 0,25 mL/s. O tempo é 9.000 ÷ 0,25 = 36.000 s = 10 h = 1 × 10¹ h.",
+  "erradas": {
+   "A": "2 × 10¹ h seria o tempo para encher o balde inteiro (18 L), e não os 9 L que faltam.",
+   "C": "2 × 10⁻² h resulta de um erro de unidade.",
+   "D": "1 × 10⁻² h resulta de um erro de unidade.",
+   "E": "1 × 10⁻³ h resulta de um erro de unidade."
+  }
+ },
+ "2020-172": {
+  "certa": "A soma atual é 15 × 1,93 = 28,95 m. Os quatro mais baixos somam 7,30 m. A soma mínima desejada é 15 × 1,99 = 29,85 m. Então 28,95 − 7,30 + 2,02 + 3x ≥ 29,85, o que dá 3x ≥ 6,18 e x ≥ 2,06 m.",
+  "erradas": {
+   "A": "1,96 m não permite chegar à média de 1,99 m.",
+   "B": "1,98 m não permite chegar à média de 1,99 m.",
+   "C": "2,05 m não permite chegar à média de 1,99 m.",
+   "E": "2,08 m atende à meta, mas não é a média mínima."
+  }
+ },
+ "2020-176": {
+  "certa": "Dos 200, 20 são tipo O, então 180 têm algum antígeno. Com 100 com A e 110 com B: AB = 100 + 110 − 180 = 30. O tipo A (só o antígeno A) é 100 − 30 = 70.",
+  "erradas": {
+   "A": "30 é o número de pessoas do tipo AB.",
+   "B": "60 não decorre da conta com 100, 110, 20 e 200.",
+   "D": "90 não decorre da conta com 100, 110, 20 e 200.",
+   "E": "100 é o total com antígeno A, que inclui as pessoas do tipo AB."
+  }
+ }
+}

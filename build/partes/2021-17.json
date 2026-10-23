@@ -1,0 +1,56 @@
+{
+ "2021-091": {
+  "certa": "O texto diz que os pais podem ser portadores sem saber, e que, quando ambos são portadores, há uma chance em quatro (25%) de o filho nascer afetado. Pais normais (portadores) gerando filhos afetados é característico de herança recessiva (Aa × Aa → 1/4 aa).",
+  "erradas": {
+   "B": "Na herança dominante, bastaria um alelo para manifestar a doença, então os pais portadores seriam afetados.",
+   "C": "Na codominância, os dois alelos se expressam no heterozigoto, e os portadores seriam afetados.",
+   "D": "O texto diz que a doença está ligada a um gene no cromossomo 10, e não a vários genes.",
+   "E": "O polialelismo envolve três ou mais alelos de um gene, e o texto não trata disso."
+  }
+ },
+ "2021-092": {
+  "certa": "A pilha Li–I₂ tem E° = +0,54 − (−3,05) = 3,59 V. Em série, três pilhas dão 3 × 3,59 = 10,77 V, que está na faixa de 10,5 a 10,9 V do carrinho de controle remoto (IV).",
+  "erradas": {
+   "A": "O relógio de parede usa 1,2 a 1,5 V, que é a tensão de uma só pilha comum, e não 10,77 V.",
+   "B": "O celular usa 3,5 a 3,8 V, o valor de uma única pilha (3,59 V).",
+   "C": "A câmera digital usa 7,5 a 7,8 V, que corresponderia a duas pilhas (7,18 V), e não a três.",
+   "E": "O notebook usa 19,5 a 20,0 V, muito mais que 10,77 V."
+  }
+ },
+ "2021-093": {
+  "certa": "O aumento da temperatura faz os líquidos se dilatarem, e o volume da mistura muda. Como a escala foi aferida a 20 °C, a leitura precisa de correção, o que se vê na tabela, com o °GL aparente diminuindo ao subir a temperatura.",
+  "erradas": {
+   "A": "A dissociação da água não é relevante para a leitura do alcoômetro.",
+   "B": "A temperatura maior diminui a densidade da água e do álcool, e não a aumenta.",
+   "D": "O teor de álcool não aumenta com a temperatura, o que muda é o volume.",
+   "E": "A temperatura não altera as propriedades químicas da mistura."
+  }
+ },
+ "2021-094": {
+  "certa": "Um polímero condutor tem ligações duplas conjugadas (alternadas com simples) ao longo da cadeia principal. A estrutura D, –(CH=CH)ₙ–, é o poliacetileno, com duplas conjugadas na cadeia.",
+  "erradas": {
+   "A": "Tem um anel aromático lateral, mas a cadeia principal é saturada, sem duplas conjugadas.",
+   "B": "A cadeia principal é saturada, e a carbonila não forma conjugação ao longo da cadeia.",
+   "C": "Tem uma ligação dupla isolada por grupos CH₂, e não conjugadas.",
+   "E": "Há uma ligação dupla, mas separada das outras por um carbono quaternário, que interrompe a conjugação."
+  }
+ },
+ "2021-095": {
+  "certa": "As preguiças-gigantes se alimentavam de frutos e sementes e, ao defecá-las em outros locais, as dispersavam. Com a extinção, a flora ocupa áreas mais restritas, pela redução dos fatores de disseminação das sementes.",
+  "erradas": {
+   "A": "O texto não fala de redução na produção de flores.",
+   "B": "O texto não fala de mudanças no tamanho das plantas.",
+   "D": "O texto não trata da quantidade de sementes por fruto.",
+   "E": "A flora ocupa áreas mais restritas por falta de dispersão, e não por redução dos habitats disponíveis."
+  }
+ },
+ "2021-096": {
+  "certa": "A energia gasta em 110 km é 110 ÷ 5,0 = 22 kWh. A potência do carregador é 220 V × 20 A = 4,4 kW. O tempo é 22 ÷ 4,4 = 5,0 horas.",
+  "erradas": {
+   "A": "0,005 h não decorre da energia e da potência.",
+   "B": "0,125 h não decorre da energia e da potência.",
+   "C": "2,5 h resultaria de usar 9 kW de potência, o dobro do necessário.",
+   "E": "8,0 h resultaria de usar uma potência menor que a real."
+  }
+ }
+}

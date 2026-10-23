@@ -1,0 +1,74 @@
+{
+ "2024-122": {
+  "certa": "Os procariontes nitrificantes oxidam a amônia (NH₃) a nitrito e nitrato, uma transformação em que o nitrogênio perde elétrons. Na etapa 5, os decompositores convertem carbono orgânico em CO₂, outra oxidação. As demais etapas (1, 2, 3 e 4) são de redução.",
+  "erradas": {
+   "A": "Na etapa 1, o N₂ é convertido em amônia, e o nitrogênio é reduzido.",
+   "B": "Na etapa 2, o nitrato é convertido em N₂, e o nitrogênio é reduzido.",
+   "C": "Na etapa 3, o CO₂ é fixado em compostos orgânicos, ou seja, o carbono é reduzido.",
+   "D": "Na etapa 4, as plantas fixam CO₂, ou seja, o carbono é reduzido."
+  }
+ },
+ "2024-123": {
+  "certa": "No gráfico, para a razão ar/combustível igual a 18 (excesso de ar), o CO é praticamente zero e o CO₂ está alto, em cerca de 12%. A emissão é de baixo CO e alto CO₂.",
+  "erradas": {
+   "A": "Em 18, o NO já está diminuindo e o O₂ não é baixo.",
+   "B": "Em 18, o NO não é baixo e o HC não é o que está mais alto.",
+   "D": "Em 18, o CO é baixo, e não alto.",
+   "E": "Em 18, o CO₂ é alto, e não baixo."
+  }
+ },
+ "2024-124": {
+  "certa": "O ruído de fundo máximo é 45 dB, e a fala precisa estar 5 dB acima, ou seja, 50 dB. Pelo gráfico, o nível sonoro da fala cai a 50 dB à distância de cerca de 3 m.",
+  "erradas": {
+   "B": "A 4,5 m, o nível já está abaixo de 50 dB.",
+   "C": "A 6,5 m, o nível está bem abaixo de 50 dB.",
+   "D": "A 8 m, o nível está bem abaixo de 50 dB.",
+   "E": "A 9,5 m, o nível está bem abaixo de 50 dB."
+  }
+ },
+ "2024-126": {
+  "certa": "A água aquecida nos coletores fica menos densa e sobe até o reservatório, e a água fria, mais densa, desce para os coletores. Essa circulação é uma corrente de convecção.",
+  "erradas": {
+   "A": "A difusão é o espalhamento de partículas, e não explica a circulação da água.",
+   "B": "A absorção é a retenção da radiação nos coletores, e não o transporte de calor ao reservatório.",
+   "C": "A condução ocorre por contato entre partículas, mas o fluido se move por convecção.",
+   "D": "A irradiação é a forma como o calor do Sol chega aos coletores."
+  }
+ },
+ "2024-127": {
+  "certa": "O fluxograma mostra: urbanização, falta de saneamento, contaminação da água, redução da biodiversidade aquática e riscos para a saúde humana. Com menos predadores aquáticos, as larvas de mosquito se multiplicam, e o risco de arboviroses aumenta.",
+  "erradas": {
+   "A": "O fluxograma não trata de verminoses.",
+   "B": "A eutrofização não aparece no fluxograma.",
+   "C": "O fluxograma não trata de contato com coliformes.",
+   "E": "O fluxograma não trata de aproximar as pessoas de áreas com mosquitos."
+  }
+ },
+ "2024-133": {
+  "certa": "As falsas-corais, sem peçonha, têm coloração semelhante à das corais-verdadeiras, que são perigosas. Os predadores que as evitam confundem as duas, e as falsas sofrem menos predação (mimetismo).",
+  "erradas": {
+   "A": "A semelhança não ajuda a capturar presas.",
+   "B": "A semelhança não diminui a competição por recursos.",
+   "C": "A semelhança não gera híbridos entre espécies diferentes.",
+   "E": "A semelhança de cor não otimiza o encontro de parceiros."
+  }
+ },
+ "2024-136": {
+  "certa": "O custo é linear. Entre 30 e 50 mochilas, o custo sobe de 1.050 para 1.650, ou R$ 600 para 20 mochilas, ou seja, R$ 30 por mochila. O custo fixo é 1.050 − 30 × 30 = R$ 150. Para 80 mochilas: 150 + 30 × 80 = R$ 2.550.",
+  "erradas": {
+   "A": "R$ 2.400 ignora o custo fixo de R$ 150.",
+   "B": "R$ 2.520 não decorre da equação do custo.",
+   "D": "R$ 2.700 acrescenta R$ 150 ao custo correto.",
+   "E": "R$ 2.800 não decorre da equação do custo."
+  }
+ },
+ "2024-137": {
+  "certa": "Em ordem crescente: 46, 54, 60, 64, 64, 66. Com seis valores, a mediana é a média do 3º e do 4º: (60 + 64) ÷ 2 = 62.",
+  "erradas": {
+   "A": "56 não é a média dos dois valores centrais.",
+   "B": "58 não é a média dos dois valores centrais.",
+   "C": "59 não é a média dos dois valores centrais.",
+   "D": "60 é só o 3º valor, e não a média dos dois centrais."
+  }
+ }
+}

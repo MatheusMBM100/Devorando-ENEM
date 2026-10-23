@@ -1,0 +1,56 @@
+{
+ "2021-103": {
+  "certa": "Na fototerapia, a bilirrubina, de cadeia aberta, converte-se em lumirrubina, que tem um anel adicional (cadeia fechada, com ciclo). As duas têm a mesma fórmula molecular e diferem no tipo de cadeia, então são isômeros de cadeia.",
+  "erradas": {
+   "A": "Isômeros ópticos têm a mesma estrutura plana e diferem na atividade óptica, mas aqui a estrutura mudou com a formação de um anel.",
+   "B": "Isômeros funcionais têm funções orgânicas diferentes, e aqui os grupos funcionais continuam sendo os mesmos.",
+   "D": "Isômeros de posição diferem na posição de um grupo ou insaturação, mas aqui houve ciclização.",
+   "E": "Isômeros geométricos (cis-trans) têm as mesmas ligações e diferem no arranjo espacial, o que não explica a formação do anel."
+  }
+ },
+ "2021-104": {
+  "certa": "A potência é a taxa de variação da energia cinética no tempo, P = ΔEc/Δt. Ambos atingem 100 km/h (mesma ΔEc), mas o álcool o faz em 12,9 s, menos que os 13,4 s da gasolina. Então a versão a álcool apresenta a maior taxa de variação de energia cinética e a maior potência.",
+  "erradas": {
+   "A": "A versão a gasolina tem a menor aceleração (demora mais para chegar a 100 km/h).",
+   "B": "A gasolina atinge velocidade máxima maior (165 contra 163 km/h), mas energia cinética final maior não implica maior potência.",
+   "D": "A variação de velocidade é a mesma, mas o tempo é diferente, então a potência não é a mesma.",
+   "E": "Demorar mais tempo para atingir a mesma velocidade indica menor potência, e não maior."
+  }
+ },
+ "2021-105": {
+  "certa": "No circuito D, o polo negativo da bateria liga-se ao B do 1º interruptor, e C₁ liga-se a B₂. Com o 1º em AB, só a lâmpada verde acende. Com o 1º em BC, B₂ fica ligado à bateria: o 2º em AB acende a vermelha, e em BC acende a azul. Assim, só uma lâmpada fica acesa por vez, e as três podem ser acesas.",
+  "erradas": {
+   "A": "As lâmpadas não ficam acesas uma de cada vez em todas as posições: há posições em que duas acendem ou nenhuma.",
+   "B": "Não existe caminho que ligue a bateria às lâmpadas em todas as posições necessárias.",
+   "C": "Os dois interruptores têm B ligado ao mesmo fio da bateria, então não acende só a azul em nenhuma posição.",
+   "E": "A ligação A com A e C com C deixa pares de lâmpadas acesos juntos ou todas apagadas em algumas posições."
+  }
+ },
+ "2021-106": {
+  "certa": "O texto pede células que operem em baixas temperaturas, com eletrólito polimérico e em meio ácido. A PEM opera a 60 a 100 °C, tem eletrólito sólido polimérico (ácido poliperfluorossulfônico) e reações em meio ácido (H⁺).",
+  "erradas": {
+   "A": "A AFC opera a baixa temperatura, mas o meio é alcalino (KOH), sem eletrólito polimérico.",
+   "B": "A MSFC opera a 600 a 1.000 °C, com carbonatos fundidos.",
+   "D": "A PAFC opera a 175 a 200 °C, com ácido fosfórico líquido, e não polimérico.",
+   "E": "A SOFC opera a 600 a 1.000 °C, com óxido sólido, e não polimérico."
+  }
+ },
+ "2021-107": {
+  "certa": "Em dias úmidos, o ar já está carregado de vapor-d'água, então o suor evapora com maior dificuldade. Como a evaporação do suor é o que resfria o corpo, ele não consegue perder calor e o desconforto aumenta.",
+  "erradas": {
+   "A": "O problema não é a temperatura do vapor, mas a quantidade dele no ar.",
+   "C": "A umidade não altera a absorção de radiação pelo corpo.",
+   "D": "O ar úmido não é mau condutor, e o problema é a evaporação.",
+   "E": "O vapor só condensa quando o ar é resfriado abaixo do ponto de orvalho, e não ao tocar a pele nessas condições."
+  }
+ },
+ "2021-108": {
+  "certa": "O NaOH é uma base e reage com ácidos de Brönsted-Lowry. Entre os pesticidas, só o III tem grupos fenol (–OH ligados a anéis aromáticos com vários cloros), que são ácidos e reagem com NaOH formando fenolato.",
+  "erradas": {
+   "A": "O I tem amida (N–H), sem acidez suficiente para reagir com NaOH diluído.",
+   "B": "O II não tem grupo ácido que reaja com NaOH.",
+   "D": "O IV é um sulfona com carbono ligado a iodo, sem hidrogênio ácido nesse contexto.",
+   "E": "O V tem éteres e silício, sem grupo ácido."
+  }
+ }
+}

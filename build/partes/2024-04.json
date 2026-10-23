@@ -1,0 +1,128 @@
+{
+ "2024-092": {
+  "certa": "A reação forma Mg(OH)2 sólido, pouco solúvel, misturado a uma solução com íons Ca2+. Uma mistura de sólido insolúvel e líquido é separada por filtração, que retém o sólido.",
+  "erradas": {
+   "B": "A catação serve para separar pedaços sólidos grandes, que se pegam com as mãos, e não partículas finas em suspensão.",
+   "C": "A destilação separa líquidos miscíveis pelos pontos de ebulição. Aqui há sólido e líquido.",
+   "D": "A dissolução é o oposto do que se quer, pois colocaria o sólido em solução.",
+   "E": "A evaporação eliminaria a água, mas deixaria os sais de cálcio misturados ao Mg(OH)2."
+  }
+ },
+ "2024-093": {
+  "certa": "Nos anfíbios anuros, o canto é emitido principalmente pelos machos para atrair as fêmeas para o acasalamento.",
+  "erradas": {
+   "A": "O som não indica que estejam fora do habitat natural. Esse é só o fato de terem sido trazidos do Caribe.",
+   "B": "O canto não é um sinal de poluição urbana.",
+   "C": "O canto de anuros não é sinal de superpopulação.",
+   "D": "O canto não atrai insetos."
+  }
+ },
+ "2024-099": {
+  "certa": "A proteína spike é o antígeno da vacina. Ao ser reconhecida pelo sistema imune, ela induz a produção de anticorpos específicos contra o vírus e de células de memória.",
+  "erradas": {
+   "B": "A imunidade passiva é a obtida com anticorpos prontos (como no soro). A vacina induz imunidade ativa.",
+   "C": "A vacina não altera o genoma humano. A memória imunológica se forma sem mudança genômica.",
+   "D": "A proteína não neutraliza o vírus. São os anticorpos produzidos que fazem isso.",
+   "E": "A proteína viral não modifica os receptores de membrana das células humanas."
+  }
+ },
+ "2024-105": {
+  "certa": "O HTLV-1 estimula o aumento da produção de linfócitos T. Essa multiplicação descontrolada de células pode levar a leucemias e linfomas, ou seja, ao câncer.",
+  "erradas": {
+   "A": "A aids é causada pelo HIV, que destrói os linfócitos T. O HTLV-1 faz o oposto.",
+   "C": "O diabetes não está relacionado à infecção por HTLV-1.",
+   "D": "A hepatite B é causada por outro vírus, que ataca o fígado.",
+   "E": "O HTLV-1 não causa hemorragia, e sim a proliferação de linfócitos."
+  }
+ },
+ "2024-108": {
+  "certa": "O Brasil reciclou 97,4% de 4,0 × 10^5 t, ou seja, 3,9 × 10^5 t de alumínio. Como são necessários 50 kg de bauxita para 10 kg de alumínio (5 kg de bauxita por kg de Al), a massa de bauxita poupada é 3,9 × 10^5 × 5 ≈ 1,9 × 10^6 t.",
+  "erradas": {
+   "A": "1,0 × 10^4 t não decorre da massa reciclada nem da proporção bauxita/alumínio.",
+   "B": "3,9 × 10^5 t é a massa de alumínio reciclado, sem converter para bauxita.",
+   "C": "5,0 × 10^5 t não decorre do cálculo com a taxa de reciclagem de 97,4%.",
+   "E": "2,0 × 10^7 t seria dez vezes maior que o valor correto."
+  }
+ },
+ "2024-111": {
+  "certa": "10 mol de etanol têm 460 g, que correspondem a 460 ÷ 0,78 ≈ 590 mL = 0,59 L. Esse volume é substituído por 1 m³ de biogás. Em 1 m³ há 70% de metano, ou 700 L. Com 22 L/mol, são 700 ÷ 22 ≈ 31,8 mol, o que dá 31,8 × 16 ≈ 510 g de metano.",
+  "erradas": {
+   "A": "300 g não decorre da conversão correta de 0,7 m³ de metano em massa.",
+   "B": "400 g também não decorre da conversão correta.",
+   "D": "590 g confunde o volume de etanol (0,59 L) com a massa de metano.",
+   "E": "720 g resulta de tratar todo o biogás como metano, sem considerar que só 70% do volume é metano."
+  }
+ },
+ "2024-113": {
+  "certa": "A RT-PCR parte de RNA para sintetizar DNA complementar. Só existe RNA mensageiro de um gene quando ele está sendo transcrito. A técnica é usada, portanto, para detectar genes expressos.",
+  "erradas": {
+   "B": "A técnica detecta a expressão gênica, e não a localização de genes em plasmídeos.",
+   "C": "Ela não se restringe a genes bacterianos.",
+   "D": "A técnica não distingue genes dominantes dos recessivos.",
+   "E": "A técnica não identifica genes autossômicos, ou seja, aqueles que não estão nos cromossomos sexuais."
+  }
+ },
+ "2024-115": {
+  "certa": "Em 2 L (2.000 mL) com 1,4 mg/mL de Na+ há 2.800 mg = 2,8 g de Na. A massa de NaCl correspondente é 2,8 × 58,5 ÷ 23 ≈ 7,1 g. Como são duas colheres pequenas de sal, cada uma tem cerca de 3,6 g.",
+  "erradas": {
+   "A": "0,7 g não decorre da proporção entre as massas molares nem da divisão pelas duas colheres.",
+   "B": "1,8 g é o valor obtido ao dividir a massa por duas vezes.",
+   "C": "2,8 g é a massa de sódio, e não de cloreto de sódio.",
+   "E": "7,0 g é a massa de NaCl das duas colheres juntas, não de uma colher."
+  }
+ },
+ "2024-117": {
+  "certa": "Pelo efeito Doppler, quando a fonte se aproxima do observador, ele percebe o som mais agudo (maior frequência). O mesmo vale para o radar: a onda refletida por um objeto que se aproxima volta com frequência maior, então fr > f0.",
+  "erradas": {
+   "A": "Mais grave e fr menor ocorreriam se a ambulância se afastasse.",
+   "B": "Mais agudo é correto para o som, mas fr menor que f0 vale para um objeto que se afasta.",
+   "C": "Se fr fosse igual a f0, não haveria efeito Doppler, o que não acontece com a ambulância em movimento.",
+   "E": "Mais grave não é a percepção durante a aproximação."
+  }
+ },
+ "2024-121": {
+  "certa": "Hoje, a Química chama de compostos orgânicos as substâncias que têm o carbono como elemento principal, estejam ou não nos seres vivos.",
+  "erradas": {
+   "A": "Ser benéfico à saúde não define um composto orgânico. Há orgânicos tóxicos.",
+   "B": "A biodegradabilidade não define o composto orgânico, pois há plásticos orgânicos que não se degradam.",
+   "C": "A origem a partir de gás carbônico não é critério de definição.",
+   "D": "Produzido sem agrotóxicos é o sentido de “orgânico” na agricultura, e não na Química."
+  }
+ },
+ "2024-125": {
+  "certa": "A água fervente desnatura as enzimas que convertem a glicose em amido. Sem essas enzimas ativas, a glicose se mantém e o milho fica doce.",
+  "erradas": {
+   "B": "A água gelada interrompe as reações, mas a preservação do açúcar vem da inativação das enzimas pela fervura.",
+   "C": "O choque térmico não degrada as reservas nutritivas, e a glicose é preservada.",
+   "D": "A fervura não impede a entrada de oxigênio, e o processo não depende dele.",
+   "E": "O procedimento não desidrata os grãos, e a desidratação não explica a conservação do sabor doce."
+  }
+ },
+ "2024-128": {
+  "certa": "Os poluentes são apolares e lipossolúveis. Em animais vertebrados, as substâncias lipossolúveis se acumulam preferencialmente no tecido adiposo, rico em gordura.",
+  "erradas": {
+   "A": "O tecido ósseo é rico em minerais, e não em gordura.",
+   "B": "O tecido nervoso tem lipídios, mas a reserva de gordura do corpo, onde os poluentes lipossolúveis se acumulam, é o tecido adiposo.",
+   "C": "O tecido epitelial reveste superfícies e não é um local de acúmulo de gordura.",
+   "E": "O sangue é um tecido fluido, aquoso, e não acumula substâncias lipossolúveis."
+  }
+ },
+ "2024-129": {
+  "certa": "Os componentes densos e metálicos do notebook absorvem os raios X e não são atravessados por eles. Com o computador na bagagem, a imagem do computador esconderia os objetos que estão à frente ou atrás dele. Por isso ele passa isolado.",
+  "erradas": {
+   "A": "Os raios X interagem com os metais, sendo absorvidos por eles, e é por isso que a imagem se forma.",
+   "B": "Os raios X não desmagnetizam o disco rígido na inspeção.",
+   "C": "Os raios X não aquecem de forma relevante os metais da bagagem.",
+   "E": "Os raios X não são o que justifica retirar o computador por ionização dos metais."
+  }
+ },
+ "2024-130": {
+  "certa": "O nitrito de sódio reage com o ácido clorídrico para formar ácido nitroso. O ácido clorídrico está presente no suco gástrico, no estômago, então é nesse órgão que o processo é iniciado.",
+  "erradas": {
+   "A": "O rim filtra o sangue e não contém ácido clorídrico.",
+   "B": "O fígado não é o local onde há ácido clorídrico.",
+   "C": "O intestino é um ambiente de pH mais alto que o do estômago.",
+   "D": "O pâncreas produz enzimas e bicarbonato, e não ácido clorídrico."
+  }
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "2021-154": {
+  "certa": "Até R$ 5.000 o imposto é zero. De 5.000 a 10.000, I = 0,1(R − 5.000) cresce de 0 a 500 em linha reta. De 10.000 a 15.000, I = 500 + 0,3(R − 10.000) cresce de 500 a 2.000, com inclinação maior. O gráfico A tem esse perfil: trecho nulo, reta até (10.000; 500) e outra mais inclinada até (15.000; 2.000).",
+  "erradas": {
+   "B": "Termina em 1.000 aos 15.000, mas o imposto nesse ponto é 2.000.",
+   "C": "Não tem trecho isento até 5.000, e termina em 1.000.",
+   "D": "É uma função em degraus, mas o imposto cresce de forma contínua com o preço.",
+   "E": "Não tem trecho nulo até 5.000 e termina em 1.000."
+  }
+ },
+ "2021-155": {
+  "certa": "Com desconto d (inteiro), o preço é 20 − d e o público é 200 + 40d. A arrecadação é (20 − d)(200 + 40d) = 4.000 + 600d − 40d², uma parábola com concavidade para baixo, máximo perto de d = 7,5 (cerca de R$ 6.250) e valor 0 em d = 20. Como só valem preços inteiros, o gráfico é formado por pontos, como em E.",
+  "erradas": {
+   "A": "Mostra uma reta crescente, mas a arrecadação é uma parábola.",
+   "B": "Mostra pontos em crescimento quase linear, mas a arrecadação cai depois do máximo.",
+   "C": "Mostra uma reta decrescente, mas a arrecadação sobe no início.",
+   "D": "Tem o formato parabólico correto, mas é uma linha contínua, e os preços só podem ser inteiros."
+  }
+ },
+ "2021-156": {
+  "certa": "O destino é a coluna: soma das famílias que chegam a cada região. Coluna 1: 0+0+2+1+1 = 4. Coluna 2: 4+0+2+0+2 = 8. Coluna 3: 2+6+0+2+0 = 10. Coluna 4: 2+2+3+0+4 = 11. Coluna 5: 5+3+0+4+0 = 12. O maior fluxo de chegada é o da região 5.",
+  "erradas": {
+   "A": "A região 1 recebe 4 dezenas de famílias.",
+   "B": "A região 2 recebe 8 dezenas de famílias.",
+   "C": "A região 3 recebe 10 dezenas de famílias.",
+   "D": "A região 4 recebe 11 dezenas de famílias, menos que a 5."
+  }
+ },
+ "2021-157": {
+  "certa": "Modelo A lotado: 200 passageiros × 2.000 km × 0,02 = 8.000 L. Modelo B lotado: 220 passageiros × 2.000 km × 0,018 = 7.920 L. A diferença é 80 L em 8.000 L, ou seja, 1% menor.",
+  "erradas": {
+   "A": "10% menor considera só a redução do consumo por passageiro, sem o aumento de passageiros.",
+   "C": "Igual ocorreria se os efeitos se compensassem, mas 1,1 × 0,9 = 0,99.",
+   "D": "1% maior inverte o sinal da diferença.",
+   "E": "11% maior resulta de somar +10% e +1% de forma errada."
+  }
+ },
+ "2021-158": {
+  "certa": "Com 3 pessoas, a troca de um pneu leva 4 s. O tempo é inversamente proporcional ao número de pessoas, então com 2 pessoas leva 4 × 3 ÷ 2 = 6 s. Os grupos trabalham ao mesmo tempo, e a troca termina quando o mais lento acabar: 6,0 s.",
+  "erradas": {
+   "B": "5,7 s não decorre da proporção inversa (4 × 3/2).",
+   "C": "5,0 s não decorre da proporção inversa (4 × 3/2).",
+   "D": "4,5 s não decorre da proporção inversa (4 × 3/2).",
+   "E": "4,4 s não decorre da proporção inversa (4 × 3/2)."
+  }
+ },
+ "2021-159": {
+  "certa": "Para cada suplemento, o número de sachês n deve cobrir A ≥ 800, B ≥ 1.000 e C ≥ 1.200. I: n = 16 (R$ 32). II: n = 6 (R$ 18). III: n = 4 (R$ 20). IV: n = 2 (600·2 = 1.200; 500·2 = 1.000; 1.000·2 = 2.000), R$ 12. V: n = 2 (R$ 16). O menor gasto é o do suplemento IV.",
+  "erradas": {
+   "A": "O suplemento I exige 16 sachês, que custam R$ 32,00.",
+   "B": "O suplemento II exige 6 sachês, que custam R$ 18,00.",
+   "C": "O suplemento III exige 4 sachês, que custam R$ 20,00.",
+   "E": "O suplemento V exige 2 sachês, que custam R$ 16,00, mais que o IV."
+  }
+ }
+}

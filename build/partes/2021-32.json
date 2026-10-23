@@ -1,0 +1,38 @@
+{
+ "2021-176": {
+  "certa": "O valor das diárias é d·n. A taxa de serviço é um percentual s sobre esse valor: d·n·s. Somando a taxa fixa de limpeza L, o preço é P = d·n + L + d·n·s.",
+  "erradas": {
+   "B": "Usa d·s como taxa de serviço, mas a taxa incide sobre todas as diárias (d·n), e não sobre uma só.",
+   "C": "Soma d, L e s, sem multiplicar pelo número de diárias nem tratar s como percentual.",
+   "D": "Considera só a taxa de serviço e a limpeza, e esquece o valor das diárias.",
+   "E": "Soma s como valor fixo, mas s é um percentual do valor das diárias."
+  }
+ },
+ "2021-177": {
+  "certa": "A probabilidade de errar um dardo é 1/2. Com n dardos, a de pontuar (acertar pelo menos um) é 1 − (1/2)ⁿ. Precisa-se de 1 − (1/2)ⁿ ≥ 9/10, ou (1/2)ⁿ ≤ 1/10. Com n = 3, 1/8 = 0,125 (não basta). Com n = 4, 1/16 = 0,0625 (basta). A quantidade mínima é 4.",
+  "erradas": {
+   "A": "Com 2 dardos, a probabilidade de pontuar é 1 − 1/4 = 75%, abaixo de 90%.",
+   "C": "Com 6 dardos o jogo atende, mas 4 já bastam, e a questão pede o mínimo.",
+   "D": "Com 9 dardos o jogo atende, mas 4 já bastam.",
+   "E": "Com 10 dardos o jogo atende, mas 4 já bastam."
+  }
+ },
+ "2021-179": {
+  "certa": "Usando φ² = φ + 1: φ⁶ = 8φ + 5. Então φ⁷ = φ · φ⁶ = 8φ² + 5φ = 8(φ + 1) + 5φ = 13φ + 8.",
+  "erradas": {
+   "A": "5φ + 3 é φ⁵.",
+   "B": "7φ + 2 não segue o padrão das potências de φ (coeficientes de Fibonacci).",
+   "C": "9φ + 6 não segue o padrão das potências de φ.",
+   "D": "11φ + 7 não segue o padrão das potências de φ."
+  }
+ },
+ "2021-180": {
+  "certa": "O visitante percorre as arestas e as diagonais do cubo, apoiado sobre um vértice com a diagonal vertical. Visto de cima (projeção sobre o plano da base), o cubo forma um hexágono regular, os dois vértices extremos da diagonal vertical caem no centro, e as demais diagonais atravessam o centro ligando vértices opostos. É a figura E: o hexágono com as três diagonais principais.",
+  "erradas": {
+   "A": "Mostra um hexágono com diagonais que não se cruzam no centro da forma esperada para a vista superior.",
+   "B": "Mostra um quadrado, que seria a projeção do cubo apoiado em uma face.",
+   "C": "Mostra um retângulo com diagonais, que seria a vista de um cubo de lado.",
+   "D": "Mostra um retângulo dividido ao meio, que seria a vista lateral de dois cubos."
+  }
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "2025-088": {
+  "certa": "O texto reconhece aos povos indígenas o direito de proteger seus conhecimentos, sementes, medicamentos, saberes sobre fauna e flora, literaturas orais, jogos, artes e outras manifestações. A lista mostra a variedade e a complexidade dos saberes tradicionais.",
+  "erradas": {
+   "A": "O texto não trata dos troncos linguísticos, apesar de citar transmissões orais e literaturas.",
+   "B": "O texto fala em manter, controlar e proteger o patrimônio, não em ampliar influências externas.",
+   "D": "O texto trata de patrimônio cultural e científico, não só de práticas de sobrevivência.",
+   "E": "A economia de subsistência não é o tema. O texto cobre conhecimentos, artes, ciência e tecnologia."
+  }
+ },
+ "2025-089": {
+  "certa": "O Texto I mostra Bezalel recebendo habilidade para o trabalho artístico e artesanal. O Texto II diz que Moisés foi educado em toda a sabedoria dos egípcios. O Texto III diz que quem conhecesse a ciência certa renunciaria à ostentação. Os três valorizam o saber e a habilidade para o desenvolvimento social e as práticas de trabalho.",
+  "erradas": {
+   "A": "Os textos não tratam do surgimento de universidades ou de escolas confessionais.",
+   "B": "Os textos não falam de crescimento religioso nem de movimentos sectários.",
+   "C": "Não há intolerância nem rivalidade entre nações nos trechos.",
+   "D": "Os trechos valorizam o conhecimento e a habilidade, não a preservação de rituais místicos."
+  }
+ },
+ "2025-090": {
+  "certa": "A expedição russa percorreu países da América do Sul coletando material biológico e etnográfico para compor coleções em instituições russas. Esse tipo de ciência, que extrai conhecimento e objetos de outras regiões para o centro, está ligado a um projeto nacionalista de caráter imperialista e colonizador.",
+  "erradas": {
+   "B": "A expedição era formada por cientistas e não tinha finalidade militar ou disciplinadora.",
+   "C": "O objetivo era científico e institucional, não lúdico nem filantrópico.",
+   "D": "A coleta era para museus e não para comércio. O texto não fala de objetivo mercantil.",
+   "E": "O texto não trata de objetivos religiosos nem humanitários."
+  }
+ }
+}

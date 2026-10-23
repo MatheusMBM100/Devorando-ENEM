@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banco de Questões ENEM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <h1>Banco de Questões <span>ENEM</span></h1>
+    <nav>
+      <button id="tab-simulado" class="tab on">Simulado</button>
+      <button id="tab-stats" class="tab">Desempenho</button>
+    </nav>
+  </div>
+</header>
+
+<main class="layout">
+  <aside id="filtros" class="filtros" style="display:none">
+    <h2>Filtros</h2>
+    <fieldset>
+      <legend>Ano</legend>
+      <div id="f-anos" class="chips"></div>
+    </fieldset>
+    <fieldset>
+      <legend>Matéria</legend>
+      <div id="f-mats" class="chips"></div>
+    </fieldset>
+    <fieldset>
+      <legend>Assunto</legend>
+      <select id="f-assunto"><option value="">Todos os assuntos</option></select>
+    </fieldset>
+    <fieldset>
+      <legend>Situação</legend>
+      <select id="f-status">
+        <option value="todas">Todas</option>
+        <option value="novas">Ainda não respondidas</option>
+        <option value="erradas">Que errei</option>
+        <option value="certas">Que acertei</option>
+        <option value="marcadas">Marcadas para revisar</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Língua estrangeira (Q. 1–5)</legend>
+      <select id="f-lingua">
+        <option value="ambas">Inglês e Espanhol</option>
+        <option value="Inglês">Só Inglês</option>
+        <option value="Espanhol">Só Espanhol</option>
+        <option value="nenhuma">Ocultar</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Buscar no enunciado</legend>
+      <input id="f-busca" type="search" placeholder="ex.: Revolução Industrial">
+    </fieldset>
+    <label class="check"><input id="f-embaralhar" type="checkbox"> Ordem aleatória</label>
+    <p id="f-resumo" class="muted"></p>
+    <button id="f-limpar" class="ghost">Limpar filtros</button>
+  </aside>
+
+  <section id="painel-simulado" class="painel"></section>
+
+  <section id="painel-praticar" class="painel" hidden>
+    <div id="sim-bar" class="sim-bar" hidden>
+      <div><b id="sim-nome"></b> <span id="sim-prog" class="muted"></span></div>
+      <div class="sim-acoes">
+        <button id="sim-pausa" class="ghost" type="button">⏸ Pausar</button>
+        <button id="sim-fim" class="btn" type="button">Finalizar</button>
+        <button id="sim-sair" class="ghost" type="button">Voltar ao início</button>
+      </div>
+    </div>
+    <div class="nav-q">
+      <button id="prev" class="ghost" title="Anterior (←)">←</button>
+      <div id="posicao" class="posicao"></div>
+      <button id="next" class="ghost" title="Próxima (→)">→</button>
+    </div>
+    <div id="paleta" class="paleta" aria-label="Navegação por questão"></div>
+    <article id="questao" class="questao" aria-live="polite"></article>
+  </section>
+
+  <section id="painel-stats" class="painel" hidden></section>
+</main>
+
+<footer class="rodape">
+  Provas e gabaritos oficiais do <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos" target="_blank" rel="noopener">INEP</a> (1ª aplicação, caderno azul).
+  Site independente, sem vínculo com o INEP. Seu progresso fica salvo apenas neste navegador.
+</footer>
+
+<script src="data.js"></script>
+<script src="explicacoes.js"></script>
+<script src="meta.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

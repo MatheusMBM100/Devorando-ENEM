@@ -1,0 +1,128 @@
+{
+ "2020-142": {
+  "certa": "Tomando A como (0, 0), C fica em (2, 2) e B em (4, 3). Os caminhos de A a B com passos para a direita e para cima são C(7,3) = 35. Os que passam por C são 6 (de A a C: C(4,2)) × 3 (de C a B: C(3,1)) = 18. Sem passar por C: 35 − 18 = 17.",
+  "erradas": {
+   "A": "4 é um número pequeno demais: há bem mais caminhos possíveis.",
+   "B": "14 não decorre da contagem de caminhos com a exclusão de C.",
+   "D": "35 é o total de caminhos, incluindo os que passam pela casa de Carlos.",
+   "E": "48 é maior que o total de 35 caminhos de A a B."
+  }
+ },
+ "2020-145": {
+  "certa": "A base de T2 mede (c/2) × 2L = cL, a mesma área da base de T1. Dois aeradores aumentam o volume em 15% e 10%: 1,15 × 1,10 = 1,265. Como as bases têm áreas iguais, a altura cresce na mesma razão: y = 1,265x.",
+  "erradas": {
+   "B": "1,250 resulta de somar 15% e 10% e acrescentar 10% de 15%, a conta correta é multiplicativa (1,15 × 1,10).",
+   "C": "1,150 considera só o primeiro aerador.",
+   "D": "1,125 não corresponde ao produto dos dois aumentos.",
+   "E": "y = x ignora o aumento de volume causado pelos aeradores."
+  }
+ },
+ "2020-147": {
+  "certa": "1 micrômetro = 10⁻⁶ m. Então 100 µm = 10² × 10⁻⁶ = 1,0 × 10⁻⁴ m.",
+  "erradas": {
+   "A": "10⁻¹ m = 10 cm, muito maior que o carro de 100 µm.",
+   "B": "10⁻³ m = 1 mm, que são 1.000 µm.",
+   "D": "10⁻⁶ m é 1 µm, e não 100 µm.",
+   "E": "10⁻⁷ m é 0,1 µm."
+  }
+ },
+ "2020-148": {
+  "certa": "O tecido verde mede 180 × 150. Se a largura (14 M) ocupasse os 150 cm, M = 10,7 cm e o comprimento (20 M) seria 214 cm, maior que 180. Então o comprimento limita: 20 M = 180, e M = 9 cm. O raio do círculo é 3,5 M = 31,5 cm, e o diâmetro, 63 cm. O menor quadrado de tecido azul tem lado 63 cm.",
+  "erradas": {
+   "A": "27 cm é cerca de 3 M, e não o diâmetro do círculo.",
+   "B": "32 cm é aproximadamente o raio, e o quadrado deve cobrir o diâmetro.",
+   "C": "53 cm não decorre de M = 9 cm: o diâmetro do círculo é 7 M = 63 cm, e o quadrado deve ter esse lado.",
+   "E": "90 cm corresponde a 10 M, mais que o diâmetro do círculo (7 M = 63 cm)."
+  }
+ },
+ "2020-151": {
+  "certa": "A eficiência é peças ÷ horas. Dia 1: 800 ÷ 4 = 200. Dia 2: 1.000 ÷ 8 = 125. Dia 3: 1.100 ÷ 5 = 220. Dia 4: 1.800 ÷ 9 = 200. Dia 5: 1.400 ÷ 10 = 140. A maior razão é a do dia 3.",
+  "erradas": {
+   "A": "O dia 1 tem razão 200, menor que 220.",
+   "B": "O dia 2 tem razão 125, a menor de todas.",
+   "D": "O dia 4 tem a maior produção (1.800), mas razão 200, menor que 220.",
+   "E": "O dia 5 tem razão 140."
+  }
+ },
+ "2020-154": {
+  "certa": "Cada trecho tem 30 m de largura. MN (andando, 4/m²): 100 × 30 × 4 = 12.000. NO (parados, 6/m²): 300 × 30 × 6 = 54.000. OP (movimentando-se sem sair do lugar, 5/m²): 200 × 30 × 5 = 30.000. QR (andando, 4/m²): 100 × 30 × 4 = 12.000. Total: 108.000. Descontam-se 4 carros de som (4.000): 104.000.",
+  "erradas": {
+   "A": "110.000 não corresponde às densidades corretas dos trechos.",
+   "C": "93.000 não corresponde às densidades corretas dos trechos.",
+   "D": "92.000 não corresponde às densidades corretas dos trechos.",
+   "E": "87.000 não corresponde às densidades corretas dos trechos."
+  }
+ },
+ "2020-155": {
+  "certa": "Trabalham os que 'somente trabalham' (45,2%) e os que 'trabalham e estudam' (13,6%): 58,8%. Então 0,588 × 363.000 = 213.444 jovens.",
+  "erradas": {
+   "A": "114.708 corresponde a 31,6% e não à soma dos que trabalham.",
+   "B": "164.076 é 45,2% de 363.000, só os que somente trabalham.",
+   "D": "284.592 corresponde a 78,4%, o que inclui quem não trabalha.",
+   "E": "291.582 corresponde a 80,3% e não decorre do gráfico."
+  }
+ },
+ "2020-157": {
+  "certa": "De Q(t) = Q₀·2^(−t/5730), a idade é t = 5.730 · log₂(Q₀ ÷ Q). Fóssil 1: 128/32 = 4 → 2 meias-vidas. Fóssil 2: 256/8 = 32 → 5. Fóssil 3: 512/64 = 8 → 3. Fóssil 4: 1.024/512 = 2 → 1. Fóssil 5: 2.048/128 = 16 → 4. O de 5 meias-vidas é o mais antigo: o fóssil 2.",
+  "erradas": {
+   "A": "O fóssil 1 tem 2 meias-vidas.",
+   "C": "O fóssil 3 tem 3 meias-vidas.",
+   "D": "O fóssil 4 tem 1 meia-vida, o mais novo.",
+   "E": "O fóssil 5 tem 4 meias-vidas, menos que o fóssil 2."
+  }
+ },
+ "2020-167": {
+  "certa": "A arrecadação é preço × porcentagem vendida (estoques iguais). I: 200 × 13 = 2.600. II: 170 × 10 = 1.700. III: 150 × 16 = 2.400. IV: 100 × 29 = 2.900. V: 80 × 32 = 2.560. A maior é a do perfume IV.",
+  "erradas": {
+   "A": "O perfume I arrecada 2.600, menos que o IV.",
+   "B": "O perfume II arrecada 1.700, a menor.",
+   "C": "O perfume III arrecada 2.400, menos que o IV.",
+   "E": "O perfume V vendeu mais unidades (32%), mas arrecada 2.560, menos que o IV."
+  }
+ },
+ "2020-169": {
+  "certa": "Cada lote tem 200 m², então a casa deve ter de 80 a 100 m², com 4 m da rua e 1 m das divisas. Casa 1: 5 × 15 = 75 m² (37,5%, abaixo de 40%). Casa 2: 8 × 15 = 120 m² (60%, acima de 50%). Casa 3: 5 × 12 = 60 m² (30%). Casa 4: tem 2 m da rua em cima, menos que 4. Casa 5: 5 × 18 = 90 m² (45%), com 4 m da rua e 1 m das divisas. Só a casa 5 atende.",
+  "erradas": {
+   "A": "A casa 1 tem 75 m², ou 37,5%, abaixo do mínimo de 40%.",
+   "B": "A casa 2 tem 120 m², ou 60%, acima do máximo de 50%.",
+   "C": "A casa 3 tem 60 m², ou 30%, abaixo do mínimo de 40%.",
+   "D": "A casa 4 está a 2 m da rua, menos que os 4 m exigidos."
+  }
+ },
+ "2020-171": {
+  "certa": "Somam-se as durações em que a curva do ruído fica acima da linha de 55 dB: aproximadamente de 2 h a 5 h, de 5,5 h a 8,5 h, de 11 h a 13,5 h, de 16 h a 17 h e de 19 h a 21,5 h, ou seja, cerca de 13 horas (gabarito oficial).",
+  "erradas": {
+   "A": "5 h considera só uma parte dos intervalos acima de 55 dB.",
+   "B": "8 h considera só uma parte dos intervalos acima de 55 dB.",
+   "C": "10 h considera só uma parte dos intervalos acima de 55 dB.",
+   "D": "11 h considera só uma parte dos intervalos acima de 55 dB."
+  }
+ },
+ "2020-175": {
+  "certa": "O nível deve subir de 8 para 15 cm: 7 cm. A base do recipiente é 3 cm × 4 cm = 12 cm², então o volume a ocupar é 7 × 12 = 84 cm³. Cada bolinha tem 6 cm³, então 84 ÷ 6 = 14 bolinhas.",
+  "erradas": {
+   "B": "16 bolinhas levariam o nível acima de 15 cm.",
+   "C": "18 bolinhas levariam o nível acima de 15 cm.",
+   "D": "30 bolinhas é um número muito acima do necessário.",
+   "E": "34 bolinhas é um número muito acima do necessário."
+  }
+ },
+ "2020-178": {
+  "certa": "Entre quatro octógonos regulares, que se tocam pelos lados, sobram espaços quadrados (ângulos de 90°). Na borda lateral do painel, as sobras são triângulos retângulos isósceles (metade de um quadrado). Então são necessários os formatos 1 (triângulo retângulo isósceles) e 3 (quadrado).",
+  "erradas": {
+   "A": "O formato 1 sozinho não preenche os espaços quadrados entre os octógonos.",
+   "B": "O formato 3 sozinho não preenche os espaços triangulares da borda.",
+   "C": "O triângulo equilátero (2) tem ângulos de 60°, que não ocorrem nos espaços entre octógonos.",
+   "E": "O triângulo equilátero (2) não preenche os espaços triangulares da borda, que são retângulos."
+  }
+ },
+ "2020-179": {
+  "certa": "Cada mangueira é a hipotenusa de um triângulo com cateto vertical 3 m (altura) e cateto horizontal r (raio). São 20 mangueiras e 100 m, então cada uma mede 100 ÷ 20 = 5 m. Então r = √(5² − 3²) = 4 m.",
+  "erradas": {
+   "B": "4,87 m não satisfaz 20·√(9 + r²) = 100.",
+   "C": "5,00 m daria mangueiras de √34 ≈ 5,83 m, mais de 100 m no total.",
+   "D": "5,83 m daria mangueiras de cerca de 6,56 m, muito mais de 100 m no total.",
+   "E": "6,26 m daria mangueiras maiores que 5 m, passando de 100 m."
+  }
+ }
+}

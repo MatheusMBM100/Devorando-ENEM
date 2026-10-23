@@ -1,0 +1,110 @@
+{
+ "2023-162": {
+  "certa": "No gráfico, cada ponto tem x (criptomoeda A) e y (criptomoeda B). A está mais valorizada quando x > y, ou seja, abaixo da diagonal. Isso ocorre às 9 h (x ≈ 3, y ≈ 0,5), às 12 h (x = 5,5, y = 3), às 13 h (x = 6, y = 1,5) e às 14 h (x = 3,5, y = 2): 4 instantes. Às 10 h e às 11 h os valores são iguais, e às 15 h, 16 h e 17 h, B vale mais.",
+  "erradas": {
+   "A": "3 deixa de contar um dos instantes em que A vale mais que B.",
+   "C": "6 incluiria instantes em que os valores são iguais ou em que B vale mais.",
+   "D": "7 incluiria instantes em que B vale mais que A.",
+   "E": "9 seria o total de instantes, mas A não vale mais em todos."
+  }
+ },
+ "2023-164": {
+  "certa": "O cone grande tem r = 9 cm e h = 36 cm, e volume (1/3)·3·81·36 = 2.916 cm³. O cone removido, semelhante, tem r = 3 cm e h = 12 cm, e volume (1/3)·3·9·12 = 108 cm³. O tronco tem 2.916 − 108 = 2.808 cm³ e altura 24 cm. O cilindro removido (r = 3 cm, h = 24 cm) tem 3·9·24 = 648 cm³. Sobram 2.160 cm³, e a massa é 2.160 × 0,6 = 1.296 g.",
+  "erradas": {
+   "A": "1.198,8 g resulta de um erro no volume removido.",
+   "C": "1.360,8 g resulta de um erro no volume removido.",
+   "D": "4.665,6 g corresponde a um volume de 7.776 cm³, maior que o do próprio cone, e não decorre do cálculo.",
+   "E": "4.860 g é a massa que se obteria sem retirar o cone menor e o cilindro, e não decorre do volume da escultura."
+  }
+ },
+ "2023-165": {
+  "certa": "A média é (75 × 2.000 + 25 × 7.000) ÷ 100 = (150.000 + 175.000) ÷ 100 = R$ 3.250,00.",
+  "erradas": {
+   "A": "R$ 2.000,00 é o salário da Produção, e não a média.",
+   "B": "R$ 2.500,00 não decorre da média ponderada.",
+   "D": "R$ 4.500,00 é a média simples dos dois salários, sem ponderar pelo número de funcionários.",
+   "E": "R$ 9.000,00 é a soma dos dois salários."
+  }
+ },
+ "2023-167": {
+  "certa": "Com vazão constante, o volume acumulado cresce de forma linear de 0 a 3 s, fica constante de 3 a 8 s, e volta a crescer, com a mesma inclinação, de 8 a 11 s. É o gráfico B.",
+  "erradas": {
+   "A": "Mostra o volume voltando a zero em t = 8, mas o volume acumulado não diminui.",
+   "C": "Mostra a vazão (constante) e não o volume acumulado.",
+   "D": "Mostra um crescimento contínuo, sem a pausa de 5 segundos.",
+   "E": "Mostra uma inclinação maior no segundo trecho, mas a vazão é a mesma."
+  }
+ },
+ "2023-168": {
+  "certa": "O padrão é: 1 = urapum, 2 = okosa, 3 = okosa urapum (2 + 1), 4 = okosa okosa (2 + 2), 6 = okosa okosa okosa. Então 5 = okosa okosa urapum (2 + 2 + 1), e 7 = okosa okosa okosa urapum (2 + 2 + 2 + 1).",
+  "erradas": {
+   "A": "Usa três urapum para o cinco, e o padrão usa okosa (2) tantas vezes quanto possível.",
+   "B": "O sete teria quatro okosa, mas 4 × 2 = 8, e o correto é três okosa e um urapum.",
+   "D": "Mistura okosa e urapum fora do padrão de contagem.",
+   "E": "O sete seria okosa okosa okosa okosa (= 8), e o correto tem um urapum."
+  }
+ },
+ "2023-170": {
+  "certa": "O valor financiado é 1.500 × 1,2 = 1.800, em parcelas de R$ 600. A primeira é paga na hora, então o saldo de R$ 900 é pago em duas parcelas de R$ 600, em 30 e 60 dias: 600/(1 + i) + 600/(1 + i)² = 900. Com x = 1/(1 + i): 2x² + 2x − 3 = 0, x = (−2 + √28)/4 = (−2 + 5,29)/4 ≈ 0,8225. Então 1 + i = 1/0,8225 ≈ 1,215, ou i ≈ 21,5%.",
+  "erradas": {
+   "A": "6,7% não resolve a equação dos juros compostos.",
+   "B": "10% não resolve a equação dos juros compostos.",
+   "C": "20% é o acréscimo total sobre o preço, e não a taxa mensal composta.",
+   "E": "23,3% não resolve a equação dos juros compostos."
+  }
+ },
+ "2023-172": {
+  "certa": "O gráfico mostra que o vigilante se afasta da base a velocidade constante (0 a 3 km em 10 min), mantém a distância de 3 km por 10 min, e volta (3 a 0 km em 10 min). A distância constante indica um arco de circunferência centrado na base. O trajeto é um setor circular: sai em linha reta, percorre um arco e volta em linha reta, como na alternativa A.",
+  "erradas": {
+   "B": "Um lado reto, em vez de arco, faria a distância à base variar no trecho do meio.",
+   "C": "Não há trecho a distância constante da base.",
+   "D": "O trecho do meio, reto, faria a distância à base variar.",
+   "E": "O trajeto parte e retorna pelo mesmo ponto central e não tem o mesmo padrão de distâncias."
+  }
+ },
+ "2023-174": {
+  "certa": "O centro da lua coincide com um vértice do telhado, que é um triângulo equilátero com ângulo de 60° nesse vértice. A parte da lua escondida é a região entre dois raios e o arco, ou seja, um setor circular de 60°.",
+  "erradas": {
+   "A": "Um cone é um sólido, e não uma região plana.",
+   "C": "Um segmento circular é limitado por uma corda e um arco, e o vértice está no centro do círculo.",
+   "D": "O triângulo isósceles não inclui o arco da circunferência.",
+   "E": "Um arco é uma linha, e a região escondida é uma superfície."
+  }
+ },
+ "2023-175": {
+  "certa": "A piscina tem área 400 m², então o lado mede 20 m. Com 5 m de calçada de cada lado, o quadrado maior tem lado 30 m e área 900 m². A calçada ocupa 900 − 400 = 500 m².",
+  "erradas": {
+   "A": "1.000 m² não decorre da diferença entre as áreas.",
+   "B": "900 m² é a área total (piscina + calçada).",
+   "C": "600 m² não decorre da diferença entre as áreas.",
+   "E": "400 m² é só a área da piscina."
+  }
+ },
+ "2023-176": {
+  "certa": "A intensidade é zero entre 10 min e 12 min (2 min) e entre 16 min e 20 min (4 min). O celular ficou 2 + 4 = 6 minutos sem sinal.",
+  "erradas": {
+   "B": "8 min contaria intervalos em que ainda havia sinal.",
+   "C": "10 min contaria intervalos em que ainda havia sinal.",
+   "D": "14 min contaria intervalos em que ainda havia sinal.",
+   "E": "24 min é o tempo em que havia algum sinal, e não o tempo sem sinal."
+  }
+ },
+ "2023-178": {
+  "certa": "Pisos: 3 × (1,0 × 0,25) = 0,75 m². Espelhos: 3 × (1,0 × 0,20) = 0,60 m². Cada parede lateral é uma escada de 3 degraus com área 0,20 × (0,25 + 0,50 + 0,75) = 0,30 m², e as duas somam 0,60 m². Total: 0,75 + 0,60 + 0,60 = 1,95 m².",
+  "erradas": {
+   "A": "1,20 m² deixa de contar parte das superfícies.",
+   "B": "1,35 m² deixa de contar parte das superfícies.",
+   "C": "1,65 m² deixa de contar parte das superfícies.",
+   "D": "1,80 m² deixa de contar parte das superfícies."
+  }
+ },
+ "2023-179": {
+  "certa": "A estrela está na escada da esquerda, na altura da fileira E. Subindo mais quatro fileiras para o norte, chega-se à fileira I. À direita da escada, ficam as poltronas de 4 a 9 e a terceira é a de posição 6. A poltrona é a I6.",
+  "erradas": {
+   "A": "A6 está na fileira A, na parte de baixo, e não quatro fileiras acima da estrela.",
+   "B": "H1 está do lado esquerdo da escada, e a poltrona fica à direita.",
+   "C": "H6 está uma fileira abaixo, e seriam só três fileiras acima de E.",
+   "D": "I1 está do lado esquerdo da escada, e a poltrona fica à direita."
+  }
+ }
+}

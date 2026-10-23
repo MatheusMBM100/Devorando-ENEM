@@ -1,0 +1,92 @@
+{
+ "2024-086": {
+  "certa": "A imagem de 2000 mostra o litoral de Dubai praticamente reto. A de 2020 mostra ilhas em forma de palmeira, um arquipélago artificial e muito mais área urbanizada. A comparação indica a artificialização do espaço geográfico.",
+  "erradas": {
+   "A": "As imagens mostram transformações do espaço, e não a conservação de lugares afetivos.",
+   "B": "A paisagem não mostra aumento de áreas desertificadas.",
+   "C": "As imagens não mostram redefinição de fronteiras nacionais.",
+   "E": "As imagens não mostram mudança da dinâmica macroclimática."
+  }
+ },
+ "2024-094": {
+  "certa": "A desmineralização ocorre quando a hidroxiapatita reage com H⁺: quanto mais ácido o meio (menor pH), maior a quantidade de H⁺ e mais o equilíbrio se desloca para a desmineralização. O creme com o menor pH, o IV (6,9), promove a maior desmineralização.",
+  "erradas": {
+   "A": "O creme I tem pH 9,5, básico, o que favorece a mineralização.",
+   "B": "O creme II tem pH 11,0, o mais básico, e favorece a mineralização.",
+   "C": "O creme III tem pH 7,7, mais básico que o IV.",
+   "E": "O creme V tem pH 7,3, menos ácido que o IV."
+  }
+ },
+ "2024-095": {
+  "certa": "O iglu é construído com neve e gelo e mantém seu interior acima da temperatura de solidificação da água (0 °C), pois isola o frio de fora. Por isso a água não congela lá dentro, e a geladeira é necessária para baixar a temperatura abaixo de 0 °C.",
+  "erradas": {
+   "B": "A umidade não é o motivo de a água não congelar.",
+   "C": "O ar isolante conserva o calor, mas a razão direta é a temperatura interna acima de 0 °C.",
+   "D": "A uniformidade da temperatura não impede a solidificação.",
+   "E": "A pressão dentro do iglu é próxima à atmosférica, e não é o motivo."
+  }
+ },
+ "2024-096": {
+  "certa": "O composto 1 (ácido salicílico) tem um grupo carboxila (COOH) e um grupo fenólico. O composto 2 tem uma cetona, um alceno e uma carboxila (COOH). O grupo comum aos dois é o ácido carboxílico.",
+  "erradas": {
+   "B": "A cetona só existe no composto 2.",
+   "C": "O alceno só existe no composto 2.",
+   "D": "Nenhum dos compostos é um álcool.",
+   "E": "O fenol só existe no composto 1."
+  }
+ },
+ "2024-097": {
+  "certa": "No tubo 1, as bactérias ficam na superfície, onde há oxigênio: aeróbias estritas. No tubo 2, ficam no fundo, sem oxigênio: anaeróbias estritas. No tubo 3, ocupam todo o tubo, com ou sem oxigênio: anaeróbias facultativas.",
+  "erradas": {
+   "A": "Inverte as classificações dos tubos 1 e 3.",
+   "B": "Inverte as classificações dos tubos 1 e 2.",
+   "D": "Inverte as classificações dos tubos 1 e 2.",
+   "E": "Atribui o tubo 2 a um facultativo e o tubo 3 a um anaeróbio estrito, o que não corresponde à distribuição."
+  }
+ },
+ "2024-098": {
+  "certa": "Na fosforescência, a luz absorvida excita elétrons do ZnS para níveis de maior energia. Quando eles retornam, emitem luz verde-amarelada lentamente. O brilho decorre de transições eletrônicas.",
+  "erradas": {
+   "A": "As colisões interatômicas não geram luz de modo persistente no escuro.",
+   "B": "Os átomos não têm coloração própria que explique o fenômeno.",
+   "D": "O brilho não vem de reações nucleares.",
+   "E": "A reflexão só devolve a luz enquanto há luz incidente, e não explica o brilho no escuro."
+  }
+ },
+ "2024-100": {
+  "certa": "O cilindro metálico oco funciona como uma blindagem eletrostática: as cargas se redistribuem na superfície e o campo no interior é nulo. As linhas de campo chegam perpendiculares à superfície do cilindro e não passam por dentro, como na alternativa E.",
+  "erradas": {
+   "A": "As linhas atravessam o cilindro, mas dentro dele o campo é nulo.",
+   "B": "O sentido das linhas está invertido, e elas atravessam o cilindro.",
+   "C": "O sentido das linhas está invertido.",
+   "D": "As linhas se cruzam dentro do cilindro, o que é impossível, porque o campo ali é nulo."
+  }
+ },
+ "2024-101": {
+  "certa": "Na superfície do grafeno, os elétrons do material interagem com os cátions da água da chuva, o que cria uma diferença de potencial e gera a corrente elétrica.",
+  "erradas": {
+   "A": "Os cátions já estão oxidados, e o grafeno não os oxida.",
+   "B": "O grafeno não impede a difusão da água, e a água é necessária ao processo.",
+   "C": "Diminuir a energia de ativação seria o papel de um catalisador, e não explica a geração de potencial.",
+   "D": "O grafeno não forma um compósito com os íons da água da chuva."
+  }
+ },
+ "2024-103": {
+  "certa": "O trabalho útil do motor é realizado quando o gás quente se expande e empurra o êmbolo. No ciclo de Otto, isso ocorre na expansão adiabática (etapa IV, de 3 a 4).",
+  "erradas": {
+   "A": "Na compressão adiabática (II), o êmbolo realiza trabalho sobre o gás.",
+   "B": "Na etapa III há introdução de calor pela combustão, mas o volume não varia e não há trabalho.",
+   "D": "Na etapa V há liberação de calor ao ambiente, e não produção de trabalho útil.",
+   "E": "Na etapa VI os gases são expulsos do cilindro, sem produção de trabalho útil."
+  }
+ },
+ "2024-107": {
+  "certa": "O mercúrio é um metal, que não se degrada. Para retirá-lo do solo e impedir que entre na cadeia alimentar, são cultivadas plantas que o acumulam e, depois do crescimento, a biomassa rica no metal é retirada. Esse é o método da fitoextração.",
+  "erradas": {
+   "A": "Na fitoestabilização, o mercúrio permanece no solo, onde pode ser absorvido ou lixiviado.",
+   "B": "Na fitovolatilização, o mercúrio passa para o ar, o que espalha a contaminação.",
+   "C": "O mercúrio é um elemento e não pode ser degradado por enzimas.",
+   "D": "Na fitoestimulação, microrganismos das raízes agem sobre compostos orgânicos, e não retiram o mercúrio do local."
+  }
+ }
+}

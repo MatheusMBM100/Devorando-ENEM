@@ -1,0 +1,191 @@
+{
+ "2022-128": {
+  "certa": "Em meio hipotônico, a célula vegetal absorve água por osmose. O vacúolo aumenta de volume e o pigmento se dilui no seu interior. A parede celular impede o rompimento.",
+  "erradas": {
+   "A": "Não há acúmulo de solvente com fragmentação da organela. O vacúolo apenas aumenta.",
+   "B": "A parede celular protege a célula, e a membrana não se rompe.",
+   "D": "A parede celular resiste à entrada de água e não se quebra.",
+   "E": "O murchamento ocorre em meio hipertônico, quando a célula perde água."
+  }
+ },
+ "2022-131": {
+  "certa": "As espécies mostram estratégias bem diferentes: muitos gametas sem cuidado parental, poucos gametas com vigilância, desenvolvimento em folhas ou no saco vocal do pai. Todas as estratégias podem garantir o sucesso reprodutivo.",
+  "erradas": {
+   "A": "O texto não indica que as fêmeas influenciem o comportamento dos machos.",
+   "B": "A espécie 1 se desenvolve sem cuidado parental, então o cuidado não é necessário para todas.",
+   "C": "O texto não relaciona o comportamento reprodutivo a um grau de evolução.",
+   "E": "O texto não diz que o ambiente induza modificações na produção de gametas."
+  }
+ },
+ "2022-133": {
+  "certa": "Com uma pilha invertida, a fem total é 1,5 + 1,5 − 1,5 = 1,5 V, e a resistência interna total é 3 × 0,5 = 1,5 Ω. A lâmpada tem R = V² ÷ P = 4,5² ÷ 4,5 = 4,5 Ω. A corrente é I = 1,5 ÷ (4,5 + 1,5) = 0,25 A.",
+  "erradas": {
+   "B": "0,33 A não decorre da fem de 1,5 V com a resistência total de 6 Ω.",
+   "C": "0,75 A é a corrente com as pilhas na posição correta (4,5 ÷ 6).",
+   "D": "1,00 A não decorre da fem e da resistência do circuito.",
+   "E": "1,33 A não decorre da fem e da resistência do circuito."
+  }
+ },
+ "2022-136": {
+  "certa": "A folha atual dos mestres é 60 × 8.000 = 480.000. Com 25% de aumento, passa a 600.000. O salário médio máximo é 12.240, então a folha total é no máximo 100 × 12.240 = 1.224.000. Sobram 624.000 para 40 doutores, ou seja, R$ 15.600 cada. O aumento é (15.600 − 12.000) ÷ 12.000 = 30%.",
+  "erradas": {
+   "A": "14,4% resulta de um erro no cálculo da folha de pagamento.",
+   "B": "20,7% resulta de um erro no cálculo da folha de pagamento.",
+   "C": "22,0% resulta de um erro no cálculo da folha de pagamento.",
+   "E": "37,5% resulta de um erro no cálculo da folha de pagamento."
+  }
+ },
+ "2022-137": {
+  "certa": "Em 60 dias há 60 × 24 × 60 = 86.400 minutos. Acionando a cada 48 min, são 86.400 ÷ 48 = 1.800 acionamentos. Cada acionamento libera 360 ÷ 1.800 = 0,2 mL.",
+  "erradas": {
+   "A": "0,125 mL não decorre do número de acionamentos.",
+   "C": "4,8 mL não decorre do número de acionamentos.",
+   "D": "6,0 mL não decorre do número de acionamentos.",
+   "E": "12 mL não decorre do número de acionamentos."
+  }
+ },
+ "2022-138": {
+  "certa": "Um dia de Z equivale a 73 dias terrestres. Dois anos de Z são 1 ano terrestre (365 dias), então 1 ano de Z vale 182,5 dias terrestres. Em dias de Z: 182,5 ÷ 73 = 2,5.",
+  "erradas": {
+   "B": "10 dias não decorre da conversão entre as unidades de tempo.",
+   "C": "730 resulta de multiplicar em vez de dividir pelos 73 dias.",
+   "D": "13.322,5 resulta de multiplicar 182,5 por 73, em vez de dividir.",
+   "E": "53.290 resulta de multiplicar 730 por 73."
+  }
+ },
+ "2022-140": {
+  "certa": "O preço normal é 1.000 × 1,10 = R$ 1.100. No cartão, há 2% de desconto: 1.100 × 0,98 = R$ 1.078. A cliente calculou 1.000 × 1,08 = R$ 1.080. O valor da loja foi R$ 2,00 menor.",
+  "erradas": {
+   "B": "R$ 100,00 menor não decorre da diferença entre R$ 1.078 e R$ 1.080.",
+   "C": "R$ 200,00 menor não decorre da diferença entre R$ 1.078 e R$ 1.080.",
+   "D": "R$ 42,00 maior não decorre da diferença entre R$ 1.078 e R$ 1.080.",
+   "E": "R$ 80,00 maior não decorre da diferença entre R$ 1.078 e R$ 1.080."
+  }
+ },
+ "2022-142": {
+  "certa": "Volumes em relação a P·Ab: II = 2P × Ab/2 = P·Ab. III = 2P × Ab/4 = P·Ab/2. IV = P/2 × 2Ab = P·Ab. V = P/2 × 4Ab = 2·P·Ab. O modelo V tem a maior capacidade.",
+  "erradas": {
+   "A": "O modelo I tem volume P·Ab, metade do volume do modelo V.",
+   "B": "O modelo II tem volume P·Ab, metade do volume do modelo V.",
+   "C": "O modelo III tem volume P·Ab/2, o menor de todos.",
+   "D": "O modelo IV tem volume P·Ab, metade do volume do modelo V."
+  }
+ },
+ "2022-144": {
+  "certa": "1,35 bilhão = 1,35 × 1.000.000.000 = 1.350.000.000.",
+  "erradas": {
+   "A": "135.000 é mil vezes menor que o valor correto em ordem de grandeza (milhares, não bilhões).",
+   "B": "1.350.000 é um valor da ordem de milhões, e não de bilhões.",
+   "C": "13.500.000 é da ordem de milhões.",
+   "D": "135.000.000 é da ordem de centenas de milhões, dez vezes menor que o valor correto."
+  }
+ },
+ "2022-147": {
+  "certa": "O volume de uma esfera cresce com o cubo do raio. Dobrando o diâmetro (de 2 para 4 cm), cada doce passa a ter 8 vezes o volume. Os 150 docinhos grandes equivalem a 150 × 8 = 1.200 docinhos pequenos, e cada porção faz 50: 1.200 ÷ 50 = 24 porções.",
+  "erradas": {
+   "A": "2 porções não corresponde ao volume total necessário.",
+   "B": "3 porções (150 ÷ 50) ignora que os docinhos são maiores.",
+   "C": "6 porções (considerando volume 2 vezes maior) subestima o crescimento do volume.",
+   "D": "12 porções (considerando volume 4 vezes maior) trata o volume como proporcional à área da seção, e não ao cubo."
+  }
+ },
+ "2022-149": {
+  "certa": "As 28.900 vagas de janeiro de 2013 são uma queda de 75% em relação a 2012, ou seja, 25% do valor de 2012. Assim, o valor de 2012 é 28.900 ÷ 0,25 = 115.600.",
+  "erradas": {
+   "A": "16.514 não decorre da relação de 25% com o valor de 2012.",
+   "B": "86.700 resulta de multiplicar 28.900 por 3, o que não corresponde a uma queda de 75%.",
+   "D": "441.343 não decorre da relação com o valor de 2012.",
+   "E": "448.568 não decorre da relação com o valor de 2012."
+  }
+ },
+ "2022-155": {
+  "certa": "Seja x o circuito maior e y o menor: 3x + 2y = 1.800 e 2x + y = 1.100. Resolvendo, x = 400 m e y = 300 m. No segundo dia: 400a + 300b = 5.000, ou 4a + 3b = 50. As soluções inteiras são (2; 14), (5; 10), (8; 6), (11; 2). O maior número de voltas é 2 + 14 = 16.",
+  "erradas": {
+   "A": "10 voltas não é o máximo possível para 5.000 m.",
+   "B": "13 voltas não é solução inteira de 4a + 3b = 50 com soma máxima.",
+   "C": "14 voltas é a soma de (8; 6), que não é a maior.",
+   "D": "15 voltas é a soma de (5; 10), que não é a maior."
+  }
+ },
+ "2022-157": {
+  "certa": "Os opcionais podem ser escolhidos de 2³ = 8 maneiras (de nenhum a todos). Com 7 modelos e 2 motores, são 7 × 2 × 8 = 112 combinações, multiplicadas pelo número de cores c. Para ter mais de 1.000 configurações: 112c > 1.000, ou c > 8,9. O mínimo é 9 cores.",
+  "erradas": {
+   "A": "Com 8 cores são 896 configurações, abaixo de 1.000.",
+   "C": "11 cores não é o mínimo, pois 9 já supera as 1.000 configurações.",
+   "D": "18 cores não é o mínimo.",
+   "E": "24 cores não é o mínimo."
+  }
+ },
+ "2022-159": {
+  "certa": "Com os dígitos 0, 1, 0, 0: S = 5·0 + 4·1 + 3·0 + 2·0 = 4. O resto da divisão de 4 por 11 é R = 4. Então N5 = 11 − 4 = 7.",
+  "erradas": {
+   "A": "0 não decorre de 11 − R com R = 4.",
+   "B": "6 não decorre de 11 − R com R = 4.",
+   "D": "8 não decorre de 11 − R com R = 4.",
+   "E": "9 não decorre de 11 − R com R = 4."
+  }
+ },
+ "2022-160": {
+  "certa": "Na escala 1:50, 3,8 cm correspondem a 190 cm e 1,6 cm a 80 cm. É preciso deixar 10 cm em cima e 10 cm em cada lado. A altura máxima é 190 − 10 = 180 cm = 1,80 m e a largura máxima é 80 − 20 = 60 cm = 0,60 m.",
+  "erradas": {
+   "B": "A largura de 0,70 m desconta folga de um lado só, mas são necessários 10 cm em cada lado.",
+   "C": "1,90 m e 0,80 m seriam as dimensões do espaço, sem as folgas.",
+   "D": "2,00 m e 0,90 m não cabem no espaço de 1,90 m por 0,80 m.",
+   "E": "2,00 m e 1,00 m não cabem no espaço de 1,90 m por 0,80 m."
+  }
+ },
+ "2022-161": {
+  "certa": "Na fase de grupos, cada equipe joga 3 partidas. Com o intervalo de 3 dias entre jogos (domingo e depois quinta, isto é, 4 dias entre as datas), os jogos acontecem nos dias 1, 5 e 9. Depois vêm as oitavas (dia 13), as quartas (17), as semifinais (21) e a final (25). São 25 dias.",
+  "erradas": {
+   "A": "22 dias é menos do que o mínimo, que respeita o descanso entre as seis fases de jogos.",
+   "C": "28 dias é mais do que o mínimo necessário.",
+   "D": "48 dias é muito mais do que o mínimo necessário.",
+   "E": "64 dias é muito mais do que o mínimo necessário."
+  }
+ },
+ "2022-167": {
+  "certa": "Todos os projetos têm 90 m³. Área revestida (fundo + 4 paredes): I = 147,2 m²; II = 45 + 20 + 36 = 101 m²; III = 132 m²; IV = 117 m²; V = 111 m². A menor é a do projeto II.",
+  "erradas": {
+   "A": "O projeto I exige 147,2 m², o maior.",
+   "C": "O projeto III exige 132 m².",
+   "D": "O projeto IV exige 117 m².",
+   "E": "O projeto V exige 111 m²."
+  }
+ },
+ "2022-169": {
+  "certa": "O volume do cilindro é π × 4² × 50 = 800π cm³. Cada esfera tem raio 0,5 cm e volume (4/3)π(0,5)³ = π/6 cm³. O número de esferas é 800π ÷ (π/6) = 4.800.",
+  "erradas": {
+   "A": "800 resulta de ignorar o volume de cada esfera.",
+   "B": "1.200 não decorre da razão entre os volumes.",
+   "C": "2.400 resulta de usar uma fórmula incorreta para o volume da esfera.",
+   "E": "6.400 não decorre da razão entre os volumes."
+  }
+ },
+ "2022-170": {
+  "certa": "Ao ingerir 1,7 L, a pessoa tomou 140% da massa perdida, então a perda foi 1,7 ÷ 1,4 ≈ 1,21 kg. A 1,5 kg por hora, isso corresponde a 1,21 ÷ 1,5 ≈ 0,81 h ≈ 48,6 minutos, que está entre 45 e 55 minutos.",
+  "erradas": {
+   "A": "30 minutos ou menos seria uma perda de no máximo 0,75 kg.",
+   "B": "Entre 35 e 45 minutos corresponde a menos que 48,6 minutos.",
+   "D": "Mais de 60 minutos corresponde a uma perda maior que 1,5 kg.",
+   "E": "70 minutos ou mais corresponde a uma perda ainda maior."
+  }
+ },
+ "2022-172": {
+  "certa": "LE = c·(R/2)²·(2T)⁴ = c·R²/4 · 16T⁴ = 4·c·R²·T⁴ = 4·LF.",
+  "erradas": {
+   "A": "LE ÷ LF = 2 não resulta da substituição dos valores na fórmula.",
+   "B": "LE ÷ LF = 4 resulta de inverter a relação: o valor 4 é de LE ÷ LF, não de LF ÷ LE.",
+   "C": "As luminosidades não são iguais. O fator da temperatura (16) supera o do raio (1/4).",
+   "E": "LE = 8LF não resulta da substituição dos valores."
+  }
+ },
+ "2022-176": {
+  "certa": "A função p(t) = −t² + 10t + 24 é uma parábola com vértice em t = −10 ÷ (2 × −1) = 5. O máximo de infectados ocorre no mês 5, que está na proposta III (5 ≤ t ≤ 6).",
+  "erradas": {
+   "A": "A proposta I (meses 1 e 2) não inclui o mês 5.",
+   "B": "A proposta II (meses 3 e 4) não inclui o mês 5.",
+   "D": "A proposta IV (meses 7 a 9) não inclui o mês 5.",
+   "E": "A proposta V (meses 10 a 12) não inclui o mês 5."
+  }
+ }
+}

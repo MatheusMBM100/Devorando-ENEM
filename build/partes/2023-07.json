@@ -1,0 +1,164 @@
+{
+ "2023-115": {
+  "certa": "A interferência entre duas ondas eletromagnéticas ocorre quando elas têm a mesma frequência. É então que o sinal do celular pode se sobrepor ao do rádio do avião.",
+  "erradas": {
+   "A": "Ondas eletromagnéticas de rádio e de celular não são audíveis, e a audibilidade não é a condição da interferência.",
+   "B": "A potência não determina se há interferência.",
+   "D": "A intensidade não determina se há interferência.",
+   "E": "Todas as ondas eletromagnéticas se propagam com a mesma velocidade no ar, a da luz."
+  }
+ },
+ "2023-117": {
+  "certa": "O copo é feito de um material com baixa condutividade térmica, já que não esquenta por fora. Ele é reutilizável, e por isso reduz a quantidade de resíduo não biodegradável (o plástico descartável).",
+  "erradas": {
+   "A": "O copo tem 50% de plástico não biodegradável, então não é totalmente biodegradável.",
+   "B": "Ele não esquenta por fora, então não tem alta condutividade térmica.",
+   "C": "Ele é mau condutor térmico, mas não aumenta o resíduo biodegradável.",
+   "E": "A alta condutividade térmica faria o copo esquentar, e o plástico reciclado do copo não é biodegradável."
+  }
+ },
+ "2023-118": {
+  "certa": "O refrigerante comum tem grande massa de açúcar dissolvido, enquanto o diet tem massa muito pequena de adoçantes. Com mais soluto dissolvido, o volume muda pouco e a massa aumenta, então o refrigerante comum tem maior densidade.",
+  "erradas": {
+   "B": "O açúcar aumenta a viscosidade, e não a reduz.",
+   "C": "Os dois são carbonatados e não há razão para o comum ter mais gás dissolvido.",
+   "D": "O refrigerante comum tem mais massa de solutos dissolvidos, e não menos.",
+   "E": "Mais solutos dissolvidos abaixam a temperatura de congelamento, e não a elevam."
+  }
+ },
+ "2023-120": {
+  "certa": "Cada genitor com síndrome de Down produz gametas com 1 ou 2 cromossomos 21. A união dos gametas gera 1+1 = 2 (normal), 1+2 = 3 (trissômico) ou 2+2 = 4 (tetrassômico). Os zigotos podem ser normais, trissômicos ou tetrassômicos.",
+  "erradas": {
+   "A": "Há gametas com 2 cromossomos 21, o que gera zigotos com 3 ou 4 cópias.",
+   "B": "Nem todos os gametas têm 2 cópias do cromossomo 21.",
+   "C": "Faltam os zigotos trissômicos, que surgem da união de um gameta com 1 cópia e outro com 2.",
+   "D": "Faltam os zigotos normais, que surgem da união de dois gametas com 1 cópia."
+  }
+ },
+ "2023-121": {
+  "certa": "Ao converter a amina no cloridrato (R3NH+ Cl−), o fármaco passa a ser um sal, com caráter iônico. Isso o torna mais solúvel na água do plasma sanguíneo e aumenta a eficiência de sua circulação.",
+  "erradas": {
+   "A": "A conversão consome o caráter básico da amina, ao reagir com o HCl, e não aumenta a basicidade.",
+   "B": "A lipofilicidade diminui com a formação do sal, que é mais solúvel em água.",
+   "D": "A cadeia carbônica não muda na reação.",
+   "E": "O estado de oxidação do nitrogênio não muda em uma reação ácido-base."
+  }
+ },
+ "2023-123": {
+  "certa": "As bombas de sementes de espécies nativas germinam e dão origem a plantas, que oferecem flores com néctar e pólen. Isso aumenta a oferta de alimento para as abelhas.",
+  "erradas": {
+   "A": "As plantas não protegem as abelhas dos predadores.",
+   "B": "O método não tem relação direta com o uso de pesticidas.",
+   "C": "O texto não trata de competição por abrigo.",
+   "E": "O método oferece alimento, e não locais de reprodução."
+  }
+ },
+ "2023-124": {
+  "certa": "O ferro é componente da hemoglobina, e sua falta causa anemia, com palidez. Cozinhar em panela de ferro ou com prego libera ferro no alimento para prevenir a anemia.",
+  "erradas": {
+   "A": "O ferro não trata a diarreia.",
+   "C": "O ferro não combate verminoses.",
+   "D": "O raquitismo é causado pela falta de vitamina D, e não de ferro.",
+   "E": "A febre amarela é uma doença viral, que o ferro não combate."
+  }
+ },
+ "2023-125": {
+  "certa": "Em uma usina nuclear, o calor vem da fissão de átomos, e não da queima de combustíveis fósseis. A geração nuclear produz calor sem consumir combustíveis fósseis, o que é uma vantagem.",
+  "erradas": {
+   "A": "O texto cita a geração de resíduos tóxicos, que não são facilmente recicláveis.",
+   "B": "A energia nuclear não aumenta o desmatamento, ao contrário de usinas hidrelétricas.",
+   "C": "A chuva ácida vem de óxidos de enxofre e nitrogênio da queima de combustíveis fósseis.",
+   "D": "A operação normal da usina não lança gases tóxicos no ambiente."
+  }
+ },
+ "2023-127": {
+  "certa": "Os músculos vermelhos têm muitos vasos sanguíneos e mitocôndrias e fazem respiração aeróbica. Isso sustenta o metabolismo elevado necessário para voos longos.",
+  "erradas": {
+   "A": "As manobras rápidas dependem de músculos brancos, de contração rápida.",
+   "C": "A aerodinâmica depende da forma do corpo e das penas.",
+   "D": "Grandes velocidades de curta duração são típicas dos músculos brancos.",
+   "E": "O texto não relaciona os músculos vermelhos a voo em grandes altitudes."
+  }
+ },
+ "2023-128": {
+  "certa": "CaCl2 anidro tem 111 g/mol. Ao formar CaCl2·2H2O, ganha 2 × 18 = 36 g de água por mol. O ganho percentual é 36 ÷ 111 ≈ 32%.",
+  "erradas": {
+   "A": "14% não decorre da relação entre a massa de água incorporada e a do sal anidro.",
+   "B": "16% resulta de considerar só uma molécula de água (18 ÷ 111), em vez de duas.",
+   "C": "24% não decorre da relação correta entre as massas.",
+   "E": "75% é um valor que não decorre da relação entre as massas."
+  }
+ },
+ "2023-131": {
+  "certa": "Os metais tóxicos não são degradados nem eliminados pelo organismo vegetal. Eles ficam acumulados nos tecidos do aguapé, e por isso a planta pode ser retirada depois do ambiente com os metais.",
+  "erradas": {
+   "A": "Metais não são digeridos por enzimas.",
+   "C": "Os estômatos eliminam gases e vapor d’água, mas não metais.",
+   "D": "As plantas não têm glândulas que metabolizem metais.",
+   "E": "Os metais tóxicos não são fonte de energia para as plantas."
+  }
+ },
+ "2023-133": {
+  "certa": "Na fase de cruzeiro, que é 80% do tempo, a dose é 2 µSv/h. Em 1.000 h por ano, são 800 h de cruzeiro: 800 × 2 = 1.600 µSv = 1,6 mSv. Cada radiografia vale 0,2 mSv, então 1,6 ÷ 0,2 = 8 radiografias.",
+  "erradas": {
+   "B": "10 resulta de usar as 1.000 horas inteiras (2 mSv ÷ 0,2), sem considerar que só 80% do tempo é de cruzeiro.",
+   "C": "80 resulta de um erro de conversão entre µSv e mSv.",
+   "D": "100 também resulta de um erro de conversão de unidades.",
+   "E": "1.000 resulta de um erro de conversão de unidades."
+  }
+ },
+ "2023-135": {
+  "certa": "O carro leva 480 ÷ 100 = 4,8 h = 288 min mais 10 pedágios × 3 min = 30 min, ou seja, 318 min. O caminhão leva 480 ÷ 80 = 6 h = 360 min, sem parar nos pedágios. O carro leva 360 − 318 = 42 min a menos.",
+  "erradas": {
+   "A": "30 min é só o tempo gasto nos pedágios.",
+   "C": "72 min é a diferença só entre os tempos de viagem, sem considerar os pedágios do carro.",
+   "D": "288 min é o tempo de viagem do carro sem pedágios.",
+   "E": "360 min é o tempo total do caminhão."
+  }
+ },
+ "2023-136": {
+  "certa": "Cada pessoa precisa de 30 g de carboidrato por dia (1 g por minuto de caminhada). O casal precisa de 2 × 30 = 60 g por dia, ou 1.800 g em 30 dias. Cada pacote tem 18 × 15 = 270 g. 1.800 ÷ 270 ≈ 6,7, então são 7 pacotes.",
+  "erradas": {
+   "A": "1 pacote supre só 270 g, bem menos que o necessário.",
+   "B": "4 pacotes seria o valor para uma só pessoa (900 ÷ 270 ≈ 3,3), mas são duas.",
+   "C": "6 pacotes forneceriam 1.620 g, menos que os 1.800 g necessários.",
+   "E": "8 pacotes superam a quantidade mínima."
+  }
+ },
+ "2023-140": {
+  "certa": "Antes eram 6.000 ÷ 1.200 = 5 folhas por aluno. Para 1.150 alunos são 5.750 folhas, e como as embalagens têm 100 folhas, será preciso comprar 58 embalagens, a R$ 4,00 = R$ 232,00. Com R$ 220,00, o desconto é (232 − 220) ÷ 232 ≈ 5,2%, que está em (5,0; 5,5).",
+  "erradas": {
+   "B": "8% a 8,5% resulta de um erro no número de folhas ou no preço.",
+   "C": "11,5% a 12,5% resulta de um erro no número de folhas ou no preço.",
+   "D": "19,5% a 20,5% resulta de um erro no número de folhas ou no preço.",
+   "E": "3,5% a 4% resulta de um erro no número de folhas ou no preço."
+  }
+ },
+ "2023-141": {
+  "certa": "20 ciclos de 52 anos Haab são 1.040 anos Haab, ou 1.040 × 365 = 379.600 dias. Em anos Tzolkim, de 260 dias: 379.600 ÷ 260 = 1.460.",
+  "erradas": {
+   "A": "741 não decorre da conversão entre os calendários.",
+   "B": "1.040 é o número de anos Haab, sem converter para Tzolkim.",
+   "D": "2.100 não decorre da conversão entre os calendários.",
+   "E": "5.200 não decorre da conversão entre os calendários."
+  }
+ },
+ "2023-143": {
+  "certa": "A economia de corrida é a razão entre o consumo de oxigênio (mL/min) e a massa (kg). A unidade é mL/min dividido por kg, ou seja, mL ÷ (min · kg).",
+  "erradas": {
+   "A": "Multiplicar as unidades não corresponde à razão entre consumo de oxigênio e massa.",
+   "C": "Esta combinação não corresponde a mL/min dividido por kg.",
+   "D": "Esta combinação inverte a razão (kg no numerador).",
+   "E": "Esta combinação não corresponde a mL/min dividido por kg."
+  }
+ },
+ "2023-150": {
+  "certa": "O volume restante é V = π·r²·h = 3 × 25 × 1,5 = 112,5 m³ = 112.500 L. Para 10 dias, o consumo máximo é 11.250 L por dia, ou 150 L por morador (75 pessoas). Como cada um consome 200 L, deve economizar 200 − 150 = 50 L por dia.",
+  "erradas": {
+   "B": "60 L resulta de um erro no volume ou na divisão pelos moradores.",
+   "C": "80 L resulta de um erro no volume ou na divisão pelos moradores.",
+   "D": "140 L resulta de um erro no volume ou na divisão pelos moradores.",
+   "E": "150 L é o consumo máximo permitido por morador, e não a economia necessária."
+  }
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "2023-092": {
+  "certa": "Quanto menor o comprimento de onda do laser, menores podem ser as cavidades sem que a difração atrapalhe a leitura, então maior a quantidade de dados por área. Entre as opções, o violeta tem o menor comprimento de onda (cerca de 400 nm).",
+  "erradas": {
+   "B": "O azul tem comprimento de onda maior que o do violeta (cerca de 450 nm).",
+   "C": "O verde tem comprimento de onda ainda maior (cerca de 530 nm).",
+   "D": "O vermelho tem comprimento de onda ainda maior (cerca de 650 nm).",
+   "E": "O infravermelho tem comprimento de onda maior que o do vermelho, o que limita mais o armazenamento."
+  }
+ },
+ "2023-093": {
+  "certa": "A intensidade é I = P ÷ (4πr²). Com P = 2,4 mW = 2,4 × 10⁻³ W, r = 10 m e π ≈ 3, a área é 4 × 3 × 100 = 1.200 m². I = 2,4 × 10⁻³ ÷ 1.200 = 2,0 × 10⁻⁶ W/m².",
+  "erradas": {
+   "B": "2,0 × 10⁻⁵ resulta de um erro de potência de 10 no cálculo.",
+   "C": "2,4 × 10⁻⁵ resulta de dividir a potência por 100 em vez de por 1.200.",
+   "D": "2,4 × 10⁻³ é o valor da potência, sem dividir pela área da esfera.",
+   "E": "2,4 × 10⁻¹ resulta de um erro de unidades e de ordem de grandeza."
+  }
+ },
+ "2023-095": {
+  "certa": "O vapor entra a 120 °C e sai como líquido a 100 °C. Primeiro ele se resfria como vapor de 120 °C até 100 °C, o que libera calor sensível, e depois se condensa a 100 °C, o que libera calor latente de condensação. A energia vem do calor sensível e do calor latente de condensação.",
+  "erradas": {
+   "A": "A vaporização ocorre no produto dentro do tacho, e não é a energia que vem do vapor.",
+   "B": "O vapor também libera calor sensível ao se resfriar de 120 °C a 100 °C.",
+   "C": "O calor latente de vaporização é absorvido pela água do produto, e não liberado pelo vapor do tacho.",
+   "E": "O calor latente de vaporização não vem do vapor do tacho, que condensa."
+  }
+ },
+ "2023-097": {
+  "certa": "Pela equação dos gases, P = nRT ÷ V. A temperatura em kelvin é 650 + 273 = 923 K, e o volume é 0,1 L. P = 0,1 × 0,082 × 923 ÷ 0,1 ≈ 75,7 atm, ou seja, cerca de 76 atm.",
+  "erradas": {
+   "A": "756 atm resulta de usar o volume de 0,01 L, o que é um erro de conversão de unidade.",
+   "B": "533 atm também resulta de um erro de conversão de volume.",
+   "D": "53 atm resulta de usar 650 como temperatura, sem converter para kelvin.",
+   "E": "13 atm não decorre da equação com os valores dados."
+  }
+ },
+ "2023-099": {
+  "certa": "A vacina leva o RNAm com a sequência de genes do vírus, que é traduzido nos ribossomos das células em proteína viral. Essa proteína é reconhecida pelo sistema imune e desencadeia a resposta antigênica, que gera a imunização.",
+  "erradas": {
+   "A": "A capa de lipídios só protege o RNAm. Não estimula os leucócitos.",
+   "B": "O RNAm da vacina não sequestra o vírus. Ele gera a proteína.",
+   "D": "O RNAm da vacina não compete com o RNA viral, pois não há vírus na vacina.",
+   "E": "O RNAm não é incorporado ao genoma do hospedeiro, já que não tem esse mecanismo."
+  }
+ },
+ "2023-100": {
+  "certa": "As enzimas do acrossomo digerem as camadas que envolvem o ovócito, a corona radiata e a zona pelúcida, permitindo a passagem do espermatozoide. Sem elas, o espermatozoide não chega ao ovócito e a fecundação não ocorre.",
+  "erradas": {
+   "A": "O pronúcleo masculino se forma depois que o espermatozoide entra no ovócito.",
+   "B": "A divisão do zigoto é posterior à fecundação.",
+   "C": "O ovócito conclui a segunda divisão meiótica depois que o espermatozoide entra.",
+   "E": "A fusão das membranas ocorre depois que o espermatozoide atravessa as camadas, o que as enzimas permitem."
+  }
+ },
+ "2023-101": {
+  "certa": "Pela lei de Faraday, uma corrente é induzida quando há variação do fluxo magnético. No fogão por indução, uma bobina produz um campo magnético variável, que induz corrente no fundo metálico da panela e a aquece por efeito Joule.",
+  "erradas": {
+   "A": "A radiação não é o mecanismo de indução de corrente.",
+   "B": "A condução é a transferência de calor por contato, e não o modo de induzir a corrente.",
+   "C": "A corrente é induzida por um campo magnético variável, que gera um campo elétrico induzido.",
+   "E": "A ressonância não é o princípio do fogão por indução."
+  }
+ },
+ "2023-103": {
+  "certa": "Os frutos liberam etileno, hormônio gasoso que acelera o amadurecimento. Em um recipiente fechado, o gás se acumula e o amadurecimento é mais rápido.",
+  "erradas": {
+   "B": "A redução da umidade do ar não acelera o amadurecimento.",
+   "C": "O aumento de CO2 não é o responsável por amadurecer os frutos.",
+   "D": "A luz não influencia o amadurecimento neste caso.",
+   "E": "O isolamento do oxigênio não acelera o amadurecimento."
+  }
+ },
+ "2023-104": {
+  "certa": "Os cloroplastos realizam fotossíntese, que produz carboidratos (glicose) a partir de CO2 e água. Ao manter cloroplastos funcionais, a lesma obtém principalmente carboidratos.",
+  "erradas": {
+   "A": "Os ácidos nucleicos não são o produto principal da fotossíntese.",
+   "C": "As proteínas não são o produto principal da fotossíntese.",
+   "D": "As vitaminas não são o produto principal da fotossíntese.",
+   "E": "Os lipídios não são o produto primário da fotossíntese."
+  }
+ },
+ "2023-105": {
+  "certa": "A leishmaniose visceral é transmitida pela picada do flebotomíneo, que se infecta ao sugar sangue de um animal contaminado. Como o protozoário está nos tecidos e no sangue, é no sangue do cão que há risco de transmissão.",
+  "erradas": {
+   "A": "A transmissão não ocorre por meio da urina.",
+   "B": "A transmissão não ocorre por meio da saliva.",
+   "C": "A transmissão não ocorre por meio das fezes.",
+   "E": "A secreção ocular não é a via de infecção do vetor."
+  }
+ },
+ "2023-106": {
+  "certa": "No ponto mais alto, a esfera inverte o sentido do movimento, e sua velocidade é nula (v = 0). A aceleração continua sendo a da gravidade, com módulo diferente de zero e para baixo.",
+  "erradas": {
+   "A": "A aceleração não aponta para cima: a gravidade é sempre para baixo.",
+   "B": "No ponto mais alto, a velocidade é zero, e a aceleração não é nula.",
+   "D": "A velocidade é zero no ponto mais alto, e a aceleração é para baixo.",
+   "E": "A velocidade é zero no ponto mais alto e não aponta para baixo."
+  }
+ },
+ "2023-107": {
+  "certa": "Se não há gravidez, o corpo lúteo regride no fim do ciclo, e a produção de estrógeno e progesterona cai. Essa queda hormonal é o que se relaciona à redução da serotonina.",
+  "erradas": {
+   "B": "A ocitocina não é produzida pelos ovários.",
+   "C": "A ovulação ocorre no meio do ciclo, antes da fase descrita.",
+   "D": "O aumento de LH e FSH ocorre em resposta à queda hormonal, e não é a causa dela.",
+   "E": "A adrenalina não regula a produção de estrógeno e progesterona."
+  }
+ },
+ "2023-108": {
+  "certa": "Os álcoois secundários, quando oxidados, produzem cetonas. A oxidação do hexan-3-ol (OH no carbono 3) forma a hexan-3-ona.",
+  "erradas": {
+   "A": "O hexanal é um aldeído e, ao ser oxidado, forma ácido carboxílico, e não cetona.",
+   "B": "O hexan-1-ol é álcool primário, e sua oxidação forma aldeído e depois ácido.",
+   "D": "O hex-1-en-1-ol é um enol que se rearranja a aldeído, e não forma a cetona em questão.",
+   "E": "O ácido hexanoico já está no estágio máximo de oxidação do carbono terminal."
+  }
+ },
+ "2023-109": {
+  "certa": "O tubo polínico leva o gameta masculino até o óvulo sem que seja necessária água. Isso tornou a fecundação independente do meio aquático nas plantas com sementes.",
+  "erradas": {
+   "A": "O fruto protege as sementes e ajuda na dispersão, mas não é o que possibilita a fecundação.",
+   "B": "Os esporos são estruturas de dispersão e não tornam a fecundação independente da água.",
+   "C": "A semente protege o embrião, mas não é a estrutura da fecundação.",
+   "E": "Os vasos condutores transportam seiva e não participam da fecundação."
+  }
+ },
+ "2023-110": {
+  "certa": "O gluconato de cálcio se liga ao alumínio e desloca o equilíbrio para a dissolução do alumínio do vidro. Quanto maior a concentração de gluconato, maior o deslocamento e o risco de contaminação.",
+  "erradas": {
+   "A": "A transparência do vidro não influencia a dissolução do alumínio.",
+   "C": "A espessura do vidro não altera o equilíbrio químico entre a superfície e a solução.",
+   "D": "A esterilização prévia não aumenta a dissolução do alumínio.",
+   "E": "O texto não relaciona o risco à energia da reação do alumínio com o gluconato."
+  }
+ },
+ "2023-111": {
+  "certa": "Retirar um anel completo da casca remove o floema, que conduz a seiva elaborada (com açúcares) das folhas até as raízes. As raízes ficam sem nutrição e a planta morre.",
+  "erradas": {
+   "A": "A fotossíntese ocorre nas folhas e não é interrompida diretamente pela retirada do anel.",
+   "B": "A transpiração ocorre pelas folhas e depende do xilema, que não é retirado.",
+   "C": "A troca de gases ocorre nas folhas e não é a causa da morte.",
+   "D": "O anel completo causa a morte por falta de nutrição das raízes, e não por falta de formação de brotos."
+  }
+ },
+ "2023-113": {
+  "certa": "O texto diz que os micronúcleos são fragmentos de DNA que não foram incorporados ao núcleo na divisão celular. O DNA está nos cromossomos, e é de fragmentos deles que se originam.",
+  "erradas": {
+   "A": "O nucléolo produz ribossomos, e não origina fragmentos de DNA.",
+   "B": "Os lisossomos digerem materiais e não têm relação com os fragmentos de DNA do núcleo.",
+   "C": "Os ribossomos sintetizam proteínas e não têm DNA nuclear.",
+   "D": "As mitocôndrias têm DNA próprio, mas os micronúcleos vêm de fragmentos de cromossomos do núcleo."
+  }
+ },
+ "2023-114": {
+  "certa": "O primeiro eco (0,5 s) vem da interface superior e o segundo (1,1 s), da inferior. A diferença, 0,6 s, é o tempo de ida e volta pela camada líquida de 450 m, ou seja, 900 m. A velocidade é 900 ÷ 0,6 = 1.500 m/s.",
+  "erradas": {
+   "A": "270 m/s não decorre da distância e do tempo do trecho líquido.",
+   "B": "540 m/s não decorre da distância e do tempo do trecho líquido.",
+   "C": "818 m/s resulta de dividir 900 por 1,1, que é o tempo total do segundo eco, e não só o do trecho no líquido.",
+   "E": "1.800 m/s resulta de dividir 900 por 0,5, o tempo do primeiro eco."
+  }
+ }
+}

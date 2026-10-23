@@ -1,0 +1,146 @@
+{
+ "2024-131": {
+  "certa": "O texto descreve plantar árvores nativas junto com culturas anuais e, depois, introduzir outras espécies, o que leva a mudanças graduais na estrutura e na composição das comunidades vegetais e ao aumento da diversidade. Isso é análogo ao processo natural da sucessão ecológica.",
+  "erradas": {
+   "A": "A rotação de culturas é a alternância de plantios em uma mesma área para preservar o solo. Não é um processo natural de mudança gradual de comunidades.",
+   "C": "A coevolução é a evolução conjunta de espécies que interagem, o que não descreve a mudança gradual de comunidades.",
+   "D": "A adaptação por seleção natural é um processo de populações, em escala evolutiva, e não de comunidades em recuperação.",
+   "E": "A convergência adaptativa é a semelhança entre espécies não aparentadas que vivem em ambientes parecidos."
+  }
+ },
+ "2024-132": {
+  "certa": "As fibras brancas (rápidas) têm poucas mitocôndrias e menos suprimento de sangue. Elas se contraem com força e rapidez, mas cansam depressa, o que favorece provas de explosão. O salto em altura exige força máxima em poucos instantes.",
+  "erradas": {
+   "A": "O triatlo exige longa resistência, com predomínio de fibras vermelhas.",
+   "C": "A marcha atlética é uma prova longa, que exige resistência.",
+   "D": "A maratona aquática é prova de resistência.",
+   "E": "O ciclismo em estrada é uma prova de resistência, com predomínio de fibras vermelhas."
+  }
+ },
+ "2024-134": {
+  "certa": "O exoesqueleto rígido não cresce junto com o animal. Por isso os crustáceos o substituem por meio de mudas (ecdises) periódicas: eles se livram do exoesqueleto antigo e formam um novo, maior.",
+  "erradas": {
+   "A": "O exoesqueleto está presente nas fases jovens, e não só na adulta.",
+   "B": "O exoesqueleto não se expande pelas articulações. Elas servem para o movimento.",
+   "C": "O exoesqueleto duro não é modelado de forma contínua para ajustar o tamanho.",
+   "E": "Mais sais deixariam o exoesqueleto mais duro, e não mais distensível."
+  }
+ },
+ "2024-138": {
+  "certa": "40% de R$ 71.250 = R$ 28.500. As horas são: I = 4 × 5,5 = 22 h; II = 5 × 4 = 20 h; III = 6 × 2,5 = 15 h, totalizando 57 h. Cada hora vale 28.500 ÷ 57 = R$ 500. I recebe 11.000; II, 10.000; III, 7.500. A maior diferença é 11.000 − 7.500 = R$ 3.500.",
+  "erradas": {
+   "A": "R$ 1.000 é a diferença entre os engenheiros I e II, que não é a maior.",
+   "B": "R$ 1.500 não corresponde à diferença entre nenhum par de engenheiros.",
+   "D": "R$ 3.800 resulta de erro no cálculo das horas.",
+   "E": "R$ 5.250 também resulta de erro no cálculo."
+  }
+ },
+ "2024-143": {
+  "certa": "As parcelas crescem ao longo do tempo, e as de maio são gratuitas. Em 100 parcelas (8 anos e 4 meses), os quatro primeiros meses do ciclo se repetem 9 vezes e os demais, 8. Para maio ter 9 repetições, a compra deve ser em fevereiro, março, abril ou maio. Em fevereiro, as parcelas de maio são a 4ª, a 16ª, ..., a 100ª, que são as mais altas possíveis, o que dá o menor total pago.",
+  "erradas": {
+   "B": "Em abril, as parcelas de maio são a 2ª, 14ª, ..., 98ª, menos caras que as de fevereiro.",
+   "C": "Em maio, as parcelas isentas são a 1ª, 13ª, ..., 97ª, as mais baratas entre as opções com 9 repetições.",
+   "D": "Em junho, maio ocorre só 8 vezes, com menos parcelas isentas.",
+   "E": "Em agosto, maio também ocorre só 8 vezes."
+  }
+ },
+ "2024-156": {
+  "certa": "O valor fixo é R$ 2,00 (a tarifa base F já tem esse valor), mais R$ 0,26 por minuto e R$ 1,40 por quilômetro: V = 2,00 + 0,26T + 1,40D.",
+  "erradas": {
+   "A": "2,00F multiplicaria o valor fixo pela própria tarifa base, que já é 2,00.",
+   "C": "Falta multiplicar a distância por R$ 1,40.",
+   "D": "Falta incluir a tarifa fixa de R$ 2,00.",
+   "E": "Soma as variáveis sem usar os preços cobrados."
+  }
+ },
+ "2024-157": {
+  "certa": "A primeira piscina enche em 2.500.000 ÷ 6.000 ≈ 416,7 min. A segunda deve levar 20% a mais, 500 min. Vazão = 2.750.000 ÷ 500 = 5.500 L/min.",
+  "erradas": {
+   "A": "8.250 L/min resulta de usar um tempo 20% menor, em vez de 20% maior.",
+   "B": "7.920 L/min não decorre do tempo de 500 min.",
+   "C": "6.545 L/min não decorre do tempo de 500 min.",
+   "E": "5.280 L/min não decorre do tempo de 500 min."
+  }
+ },
+ "2024-160": {
+  "certa": "O valor atual de 5 porções é 10 + 5 × 25 = R$ 135. Com taxa de R$ 15, as porções devem somar 135 − 15 = R$ 120, então cada uma custa 120 ÷ 5 = R$ 24.",
+  "erradas": {
+   "A": "R$ 12,50 corresponde à metade do valor antigo, sem relação com a conservação do total.",
+   "B": "R$ 20,00 não mantém o total de R$ 135 com a taxa de R$ 15.",
+   "D": "R$ 30,00 faria o total ser R$ 165.",
+   "E": "R$ 37,50 faria o total ser R$ 202,50."
+  }
+ },
+ "2024-164": {
+  "certa": "Seja S a soma das notas. Dividida por 5, a média ficou 1 a menos que a correta: S/5 = S/4 − 1, o que dá S/20 = 1 e S = 20. A média correta é 20 ÷ 4 = 5.",
+  "erradas": {
+   "A": "4 é a média obtida com o erro (20 ÷ 5), não a correta.",
+   "C": "6 não satisfaz a condição. Com média 6, a soma seria 24, e 24 ÷ 5 = 4,8, que não é 5.",
+   "D": "19 é um valor que não decorre da equação.",
+   "E": "21 também não decorre da equação."
+  }
+ },
+ "2024-167": {
+  "certa": "João acertou 75% de 200 = 150 questões, e P = 75 está na faixa “muito bom” (75 ≤ P < 90). Felipe acertou 30% a menos que 150, ou seja, 105 questões, que são 52,5% de 200, a faixa “regular”.",
+  "erradas": {
+   "A": "João é “muito bom”, mas Felipe, com 52,5%, não está na faixa “bom”.",
+   "C": "Felipe ficaria “insatisfatório” se tivesse 30 pontos percentuais a menos (45%). Mas o enunciado fala em 30% a menos que a quantidade de acertos de João.",
+   "D": "João, com exatamente 75%, já entra na faixa “muito bom”, não em “bom”.",
+   "E": "João é “muito bom”, e Felipe não é “insatisfatório”."
+  }
+ },
+ "2024-169": {
+  "certa": "A 1ª etapa tem 3 figuras e, a cada etapa seguinte, o conteúdo dobra. Na etapa n há 3 × 2^(n−1) figuras. Na 20ª etapa: 3 × 2^19.",
+  "erradas": {
+   "B": "3 × 2^20 seria o total da 21ª etapa.",
+   "C": "3 × 2^21 seria o total da 22ª etapa.",
+   "D": "3 × 2^20 − 1 não corresponde à sequência, que dobra a cada etapa.",
+   "E": "3 × 2^20 − 3 não corresponde à sequência, que dobra a cada etapa."
+  }
+ },
+ "2024-170": {
+  "certa": "Meias previstas: 60% de 500 = 300. Vendidas: 300 × 1,5 = 450 meias e 50 inteiras. Arrecadação: 450 × 65 + 50 × 130 = R$ 35.750. Menos o custo de R$ 34.350, o lucro dos ingressos é R$ 1.400. Para chegar a R$ 17.000, o lucro com bebidas e petiscos deve ser R$ 15.600. Esse lucro é 60% do gasto, então o gasto total é 15.600 ÷ 0,6 = R$ 26.000 e, por pessoa, 26.000 ÷ 500 = R$ 52.",
+  "erradas": {
+   "A": "R$ 19,50 não decorre do lucro de 60% sobre o gasto.",
+   "B": "R$ 28,80 também não decorre do cálculo correto.",
+   "C": "R$ 34,00 também não decorre do cálculo correto.",
+   "E": "R$ 68,70 é o custo de produção por pessoa (34.350 ÷ 500), e não o gasto com bebidas e petiscos."
+  }
+ },
+ "2024-172": {
+  "certa": "A área antiga era 110 × 75 = 8.250 m², e a nova é 105 × 68 = 7.140 m². A redução foi 8.250 − 7.140 = 1.110 m².",
+  "erradas": {
+   "A": "24 não decorre da diferença entre as áreas.",
+   "B": "35 é o produto das reduções dos lados (5 × 7), e não a diferença das áreas.",
+   "C": "555 é a metade do valor correto.",
+   "E": "1.145 não decorre da diferença entre as áreas."
+  }
+ },
+ "2024-174": {
+  "certa": "Na escala 1:200, as áreas ficam na razão 1:200² = 1:40.000. Como 1.672 m² = 16.720.000 cm², a área na maquete é 16.720.000 ÷ 40.000 = 418 cm².",
+  "erradas": {
+   "A": "4,18 cm² erra a conversão de unidades por um fator de 100.",
+   "B": "8,36 resulta de dividir os 1.672 por 200, aplicando a escala linear a uma área e sem converter as unidades.",
+   "C": "41,8 cm² erra a conversão de unidades por um fator de 10.",
+   "D": "83,6 cm² também erra a conversão de unidades por um fator de 5."
+  }
+ },
+ "2024-176": {
+  "certa": "135,25% é 135,25 ÷ 100 = 1,3525 na forma decimal.",
+  "erradas": {
+   "A": "13.525,0 multiplica por 100 em vez de dividir.",
+   "B": "135,25 é o valor percentual, não a representação decimal.",
+   "C": "13,525 divide só por 10.",
+   "E": "0,13525 divide por 1.000."
+  }
+ },
+ "2024-177": {
+  "certa": "O custo é 2·L·20 + 2·C·15 = 40L + 30C = 6.000, ou 4L + 3C = 600. Para a maior área L × C, os dois termos devem ser iguais: 4L = 3C = 300, então L = 75 e C = 100. O maior lado mede 100 m.",
+  "erradas": {
+   "A": "85 m não satisfaz a condição de máxima área com o gasto de R$ 6.000.",
+   "C": "175 m ultrapassaria o gasto permitido.",
+   "D": "200 m seria o lado C se todo o dinheiro fosse gasto só na tela de R$ 15, o que daria área zero.",
+   "E": "350 m ultrapassaria o gasto permitido."
+  }
+ }
+}

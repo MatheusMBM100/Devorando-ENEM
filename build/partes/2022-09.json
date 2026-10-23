@@ -1,0 +1,119 @@
+{
+ "2022-093": {
+  "certa": "Na urina o pH está entre 5 e 7. A carboxila (pKa = 1,8) está desprotonada nesse pH, como COO⁻. O grupo amino (pKa = 7,9) tem pKa acima do pH, então continua protonado, como NH₃⁺. O tiol (pKa = 10,5) também está acima do pH e permanece como SH. A estrutura predominante é HS–C(CH₃)₂–CH(NH₃⁺)–COO⁻.",
+  "erradas": {
+   "A": "Mostra o tiol desprotonado (S⁻) e o amino sem carga, o que só ocorreria em pH muito mais alto.",
+   "B": "Mostra o tiol desprotonado e a carboxila protonada, o oposto do esperado em pH 5 a 7.",
+   "D": "Mostra o tiol desprotonado e a carboxila protonada.",
+   "E": "Mostra a carboxila protonada (COOH), mas em pH acima de 1,8 ela já está desprotonada."
+  }
+ },
+ "2022-095": {
+  "certa": "O som chega primeiro ao detector A (na água, 1.540 m/s) e depois ao B (no ar, 340 m/s). Pelos gráficos, a diferença entre as chegadas é de uma divisão do eixo do tempo, 12 s. Então L/340 − L/1.540 = 12, o que dá L × 0,002292 = 12 e L ≈ 5.240 m.",
+  "erradas": {
+   "A": "339.000 m resulta de um erro de ordem de grandeza na conta.",
+   "B": "78.900 m resulta de usar uma diferença de tempo muito maior do que a dos gráficos.",
+   "C": "14.400 m resulta de usar uma diferença de tempo maior do que a dos gráficos.",
+   "E": "100 m resulta de usar uma diferença de tempo muito menor."
+  }
+ },
+ "2022-096": {
+  "certa": "A garrafa com água é um meio transparente em que a luz do Sol, ao passar do ar para a água e para o ar de novo, muda de direção e se espalha pelo ambiente. O fenômeno é a refração.",
+  "erradas": {
+   "A": "A difração ocorre com aberturas de dimensão próxima ao comprimento de onda, e o furo é muito maior.",
+   "B": "A absorção reduziria a luz que entra, e não a espalharia.",
+   "C": "A polarização não explica o espalhamento da luz.",
+   "D": "A reflexão ocorre nas paredes, mas a mudança de direção que ilumina o ambiente é a refração."
+  }
+ },
+ "2022-099": {
+  "certa": "A resistência de cada rota é R = d.d.p. ÷ corrente. Rota 1: 510 ÷ 4 = 127,5. Rota 2: 608 ÷ 4 = 152. Rota 3: 575 ÷ 3 ≈ 191,7. Em ordem crescente: 1, 2, 3.",
+  "erradas": {
+   "B": "1, 3, 2 coloca a rota 3 (maior resistência) antes da rota 2.",
+   "C": "2, 1, 3 coloca a rota 2 antes da 1, que tem menor resistência.",
+   "D": "3, 1, 2 começa pela rota de maior resistência.",
+   "E": "3, 2, 1 é a ordem decrescente."
+  }
+ },
+ "2022-100": {
+  "certa": "Em solo mais ácido, há mais H⁺ disponível. A amônia (NH₃) recebe um H⁺ e forma o íon amônio (NH₄⁺), então a acidez favorece o NH₄⁺.",
+  "erradas": {
+   "A": "O N₂ vem da desnitrificação e não é favorecido pelo aumento de H⁺.",
+   "B": "A NH₃ é uma base e, em meio ácido, é convertida em amônio.",
+   "D": "O nitrito é formado pela nitrificação, que é inibida em pH baixo.",
+   "E": "O nitrato é formado pela nitrificação, que é inibida em pH baixo."
+  }
+ },
+ "2022-102": {
+  "certa": "Todos os compostos citados (benzaldeído, salicilato de metila, anetol, vanilina, eugenol, cinamaldeído) têm um anel benzênico. É essa estrutura que os classifica como aromáticos.",
+  "erradas": {
+   "A": "Nem todos têm ramificações do mesmo tipo, e isso não define o aromático.",
+   "B": "As insaturações aparecem em muitos compostos que não são aromáticos.",
+   "D": "O oxigênio não é característico dos aromáticos.",
+   "E": "Nem todos têm carbono assimétrico, e isso não define a classe."
+  }
+ },
+ "2022-106": {
+  "certa": "A cada 1,0 mg/L de microrganismos, a sacarose cai 50%, então sobra S × (1 − 0,5·c). RB72: 13 × 0,65 = 8,45. RB84: 18 × 0,60 = 10,8. RB92: 16 × 0,70 = 11,2. SP79: 14 × 0,75 = 10,5. SP80: 17 × 0,55 = 9,35. O maior teor é o da RB92.",
+  "erradas": {
+   "A": "A RB72 sobra com 8,45 g/L, o menor teor.",
+   "B": "A RB84 tem a maior concentração inicial, mas sobra com 10,8 g/L, menos que a RB92.",
+   "D": "A SP79 sobra com 10,5 g/L.",
+   "E": "A SP80 sobra com 9,35 g/L."
+  }
+ },
+ "2022-108": {
+  "certa": "Com a muleta inclinada e a força F paralela a ela, a componente horizontal de F empurra a ponta contra o piso, para a esquerda. A força de atrito estático se opõe ao escorregamento e aponta para a direita, no ponto de contato. O peso P atua no centro de massa, para baixo, e a normal N, no contato, para cima. É o esquema da alternativa E.",
+  "erradas": {
+   "A": "Mostra F na vertical, mas o enunciado diz que F é mantida paralela à muleta, e o peso aparece fora do centro de massa.",
+   "B": "Mostra F vertical e o atrito para a esquerda, no sentido do escorregamento.",
+   "C": "Mostra o peso aplicado no ponto de contato, e não no centro de massa.",
+   "D": "Mostra o atrito para a esquerda, no mesmo sentido do escorregamento, e não oposto a ele."
+  }
+ },
+ "2022-109": {
+  "certa": "No mecanismo, o H⁺ protona o oxigênio da ligação glicosídica e permite a quebra dessa ligação, mas é recuperado no final. É um catalisador, que aumenta a velocidade da reação.",
+  "erradas": {
+   "A": "O H⁺ não tem a função de dissolver os reagentes.",
+   "B": "Um catalisador não desloca o equilíbrio químico.",
+   "D": "Um catalisador não muda a constante de equilíbrio.",
+   "E": "O H⁺ reage com o oxigênio da ligação, e não forma ligações de hidrogênio com o polissacarídeo."
+  }
+ },
+ "2022-110": {
+  "certa": "O NaOH consumido tem 0,10 × 0,0080 = 8,0 × 10⁻⁴ mol. Pela equação, 1 mol de ácido tartárico consome 2 mol de NaOH, então há 4,0 × 10⁻⁴ mol de ácido em 25,0 mL. A massa é 4,0 × 10⁻⁴ × 150 = 0,060 g, e a concentração é 0,060 ÷ 0,025 = 2,4 g/L.",
+  "erradas": {
+   "A": "1,8 g/L não decorre da estequiometria 1:2.",
+   "C": "3,6 g/L não decorre da estequiometria 1:2.",
+   "D": "4,8 g/L resulta de ignorar que 2 mol de NaOH reagem com 1 mol de ácido.",
+   "E": "9,6 g/L resulta de erros de conversão de volume ou de estequiometria."
+  }
+ },
+ "2022-111": {
+  "certa": "A potência é P = vazão × calor específico × ΔT. A maior ocorre no superquente a 3 L/min: 3.000 g/min × 4,2 J/g·°C × 30 °C = 378.000 J/min = 6.300 W (também 6.300 W a 6 L/min com 15 °C). A corrente máxima é 6.300 ÷ 220 ≈ 28,6 A, e o disjuntor é o múltiplo de 5 imediatamente superior: 30 A.",
+  "erradas": {
+   "A": "60 A é muito superior ao múltiplo de 5 imediatamente acima da corrente máxima.",
+   "C": "20 A é inferior à corrente máxima de 28,6 A e desarmaria no nível superquente.",
+   "D": "10 A é muito inferior à corrente máxima.",
+   "E": "5 A é muito inferior à corrente máxima."
+  }
+ },
+ "2022-112": {
+  "certa": "O mármore (CaCO₃) reage com o HCl: CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂. O gás liberado é o dióxido de carbono.",
+  "erradas": {
+   "A": "O H₂ é liberado na reação de metais ativos com ácidos, e não de carbonatos.",
+   "B": "O O₂ não é produto dessa reação.",
+   "D": "O CO não é produto dessa reação.",
+   "E": "O Cl₂ não é produto dessa reação."
+  }
+ },
+ "2022-113": {
+  "certa": "No gráfico, os machos controle têm concentração alta do hormônio, enquanto os machos expostos à atrazina e as fêmeas têm concentração baixa. O hormônio característico dos machos, que a atrazina reduz (desmasculinização), é a testosterona.",
+  "erradas": {
+   "A": "O estrogênio é mais alto nas fêmeas, o contrário do padrão do gráfico.",
+   "B": "Feromônios são sinais químicos entre indivíduos e não são medidos no sangue desse modo.",
+   "D": "A somatotrofina é o hormônio do crescimento, não determinado pelo sexo.",
+   "E": "O FSH atua em ambos os sexos, e o padrão do gráfico é o da testosterona."
+  }
+ }
+}

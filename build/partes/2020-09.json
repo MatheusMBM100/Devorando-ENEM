@@ -1,0 +1,146 @@
+{
+ "2020-001-en": {
+  "certa": "No pôster, uma busca com 'women shouldn't...' sugere complementos como 'have rights', 'vote', 'work' e 'box', e a frase final diz 'women shouldn't suffer from discrimination anymore'. A combinação do rosto de boca coberta com as sugestões de busca leva o leitor a criticar o tratamento dado à mulher.",
+  "erradas": {
+   "B": "O pôster não avalia o desempenho da mulher no trabalho, ele mostra a discriminação que a impede de trabalhar.",
+   "C": "O pôster não trata de sobrecarga de atribuições.",
+   "D": "O pôster não propõe analisar pesquisas, e a barra de busca é um recurso de linguagem.",
+   "E": "A mulher não é censurada pelas palavras: as frases de busca são os preconceitos que a campanha denuncia."
+  }
+ },
+ "2020-002-en": {
+  "certa": "O cartaz diz 'We're a culture, not a costume', e as pessoas seguram fotos de fantasias de seus povos, com a frase 'This is not who we are, and this is not OK'. A interação de texto e imagem denuncia o ato de estereotipar povos de certas culturas.",
+  "erradas": {
+   "B": "Os hábitos de minorias não são discriminados no pôster, ele critica as fantasias que os reduzem a caricaturas.",
+   "C": "O pôster não trata de banir imigrantes.",
+   "D": "O pôster não trata de julgar padrões de beleza.",
+   "E": "O pôster pede o respeito aos costumes, e não a desvalorização deles."
+  }
+ },
+ "2020-007": {
+  "certa": "O título 'Que horas ela volta?' omite a preposição 'a' da forma padrão 'A que horas ela volta?'. Essa estrutura, comum na fala, caracteriza-se pelo apagamento de uma preposição.",
+  "erradas": {
+   "A": "Há uma marcação de tempo ('horas'), mas ela está presente também na forma padrão, e não distingue a variedade.",
+   "B": "O referente de pessoa ('ela') é preciso.",
+   "C": "A organização interrogativa existe na forma padrão também, e não é o que caracteriza a variedade.",
+   "D": "O verbo 'voltar' é de movimento, mas essa característica não distingue a variedade da forma padrão."
+  }
+ },
+ "2020-014": {
+  "certa": "O Texto II diz que o grupo usa materiais incomuns (esterco, sangue, legumes, carcaças) e formas variadas, o que amplia os limites da arte. O debate em torno da obra gira em torno desse arsenal de materiais e formas que se relacionam com objetos construídos.",
+  "erradas": {
+   "A": "O grupo não recusa todas as crenças e valores, a obra apenas provoca o debate sobre a arte.",
+   "C": "A recessão é apenas o contexto em que o trabalho foi notado, e não motiva o debate.",
+   "D": "A influência pós-moderna não é o tema do debate da obra.",
+   "E": "Os textos não tratam de consciência sustentável nem de mercado."
+  }
+ },
+ "2020-015": {
+  "certa": "O texto mostra que, mesmo com Marta cinco vezes eleita melhor do mundo, o salário de Neymar é muito maior (US$ 14,5 milhões contra US$ 400 mil). O futebol no Brasil tem identidade masculina, e paga mais aos jogadores.",
+  "erradas": {
+   "A": "O texto compara o futebol ao tênis para dizer que no futebol a desigualdade é maior.",
+   "C": "A remuneração não é proporcional ao esforço: Marta tem mais gols e ganha menos.",
+   "D": "O texto não diz que as mulheres sejam mais eficientes, e a remuneração delas é menor.",
+   "E": "Marta se destaca, mas a visibilidade e a remuneração dos homens são bem maiores."
+  }
+ },
+ "2020-022": {
+  "certa": "O cartaz mostra ações que são aceitas e outras que são recusadas ('Tocar sem permissão? Empurrar?') e a campanha 'Respeita as torcedoras', com o canal de denúncia 180. Ele promove a conscientização para reduzir a violência de gênero em eventos esportivos.",
+  "erradas": {
+   "B": "O anúncio não estimula o compartilhamento de políticas públicas, mas orienta o comportamento nos estádios.",
+   "C": "O cartaz não divulga novas regras para as torcidas.",
+   "D": "O cartaz se dirige a todos os torcedores, e não só ao público masculino.",
+   "E": "O cartaz não regulamenta normas, mas conscientiza."
+  }
+ },
+ "2020-025": {
+  "certa": "Na obra, a cadeira real, a foto da cadeira e a definição do dicionário mostram três formas de representar o objeto, e nenhuma delas é a ideia de cadeira em si. O paradoxo é que a arte não é a realidade, mas uma representação dela.",
+  "erradas": {
+   "B": "A obra não trata de repetição com variações, mas dos modos de representar uma mesma coisa.",
+   "C": "O texto fala do paradoxo entre verdade e imitação, e não da dependência da interpretação do fruidor.",
+   "D": "A obra não trata da resistência ao tempo.",
+   "E": "A obra contrasta a definição com o objeto, e não busca aproximar a arte das definições."
+  }
+ },
+ "2020-026": {
+  "certa": "A imagem mostra uma pessoa com várias telas e imagens ao redor da cabeça, como se experimentasse outros mundos sem sair do lugar. A realidade virtual leva o ser humano a vivenciar mentalmente outras realidades.",
+  "erradas": {
+   "A": "A imagem não sugere manipulação de informações difíceis de compreender no mundo físico.",
+   "B": "A imagem não trata de escolhas profissionais.",
+   "C": "A imagem não trata de transferência de conhecimento da inteligência artificial.",
+   "E": "A realidade virtual não se restringe a jogos, e a imagem não os mostra."
+  }
+ },
+ "2020-030": {
+  "certa": "O cartaz diz 'para nós, a rua é um campo de batalha', e a mulher com lenço cobrindo nariz e boca lembra um guerreiro ou manifestante. É uma metáfora de que as mulheres precisam se defender do assédio masculino.",
+  "erradas": {
+   "A": "O lenço não amordaça a mulher: o olhar é firme, e a campanha incentiva a denúncia.",
+   "C": "A postura não é de constrangimento ou de esconder-se, e sim de enfrentamento.",
+   "D": "A imagem não sugere passar despercebida, e sim estar pronta para a batalha.",
+   "E": "A figura se prepara para o enfrentamento, e não mostra incapacidade de proteção."
+  }
+ },
+ "2020-033": {
+  "certa": "O Texto I diz que os cartazes de poesia, ao estilo lambe-lambe, levam poemas às ruas. Como cartazes em postes normalmente anunciam serviços, o texto evidencia a disseminação da arte poética em um suporte não convencional.",
+  "erradas": {
+   "B": "O projeto quer surpreender e fazer reparar na cidade, e não manter a expectativa de quem passa.",
+   "C": "O texto não trata do tamanho dos poemas.",
+   "D": "A questão fala da função usual dos cartazes, e o texto destaca o uso inusitado do suporte.",
+   "E": "A beleza das esquinas de Belo Horizonte é só um motivo do projeto, e não o ponto da questão."
+  }
+ },
+ "2020-037": {
+  "certa": "A figura mostra que saúde resulta de condições socioeconômicas, culturais e ambientais gerais (emprego, educação, habitação, saneamento, serviços de saúde, alimentos), no centro das quais está o indivíduo. A saúde é consequência da forma de organização social.",
+  "erradas": {
+   "A": "O estilo de vida é só um dos fatores, e o conceito ampliado inclui condições sociais.",
+   "B": "O emprego é um dos fatores, mas não é causa direta única.",
+   "C": "A habitação é um dos fatores, mas não é causa direta única.",
+   "D": "A educação é um dos fatores, mas não é causa direta única."
+  }
+ },
+ "2020-044": {
+  "certa": "A peça mostra uma família com filhos adotados aos 8, 13, 15 e 27 anos e a frase 'Pra encontrar a sua verdadeira família, não existe idade'. Reforça a ideia de que a adoção tardia é muito positiva.",
+  "erradas": {
+   "A": "A peça não compara a felicidade de famílias que adotam e que não adotam.",
+   "C": "O anúncio mostra que as famílias podem adotar em qualquer idade, e não que prefiram bebês.",
+   "D": "A peça não diz que adotar adolescentes seja mais simples.",
+   "E": "A peça não trata do companheirismo entre pais e filhos adotivos."
+  }
+ },
+ "2020-051": {
+  "certa": "O gráfico circular mostra os meses do ano com as atividades de pastoreio, plantio, crescimento e colheita do feijão, do milho e do algodão, que seguem o ciclo das estações. A dinâmica produtiva tem como estratégia a adequação pelo tempo da natureza.",
+  "erradas": {
+   "A": "A figura mostra o calendário de meses, e não a separação pelo tipo de solo.",
+   "B": "A figura não trata de exportação.",
+   "C": "O sistema mostrado é tradicional, e não de tecnologia moderna.",
+   "E": "O gado é só uma das atividades no calendário, e não o foco da estratégia."
+  }
+ },
+ "2020-065": {
+  "certa": "O mapa mostra rodovias longitudinais, diagonais e radiais cruzando o Centro-Oeste, e o texto fala de fluxos do agronegócio e da pressão por fixos (infraestrutura). A expansão das rodovias respondeu à projeção do escoamento produtivo.",
+  "erradas": {
+   "A": "O texto trata da expansão do agronegócio, e não de alteração da matriz econômica.",
+   "B": "O texto não trata de substituição do modal hidroviário.",
+   "C": "A região tem expansão, e não retração demográfica.",
+   "E": "O texto fala de agronegócio de monocultura, e não de lavouras policultoras estagnadas."
+  }
+ },
+ "2020-067": {
+  "certa": "O mapa mostra o Vale da Grande Fenda, na África Oriental, com vulcões ao longo dele. É a região de afastamento de placas tectônicas, em que a crosta se rompe e forma vales (rifteamento).",
+  "erradas": {
+   "A": "A colisão de placas forma cordilheiras, e não vales de fenda.",
+   "C": "A subducção ocorre onde uma placa oceânica afunda sob outra, o que não é o caso do vale.",
+   "D": "A formação de cadeias montanhosas é consequência de colisão, e não de afastamento.",
+   "E": "O metamorfismo é transformação de rochas, e não explica o vale e os vulcões."
+  }
+ },
+ "2020-088": {
+  "certa": "O Texto I mostra o Rio Tietê com espuma e poluição, e o Texto II diz que a água não tem oxigênio suficiente para abrigar vida no trecho que atravessa a Região Metropolitana de São Paulo. A origem é o recebimento de densa carga de dejetos.",
+  "erradas": {
+   "A": "A valorização do sítio urbano não é a causa da poluição.",
+   "B": "A extinção da vegetação nativa não é a causa da falta de oxigênio na água.",
+   "D": "A captação do regime pluvial não explica a poluição do rio.",
+   "E": "Os defensivos químicos agrícolas não são o foco, e o trecho é urbano."
+  }
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "2025-091": {
+  "certa": "A transferência de calor que independe de fluido (meio material que escoa) é a irradiação, feita por ondas eletromagnéticas e que pode ocorrer no vácuo. É assim que o calor da lâmpada chega às mariposas, sem depender de contato nem de movimento do ar.",
+  "erradas": {
+   "A": "A reflexão é o retorno da luz ao encontrar uma superfície. Não é um processo de transferência de calor.",
+   "B": "A refração é a mudança de direção da luz ao passar de um meio para outro, e não é um processo de transferência de calor.",
+   "D": "A dispersão é a separação da luz em cores. Não é um processo de transferência de calor.",
+   "E": "A convecção só ocorre em fluidos, com movimento do próprio material aquecido. Depende da presença do fluido."
+  }
+ },
+ "2025-092": {
+  "certa": "O texto diz que o veneno vem do consumo de formigas e cupins que se alimentam de plantas tóxicas, e que os sapos criados em cativeiro não são tóxicos. A perda da toxina é causada, portanto, pela ausência da alimentação natural.",
+  "erradas": {
+   "A": "O texto não relaciona a toxicidade à umidade.",
+   "C": "A adaptação ao ambiente não explica o fato. O que muda é o que o animal come.",
+   "D": "O texto não fala de mudança de comportamento.",
+   "E": "O texto não trata de variabilidade genética. Se a toxina fosse genética, os sapos de cativeiro seriam tóxicos."
+  }
+ },
+ "2025-094": {
+  "certa": "O capim-gordura é uma espécie exótica muito agressiva e competitiva, que se espalha por grandes áreas. A longo prazo, ele toma o espaço das plantas nativas e leva à redução das espécies nativas do Cerrado.",
+  "erradas": {
+   "A": "Uma espécie invasora que domina a área tende a simplificar o ambiente, e não a diversificar nichos ecológicos.",
+   "B": "O texto não relaciona o capim-gordura ao assoreamento de nascentes.",
+   "C": "O texto não trata da infiltração da água no solo.",
+   "E": "Gramíneas invasoras tendem a aumentar a quantidade de material seco no ambiente e favorecer queimadas, não reduzi-las."
+  }
+ },
+ "2025-095": {
+  "certa": "O lagarto vive em desertos, com falta de alimento e de água. No Brasil, o ambiente mais parecido é a Caatinga, que é árida, quente e tem longas secas. É onde se esperam espécies com adaptações semelhantes.",
+  "erradas": {
+   "A": "O Cerrado tem estação seca, mas é muito mais úmido e variado do que um deserto.",
+   "B": "Os Pampas são campos de clima temperado e úmido, sem a aridez de um deserto.",
+   "D": "A Restinga é um ambiente litorâneo arenoso e úmido.",
+   "E": "O Pantanal é uma planície alagável, muito úmida em boa parte do ano."
+  }
+ },
+ "2025-096": {
+  "certa": "A água de que foram removidos os sais dissolvidos é a água destilada. Por não ter sais minerais, não é adequada para beber, já que pode causar carência iônica e diarreia, mas é muito usada em laboratórios, indústrias e baterias.",
+  "erradas": {
+   "A": "A água dura é rica em sais de cálcio e magnésio, o oposto da água sem sais.",
+   "B": "A água pesada é feita com deutério (D2O), e não é uma água sem sais.",
+   "C": "Água sanitária é uma solução de hipoclorito usada para desinfecção.",
+   "E": "Água oxigenada é uma solução de peróxido de hidrogênio."
+  }
+ },
+ "2025-097": {
+  "certa": "Em ambientes escuros, a pupila fica dilatada para deixar entrar mais luz. Quando o flash dispara, muita luz chega à retina e é refletida pelos vasos sanguíneos, o que deixa os olhos vermelhos na foto.",
+  "erradas": {
+   "B": "Com a pupila retraída, chega menos luz à retina, não mais. E o que deixa o olho vermelho é o reflexo dos vasos sanguíneos.",
+   "C": "Com a pupila retraída, chega menos luz. Além disso, a cor vem do reflexo nos vasos sanguíneos, não de uma luz vermelha que chegaria aos bastonetes.",
+   "D": "Com a pupila retraída, chega menos luz à retina em geral, e o efeito de olhos vermelhos não se explica por menos luz azul e verde nos cones.",
+   "E": "Com a pupila dilatada, chega mais luz. O efeito não vem de uma redução de luz azul e verde nos bastonetes."
+  }
+ },
+ "2025-098": {
+  "certa": "A tetrodotoxina é produzida e armazenada nas gônadas e vísceras do baiacu. Se os órgãos internos forem manuseados sem se romper, a toxina não contamina a carne. Assim se evita a intoxicação.",
+  "erradas": {
+   "A": "O texto não diz que a criação em cativeiro elimine a toxina.",
+   "B": "O método de pesca não tem relação com a presença da toxina.",
+   "C": "A toxina é termoestável, ou seja, resiste ao calor. Cozinhar ou fritar não a destrói.",
+   "D": "A toxina é produzida pelo próprio peixe. Higiene não a remove."
+  }
+ },
+ "2025-099": {
+  "certa": "A lipase ácida degrada colesterol esterificado e triglicerídeos dentro da célula. Essa digestão intracelular é função dos lisossomos, que contêm enzimas digestivas. Sem a enzima, os compostos se acumulam, principalmente no fígado.",
+  "erradas": {
+   "B": "Os ribossomos sintetizam proteínas, não degradam lipídios.",
+   "C": "As mitocôndrias fazem a respiração celular.",
+   "D": "Os peroxissomos oxidam alguns ácidos graxos e peróxidos, mas a lipase ácida atua nos lisossomos.",
+   "E": "O retículo endoplasmático liso sintetiza lipídios, e não os degrada."
+  }
+ },
+ "2025-100": {
+  "certa": "Para reduzir o CO2 já presente na atmosfera é preciso removê-lo. As árvores fazem isso na fotossíntese, absorvendo CO2 e armazenando carbono. Plantar mais árvores é a ação mitigadora que remove o gás.",
+  "erradas": {
+   "B": "Usinas eólicas reduzem as emissões, mas não retiram o CO2 que já está na atmosfera.",
+   "C": "A energia solar também reduz emissões futuras, sem remover o CO2 existente.",
+   "D": "Manter combustíveis fósseis no solo evita novas emissões, mas não remove o CO2 já emitido.",
+   "E": "Produzir menos resíduos reduz emissões, mas não remove o gás da atmosfera."
+  }
+ },
+ "2025-110": {
+  "certa": "O tempo de 26,5 anos equivale a 26,5 ÷ 5,3 = 5 meias-vidas. A massa cai pela metade a cada meia-vida: 2,00 → 1,00 → 0,50 → 0,25 → 0,125 → 0,0625 mg. Resta cerca de 0,06 mg.",
+  "erradas": {
+   "A": "2,00 mg seria a massa sem nenhum decaimento.",
+   "B": "1,00 mg é a massa após apenas uma meia-vida.",
+   "C": "0,40 mg resulta de dividir 2,00 por 5, tratando o decaimento como linear. Ele é exponencial.",
+   "D": "0,13 mg é a massa após quatro meias-vidas, uma a menos do que o necessário."
+  }
+ },
+ "2025-112": {
+  "certa": "O arroz dourado é rico em betacaroteno, precursor da vitamina A. A carência de vitamina A causa a cegueira noturna, e por isso o alimento ajuda a combatê-la.",
+  "erradas": {
+   "A": "A hemofilia é uma doença genética da coagulação, não relacionada à vitamina A.",
+   "B": "O escorbuto é causado pela falta de vitamina C.",
+   "C": "O raquitismo é causado pela falta de vitamina D.",
+   "E": "A anemia perniciosa está ligada à falta de vitamina B12."
+  }
+ },
+ "2025-114": {
+  "certa": "9,3 kg de Nb = 9.300 g ÷ 93 g/mol = 100 mol. Pela equação, 6 mol de Nb exigem 10 mol de Al, então 100 mol exigem 100 × 10 ÷ 6 ≈ 166,7 mol de Al, ou 166,7 × 27 ≈ 4.500 g. Com 10% de excesso, 4,5 × 1,1 ≈ 4,95 kg, cerca de 5,0 kg.",
+  "erradas": {
+   "A": "2,7 kg resulta de usar 1 mol de Al para cada mol de Nb (100 × 27 g), ignorando a proporção 10:6.",
+   "B": "3,0 kg é o 2,7 kg do erro anterior com 10% de excesso.",
+   "C": "4,1 kg resulta de dividir 4,5 kg por 1,1, em vez de multiplicar, tratando o excesso como falta.",
+   "D": "4,5 kg é a massa estequiométrica, sem considerar o excesso de 10%."
+  }
+ },
+ "2025-119": {
+  "certa": "A dimetilamina é uma amina, que tem caráter básico. Ao reagir com um ácido, como o ácido acético do vinagre, ela forma um sal iônico, que não é volátil e não evapora. Assim, o vinagre neutraliza a toxicidade e impede a evaporação.",
+  "erradas": {
+   "A": "A água dissolve parte da amina, mas ela continua volátil e evapora com o calor.",
+   "C": "O óleo de soja não reage com a amina e não evita sua evaporação.",
+   "D": "O sal de cozinha é neutro e não reage com a amina.",
+   "E": "O bicarbonato de sódio tem caráter básico fraco, e não neutraliza uma base."
+  }
+ },
+ "2025-122": {
+  "certa": "O texto descreve um ambiente extremo, com solo ácido, raso, pobre e muito quente. Comunidades que vivem ali têm distribuição restrita, o que caracteriza as espécies endêmicas: aquelas que só ocorrem em uma área específica.",
+  "erradas": {
+   "A": "Espécies exóticas são as introduzidas de fora. O texto fala de espécies próprias do ambiente.",
+   "B": "Espécies migratórias se deslocam entre regiões. As do texto têm distribuição restrita.",
+   "D": "Espécies dominantes são as muito abundantes. O texto fala de distribuição restrita.",
+   "E": "Em ambientes extremos, espécies generalistas têm desvantagem, e a seleção favorece as especialistas."
+  }
+ }
+}

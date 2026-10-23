@@ -1,0 +1,56 @@
+{
+ "2021-170": {
+  "certa": "O volume é capacidade × nível de ocupação. I: 105 × 0,20 = 21. II: 100 × 0,30 = 30. III: 20 × 0,50 = 10. IV: 80 × 0,40 = 32. V: 40 × 0,60 = 24 (em bilhões de litros). O maior volume é o do reservatório IV.",
+  "erradas": {
+   "A": "O reservatório I tem 21 bilhões de litros, apesar da maior capacidade.",
+   "B": "O reservatório II tem 30 bilhões de litros, menos que o IV.",
+   "C": "O reservatório III tem 10 bilhões de litros, apesar do maior nível relativo do gráfico.",
+   "E": "O reservatório V tem o maior nível (60%), mas só 24 bilhões de litros."
+  }
+ },
+ "2021-171": {
+  "certa": "A média ponderada é (9 × 6 + 18 × 12 + 27 × 9) ÷ (6 + 12 + 9) = (54 + 216 + 243) ÷ 27 = 513 ÷ 27 = 19 anos.",
+  "erradas": {
+   "A": "9 é só uma das idades, e não a média.",
+   "B": "12 é a frequência mais alta, e não a média.",
+   "C": "18 é a moda, a idade mais frequente, e não a média.",
+   "E": "27 é a maior idade, e não a média."
+  }
+ },
+ "2021-172": {
+  "certa": "A média geral é a média ponderada pelos percentuais: (3x + 5y + 12x) ÷ 100 = 6, então 15x + 5y = 600. Como x + y + x = 100, y = 100 − 2x. Substituindo: 15x + 500 − 10x = 600, então x = 20 e y = 60.",
+  "erradas": {
+   "A": "Com x = 10 e y = 80, a média seria (15 × 10 + 5 × 80) ÷ 100 = 5,5, e não 6.",
+   "B": "Com x = 10 e y = 90, a soma dos percentuais passaria de 100%.",
+   "D": "Com x = 20 e y = 80, a soma dos percentuais passaria de 100%.",
+   "E": "Com x = 25 e y = 50, a média seria (15 × 25 + 5 × 50) ÷ 100 = 6,25, e não 6."
+  }
+ },
+ "2021-173": {
+  "certa": "O CV atual é 1 ÷ 10 = 0,10. O CV da nova ração é 1,5 ÷ x̄, e deve ser menor que 0,10: 1,5 ÷ x̄ < 0,10, ou x̄ > 15. A substituição ocorre se a média for superior a 15,0 kg.",
+  "erradas": {
+   "A": "Com média 5,0, o CV seria 0,30, maior que 0,10.",
+   "B": "Com média 9,5, o CV seria cerca de 0,16, maior que 0,10.",
+   "C": "Com média 10,0, o CV seria 0,15, maior que 0,10.",
+   "D": "Com média 10,5, o CV seria cerca de 0,14, maior que 0,10."
+  }
+ },
+ "2021-174": {
+  "certa": "A média por franquia de cada lanche (soma ÷ 3): I: 1.245 ÷ 3 = 415. II: 1.230 ÷ 3 = 410. III: 1.220 ÷ 3 ≈ 406,7. IV: 1.233 ÷ 3 = 411. V: 1.280 ÷ 3 ≈ 426,7. O maior é o do lanche V.",
+  "erradas": {
+   "A": "O lanche I tem média 415, menor que a do V.",
+   "B": "O lanche II tem média 410, menor que a do V.",
+   "C": "O lanche III tem média cerca de 406,7, a menor.",
+   "D": "O lanche IV tem média 411, menor que a do V."
+  }
+ },
+ "2021-175": {
+  "certa": "O total no ano é 3 × 3,5 + 2 × 2,5 + 2 × 5 + 4 × 3 + 1 × 7,5 = 10,5 + 5 + 10 + 12 + 7,5 = 45 milhões, em 12 meses. A média é 45 ÷ 12 = 3,75, que está em 2 ≤ M < 4: comissão II.",
+  "erradas": {
+   "A": "A comissão I exige M entre 1 e 2, abaixo da média de 3,75.",
+   "C": "A comissão III exige M entre 4 e 5, acima de 3,75.",
+   "D": "A comissão IV exige M entre 5 e 6, acima de 3,75.",
+   "E": "A comissão V exige M ≥ 6, acima de 3,75."
+  }
+ }
+}

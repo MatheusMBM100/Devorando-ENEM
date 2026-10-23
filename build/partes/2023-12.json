@@ -1,0 +1,92 @@
+{
+ "2023-146": {
+  "certa": "O nível passou de 0,5 m (6 h) para 3,2 m (15 h), ou seja, subiu 2,7 m em 9 h. Com base de 3 m², o volume é 2,7 × 3 = 8,1 m³. A vazão é 8,1 ÷ 9 = 0,9 m³/h.",
+  "erradas": {
+   "A": "0,3 m³/h é o aumento de nível por hora (0,3 m/h), sem multiplicar pela área da base.",
+   "B": "0,5 m³/h não decorre do volume acumulado e do tempo.",
+   "D": "1,8 m³/h é o dobro do valor correto.",
+   "E": "2,7 m³/h é o aumento de nível total, sem dividir pelo tempo e sem usar a área."
+  }
+ },
+ "2023-147": {
+  "certa": "Os pontos de onde o segmento AB é visto sob o mesmo ângulo estão sobre um mesmo arco de circunferência que passa por A e B. Q₃ está sobre o mesmo arco que Q₁, então ∠AQ₃B = ∠AQ₁B.",
+  "erradas": {
+   "A": "Q₂ está dentro do arco de Q₁, e de lá AB é visto sob um ângulo maior.",
+   "C": "Q₄ está dentro do arco de Q₁, e de lá AB é visto sob um ângulo maior.",
+   "D": "Q₅ está fora do arco de Q₁, e de lá AB é visto sob um ângulo menor.",
+   "E": "Q₆ está ainda mais fora do arco de Q₁, e de lá AB é visto sob um ângulo menor."
+  }
+ },
+ "2023-148": {
+  "certa": "Os vértices em progressão aritmética de razão 2, entre os números de 1 a 6, são (1, 3, 5) ou (2, 4, 6). Somando os três lados, cada vértice conta duas vezes. No primeiro caso: 2 × 9 + (2 + 4 + 6) = 30, então cada lado soma 10 (ex.: 1 + 6 + 3, 3 + 2 + 5, 5 + 4 + 1). No segundo: 2 × 12 + (1 + 3 + 5) = 33, então cada lado soma 11 (ex.: 2 + 5 + 4, 4 + 1 + 6, 6 + 3 + 2). As soluções são 10 e 11.",
+  "erradas": {
+   "A": "A soma 7 não ocorre em nenhuma das duas disposições.",
+   "B": "A soma 9 não ocorre em nenhuma das duas disposições.",
+   "C": "As somas 7 e 9 não ocorrem.",
+   "D": "As somas 9 e 12 não ocorrem."
+  }
+ },
+ "2023-149": {
+  "certa": "Os cartões são 200 × 1 = 200 (primeiro ano), 150 × 2 = 300 (segundo) e 100 × 3 = 300 (terceiro), um total de 800. A probabilidade de o vencedor ser do terceiro ano é 300 ÷ 800 = 3/8.",
+  "erradas": {
+   "A": "1/2 não decorre da contagem dos cartões.",
+   "B": "1/3 seria a probabilidade se cada ano tivesse o mesmo número de cartões.",
+   "C": "1/8 não decorre da contagem dos cartões.",
+   "D": "2/9 não decorre da contagem dos cartões."
+  }
+ },
+ "2023-152": {
+  "certa": "Os números pentagonais 1, 5, 12, 22, 35, 51 têm diferenças 4, 7, 10, 13, 16, que crescem de 3 em 3. As próximas diferenças são 19 e 22. O 7º número é 51 + 19 = 70 e o 8º, 70 + 22 = 92.",
+  "erradas": {
+   "A": "59 não faz parte da sequência.",
+   "B": "83 não faz parte da sequência.",
+   "C": "86 não faz parte da sequência.",
+   "D": "89 não faz parte da sequência."
+  }
+ },
+ "2023-153": {
+  "certa": "A cadeira P parte do ponto mais alto e gira com velocidade angular constante, e a altura em relação ao solo varia como uma função cosseno: um movimento suave, que desce até o mínimo e volta a subir, com curvas arredondadas nos máximos e mínimos. É o gráfico A.",
+  "erradas": {
+   "B": "É linear por partes, com picos agudos, e a altura de um movimento circular não varia linearmente.",
+   "C": "Tem trechos retos e patamares, e não mostra a variação suave do movimento circular.",
+   "D": "Tem picos agudos nos mínimos, em vez de curvas arredondadas.",
+   "E": "Tem picos agudos nos máximos, em vez de curvas arredondadas."
+  }
+ },
+ "2023-154": {
+  "certa": "Os pontos (massa, altura) são aproximadamente (50; 1,60), (55; 1,65), (60; 1,65), (65; 1,68), (68; 1,70), (85; 1,65), (85; 1,50), (90; 1,625), (105; 1,75) e (120; 1,70). Com massa abaixo de 80 kg e altura acima de 1,65 m, só estão (65; 1,68) e (68; 1,70): 2 de 10, ou 20%.",
+  "erradas": {
+   "A": "10% corresponderia a só um estudante.",
+   "C": "30% incluiria um estudante com altura igual (e não acima) da média.",
+   "D": "50% incluiria estudantes com altura igual ou abaixo da média.",
+   "E": "70% corresponde aos estudantes com massa abaixo da média, sem considerar a altura."
+  }
+ },
+ "2023-158": {
+  "certa": "O 50 exige o algarismo 0 nas unidades (probabilidade 1/10) e, na urna das dezenas, as bolas 1 a 5 (10 a 50), ou 5 opções, com 1/5 de chance de sair o 5: (1/10)(1/5) = 1/50. O 02 exige o 2 nas unidades (1/10) e, na urna das dezenas, as bolas 0 a 5 (02, 12, ..., 52), ou 6 opções, com 1/6 de chance de sair o 0: (1/10)(1/6) = 1/60.",
+  "erradas": {
+   "B": "1/50 e 1/50 ignora que, na urna das dezenas, o número de bolas depende do algarismo das unidades.",
+   "C": "1/50 e 1/10 considera que o 02 só depende do sorteio das unidades.",
+   "D": "1/55 e 1/54 trata os números como sorteados diretamente entre os 55 candidatos.",
+   "E": "1/100 e 1/100 considera que todas as bolas de cada urna sempre estão disponíveis."
+  }
+ },
+ "2023-159": {
+  "certa": "A cada metro, a intensidade é multiplicada por 2/3 (L₀, 2/3 L₀, 4/9 L₀, 8/27 L₀...). Em 6 m: (2/3)⁶ L₀ = 64/729 L₀.",
+  "erradas": {
+   "A": "1/9 L₀ não corresponde a (2/3)⁶.",
+   "B": "16/27 L₀ é (2/3)⁴ × ..., não corresponde a (2/3)⁶.",
+   "C": "32/243 L₀ é (2/3)⁵ L₀, que seria a intensidade a 5 m.",
+   "E": "128/2187 L₀ é (2/3)⁷ L₀, que seria a intensidade a 7 m."
+  }
+ },
+ "2023-160": {
+  "certa": "V(x) = x²/4 − 10x + 105 é uma parábola com concavidade para cima, e o mínimo está no vértice, em x = 10 ÷ (2 × 1/4) = 20. V(20) = 100 − 200 + 105 = 5 mil reais, que está em 4 ≤ V₀ < 10: Ruim.",
+  "erradas": {
+   "A": "Ótimo exigiria V₀ ≥ 24, e o mínimo é 5.",
+   "B": "Bom exigiria 20 ≤ V₀ < 24, e o mínimo é 5.",
+   "C": "Normal exigiria 10 ≤ V₀ < 20, e o mínimo é 5.",
+   "E": "Péssimo exigiria V₀ < 4, mas o mínimo é 5."
+  }
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "2021-097": {
+  "certa": "Na dupla fertilização das angiospermas, um núcleo espermático fecunda a oosfera (zigoto, 2n) e o outro une-se aos dois núcleos polares, formando o endosperma triploide (3n). O endosperma é o tecido de reserva que nutre o embrião.",
+  "erradas": {
+   "A": "O fruto se forma a partir do ovário, e não do endosperma.",
+   "C": "O revestimento da semente (tegumento) vem dos tecidos maternos, e não da segunda fertilização.",
+   "D": "O megagametófito é o saco embrionário, e o endosperma não o protege.",
+   "E": "A vascularização da planta jovem vem do desenvolvimento do embrião, e não do endosperma."
+  }
+ },
+ "2021-098": {
+  "certa": "O flavorizante derivado do ácido etanoico (acético) é um acetato: acetato de isoamila (banana) e acetato de benzila (pêssego). O de cadeia carbônica saturada é o de isoamila, pois o de benzila tem anel aromático. O aroma é de banana.",
+  "erradas": {
+   "A": "O benzoato de metila deriva do ácido benzoico, e não do etanoico.",
+   "C": "O acetato de benzila deriva do ácido etanoico, mas contém anel aromático, cadeia insaturada.",
+   "D": "O propanoato de isobutila deriva do ácido propanoico.",
+   "E": "O antranilato de metila deriva do ácido antranílico, aromático."
+  }
+ },
+ "2021-099": {
+  "certa": "No eletrocardiograma, o intervalo entre dois picos consecutivos corresponde a cinco unidades de 0,2 s, ou seja, 1,0 s por batimento. Em um minuto há 60 s ÷ 1,0 s = 60 batimentos.",
+  "erradas": {
+   "A": "30 batimentos corresponderia a um intervalo de 2 s entre os picos.",
+   "C": "100 batimentos corresponderia a 0,6 s entre os picos.",
+   "D": "120 batimentos corresponderia a 0,5 s entre os picos.",
+   "E": "180 batimentos corresponderia a cerca de 0,33 s entre os picos."
+  }
+ },
+ "2021-100": {
+  "certa": "A dengue tem baixa letalidade (abaixo de 1%), o que indica que vírus e hospedeiro se adaptaram: um vírus que mata pouco mantém o hospedeiro vivo e se dissemina mais. Pela coevolução patógeno-hospedeiro, a baixa letalidade indica maior eficiência do vírus em parasitar, estabelecida ao longo de um processo evolutivo mais longo. A dengue infecta humanos há mais tempo.",
+  "erradas": {
+   "A": "O maior período de incubação do ebola não indica coevolução mais longa.",
+   "B": "O menor período de incubação não indica duração do processo de coevolução, o argumento certo é a letalidade.",
+   "C": "A alta letalidade do ebola indica menor adaptação ao hospedeiro, e não maior eficiência.",
+   "D": "O local dos surtos não indica há quanto tempo o vírus infecta humanos."
+  }
+ },
+ "2021-101": {
+  "certa": "O tanque séptico é onde o esgoto fica em repouso por um período maior que nas outras etapas, o que permite que os sólidos decantem e formem o lodo. É a etapa 3.",
+  "erradas": {
+   "A": "A caixa de gordura (1) retém detritos da pia e da cozinha, e não decanta o lodo.",
+   "B": "A caixa de passagem (2) só reúne o esgoto de banheiros e lavanderia.",
+   "D": "O filtro biológico (5) tem bactérias que consomem a matéria orgânica.",
+   "E": "A cisterna (6) é a etapa final, em que há tratamento com cloro."
+  }
+ },
+ "2021-102": {
+  "certa": "As auxinas são hormônios vegetais que estimulam a formação de raízes adventícias na base do caule cortado, o que permite que a estaca enraíze e origine uma nova planta.",
+  "erradas": {
+   "A": "As auxinas não são o hormônio da floração.",
+   "B": "As auxinas, produzidas na gema apical, inibem as gemas laterais (dominância apical).",
+   "C": "As auxinas não são o fator que define o tamanho das folhas.",
+   "E": "As auxinas não produzem compostos energéticos, o que é função da fotossíntese."
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "2021-160": {
+  "certa": "Custo atual: 10 (fixo) + 0,4 × 12,50 (frango) + 0,6 × 5,00 (batata) + 2,00 (hortaliça) = 20,00. Com a batata a R$ 7,50, ela custa 0,6 × 7,50 = 4,50, um aumento de R$ 1,50. Para manter o custo, o frango deve cair R$ 1,50, ou 1,50 ÷ 12,50 = 0,12 kg = 120 g, de 400 g, ou seja, 30%.",
+  "erradas": {
+   "A": "12,5% corresponde a uma redução de R$ 0,625 no frango, que não cobre o aumento de R$ 1,50.",
+   "B": "28,0% corresponde a R$ 1,40 de redução, menor que os R$ 1,50 do aumento.",
+   "D": "50,0% corresponde a R$ 2,50 de redução, mais que o necessário.",
+   "E": "70,0% corresponde a R$ 3,50 de redução, mais que o necessário."
+  }
+ },
+ "2021-161": {
+  "certa": "O gráfico começa em P = −3 e tem amplitude 3, e o período é π (máximos em π/2, 3π/2, ...). Então ω = 2π/π = 2. Em t = 0, o valor é −3, que corresponde a −3 cos(2t).",
+  "erradas": {
+   "B": "−3 sen(2t) vale 0 em t = 0, mas o gráfico começa em −3.",
+   "C": "3 cos(2t) vale +3 em t = 0, mas o gráfico começa em −3.",
+   "D": "−6 cos(2t) tem amplitude 6, mas a amplitude do gráfico é 3.",
+   "E": "6 sen(2t) tem amplitude 6 e vale 0 em t = 0."
+  }
+ },
+ "2021-162": {
+  "certa": "Com b = 1: aΔb = a² + a − 1 e bΔa = 1 + a − a². A operação * dá (aΔb)*(bΔa) = (aΔb)·((bΔa) + 1) = (a² + a − 1)(2 + a − a²) = 0. As raízes são (−1 ± √5)/2, 2 e −1. As duas maiores são 2 e (−1 + √5)/2, e a soma é (3 + √5)/2.",
+  "erradas": {
+   "A": "√5 não é a soma das duas maiores raízes.",
+   "B": "√3 não é a soma das duas maiores raízes.",
+   "C": "√1 = 1 não é a soma das duas maiores raízes.",
+   "D": "(−1 + √5)/2 é só a segunda maior raiz, e falta somar a maior (2)."
+  }
+ },
+ "2021-163": {
+  "certa": "A escala é a razão réplica ÷ original. Comprimento: 160 cm ÷ 3.840 cm = 1/24. Largura: 7 cm ÷ 168 cm = 1/24. A escala é 1 : 24.",
+  "erradas": {
+   "A": "1 : 576 é o quadrado de 24, e seria a escala das áreas.",
+   "B": "1 : 240 resulta de um erro na conversão de metros em centímetros.",
+   "D": "1 : 4,2 resulta de um erro na conversão de unidades.",
+   "E": "1 : 2,4 resulta de um erro na conversão de unidades."
+  }
+ },
+ "2021-164": {
+  "certa": "Médicos: +73.000 de 1990 a 2000 e +73.000 de 2000 a 2010, média 73.000, então 438.000 em 2020. População (em milhares): +23.000 e +21.000, média 22.000, então 213.000 milhares. Médicos por mil habitantes = 438.000 ÷ 213.000 ≈ 2,06.",
+  "erradas": {
+   "A": "0,17 não decorre da razão entre médicos e população em milhares.",
+   "B": "0,49 não decorre da razão entre médicos e população em milhares.",
+   "C": "1,71 corresponde à razão de 2010 (365.000 ÷ 213.000), e não à de 2020.",
+   "E": "3,32 não decorre da razão entre médicos e população em milhares."
+  }
+ }
+}

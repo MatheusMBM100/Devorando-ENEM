@@ -1,0 +1,65 @@
+{
+ "2024-146": {
+  "certa": "O amortecedor aprovado mostra amplitude constante nos 9 primeiros minutos (asfalto) e amplitude constante, porém maior, nos 11 minutos seguintes (estrada de chão). É o que se vê no gráfico A: ondas baixas e iguais até cerca de 9 min, e ondas mais altas e iguais depois.",
+  "erradas": {
+   "B": "A amplitude vai diminuindo ao longo da estrada de chão, e a exigência é de amplitude constante.",
+   "C": "A amplitude diminui o tempo todo, e não há um trecho com amplitude constante em cada superfície.",
+   "D": "A amplitude é menor na estrada de chão que no asfalto, o oposto do exigido.",
+   "E": "A amplitude é a mesma nos dois trechos, e só a frequência muda."
+  }
+ },
+ "2024-147": {
+  "certa": "Com perímetro k, o triângulo equilátero tem lado k/3 e área (√3/4)(k/3)² = k²√3/36. O quadrado tem lado k/4 e área k²/16. O hexágono regular tem lado k/6 e área (3√3/2)(k/6)² = k²√3/24. Numericamente, √3/24 ≈ 0,072; 1/16 ≈ 0,063; √3/36 ≈ 0,048. A maior área é a do hexágono regular, k²√3/24.",
+  "erradas": {
+   "B": "3k²√3/2 é a área de um hexágono de lado k, e não de lado k/6.",
+   "C": "k²/16 é a área do quadrado, que é menor que a do hexágono.",
+   "D": "k²√3/36 é a área do triângulo equilátero, a menor das três.",
+   "E": "k²√3/4 seria a área de um triângulo de lado k, e não de lado k/3."
+  }
+ },
+ "2024-148": {
+  "certa": "Os ônibus se aproximam a 250 + 150 = 400 m/min e se encontram após 9.000 ÷ 400 = 22,5 min. Nesse tempo, o ônibus A andou 250 × 22,5 = 5.625 m, ou seja, 5.625/9.000 = 0,625 do percurso. As câmeras cobrem, a partir do terminal 1: I de 0 a 0,2; II de 0,2 a 0,5; III de 0,5 a 0,6; IV de 0,6 a 0,7; V de 0,7 a 1. O ponto 0,625 está na câmera IV.",
+  "erradas": {
+   "A": "A câmera I cobre só até 0,2 do percurso.",
+   "B": "A câmera II cobre de 0,2 a 0,5 do percurso.",
+   "C": "A câmera III cobre de 0,5 a 0,6, e o encontro ocorre em 0,625.",
+   "E": "A câmera V cobre de 0,7 a 1, depois do ponto de encontro."
+  }
+ },
+ "2024-149": {
+  "certa": "Há 25 deslocamentos possíveis (além do trivial). A probabilidade de errar a 1ª tentativa é 24/25. Eliminada essa, restam 24 e a de errar a 2ª é 23/24. Eliminadas duas, restam 23 e a de acertar a 3ª é 1/23. A probabilidade é (24/25) × (23/24) × (1/23).",
+  "erradas": {
+   "A": "Soma 1/25 três vezes, o que ignora que as tentativas frustradas são eliminadas.",
+   "B": "Soma as probabilidades em vez de multiplicar, o que não representa eventos em sequência.",
+   "C": "Multiplica 1/25, 1/24 e 1/23, que seria a probabilidade de acertar em todas as tentativas.",
+   "D": "Mantém o denominador 25 nas três etapas, sem eliminar as tentativas já feitas."
+  }
+ },
+ "2024-150": {
+  "certa": "Como E₁ é um décimo de E₂, E₂/E₁ = 10 e log 10 = 1. Então M₂ − 6,9 = (2/3) × 1 ≈ 0,67, e M₂ ≈ 7,57, ou 7,6 com uma casa decimal.",
+  "erradas": {
+   "A": "5,4 resulta de subtrair 0,67 em vez de somar.",
+   "B": "6,2 resulta de subtrair 0,67 em vez de somar.",
+   "D": "8,2 resulta de usar uma razão E₂/E₁ errada.",
+   "E": "8,4 resulta de usar uma razão E₂/E₁ errada."
+  }
+ },
+ "2024-151": {
+  "certa": "Na embalagem 1, a altura é 20 cm e o perímetro da base é 10 cm, então r = 10/(2π) = 5/π e V = π(5/π)² × 20 = 500/π. Na embalagem 2, a altura é 10 cm e o perímetro é 20 cm, então r = 10/π e V = π(10/π)² × 10 = 1.000/π. A de maior capacidade é a 2, com 1.000/π cm³.",
+  "erradas": {
+   "A": "4.000π resulta de usar o lado da folha como raio da base.",
+   "B": "2.000π resulta de usar o lado da folha como raio da base.",
+   "C": "4.000/π não decorre das dimensões da folha.",
+   "E": "500/π é o volume da embalagem 1, que é menor."
+  }
+ },
+ "2024-153": {
+  "certa": "Seja A a área de cada compartimento e H a altura do tanque. A vazão é Q = 3AH/12 = AH/4 por hora. O compartimento de entrada (o da direita) chega a H/2 em 2 h. Depois, a água transborda: o do meio sobe até H/4 em 1 h e o da esquerda também em 1 h, e depois os dois sobem juntos até H/2 em 2 h, enquanto a maior altura fica em H/2. São 4 h de plateau, de 2 h a 6 h. Em seguida, todos os compartimentos se comunicam e a altura sobe linearmente de H/2 a H até 12 h. É o gráfico B.",
+  "erradas": {
+   "A": "Mostra um plateau de só 2 h (de 2 h a 4 h), menor que o correto.",
+   "C": "Mostra um plateau longo demais (de 2 h a 10 h).",
+   "D": "É um gráfico em degraus, que sugere alturas descontínuas e até com queda.",
+   "E": "É um gráfico em degraus, com altura que diminui, o que não ocorre no enchimento."
+  }
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "2023-001-es": {
+  "certa": "O cartaz do filme mostra o professor e o menino Ishaan frente a frente, com um olhar de atenção e cumplicidade, e a sinopse conta que tudo muda quando o novo professor de arte se interessa por Ishaan. Relacionando os textos, vê-se que um olhar diferenciado para o outro gera mudanças.",
+  "erradas": {
+   "B": "O cartaz traz perguntas feitas por quem tem dificuldade, mas elas não mostram um “tom questionador” característico de quem tem dislexia.",
+   "C": "A sinopse mostra que a disciplina não resolve: o colégio disciplinador não melhora as coisas, e a mudança vem de um olhar atento.",
+   "D": "A sinopse diz que ficar longe dos pais é parte do problema, mas não afirma que o contato com eles prejudique o acompanhamento.",
+   "E": "O texto não trata da mudança de interesses na passagem da infância para a vida adulta."
+  }
+ },
+ "2023-001-en": {
+  "certa": "O cartaz, sobre uma montanha de alimentos jogados fora, diz que o americano médio joga fora 300 libras de comida por ano, o que faz da comida a maior contribuinte dos aterros. A mensagem é a de que o desperdício degrada o ambiente.",
+  "erradas": {
+   "A": "O cartaz pede que se evite o desperdício, e não que se ampliem os lixões.",
+   "C": "O cartaz fala do consumidor e de sobras da casa, e não de doações de mercados.",
+   "D": "O cartaz não trata de desnutrição.",
+   "E": "O cartaz recomenda guardar os perecíveis na geladeira, e não diz que faltem refrigeradores nas casas."
+  }
+ },
+ "2023-005-en": {
+  "certa": "O cartum mostra um escritório com homens iguais, de terno e gravata, todos parecidos, e a fala diz que “ninguém trata você de maneira diferente por causa de idade, raça ou gênero”. A ironia destaca a falta de diversidade.",
+  "erradas": {
+   "A": "O cartum não critica a roupa, mas usa a uniformidade para mostrar a falta de diversidade.",
+   "C": "O cartum não indica um modo de interação.",
+   "D": "O cartum não elogia o modelo de organização, e ironiza a falta de diversidade.",
+   "E": "O cartum não mostra espírito de cooperação."
+  }
+ },
+ "2023-024": {
+  "certa": "O anúncio diz “Eu uso máscara, mas não me calo!” e “Não se cale! Denuncie!”, com o número do Disque 180, em tempos de isolamento social. A finalidade é incentivar as mulheres a denunciar crimes de violência durante o isolamento.",
+  "erradas": {
+   "A": "O anúncio traz o número do Disque 180, mas o objetivo vai além de divulgar o canal: é estimular a denúncia.",
+   "B": "O anúncio menciona a Defensoria, mas a finalidade é incentivar a denúncia.",
+   "C": "O anúncio não busca destacar o trabalho da Defensoria, e sim pedir que as vítimas denunciem.",
+   "D": "O anúncio alerta para o aumento da violência, mas esse alerta serve ao pedido de denúncia."
+  }
+ },
+ "2023-033": {
+  "certa": "A pintura de Segall, de formas angulosas e deformadas, é expressionista, e o Texto II conta que o regime nazista a confiscou como “arte degenerada”. Ela foi considerada degenerada por representar uma estética tida como inconveniente para o ideário político vigente.",
+  "erradas": {
+   "B": "O texto não diz que a obra manifestasse posicionamento de grupos de oposição.",
+   "C": "A representação parcial do corpo humano é uma característica da obra, mas não explica o confisco.",
+   "D": "O texto não diz que a obra antecipe o imaginário artístico germânico.",
+   "E": "A obra não foi confiscada por estimular discussões sobre o papel da arte."
+  }
+ },
+ "2023-034": {
+  "certa": "O texto diz que o espetáculo Gira dialoga com os cultos afro-brasileiros sem os imitar, e a foto mostra bailarinos de branco com um gesto contemporâneo. A dança faz uma reelaboração estética erudita de práticas religiosas populares.",
+  "erradas": {
+   "A": "O texto não fala de uma crítica ao balé clássico.",
+   "B": "Os rituais citados não são extintos, e a dança não os representa de modo mimético.",
+   "D": "O texto não indica ironia na releitura.",
+   "E": "O texto não opõe o resgate de tradições à efemeridade da vida humana."
+  }
+ },
+ "2023-044": {
+  "certa": "O cartaz “Por que é tão importante amamentar?” lista benefícios: o bebê recebe anticorpos, diminui o risco de asma, diabetes e obesidade, ajuda no desenvolvimento do rosto e dos dentes, desenvolve a fala e a respiração. A campanha visa divulgar um conjunto de benefícios da amamentação.",
+  "erradas": {
+   "B": "O cartaz fala de proteção contra infecções, e não de tratamentos.",
+   "C": "O cartaz não trata do direito de amamentar em público.",
+   "D": "O cartaz não orienta exercícios de amamentação.",
+   "E": "O cartaz fala de anticorpos que o bebê recebe da mãe, e não de aumento de anticorpos nas mães."
+  }
+ },
+ "2023-046": {
+  "certa": "O bordado diz “Sertão é a avó bordando caminhos com linhas coloridas”, ao lado da foto da avó. O sertão é associado a vivências e itinerários socioafetivos.",
+  "erradas": {
+   "A": "O bordado fala de afeto e família, e não de roteiros turísticos.",
+   "B": "O bordado não trata de movimentos holísticos.",
+   "D": "O bordado não descreve fronteiras nem demarcações territoriais.",
+   "E": "O bordado não trata de profissões e interesses econômicos."
+  }
+ },
+ "2023-056": {
+  "certa": "Na charge, a mulher com a lâmpada mágica pensa em força e telepatia, mas acaba desejando “poder político”. O anseio retratado é o de participar das ações decisórias.",
+  "erradas": {
+   "A": "A personagem não demonstra revolta individual.",
+   "B": "O desejo não é de satisfação pessoal, mas de poder político.",
+   "D": "A personagem quer ter poder, e não permanecer passiva.",
+   "E": "A charge não trata de conivência com interesses partidários."
+  }
+ },
+ "2023-065": {
+  "certa": "O texto diz que Lina Bo Bardi, autora do projeto do MASP, não foi citada nas reportagens de 1947, e que só agora seu trabalho é reconhecido. Esse reconhecimento tardio decorre de transformações sociais em direção à equidade de gênero.",
+  "erradas": {
+   "B": "O texto não trata de liberdade de expressão.",
+   "C": "O texto não trata de admissibilidade de voto.",
+   "D": "O texto trata de reconhecimento de gênero, e não de igualdade de oportunidades em geral.",
+   "E": "O texto não trata de reciprocidade de tratamento."
+  }
+ },
+ "2023-072": {
+  "certa": "O Texto I é otimista: a corrida espacial dos bilionários pode trazer tecnologias que voltam para a sociedade, ou seja, expectativa. O Texto II, a charge, mostra o astronauta dizendo “viemos em paz” e o alienígena avisando “não confie nessa pessoa”, o que é desconfiança.",
+  "erradas": {
+   "A": "O Texto I não trata de dependência.",
+   "C": "O Texto I não expressa angústia.",
+   "D": "O Texto I não trata de pioneirismo, e o II não trata de retrocesso.",
+   "E": "O Texto I não expressa receio, e o II não trata de civilidade."
+  }
+ },
+ "2023-076": {
+  "certa": "O gráfico mostra a taxa de fecundidade caindo de 6,3 filhos por mulher, em 1960, para 1,5, em 2020. Entre os fatores citados, o que determinou essa queda foi a participação feminina no mercado de trabalho, associada às mudanças na vida das mulheres.",
+  "erradas": {
+   "A": "O aborto não foi legalizado no Brasil, e esse não é o fator da queda.",
+   "B": "O envelhecimento da população é uma consequência da queda da fecundidade, e não a causa.",
+   "C": "O crescimento da gravidez precoce aumentaria a taxa, e não a reduziria.",
+   "E": "A diminuição dos benefícios da licença-maternidade não é o fator determinante da queda."
+  }
+ }
+}

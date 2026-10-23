@@ -1,0 +1,56 @@
+{
+ "2021-125": {
+  "certa": "O reflexo patelar é um reflexo medular: o estímulo sobe pelo neurônio sensorial até a medula espinal, que coordena a resposta e envia o comando motor ao músculo, sem passar pelo encéfalo.",
+  "erradas": {
+   "A": "A ponte liga estruturas do encéfalo e participa da regulação respiratória, mas não coordena o reflexo patelar.",
+   "C": "O cerebelo coordena o equilíbrio e a coordenação motora, e não esse reflexo.",
+   "D": "O hipotálamo regula funções como temperatura e fome.",
+   "E": "A neuro-hipófise libera hormônios, e não coordena reflexos."
+  }
+ },
+ "2021-126": {
+  "certa": "A taxa de condução é proporcional à condutividade efetiva. Alumínio: k = 20. Ferro: k = 8. Cobre-aço (metade de cada): a resistência térmica é (d/2)(1/40 + 1/5) = 9d/80, então k efetivo = 80/9 ≈ 8,9. O mais econômico é o que conduz mais calor: alumínio (20), depois cobre-aço (8,9) e ferro (8). Ordem pedida: alumínio, cobre-aço e ferro.",
+  "erradas": {
+   "A": "Coloca o cobre-aço como o mais econômico, mas o alumínio conduz mais (20 contra 8,9).",
+   "C": "Coloca o cobre-aço, depois o ferro e o alumínio, mas o alumínio é o mais econômico.",
+   "D": "Coloca o ferro antes do cobre-aço, mas o cobre-aço (8,9) conduz mais que o ferro (8).",
+   "E": "Começa pelo ferro, que é o que menos conduz."
+  }
+ },
+ "2021-127": {
+  "certa": "A montagem tem dois pares Cu/Zn em série, cada um com cerca de 1,1 V (ponte salina de papel com Na₂SO₄), o que dá 2,2 V, como indica o voltímetro. O cronômetro é a carga (resistor), e o voltímetro está em paralelo com ele. O circuito B tem duas pilhas em série, com o mesmo sentido, o resistor e o voltímetro em paralelo.",
+  "erradas": {
+   "A": "Tem só uma pilha e coloca o voltímetro em série com o resistor.",
+   "C": "Tem duas pilhas em série, mas com polaridades opostas, que se anulam (0 V).",
+   "D": "Coloca resistores em série com as pilhas, o que não corresponde à montagem.",
+   "E": "Tem quatro pilhas e o voltímetro em série com o resistor, o que não corresponde à montagem."
+  }
+ },
+ "2021-128": {
+  "certa": "O disparo anterior (53°) tangenciou P, que está 45 m acima de B (10 m acima do nível de A, que fica a 35 m). Mantendo o ângulo, a bala deve alcançar A, a 35 m de altura e 120 m de distância. Com v₀ = 40 m/s: vx = 24 e vy = 32. Em t = 120/24 = 5 s, y = 32·5 − 5·25 = 35 m, o que atinge A.",
+  "erradas": {
+   "A": "Com 30 m/s: vx = 18, vy = 24. Em 120 m (t = 6,7 s) a bala já estaria abaixo de 35 m.",
+   "B": "Com 35 m/s: vx = 21, vy = 28. Em t = 5,7 s, y ≈ 28·5,7 − 5·32,7 ≈ −4 m, abaixo de A.",
+   "D": "Com 45 m/s: a bala passaria acima de A, e o menor valor possível é 40 m/s.",
+   "E": "Com 50 m/s: a bala passaria acima de A, e o menor valor possível é 40 m/s."
+  }
+ },
+ "2021-129": {
+  "certa": "35 anos equivalem a 7 meias-vidas de 5 anos. A massa se reduz a 500 ÷ 2⁷ = 500 ÷ 128 ≈ 3,9 g.",
+  "erradas": {
+   "B": "31,2 g corresponde a 4 meias-vidas (20 anos).",
+   "C": "62,5 g corresponde a 3 meias-vidas (15 anos).",
+   "D": "125,0 g corresponde a 2 meias-vidas (10 anos).",
+   "E": "250,0 g corresponde a 1 meia-vida (5 anos)."
+  }
+ },
+ "2021-130": {
+  "certa": "A proteína original tem 6 aminoácidos, até o códon de parada UAG (7). A substituição de C por U no códon 4 troca CAA por UAA (terminal), e a tradução para após o 3º códon: proteína de 3 aminoácidos, a menor.",
+  "erradas": {
+   "A": "A deleção de G no códon 3 muda o quadro de leitura e não gera códon de parada precoce, e a proteína fica maior.",
+   "C": "A troca de G por C no códon 6 muda AGU para ACU (treonina), sem códon de parada.",
+   "D": "A troca de A por G no códon 7 muda UAG para UGG (triptofano), e a proteína fica maior.",
+   "E": "A deleção dos dois primeiros nucleotídeos do códon 5 forma o códon de parada UAG na posição 5, e a proteína fica com 4 aminoácidos, maior que a da alternativa B."
+  }
+ }
+}

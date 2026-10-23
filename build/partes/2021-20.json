@@ -1,0 +1,47 @@
+{
+ "2021-109": {
+  "certa": "O texto fala do aproveitamento de resíduos suínos como matéria-prima para obter combustíveis. A decomposição anaeróbia dos dejetos produz o biogás, rico em metano, que é o biocombustível citado.",
+  "erradas": {
+   "A": "O etanol é obtido da fermentação de açúcares, como na cana-de-açúcar, e não de dejetos suínos.",
+   "C": "O butano é derivado do petróleo e não é biocombustível.",
+   "D": "O metanol é produzido principalmente a partir do gás natural, e não dos dejetos suínos.",
+   "E": "O biodiesel é produzido a partir de óleos e gorduras, e não da decomposição dos dejetos."
+  }
+ },
+ "2021-110": {
+  "certa": "A curcumina acumulada no intestino da larva, quando ativada pela luz, forma espécies reativas de oxigênio que danificam o tubo digestório. Isso impede o desenvolvimento da larva, que é a fase que se alimenta da água do criadouro.",
+  "erradas": {
+   "A": "O ataque é à larva que ingere a água, e não ao indivíduo adulto.",
+   "B": "O texto não trata de redução da eclosão dos ovos.",
+   "C": "O texto não trata de comprometer a metamorfose.",
+   "E": "O texto não fala de repelência."
+  }
+ },
+ "2021-111": {
+  "certa": "Entre o Sol e a ilha de calor, a energia chega por ondas eletromagnéticas, sem meio material: irradiação. Entre a ilha de calor e a brisa, o ar aquecido sobe e transfere a energia ao ar que passa, em um fluxo vertical de ar: convecção.",
+  "erradas": {
+   "B": "A segunda transferência envolve o movimento do ar quente, e não é irradiação.",
+   "C": "A energia do Sol não chega por condução, que exige contato entre os materiais.",
+   "D": "A ordem está invertida: entre o Sol e a ilha de calor não há meio material para convecção.",
+   "E": "A transferência do Sol para a ilha de calor se dá pelo vácuo, o que não é convecção."
+  }
+ },
+ "2021-112": {
+  "certa": "Na pedra e na rolha, e na folha esticada e amassada, a diferença de queda vem da resistência do ar. Ela depende do formato e da área do corpo, e não do peso. No vácuo, todos caem juntos.",
+  "erradas": {
+   "A": "O peso não é o que explica a diferença: a folha esticada e a amassada têm o mesmo peso.",
+   "C": "A massa é a mesma na folha esticada e na amassada, e não explica a diferença.",
+   "D": "A densidade seria a mesma nos dois estados da folha.",
+   "E": "A aceleração da gravidade é a mesma para todos os corpos no mesmo local."
+  }
+ },
+ "2021-113": {
+  "certa": "A fermentação de 100 g de glicose gera cerca de 50 g de etanol. Então 50 kg de glicose geram 25 kg, e com 80% de conversão sobram 20 kg de etanol. O volume é 20 kg ÷ 0,80 kg/L = 25 L.",
+  "erradas": {
+   "A": "16 L resulta de aplicar o rendimento duas vezes.",
+   "B": "20 L é a massa de etanol em kg, e não o volume em litros.",
+   "D": "64 L não decorre da estequiometria nem do rendimento.",
+   "E": "100 L resulta de uma conta sem a razão de massas do etanol e da glicose."
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "2022-164": {
+  "certa": "Em 2012, 73,95 = (73,67 + 74,23) ÷ 2, o que confere. Supondo o mesmo para 2013: 74,23 = (73,95 + x) ÷ 2, logo x = 148,46 − 73,95 = 74,51.",
+  "erradas": {
+   "A": "74,23 é o valor de 2013, e não o de 2014.",
+   "C": "75,07 resulta de somar 0,56 ao valor de 2013, mas a diferença correta é 74,51 − 74,23 = 0,28.",
+   "D": "75,23 resulta de somar 1,00 ao valor de 2013, o que não decorre da condição de média.",
+   "E": "78,49 resulta de somar em vez de tirar a média (por exemplo, 74,23 + 4,26), o que não decorre da condição."
+  }
+ },
+ "2022-165": {
+  "certa": "O plano α é paralelo ao plano do Equador. Os trechos dos meridianos, contidos em planos perpendiculares a α, projetam-se como segmentos de reta (raios) em vista superior, e os trechos do Equador, paralelos a α, projetam-se em verdadeira grandeza, como arcos de circunferência. A vista só com arcos de um quarto de circunferência e segmentos radiais, como em E, é a única compatível.",
+  "erradas": {
+   "A": "Mostra os meridianos projetados como curvas, mas um meridiano está em um plano perpendicular a α e se projeta como um segmento de reta.",
+   "B": "Mostra os meridianos projetados como curvas, e não como segmentos de reta.",
+   "C": "Mostra os meridianos projetados como curvas, e não como segmentos de reta.",
+   "D": "Mostra a circunferência inteira com os dois diâmetros, mas as trajetórias da figura percorrem apenas partes do Equador e dos meridianos."
+  }
+ },
+ "2022-166": {
+  "certa": "Para igualar a média de 18 pontos em 5 jogos, é preciso totalizar 90. Faltam: I = 90 − 77 = 13; II = 90 − 71 = 19; III = 90 − 71 = 19; IV = 90 − 75 = 15; V = 90 − 75 = 15. O menor valor é o do jogador I (13 pontos).",
+  "erradas": {
+   "B": "O jogador II precisa de 19 pontos.",
+   "C": "O jogador III precisa de 19 pontos.",
+   "D": "O jogador IV precisa de 15 pontos.",
+   "E": "O jogador V precisa de 15 pontos."
+  }
+ },
+ "2022-168": {
+  "certa": "Total de candidatos = vagas × candidatos por vaga, somados: 30·6 + 40·6 + 50·7 + 30·8 + 25·4 + 25·5 = 180 + 240 + 350 + 240 + 100 + 125 = 1.235.",
+  "erradas": {
+   "A": "200 não decorre das multiplicações.",
+   "B": "400 não decorre das multiplicações.",
+   "C": "1.200 é um valor próximo, mas resulta de erro de soma.",
+   "E": "7.200 não decorre das multiplicações."
+  }
+ },
+ "2022-171": {
+  "certa": "A tela mede L = 12 m. A 1ª fileira fica a 0,6L = 7,2 m e a distância aceitável máxima é 2,9L = 34,8 m. Com 1 m entre fileiras, a n-ésima fileira fica a 7,2 + (n − 1) m, e 7,2 + (n − 1) ≤ 34,8 dá n − 1 ≤ 27,6, ou seja, n ≤ 28,6. O máximo é 28 fileiras.",
+  "erradas": {
+   "A": "26 fileiras deixa espaço sem uso, pois ainda cabem 2 outras fileiras.",
+   "B": "27 fileiras deixa espaço sem uso, pois ainda cabe mais uma fileira.",
+   "D": "29 fileiras exigiria 7,2 + 28 = 35,2 m, acima de 34,8 m.",
+   "E": "35 fileiras exigiria 7,2 + 34 = 41,2 m, bem acima do limite."
+  }
+ },
+ "2022-173": {
+  "certa": "O total é 100 + 400 + 200 + 150 + 100 + 50 = 1.000 famílias. A mediana é a média do 500º e do 501º valores. As frequências acumuladas são: 0 → 100; 1 → 500; 2 → 700. O 500º valor é 1 e o 501º é 2, e a mediana é (1 + 2) ÷ 2 = 1,5.",
+  "erradas": {
+   "A": "1,0 seria a mediana se o 501º valor também fosse 1, mas ele é 2.",
+   "C": "1,9 é aproximadamente a média ponderada, e não a mediana.",
+   "D": "2,1 não corresponde ao 500º e ao 501º valores.",
+   "E": "2,5 é a média simples dos valores 0 a 5, sem considerar as frequências."
+  }
+ },
+ "2022-174": {
+  "certa": "O vértice da parábola y = −x²/6 − 7x/3 + 12 está em x = −7 e dá y = −49/6 + 49/3 + 12 = 49/6 + 12 ≈ 20,2 m. Somando os 1,5 m do eixo x ao piso, a altura máxima é cerca de 21,7 m. O saque bate no teto dos ginásios com altura menor que isso: I (17 m), II (18 m), III (19 m) e IV (21 m). No ginásio V (40 m), não bate.",
+  "erradas": {
+   "A": "A bola passa de 17 m, mas também passa de 18, 19 e 21 m.",
+   "B": "A bola também passa de 19 m e de 21 m.",
+   "C": "A bola também passa de 21 m, pois chega a cerca de 21,7 m.",
+   "E": "No ginásio V, de 40 m, a bola não atinge o teto."
+  }
+ },
+ "2022-177": {
+  "certa": "A sequência da tabela tem 13 dias: T1 R R T2 R R T3 R T4 R R T5 R. A 24ª semana vai do dia 162 ao 168. Como 156 = 13 × 12, o dia 162 é a posição 6 do ciclo. As posições 6 a 12 são: R, T3, R, T4, R, R, T5.",
+  "erradas": {
+   "A": "T3 R T4 R R T5 R começa na posição 7 do ciclo, e não na 6.",
+   "C": "R T4 R R T5 R T1 corresponde às posições 8 a 14, que estão deslocadas.",
+   "D": "R R T5 R T1 R R não aparece no ciclo na ordem indicada.",
+   "E": "R T5 R T1 R R T2 corresponde às posições 11 a 17, deslocadas em relação à 24ª semana."
+  }
+ },
+ "2022-179": {
+  "certa": "A varanda em L é um retângulo de 16 cm × 18,4 cm menos o retângulo vazio de (16 − 4) = 12 cm × (18,4 − 5) = 13,4 cm: 294,4 − 160,8 = 133,6 cm² no desenho. Na escala 1 : 50, a área real é 133,6 × 2.500 = 334.000 cm² = 33,4 m².",
+  "erradas": {
+   "B": "66,80 m² é o dobro do valor correto.",
+   "C": "89,24 m² não decorre da área do desenho com a escala ao quadrado.",
+   "D": "133,60 m² usa a área do desenho como se fosse em m², sem aplicar a escala ao quadrado corretamente.",
+   "E": "534,40 m² resulta de usar a área de um retângulo completo errado."
+  }
+ },
+ "2022-180": {
+  "certa": "As vendas variam de modo linear: o setor adulto vende 18.000 nos primeiros 10 dias, 15.000 nos 10 seguintes e 12.000 nos últimos 10. O infantil vende 8.000, 7.000 e 6.000. Total: 26.000 + 22.000 + 18.000 = 66.000. Faltam 77.000 − 66.000 = 11.000 reais.",
+  "erradas": {
+   "A": "5.000 não decorre da soma dos três períodos.",
+   "B": "7.000 não decorre da soma dos três períodos.",
+   "D": "18.000 é a venda do último período (adulto), e não o que falta.",
+   "E": "29.000 resulta de erro ao somar os períodos."
+  }
+ }
+}

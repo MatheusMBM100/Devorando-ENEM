@@ -1,0 +1,47 @@
+{
+ "2021-165": {
+  "certa": "Lucro = receita − despesa. Janeiro: 10 − 5 = 5. Fevereiro: 20 − 10 = 10. Março: 15 − 10 = 5. Abril: 20 − 15 = 5. Maio: 28 − 25 = 3. O maior lucro até maio foi o de fevereiro (R$ 10 milhões), e os próximos meses devem ter lucro maior ou igual a ele.",
+  "erradas": {
+   "A": "O lucro de janeiro foi 5, menor que o maior (10).",
+   "C": "O lucro de março foi 5, menor que o maior (10).",
+   "D": "O lucro de abril foi 5, menor que o maior (10).",
+   "E": "O lucro de maio foi 3, o menor do período."
+  }
+ },
+ "2021-166": {
+  "certa": "O aumento percentual é (519,2 − 236) ÷ 236 = 283,2 ÷ 236 = 1,2, ou seja, 120%.",
+  "erradas": {
+   "A": "45,4% não corresponde à razão entre o aumento e o valor inicial.",
+   "B": "54,5% não corresponde à razão entre o aumento e o valor inicial.",
+   "D": "220% é a razão entre os volumes (519,2 ÷ 236), e não o aumento.",
+   "E": "283,2 é o aumento em milhões (519,2 − 236), e não em percentual."
+  }
+ },
+ "2021-167": {
+  "certa": "O total é 105 imóveis, então 50% é 52,5. Frequências acumuladas: até 400 → 5; até 500 → 15; até 600 → 20; até 700 → 35; até 800 → 55. O acumulado só passa de 52,5 na faixa ]700, 800], então o menor p para o qual pelo menos 50% dos apartamentos têm preço inferior a p é 800.",
+  "erradas": {
+   "A": "Até 600 há apenas 20 imóveis (19%).",
+   "B": "Até 700 há 35 imóveis (33%), menos que 50%.",
+   "D": "Com p = 900, 70 imóveis estão abaixo, mas 800 já é suficiente, e o pedido é o menor p.",
+   "E": "Com p = 1.000, 85 imóveis estão abaixo, mas 800 já é suficiente."
+  }
+ },
+ "2021-168": {
+  "certa": "As quatro letras mais frequentes no texto original são A (≈ 70.000), E (≈ 64.000), O (≈ 52.000) e S (≈ 39.000). Na cifra com deslocamento de três posições, A → D, E → H, O → R e S → V. A ordem é D, H, R e V.",
+  "erradas": {
+   "A": "A, E, O e S são as letras do texto original, e a pergunta é sobre o texto codificado.",
+   "B": "D, E, F e G não correspondem às quatro letras mais frequentes deslocadas.",
+   "D": "R, L, B e X resultam de um deslocamento no sentido contrário.",
+   "E": "X, B, L e P resultam de um deslocamento errado."
+  }
+ },
+ "2021-169": {
+  "certa": "Em ordem crescente: 11, 11, 12, 13, 15, 15, 16, 16, 17, 18, 20, 24. Com 12 valores, a mediana é a média dos 6º e 7º: (15 + 16) ÷ 2 = 15,5.",
+  "erradas": {
+   "A": "11 é a moda, e não a mediana.",
+   "B": "15 é o 6º valor, e a mediana é a média dos dois centrais.",
+   "D": "15,7 aproxima a média aritmética (188 ÷ 12 ≈ 15,67), e não a mediana.",
+   "E": "17,5 não corresponde aos valores centrais."
+  }
+ }
+}

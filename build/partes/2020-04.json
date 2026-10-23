@@ -1,0 +1,200 @@
+{
+ "2020-091": {
+  "certa": "O revestimento de celulose só libera o fármaco em pH próximo do neutro, como o do intestino. No estômago, o meio é fortemente ácido e há secreções gástricas, então o revestimento protege o fármaco da ação dessas secreções.",
+  "erradas": {
+   "A": "A finalidade não é diminuir a absorção, e sim garantir que o fármaco seja liberado no local certo.",
+   "B": "O objetivo é que o fármaco seja solubilizado no intestino, e não o contrário.",
+   "D": "As amilases salivares atuam na boca, e não liberam o fármaco do revestimento.",
+   "E": "O texto não diz que os sais biliares sejam necessários para a liberação do fármaco."
+  }
+ },
+ "2020-092": {
+  "certa": "Quando o vapor começa a sair, a água está em ebulição na temperatura máxima permitida pela pressão da válvula. Aumentar o fogo não aumenta a temperatura, apenas faz a água evaporar mais depressa. Abaixar o fogo evita o consumo desnecessário de gás.",
+  "erradas": {
+   "A": "A válvula limita a pressão interna, e o risco de explosão não depende da chama depois que o vapor sai.",
+   "B": "A dilatação da panela não é o motivo de baixar o fogo.",
+   "C": "A perda de nutrientes não é o motivo de baixar o fogo.",
+   "D": "A deformação da borracha não é o motivo de baixar o fogo."
+  }
+ },
+ "2020-093": {
+  "certa": "Em partículas nanométricas, a razão entre a superfície e o volume é muito grande. Mais superfície de contato com os reagentes acelera a reação catalisada, o que explica o sucesso da aplicação.",
+  "erradas": {
+   "A": "Os catalisadores permitem reagir sem pressão alta.",
+   "B": "Os catalisadores permitem reagir sem temperatura alta, e a economia de energia é uma vantagem.",
+   "C": "O excesso de reagentes não é o que explica o êxito dos nanomateriais.",
+   "E": "Os catalisadores diminuem a energia de ativação, e não a elevam."
+  }
+ },
+ "2020-094": {
+  "certa": "Os fones com cancelamento de ruído emitem uma onda de mesma frequência e amplitude, mas em oposição de fase, em relação ao ruído. A soma das duas ondas é praticamente nula, o que é interferência destrutiva.",
+  "erradas": {
+   "A": "A absorção reduz energia de onda, mas não é o princípio dos fones CR.",
+   "C": "A polarização ocorre em ondas transversais e não se aplica ao som.",
+   "D": "A reflexão não cancela o ruído.",
+   "E": "A difração é o contorno de obstáculos e não reduz o ruído."
+  }
+ },
+ "2020-095": {
+  "certa": "A reação (azul + água → rosa) é exotérmica (ΔH < 0). Para voltar ao azul, é preciso deslocar o equilíbrio no sentido inverso, endotérmico, retirando a água e aquecendo. Aquecer com secador de cabelos faz isso.",
+  "erradas": {
+   "A": "Resfriar favorece a reação exotérmica, mantendo a cor rosa.",
+   "B": "Borrifar água favorece a formação do rosa.",
+   "C": "Envolver com alumínio não retira a água do cartão.",
+   "E": "O guardanapo não retira a água de modo suficiente nem desloca o equilíbrio."
+  }
+ },
+ "2020-097": {
+  "certa": "A técnica une anticorpos (imunoterapia) a uma molécula ativada por luz infravermelha. É a fotoimunoterapia.",
+  "erradas": {
+   "A": "A radioterapia usa radiação ionizante, e não uma molécula ativada pela luz infravermelha.",
+   "B": "A cromoterapia usa cores como terapia alternativa, e não há base científica para destruir tumores.",
+   "C": "A quimioterapia usa fármacos que agem em todo o organismo, e não anticorpos ativados por luz.",
+   "E": "A terapia magnética usa campos magnéticos, e não tem relação com a técnica descrita."
+  }
+ },
+ "2020-098": {
+  "certa": "O exoesqueleto de quitina dos aracnídeos diminui a perda de água, o que é essencial para a vida em ambientes secos. Ele favorece o controle hídrico do corpo.",
+  "erradas": {
+   "A": "As quelíceras e os pedipalpos servem à alimentação e à captura, e não à coordenação do movimento.",
+   "B": "A excreção de ácido úrico economiza água, mas a alternativa diz que ela dá estabilidade ao pH, o que é incorreto.",
+   "D": "A circulação aberta não impede a desidratação.",
+   "E": "O sistema nervoso ganglionar não é o que explica o sucesso no ambiente terrestre."
+  }
+ },
+ "2020-099": {
+  "certa": "A bomba atômica funciona pela fissão do núcleo de urânio, provocada por nêutrons. A fissão libera energia e mais nêutrons, e a reação em cadeia gera a poeira radioativa.",
+  "erradas": {
+   "B": "A fusão do hidrogênio é o princípio da bomba de hidrogênio, e não da atômica.",
+   "C": "O plutônio também fissiona, mas por nêutrons, e não por elétrons.",
+   "D": "O chumbo não é usado em reação em cadeia de bombas.",
+   "E": "O decaimento do carbono não é um processo que gere uma explosão."
+  }
+ },
+ "2020-100": {
+  "certa": "As plantas pioneiras cobrem o solo, fazem sombra e diminuem a evaporação. Elas promovem a estabilização da umidade do solo.",
+  "erradas": {
+   "A": "Elas sombreiam o solo e diminuem a incidência de luz sobre ele.",
+   "B": "A cobertura vegetal aumenta a absorção de água, e não a diminui.",
+   "D": "A sombra tende a reduzir a temperatura do solo, e não a elevar.",
+   "E": "A liberação de oxigênio não é a função principal destacada no solo."
+  }
+ },
+ "2020-101": {
+  "certa": "Em 1 h, o aquário perde Q = P × t = 50 W × 3.600 s = 180.000 J. A massa de água é 50 kg, então ΔT = Q ÷ (m·c) = 180.000 ÷ (50 × 4.000) = 0,9 °C.",
+  "erradas": {
+   "A": "4,0 °C não decorre de Q = m·c·ΔT com os dados.",
+   "B": "3,6 °C resulta de um erro de unidades (usar kJ no lugar de J, ou o tempo em minutos).",
+   "D": "0,6 °C não decorre de Q = m·c·ΔT com os dados.",
+   "E": "0,3 °C não decorre de Q = m·c·ΔT com os dados."
+  }
+ },
+ "2020-103": {
+  "certa": "Na extração, o hexano (apolar) dissolve o óleo (apolar), e a separação se dá pela polaridade. A trituração, o cozimento e a prensagem são processos físicos, e a destilação separa por ponto de ebulição.",
+  "erradas": {
+   "A": "A trituração rompe tecidos e não depende da polaridade.",
+   "B": "O cozimento altera a permeabilidade das membranas e não depende da polaridade.",
+   "C": "A prensagem remove o óleo por pressão e não depende da polaridade.",
+   "E": "A destilação separa óleo e solvente pelos pontos de ebulição."
+  }
+ },
+ "2020-104": {
+  "certa": "O CO2 é facilmente solubilizado em água, e forma ácido carbônico. Com mais CO2 atmosférico, a água fica mais ácida, e o pH diminui, afetando os organismos aquáticos.",
+  "erradas": {
+   "B": "O texto não fala de restrição da aerobiose por poluentes.",
+   "C": "O aumento de CO2 não diminui a emissão de oxigênio pelos autótrofos.",
+   "D": "O aumento de CO2 não limita a transferência de energia entre os seres vivos.",
+   "E": "O CO2 não congela nos polos, e o gelo seco só se forma a −78 °C."
+  }
+ },
+ "2020-105": {
+  "certa": "As aves aquáticas flutuam porque as penas têm uma camada de cera impermeabilizante. O detergente a remove, e as aves precisam refazê-la antes de voltar ao ambiente.",
+  "erradas": {
+   "A": "O tônus muscular não influencia a flutuação.",
+   "B": "A massa corporal não é o que permite flutuar.",
+   "C": "As penas não precisam ser substituídas, e sim reimpermeabilizadas.",
+   "D": "A homeotermia é importante, mas o que impede a flutuação é a perda da cera."
+  }
+ },
+ "2020-109": {
+  "certa": "A cavidade funciona como um tubo fechado de 30 m, com frequências f = n·v/(4L) para n ímpar. Com v = 360 m/s e L = 30 m, f = n × 3 Hz. A frequência medida, 135 Hz, corresponde a n = 45. A próxima ressonância é n = 47, que dá 47 × 3 = 141 Hz.",
+  "erradas": {
+   "A": "137 Hz não é múltiplo ímpar de 3 Hz.",
+   "B": "138 Hz não é múltiplo ímpar de 3 Hz.",
+   "D": "144 Hz corresponderia a n = 48, que é par e não ocorre em tubo fechado.",
+   "E": "159 Hz corresponderia a n = 53, que não é a ressonância seguinte."
+  }
+ },
+ "2020-110": {
+  "certa": "Inserir um gene de outro organismo (aqui, o que produz a cianovirina-N) no genoma da soja é transgenia, o que gera um organismo geneticamente modificado.",
+  "erradas": {
+   "A": "O hibridismo é o cruzamento entre espécies ou variedades diferentes.",
+   "C": "A conjugação é a troca de material genético entre bactérias.",
+   "D": "A terapia gênica corrige genes em seres humanos.",
+   "E": "O melhoramento genético clássico seleciona e cruza variedades, sem inserir genes de outro organismo."
+  }
+ },
+ "2020-111": {
+  "certa": "Os resíduos incluem bário, chumbo, antimônio, cromo e gases como NO2 e SO2. Os metais pesados e os gases tóxicos causam poluição atmosférica, o que representa risco ambiental.",
+  "erradas": {
+   "A": "O texto não diz que os resíduos sejam inflamáveis.",
+   "B": "O texto não diz que os resíduos ainda sejam explosivos.",
+   "C": "Sódio e potássio não são os principais responsáveis pela toxicidade, e os metais pesados são.",
+   "E": "O texto não trata de efeitos do material particulado sobre a respiração celular das folhas."
+  }
+ },
+ "2020-112": {
+  "certa": "A carcaça metálica do automóvel conduz as cargas pela superfície externa e anula o campo elétrico no interior, como uma gaiola de Faraday. Esse efeito de blindagem protege quem está dentro.",
+  "erradas": {
+   "A": "Os pneus não isolam eletricamente na descarga de um raio.",
+   "B": "A antena não funciona como para-raios que proteja o carro.",
+   "D": "O escoamento da água pela lataria não protege contra descargas.",
+   "E": "O carro não tem aterramento pelo fio terra da bateria."
+  }
+ },
+ "2020-116": {
+  "certa": "Em 1.000 km: o carro a etanol emite 2.600 mol de CO2, e o elétrico, 450 mol. A diferença é 2.150 mol. Pela equação, 1 mol de etanol gera 2 mol de CO2, então 2.150 mol de CO2 equivalem a 1.075 mol de etanol. A massa é 1.075 × 46 ≈ 49.450 g, cerca de 50 kg.",
+  "erradas": {
+   "B": "60 kg não decorre da relação estequiométrica etanol/CO2.",
+   "C": "95 kg é aproximadamente a massa de CO2 evitada (2.150 × 44 g), e não a de etanol.",
+   "D": "99 kg não decorre da relação estequiométrica etanol/CO2.",
+   "E": "120 kg não decorre da relação estequiométrica etanol/CO2."
+  }
+ },
+ "2020-119": {
+  "certa": "O acetato de etila tem baixa solubilidade em água, então a mistura é heterogênea, e tem densidade menor que a da água (0,9 g/cm³). Os dois líquidos imiscíveis se separam por decantação, em um funil de separação.",
+  "erradas": {
+   "A": "Evaporar o acetato de etila não recupera o composto nem o separa da água.",
+   "B": "A filtração separa sólidos de líquidos, e não líquidos imiscíveis.",
+   "C": "A destilação simples é usada para misturas homogêneas, e para líquidos imiscíveis basta decantar.",
+   "D": "A centrifugação é usada para sólidos em suspensão ou emulsões, e não é o método indicado."
+  }
+ },
+ "2020-120": {
+  "certa": "O petróleo é hidrofóbico e menos denso que a água. Ele forma uma película sobre a superfície que impede as trocas gasosas entre o meio aquático e a atmosfera, o que causa os impactos.",
+  "erradas": {
+   "A": "Os componentes do petróleo não reagem com a água do mar de forma significativa.",
+   "B": "O petróleo não acidifica o meio de modo a desgastar conchas e corais.",
+   "C": "O petróleo não se dissolve na água, pois é apolar.",
+   "E": "Os componentes do petróleo que mais contaminam o mar não têm cadeia pequena e elevada volatilidade."
+  }
+ },
+ "2020-122": {
+  "certa": "O carro acelera a 1 m/s² até 20 m/s (72 km/h): isso leva 20 s e percorre 200 m. Depois, mantém 20 m/s. O semáforo deve abrir quando o carro está a 100 m dele: A (500 m) abre com o carro em 400 m, ou seja, em 20 + (400 − 200) ÷ 20 = 30 s. B (1.000 m): 20 + 700 ÷ 20 = 55 s. C (1.500 m): 20 + 1.200 ÷ 20 = 80 s.",
+  "erradas": {
+   "A": "20 s, 45 s e 70 s não considera os 200 m percorridos na fase de aceleração.",
+   "B": "25 s, 50 s e 75 s não decorre do movimento com aceleração e depois velocidade constante.",
+   "C": "28 s, 42 s e 53 s não decorre do movimento com aceleração e depois velocidade constante.",
+   "E": "35 s, 60 s e 85 s está 5 s atrasado em cada semáforo."
+  }
+ },
+ "2020-126": {
+  "certa": "Os polímeros biodegradáveis são decompostos pela ação de microrganismos em um tempo bem menor que o dos polímeros convencionais, o que reduz o acúmulo de resíduos.",
+  "erradas": {
+   "A": "A biodegradabilidade não garante que o material não seja tóxico.",
+   "B": "Os polímeros biodegradáveis também podem ser reciclados, e a reciclagem continua a ser recomendada.",
+   "C": "Eles podem poluir se descartados de modo inadequado, e a vantagem é a degradação mais rápida.",
+   "E": "As propriedades mecânicas semelhantes são uma característica desejável, e não a vantagem socioambiental."
+  }
+ }
+}

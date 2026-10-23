@@ -1,0 +1,128 @@
+{
+ "2025-101": {
+  "certa": "O sensor muda de vermelho-laranja (cerca de 600 nm) para verde, que tem comprimento de onda menor (a frequência aumenta). Ao fim do tratamento, o pico do espectro deve se deslocar para um comprimento de onda menor, como na alternativa A, com o pico perto de 550 nm.",
+  "erradas": {
+   "B": "O pico se desloca para cerca de 640 nm, um comprimento de onda maior, que seria uma cor mais avermelhada.",
+   "C": "O pico continua em 600 nm, então a cor não mudaria, apenas a intensidade diminuiria.",
+   "D": "O pico continua em 600 nm, com intensidade maior, e a cor não muda.",
+   "E": "Os dois espectros são iguais, sem alteração da cor."
+  }
+ },
+ "2025-102": {
+  "certa": "O macho pontilhado e a fêmea listrada geram uma primeira geração com os dois padrões juntos (pontos e listra), o que indica codominância. Ao cruzar dois indivíduos da primeira geração, aparecem 1 pontilhado, 2 com listra e pontos e 1 listrado, na proporção 1:2:1, o que corresponde à alternativa E.",
+  "erradas": {
+   "A": "Todos pontilhados não ocorreria, pois os pais da F1 carregam os dois alelos.",
+   "B": "Todos listrados não ocorreria, pois os pais da F1 carregam os dois alelos.",
+   "C": "Todos com listra e pontos só ocorreria se um dos pais fosse homozigoto para cada alelo, o que não é o caso.",
+   "D": "Só pontilhados e listrados, sem intermediários, seria a proporção de uma dominância completa, e não da codominância."
+  }
+ },
+ "2025-103": {
+  "certa": "Enquanto a caixa está em movimento, o atrito é cinético, e seu valor é μ·N, que depende só do coeficiente (que é constante) e da força normal. Como o plano é o mesmo e a rugosidade não muda, a força de atrito é constante, como no gráfico C.",
+  "erradas": {
+   "A": "O atrito cinético não diminui nem volta a aumentar sem mudança na normal ou na rugosidade.",
+   "B": "O atrito cinético não aumenta e depois cai quando se reduz a força aplicada.",
+   "D": "O atrito não diminui com a redução da força aplicada, pois a caixa continua em movimento.",
+   "E": "O atrito não sobe nem desce, mantendo-se constante enquanto a caixa se move."
+  }
+ },
+ "2025-113": {
+  "certa": "A fonte tem 1,2 vez a tensão correta, ou seja, há 0,2 V₀ a mais, que precisa ser dissipado. Com o resistor Rp em série, a corrente é a mesma e as tensões se dividem em proporção às resistências: Rp deve ter 0,2 V₀ e Rc, 1,0 V₀, então Rp = 0,2·Rc. A configuração em série com Rp = 0,2 Rc é a alternativa E.",
+  "erradas": {
+   "A": "Em paralelo, o equipamento continua submetido à tensão da fonte, 20% maior, e a proteção não funciona.",
+   "B": "Em paralelo, o equipamento continua submetido à tensão da fonte, 20% maior.",
+   "C": "Em série com Rp = 1,2 Rc, o equipamento recebe só cerca de 55% de V₀, e não a tensão recomendada.",
+   "D": "Em série com Rp = 2,2 Rc, o equipamento recebe apenas cerca de 38% de V₀."
+  }
+ },
+ "2025-116": {
+  "certa": "A cadeia fluorada do surfactante, no topo, repele o óleo (é oleofóbica) e não deixa que ele atravesse. O óleo fica retido no surfactante, enquanto a água passa pelas camadas e pela malha.",
+  "erradas": {
+   "B": "A camada superior de polímero, de carga positiva, fica abaixo do surfactante e não é onde o óleo fica retido.",
+   "C": "As nanopartículas de sílica estão sob duas camadas e deixam passar a água, e não retêm o óleo.",
+   "D": "A camada inferior de polímero fica sob a sílica e não é onde o óleo é retido.",
+   "E": "A malha de aço é o suporte, e é por onde a água passa."
+  }
+ },
+ "2025-117": {
+  "certa": "A solubilidade em água aumenta com o número de grupos polares capazes de fazer ligações de hidrogênio, como os grupos OH. O estriol tem três grupos OH (um fenólico e dois no anel da direita), o maior número entre os hormônios. É o mais solúvel.",
+  "erradas": {
+   "A": "O estradiol tem dois grupos OH, menos que o estriol.",
+   "C": "A estrona tem um OH e uma carbonila, menos polar que o estriol.",
+   "D": "O novestrol tem dois OH, mas também uma cadeia apolar (alquinil), e é menos solúvel que o estriol.",
+   "E": "A noretindrona tem um OH e uma carbonila, e é menos solúvel que o estriol."
+  }
+ },
+ "2025-118": {
+  "certa": "Para o corpo atravessar o feixe por completo, o deslocamento é d + espessura = 15 + 20 = 35 cm = 0,35 m. O menor tempo vale para a maior velocidade, 5,0 m/s: t = 0,35 ÷ 5,0 = 0,07 s = 70 ms. O tempo de resposta precisa ser no máximo esse.",
+  "erradas": {
+   "A": "30 ms corresponde a 0,15 m ÷ 5 m/s, usando só o diâmetro do feixe.",
+   "C": "300 ms não corresponde ao tempo de passagem de nenhum dos movimentos.",
+   "D": "400 ms não corresponde ao tempo de passagem de nenhum dos movimentos.",
+   "E": "700 ms seria o tempo de passagem do movimento mais lento (0,5 m/s), e não o menor tempo."
+  }
+ },
+ "2025-120": {
+  "certa": "O campo magnético variável da bobina induz uma corrente elétrica no fundo metálico da panela (lei de Faraday). A passagem dessa corrente aquece a panela por efeito Joule, sem aquecer o vidro nem o ar.",
+  "erradas": {
+   "A": "O objetivo não é imantar a panela, mas induzir corrente.",
+   "B": "Os átomos de ferro não são movimentados pelo campo para aquecer.",
+   "C": "O aquecimento não ocorre por radiação emitida pela bobina através do vidro.",
+   "E": "O ar entre a bobina e o vidro não é o que aquece a panela."
+  }
+ },
+ "2025-125": {
+  "certa": "A resistência interna de cada placa é r = (40 − 34) ÷ 7,5 = 0,8 Ω. A bomba precisa de cerca de 100 V (de 95 a 105 V). Com placas em série, 3 placas dão 102 V sob carga, o menor número possível, com fem 3 × 40 = 120 V e resistência interna 3 × 0,8 = 2,4 Ω. O diagrama é o de 120 V e 2,4 Ω.",
+  "erradas": {
+   "A": "136 V e 3,2 Ω correspondem a 4 placas, que dariam mais de 105 V, e não são o menor número de placas.",
+   "C": "120 V e 5,3 Ω não corresponde à resistência interna de 3 placas.",
+   "D": "102 V e 2,4 Ω mistura a tensão de operação com a fem do gerador, que é 120 V.",
+   "E": "102 V e 5,3 Ω não corresponde à fem nem à resistência de 3 placas."
+  }
+ },
+ "2025-128": {
+  "certa": "Em 6 min = 0,1 h, o avião precisa ter velocidade resultante de 200 km/h para Leste, 200 km/h para Norte e 10 km/h para cima. A velocidade em relação ao ar é a resultante menos a do vento. Leste: 200 − 30 = 170 km/h. Norte: 200 + 20 = 220 km/h (o vento é para o Sul). Vertical: 10 + 1 = 11 km/h para cima.",
+  "erradas": {
+   "A": "230 Leste, 180 Sul e 9 para baixo soma o vento em vez de subtraí-lo e inverte os sentidos.",
+   "B": "230 Leste, 180 Norte e 9 para cima soma o vento na direção Leste e subtrai a componente Sul e a vertical, em vez de fazer o oposto.",
+   "C": "200 Oeste, 200 Norte e 10 para cima ignora o vento e erra o sentido leste.",
+   "E": "170 Leste, 180 Norte e 11 para cima erra o ajuste da componente Norte, que deve somar o vento para Sul."
+  }
+ },
+ "2025-129": {
+  "certa": "A enzima é um catalisador: ela diminui a energia de ativação da reação, mas não altera a energia dos reagentes nem a dos produtos. No gráfico C, o pico da linha pontilhada é mais baixo e as energias de A e B são iguais nas duas curvas.",
+  "erradas": {
+   "A": "A energia de A é diferente nas duas curvas, e a enzima não altera a energia do reagente.",
+   "B": "A energia de B é diferente, e a enzima não altera a energia do produto.",
+   "D": "A energia de ativação aumenta, mas a enzima a reduz.",
+   "E": "As energias de A e de B são diferentes nas duas curvas, e a enzima não as altera."
+  }
+ },
+ "2025-130": {
+  "certa": "Na relação R = A + BT, a sensibilidade é o coeficiente B, a inclinação da reta no gráfico. As retas mais inclinadas são as dos sensores 2 e 5.",
+  "erradas": {
+   "A": "O sensor 1 tem reta quase horizontal, a menor sensibilidade.",
+   "B": "Os sensores 1 e 3 têm retas pouco inclinadas.",
+   "C": "O sensor 3 tem reta pouco inclinada.",
+   "D": "O sensor 4 tem inclinação menor que a do sensor 5."
+  }
+ },
+ "2025-132": {
+  "certa": "O carvão ativado é muito poroso e, por isso, tem uma enorme superfície disponível para adsorver impurezas. A eficiência na remoção vem da maior superfície.",
+  "erradas": {
+   "A": "A massa não explica a capacidade de adsorção.",
+   "B": "A dureza não explica a capacidade de adsorção.",
+   "C": "A densidade não é o fator que explica a eficiência.",
+   "E": "A condutividade elétrica não tem relação com a adsorção."
+  }
+ },
+ "2025-135": {
+  "certa": "A régua suporta 20 A em 110 V, ou seja, 2.200 W. Computador + condicionador = 250 + 1.100 = 1.350 W. Imprimir (+660 W) dá 2.010 W, abaixo do limite, e é possível. Fazer café (+900 W) dá 2.250 W, acima de 2.200 W, e o fusível se rompe, inutilizando a régua. Só 1 atividade foi realizada.",
+  "erradas": {
+   "A": "4 atividades exigiria que o fusível nunca fosse ultrapassado, mas a cafeteira o faz.",
+   "B": "3 atividades pressupõe que o fusível continue funcionando após a cafeteira, o que não ocorre.",
+   "C": "2 atividades pressupõe que a cafeteira fosse possível, mas ela passa do limite.",
+   "E": "0 atividades ignora que a impressora, com 2.010 W, não ultrapassa o limite."
+  }
+ }
+}

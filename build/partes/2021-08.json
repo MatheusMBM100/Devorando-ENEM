@@ -1,0 +1,38 @@
+{
+ "2021-045": {
+  "certa": "O texto, uma reportagem sobre os 100 anos de Abel Ferreira, mostra o choro como manifestação rica ('alma sertaneja, toque mozarteano') e fala das dificuldades que ele enfrenta. Considerando o contexto, o gênero e o público, os argumentos buscam destacar a relevância histórica e a riqueza estética do choro no cenário musical brasileiro.",
+  "erradas": {
+   "A": "O desconhecimento é atribuído também à falta de divulgação, e a citação sobre as escolas é da editora, não o objetivo da autora.",
+   "B": "O texto cita a falta de incentivos oficiais, mas isso é um dado, e não a reivindicação central.",
+   "D": "Há dados biográficos, mas servem para valorizar o choro, e não são o objetivo.",
+   "E": "A impopularidade é constatada como contexto, mas a autora destaca o valor do gênero."
+  }
+ },
+ "2021-046": {
+  "certa": "O texto descreve alguém que, em casa, passa a pensar em mensagens do trabalho e 'o jantar e a família ficaram em segundo plano'. As práticas descritas ampliam as atividades de trabalho fora do expediente, ou seja, a ampliação de atividades extras.",
+  "erradas": {
+   "A": "A vida privada é invadida, e não protegida.",
+   "C": "O texto não trata de etapas burocráticas.",
+   "D": "O lazer e a convivência diminuem, em vez de se diversificarem.",
+   "E": "O texto não trata de afazeres domésticos."
+  }
+ },
+ "2021-047": {
+  "certa": "Piketty explica que, quando o retorno do capital supera o crescimento da economia, a riqueza herdada cresce mais que a riqueza do trabalho. Isso enfraquece a ideologia do mérito, que legitima as democracias liberais, pois o sucesso passa a depender da herança.",
+  "erradas": {
+   "B": "O direito de nascimento é o que a lógica descrita reforça.",
+   "C": "O texto não trata da eficácia da legislação.",
+   "D": "O ganho das financeiras não é tema do trecho.",
+   "E": "O texto não trata da eficiência dos mercados."
+  }
+ },
+ "2021-048": {
+  "certa": "O programa 'Uvas do Brasil' desenvolve variedades para atender produtores de regiões diferentes (semiárido nordestino, regiões tropicais, Serra Gaúcha). As técnicas adaptam o cultivo aos elementos ambientais singulares de cada região.",
+  "erradas": {
+   "A": "O texto não trata de espécies nativas ameaçadas.",
+   "B": "O texto fala de produtores de vários tipos, mas não de cadeias econômicas autônomas.",
+   "C": "O texto não trata de estruturas fundiárias tradicionais.",
+   "E": "O texto cita produção para exportação e para sucos e vinhos, e não os mercados internos como foco."
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "2021-131": {
+  "certa": "O sabão é feito pela reação do óleo (triglicerídeo, um éster) com uma base forte, a soda cáustica (NaOH), que gera glicerol e sais de ácidos graxos (sabão). Essa reação é a saponificação.",
+  "erradas": {
+   "A": "A redução envolve ganho de elétrons ou de hidrogênio, e não é a reação do óleo com a soda.",
+   "B": "A epoxidação forma epóxidos a partir de ligações duplas.",
+   "C": "A substituição troca um átomo ou grupo por outro, e não descreve a hidrólise básica do éster.",
+   "D": "A esterificação forma ésteres, e a reação do sabão é o inverso (hidrólise do éster)."
+  }
+ },
+ "2021-132": {
+  "certa": "No feto, o forame oval faz o sangue passar do átrio direito ao esquerdo, sem ir ao pulmão. A circulação fetal se assemelha à dos peixes: simples, com uma única passagem pelo coração. Por isso a comunicação entre os átrios não prejudica o embrião.",
+  "erradas": {
+   "A": "Nas aves, as circulações pulmonar e sistêmica são separadas, o que não ocorre no feto.",
+   "B": "Os répteis têm circulação dupla incompleta, mas a explicação (metabolismo lento) está incorreta.",
+   "C": "Os crocodilianos têm ventrículos separados, mas há comunicação entre os arcos aórticos, e não é a semelhança com o feto.",
+   "E": "Os anfíbios têm circulação dupla e incompleta, com pressões que isolam o sangue só em parte."
+  }
+ },
+ "2021-133": {
+  "certa": "A solução preparada tem pH 4,3, mais ácido que o ideal (5,5 a 6,5), então precisa de uma base. O KOH é uma base forte que eleva o pH e fornece K⁺, que está abaixo da concentração de referência (3,5 contra 6,0 mmol/L), sem introduzir elementos nocivos.",
+  "erradas": {
+   "A": "O ácido fosfórico baixaria ainda mais o pH.",
+   "B": "O CaSO₄ é um sal praticamente neutro, que não corrige o pH.",
+   "C": "O Al₂O₃ é pouco solúvel e o alumínio é nocivo às plantas.",
+   "D": "O FeCl₂ é um sal ácido, que acidifica mais e adiciona cloreto, e o pH precisa subir."
+  }
+ },
+ "2021-134": {
+  "certa": "A velocidade do som depende do material (o mesmo nas barras), então v₁ = v₂. A frequência fundamental é inversamente proporcional ao comprimento, então a barra mais curta emite o som mais agudo: f₁ > f₂.",
+  "erradas": {
+   "A": "Afirma f₁ < f₂ e v₁ < v₂, mas a barra mais curta tem frequência maior, e as velocidades são iguais.",
+   "B": "Acerta que as velocidades são iguais, mas inverte as frequências.",
+   "C": "Afirma f₁ < f₂ e v₁ > v₂, mas a barra mais curta tem frequência maior, e as velocidades são iguais.",
+   "E": "Acerta que f₁ > f₂, mas a velocidade é igual, porque o material é o mesmo."
+  }
+ },
+ "2021-135": {
+  "certa": "Do ponto de vista evolutivo, a seleção natural favorece os indivíduos que têm vantagem. Polvos que imitavam predadores ou animais perigosos tinham mais chance de sobreviver, e passaram a característica adiante, sob pressões seletivas.",
+  "erradas": {
+   "A": "Os polvos são moluscos, e os animais imitados são peixes e serpentes, sem ancestral comum recente.",
+   "B": "Mutações são aleatórias e independentes, e não ocorrem de modo similar nas espécies.",
+   "C": "Observar os animais não altera o genoma, e a característica é hereditária.",
+   "D": "A convergência adaptativa leva a semelhanças por pressões iguais, o que não é o caso: o polvo imita, e não compartilha o mesmo ambiente de evolução."
+  }
+ }
+}

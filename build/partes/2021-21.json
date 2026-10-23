@@ -1,0 +1,56 @@
+{
+ "2021-114": {
+  "certa": "Para madeira de construção, resistente mecanicamente e à degradação, interessam muita esclerênquima (fibras e células de sustentação), alburno e, sobretudo, cerne (xilema inativo, com compostos que protegem contra degradação) em boa quantidade. A espécie 1 tem muito cerne (+++), esclerênquima no periderma e no floema, e boa resistência à degradação.",
+  "erradas": {
+   "B": "A espécie 2 não tem cerne, então tem baixa resistência à degradação.",
+   "C": "A espécie 3 não tem cerne e pouco esclerênquima.",
+   "D": "A espécie 4 não tem cerne, apesar do periderma desenvolvido.",
+   "E": "A espécie 5 tem cerne em pequena quantidade (+), menos que a espécie 1."
+  }
+ },
+ "2021-115": {
+  "certa": "A antocianina absorve do azul ao verde, e a luz refletida é a cor complementar, vermelho-alaranjado. Pelo mesmo raciocínio, os carotenos têm coloração amarelo-alaranjada, então refletem o amarelo e o laranja, e absorvem a faixa complementar: entre o violeta e o azul (400 a 480 nm).",
+  "erradas": {
+   "B": "Entre o azul e o verde é a faixa de absorção da antocianina.",
+   "C": "Entre o verde e o amarelo (cerca de 560 nm) é uma faixa de luz refletida, e não absorvida.",
+   "D": "Entre o amarelo e o laranja é a cor refletida pelos carotenos.",
+   "E": "Entre o laranja e o vermelho é uma faixa que os carotenos refletem."
+  }
+ },
+ "2021-116": {
+  "certa": "A sextilha fala de um planeta menos denso que a água. Pela tabela, o único com densidade relativa menor que 1 é Saturno (0,7).",
+  "erradas": {
+   "A": "Mercúrio tem densidade 5,6, muito maior que a da água.",
+   "B": "Júpiter tem densidade 1,3, maior que a da água.",
+   "C": "Urano tem densidade 1,2, maior que a da água.",
+   "E": "Netuno tem densidade 1,7, maior que a da água."
+  }
+ },
+ "2021-117": {
+  "certa": "A resistência R = ρ·L/A, com ρ constante, é proporcional a L/A. Fio 1: 312/9 ≈ 34,7. Fio 2: 47/4 = 11,75. Fio 3: 54/2 = 27. Fio 4: 106/1 = 106. A ordem crescente é R2 < R3 < R1 < R4.",
+  "erradas": {
+   "A": "Coloca R1 antes de R2, mas R1 (34,7) é maior que R2 (11,75).",
+   "B": "Coloca R1 antes de R3, mas R1 (34,7) é maior que R3 (27).",
+   "D": "Começa por R4, que é a maior resistência (106).",
+   "E": "Coloca R4 como a menor, mas R4 (106) é a maior resistência."
+  }
+ },
+ "2021-118": {
+  "certa": "O texto fala de compostos orgânicos catabolizados com menor rendimento energético, produzindo subprodutos que servem de combustíveis ambientais. É o processo da fermentação, que degrada a matéria orgânica sem oxigênio e libera produtos como etanol, metano e outros.",
+  "erradas": {
+   "A": "A fotossíntese fixa carbono, e não produz os subprodutos citados do catabolismo.",
+   "C": "A quimiossíntese também fixa carbono, e não degrada compostos orgânicos.",
+   "D": "A respiração aeróbica oxida completamente, com maior rendimento, e produz CO₂ e água.",
+   "E": "A fosforilação oxidativa é uma etapa da respiração, e não gera subprodutos combustíveis."
+  }
+ },
+ "2021-119": {
+  "certa": "O ácido acetilsalicílico tem grupo ácido carboxílico, que reage com NaOH na proporção 1:1. A titulação mede a quantidade de ácido pela quantidade de base gasta, o que determina a massa do princípio ativo. Os componentes inertes (amido, celulose) não consomem NaOH. A titulação (5) revela os 40 mg.",
+  "erradas": {
+   "A": "A massa total do comprimido inclui os inertes, e não distingue o ácido.",
+   "B": "A densidade do comprimido não determina a quantidade do princípio ativo.",
+   "C": "O pH com papel indicador só indica se é ácido, sem medir a quantidade.",
+   "D": "A temperatura de fusão do comprimido não determina a quantidade do ácido."
+  }
+ }
+}

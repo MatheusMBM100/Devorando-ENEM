@@ -1,0 +1,83 @@
+{
+ "2025-152": {
+  "certa": "Antes: 3 funcionários × 6 h = 18 horas de trabalho por dia para 720 tijolos, o que dá 720 ÷ 18 = 40 tijolos por hora. Depois: 5 × 9 = 45 horas de trabalho por dia, então 45 × 40 = 1.800 tijolos.",
+  "erradas": {
+   "A": "800 não decorre da relação de proporção entre horas totais e tijolos.",
+   "B": "1.080 considera apenas o aumento das horas de cada funcionário (720 × 9/6) e ignora o aumento do número de funcionários.",
+   "C": "1.200 considera apenas o aumento do número de funcionários (720 × 5/3) e ignora o das horas.",
+   "E": "2.520 não decorre das 45 horas diárias com 40 tijolos por hora."
+  }
+ },
+ "2025-153": {
+  "certa": "Seguindo a regra, da esquerda para a direita: andar 2 (1º dígito), setor 08 (2º e 3º), funcionário 109 (4º ao 6º) e manhã = 0 (último). O código é 2 08 109 0 = 2081090.",
+  "erradas": {
+   "A": "0109082 está com os blocos em ordem inversa, e o primeiro dígito não é o andar.",
+   "B": "0281090 não começa pelo andar 2 nem segue a ordem dos blocos.",
+   "C": "1010982 não corresponde ao andar, ao setor nem ao período do visitante.",
+   "E": "2810910 troca a ordem dos blocos e marca o período da tarde (1) em vez da manhã."
+  }
+ },
+ "2025-161": {
+  "certa": "Reciclar custa R$ 500 por tonelada, que é 5% do custo com petróleo, então produzir com petróleo custa R$ 10.000 por tonelada. O custo atual é 110 × 10.000 + 80 × 500 = R$ 1.140.000. A meta é gastar no máximo R$ 570.000 para as mesmas 190 t. Com x toneladas recicladas: (190 − x) × 10.000 + 500x ≤ 570.000, o que dá 9.500x ≥ 1.330.000 e x ≥ 140.",
+  "erradas": {
+   "A": "Com 135 t recicladas, o custo é R$ 617.500, que é maior que o limite de R$ 570.000.",
+   "C": "Com 155 t a meta é atingida, mas esse não é o mínimo.",
+   "D": "Com 160 t a meta é atingida, mas esse não é o mínimo.",
+   "E": "Com 175 t a meta é atingida, mas esse não é o mínimo."
+  }
+ },
+ "2025-162": {
+  "certa": "Há 20 pessoas. Para presidente, qualquer uma das 20. Para secretário, não pode ser do casal do presidente: 18 opções. Para tesoureiro, não pode ser de nenhum dos dois casais já escolhidos: 16 opções. O total é 20 × 18 × 16.",
+  "erradas": {
+   "A": "10 × 9 × 8 conta só a escolha dos casais, sem decidir qual pessoa de cada casal ocupa o cargo.",
+   "C": "20 × 19 × 18 permite que duas pessoas do mesmo casal ocupem cargos, o que a regra proíbe.",
+   "D": "10 × 9 × 8 × 2 conta só duas opções para escolher a pessoa, mas são três cargos, e cada um tem 2 opções de pessoa no casal.",
+   "E": "20 × 18 × 16 × 2 multiplica por um fator 2 a mais, e a contagem já considera a escolha das pessoas."
+  }
+ },
+ "2025-165": {
+  "certa": "O seguro passa a ser 36 × 1,20 = R$ 43,20 por veículo. As despesas são 14.240 + 120 × 43,20 = 14.240 + 5.184 = R$ 19.424. Para ter lucro de R$ 10.000, é preciso arrecadar 29.424. Dividindo por 120 vagas, a mensalidade é R$ 245,20.",
+  "erradas": {
+   "A": "R$ 185,60 não inclui o lucro de R$ 10.000 e/ou o aumento do seguro.",
+   "B": "R$ 226,09 não resulta da soma correta de despesas e lucro dividida por 120.",
+   "D": "R$ 268,93 aplica o aumento de forma incorreta.",
+   "E": "R$ 285,60 usa o seguro sem o reajuste de 20% e divide por 100 em vez de 120."
+  }
+ },
+ "2025-166": {
+  "certa": "1 cm³ equivale a 1 mL, então o pote tem 20.000 mL. Dividindo por 250 mL por taça: 20.000 ÷ 250 = 80 taças.",
+  "erradas": {
+   "A": "5 resulta de um erro de conversão de unidades.",
+   "B": "8 resulta de um erro de ordem de grandeza na divisão.",
+   "C": "50 não corresponde à divisão de 20.000 mL por 250 mL.",
+   "E": "800 resulta de um erro de ordem de grandeza na divisão."
+  }
+ },
+ "2025-175": {
+  "certa": "A maior torta tem raio 16 cm, ou seja, diâmetro de 32 cm. Com folga de pelo menos 1 cm de cada lado, o lado da base da caixa deve ter no mínimo 32 + 2 = 34 cm. Na altura, 6 + 1 = 7 cm já é atendida pela caixa original. O lado original é 14 cm, então a aresta deve aumentar 34 − 14 = 20 cm.",
+  "erradas": {
+   "A": "4 cm não comporta a torta maior.",
+   "B": "12 cm resulta de usar a torta de raio 12 cm, que não é a maior.",
+   "C": "16 cm usa o raio como se fosse o diâmetro.",
+   "D": "18 cm usa o diâmetro de 32 cm sem somar a folga de 1 cm em cada lado."
+  }
+ },
+ "2025-179": {
+  "certa": "O mais velho recebe a bicicleta ou o celular (2 modos) e mais 2 presentes dos 6 restantes (C(6,2) = 15), totalizando 30 modos. Dos 5 presentes que sobram, o mais novo recebe 3 (C(5,3) = 10), e os 2 últimos vão para o do meio (1 modo). Total: 30 × 10 × 1 = 300.",
+  "erradas": {
+   "A": "36 não decorre da contagem das combinações.",
+   "B": "53 não decorre da contagem das combinações.",
+   "D": "360 não corresponde às combinações corretas.",
+   "E": "560 é o total de distribuições sem restrição, 8!/(3!·3!·2!), e não considera a regra sobre a bicicleta e o celular."
+  }
+ },
+ "2025-180": {
+  "certa": "O jogador entrou no início do 2º tempo e percorreu 4,5 km em 45 min, ou seja, 0,1 km por minuto. Na prorrogação de 30 min, com a mesma velocidade, percorre 3 km. A distância total é 4,5 + 3 = 7,5 km.",
+  "erradas": {
+   "A": "4,5 km ignora a distância percorrida na prorrogação.",
+   "B": "6,0 km considera só 15 minutos de prorrogação.",
+   "D": "9,0 km repete a distância do segundo tempo na prorrogação, mas a prorrogação dura 30 minutos, e não 45.",
+   "E": "12,0 km conta o triplo da distância do 2º tempo, o que não corresponde ao tempo de jogo."
+  }
+ }
+}

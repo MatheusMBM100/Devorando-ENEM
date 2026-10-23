@@ -1,0 +1,74 @@
+{
+ "2025-093": {
+  "certa": "No esquema, o vírus é isolado e inativado e, depois, aplicado como vacina. O antígeno (o vírus inativado) estimula o sistema imune a produzir anticorpos, proteínas que neutralizam o vírus em uma infecção futura, como mostra a etapa 4.",
+  "erradas": {
+   "A": "O antígeno não mata o vírus por ligação. Quem se liga ao vírus são os anticorpos.",
+   "B": "O antígeno não aglutina o vírus. Isso é ação de anticorpos.",
+   "C": "As imunoglobulinas são os anticorpos, que o organismo produz depois da vacina. O antígeno não as contém.",
+   "E": "A vacina induz a produção de novos anticorpos, e não mantém os preexistentes."
+  }
+ },
+ "2025-104": {
+  "certa": "O feixe de elétrons entra na região B com velocidade para a direita, e o campo elétrico aponta para cima. Como a carga do elétron é negativa, a força sobre ele é contrária ao campo, ou seja, para baixo. O feixe é desviado para baixo e atinge o ponto 2.",
+  "erradas": {
+   "A": "O ponto 1 está acima do eixo e seria atingido se a força fosse para cima, o que ocorreria com uma carga positiva.",
+   "C": "O ponto 3 está à direita, na direção do movimento original, e não é afetado por um campo vertical.",
+   "D": "O ponto 4 está à esquerda do centro, e o feixe não é desviado para trás.",
+   "E": "O ponto 5 é o centro, que seria atingido se não houvesse campo."
+  }
+ },
+ "2025-105": {
+  "certa": "As taças quebram por ressonância: a voz tem a mesma frequência natural de vibração do cristal, que passa a vibrar com grande amplitude até se romper. A característica da voz envolvida é a frequência, e não a intensidade.",
+  "erradas": {
+   "A": "A reflexão é o retorno da onda ao encontrar uma superfície, e não explica a quebra.",
+   "C": "A interferência é a superposição de ondas, e a quebra depende da coincidência de frequências, e não da velocidade.",
+   "D": "A ressonância é correta, mas o timbre é a qualidade que distingue as fontes sonoras, e não a característica que provoca a quebra.",
+   "E": "A reflexão não explica a quebra, e o enunciado diz que a amplitude (intensidade) não é a característica."
+  }
+ },
+ "2025-106": {
+  "certa": "O borneol tem 10 carbonos, e sua fórmula é C10H18O (álcool secundário). Ao ser oxidado, o álcool secundário forma uma cetona, perdendo 2 hidrogênios: a cânfora é C10H16O.",
+  "erradas": {
+   "A": "C9H16O tem 9 carbonos, e o borneol tem 10.",
+   "B": "C9H17O tem 9 carbonos e uma fórmula impossível para um composto estável com um oxigênio.",
+   "D": "C10H16O2 tem 2 oxigênios, o que não corresponde a uma cetona obtida da oxidação do borneol.",
+   "E": "C10H18O2 tem 2 oxigênios e mantém os 18 hidrogênios, e não corresponde à cetona."
+  }
+ },
+ "2025-107": {
+  "certa": "Se o sistema de refrigeração é ineficiente, a água devolvida ao ecossistema está mais quente. Quanto maior a temperatura, menor a solubilidade dos gases na água, e há menos oxigênio dissolvido para os organismos aquáticos.",
+  "erradas": {
+   "A": "O aquecimento da água não diminui o pH de forma direta.",
+   "B": "A poluição térmica não consiste na liberação de gases poluentes.",
+   "C": "O combustível nuclear fica no circuito primário, separado da água de refrigeração.",
+   "D": "O circuito de refrigeração é separado do circuito primário, então não há liberação de elementos radioativos em operação normal."
+  }
+ },
+ "2025-108": {
+  "certa": "O nitrogênio era representado por Az. O ácido nítrico, que hoje é HNO3, seria HAzO3 (como o NaAzO3 do nitrato de sódio). O cloreto de cálcio é CaCl2, como o MgCl2 que aparece na lousa.",
+  "erradas": {
+   "B": "HAz3O e Ca2Cl trocam os índices e não seguem a lógica das fórmulas da lousa.",
+   "C": "H3AzO4 é o ácido fosfórico em outra notação, e CaCl não respeita a valência do cálcio.",
+   "D": "KCl2 usa potássio, que não é o cálcio.",
+   "E": "HAzO2 é o ácido nitroso, e KCl é o cloreto de potássio."
+  }
+ },
+ "2025-109": {
+  "certa": "No esquema, o ácido anacárdico perde o grupo carboxílico (COOH) e libera CO2 ao ser aquecido, formando o cardanol. A perda de CO2 de um ácido carboxílico é uma descarboxilação.",
+  "erradas": {
+   "A": "A hidrólise é a quebra por água, e não há água na reação.",
+   "B": "A fenilação seria a introdução de um grupo fenila.",
+   "C": "A esterificação é a reação entre um ácido e um álcool para formar éster.",
+   "D": "A hidrogenação é a adição de hidrogênio a ligações duplas, e não ocorre aqui."
+  }
+ },
+ "2025-111": {
+  "certa": "Na etapa 4, as sobras do biodigestor servem de fertilizante, em vez de serem despejadas em rios. Excrementos e restos de comida lançados na água aumentam os nutrientes e causam a eutrofização, que o aproveitamento evita.",
+  "erradas": {
+   "A": "O texto não trata de bioacumulação de toxinas em plantas.",
+   "C": "A destruição da camada de ozônio é causada por outros gases, como os CFCs.",
+   "D": "A inversão térmica é um fenômeno atmosférico e não se relaciona com o uso do adubo.",
+   "E": "A chuva ácida vem de óxidos de enxofre e de nitrogênio."
+  }
+ }
+}

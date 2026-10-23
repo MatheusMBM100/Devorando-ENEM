@@ -1,0 +1,83 @@
+{
+ "2022-141": {
+  "certa": "Partindo de P para cima: no 1º cruzamento vira à direita (D); segue em frente no 2º (F); no 3º vira à esquerda, para cima (E); segue em frente (F); vira à direita (D); vira à direita de novo, para baixo (D); vira à esquerda, para a direita (E); vira à esquerda, para cima (E); segue em frente duas vezes (F, F); e vira à direita, rumo a Q (D). A sequência é DFEFDDEEFFD.",
+  "erradas": {
+   "A": "Começa com DD, mas após a primeira curva à direita o carro segue em frente no cruzamento seguinte, e não vira à direita de novo.",
+   "B": "Coincide com o caminho até a 6ª letra, mas na 7ª troca E por D: depois de descer, o carro vira à esquerda para ir à direita, e não à direita.",
+   "D": "Começa com E, mas em P o carro, voltado para cima, precisa virar à direita no primeiro cruzamento. As letras estão trocadas D por E e vice-versa.",
+   "E": "Começa com E, mas em P o carro, voltado para cima, precisa virar à direita no primeiro cruzamento. As letras estão trocadas D por E e vice-versa."
+  }
+ },
+ "2022-143": {
+  "certa": "Rentabilidade = aluguel ÷ valor do imóvel. 2005: 630 ÷ 90.000 = 0,70%. 2007: 960 ÷ 120.000 = 0,80%. 2009: 1.350 ÷ 270.000 = 0,50%. 2011: 1.800 ÷ 450.000 = 0,40%. 2013: 3.240 ÷ 540.000 = 0,60%. A maior é a de 2007.",
+  "erradas": {
+    "A": "Em 2005 a rentabilidade é 0,70%, menor que a de 2007 (0,80%).",
+    "C": "Em 2009 a rentabilidade é 0,50%, menor que a de 2007.",
+    "D": "Em 2011 a rentabilidade é 0,40%, a menor de todas.",
+    "E": "Em 2013 o aluguel é o maior em reais, mas a rentabilidade é 0,60%, menor que a de 2007."
+  }
+ },
+ "2022-145": {
+  "certa": "O menor caminho A → rodovia 003 → B se obtém refletindo B em relação ao eixo x e ligando A ao ponto refletido: o ponto de conexão é onde essa reta cruza o eixo. A está a cerca de duas vezes a altura de B, então o cruzamento fica a 2/3 do caminho horizontal entre as projeções de A e B, na posição IV.",
+  "erradas": {
+    "A": "O ponto I fica abaixo de A, e o percurso até B ficaria muito longo, pois o trecho até B seria bem inclinado.",
+    "B": "O ponto II fica antes do ponto em que o raio refletido cruza o eixo, e a soma das distâncias é maior que em IV.",
+    "C": "O ponto III também fica antes do ponto de reflexão, e a soma das distâncias é maior que em IV.",
+    "E": "O ponto V fica abaixo de B, e o percurso até A ficaria muito longo."
+  }
+ },
+ "2022-146": {
+  "certa": "Custo total = preço/hora × horas + transporte × dias. Admitindo um dia por 8 h de trabalho, o custo de I é 120 × 8 = R$ 960,00 (sem transporte). II: 180 × 6 = 1.080. III: 170 × 6 + 20 = 1.040. IV: 110 × 9 + 10 = 1.000. V: 110 × 10 = 1.100. O menor custo é o do operário I.",
+  "erradas": {
+    "B": "II custa 180 × 6 = R$ 1.080,00, mais que I.",
+    "C": "III custa 170 × 6 + 20 = R$ 1.040,00, mais que I.",
+    "D": "IV custa 110 × 9 + 10 = R$ 1.000,00, mais que I.",
+    "E": "V custa 110 × 10 = R$ 1.100,00, mais que I."
+  }
+ },
+ "2022-148": {
+  "certa": "O cone original tem raio 4 cm. Com a altura fixa em 10 cm, o volume é proporcional ao quadrado do raio. Um volume 19% menor é 0,81 do original, então r² = 0,81 × 16 e r = 0,9 × 4 = 3,6 cm.",
+  "erradas": {
+    "A": "1,52 não resulta de nenhum cálculo coerente: o raio deve ser 0,9 do original, e não de ordem muito menor.",
+    "B": "3,24 resulta de multiplicar 4 por 0,81, mas é o volume (e não o raio) que fica 0,81 do original, e o raio fica √0,81 = 0,9 do original.",
+    "D": "6,48 é o dobro de 3,24, e o raio não pode ser maior que o original, de 4 cm.",
+    "E": "7,20 é o dobro de 3,6, e o raio não pode ser maior que o original, de 4 cm."
+  }
+ },
+ "2022-150": {
+  "certa": "Cada andar tem 8 apartamentos. Os que terminam em 1 a 6 (6 apartamentos) têm pelo menos um quarto com sol da manhã. Escolhem-se 2 deles, sem ordem: 6!/((6−2)!·2!) = 15. Como são 9 andares, o total é 9 × 6!/((6−2)!×2!).",
+  "erradas": {
+    "A": "Falta dividir por 2!, o que conta cada par duas vezes (ordem importa), mas a escolha dos apartamentos não tem ordem.",
+    "C": "Usa 4 apartamentos, mas são 6 os que terminam em 1 a 6.",
+    "D": "Usa 2 apartamentos, mas são 6 os que terminam em 1 a 6.",
+    "E": "Usa os 8 apartamentos do andar e subtrai 1, o que inclui os que terminam em 7 e 8, sem sol da manhã."
+  }
+ },
+ "2022-151": {
+  "certa": "A velocidade V = T² − 4 se anula quando T = 2 ou T = −2. No gráfico, a curva cruza a linha T = 2 duas vezes (descendo no início e subindo no fim) e toca a linha T = −2 três vezes (nos três mínimos). Total: 2 + 3 = 5 vezes.",
+  "erradas": {
+    "A": "1 vez desconsidera quase todos os pontos em que T = 2 ou T = −2.",
+    "B": "2 vezes conta só os cruzamentos de T = 2, e esquece os três mínimos em T = −2.",
+    "C": "3 vezes conta só os mínimos em T = −2, e esquece os dois cruzamentos em T = 2.",
+    "D": "4 vezes deixa de contar um dos pontos em que T vale 2 ou −2."
+  }
+ },
+ "2022-152": {
+  "certa": "Suponha que o time A vença a 1ª partida. Para ser campeão, A precisa de mais 3 vitórias antes de B ter 4. Isso equivale a A vencer pelo menos 3 de 6 partidas hipotéticas: (C(6,3) + C(6,4) + C(6,5) + C(6,6))/2⁶ = (20 + 15 + 6 + 1)/64 = 42/64.",
+  "erradas": {
+    "A": "35/64 conta apenas as sequências com exatamente 3 vitórias em 6 jogos mais algo, e esquece parte dos casos.",
+    "B": "40/64 não corresponde à soma das combinações favoráveis (42).",
+    "D": "44/64 passa de 42, e não corresponde à soma das combinações favoráveis.",
+    "E": "52/64 passa muito do valor correto, e não corresponde às combinações favoráveis."
+  }
+ },
+ "2022-153": {
+  "certa": "Lucro mensal = receita − despesa. Pelo gráfico: Jan 3, Fev −1, Mar 1, Abr −1, Mai 5, Jun 3, Jul 2, Ago −2, Set 4, Out −2, Nov 1, Dez 4. Só os meses de lucro (positivos) são lucros apurados: 1, 1, 2, 3, 3, 4, 4, 5. A mediana é (3 + 3) ÷ 2 = 3,0.",
+  "erradas": {
+    "A": "1,5 é a mediana se os meses de prejuízo forem incluídos, mas só lucros entram no cálculo.",
+    "B": "2,0 corresponde a um dos valores, mas não à mediana dos lucros.",
+    "C": "2,9 é aproximadamente a média dos lucros (23 ÷ 8 = 2,875), e não a mediana.",
+    "E": "5,5 não corresponde a nenhum lucro mensal; o maior lucro é 5."
+  }
+ }
+}

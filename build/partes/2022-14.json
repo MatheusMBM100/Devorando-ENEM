@@ -1,0 +1,47 @@
+{
+ "2022-158": {
+  "certa": "Na planificação, as faces são ligadas em degraus, e ao dobrar o papel as três faces que se encontram no vértice pintado são a primeira e a segunda da fileira superior (já com quadrados cinza junto à aresta que as une) e a última do degrau inferior. O terceiro quadrado deve ficar no canto da última face que encosta nesse mesmo vértice, como mostra a alternativa D.",
+  "erradas": {
+   "A": "O terceiro quadrado está em um canto da última face que, na dobra, não toca o vértice comum às outras duas faces pintadas.",
+   "B": "O terceiro quadrado foi colocado em uma face intermediária do degrau, que não encosta no vértice comum às outras duas.",
+   "C": "O terceiro quadrado foi colocado em uma face intermediária e em um canto que, depois de dobrado, não toca o vértice comum.",
+   "E": "O terceiro quadrado está no canto da última face, mas do lado oposto ao do vértice comum às outras duas faces pintadas."
+  }
+ },
+ "2022-162": {
+  "certa": "Restam 50 − 4 = 46 números. Pedro ganha na próxima rodada se sair o 12, que completa a linha de cima (03, 48, 12, 27): 1/46 = 45/(46·45). Ganha na segunda rodada se o 12 sair nela (45 modos de a 1ª bola ser outra: 45/(46·45)) ou se saírem, em qualquer ordem, 05 e 45 (que completam a coluna da direita com 27 e 07) ou 11 e 19 (que completam a diagonal com 03 e 07): 4 sequências, 4/(46·45). Total: 45/(46·45) + 45/(46·45) + 4/(46·45) = (45 + 49)/(46·45) = 1/46 + 49/(46·45).",
+  "erradas": {
+   "A": "1/46 + 1/45 considera só o 12 e ignora as sequências que completam a coluna e a diagonal.",
+   "B": "1/46 + 2/(46·45) só conta uma das duas combinações que completam uma linha em duas rodadas.",
+   "C": "1/46 + 8/(46·45) conta sequências demais ou de menos, e deixa de contar os casos em que o 12 sai na segunda rodada.",
+   "D": "1/46 + 43/(46·45) não corresponde à contagem correta das sequências favoráveis."
+  }
+ },
+ "2022-163": {
+  "certa": "O papel dobrado duas vezes tem simetria nas duas diagonais do quadrado (dobras) e, ao desdobrar, o recorte do arco se repete quatro vezes ao redor do centro O. O resultado é um furo formado por quatro arcos de circunferência iguais, com reentrâncias nas linhas de dobra, o que dá a figura da alternativa C.",
+  "erradas": {
+   "A": "Mostra arcos só em dois lados opostos, mas a dobra dupla repete o corte nas quatro direções.",
+   "B": "Mostra um círculo perfeito, mas o corte é formado por arcos que se encontram em cantos nas linhas de dobra.",
+   "D": "Mostra uma elipse, que não resulta de arcos de circunferência iguais repetidos quatro vezes.",
+   "E": "Mostra dois setores, mas o corte repetido pelas dobras forma quatro arcos ao redor do centro."
+  }
+ },
+ "2022-178": {
+  "certa": "O robô percorre o cubo andando pelos centros das faces e pontos médios das arestas, alternando curvas à esquerda e à direita. Ao fim do trajeto fechado, a projeção ortogonal sobre o plano da base forma duas regiões em L que se encontram no centro, como na alternativa A.",
+  "erradas": {
+   "B": "Mostra quatro células iguais, como se o robô passasse por todas as direções, o que não ocorre.",
+   "C": "Mostra a projeção em apenas uma das metades do quadrado, mas o trajeto atinge as duas.",
+   "D": "Mostra só dois retângulos lado a lado, perdendo a projeção dos segmentos das faces laterais.",
+   "E": "Mostra o padrão deslocado, com os trechos dos segmentos em posições que o trajeto não ocupa."
+  }
+ },
+ "2021-150": {
+  "certa": "Com c, a e s as massas da camiseta, da calça e do sapato: 12c + 4a + 3s = 10 e 18c + 3a + 2s = 10. Queremos 2a + s + nc = 10. Multiplicando a 2ª equação por 2 e subtraindo a 1ª: 36c + 6a + 4s − 12c − 4a − 3s = 20 − 10, ou seja, 24c + 2a + s = 10. Então n = 24 camisetas.",
+  "erradas": {
+   "A": "22 camisetas daria 22c + 2a + s < 10 kg, e a massa não chegaria a 10 kg.",
+   "C": "26 camisetas daria mais de 10 kg, passando do limite.",
+   "D": "33 camisetas daria mais de 10 kg, passando do limite.",
+   "E": "39 camisetas daria mais de 10 kg, passando do limite."
+  }
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "2022-091": {
+  "certa": "A eritropoietina estimula a produção de hemácias (eritropoese). Mais hemácias aumentam a taxa de transporte de oxigênio pelo sangue, o que aumenta a capacidade de realizar exercícios.",
+  "erradas": {
+   "A": "A frequência cardíaca não é diretamente ligada à ação da eritropoietina.",
+   "B": "O doping sanguíneo não altera a capacidade dos pulmões.",
+   "C": "A eritropoietina não aumenta a massa muscular, como fazem os esteroides.",
+   "D": "O hormônio aumenta o oxigênio disponível, favorecendo o metabolismo aeróbico, e não o anaeróbico."
+  }
+ },
+ "2022-092": {
+  "certa": "Com a barreira de pneus, o carro volta com velocidade reduzida, então sua quantidade de movimento varia mais (ela inverte de sentido), e como o tempo é o mesmo, a força média é maior. Com os blocos, o carro para e perde toda a energia cinética, deformando a barreira. A energia dissipada é maior com os blocos.",
+  "erradas": {
+   "B": "A força é maior com os pneus, em que a variação de quantidade de movimento é maior, e não com os blocos.",
+   "C": "A energia dissipada não é a mesma, pois nos pneus o carro mantém parte da energia cinética ao voltar.",
+   "D": "A energia dissipada é menor nos pneus, porque o carro retorna com velocidade.",
+   "E": "A força é menor nos blocos, pois a variação da quantidade de movimento é menor."
+  }
+ },
+ "2022-094": {
+  "certa": "O T. cruzi modificado produz uma molécula do tumor. O sistema imune a apresenta como antígeno junto com o protozoário e passa a combater todas as células com essa molécula. O mecanismo é a apresentação de antígeno específico.",
+  "erradas": {
+   "A": "A autoimunidade é o ataque a células do próprio corpo sem causa externa. Aqui o ataque é induzido de forma planejada.",
+   "B": "A hipersensibilidade é uma reação exagerada a uma substância, e não o que ocorre aqui.",
+   "C": "A resposta inata não é específica e não explica o ataque dirigido ao tumor.",
+   "E": "O experimento busca ativar a defesa, e não um processo anti-inflamatório."
+  }
+ },
+ "2022-097": {
+  "certa": "Na decantação, os flocos formados na coagulação se depositam no fundo do tanque, o que retira grande parte dos sólidos suspensos.",
+  "erradas": {
+   "A": "A coagulação faz as partículas se aglutinarem em flocos, mas não retira os sólidos.",
+   "C": "A filtração remove os sólidos que sobraram depois da decantação.",
+   "D": "A desinfecção elimina microrganismos.",
+   "E": "A fluoretação adiciona flúor à água."
+  }
+ },
+ "2022-098": {
+  "certa": "A termogenina impede que os prótons cheguem à ATP sintetase, desviando a energia para calor. Isso ocorre na fosforilação oxidativa, que acontece na membrana interna das mitocôndrias.",
+  "erradas": {
+   "A": "A glicólise ocorre no citoplasma e não envolve a ATP sintetase.",
+   "B": "A fermentação lática é anaeróbica e não envolve a cadeia respiratória.",
+   "C": "O ciclo de Krebs ocorre na matriz mitocondrial e não envolve a ATP sintetase.",
+   "D": "A oxidação do piruvato forma acetil-CoA e não envolve a ATP sintetase."
+  }
+ },
+ "2022-101": {
+  "certa": "Os bastonetes respondem à quantidade de fótons. Um animal com bastonetes mais sensíveis responde a pouca luz, e portanto enxerga bem em ambientes mal iluminados.",
+  "erradas": {
+   "A": "O daltonismo está ligado a problemas nos cones, e não nos bastonetes.",
+   "B": "Os bastonetes não permitem perceber cores fora do espectro visível.",
+   "D": "Bastonetes mais sensíveis exigem menos luz, e não mais.",
+   "E": "Os bastonetes não distinguem cores, e a visão de cores depende dos cones."
+  }
+ },
+ "2022-103": {
+  "certa": "A Wolbachia é uma bactéria intracelular, e o vírus da dengue também precisa entrar nas células. Os dois precisam dos mesmos recursos, e a competição reduz a carga viral no mosquito.",
+  "erradas": {
+   "A": "A bactéria não preda o vírus. Eles competem por recursos.",
+   "B": "Os mosquitos não são esterilizados. A bactéria é passada pelo cruzamento.",
+   "C": "A bactéria não altera o genótipo do mosquito.",
+   "E": "O texto não fala de inserir material genético do vírus na bactéria."
+  }
+ },
+ "2022-104": {
+  "certa": "As espécies exóticas, como a jaqueira, ocupam áreas de vegetação nativa e substituem parcialmente a flora original. Essa substituição reduz a biodiversidade.",
+  "erradas": {
+   "B": "O texto não diz que a competição por frutos elimine as espécies perdedoras.",
+   "C": "Espécies exóticas invasoras tendem a reduzir as relações entre os seres vivos, e não a aumentá-las.",
+   "D": "O texto não diz que a jaqueira exceda a capacidade suporte do ambiente.",
+   "E": "O texto não diz que diminua a competição entre polinizadores."
+  }
+ },
+ "2022-105": {
+  "certa": "Horizontal: a queda de 1 m dura t = √(2h/g) = √0,2 s. A velocidade da água é v = 3 ÷ √0,2, e v² = 9 ÷ 0,2 = 45 m²/s². Na vertical, o alcance é H = v² ÷ (2g) = 45 ÷ 20 = 2,25 m.",
+  "erradas": {
+   "A": "1,50 m não decorre dos valores medidos.",
+   "C": "4,00 m não decorre dos valores medidos.",
+   "D": "4,50 m resulta de usar v² ÷ g em vez de v² ÷ (2g).",
+   "E": "5,00 m não decorre dos valores medidos."
+  }
+ },
+ "2022-107": {
+  "certa": "O SARS-CoV-2 é um vírus de RNA, e a PCR amplifica DNA. Antes da PCR, o RNA viral é convertido em cDNA por transcrição reversa, o que permite amplificar o material genético.",
+  "erradas": {
+   "A": "A etapa prévia não visa concentrar o RNA. Ela converte o RNA em DNA.",
+   "B": "A PCR não detecta anticorpos.",
+   "C": "A PCR não envolve cultivo do vírus.",
+   "D": "A purificação pode acontecer, mas a etapa que antecede a amplificação do RNA é a transcrição reversa."
+  }
+ },
+ "2022-114": {
+  "certa": "A molécula modula a coagulação sanguínea. Um medicamento que reduza a coagulação pode impedir a formação de trombos, como nos casos de acidente vascular cerebral.",
+  "erradas": {
+   "B": "A molécula atua na coagulação, e não trata as consequências da anemia.",
+   "C": "A urticária não está ligada à coagulação.",
+   "D": "O inchaço dos linfonodos não está ligado à coagulação.",
+   "E": "A pressão arterial não é regulada pela coagulação."
+  }
+ },
+ "2022-115": {
+  "certa": "A atração gravitacional depende da massa, e o buraco negro teria a mesma massa do Sol. À distância dos planetas, a gravidade seria a mesma. As órbitas seriam mantidas inalteradas.",
+  "erradas": {
+   "A": "Sem perda de energia, as órbitas não se tornariam espirais.",
+   "B": "Não haveria oscilações aleatórias, porque a gravidade é a mesma.",
+   "C": "Os planetas não seriam atraídos para o centro, pois a atração é a mesma.",
+   "D": "Não há razão para que a precessão aumentasse, e essa é uma pequena correção relativística."
+  }
+ },
+ "2022-116": {
+  "certa": "O ozônio (O3) é um forte agente oxidante. Esse poder desinfetante é o que o torna perigoso em uso indiscriminado, pois oxida tecidos e forma subprodutos.",
+  "erradas": {
+   "A": "Um catalisador acelera reações sem ser consumido, e não é o risco apontado.",
+   "C": "O ozônio é um oxidante, e não um redutor.",
+   "D": "O risco não vem de caráter ácido.",
+   "E": "O risco não vem de caráter básico."
+  }
+ },
+ "2022-120": {
+  "certa": "Os isótopos têm massas ligeiramente diferentes. Em uma centrífuga, os gases com massas diferentes se separam, e o mais pesado vai para a parede. A centrifugação pode ser usada para separar os hexafluoretos.",
+  "erradas": {
+   "A": "A peneiração separa sólidos de tamanhos diferentes, e não gases de massas quase iguais.",
+   "C": "A extração por solvente separa por solubilidade, e os dois compostos são quimicamente iguais.",
+   "D": "A destilação fracionada separa por pontos de ebulição, e os dois são quase idênticos.",
+   "E": "A separação magnética não é aplicável, pois os dois isótopos não diferem em magnetismo."
+  }
+ },
+ "2022-121": {
+  "certa": "O vírus leva uma cópia normal do gene RPE65 para as células da retina. O sucesso da terapia depende de esse gene ser expresso, produzindo a enzima normal.",
+  "erradas": {
+   "A": "A terapia não corrige o gene defeituoso, ela adiciona uma cópia normal.",
+   "B": "A terapia não altera o RNA ribossômico.",
+   "C": "A terapia não produz mutações benéficas.",
+   "D": "O produto entrega o gene, e não a proteína pronta. A proteína é produzida pelas células depois."
+  }
+ },
+ "2022-123": {
+  "certa": "A filariose é transmitida por mosquitos e a leishmaniose, pelo flebotomíneo (mosquito-palha). Controlar a população de vetores é uma medida profilática comum às duas doenças.",
+  "erradas": {
+   "A": "Incinerar o lixo orgânico não previne essas doenças.",
+   "B": "A rede de esgoto não é a medida que interrompe a transmissão por vetores.",
+   "C": "Vermífugos não previnem a leishmaniose, que é causada por protozoário.",
+   "E": "As doenças não são transmitidas por carnes mal cozidas."
+  }
+ },
+ "2022-124": {
+  "certa": "Cada metro quadrado de painel produz 20% de 1.500 W, ou 300 W. Para uma potência de 150 MW = 150.000.000 W, a área é 150.000.000 ÷ 300 = 500.000 m².",
+  "erradas": {
+   "A": "1.000.000 m² é o dobro do valor correto.",
+   "C": "250.000 m² corresponde à área de uma só usina (75 MW), e não do parque inteiro.",
+   "D": "100.000 m² não decorre da potência por metro quadrado.",
+   "E": "20.000 m² não decorre da potência por metro quadrado."
+  }
+ },
+ "2022-127": {
+  "certa": "Os filmes de zircônia e alumina cobrem o ferro e impedem que ele entre em contato com o oxigênio e a água. É o efeito de barreira, que evita a oxidação.",
+  "erradas": {
+   "A": "Na proteção catódica, um metal mais redutor é ligado ao ferro, e não um filme cerâmico.",
+   "B": "Metais de sacrifício se oxidam no lugar do ferro, e os filmes cerâmicos não fazem isso.",
+   "C": "Na passivação, o próprio metal forma uma camada de óxido protetora, e aqui os filmes são de outro material.",
+   "E": "A galvanização usa um revestimento de zinco, e não filmes de cerâmica."
+  }
+ }
+}

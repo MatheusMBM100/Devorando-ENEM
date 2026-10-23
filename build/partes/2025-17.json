@@ -1,0 +1,83 @@
+{
+ "2025-144": {
+  "certa": "Pelas projeções da figura inicial, o cubo está em x = 5, y = 1 e z = 6. Aproximar-se 3 unidades do plano yz faz x diminuir 3, ficando em 2. Afastar-se 5 unidades do plano xz faz y aumentar 5, ficando em 6. Aproximar-se 4 unidades do plano xy faz z diminuir 4, ficando em 2. Na posição final (2; 6; 2), a projeção no plano yz fica à direita (y = 6) e baixa (z = 2), como na alternativa E.",
+  "erradas": {
+   "A": "A projeção no plano yz aparece mais alta que z = 2, o que não corresponde à posição final.",
+   "B": "A projeção no plano yz aparece mais à esquerda, com y menor que 6.",
+   "C": "A projeção no plano yz aparece mais à esquerda, com y menor que 6.",
+   "D": "A projeção no plano yz aparece mais à esquerda, com y menor que 6."
+  }
+ },
+ "2025-145": {
+  "certa": "Do total de internautas, 90% acessam redes sociais. Entre os que acessam, 60% são mulheres, então 40% são homens. A probabilidade de escolher aleatoriamente um homem que acessa redes sociais é 0,9 × 0,4 = 0,36, ou 36/100.",
+  "erradas": {
+   "A": "30/90 não decorre do produto 0,9 × 0,4.",
+   "C": "40/100 é a fração de homens entre os que acessam, sem multiplicar por 90% dos internautas.",
+   "D": "40/90 usa 40 como se fosse o número de homens em 90 internautas, sem aplicar os percentuais corretamente.",
+   "E": "46/90 não decorre do produto 0,9 × 0,4."
+  }
+ },
+ "2025-154": {
+  "certa": "Há 4! = 24 maneiras de distribuir os quatro envelopes aos quatro candidatos. Só uma delas devolve cada envelope ao seu dono. A probabilidade é 1/24.",
+  "erradas": {
+   "A": "1/2 é a probabilidade de um evento muito mais frequente.",
+   "B": "1/10 não decorre das 24 permutações possíveis.",
+   "C": "1/16 não decorre das 24 permutações possíveis.",
+   "E": "1/256 seria 1/4⁴, que considera que cada envelope pode ir para qualquer candidato, mesmo repetido."
+  }
+ },
+ "2025-159": {
+  "certa": "As assíntotas estão em T = (5 − 2π)/2 e T = (5 + 2π)/2, separadas por 2π. Como a tangente tem período π/p, temos π/p = 2π, então p = 1/2. O centro do gráfico, em T = 5/2, tem D = 30, então k = 30 e p(T + m) = 0 em T = 5/2 dá m = −5/2. A expressão é D = 30 + tg[(1/2)(T − 5/2)].",
+  "erradas": {
+   "A": "Usa k = 2,5 e p = 30, trocando os valores do centro e do período.",
+   "B": "Usa k = 4 e p = 30, valores que não correspondem ao centro nem ao período do gráfico.",
+   "C": "Usa k = 4 e p = 2,5, que não correspondem ao centro (30) nem ao período.",
+   "D": "O deslocamento horizontal (T − 5) está errado. O centro do gráfico é em T = 5/2."
+  }
+ },
+ "2025-164": {
+  "certa": "O enunciado diz que a concentração no dia de trabalho (T) é 1,59 vez a do dia de folga (F). Isso significa que T ÷ F = 1,59.",
+  "erradas": {
+   "A": "T = 1,59 + F diria que T é F acrescido de 1,59, e não 1,59 vez F.",
+   "B": "F = 1,59 + T inverte a relação e soma em vez de multiplicar.",
+   "D": "F ÷ T = 1,59 inverte a razão, dizendo que F é 1,59 vez T.",
+   "E": "F · T = 1,59 usa um produto, que não corresponde à comparação."
+  }
+ },
+ "2025-167": {
+  "certa": "A produção é área × produtividade × 50 kg. 11-12: 200 × 40 = 8.000 sacas = 400 t. 12-13: 220 × 30 = 6.600 sacas = 330 t. 13-14 e 14-15: 250 × 45 = 11.250 sacas = 562,5 t. 15-16: 200 × 50 = 10.000 sacas = 500 t. O gráfico com esses valores é o A.",
+  "erradas": {
+   "B": "Mostra a produtividade (sacas por hectare), e não a produção em toneladas.",
+   "C": "Mostra a área cultivada, e não a produção em toneladas.",
+   "D": "Os valores 240, 250, 295 não correspondem às produções calculadas.",
+   "E": "Mostra a produção em milhares de sacas (8; 6,6; 11,25; 10), e não em toneladas."
+  }
+ },
+ "2025-169": {
+  "certa": "João vence se o maior número de Artur for menor ou igual ao dele. P(maior de dois dados ≤ j) = (j/6)². Então P(João vence) = (1/6)·(1² + 2² + 3² + 4² + 5² + 6²)/36 = 91/216. Artur vence com 1 − 91/216 = 125/216, a maior probabilidade.",
+  "erradas": {
+   "A": "2/3 não decorre do cálculo das probabilidades.",
+   "B": "4/9 não decorre do cálculo das probabilidades.",
+   "C": "91/216 é a probabilidade de João vencer, e não a de Artur.",
+   "D": "João vence com 91/216, que é menor que a de Artur (125/216)."
+  }
+ },
+ "2025-170": {
+  "certa": "A luminância é a razão entre a intensidade luminosa (cd) e o quadrado da distância (m²). A unidade é cd/m².",
+  "erradas": {
+   "B": "m²/cd inverte a razão.",
+   "C": "cd/m teria a distância sem elevar ao quadrado.",
+   "D": "m/cd inverte a razão e não eleva a distância ao quadrado.",
+   "E": "m/cd² não corresponde à razão do enunciado."
+  }
+ },
+ "2025-176": {
+  "certa": "Em P = 4·log[K(t + 1)(19 − t)], o produto (t + 1)(19 − t) é máximo no vértice, em t = 9, onde vale 10 × 10 = 100. Em 10 horas (t de 0 a 10), o máximo de P é 4·log(100K), que deve ser ≤ 10. Então log(100K) ≤ 2,5, 100K ≤ 10^2,5 e K ≤ 10^2,5 ÷ 100 = 10^0,5.",
+  "erradas": {
+   "B": "10⁸ resulta de um erro de ordem de grandeza na desigualdade.",
+   "C": "10^2,5 ÷ 84 usa um valor do produto (t + 1)(19 − t) que não é o máximo.",
+   "D": "10^2,5 ÷ 99 usa o valor do produto em t = 10 (11 × 9), e não o máximo, que é em t = 9 (10 × 10).",
+   "E": "25 × 10⁻² não decorre da desigualdade com o valor máximo do produto."
+  }
+ }
+}

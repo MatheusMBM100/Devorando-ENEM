@@ -1,0 +1,110 @@
+{
+ "2025-123": {
+  "certa": "Pelo princípio de Le Chatelier, aumentar a pressão parcial de um reagente desloca o equilíbrio para o lado dos produtos. Aumentar a pressão parcial de Cl2 desloca o equilíbrio para a direita e favorece a formação de TiCl4.",
+  "erradas": {
+   "A": "Há 2 mol de gás nos reagentes (2 Cl2) e 2 mol de gás nos produtos (TiCl4 e O2). Como os números de mol de gás são iguais, a pressão total não desloca o equilíbrio.",
+   "B": "A reação é endotérmica (ΔH positivo). Diminuir a temperatura desloca o equilíbrio para o lado que libera calor, o dos reagentes.",
+   "C": "Aumentar a pressão parcial de O2, que é produto, desloca o equilíbrio para os reagentes.",
+   "E": "O TiO2 é sólido e não entra na expressão do equilíbrio. Variar sua quantidade não desloca o equilíbrio."
+  }
+ },
+ "2025-124": {
+  "certa": "A pressão da coluna de produto é P = ρ·g·h. Então h = P ÷ (ρ·g) = 10.000 ÷ (1.250 × 10) = 0,8 m.",
+  "erradas": {
+   "A": "0,16 m resulta de dividir também pela área de 50 m². A área já está considerada na pressão, e a altura não depende dela.",
+   "B": "0,50 m não decorre da equação P = ρ·g·h com os valores dados.",
+   "D": "1,60 m é o dobro do valor correto, resultado de um erro de conta.",
+   "E": "8,00 m resulta de um erro de potência de 10 no cálculo."
+  }
+ },
+ "2025-126": {
+  "certa": "O escurecimento ocorre quando O2 oxida a prata em presença de compostos de enxofre. ΔE = E(O2) − E(Ag2S) = 1,23 − (−0,69) = +1,92 V. No clareamento, o alumínio reduz o Ag2S de volta a Ag. ΔE = E(Ag2S) − E(Al) = −0,69 − (−1,68) = +0,99 V. Os dois valores são positivos, logo as reações são espontâneas.",
+  "erradas": {
+   "A": "Os valores combinam os potenciais com os sinais trocados. O correto é ΔE = E(cátodo) − E(ânodo).",
+   "C": "Um ΔE negativo para o escurecimento indicaria uma reação não espontânea, mas ela ocorre. Os valores não vêm da conta correta.",
+   "D": "Esses valores resultam de somar potenciais em vez de subtraí-los.",
+   "E": "Um ΔE negativo para o clareamento indicaria que a reação não ocorre, mas o método funciona."
+  }
+ },
+ "2025-127": {
+  "certa": "O volume de 4,00 L de gás a 453 K e 1 atm corresponde a n = PV ÷ RT = 4,00 ÷ (0,082 × 453) ≈ 0,108 mol de gases. Cada mol de NH4HCO3 gera 3 mol de gás, e o rendimento é de 80%, ou seja, 2,4 mol de gás por mol de sal. Logo, n(NH4HCO3) = 0,108 ÷ 2,4 ≈ 0,045 mol, e a massa é 0,045 × 79 ≈ 3,5 g.",
+  "erradas": {
+   "A": "2,3 g resulta de aplicar o rendimento no sentido contrário (multiplicando em vez de dividir).",
+   "C": "5,9 g não decorre da estequiometria 1:3 com rendimento de 80%.",
+   "D": "6,8 g ocorre ao ignorar que 1 mol do sal produz 3 mol de gás e ao aplicar o rendimento de forma incorreta.",
+   "E": "8,9 g não resulta do cálculo correto e vem de erro na estequiometria ou no rendimento."
+  }
+ },
+ "2025-131": {
+  "certa": "O ácido úsnico teve alta eficiência contra moluscos aquáticos adultos. Os caramujos são os hospedeiros intermediários do verme causador da esquistossomose, então o ácido é mais indicado para controlar essa doença.",
+  "erradas": {
+   "B": "A febre amarela é transmitida por mosquitos, e a eficiência contra larvas de Aedes foi baixa.",
+   "C": "A coqueluche é causada por outra bactéria, que não foi testada.",
+   "D": "O ácido teve só eficiência média contra o bacilo de Koch, causador da tuberculose. Foi menor do que a eficiência contra os moluscos.",
+   "E": "A dengue é transmitida pelo Aedes aegypti, e o ácido teve baixa eficiência contra as larvas desse mosquito."
+  }
+ },
+ "2025-133": {
+  "certa": "A E. coli não é circadiana e, por isso, não tem genes de ciclo circadiano. O organismo modificado mantém seus genes de metabolismo e recebeu os genes do relógio circadiano de S. elongatus. Ele terá o ciclo circadiano de S. elongatus e o metabolismo de E. coli.",
+  "erradas": {
+   "A": "Ele tem os genes de metabolismo da E. coli, mas também os genes do ciclo circadiano transferidos.",
+   "B": "A E. coli é um organismo não circadiano, então não possui genes de ciclo circadiano próprios.",
+   "C": "Só os genes do relógio foram transferidos, não o metabolismo de S. elongatus. E a E. coli não tinha ciclo circadiano.",
+   "E": "A E. coli não tem relógio circadiano próprio. O único que o organismo terá é o transferido."
+  }
+ },
+ "2025-134": {
+  "certa": "As aves aquáticas mantêm as penas impermeáveis espalhando nelas o óleo produzido pela glândula uropigial. Sem essa secreção, as penas encharcam, perdem a capacidade de flutuar e as aves se afogam.",
+  "erradas": {
+   "A": "O papo armazena alimento e não tem relação com a impermeabilização das penas.",
+   "B": "A reposição de penas é a muda, e a falta dela não explica o encharcamento.",
+   "D": "A membrana natatória está nos pés e ajuda a nadar. O problema descrito é o das penas encharcadas.",
+   "E": "Os ossos pneumáticos deixam a ave mais leve, e o problema descrito é o encharcamento das penas."
+  }
+ },
+ "2025-137": {
+  "certa": "Em 10 L, S2 é 0,05% = 0,005 L. Na nova solução, esse mesmo volume de S2 deve ser 0,10%, já que S1 será 99,90%. O volume total passa a ser 0,005 ÷ 0,001 = 5 L, então foram retirados 10 − 5 = 5 L de S1.",
+  "erradas": {
+   "A": "0,0050 L é o volume de S2, não de S1.",
+   "B": "0,0100 L não decorre do cálculo e vem de uma conta que ignora que a nova proporção de S2 é o dobro da anterior.",
+   "C": "0,5000 L resulta de um erro de ordem de grandeza.",
+   "D": "4,9775 L não corresponde à conservação do volume de S2 com a nova proporção."
+  }
+ },
+ "2025-138": {
+  "certa": "No primeiro pedido, foram enviados 10.200 L e entregues 9.900 L, então o descarte foi de 300 L e é fixo. Para entregar 20.000 L, é preciso enviar 20.000 + 300 = 20.300 L. Isso cabe no caminhão de 30.000 L.",
+  "erradas": {
+   "A": "20.100 L usa o erro de 100 L entre o pedido (10.000) e a entrega (9.900) como se fosse o descarte.",
+   "B": "20.200 L resulta de acrescentar apenas 200 L, a diferença entre o enviado e o pedido.",
+   "D": "20.400 L não decorre do descarte fixo de 300 L.",
+   "E": "20.600 L dobra o descarte (600 L), mas ele é independente da quantidade transportada."
+  }
+ },
+ "2025-141": {
+  "certa": "O poliedro tem quatro tipos de faces: o hexágono regular da base do prisma, os 6 retângulos congruentes do prisma, os 6 trapézios congruentes do tronco e o hexágono regular menor do topo. O hexágono menor não é congruente ao da base. São, então, 4 cores.",
+  "erradas": {
+   "A": "9 cores contariam faces congruentes como diferentes.",
+   "B": "8 cores também contariam faces congruentes como distintas.",
+   "C": "6 cores também separa faces que são congruentes entre si.",
+   "E": "3 cores juntaria faces não congruentes, como os dois hexágonos de tamanhos diferentes."
+  }
+ },
+ "2025-143": {
+  "certa": "A diferença é 10,00 − 9,58 = 0,42 s.",
+  "erradas": {
+   "A": "0,02 ignora os centésimos de segundo na subtração.",
+   "C": "0,52 resulta de um erro de empréstimo na subtração.",
+   "D": "1,02 resulta de um erro na subtração.",
+   "E": "1,42 resulta de um erro na subtração."
+  }
+ },
+ "2025-146": {
+  "certa": "Em uma semana, o carro roda 30 × 7 = 210 km. Com consumo de 1 m³ a cada 13 km, são 210 ÷ 13 ≈ 16,2 m³. O menor cilindro que comporta pelo menos 16,2 m³ é o de 17 m³.",
+  "erradas": {
+   "A": "10 m³ não comporta os 16,2 m³ necessários.",
+   "B": "14 m³ também não comporta os 16,2 m³ necessários.",
+   "D": "21 m³ comporta o consumo, mas é mais caro que o de 17 m³.",
+   "E": "25 m³ comporta o consumo, mas é mais caro que o de 17 m³."
+  }
+ }
+}

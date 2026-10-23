@@ -1,0 +1,101 @@
+{
+ "2023-089": {
+  "certa": "Os mapas simulam aumentos de temperatura e mudanças na chuva (regiões mais secas e mais úmidas) conforme o aquecimento global sobe de 1,5 °C para 4 °C. Para minimizar essas mudanças, é preciso reduzir o aquecimento, controlando as emissões de carbono, que são a causa principal.",
+  "erradas": {
+   "A": "Expandir o transporte marítimo não reduz o aquecimento e pode aumentar as emissões.",
+   "B": "Incentivar fluxos migratórios não afeta as mudanças simuladas.",
+   "C": "Monitorar atividades vulcânicas não reduz o aquecimento global.",
+   "E": "Priorizar termoelétricas, em geral a combustíveis fósseis, aumentaria as emissões."
+  }
+ },
+ "2023-091": {
+  "certa": "À medida que o som se propaga por um barbante mais longo, parte da energia é dissipada, e a amplitude da onda diminui, o que torna o som menos intenso.",
+  "erradas": {
+   "A": "A altura (grave ou agudo) depende da frequência, que não muda com o comprimento do barbante.",
+   "B": "O período é o inverso da frequência, e é determinado pela fonte, e não muda.",
+   "D": "A velocidade depende do meio (o barbante tensionado), e não do comprimento.",
+   "E": "O comprimento de onda depende da velocidade e da frequência, que permanecem as mesmas."
+  }
+ },
+ "2023-094": {
+  "certa": "A interação é mais iônica quanto maior a diferença de eletronegatividade entre o metal e o oxigênio (3,44). O potássio tem a menor eletronegatividade (0,82), então a diferença é a maior (2,62), e a interação é a mais iônica.",
+  "erradas": {
+   "B": "O cálcio (1,00) tem diferença de 2,44, menor que a do potássio.",
+   "C": "O magnésio (1,31) tem diferença de 2,13, menor que a do potássio.",
+   "D": "O zinco (1,65) tem diferença de 1,79, menor que a do potássio.",
+   "E": "O ferro (1,83) tem diferença de 1,61, a menor de todas."
+  }
+ },
+ "2023-096": {
+  "certa": "A gasolina de alto desempenho deve ter alta proporção de cadeias saturadas ramificadas. O 2,2,4-trimetilpentano (iso-octano) tem cadeia saturada, ramificada e 8 carbonos, e é o que confere maior desempenho.",
+  "erradas": {
+   "A": "O n-decano tem cadeia saturada, mas é linear.",
+   "B": "O n-heptano é linear, e tem o pior desempenho (é a referência de octanagem zero).",
+   "D": "O 3-etil-4-metil-hex-1-eno é insaturado (um alceno), e a gasolina deve ter cadeias saturadas.",
+   "E": "O 3-etil-2-metilpentan-1-ol é um álcool, e não um hidrocarboneto."
+  }
+ },
+ "2023-098": {
+  "certa": "Quando L2 queima, o conjunto 2 passa a ter só o resistor R, e a resistência dele aumenta, porque deixa de haver o caminho paralelo pela lâmpada. A resistência total do circuito em série aumenta e a corrente diminui. Assim, as lâmpadas L1 e L3 passam a brilhar menos.",
+  "erradas": {
+   "A": "A corrente muda, então o brilho muda.",
+   "B": "A resistência total aumenta, e a corrente diminui, e não aumenta.",
+   "D": "L1 e L3 estão em série com o mesmo conjunto, e as duas têm a mesma redução de corrente.",
+   "E": "L1 e L3 estão em série, e são afetadas do mesmo jeito."
+  }
+ },
+ "2023-102": {
+  "certa": "No aparelho 1, a polia fixa só muda a direção da força, então F = M₁g. No aparelho 2, a carga M₂ está presa a uma polia móvel, que divide o peso entre dois trechos da corda, então F = M₂g/2. Com a mesma força F, M₂g/2 = M₁g, ou seja, M₂/M₁ = 2.",
+  "erradas": {
+   "A": "1/4 inverteria a relação e consideraria uma divisão por 4 da força.",
+   "B": "1/2 inverteria a relação: a polia móvel permite levantar uma carga maior, e não menor.",
+   "C": "1 seria o caso de duas polias fixas, sem a vantagem da polia móvel.",
+   "E": "4 corresponderia a duas polias móveis, e há só uma."
+  }
+ },
+ "2023-112": {
+  "certa": "Os microrganismos não quebram moléculas ramificadas. O tensoativo da figura tem uma cadeia carbônica muito ramificada. Modificar a cadeia para uma cadeia normal (linear) o torna biodegradável.",
+  "erradas": {
+   "A": "Retirar a parte polar eliminaria a função de tensoativo.",
+   "B": "As insaturações do anel aromático não são o que impede a biodegradação.",
+   "C": "Trocar o grupo aniônico por um neutro não resolve a ramificação da cadeia.",
+   "D": "Trocar o grupo aniônico por um catiônico também não resolve a ramificação."
+  }
+ },
+ "2023-116": {
+  "certa": "O aldrin tem baixa polaridade, ou seja, é lipossolúvel. Ele se acumula em tecidos e fluidos ricos em gordura, e o leite, por seu alto teor de gorduras, é o fluido com maior concentração do inseticida.",
+  "erradas": {
+   "A": "A saliva é aquosa, e a atividade enzimática não concentra substâncias apolares.",
+   "B": "O sangue é aquoso, e a presença de células não concentra o inseticida.",
+   "C": "A lágrima é aquosa e tem sais, o que não favorece uma substância apolar.",
+   "D": "A urina é aquosa, e a ureia é polar, o que não favorece uma substância apolar."
+  }
+ },
+ "2023-119": {
+  "certa": "Com o volume e a quantidade de gás constantes, P é diretamente proporcional a T (lei de Gay-Lussac). Ao resfriar de T₀ para T, a pressão cai de P₀ para P ao longo de uma reta que passa pela origem. É a alternativa E, com a seta indo do ponto (T₀, P₀) para um ponto de menor T e menor P, na mesma reta que passa pela origem.",
+  "erradas": {
+   "A": "Mostra a pressão constante e depois a temperatura constante, o que não ocorre no resfriamento a volume constante.",
+   "B": "Mostra uma pressão constante enquanto a temperatura cai, mas P deve cair junto com T.",
+   "C": "Mostra uma curva hiperbólica, típica de uma transformação isotérmica (P e V), e não de P e T.",
+   "D": "É uma reta decrescente, em que P aumentaria quando T diminui, o oposto do que ocorre."
+  }
+ },
+ "2023-122": {
+  "certa": "O cianeto bloqueia a citocromo c oxidase, interrompendo a cadeia respiratória. Os elétrons do NADH não são mais transferidos, e o NADH deixa de ser oxidado a NAD⁺, então sua concentração aumenta.",
+  "erradas": {
+   "A": "O bloqueio da cadeia respiratória reduz a produção de ATP.",
+   "B": "Sem transferência de elétrons ao oxigênio, a produção de água diminui.",
+   "D": "O bloqueio reduz a oxidação dos nutrientes, então o CO₂ também tende a diminuir.",
+   "E": "O cianeto se liga à enzima, mas não altera a quantidade total de citocromo c oxidase."
+  }
+ },
+ "2023-126": {
+  "certa": "A dureza da água vem dos sais de cálcio (e magnésio) pouco solúveis, como carbonatos e sulfatos, que se acumulam nas tubulações. O teste que controla esse tipo de obstrução é o do cálcio (teste 1).",
+  "erradas": {
+   "B": "O cloreto de sódio é solúvel e não forma incrustações.",
+   "C": "A turbidez mede partículas em suspensão e não a dureza.",
+   "D": "Coliformes totais indicam contaminação por microrganismos.",
+   "E": "Sólidos sedimentáveis medem partículas que se depositam e não os sais que causam dureza."
+  }
+ }
+}

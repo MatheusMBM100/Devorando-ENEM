@@ -1,0 +1,56 @@
+{
+ "2021-019": {
+  "certa": "O texto diz que as crianças têm menos lazer, brincam menos, em casa, sozinhas e com aparelhos eletrônicos, no lugar de parques, ruas e praças. As transformações promoveram uma vivência corporal menos ativa.",
+  "erradas": {
+   "A": "O texto diz que as crianças brincam menos com outras crianças, então as relações sociais diminuíram.",
+   "B": "O texto diz que o lazer diminuiu, e não que se tornou mais difundido.",
+   "C": "O texto diz que o brincar migrou para dentro de casa, e não que surgiram novos espaços.",
+   "E": "O texto diz que o tempo dedicado a brincar diminuiu."
+  }
+ },
+ "2021-020": {
+  "certa": "O texto descreve Mini@tures como um projeto de dança feito para a internet, que mistura corpo, dança, computação gráfica e rede, 'contaminação entre mídias'. Ele é inovador por produzir uma arte multimodal, ampliando as possibilidades de expressão estética.",
+  "erradas": {
+   "A": "O texto não fala de uma perspectiva conceitual contra os grandes espetáculos.",
+   "B": "A internet é palco, e não forma de financiamento.",
+   "C": "O texto trata de combinar mídias, e não só de substituir o palco pela tela com movimentos gerados por computador.",
+   "E": "O texto não trata de redefinir a extensão do espetáculo para o perfil de usuários, apesar de considerar o tempo de download."
+  }
+ },
+ "2021-021": {
+  "certa": "O Texto I defende que o ciclo hidrológico repõe indefinidamente os estoques de água doce, então é possível manter os estoques. O Texto II diz que a água superficial dos reservatórios não recarrega os aquíferos, que não recuperam o nível. A divergência está na ideia de que é possível manter os estoques de água doce.",
+  "erradas": {
+   "B": "Os dois textos admitem o uso da água superficial.",
+   "C": "O Texto I admite déficit nas regiões áridas, e o Texto II não trata disso.",
+   "D": "Nenhum dos textos propõe reduzir as taxas de precipitação e evaporação.",
+   "E": "O Texto I diz que a água não se distribui igualmente, e o Texto II não propõe equalizar."
+  }
+ },
+ "2021-022": {
+  "certa": "O texto mostra que 'você' e 'tu' variam ao longo do tempo e entre regiões (tu em Porto Alegre, você em São Paulo). A possibilidade de usar tanto 'tu' quanto 'você' caracteriza a diversidade da língua.",
+  "erradas": {
+   "A": "O texto cita a idade (professor de 78 anos), mas a escolha de pronomes varia por região e época.",
+   "C": "O texto diz que o 'tu' predomina em Porto Alegre e convive com 'você' no Rio e em Recife, e não por todo o país.",
+   "D": "O texto diz que o 'tu' era mais próximo e menos formal que 'você', então a distinção existe.",
+   "E": "O texto mostra que os usos mudaram, e a língua não se mantém inalterada."
+  }
+ },
+ "2021-023": {
+  "certa": "John Lennon da Silva reinterpretou 'A morte do cisne', do balé clássico, com o estilo popping da street dance, de origem urbana. Isso mostra que a criação artística é beneficiada pelo encontro de modelos de realidades socioculturais diferentes.",
+  "erradas": {
+   "A": "O figurino é só um dos elementos, e a questão é a mistura entre estilos.",
+   "C": "O texto não trata de hierarquia entre manifestações, mas de combinação.",
+   "D": "O texto não diz que o dançarino não teve acesso à formação erudita.",
+   "E": "O texto não trata de adaptação complexa para homens dançando coreografias femininas."
+  }
+ },
+ "2021-024": {
+  "certa": "O narrador descreve a violência sofrida por um detento, que obedece sem questionar, e mostra a brutalidade do sistema carcerário, como em um estado de exceção em que direitos não valem. A narrativa trazem à tona atitudes de um estado de exceção.",
+  "erradas": {
+   "A": "A narrativa expõe violências que o senso comum ignora, e não perpetua suas visões.",
+   "C": "Não há interlocução com grupos silenciados, mas relato sobre um indivíduo.",
+   "D": "O texto choca sem buscar empatia ou sensação de justiça, já que a violência permanece.",
+   "E": "A narrativa é realista e crua, e não recorre ao absurdo."
+  }
+ }
+}

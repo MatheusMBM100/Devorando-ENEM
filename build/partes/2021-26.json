@@ -1,0 +1,47 @@
+{
+ "2021-142": {
+  "certa": "A receita mínima é R$ 300,00. Para chegar a ela com o menor número de lavagens, deve-se usar o serviço mais caro (R$ 35,00). 300 ÷ 35 ≈ 8,57, então 8 lavagens completas dão R$ 280,00, que não bastam, e são necessárias pelo menos 9 (R$ 315,00).",
+  "erradas": {
+   "A": "6 lavagens, mesmo todas completas, dão no máximo R$ 210,00.",
+   "B": "8 lavagens, mesmo todas completas, dão no máximo R$ 280,00, abaixo de R$ 300,00.",
+   "D": "15 lavagens (R$ 300,00 só se forem todas simples) não é o menor número possível.",
+   "E": "20 lavagens simples dão R$ 400,00, mas o menor número possível é 9, com lavagens completas."
+  }
+ },
+ "2021-143": {
+  "certa": "Farmácia 1 (os três): 45 + 40 + 50 = 135. X e Y na farmácia 2 com 20%: (50 + 50) × 0,8 = 80, e Z na farmácia 3: 35, totalizando 115. Os três na farmácia 3 com 20%: (65 + 45 + 35) × 0,8 = 116. A menor despesa é 115, a da alternativa C.",
+  "erradas": {
+   "A": "Os três na farmácia 1 custam R$ 135,00.",
+   "B": "X e Y na farmácia 1 (85) e Z na 3 (35) custam R$ 120,00, sem desconto.",
+   "D": "X na farmácia 2 (50), com Y e Z na 3 sem o desconto de três medicamentos (80), custa R$ 130,00.",
+   "E": "Os três na farmácia 3 com 20% custam R$ 116,00, um pouco mais que R$ 115,00."
+  }
+ },
+ "2021-144": {
+  "certa": "A figura é um cubo menor dentro de um cubo maior, ligados pelas 8 hastes diagonais. Os 12 quadrados são as faces dos dois cubos (6 + 6). Entre os cubos, cada aresta do cubo menor forma com a aresta correspondente do maior e duas hastes diagonais um trapézio isósceles, num total de 12.",
+  "erradas": {
+   "B": "24 trapézios é o dobro do número de arestas de um cubo, e há só 12 faces desse tipo.",
+   "C": "As faces entre os cubos têm lados paralelos desiguais, com lados não paralelos congruentes. São trapézios isósceles, e não paralelogramos.",
+   "D": "8 trapézios é o número de hastes diagonais, e há 12 trapézios (um por aresta).",
+   "E": "As faces são trapézios isósceles (hastes congruentes), e não escalenos, e as outras são quadrados, e não retângulos."
+  }
+ },
+ "2021-145": {
+  "certa": "Na planificação, a face cinza fica na ponta da fileira inferior. Dobrando as faces para formar o octaedro, a face 4 não tem aresta nem vértice em comum com a cinza, então é a oposta a ela.",
+  "erradas": {
+   "A": "No octaedro, cada face tem só uma face oposta, e não quatro.",
+   "B": "As faces 1 e 3 dividem arestas ou vértices com a face cinza.",
+   "C": "A face 1 compartilha vértice com a face cinza, e não é oposta a ela.",
+   "D": "A face 2 compartilha aresta ou vértice com a cinza, e não é oposta a ela."
+  }
+ },
+ "2021-146": {
+  "certa": "A altura de um triângulo equilátero de lado ℓ é h = ℓ√3/2, então ℓ = 2h/√3 = 2h√3/3. O perímetro é 3ℓ = 2h√3 = 2 × 8 × 1,7 = 27,2 cm, o que mais se aproxima de 27,18.",
+  "erradas": {
+   "A": "9,07 cm é a medida do lado do triângulo, e não do perímetro.",
+   "B": "13,60 cm é 8 × 1,7, o que não considera o fator 2 do perímetro.",
+   "C": "20,40 cm resulta de um erro na relação entre altura e lado.",
+   "E": "36,24 cm resulta de um erro na relação entre altura e lado."
+  }
+ }
+}

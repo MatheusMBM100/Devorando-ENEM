@@ -1,0 +1,47 @@
+{
+ "2020-107": {
+  "certa": "O óleo de rosas tem cadeia poli-insaturada (duas ligações duplas C=C) e uma hidroxila (OH, função álcool) em carbono terminal. A estrutura (1) tem duas ligações duplas e um grupo OH ligado ao CH₂ terminal.",
+  "erradas": {
+   "B": "A estrutura (2) tem só uma ligação dupla e a função aldeído (CHO), e não álcool.",
+   "C": "A estrutura (3) é um ciclo saturado, com OH em carbono do anel, e não terminal, e sem insaturação.",
+   "D": "A estrutura (4) é aromática, um fenol com o OH ligado ao anel, e não à cadeia terminal.",
+   "E": "A estrutura (5) tem duas ligações duplas, mas termina em CHO (aldeído), e não em hidroxila."
+  }
+ },
+ "2020-108": {
+  "certa": "A bolinha sai da mesa com velocidade horizontal constante V₀ e, na vertical, cai em queda livre acelerada. A composição de um movimento uniforme na horizontal com um movimento acelerado na vertical é uma parábola, que começa tangente à horizontal e fica cada vez mais inclinada, como na figura D.",
+  "erradas": {
+   "A": "Mostra a bola andando em linha reta na horizontal e depois caindo na vertical, como no desenho animado. Na realidade, a queda começa assim que a bola deixa a mesa.",
+   "B": "Mostra uma reta inclinada, que corresponderia a velocidade vertical constante, mas a gravidade a acelera.",
+   "C": "Mostra queda vertical, como se a velocidade horizontal fosse anulada ao sair da mesa. Pela inércia, ela se mantém.",
+   "E": "Mostra uma curva que começa inclinada, mas a velocidade inicial é horizontal, então a trajetória deve partir tangente à horizontal."
+  }
+ },
+ "2020-164": {
+  "certa": "O tempo médio sobe 0,6 ano a cada período de 4 anos (5,2 → 5,8 → 6,4 → 7,0). A meta é 70% de 16 = 11,2 anos. A partir de 7,0 em 2007, faltam 4,2 anos, ou 4,2 ÷ 0,6 = 7 períodos de 4 anos = 28 anos. O ano é 2007 + 28 = 2035.",
+  "erradas": {
+   "A": "2018 corresponde a apenas 11 anos de crescimento, o que dá menos de 9 anos de estudo.",
+   "B": "2023 corresponde a 16 anos, 4 períodos, que dão 9,4 anos de estudo.",
+   "C": "2031 corresponde a 6 períodos, que dão 10,6 anos, abaixo de 11,2.",
+   "E": "2043 corresponde a 9 períodos, que dão 12,4 anos, acima de 11,2, e o limite passa antes."
+  }
+ },
+ "2020-174": {
+  "certa": "Com os acréscimos, a internet passa a 120 × 1,2 = 144 (+24) e a mensalidade a 700 × 1,1 = 770 (+70). O aumento total é 94 reais, que devem sair da mesada: 94 ÷ 400 = 0,235, ou seja, 23,5% de redução.",
+  "erradas": {
+   "A": "15,0% corresponde a uma redução de R$ 60,00, menor que os R$ 94,00 de aumento.",
+   "C": "30,0% corresponde a R$ 120,00, maior que os R$ 94,00 de aumento.",
+   "D": "70,0% corresponde a R$ 280,00, bem acima do necessário.",
+   "E": "76,5% é o complemento de 23,5% (a mesada restante), e não a redução."
+  }
+ },
+ "2020-180": {
+  "certa": "Ao meio-dia (sol a pino), passa toda a luz do vão de 30 cm. Com os raios a 30° da vertical, a largura iluminada é 30 − h·tg 30°. Para ser a metade, 15 = 30 − h·tg 30°, ou h = 15 ÷ tg 30° = 15 ÷ 0,577 ≈ 26 cm.",
+  "erradas": {
+   "A": "9 cm daria h·tg 30° ≈ 5,2, deixando passar quase toda a luz.",
+   "B": "15 cm daria h·tg 30° ≈ 8,7, deixando passar mais de 70% da luz.",
+   "D": "52 cm daria h·tg 30° = 30, bloqueando toda a luz e não só a metade.",
+   "E": "60 cm também bloquearia toda a luz, e não só a metade."
+  }
+ }
+}

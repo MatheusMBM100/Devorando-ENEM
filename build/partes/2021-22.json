@@ -1,0 +1,47 @@
+{
+ "2021-120": {
+  "certa": "Os compostos tóxicos (metais pesados) sofrem biomagnificação: sua concentração aumenta a cada nível trófico, porque não são eliminados. Os golfinhos estão no topo da cadeia alimentar entre os organismos citados e acumulam as maiores concentrações.",
+  "erradas": {
+   "A": "As esponjas filtram a água e acumulam, mas ficam em níveis tróficos inferiores ao dos golfinhos.",
+   "C": "O fitoplâncton é o produtor, na base da cadeia, e tem as menores concentrações por biomagnificação.",
+   "D": "Os peixes herbívoros são consumidores primários, abaixo dos golfinhos.",
+   "E": "As algas macroscópicas são produtoras, na base da cadeia."
+  }
+ },
+ "2021-121": {
+  "certa": "O sistema entra na região de campo com velocidade para dentro da página (sentido de g), e B aponta para a direita. A força magnética é F = q·v×B. Com v para dentro e B para a direita, a carga positiva sofre força para baixo (no desenho) e a negativa, para cima (sinal oposto). É o diagrama A.",
+  "erradas": {
+   "B": "Mostra as duas forças para baixo, mas as cargas têm sinais opostos, e as forças têm sentidos opostos.",
+   "C": "Mostra forças ao longo da haste, mas a força magnética é perpendicular a v e a B.",
+   "D": "Mostra as duas forças para cima, mas as forças têm sentidos opostos.",
+   "E": "Inverte os sentidos: com v para dentro e B para a direita, a carga positiva sofre força para baixo."
+  }
+ },
+ "2021-122": {
+  "certa": "O planejamento prevê sensibilização, capacitação da limpeza e coletores internos, mas não diz para onde vão os recicláveis. Falta firmar parceria com a prefeitura ou cooperativa de catadores para o recolhimento e a destinação apropriada.",
+  "erradas": {
+   "A": "Campanhas em bairros vizinhos ampliam o alcance, mas não completam a ação dentro da escola.",
+   "C": "Visitas ao lixão são atividades educativas, mas não resolvem a destinação dos materiais.",
+   "D": "Divulgar a ação na mídia não dá destino aos recicláveis.",
+   "E": "Colocar coletores fora da escola amplia o escopo, mas não dá destino aos materiais recolhidos."
+  }
+ },
+ "2021-123": {
+  "certa": "Para evitar a consanguinidade entre os búfalos, é preciso saber quais são aparentados e portam os alelos de doenças. O mapeamento genético identifica os genótipos e permite separar os animais de forma adequada antes do cruzamento.",
+  "erradas": {
+   "A": "A transgenia insere genes de outra espécie, e não identifica o parentesco.",
+   "B": "A terapia gênica trata doenças já existentes, e não previne cruzamentos.",
+   "C": "A vacina de DNA induz imunidade contra patógenos.",
+   "D": "A clonagem terapêutica produz células ou tecidos, e não evita a consanguinidade."
+  }
+ },
+ "2021-124": {
+  "certa": "Redução é ganho de elétrons, o que acontece quando o número de oxidação diminui. Na etapa V, o Zn reduz o Cu²⁺ do CuSO₄ a Cu⁰ (Cu²⁺ + 2e⁻ → Cu). É a única etapa em que o cobre se reduz.",
+  "erradas": {
+   "A": "Na etapa I, o Cu⁰ é oxidado a Cu²⁺ pelo HNO₃.",
+   "B": "Na etapa II, o Cu²⁺ continua com Nox +2 (precipitação).",
+   "C": "Na etapa III, a decomposição do Cu(OH)₂ em CuO mantém o Nox +2.",
+   "D": "Na etapa IV, o CuO reage com ácido formando CuSO₄, com Nox +2 constante."
+  }
+ }
+}

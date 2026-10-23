@@ -1,0 +1,65 @@
+{
+ "2024-135": {
+  "certa": "A mãe é portadora (XᴰXᵈ) e o pai não é daltônico (XᴰY). As filhas recebem Xᴰ do pai: ou são não daltônicas (XᴰXᴰ) ou portadoras (XᴰXᵈ). Os filhos recebem Y do pai: ou não são daltônicos (XᴰY) ou são daltônicos (XᵈY). O heredograma com os quatro genótipos possíveis é o da alternativa B: filha não daltônica, filha portadora, filho não daltônico e filho daltônico.",
+  "erradas": {
+   "A": "Mostra uma filha daltônica, impossível porque o pai não é daltônico e transmite Xᴰ a todas as filhas.",
+   "C": "Mostra só filhas portadoras e filhos não daltônicos, sem as demais possibilidades.",
+   "D": "Mostra só filhas não daltônicas e filhos daltônicos, sem as demais possibilidades.",
+   "E": "Mostra filhas daltônicas, impossível com um pai não daltônico."
+  }
+ },
+ "2024-139": {
+  "certa": "A equipe tem 5 médicos, com pelo menos 3 cardiologistas. Os casos são: 3 cardiologistas e 2 neurologistas, C(7,3) × C(6,2); 4 cardiologistas e 1 neurologista, C(7,4) × C(6,1); 5 cardiologistas, C(7,5) × C(6,0). O total é a soma dos três produtos, que é a expressão da alternativa E.",
+  "erradas": {
+   "A": "Representa só a escolha de 4 médicos de cada área.",
+   "B": "Representa só o caso de 3 cardiologistas e 2 neurologistas.",
+   "C": "Soma os números de combinações sem multiplicar as escolhas das duas áreas.",
+   "D": "Multiplica as somas, o que não corresponde à contagem por casos separados."
+  }
+ },
+ "2024-140": {
+  "certa": "A probabilidade de um sinal estar vermelho é (15 − x) ÷ 60 em cada um. Para ambos, ((15 − x) ÷ 60)² = 4/100, então (15 − x) ÷ 60 = 0,2, 15 − x = 12 e x = 3 segundos.",
+  "erradas": {
+   "A": "1,35 s não leva a probabilidade conjunta de 4/100.",
+   "C": "9 s deixaria o sinal vermelho por 6 s, o que daria (6/60)² = 1/100.",
+   "D": "12,6 s deixaria o sinal vermelho por 2,4 s, uma probabilidade bem menor que 0,2.",
+   "E": "13,8 s deixaria o sinal vermelho por 1,2 s, uma probabilidade ainda menor."
+  }
+ },
+ "2024-141": {
+  "certa": "Sejam H o número de habitantes de R e A sua área. Em Q, há H/2 habitantes e a área é 3A/4. d(Q) = (H/2) ÷ (3A/4) = (H/2) × (4/(3A)) = (2/3)·(H/A) = (2/3)·d(R).",
+  "erradas": {
+   "A": "d(Q) = (1/4)·d(R) não resulta da razão (H/2) ÷ (3A/4).",
+   "B": "d(Q) = (1/2)·d(R) ignora a mudança de área.",
+   "C": "d(Q) = (3/4)·d(R) usa só a razão entre as áreas.",
+   "D": "d(Q) = (3/2)·d(R) inverte a razão correta."
+  }
+ },
+ "2024-142": {
+  "certa": "4 5/6 = 29/6 e 3 1/2 = 7/2 = 21/6. A diferença é 29/6 − 21/6 = 8/6 ≈ 1,33, que com uma casa decimal é 1,3.",
+  "erradas": {
+   "A": "0,1 não decorre da diferença entre as frações.",
+   "B": "0,5 não decorre da diferença entre as frações.",
+   "C": "1,0 resulta de arredondar a diferença para o inteiro.",
+   "E": "1,8 resulta de somar as partes fracionárias de forma errada."
+  }
+ },
+ "2024-144": {
+  "certa": "A correia tem dois trechos retos de 15 cm, ou 30 cm. Na polia menor (r = 4 cm), ela cobre o arco de 150°, que mede (150/360) × 2 × 3 × 4 = 10 cm. Na maior (R = 8 cm), cobre o arco de 360° − 150° = 210°, que mede (210/360) × 2 × 3 × 8 = 28 cm. O comprimento é 30 + 10 + 28 = 68 cm.",
+  "erradas": {
+   "A": "54 cm não inclui os arcos corretos das duas polias.",
+   "B": "60 cm não inclui os arcos corretos das duas polias.",
+   "C": "66 cm não inclui os arcos corretos das duas polias.",
+   "E": "72 cm não inclui os arcos corretos das duas polias."
+  }
+ },
+ "2024-145": {
+  "certa": "O hospital H é equidistante dos três postos, que formam um triângulo equilátero de lado 10 km. Então H é o circuncentro, e a distância é o raio da circunferência circunscrita: R = lado ÷ √3 = 10 ÷ 1,73 ≈ 5,8 km, entre 5 e 6.",
+  "erradas": {
+   "A": "Entre 2 e 3 km é menor que o raio do círculo circunscrito.",
+   "B": "Entre 4 e 5 km é menor que o raio do círculo circunscrito.",
+   "D": "Entre 7 e 8 km é maior que o raio.",
+   "E": "Entre 8 e 9 km corresponde à altura do triângulo (cerca de 8,7 km), e não ao raio."
+  }
+ }
+}

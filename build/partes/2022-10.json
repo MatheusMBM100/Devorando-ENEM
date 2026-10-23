@@ -1,0 +1,110 @@
+{
+ "2022-117": {
+  "certa": "Em mulheres heterozigotas, cada célula inativa ao acaso um dos X, e em umas o alelo ativo é o normal e em outras é o recessivo. A proporção de células de cada tipo varia de pessoa para pessoa e de tecido para tecido, então a doença se manifesta com intensidade diferente. Isso é expressividade variável.",
+  "erradas": {
+   "A": "A pleiotropia é um gene afetando várias características, o que não descreve o mosaicismo.",
+   "B": "A inativação do X não altera a sequência do gene, então não é mutação.",
+   "C": "A interação gênica envolve genes diferentes interagindo, e não a inativação de um cromossomo.",
+   "D": "A penetrância incompleta é a falta de manifestação do fenótipo em parte dos portadores, e o mosaicismo varia a intensidade."
+  }
+ },
+ "2022-118": {
+  "certa": "Pela regra da mão direita, com a corrente para cima, o campo magnético forma círculos em torno do fio no sentido anti-horário, visto de cima. As bússolas, colocadas equidistantes do fio, alinham-se tangentes a esses círculos, com a ponta norte (escura) apontando no sentido do campo. A configuração correta é a da alternativa D.",
+  "erradas": {
+   "A": "As agulhas não estão alinhadas à tangente da circunferência no sentido anti-horário nos três pontos.",
+   "B": "As agulhas não estão alinhadas à tangente da circunferência no sentido anti-horário nos três pontos.",
+   "C": "As agulhas apontam em direções que não acompanham o campo circular em torno do fio.",
+   "E": "As agulhas não estão alinhadas à tangente da circunferência no sentido anti-horário nos três pontos."
+  }
+ },
+ "2022-119": {
+  "certa": "Com pele molhada, a resistência é 1 kΩ. Uma parada respiratória ocorre entre 20 mA e 100 mA, o que exige tensão entre 20 V e 100 V. Duas baterias de 12 V ligadas em série, com os polos opostos conectados, dão 24 V, ou seja, 24 mA, na faixa da parada respiratória. É a associação da alternativa A, em que o negativo de uma bateria se liga ao positivo da outra.",
+  "erradas": {
+   "B": "As baterias estão em oposição (+ com +), e a tensão resultante é 0 V.",
+   "C": "A ligação cruzada coloca as baterias em oposição, o que não dá 24 V.",
+   "D": "As baterias estão em oposição (+ com +), e a tensão resultante é 0 V.",
+   "E": "As baterias estão em paralelo, com tensão de 12 V e corrente de 12 mA, que causa aumento das contrações, e não parada respiratória."
+  }
+ },
+ "2022-122": {
+  "certa": "O persulfato (S₂O₈²⁻) oxida o TCE, que é degradado em produtos menos tóxicos, enquanto o persulfato é reduzido a sulfato. A transformação química descrita é de oxirredução.",
+  "erradas": {
+   "B": "Não se trata de trocar um grupo por outro, mas de transferência de elétrons.",
+   "C": "O esquema mostra solubilização e degradação, e não a formação de precipitado.",
+   "D": "O esquema não mostra a perda de água.",
+   "E": "O esquema não mostra reação entre um ácido e uma base."
+  }
+ },
+ "2022-125": {
+  "certa": "O ácido clorídrico concentrado com cianeto de potássio libera ácido cianídrico (HCN), um gás tóxico. O ácido nítrico concentrado com sacarose (matéria orgânica) reage com violência e de modo oxidativo, com risco de explosão. Os efeitos são a liberação de gás tóxico e a reação oxidativa forte.",
+  "erradas": {
+   "B": "Inverte a ordem: o conjunto 1 libera gás tóxico, e o 2 é a reação oxidativa.",
+   "C": "O conjunto 1 não forma só sais tóxicos, ele libera um gás.",
+   "D": "O conjunto 2 não libera gás oxidante como efeito descrito no quadro.",
+   "E": "O conjunto 1 libera gás, e o conjunto 2 não libera gás oxidante."
+  }
+ },
+ "2022-126": {
+  "certa": "O balanço solto a 90° (horizontal) chega ao ponto mais baixo com v² = 2gL. A tensão total nesse ponto é T = mg + mv²/L = mg + 2mg = 3mg = 3 × 24 × 10 = 720 N. Como há duas cordas, cada uma suporta 360 N. A corda deve ter tensão de ruptura 25% maior: 360 × 1,25 = 450 N.",
+  "erradas": {
+   "A": "120 N resulta de dividir o peso pelas duas cordas, ignorando a força centrípeta.",
+   "B": "300 N resulta de usar uma tensão incorreta no ponto mais baixo.",
+   "C": "360 N é a tensão máxima em cada corda, sem os 25% de margem de segurança.",
+   "E": "900 N é a tensão total do balanço (720 N) com os 25% aplicados, sem dividir entre as duas cordas."
+  }
+ },
+ "2022-129": {
+  "certa": "Para o mesmo volume e a mesma energia absorvida, ΔT é inversamente proporcional a ρ·c. Água: 1.000 × 4,2 = 4.200. Concreto: 2.500 × 0,8 = 2.000. Então ΔT(concreto) ÷ ΔT(água) = 4.200 ÷ 2.000 = 2,1. O concreto esquenta 2,1 vezes mais que a água.",
+  "erradas": {
+   "A": "1,0 supõe que os dois materiais aquecem igual.",
+   "C": "2,5 usa só a densidade do concreto e da água, sem o calor específico.",
+   "D": "5,3 resulta de multiplicar as razões de densidade e de calor específico em vez de combiná-las corretamente.",
+   "E": "13,1 não decorre da razão entre as capacidades térmicas."
+  }
+ },
+ "2022-130": {
+  "certa": "A massa cai de 12,0 para 6,0 µg em 8 dias, então a meia-vida é 8 dias. Em 40 dias são 5 meias-vidas: 12 ÷ 2⁵ = 12 ÷ 32 = 0,375, ou cerca de 0,4 µg.",
+  "erradas": {
+   "A": "2,4 µg resulta de dividir 12 por 5, tratando o decaimento como linear.",
+   "B": "1,5 µg é a massa após 3 meias-vidas (24 dias).",
+   "C": "0,8 µg não corresponde a um número inteiro de meias-vidas de 8 dias.",
+   "E": "0,2 µg seria a massa após 6 meias-vidas."
+  }
+ },
+ "2022-132": {
+  "certa": "O gráfico mostra a energia produzida em 4 datas: máxima em 10/01, menor em 10/04 e 10/10 e mínima em 10/07. O Sol fica a pino no hemisfério sul em dezembro e janeiro, e o menor ângulo é em junho e julho. Esse padrão, com máximo em janeiro e mínimo em julho, é o de uma residência no hemisfério sul, próxima ao Trópico de Capricórnio.",
+  "erradas": {
+   "B": "No Trópico de Câncer, a energia seria máxima no meio do ano e mínima em janeiro.",
+   "C": "No Polo Norte, não há sol por meses e não haveria produção em janeiro.",
+   "D": "No Polo Sul, não haveria sol em julho, e a produção seria nula, não apenas mínima.",
+   "E": "No Equador, a produção seria máxima em abril e outubro, e menor em janeiro e julho."
+  }
+ },
+ "2022-134": {
+  "certa": "A atividade da catalase aumenta até 15 °C e depois cai quando a temperatura sobe. Temperaturas altas desnaturam a enzima, modificando sua estrutura tridimensional e diminuindo sua capacidade de catalisar a reação.",
+  "erradas": {
+   "A": "O pH foi mantido igual nos ensaios, e só a temperatura variou.",
+   "B": "A enzima diminui a energia de ativação, e a temperatura não a aumenta.",
+   "C": "A enzima não é consumida na reação.",
+   "D": "Os ensaios usaram as mesmas condições, só variando a temperatura."
+  }
+ },
+ "2022-135": {
+  "certa": "O fungo é eucarioto e tem microtúbulos, enquanto as bactérias da microbiota não os têm. O antimicrobiano 2, que se liga aos microtúbulos e impede a segregação das cromátides, atua sobre o fungo sem afetar as bactérias.",
+  "erradas": {
+   "A": "As bactérias também têm ribossomos, então o 1 afetaria a microbiota.",
+   "C": "Os fosfolipídeos da membrana plasmática existem nas bactérias, e o 3 afetaria a microbiota.",
+   "D": "A síntese de timina e de DNA ocorre também nas bactérias, e o 4 afetaria a microbiota.",
+   "E": "A síntese de RNA ocorre também nas bactérias, e o 5 afetaria a microbiota."
+  }
+ },
+ "2022-139": {
+  "certa": "O carro que chegou em último é o da reta de menor inclinação (velocidade constante), que termina no maior tempo. As curvas dos demais cruzam essa reta, e quem faz as ultrapassagens são os outros carros, que vão passando por ele. O carro da reta não ultrapassa nenhum: 0 ultrapassagens.",
+  "erradas": {
+   "B": "Esse carro não cruza nenhuma curva de baixo para cima.",
+   "C": "Os cruzamentos indicados são ultrapassagens feitas pelos outros carros sobre ele.",
+   "D": "Os cruzamentos indicados são ultrapassagens feitas pelos outros carros sobre ele.",
+   "E": "Os cruzamentos indicados são ultrapassagens feitas pelos outros carros sobre ele."
+  }
+ }
+}
