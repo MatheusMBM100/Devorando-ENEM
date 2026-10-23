@@ -186,3 +186,5 @@ select, input[type="search"] { width: 100%; padding: 8px 10px; border: 1px solid
 .tabela tr.aluno { cursor: pointer; }
 .tabela tr.aluno:hover { background: var(--brand-soft); }
 .tabela-wrap { overflow-x: auto; }
+.filtro-linha { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0; }
+.filtro-linha select { width: auto; min-width: 160px; }

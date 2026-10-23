@@ -24,9 +24,10 @@ service cloud.firestore {
       allow create, update: if logado() && request.auth.uid == uid;
     }
 
-    // Dados completos (respostas, simulados): privados, só da própria pessoa.
+    // Dados completos (respostas, simulados): a pessoa lê e grava os próprios; o administrador só lê.
     match /userData/{uid} {
-      allow read, write: if logado() && request.auth.uid == uid;
+      allow read: if logado() && (request.auth.uid == uid || ehAdmin());
+      allow write: if logado() && request.auth.uid == uid;
     }
 
     // Lista de administradores: cada um só vê o próprio registro; ninguém grava pelo site.

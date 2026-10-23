@@ -63,7 +63,7 @@
     card.appendChild(tabs);
 
     var form = el("form"); form.noValidate = true;
-    var nome, consent;
+    var nome;
     if (modo === "criar") {
       var ln = el("label", "l", "Nome"); ln.htmlFor = "a-nome"; form.appendChild(ln);
       nome = el("input"); nome.type = "text"; nome.id = "a-nome"; nome.autocomplete = "name"; nome.maxLength = 60; form.appendChild(nome);
@@ -74,11 +74,7 @@
     var se = el("input"); se.type = "password"; se.id = "a-senha"; se.autocomplete = modo === "criar" ? "new-password" : "current-password"; form.appendChild(se);
 
     if (modo === "criar") {
-      var lc = el("label", "check");
-      consent = el("input"); consent.type = "checkbox"; consent.id = "a-consent";
-      lc.appendChild(consent);
-      lc.appendChild(document.createTextNode(" Entendo que meu nome, e-mail e desempenho (acertos por matéria) ficam guardados e podem ser vistos pelo administrador do site."));
-      form.appendChild(lc);
+      form.appendChild(el("p", "muted", "Ao criar a conta, seu nome, e-mail, desempenho e respostas poderão ser vistos pelo administrador do site."));
     }
 
     var ac = el("div", "acoes");
@@ -106,7 +102,6 @@
       var p;
       if (modo === "criar") {
         if (!nome.value.trim()) { msg(card, "Informe seu nome.", "erro"); ok.disabled = false; return; }
-        if (!consent.checked) { msg(card, "Marque a caixa de ciência para criar a conta.", "erro"); ok.disabled = false; return; }
         cadastro = p = auth.createUserWithEmailAndPassword(email, senha).then(function (cred) {
           var nm = nome.value.trim();
           return Promise.all([
@@ -262,8 +257,96 @@
       row.appendChild(el("span", "muted", o.ok + "/" + o.n + " (" + Math.round(100 * o.ok / o.n) + "%)"));
       c.appendChild(row);
     });
+    var corpo = el("div"); c.appendChild(corpo);
     cx.appendChild(c);
     c.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    if (!l.s.respondidas) return;
+    corpo.appendChild(el("p", "muted", "Carregando as questões…"));
+    db.doc("userData/" + l.p.id).get().then(function (snap) {
+      var d = null;
+      try { d = snap.exists ? JSON.parse(snap.data().json) : null; } catch (e) { d = null; }
+      corpo.textContent = "";
+      if (!d) { corpo.appendChild(el("p", "muted", "Sem dados detalhados.")); return; }
+      detalheQuestoes(corpo, d);
+    }).catch(function () {
+      corpo.textContent = "";
+      corpo.appendChild(el("p", "muted", "Não foi possível carregar as questões. Confira se as regras do Firestore mais recentes foram publicadas (o administrador precisa poder ler userData)."));
+    });
+  }
+
+  function detalheQuestoes(cx, d) {
+    var Q = window.QUESTOES || [], META = window.META || {};
+    var porId = {}; Q.forEach(function (q) { porId[q.id] = q; });
+    var linhas = Object.keys(d.respostas || {}).map(function (id) {
+      var q = porId[id]; if (!q) return null;
+      var r = d.respostas[id], m = META[id] || [q.area, ""];
+      return { id: id, q: q, r: r.r, ok: !!r.ok, t: r.t || 0, mat: m[0], ass: m[1], marcada: !!(d.marcadas || {})[id] };
+    }).filter(Boolean).sort(function (a, b) { return b.t - a.t; });
+
+    // assuntos para reforçar
+    var ass = {};
+    linhas.forEach(function (x) { var k = x.mat + " — " + x.ass; var o = ass[k] = ass[k] || { n: 0, ok: 0 }; o.n++; if (x.ok) o.ok++; });
+    var fracos = Object.keys(ass).filter(function (k) { return ass[k].n >= 2; })
+      .sort(function (a, b) { return ass[a].ok / ass[a].n - ass[b].ok / ass[b].n || ass[b].n - ass[a].n; }).slice(0, 6);
+    if (fracos.length) {
+      cx.appendChild(el("h4", "sub", "Assuntos com menor acerto"));
+      fracos.forEach(function (k) { cx.appendChild(el("p", "muted linha", k + ": " + ass[k].ok + "/" + ass[k].n + " (" + Math.round(100 * ass[k].ok / ass[k].n) + "%)")); });
+    }
+
+    // simulados feitos
+    var hist = d.hist || [];
+    if (hist.length) {
+      cx.appendChild(el("h4", "sub", "Simulados concluídos"));
+      hist.forEach(function (h) {
+        var ac = 0; h.ids.forEach(function (id) { if (h.resp[id] && porId[id] && h.resp[id] === porId[id].gabarito) ac++; });
+        var tempo = h.decorrido ? " · " + Math.round(h.decorrido / 60) + " min" : "";
+        cx.appendChild(el("p", "muted linha", h.nome + " — " + new Date(h.criado).toLocaleDateString("pt-BR") + ": " + ac + "/" + h.ids.length + " (" + Math.round(100 * ac / h.ids.length) + "%)" + tempo));
+      });
+    }
+
+    // lista de questões com filtros
+    cx.appendChild(el("h4", "sub", "Questões respondidas (" + linhas.length + ")"));
+    var barra = el("div", "filtro-linha");
+    var fs = el("select");
+    [["todas", "Todas"], ["erradas", "Só as que errou"], ["certas", "Só as que acertou"], ["marcadas", "Marcadas para revisar"]].forEach(function (x) { var o = el("option", null, x[1]); o.value = x[0]; fs.appendChild(o); });
+    var fm = el("select");
+    var o0 = el("option", null, "Todas as matérias"); o0.value = ""; fm.appendChild(o0);
+    Object.keys(linhas.reduce(function (a, x) { a[x.mat] = 1; return a; }, {})).sort().forEach(function (m) { var o = el("option", null, m); o.value = m; fm.appendChild(o); });
+    barra.appendChild(fs); barra.appendChild(fm);
+    cx.appendChild(barra);
+    var lista = el("div"); cx.appendChild(lista);
+    var limite = 60;
+    function desenha() {
+      lista.textContent = "";
+      var vis = linhas.filter(function (x) {
+        if (fm.value && x.mat !== fm.value) return false;
+        return fs.value === "todas" || (fs.value === "erradas" && !x.ok) || (fs.value === "certas" && x.ok) || (fs.value === "marcadas" && x.marcada);
+      });
+      lista.appendChild(el("p", "muted", vis.length + " questão(ões)."));
+      var tb = el("table", "tabela");
+      var th = el("tr"); ["Questão", "Matéria / assunto", "Marcou", "Gabarito", ""].forEach(function (t) { th.appendChild(el("th", null, t)); });
+      var hd = el("thead"); hd.appendChild(th); tb.appendChild(hd);
+      var body = el("tbody");
+      vis.slice(0, limite).forEach(function (x) {
+        var tr = el("tr");
+        tr.appendChild(el("td", null, "ENEM " + x.q.ano + " · Q" + x.q.n + (x.marcada ? " ⚑" : "")));
+        tr.appendChild(el("td", null, x.mat + (x.ass && x.mat !== "Inglês" && x.mat !== "Espanhol" ? " — " + x.ass : "")));
+        tr.appendChild(el("td", null, x.r));
+        tr.appendChild(el("td", null, x.q.gabarito));
+        tr.appendChild(el("td", x.ok ? "up" : "down", x.ok ? "✔ acertou" : "✘ errou"));
+        body.appendChild(tr);
+      });
+      tb.appendChild(body);
+      var w = el("div", "tabela-wrap"); w.appendChild(tb); lista.appendChild(w);
+      if (vis.length > limite) {
+        var mais = el("button", "ghost mini", "Mostrar mais"); mais.type = "button";
+        mais.addEventListener("click", function () { limite += 60; desenha(); });
+        lista.appendChild(mais);
+      }
+    }
+    fs.addEventListener("change", function () { limite = 60; desenha(); });
+    fm.addEventListener("change", function () { limite = 60; desenha(); });
+    desenha();
   }
 
   window.NUVEM = { renderAlunos: renderAlunos };
