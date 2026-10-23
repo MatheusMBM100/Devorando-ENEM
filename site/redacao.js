@@ -51,14 +51,22 @@
     var x = c.getContext("2d"); x.fillStyle = "#fff"; x.fillRect(0, 0, c.width, c.height); x.drawImage(img, 0, 0, c.width, c.height);
     return c.toDataURL("image/jpeg", q);
   }
-  function comprimir(file) {
+  var TENT_ALUNO = [[1600, 0.7], [1600, 0.6], [1400, 0.6], [1400, 0.5], [1200, 0.5], [1000, 0.5]];
+  var TENT_ANOTADA = [[2000, 0.8], [1800, 0.75], [1600, 0.7], [1600, 0.6], [1400, 0.55], [1200, 0.5]];
+  function comprimir(file, maxChars, tentativas) {
+    maxChars = maxChars || MAX_CHARS_FOTO; tentativas = tentativas || TENT_ALUNO;
     return carregaImagem(file).then(function (img) {
-      var tentativas = [[1600, 0.7], [1600, 0.6], [1400, 0.6], [1400, 0.5], [1200, 0.5], [1000, 0.5]];
       for (var i = 0; i < tentativas.length; i++) {
         var d = jpeg(img, tentativas[i][0], tentativas[i][1]);
-        if (d.length <= MAX_CHARS_FOTO) return d;
+        if (d.length <= maxChars) return d;
       }
       throw new Error("foto grande demais");
+    });
+  }
+  // fotos da redação corrigida e anotada pelo professor (uma subcoleção, para não estourar o limite do documento)
+  function carregaAnotadas(id) {
+    return db.collection("redacoes/" + id + "/anotadas").get().then(function (qs) {
+      return lista(qs).sort(function (a, b) { return (a.d.ordem || 0) - (b.d.ordem || 0); });
     });
   }
   function abreImagem(dataUrl) {
@@ -312,8 +320,20 @@
       if (k.geral) { c.appendChild(el("h4", "sub", "Comentário geral")); var g = el("p", null, k.geral); g.style.whiteSpace = "pre-line"; c.appendChild(g); }
       c.appendChild(el("p", "muted", "Corrigida por " + (k.por || "professor") + " em " + dataBr(k.em) + ". Nota estimada, sem valor oficial."));
     } else c.appendChild(el("p", "muted", "Ainda aguardando a correção."));
-    if (r.d.fotos && r.d.fotos.length) { c.appendChild(el("h4", "sub", "Sua redação (fotos)")); galeria(c, r.d.fotos); }
-    else { c.appendChild(el("h4", "sub", "Seu texto")); var t = el("p", null, r.d.texto); t.style.whiteSpace = "pre-line"; c.appendChild(t); }
+    var original = el("div"); c.appendChild(original);
+    function mostraOriginal() {
+      original.textContent = "";
+      if (r.d.fotos && r.d.fotos.length) { original.appendChild(el("h4", "sub", "Sua redação (fotos)")); galeria(original, r.d.fotos); }
+      else { original.appendChild(el("h4", "sub", "Seu texto")); var t = el("p", null, r.d.texto); t.style.whiteSpace = "pre-line"; original.appendChild(t); }
+    }
+    if (r.d.status === "corrigida") {
+      original.appendChild(el("p", "muted", "Carregando a redação corrigida…"));
+      carregaAnotadas(r.id).then(function (an) {
+        original.textContent = "";
+        if (an.length) { original.appendChild(el("h4", "sub", "Sua redação corrigida e comentada")); galeria(original, an.map(function (x) { return x.d.dados; })); }
+        else mostraOriginal();
+      }).catch(mostraOriginal);
+    } else mostraOriginal();
     var pb = el("button", "ghost mini", "Imprimir / PDF"); pb.type = "button"; pb.addEventListener("click", function () { window.print(); });
     c.appendChild(pb);
     cx.appendChild(c); c.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -400,18 +420,59 @@
       carregando.remove();
       COMP.forEach(function (cp, idx) {
         var i = idx + 1;
-        f.insertBefore(el("h4", "sub", cp[0]), geralTitulo);
-        var ajuda = el("details", "det"); ajuda.appendChild(el("summary", null, "Critérios")); ajuda.appendChild(el("p", "muted", cp[1])); f.insertBefore(ajuda, geralTitulo);
+        f.insertBefore(el("h4", "sub", cp[0]), secA);
+        var ajuda = el("details", "det"); ajuda.appendChild(el("summary", null, "Critérios")); ajuda.appendChild(el("p", "muted", cp[1])); f.insertBefore(ajuda, secA);
         var sel = el("select"); sel.style.maxWidth = "160px";
         NIVEIS.forEach(function (n) { var o = el("option", null, String(n)); o.value = n; sel.appendChild(o); });
         sel.value = String((k.c[i] || {}).nota || 0); notas[i] = sel; sel.addEventListener("change", total);
-        f.insertBefore(sel, geralTitulo);
+        f.insertBefore(sel, secA);
         var ta = el("textarea"); ta.rows = 3; ta.style.width = "100%"; ta.style.marginTop = "6px"; ta.placeholder = "Comentário para o aluno sobre esta competência";
         ta.value = (k.c[i] || {}).coment || ""; coms[i] = ta;
-        var cx2 = el("div"); comModelos(cx2, ta, i); f.insertBefore(cx2, geralTitulo); f.insertBefore(ta, geralTitulo);
+        var cx2 = el("div"); comModelos(cx2, ta, i); f.insertBefore(cx2, secA); f.insertBefore(ta, secA);
       });
       total();
     });
+    // foto da redação corrigida e anotada (o aluno passa a ver só esta, e não a versão limpa)
+    var anot = { atuais: [], novas: [], removidos: [] };   // atuais: {id, dados}; novas: dataURLs
+    var secA = el("div", "card");
+    secA.appendChild(el("h4", "sub", "Foto da redação corrigida (opcional)"));
+    secA.appendChild(el("p", "muted", "Fotografe a redação com suas marcações e comentários. Quando houver foto aqui, o aluno vê só ela depois da correção, e não a versão original sem marcas. Até " + MAX_FOTOS + " fotos."));
+    var arqA = el("input"); arqA.type = "file"; arqA.accept = "image/*"; arqA.multiple = true; arqA.id = "r-foto-corrigida"; secA.appendChild(arqA);
+    var galA = el("div", "galeria"); secA.appendChild(galA);
+    var stA = el("p", "muted"); secA.appendChild(stA);
+    function desenhaA() {
+      galA.textContent = "";
+      var todas = anot.atuais.map(function (x) { return { src: x.dados, tipo: "atual", ref: x }; }).concat(anot.novas.map(function (d, i) { return { src: d, tipo: "nova", ref: i }; }));
+      todas.forEach(function (x) {
+        var w = el("div", "foto-item");
+        var im = el("img"); im.src = x.src; im.alt = "Redação corrigida"; im.addEventListener("click", function () { abreImagem(x.src); }); im.style.cursor = "zoom-in"; w.appendChild(im);
+        var rm = el("button", "ghost mini", "Remover"); rm.type = "button";
+        rm.addEventListener("click", function () {
+          if (x.tipo === "atual") { anot.removidos.push(x.ref.id); anot.atuais = anot.atuais.filter(function (y) { return y !== x.ref; }); }
+          else anot.novas.splice(x.ref, 1);
+          desenhaA();
+        });
+        w.appendChild(rm); galA.appendChild(w);
+      });
+    }
+    if (k && r.d.status === "corrigida") carregaAnotadas(r.id).then(function (an) { anot.atuais = an.map(function (x) { return { id: x.id, dados: x.d.dados }; }); desenhaA(); }).catch(function () {});
+    arqA.addEventListener("change", function () {
+      var arqs = Array.prototype.slice.call(arqA.files || []);
+      if (!arqs.length) return;
+      stA.textContent = "Preparando as fotos…";
+      var cadeia = Promise.resolve();
+      arqs.forEach(function (fl) {
+        cadeia = cadeia.then(function () {
+          if (anot.atuais.length + anot.novas.length >= MAX_FOTOS) throw new Error("limite");
+          return comprimir(fl, 900000, TENT_ANOTADA).then(function (d) { anot.novas.push(d); });
+        });
+      });
+      cadeia.then(function () { stA.textContent = "Foto(s) pronta(s). Elas são enviadas ao salvar a correção."; })
+        .catch(function (e) { stA.textContent = e && e.message === "limite" ? "Máximo de " + MAX_FOTOS + " fotos. Remova uma para trocar." : "Não foi possível usar uma das fotos."; })
+        .then(function () { desenhaA(); arqA.value = ""; });
+    });
+    f.appendChild(secA);
+
     var geralTitulo = el("h4", "sub", "Comentário geral"); f.appendChild(geralTitulo);
     var geral = el("textarea"); geral.rows = 4; geral.style.width = "100%"; geral.value = k.geral || "";
     carregaModelos().then(function () { var cg = el("div"); comModelos(cg, geral, 0); f.insertBefore(cg, geral); });
@@ -446,8 +507,21 @@
       }
       var correcao = { c: cc, geral: geral.value.trim(), total: total(), anulada: zs.value || null, dh: !!dh.checked, por: (N.perfil() || {}).nome || "professor", em: new Date().toISOString() };
       salvar.disabled = true; st.textContent = "Salvando…";
-      db.doc("redacoes/" + r.id).update({ status: "corrigida", correcao: correcao }).then(function () {
-        r.d.status = "corrigida"; r.d.correcao = correcao; st.textContent = "✔ Correção salva. O aluno já pode ver."; salvar.disabled = false; salvar.textContent = "Atualizar correção";
+      // fotos anotadas primeiro; só depois a redação passa a "corrigida" para o aluno
+      var ops = anot.removidos.map(function (id) { return db.doc("redacoes/" + r.id + "/anotadas/" + id).delete(); });
+      var usados = {}; anot.atuais.forEach(function (x) { usados[x.id] = true; });
+      anot.novas.forEach(function (d, i) {
+        var n = 1; while (usados["p" + n]) n++;
+        usados["p" + n] = true;
+        ops.push(db.doc("redacoes/" + r.id + "/anotadas/p" + n).set({ ordem: n, dados: d }));
+      });
+      Promise.all(ops).then(function () {
+        return db.doc("redacoes/" + r.id).update({ status: "corrigida", correcao: correcao });
+      }).then(function () {
+        r.d.status = "corrigida"; r.d.correcao = correcao;
+        return carregaAnotadas(r.id).then(function (an) { anot.atuais = an.map(function (x) { return { id: x.id, dados: x.d.dados }; }); anot.novas = []; anot.removidos = []; desenhaA(); });
+      }).then(function () {
+        st.textContent = "✔ Correção salva. O aluno já pode ver."; salvar.disabled = false; salvar.textContent = "Atualizar correção";
       }).catch(function () { salvar.disabled = false; st.textContent = "Não foi possível salvar. Confira se as regras do Firestore estão publicadas."; });
     });
     ac.appendChild(salvar); f.appendChild(ac); f.appendChild(st);

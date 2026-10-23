@@ -54,3 +54,7 @@ O Firestore permite exportação agendada para o Google Cloud Storage. Depois de
 - O aluno pode **digitar** a redação no site ou **enviar até 2 fotos** da folha manuscrita. As fotos são reduzidas no próprio navegador para caber no limite de 1 MiB por documento do Firestore (sem usar o Cloud Storage, que exige o plano Blaze).
 - Na correção, as fotos aparecem na tela e abrem ampliadas em uma nova aba.
 - **Modelos de comentário:** há frases padrão por competência e para o comentário geral; elas são inseridas com um clique no campo de comentário. Você pode salvar o seu texto como modelo (★) e gerenciar tudo em Administração → Modelos de comentário. As regras da coleção `modelos` e dos campos `tipo`/`fotos` estão em `firebase/firestore.rules`: publique-as de novo.
+
+### Foto da redação corrigida
+
+Na tela de correção há a seção **Foto da redação corrigida (opcional)**: o professor fotografa a redação com as marcações e comentários e envia até 2 fotos. Quando existe essa foto, o aluno vê **só ela** depois da correção, e não a versão original sem marcas. As fotos ficam na subcoleção `redacoes/{id}/anotadas` (regras em `firebase/firestore.rules`: publique-as de novo).

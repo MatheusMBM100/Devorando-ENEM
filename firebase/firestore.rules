@@ -86,6 +86,14 @@ service cloud.firestore {
       allow read: if logado() && (resource.data.uid == request.auth.uid || ehAdmin());
       allow update: if ehAdmin();
       allow delete: if ehAdmin() || (logado() && resource.data.uid == request.auth.uid && resource.data.status == 'enviada');
+
+      // Foto da redação corrigida e comentada pelo professor: o aluno só lê depois de corrigida.
+      match /anotadas/{foto} {
+        allow read: if logado() && (ehAdmin()
+          || (get(/databases/$(database)/documents/redacoes/$(id)).data.uid == request.auth.uid
+              && get(/databases/$(database)/documents/redacoes/$(id)).data.status == 'corrigida'));
+        allow write: if ehAdmin();
+      }
     }
 
     // Modelos de comentário da correção de redações: só administradores.
