@@ -575,12 +575,15 @@
     $("painel-praticar").hidden = !(qual === "praticar" || qual === "simq");
     $("painel-stats").hidden = qual !== "stats";
     $("painel-alunos").hidden = qual !== "alunos";
+    $("painel-redacao").hidden = qual !== "redacao";
     $("filtros").style.display = qual === "praticar" ? "" : "none";
     $("sim-bar").hidden = !emSim;
     $("tab-simulado").classList.toggle("on", qual === "simulado" || qual === "simq");
     $("tab-stats").classList.toggle("on", qual === "stats");
     $("tab-alunos").classList.toggle("on", qual === "alunos");
+    $("tab-redacao").classList.toggle("on", qual === "redacao");
     if (qual === "stats") renderStats();
+    else if (qual === "redacao") { if (window.NUVEM_REDACAO) window.NUVEM_REDACAO.render($("painel-redacao")); }
     else if (qual === "alunos") { if (window.NUVEM) window.NUVEM.renderAlunos($("painel-alunos")); }
     else if (qual === "simulado") renderInicio();
     else if (qual === "praticar") aplicar(true);

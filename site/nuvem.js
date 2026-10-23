@@ -128,6 +128,9 @@
     var ta = $("tab-alunos");
     ta.hidden = !(perfil && perfil.is_admin);
     ta.onclick = function () { APP.aba("alunos"); };
+    var tr = $("tab-redacao"); tr.hidden = false;
+    tr.onclick = function () { APP.aba("redacao"); };
+    if (window.NUVEM_REDACAO) window.NUVEM_REDACAO.carregar().catch(function () {});
   }
 
   function estado(t, tit) { var s = $("sync-estado"); if (s) { s.textContent = t; s.title = tit || ""; } }
@@ -233,7 +236,7 @@
   auth.onAuthStateChanged(function (user) {
     if (user) { entrou(user); return; }
     usuario = null; perfil = null; iniciado = null;
-    $("user-area").hidden = true; $("tab-alunos").hidden = true;
+    $("user-area").hidden = true; $("tab-alunos").hidden = true; $("tab-redacao").hidden = true;
     mostrarLogin("entrar");
   });
 
@@ -248,7 +251,7 @@
     painel.appendChild(el("h2", "resumo-titulo", "Administração"));
     var abas = el("div", "chips"); painel.appendChild(abas);
     var corpo = el("div"); corpo.style.marginTop = "14px"; painel.appendChild(corpo);
-    var S = [["alunos", "Alunos"], ["turmas", "Turmas"], ["reportes", "Reportes de erro"], ["admins", "Administradores"], ["backup", "Backup"]];
+    var S = [["alunos", "Alunos"], ["turmas", "Turmas"], ["reportes", "Reportes de erro"], ["redacoes", "Redações"], ["admins", "Administradores"], ["backup", "Backup"]];
     function mostra(k) {
       secaoAtual = k; abas.textContent = ""; corpo.textContent = "";
       S.forEach(function (x) {

@@ -75,6 +75,18 @@ service cloud.firestore {
       allow read, update, delete: if ehAdmin();
     }
 
+    // Redações: o aluno envia e lê as próprias; só o administrador corrige (update).
+    match /redacoes/{id} {
+      allow create: if logado() && ativa() && request.resource.data.uid == request.auth.uid
+        && request.resource.data.keys().hasOnly(['uid', 'nome', 'email', 'tema', 'texto', 'criada', 'status'])
+        && request.resource.data.status == 'enviada'
+        && request.resource.data.texto is string && request.resource.data.texto.size() <= 8000
+        && request.resource.data.tema is string && request.resource.data.tema.size() <= 300;
+      allow read: if logado() && (resource.data.uid == request.auth.uid || ehAdmin());
+      allow update: if ehAdmin();
+      allow delete: if ehAdmin() || (logado() && resource.data.uid == request.auth.uid && resource.data.status == 'enviada');
+    }
+
     match /{outro=**} {
       allow read, write: if false;
     }

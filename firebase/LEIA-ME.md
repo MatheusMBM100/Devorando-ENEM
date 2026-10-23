@@ -42,3 +42,9 @@ O Firestore permite exportação agendada para o Google Cloud Storage. Depois de
 ### Desativar e excluir contas
 
 "Desativar conta" impede a pessoa de entrar e gravar dados (as regras do Firestore também bloqueiam a gravação). Para apagar a conta de login por completo, exclua-a também em Authentication → Usuários.
+
+## Redação (correção humana, sem IA)
+
+- **Aluno:** aba **Redação** → escolhe um tema (os dos últimos ENEM ou um tema livre), escreve e envia. Acompanha o status, vê a nota por competência, os comentários e a evolução.
+- **Administrador:** Administração → **Redações** → lista de pendentes → **Corrigir**: nota de 0 a 200 (em passos de 40) em cada uma das 5 competências, comentários, casos de nota zero e a opção de zerar só a Competência 5 por desrespeito aos direitos humanos. A nota total é calculada sozinha.
+- A nota é uma estimativa feita pelo professor, sem valor oficial. As regras para `redacoes` estão em `firebase/firestore.rules` (publique-as de novo se mudarem).
