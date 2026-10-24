@@ -1,0 +1,128 @@
+{
+ "2019-110": {
+  "certa": "Retrovírus produzem DNA a partir de RNA (transcrição reversa), e o HIV é o exemplo clássico. O tratamento se baseia em antirretrovirais, que bloqueiam etapas do ciclo do vírus, como a transcriptase reversa, e dificultam sua reprodução (alternativa E).",
+  "erradas": {
+   "A": "Esses vírus infectam exclusivamente humanos e não dependem de vetores; controlar vetores não ajuda.",
+   "B": "Soros contêm anticorpos prontos, e não são mutagênicos.",
+   "C": "Equipamentos de proteção previnem o contágio, mas não tratam a infecção.",
+   "D": "Vacinas previnem a infecção, mas o enunciado fala de tratamento e de medicamentos."
+  }
+ },
+ "2019-111": {
+  "certa": "A proposta usa concreto reciclado moído no lugar do particulado rochoso graúdo, que é a brita. O benefício ambiental é a redução da extração da brita (alternativa A).",
+  "erradas": {
+   "B": "A areia não é substituída pelo concreto reciclado graúdo.",
+   "C": "A proposta não altera o consumo de água.",
+   "D": "O concreto reciclado seria usado para fabricar novo concreto, e não para reduzir seu consumo.",
+   "E": "O cimento continua necessário na mistura."
+  }
+ },
+ "2019-112": {
+  "certa": "A fluidez aumenta quando as interações entre fosfolipídios diminuem, o que ocorre com caudas mais curtas e com insaturações, cujas dobras impedem o empacotamento. A bicamada II reúne essas características e é a mais fluida (alternativa B).",
+  "erradas": {
+   "A": "Caudas longas e saturadas se empacotam firmemente e deixam a bicamada menos fluida.",
+   "C": "Mesmo com insaturações, as caudas mais longas aumentam as interações entre os fosfolipídios.",
+   "D": "Caudas longas e retas têm forte interação entre si, o que reduz a fluidez.",
+   "E": "Há insaturações, mas as caudas são mais longas, então a fluidez é menor que na bicamada II."
+  }
+ },
+ "2019-115": {
+  "certa": "Os fármacos persistem no esgoto e na água porque as estações de tratamento convencionais não os eliminam bem. Desenvolver novos processos nas estações de tratamento minimiza a permanência desses contaminantes nos recursos hídricos (alternativa D).",
+  "erradas": {
+   "A": "Esterco como fertilizante pode levar resíduos de medicamentos veterinários ao solo e à água.",
+   "B": "Ampliar a coleta sem tratamento adequado só leva os fármacos a outro ponto.",
+   "C": "Descartar medicamentos em lixões contamina solo e água subterrânea.",
+   "E": "O lodo contém fármacos e, usado na agricultura, os espalha no ambiente."
+  }
+ },
+ "2019-116": {
+  "certa": "No teste de chama, o calor excita os elétrons dos cátions metálicos para níveis mais externos. Ao voltarem a níveis mais internos, eles emitem radiação em cor característica. A emissão vem da transição eletrônica de um nível mais externo para outro mais interno (alternativa D).",
+  "erradas": {
+   "A": "A mudança de fase não emite luz de cor característica do elemento.",
+   "B": "A cor não vem da combustão do cátion com o oxigênio.",
+   "C": "A energia cinética dos elétrons em uma mesma órbita não varia por essa razão e não explica a emissão.",
+   "E": "A promoção a níveis mais energéticos absorve energia; a emissão ocorre no retorno ao nível menos energético."
+  }
+ },
+ "2019-118": {
+  "certa": "Os náuplios sobem em direção à lâmpada, ou seja, se movem em direção à luz. Esse comportamento é chamado de fototropismo (ou fototaxia) positivo (alternativa B).",
+  "erradas": {
+   "A": "O geotropismo trata da resposta à gravidade, e a luz é o estímulo aqui.",
+   "C": "O hidrotropismo é a resposta à água, que está em toda a garrafa.",
+   "D": "O termotropismo é a resposta à temperatura, que é ótima e uniforme.",
+   "E": "O quimiotropismo é a resposta a substâncias químicas, e não à luz."
+  }
+ },
+ "2019-119": {
+  "certa": "O xenônio tem 8 elétrons de valência (5s²5p⁶). No XeF₂, ele forma duas ligações covalentes com flúor, e cada ligação compartilha um par com o átomo central, que fica com 8 + 2 = 10 elétrons na camada de valência (3 pares isolados e 2 ligantes), expandindo o octeto (alternativa C).",
+  "erradas": {
+   "A": "6 seria menos elétrons do que o xenônio já tem.",
+   "B": "8 é o número do xenônio isolado, e não considera os dois pares compartilhados com o flúor.",
+   "D": "12 corresponderia a seis pares, o que o XeF₂ não tem.",
+   "E": "14 não corresponde ao XeF₂ (3 pares isolados + 2 ligações)."
+  }
+ },
+ "2019-121": {
+  "certa": "A eritropoetina estimula a produção de eritrócitos (hemácias), que transportam oxigênio. Mais oxigênio nos tecidos aumenta a produção de ATP pela respiração aeróbica e melhora o desempenho do atleta (alternativa C).",
+  "erradas": {
+   "A": "As hemácias não transportam lipídios para gastar calorias.",
+   "B": "O ATP não é transportado pelas hemácias.",
+   "D": "As proteínas são transportadas no plasma, e não pelos eritrócitos; a EPO não aumenta a massa muscular.",
+   "E": "A vitamina C e os vasos sanguíneos não são o foco da ação da EPO."
+  }
+ },
+ "2019-122": {
+  "certa": "A troca de calor é proporcional a k × A (área interna). O recipiente A tem área 6 × 0,4² = 0,96 m². O B tem 2(0,6·0,4 + 0,6·0,4 + 0,4·0,4) = 1,28 m². Como a massa de gelo fundida em B foi o dobro: kB·1,28 = 2·kA·0,96, logo kA/kB = 1,28/(2·0,96) ≈ 0,67 (alternativa B).",
+  "erradas": {
+   "A": "0,50 ocorreria se as áreas fossem iguais (kA/kB = 1/2).",
+   "C": "0,75 não resulta da razão das áreas e da fusão do dobro de gelo.",
+   "D": "1,33 seria a razão das áreas B/A, e não kA/kB.",
+   "E": "2,00 seria o caso se a fusão de gelo em A fosse o dobro da de B."
+  }
+ },
+ "2019-124": {
+  "certa": "A porta e os cobertores não produzem calor nem \"barram o frio\": são isolantes térmicos que minimizam a perda de calor da casa e dos corpos para o ambiente mais frio. A função de ambos é minimizar a perda de calor (alternativa C).",
+  "erradas": {
+   "A": "Porta e cobertores não aquecem; só a fonte de calor (corpo ou aquecedor) aquece.",
+   "B": "O frio não é uma entidade que entra; o que ocorre é a saída de calor.",
+   "D": "Também trata o frio como algo que entra, e os cobertores não aquecem por si.",
+   "E": "A porta não aquece a casa, apenas reduz a perda de calor."
+  }
+ },
+ "2019-125": {
+  "certa": "A glicose forma 2 ácidos láticos, que ainda armazenam energia: 2 × (−1344) = −2688 kJ. A via anaeróbica libera apenas 2800 − 2688 = 112 kJ por mol de glicose, bem menos que os 2800 kJ da via aeróbica (alternativa A).",
+  "erradas": {
+   "B": "467 kJ não resulta do cálculo (2800 − 2 × 1344).",
+   "C": "2688 kJ é a energia que ainda fica nos dois ácidos láticos, e não a liberada na conversão.",
+   "D": "O processo libera energia, e não absorve.",
+   "E": "2800 kJ é a energia liberada na combustão completa da glicose."
+  }
+ },
+ "2019-126": {
+  "certa": "Em áreas desmatadas, o ambiente é instável e as espécies pioneiras precisam recolonizar rápido. A estratégia 1 (alto potencial biótico, reprodução precoce, muitos descendentes) facilita a recolonização da área (alternativa C).",
+  "erradas": {
+   "A": "O tamanho pequeno dos descendentes não diminui a competição; o ponto central é o potencial biótico elevado.",
+   "B": "A longa duração da vida não gera muitos descendentes na estratégia 2.",
+   "D": "Uma área desmatada é instável, e a estratégia 2 se adapta a hábitats estáveis.",
+   "E": "Tamanho populacional constante não propicia colonização rápida."
+  }
+ },
+ "2019-128": {
+  "certa": "A conquista definitiva do ambiente terrestre veio quando a reprodução deixou de depender da água. A formação do tubo polínico (3), nas gimnospermas e angiospermas, permitiu que a fecundação ocorresse sem água livre (alternativa C).",
+  "erradas": {
+   "A": "Embriões protegidos no gametófito (1) já ocorrem em plantas que ainda dependem de água para a fecundação, como os musgos.",
+   "B": "Tecidos condutores (2) permitiram o crescimento, mas as plantas vasculares sem sementes ainda dependem da água para a fecundação.",
+   "D": "A polinização pelo vento (4) é uma forma de transporte do pólen, mas depende da existência do tubo polínico.",
+   "E": "Os frutos (5) auxiliam a dispersão das sementes, mas não foram o que libertou as plantas da água."
+  }
+ },
+ "2019-129": {
+  "certa": "Com a pupila contraída, os raios luminosos incidem quase paralelos ao eixo óptico, e passam pelo centro das estruturas refratoras do olho. Há menor desvio dos feixes refratados no interior do olho, o que melhora a nitidez (alternativa D).",
+  "erradas": {
+   "A": "Pupila menor reduz a luz que chega à retina, o que prejudica a imagem, e não explica a melhora da acuidade.",
+   "B": "A difração aumenta quando a abertura é menor, o que pioraria a imagem.",
+   "C": "O fenômeno não envolve polarização.",
+   "E": "As reflexões internas não são o fator explicado pelo texto."
+  }
+ }
+}

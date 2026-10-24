@@ -2,7 +2,7 @@
 
 Abra `site/index.html` no navegador (duplo clique). Não precisa de servidor nem de internet.
 
-- `pdfs/`  provas e gabaritos oficiais do INEP (2020–2025, 1ª aplicação, caderno azul)
+- `pdfs/`  provas e gabaritos oficiais do INEP (2019–2025, 1ª aplicação, caderno azul; 2019 2º dia: caderno amarelo)
 - `site/`  o site (HTML/CSS/JS puro). `data.js` = questões, `explicacoes.js` = explicações, `img/` = figuras e recortes
 - `build/extract.py`  refaz `site/data.js` e `site/img/` a partir dos PDFs
 - `build/partes/*.json`  explicações escritas em lotes (por questão: por que a certa está certa e por que cada outra está errada)
@@ -13,7 +13,7 @@ Fluxo: a página inicial (aba Simulado) mostra só um resumo: desempenho curto, 
 
 Matérias e assuntos: `build/classificar.py` gera `site/meta.js` a partir de `build/classificacao_manual.json` (classificação feita questão a questão) e de palavras-chave nas poucas sem ajuste manual (inglês/espanhol são classificados pela língua).
 
-Cobertura: 1.110 questões (2020–2025). Questões anuladas pelo INEP (9) não têm gabarito nem explicação.
+Cobertura: 1.295 questões (2019–2025). Questões anuladas pelo INEP (9) não têm gabarito nem explicação.
 Em 2021 as questões aparecem como imagem do caderno (a extração de texto dessa prova é ilegível).
 
 Contas e administração: veja `firebase/LEIA-ME.md` (login por e-mail e senha via Firebase, dados na nuvem e aba “Alunos” para o administrador). Enquanto `site/config.js` estiver vazio, o site funciona sem login.

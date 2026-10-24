@@ -1,8 +1,8 @@
 // Service worker do Devorando ENEM: abre o site sem internet com o que já foi visto.
 // Páginas e scripts: tenta a rede primeiro (para sempre pegar a versão nova) e cai no cache offline.
 // Imagens das questões: cache na primeira vez que são vistas.
-var V = "devorando-63eda0cc";
-var BASE = ["./", "index.html", "data.js?v=de913712", "explicacoes.js?v=e5e87c15", "meta.js?v=f980a542", "config.js?v=3510b160", "app.js?v=81f48482", "nuvem.js?v=74003cda", "admin.js?v=18075685", "redacao.js?v=3c112b06", "style.css?v=4f4ceb9e", "logo.svg", "icon-192.png", "icon-512.png", "manifest.webmanifest"];
+var V = "devorando-e07536e5";
+var BASE = ["./", "index.html", "data.js?v=ae022b46", "explicacoes.js?v=5484bc27", "meta.js?v=686eae73", "config.js?v=3510b160", "app.js?v=81f48482", "nuvem.js?v=74003cda", "admin.js?v=18075685", "redacao.js?v=3c112b06", "style.css?v=4f4ceb9e", "logo.svg", "icon-192.png", "icon-512.png", "manifest.webmanifest"];
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(V).then(function (c) { return Promise.all(BASE.map(function (u) { return c.add(u).catch(function () {}); })); }).then(function () { return self.skipWaiting(); }));
 });

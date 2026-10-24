@@ -1,0 +1,74 @@
+{
+ "2019-109": {
+  "certa": "No campo magnético, o íon descreve circunferências com período T = 2πm/(qB). Em N voltas, o tempo de voo é t = N·T = N·2πm/(qB). Isolando a massa: m = qBt/(2πN) (alternativa A).",
+  "erradas": {
+   "B": "qBt/(πN) dobra a massa porque usa o período como πm/(qB), e não 2πm/(qB).",
+   "C": "2qBt/(πN) resulta de erros nos fatores numéricos e daria massa quatro vezes maior.",
+   "D": "qBt/N esquece o fator 2π do período da circunferência.",
+   "E": "2qBt/N esquece o fator π e coloca um 2 a mais."
+  }
+ },
+ "2019-137": {
+  "certa": "Para contar as colorações dos 12 vagões, escolhem-se primeiro 4 posições para o vermelho: C(12,4); dos 8 vagões restantes, 3 para o azul: C(8,3); dos 5 restantes, 3 para o verde: C(5,3); os 2 que sobram são amarelos: C(2,2). O total é C(12,4) × C(8,3) × C(5,3) × C(2,2) (alternativa E).",
+  "erradas": {
+   "A": "C(12,3) e C(12,2) escolhem sempre entre os 12 vagões, repetindo vagões já usados.",
+   "B": "Somar os casos, em vez de multiplicar, contaria só uma cor de cada vez.",
+   "C": "O fator 2 não aparece na contagem, e a ordem das escolhas já está embutida nas combinações.",
+   "D": "A soma e o fator 2 não representam o princípio multiplicativo da contagem."
+  }
+ },
+ "2019-142": {
+  "certa": "O consumo a cada minuto é a diferença entre pontos do gráfico: 20, 15, 5, 15, 20, 10, 20, 15 W. Pela planta: 20 W = sala (1), 15 W = suíte (4), 5 W = banheiro (5), 10 W = cozinha (6). Os cômodos visitados foram 1 → 4 → 5 → 4 → 1 → 6 → 1 → 4 (alternativa A).",
+  "erradas": {
+   "B": "1 → 2 → 3 consumiria 20, 13 e 2 W, valores diferentes dos primeiros do gráfico (20, 15, 5).",
+   "C": "Começa bem, mas termina em 2 → 3 (13 W e 2 W), enquanto o gráfico mostra 20 e 15 W nos dois últimos minutos.",
+   "D": "O segundo minuto seria no cômodo 2 (13 W), e o gráfico mostra 15 W.",
+   "E": "A sequência 1 → 4 → 2 usaria 13 W no terceiro minuto, e o gráfico mostra 5 W."
+  }
+ },
+ "2019-143": {
+  "certa": "Convertendo o gasto diário em reais: França 315 × 3,14 = R$ 989,10; EUA 390 × 2,78 = R$ 1 084,20; Austrália 400 × 2,14 = R$ 856,00; Canadá 410 × 2,10 = R$ 861,00; Reino Unido 290 × 4,24 = R$ 1 229,60. O menor custo é o da Austrália (alternativa A).",
+  "erradas": {
+   "B": "O Canadá custa R$ 861,00, mais caro que a Austrália (R$ 856,00).",
+   "C": "Os EUA custam R$ 1 084,20, acima do teto de R$ 1 000,00.",
+   "D": "A França custa R$ 989,10, dentro do teto, mas mais cara que a Austrália.",
+   "E": "O Reino Unido custa R$ 1 229,60, acima do teto de R$ 1 000,00."
+  }
+ },
+ "2019-147": {
+  "certa": "O consumo por minuto é kcal ÷ minutos: I = 20/10 = 2; II = 100/15 ≈ 6,7; III = 120/20 = 6; IV = 100/25 = 4; V = 80/30 ≈ 2,7. O maior consumo por minuto é o da atividade II (alternativa B).",
+  "erradas": {
+   "A": "A atividade I gasta 2 kcal por minuto, o menor valor.",
+   "C": "A atividade III é a que gasta mais no total (120 kcal), mas 6 kcal por minuto é menos que a II.",
+   "D": "A atividade IV gasta 4 kcal por minuto.",
+   "E": "A atividade V gasta cerca de 2,7 kcal por minuto."
+  }
+ },
+ "2019-163": {
+  "certa": "Até 6 m³ o valor é fixo (R$ 12,00): reta horizontal. De 6 a 10 m³, o valor cresce R$ 3,00 por m³ (inclinação 3). Acima de 10 m³, passa a crescer R$ 6,00 por m³ (inclinação maior), até 15 m³. O gráfico com trecho horizontal e dois trechos crescentes, o segundo mais inclinado, é o da alternativa A.",
+  "erradas": {
+   "B": "O último trecho é menos inclinado que o anterior, mas a tarifa sobe de 3 para 6.",
+   "C": "O último trecho é horizontal, o que indicaria valor constante acima de 10 m³.",
+   "D": "Falta o trecho intermediário: a inclinação não muda em 10 m³.",
+   "E": "O primeiro trecho não é horizontal, o que contraria o valor fixo de R$ 12,00."
+  }
+ },
+ "2019-170": {
+  "certa": "A concentração é q (g) dividida pelo volume de sangue em litros, que vale 8% da massa m: 0,08m. A concentração prejudicial é maior que 0,4 g/L: q/(0,08m) > 0,4 (alternativa E).",
+  "erradas": {
+   "A": "Usa 0,8m (80% da massa) no denominador, em vez de 0,08m (8%).",
+   "B": "Inverte a razão e compara com 0,8, o que não representa a concentração.",
+   "C": "Usa 0,4m no denominador e compara com 0,8, o que não representa o enunciado.",
+   "D": "Inverte a razão: 0,08m/q seria o inverso da concentração."
+  }
+ },
+ "2019-177": {
+  "certa": "A taxa de urbanização é urbana ÷ (urbana + rural): I = 8/12 ≈ 0,667; II = 10/18 ≈ 0,556; III = 11/16 ≈ 0,688; IV = 18/28 ≈ 0,643; V = 17/29 ≈ 0,586. A maior é a do município III (alternativa C).",
+  "erradas": {
+   "A": "O município I tem taxa de cerca de 66,7%, menor que a do III.",
+   "B": "O município II tem a menor taxa, cerca de 55,6%.",
+   "D": "O município IV tem a maior população urbana, mas a taxa é de cerca de 64,3%.",
+   "E": "O município V tem taxa de cerca de 58,6%."
+  }
+ }
+}

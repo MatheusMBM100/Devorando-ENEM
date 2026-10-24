@@ -8,6 +8,1671 @@ window.EXPLICACOES = {
    "E": "O texto fala de dinheiro, pão e mortes atribuídas ao patrão, mas não menciona as condições físicas ou a insalubridade do local de trabalho."
   }
  },
+ "2019-001-es": {
+  "certa": "Nos versos, o eu lírico diz ser \"da raça moura\", ter vindo de um povo que \"tudo ganhou e tudo perdeu\" e ter \"alma de nardo do árabe espanhol\". Ele reúne em si as origens árabe (moura) e espanhola, o que revela uma identidade formada por mais de uma cultura: a identidade plural da alternativa A.",
+  "erradas": {
+   "B": "O poeta fala de gentes que \"vieram\" à sua terra e que ganharam e perderam tudo, mas não descreve um modo de vida nômade dos antepassados.",
+   "C": "Há menção a ganhos e perdas, mas o foco não é o sofrimento de uma migração: o trecho trata de quem o eu lírico é, e não de uma perda causada por migrar.",
+   "D": "O texto não fala de dívida do povo espanhol com o árabe; apenas afirma que o poeta carrega em si a herança árabe e espanhola.",
+   "E": "A expressão \"alma de nardo\" é uma imagem poética para a herança árabe; ela não indica que o poeta se identifique com os elementos da natureza."
+  }
+ },
+ "2019-001-en": {
+  "certa": "A autora cita \"research\", \"a growing number of studies\" e \"several studies\" para dar base científica às suas afirmações sobre os efeitos positivos dos animais. Esse recurso reforça o argumento central do texto: convencer o leitor dos benefícios de ter um animal de estimação para a saúde (alternativa B).",
+  "erradas": {
+   "A": "O texto cita a redução do risco de alergias e asma em crianças, mas isso é apenas um dos benefícios; não se fala em cura de doenças, e as expressões de pesquisa servem a todo o argumento.",
+   "C": "As relações amorosas aparecem apenas na seção sobre cães e encontros (\"date magnets\"), sem dados de pesquisa sobre isso; o objetivo das expressões é mais amplo.",
+   "D": "O texto diz que quem tem animais sobrevive mais após um ataque cardíaco, mas não explica como o contato previne esses ataques.",
+   "E": "Os idosos não são o tema do texto, que trata dos benefícios para as pessoas em geral."
+  }
+ },
+ "2019-002-es": {
+  "certa": "\"Dejar su huella\" significa deixar sua marca, ou seja, fazer diferença. O texto reforça isso logo depois: querem \"vivir una vida interesante, formar parte de algo grande... cambiar el mundo que les rodea, y no solo ganar dinero\". A alternativa B traduz esse desejo.",
+  "erradas": {
+   "A": "Viajar pelo mundo é mencionado como experiência que muitos já tiveram, não como o sentido da expressão \"dejar su huella\".",
+   "C": "Querer tudo ao mesmo tempo é uma característica citada, mas a expressão trata de marcar a história, e não de aproveitar todas as oportunidades.",
+   "D": "A boa formação acadêmica é apresentada como característica da geração, e não como o desejo expresso por \"dejar su huella\".",
+   "E": "O texto afirma que eles querem \"no solo ganar dinero\", ou seja, o objetivo não é apenas conquistar boas colocações no mercado."
+  }
+ },
+ "2019-002-en": {
+  "certa": "O autor responde a um artigo que culpava o açúcar pela obesidade. Ele apresenta dados sobre o aumento de calorias totais e conclui: \"We need to continue to study the obesity epidemic to see what more can be done\". Portanto, indica a necessidade de mais pesquisas (alternativa D).",
+  "erradas": {
+   "A": "Ele critica a demonização de um ingrediente, mas não defende o consumo liberado de açúcar.",
+   "B": "A gordura é citada junto com farinhas e cereais como fonte do aumento calórico, sem ser apontada como \"grande vilã\".",
+   "C": "Ele chama a obesidade de epidemia a ser estudada, o que mostra preocupação.",
+   "E": "O texto afirma o contrário: os americanos consomem mais calorias do que antes, e não menos."
+  }
+ },
+ "2019-003-es": {
+  "certa": "O texto compara a fábula com o que a ciência sabe: as formigas cortadoras são mesmo previdentes e as cigarras machos \"cantam\" no verão por razões biológicas. Ou seja, retoma a fábula para descrever o comportamento real desses insetos na natureza (alternativa C).",
+  "erradas": {
+   "A": "A fábula é citada com o ensinamento moral, mas o texto a usa para falar de biologia, e não para ensinar uma moral ao leitor.",
+   "B": "O texto desfaz o estereótipo ao dizer que as cigarras não podem ser acusadas de preguiçosas, e não o reforça.",
+   "D": "O texto reconhece qualidades das formigas, mas não afirma que elas sejam superiores às cigarras.",
+   "E": "Não se descreve uma relação social entre formigas e cigarras; cada inseto é tratado separadamente."
+  }
+ },
+ "2019-003-en": {
+  "certa": "A letra fala de um amigo que tinha apenas 23 anos e morreu antes da hora (\"Gone before he had his time\"), sem aviso e sem chance de despedida. O sofrimento vem da morte precoce de um amigo jovem (alternativa A).",
+  "erradas": {
+   "B": "Não há referência a namoro ou término de relacionamento amoroso; trata-se de um amigo.",
+   "C": "\"Gone\" aqui indica morte, não mudança de país; ele \"não queria que os amigos o vissem chorar\" e o eu lírico não pôde se despedir.",
+   "D": "O texto cita que o amigo tinha 23 anos, e não uma amizade de mais de vinte anos.",
+   "E": "Nenhum verso fala de traição."
+  }
+ },
+ "2019-004-es": {
+  "certa": "O poeta personifica a empanada: chama-a de \"camarada do vinho\", fala de sua \"boca ardente\" e do beijo, e termina dizendo que ninguém fica com fome havendo empanadas. O tom é de elogio ao prato, ou seja, enaltece essa comida da culinária hispânica (alternativa A).",
+  "erradas": {
+   "B": "O poema cita ingredientes (pino, cebola, carne, passas, ovo), mas não descreve etapas de preparo.",
+   "C": "O vinho aparece apenas como companhia da empanada, sem ser destacado como elemento central.",
+   "D": "O poema não trata de tempos de fome na história; a fome é só a imagem do último verso.",
+   "E": "Condimentos como a pebre aparecem de passagem, e o foco do poema é o prato como um todo."
+  }
+ },
+ "2019-004-en": {
+  "certa": "O texto repete a estrutura \"If children live with X, they learn Y\", mostrando que o que as crianças vivem no dia a dia determina o que aprendem. A ideia central é que crianças aprendem com o que vivem (alternativa B).",
+  "erradas": {
+   "A": "A frase sobre o medo diz que elas aprendem a ser apreensivas, não que temam quem as amedronta.",
+   "C": "É apenas um dos exemplos do texto (aceitação leva a amar) e não resume a ideia geral.",
+   "D": "O texto não fala em respeito de volta como regra geral; a gentileza aparece associada ao respeito, mas como um exemplo isolado.",
+   "E": "O texto diz que o ridículo leva à timidez, e não a ridicularizar quem as intimida."
+  }
+ },
+ "2019-005-es": {
+  "certa": "A escultura mede 7 metros e pesa 3,3 toneladas: é todo o lixo eletrônico que uma pessoa comum jogará fora ao longo da vida. O objetivo é fazer o público enxergar o problema do descarte sem consciência de equipamentos eletrônicos, por isso a alternativa D (problematizar o descarte inconsequente).",
+  "erradas": {
+   "A": "O texto não fala em inovações de reciclagem para construir máquinas; a escultura usa o lixo como obra de denúncia.",
+   "B": "A obra é feita com resíduos, mas sua finalidade não é propor a criação de objetos a partir de aparelhos descartados, e sim chamar atenção para o volume de lixo.",
+   "C": "Não há divulgação de produtos eletrônicos sustentáveis; as perguntas finais convidam a repensar o consumo.",
+   "E": "O texto trata do descarte e do consumo excessivo, e não de escolhas entre tecnologias."
+  }
+ },
+ "2019-007": {
+  "certa": "A letra descreve uma relação com sinais de paixão (coração acelerado, arrepio) e, ao mesmo tempo, de violência (\"deixou marcas no meu corpo\", \"eu grito, eu quase morro\"). O duplo sentido faz o ouvinte perceber que dominação e agressão não são amor, como diz a alternativa C.",
+  "erradas": {
+   "A": "A letra não mostra submissão da mulher; ela usa a ambiguidade para alertar sobre o abuso.",
+   "B": "Não há \"apelo contínuo por socorro\" como estratégia; o título é uma pista, mas a ênfase está no duplo sentido.",
+   "D": "A letra não fala de denúncia nem de números da violência doméstica.",
+   "E": "A campanha busca o oposto: questionar o que é visto como normal em relações abusivas, e não naturalizá-lo."
+  }
+ },
+ "2019-008": {
+  "certa": "Gregson lista o que não havia: assalto, indícios da causa da morte, marcas de sangue, feridas, explicação para a entrada na casa. Ao descartar hipóteses (refutar possíveis causas), ele orienta e ajuda a investigação de Holmes, como indica a alternativa B.",
+  "erradas": {
+   "A": "Gregson convida Holmes a ir à casa e quer sua opinião; ele não quer ficar sozinho com a investigação.",
+   "C": "O local é citado no início, não pela sequência de frases negativas.",
+   "D": "Os enunciados negativos tratam do crime, e não do destinatário da carta.",
+   "E": "O vigia é apresentado antes e não é tratado como suspeito."
+  }
+ },
+ "2019-009": {
+  "certa": "O texto diz que o esporte telespetáculo é construído pela câmera, pela edição e pelos comentários, e que a \"experiência global do ser-atleta é modificada\". Ou seja, o espectador recebe uma versão distorcida da experiência de ser atleta, o que corresponde à alternativa A.",
+  "erradas": {
+   "B": "O texto fala da mediação feita pelas mídias, e não da interpretação própria dos espectadores.",
+   "C": "Os equipamentos de ponta são citados como recurso da linguagem audiovisual, mas a reflexão não se baseia neles.",
+   "D": "Segundo o texto, a mídia impõe uma concepção restrita (esforço máximo, vitória, dinheiro) e fragmenta o esporte, e não uma visão ampliada.",
+   "E": "O texto afirma que a forma é valorizada em relação ao conteúdo, e não que as duas se equiparem."
+  }
+ },
+ "2019-011": {
+  "certa": "O texto mostra que o arco e flecha e a lança, usados na caça e na defesa, foram estruturados como \"modalidade esportiva\" com regras e padronização. Assim, o encontro entre elementos tradicionais e modernos legitimou as práticas corporais indígenas como esporte (alternativa D).",
+  "erradas": {
+   "A": "O texto diz que as pinturas e adornos permanecem como elementos tradicionais, e que a padronização se refere às técnicas.",
+   "B": "Há convivência entre os dois tipos de elementos, e a regulamentação moderna tem papel central; não há sobreposição do tradicional.",
+   "C": "Ao contrário, a esportivização gerou semelhança entre as técnicas, e não individuação.",
+   "E": "O texto aponta que o sentido passa a ser \"único da competição\", ou seja, os significados próprios se perdem em parte."
+  }
+ },
+ "2019-013": {
+  "certa": "Pinote conta que foi futurista, foi tratado como maluco, ficou sem emprego e então \"reneguei tudo\" e voltou a ser passadista, optando por modelos consagrados. A ironia de Oswald de Andrade mostra um público conservador, que rejeita a vanguarda e prefere o já estabelecido (alternativa B).",
+  "erradas": {
+   "A": "Quadrinhas, acrósticos e sonetos são formas tradicionais; o preconceito é contra o futurismo, e não contra formas simples.",
+   "C": "Não se trata de preferir modelos eruditos por refinamento, e sim de rejeitar a novidade por conservadorismo.",
+   "D": "O futurismo era vanguarda europeia e o público o rejeita por conservadorismo, e não por nacionalismo.",
+   "E": "O trecho mostra rejeição ao novo, o oposto de aceitar diversos estilos."
+  }
+ },
+ "2019-014": {
+  "certa": "O poema retoma o tema tradicional da viagem e da ausência, mas mostra que quem fica também faz uma travessia: \"também a quem fica cabe uma paisagem nova\". A solidão da ausência leva a descobertas e rumos, o que a alternativa E resume.",
+  "erradas": {
+   "A": "A voz lírica não está apática; há inquietação, perguntas e \"alegria difícil da descoberta\".",
+   "B": "Há referência a um corpo estrangeiro, mas o poema não trata de fragmentação da identidade.",
+   "C": "O poema não nega o desejo nem o liga à culpa.",
+   "D": "O foco não é valorizar o passado: o texto fala de paisagem nova e de descoberta."
+  }
+ },
+ "2019-015": {
+  "certa": "O texto informa sobre a disponibilização de 44 mil imagens e explica passo a passo como acessar e baixar: categorias, busca, zoom, seta para download. Predomina a função referencial, que informa e descreve o modo de acesso (alternativa C).",
+  "erradas": {
+   "A": "A fala do historiador é apenas um trecho; o texto não é predominantemente subjetivo.",
+   "B": "O texto não tenta convencer o leitor a acessar as imagens, e sim informar.",
+   "D": "Há instruções, mas elas servem para informar o acesso, e não para estabelecer interlocução com apelo ao leitor (função conativa predominante).",
+   "E": "O texto cita a democratização da arte, mas não faz elogios nem exalta a arte."
+  }
+ },
+ "2019-016": {
+  "certa": "A crônica de Verissimo cria humor com uma sequência de fatos absurdos: baratas roubando máscaras, a cara de King Kong andando pelo chão, a agenda levada, mas em branco, e a ótica com balconista topless. A sequenciação narrativa que articula eventos absurdos é o que gera o efeito de humor (alternativa D).",
+  "erradas": {
+   "A": "Os hábitos do personagem aparecem, mas o humor vem do absurdo das situações, e não da segmentação de enunciados.",
+   "B": "A ordem dos constituintes da oração não é o principal recurso do humor.",
+   "C": "A estrutura em frases curtas ajuda o ritmo, mas o efeito cômico vem dos eventos narrados.",
+   "E": "O vocabulário não é redundante; ele é escolhido para criar a cena."
+  }
+ },
+ "2019-018": {
+  "certa": "O texto explica que o software livre é construído de forma colaborativa e entregue com código aberto, para ser aperfeiçoado por qualquer pessoa. Isso democratiza o acesso a produtos feitos coletivamente (alternativa A).",
+  "erradas": {
+   "B": "O texto não diz que o software livre complica os sistemas; ele fala de liberdade e colaboração.",
+   "C": "O foco não é capacitar mais gente para o uso de tecnologias.",
+   "D": "O texto fala de código aberto e de liberdade, e não de coleta de dados confidenciais.",
+   "E": "Os hackers são citados como desenvolvedores independentes, mas o texto não trata de sua inserção profissional."
+  }
+ },
+ "2019-019": {
+  "certa": "O texto alerta para a exposição parental exagerada: fotos e vídeos de filhos pequenos compartilhados sem que eles aprovem, o que pode constrangê-los depois e violar sua privacidade. O impacto destacado é o desrespeito à intimidade das crianças (alternativa E).",
+  "erradas": {
+   "A": "O texto trata da exposição da criança, e não da comunicação entre pais e filhos.",
+   "B": "Não se fala em desatenção dos pais quanto ao comportamento dos filhos na internet.",
+   "C": "O texto não aponta distanciamento entre pais e filhos.",
+   "D": "O texto cita a troca de experiências entre pais como motivo para usar as redes, mas o impacto que destaca é negativo."
+  }
+ },
+ "2019-020": {
+  "certa": "O DataViva oferece dados oficiais sobre exportações, economia, ocupações e perfil da população, acessíveis em poucos cliques. O texto destaca, então, a possibilidade de obter informações estratégicas (alternativa C).",
+  "erradas": {
+   "A": "O texto não trata de auditar ações do governo.",
+   "B": "A plataforma fornece dados, e não faz publicidade de entidades públicas.",
+   "D": "A plataforma não é apresentada como ambiente coletivo.",
+   "E": "O texto não trata da comunicação entre órgãos administrativos."
+  }
+ },
+ "2019-021": {
+  "certa": "No conto, a menina Ana Lúcia pergunta \"o que é desquitada?\" e a pergunta paralisa a cena. Isso mostra, pelo olhar da criança, o estigma social sobre a mulher desquitada, o que a alternativa D descreve.",
+  "erradas": {
+   "A": "A ausência do pai não é o ponto: a tensão vem da palavra e da reação da mãe.",
+   "B": "A mãe não reage de forma intempestiva; ela fica parada, com a tesoura no ar.",
+   "C": "Não há conflito entre o trabalho doméstico e a emancipação feminina no trecho.",
+   "E": "A menina não sente abandono; ela tem uma dúvida sobre o significado da palavra."
+  }
+ },
+ "2019-022": {
+  "certa": "O poema descreve a ouriça que se fecha e se eriça diante de quem chega de longe, mas se \"desouriça\" quando o outro chega perto: as molas do bote viram molas do abraço. A metáfora mostra uma firmeza que se transforma em brandura (alternativa A).",
+  "erradas": {
+   "B": "A atitude não termina em isolamento; ela se abre ao abraço.",
+   "C": "Não há inércia nem desejo platônico: a ouriça é ativa, agressiva e depois acolhedora.",
+   "D": "O poema não trata de irreverência cautelosa.",
+   "E": "A desconfiança inicial não termina em intolerância, mas em abertura."
+  }
+ },
+ "2019-024": {
+  "certa": "A ladainha é uma oração em que se repetem pedidos (\"piedade, Senhor\") a uma divindade. Na letra, a sequência é injuntiva: ela convoca o interlocutor a pedir piedade (\"Vamos pedir piedade\"), chamando-o à participação. É isso que aproxima a canção do gênero ladainha (alternativa C).",
+  "erradas": {
+   "A": "A letra não discorre sobre um tema de modo expositivo; ela faz pedidos.",
+   "B": "Não há cadeia de ações nem enredo, característica da sequência narrativa.",
+   "D": "Não se enumeram características de um personagem.",
+   "E": "Há crítica à \"gente careta e covarde\", mas a sequência dominante é o convite coletivo ao pedido, e não a construção de uma tese para convencer."
+  }
+ },
+ "2019-025": {
+  "certa": "O desfile da Unidos da Tijuca homenageou Luiz Gonzaga, o Rei do Baião: o samba (gênero do Carnaval carioca) foi combinado à cultura nordestina e ao baião. O evento marca, portanto, a inter-relação entre dois gêneros musicais brasileiros (alternativa B).",
+  "erradas": {
+   "A": "O texto não fala em primazia do samba, e sim em encontro entre as duas culturas.",
+   "C": "O enredo valoriza o Rei do Baião e a cultura nordestina, sem tratar de origens oligárquicas.",
+   "D": "A homenagem celebra um artista centenário, mas não propõe resgatar gêneros antigos.",
+   "E": "A criatividade é elogiada, porém o fato cultural que o texto destaca é a união de dois gêneros, e não só a criação de um samba-enredo."
+  }
+ },
+ "2019-027": {
+  "certa": "O texto diz que a saúde \"deve ser construída de forma individualizada ao longo de toda a vida\" e que a educação para a saúde envolve atitudes frente a hábitos alimentares, estresse, lazer e atividade física. O conjunto desses fatores forma hábitos saudáveis, como indica a alternativa C.",
+  "erradas": {
+   "A": "O lazer é só um dos fatores listados, e não o único.",
+   "B": "A alimentação é apenas um dos fatores citados.",
+   "D": "O texto fala de lidar com o estresse como uma das exigências ambientais, sem propor evitar ambientes estressores.",
+   "E": "A atividade física é um fator entre vários; a educação para a saúde envolve a interação deles."
+  }
+ },
+ "2019-028": {
+  "certa": "O narrador descreve a origem do subúrbio de forma exagerada e debochada: poeira, calçadas encardidas, ônibus \"sujando tudo de novo\", gente que reclama da pobreza. Esse retrato caricato de uma paisagem deteriorada é o sentido estético do texto (alternativa B).",
+  "erradas": {
+   "A": "O tom não é de exaltar a excentricidade dos bairros, e sim de retratar o cotidiano degradado com ironia.",
+   "C": "O texto cria uma origem mítica do bairro, sem tratar de fatos históricos reais dos subúrbios.",
+   "D": "Não há uma tipologia de personagens humanos, apenas a ideia de que o homem existe para varrer a poeira.",
+   "E": "As necessidades e urgências do cotidiano aparecem pouco; o destaque é a caricatura da paisagem."
+  }
+ },
+ "2019-029": {
+  "certa": "Lévy afirma que a rede é um \"instrumento de comunicação entre pessoas\", em que as comunidades auxiliam seus membros a aprender. Os dados são só a matéria-prima de um processo social vivo, logo a circulação de saberes depende da contribuição dos usuários (alternativa C).",
+  "erradas": {
+   "A": "O texto cita o tempo necessário para aprender, mas não coloca a otimização do tempo como condição da circulação de saberes.",
+   "B": "A confiabilidade dos sites não é discutida.",
+   "D": "O texto diz que os dados são apenas matéria-prima; a quantidade de informação não garante saber.",
+   "E": "A circulação depende de todos os membros das comunidades, e não apenas de intelectuais."
+  }
+ },
+ "2019-030": {
+  "certa": "O Texto I compara a língua a camadas de sedimentos que guardam marcas das eras passadas, e o Texto II mostra a influência do árabe e do latim. Juntos, apontam que o português resulta da influência de outras línguas do passado e carrega essas marcas em suas camadas (alternativa C).",
+  "erradas": {
+   "A": "O Texto II diz que parecer com o árabe era acusação de rudeza, ou seja, a presença de outras línguas era vista de forma negativa.",
+   "B": "O Texto I afirma que só é possível consultar o que as línguas contêm em parte, e não com precisão.",
+   "D": "Os textos não tratam de formação escolar ou da memória dos falantes brasileiros.",
+   "E": "O texto fala em sedimentação em períodos sem começo ou fim definido, e não em influência uniforme."
+  }
+ },
+ "2019-032": {
+  "certa": "Para convencer o leitor da importância do exercício, o autor afirma que o hormônio não substitui os benefícios da atividade física: existem muitos outros hormônios musculares liberados no exercício, ainda não descobertos, e a irisina não fortalece os músculos. A estratégia é divulgar que o exercício produz outros hormônios e traz outros benefícios (alternativa E).",
+  "erradas": {
+   "A": "O texto não afirma que a falta de exercício não emagrece e causa doenças.",
+   "B": "A transformação da gordura branca em marrom é efeito da irisina, e não um argumento a favor do exercício.",
+   "C": "O texto diz que a irisina foi isolada em laboratório e aplicada em ratos, e não que só seria produzida com exercício; além disso, isso não seria o argumento central.",
+   "D": "Não se afirma que o exercício serve para afinar a silhueta eliminando gordura branca."
+  }
+ },
+ "2019-033": {
+  "certa": "No poema em prosa, as imagens do frio, da bruma e das cidades de gelo vêm em ritmo repetitivo e sonoro (\"inverno! inverno! inverno!\"). A linguagem impressionista cria plasticidade verbal com cadência melódica, como descreve a alternativa E.",
+  "erradas": {
+   "A": "Os vocábulos são usados com precisão para criar imagens, e não de forma imprecisa.",
+   "B": "A dramaticidade existe, mas o que o enunciado pede é a característica da prosa poética impressionista, que é a plasticidade e a musicalidade.",
+   "C": "A subjetividade está presente, mas a alternativa a opõe à verossimilhança, o que não é um traço da prosa poética de Pompeia.",
+   "D": "O texto não busca persuadir; ele descreve sensações."
+  }
+ },
+ "2019-034": {
+  "certa": "O texto mostra que os nomes dos meses vêm do calendário romano (Martius, Aprilis, Maius etc.), e as formas do português derivam deles. Isso reflete a origem latina da nossa língua (alternativa A).",
+  "erradas": {
+   "B": "Os matemáticos do Egito ajudaram com o cálculo do calendário solar, mas os nomes são latinos.",
+   "C": "Cleópatra apenas emprestou matemáticos; o calendário foi estabelecido por Júlio César.",
+   "D": "Júlio César reformou o calendário, não a norma da língua.",
+   "E": "O calendário romano foi alterado depois, por Numa Pompílio e Júlio César, e não padronizado antes da fundação de Roma."
+  }
+ },
+ "2019-035": {
+  "certa": "A busca excessiva pela magreza e a insatisfação com o corpo levam a distúrbios ligados à imagem corporal e à alimentação, como a anorexia e a bulimia (alternativa A).",
+  "erradas": {
+   "B": "Ortorexia e vigorexia são obsessões com alimentação saudável e com ganho de massa muscular, ligadas a outros padrões.",
+   "C": "Ansiedade e depressão são transtornos mentais, mas não são distúrbios diretamente associados à imagem do corpo, como pede o enunciado.",
+   "D": "Sobrepeso e fobia social não decorrem diretamente da preocupação excessiva com o peso.",
+   "E": "Sedentarismo e obesidade são o oposto do cuidado excessivo com o peso."
+  }
+ },
+ "2019-037": {
+  "certa": "O texto conta que adolescentes se organizaram pelo Twitter para não comprar na cantina, e o movimento foi parar na TV. As redes sociais aparecem como meio de agregar e empoderar grupos que se unem por causas próprias ou mudanças sociais (alternativa D).",
+  "erradas": {
+   "A": "O texto não trata de discriminação sofrida pelas redes sociais.",
+   "B": "O texto mostra o contrário: o movimento teve repercussão na TV e em outras páginas.",
+   "C": "O movimento foi descrito como pacífico.",
+   "E": "Os adolescentes usaram as redes de modo organizado e eficaz, e não inadequado ou imaturo."
+  }
+ },
+ "2019-038": {
+  "certa": "O conto foi gerado por um computador com roteiro dos cientistas: estruturalmente impecável, mas com personagens pouco descritos. O êxito e a limitação mostram a diferença entre a estrutura e a criatividade da linguagem humana (alternativa D).",
+  "erradas": {
+   "A": "Os personagens não foram bem descritos, o que mostra diferenças, e não indistinção.",
+   "B": "O texto fala em desenvolver a criatividade da IA e em bancos de dados, mas não conclui que a base criada pelos cientistas deva ser reformulada.",
+   "C": "Os cientistas selecionaram palavras e definiram o roteiro, então a autonomia da máquina foi limitada.",
+   "E": "O texto aponta falhas, então não demonstra qualidade artística plena."
+  }
+ },
+ "2019-039": {
+  "certa": "A voz lírica enumera o que sentiu e perdeu (\"tudo isso te devo\") com tom seco, sem apelo sentimental: faz um balanço desprendido de seus estados passados. Isso revela um amadurecimento revestido de ironia e desapego (alternativa B).",
+  "erradas": {
+   "A": "O eu lírico lembra e enumera, e não se preocupa em apagar a memória do amor.",
+   "C": "As imagens são de perda e silêncio, e não um mosaico de alegrias.",
+   "D": "Não há desejo reprimido nem delírio no poema.",
+   "E": "A repetição de \"devo\" não é arrependimento, mas constatação desprendida."
+  }
+ },
+ "2019-040": {
+  "certa": "O Manifesto Futurista exalta a velocidade, a máquina, o movimento agressivo, o automóvel de corrida. Portanto, valoriza a inovação tecnológica (alternativa B).",
+  "erradas": {
+   "A": "O manifesto rejeita a imobilidade e exalta o movimento.",
+   "C": "Ele quer a velocidade e o movimento, e não a suspensão do tempo.",
+   "D": "O automóvel é dito mais bonito que a Vitória de Samotrácia, uma escultura helenística: ele rejeita esse passado.",
+   "E": "O Futurismo propõe romper com as tradições."
+  }
+ },
+ "2019-041": {
+  "certa": "A lesma sonha em ser um escargot, termo elegante, e prefere terminar a vida numa mesa fina a continuar desprezada. A alegoria representa o anseio de realizar expectativas de natureza utópica (alternativa C).",
+  "erradas": {
+   "A": "Ela quer superar sua condição, e não rejeitar metas.",
+   "B": "Ela não deseja voltar a uma felicidade passada, mas alcançar uma condição que nunca teve.",
+   "D": "Ela admira o escargot e quer ser como ele, e não rivalizar com ele.",
+   "E": "Ela vive insatisfeita no presente e sonha com outro destino, e não com valorizar o presente."
+  }
+ },
+ "2019-042": {
+  "certa": "O autor simula conversar com o leitor ao introduzir a explicação com uma pergunta retórica: \"Por que os humanos não são tão eficientes como órgãos sensoriais como os das aranhas?\" A resposta vem em seguida, com as causas. A estratégia é a pergunta retórica (alternativa D).",
+  "erradas": {
+   "A": "Revelar que o sentido-aranha funciona como sexto sentido é conteúdo do texto, e não simulação de diálogo.",
+   "B": "A palavra \"querido\" expressa afeto, mas não é uma interlocução direta com o leitor.",
+   "C": "A comparação organiza o texto, mas não simula conversa.",
+   "E": "Os números comprovam as diferenças, mas dados não criam diálogo com o leitor."
+  }
+ },
+ "2019-044": {
+  "certa": "No poema de Mauro Mota, as formas padrão de verbos e pronomes (\"tomas\", \"deixas\", \"teu\", \"te\") marcam sempre a segunda pessoa e distinguem claramente a quem se refere cada ação e cada elemento. Esse uso está a serviço do projeto poético e ajuda a distinguir os referentes (alternativa E).",
+  "erradas": {
+   "A": "O ambiente é dinâmico: sirene, apito, bote, fábrica em movimento.",
+   "B": "Os verbos e pronomes não servem para descrever o físico do personagem.",
+   "C": "A função dos verbos não é acrescentar modificações às ações; modificadores seriam advérbios e adjetivos.",
+   "D": "Os verbos estão predominantemente no presente, sem alternância de tempos."
+  }
+ },
+ "2019-045": {
+  "certa": "A letra de Villa-Lobos usa formas como \"cantadô\", \"amô\", \"querê\", \"alembrá\" e \"prá\", que reproduzem a fala popular. A exaltação do sertão se apoia, portanto, na variedade popular da língua portuguesa (alternativa B).",
+  "erradas": {
+   "A": "Há pronomes (meu, tua), mas o recurso que caracteriza a ambientação é a variedade popular.",
+   "C": "O irerê é uma ave e é citado, mas não há referência ao conjunto da fauna nordestina.",
+   "D": "Menciona-se viola e flauta, que não são instrumentos eruditos, e o texto fala do campo linguístico.",
+   "E": "Não há palavras exclusivas do vocabulário nordestino; o que marca a fala é a pronúncia popular."
+  }
+ },
+ "2019-046": {
+  "certa": "O Antropoceno é a ideia de que a ação humana passou a transformar o planeta como as forças naturais. Os processos modificados pelos humanos (desmatamento, urbanização, erosão, poluição de rios e atmosfera) são exógenos, isto é, atuam na superfície terrestre (alternativa B).",
+  "erradas": {
+   "A": "Processos eruptivos são vulcânicos e vêm do interior da Terra.",
+   "C": "Processos tectônicos são movimentos das placas, fora da capacidade humana de influência.",
+   "D": "Processos magmáticos ocorrem no interior da crosta e do manto.",
+   "E": "O metamorfismo transforma rochas em grandes profundidades por pressão e temperatura."
+  }
+ },
+ "2019-048": {
+  "certa": "Humboldt via os habitantes como \"mendigos sentados sobre um saco de ouro\", ou seja, a natureza como recurso a ser aproveitado e dominado pelo ser humano. Essa visão da natureza como objeto separado do sujeito reflete o racionalismo cartesiano (alternativa C).",
+  "erradas": {
+   "A": "O relativismo cognitivo defende que o conhecimento depende do contexto, o que não aparece no texto.",
+   "B": "O materialismo dialético trata de contradições históricas e sociais, e não da relação instrumental com a natureza descrita.",
+   "D": "O pluralismo epistemológico valoriza diversos saberes, o contrário do olhar descrito no texto.",
+   "E": "O existencialismo fenomenológico foca na experiência vivida e no sentido da existência, e não na natureza como recurso."
+  }
+ },
+ "2019-049": {
+  "certa": "Para manter a produtividade sem usar os inseticidas que matam as abelhas polinizadoras, a solução é o controle biológico de pragas, com predadores e parasitas naturais. Ele reduz o uso de agrotóxicos e preserva os polinizadores (alternativa C).",
+  "erradas": {
+   "A": "A mata ciliar protege rios e solo, mas não resolve o problema das pragas nem do envenenamento das abelhas.",
+   "B": "A adubação química não substitui o controle de pragas e pode piorar o impacto ambiental.",
+   "D": "A monocultura tende a aumentar as pragas e o uso de agrotóxicos.",
+   "E": "Intensificar a drenagem de várzeas degrada o ambiente e não evita o uso de inseticidas."
+  }
+ },
+ "2019-050": {
+  "certa": "Derrida defende acolher quem chega antes de impor condições, reconhecendo seu nome próprio e evitando que a pergunta vire inquérito. No contexto migratório, isso exige incorporar a alteridade: aceitar o outro como diferente, sem o anular (alternativa C).",
+  "erradas": {
+   "A": "A hospitalidade reconhece o nome próprio e a singularidade do outro, e não anula a diferença.",
+   "B": "Cristalizar a biografia seria prender o outro a uma ficha, algo que Derrida critica.",
+   "D": "Ele propõe dirigir-se ao outro e chamá-lo pelo nome, o oposto de suprimir a comunicação.",
+   "E": "Verificar a proveniência é a condição, o inquérito e o controle de fronteiras que ele diz que a hospitalidade evita."
+  }
+ },
+ "2019-051": {
+  "certa": "Abbagnano define o Direito como a técnica da coexistência humana, formada por regras sobre o comportamento recíproco dos homens. O sentido geral é a regulação do convívio social (alternativa B).",
+  "erradas": {
+   "A": "A aplicação de códigos é um modo de concretizar o Direito, mas não é seu sentido geral e fundamental.",
+   "C": "O texto não trata de legitimar decisões políticas.",
+   "D": "Os conflitos econômicos são apenas um tipo de situação regulada, e não o sentido geral.",
+   "E": "A autoridade constituída não é o foco; o Direito regula o comportamento entre as pessoas."
+  }
+ },
+ "2019-052": {
+  "certa": "A mandioca, processada pelos nativos, foi aperfeiçoada na colonização, tornou-se comum em todo o território e chegou aos mercados africanos. Esse movimento de um alimento pelo Atlântico exemplifica a difusão de hábitos alimentares (alternativa A).",
+  "erradas": {
+   "B": "O texto fala de produção e comércio de farinha, e não de rituais festivos.",
+   "C": "A farinha é produto do saber nativo, mas o texto trata da difusão do alimento, e não da ampliação de saberes autóctones em si.",
+   "D": "Não há referência a costumes guerreiros.",
+   "E": "O texto não trata de oferendas religiosas."
+  }
+ },
+ "2019-053": {
+  "certa": "Brasil, Alemanha, Japão e Índia são potências com forte atuação em suas regiões, e usam esse protagonismo regional para justificar a pretensão de ocupar cadeiras permanentes no Conselho de Segurança (alternativa B).",
+  "erradas": {
+   "A": "Alemanha e Japão têm áreas pequenas; extensão territorial não é característica comum.",
+   "C": "O investimento em tecnologia militar não é critério comum aos quatro.",
+   "D": "Brasil e Alemanha não possuem armas nucleares, e o tema não é justificativa do grupo.",
+   "E": "A disponibilidade de recursos minerais não é característica comum a todos."
+  }
+ },
+ "2019-054": {
+  "certa": "O texto descreve incêndios de celeiros e pilhas de cereais na Inglaterra do século XIX, a revolta do Capitão Swing. Ela foi reação ao cercamento e à expropriação das terras comunais e à mecanização no campo (alternativa B).",
+  "erradas": {
+   "A": "Os camponeses sofriam com o aumento da propriedade privada, e não com restrição dela.",
+   "C": "Não houve estatização fundiária; ocorreu o avanço da propriedade privada.",
+   "D": "A produção agrícola de mercado cresceu com os cercamentos.",
+   "E": "A revolta não foi causada pela proibição de atividades artesanais."
+  }
+ },
+ "2019-055": {
+  "certa": "Maria Quitéria precisou se vestir de homem e mudar de nome para lutar, pois mulheres eram proibidas nos batalhões. O caso evidencia a rigidez hierárquica da estrutura social, que impunha papéis fixos a homens e mulheres (alternativa A).",
+  "erradas": {
+   "B": "O caso é excepcional e feito às escondidas, o que mostra a ausência de inserção feminina nos ofícios militares.",
+   "C": "Ela lutava contra os portugueses, e o texto não fala de adesão de imigrantes portugueses.",
+   "D": "A proibição mostra rigidez, e não flexibilidade administrativa.",
+   "E": "A guerra na Bahia foi contra tropas portuguesas, ou seja, não houve receptividade metropolitana."
+  }
+ },
+ "2019-056": {
+  "certa": "O texto diz que a indústria se dispersa pelo espaço, mas o ganho dos países em desenvolvimento foi assimétrico, concentrado no leste asiático. A dispersão espacial das plantas se combina com a concentração econômica, nas empresas e em poucos países (alternativa D).",
+  "erradas": {
+   "A": "As grandes empresas mantêm o controle tecnológico; os países receptores não ganham autonomia.",
+   "B": "O texto não trata de crises de abastecimento.",
+   "C": "A dispersão é feita pelas empresas, sem ligação com descentralização política.",
+   "E": "Os lucros ficam principalmente com os grandes grupos transnacionais."
+  }
+ },
+ "2019-058": {
+  "certa": "Agostinho afirma que o livre-arbítrio foi dado para agir corretamente. Se o homem o usa para pecar, é punido por não ter exercido de modo suficiente sua autonomia moral, que o permitiria escolher o bem. A punição divina se fundamenta, assim, na insuficiência da autonomia moral (alternativa B).",
+  "erradas": {
+   "A": "O texto não trata do celibato.",
+   "C": "A discussão não é sobre desapego, mas sobre vontade livre e responsabilidade.",
+   "D": "Não há referência a práticas de sacrifício.",
+   "E": "O texto não cita o Antigo Testamento como fundamento da punição."
+  }
+ },
+ "2019-060": {
+  "certa": "Le Goff descreve a cidade medieval como lugar de produção e de trocas, mas também \"espaço fechado com muralhas, portas e torres\". A ampliação das atividades urbanas vem junto com a permanência de elementos arquitetônicos de proteção (alternativa E).",
+  "erradas": {
+   "A": "O texto não trata da emancipação em relação ao poder da realeza.",
+   "B": "O texto não menciona a usura praticada por religiosos.",
+   "C": "O texto diz que a cidade concentra abundância em meio a regiões pouco povoadas, ou seja, ela depende do campo.",
+   "D": "O texto cita o artesanato e o comércio, sem tratar da superação do sistema corporativo."
+  }
+ },
+ "2019-061": {
+  "certa": "A canção idealiza a natureza (o rio como oração, consolo e herança afetiva), enquanto o texto sobre ecoturismo mostra a natureza transformada em espetáculo para consumo. São, respectivamente, a idealização e a mercantilização (alternativa E).",
+  "erradas": {
+   "A": "A música romantiza, mas não explora a natureza; o primeiro termo não corresponde ao Texto I.",
+   "B": "A canção não sacraliza em sentido religioso; o Texto II fala em comercializar a natureza, e não em profaná-la.",
+   "C": "O Texto I não trata de preservação.",
+   "D": "Os textos não tratam de segregação ou democratização da natureza."
+  }
+ },
+ "2019-062": {
+  "certa": "Em uma sociedade laica e democrática, o Estado assegura que cada pessoa possa professar sua fé sem ser agredida ou discriminada. Agressões contra adeptos de religiões de matrizes africanas restringem a liberdade de credo (alternativa E).",
+  "erradas": {
+   "A": "Garantir expressões multiculturais é compatível com a sociedade democrática.",
+   "B": "Promover a diversidade de etnias não é incompatível com a democracia.",
+   "C": "A discriminação não falseia dogmas teológicos, e a laicidade trata de direitos.",
+   "D": "O sincretismo não é problema para a laicidade e não é o que o texto discute."
+  }
+ },
+ "2019-063": {
+  "certa": "O Texto I descreve o mercantilismo: centralização econômica, protecionismo e expansão ultramarina, com monopólios controlados pelo rei. O Texto II, de Adam Smith, critica as interferências e práticas exclusivistas e defende a lei natural do mercado. A oposição é entre defesa dos monopólios régios e apoio à livre concorrência (alternativa B).",
+  "erradas": {
+   "A": "O mercantilismo defendia o pacto colonial, mas Smith combate os monopólios, e não a livre-iniciativa.",
+   "C": "A livre navegação não é o alvo central do Texto II.",
+   "D": "O mercantilismo valorizava a acumulação metalista, e não o abandono dela.",
+   "E": "O mercantilismo adotava tarifas alfandegárias protecionistas, e não as eliminava."
+  }
+ },
+ "2019-064": {
+  "certa": "Newton observa a maçã cair, descarta explicações simples (pássaro, esquilo) e formula uma hipótese: deve haver uma força subjacente. O texto mostra que a ciência moderna se faz propondo hipóteses a partir da observação, em contraponto à ideia de uma inspiração idealizada (alternativa C).",
+  "erradas": {
+   "A": "A falsificação de teses é um critério posterior (Popper) e não aparece no trecho.",
+   "B": "A observação é o ponto de partida do raciocínio; o texto não a nega.",
+   "D": "A contemplação passiva é o oposto do que Newton faz ao investigar a causa.",
+   "E": "A universalização das conclusões vem depois, na formulação da lei, e não é o ponto mostrado no trecho."
+  }
+ },
+ "2019-065": {
+  "certa": "Maquiavel separa a moral individual (dizer a verdade a qualquer custo) da conduta do governante, que deve considerar as consequências para o bem comum, inclusive mentindo. A inovação está na distinção entre a idealidade e a efetividade da moral (alternativa A).",
+  "erradas": {
+   "B": "O texto não fala de liberdade.",
+   "C": "A distinção não é entre legalidade e legitimidade do governante.",
+   "D": "O texto não trata de teoria da verdade em termos de verificabilidade.",
+   "E": "O texto não discute a teoria do conhecimento."
+  }
+ },
+ "2019-066": {
+  "certa": "O SUS é descrito como política para todos, que protege os cidadãos e reduz desigualdades. As características são o universalismo (acesso de todos) e o igualitarismo (redução das desigualdades), como diz a alternativa C.",
+  "erradas": {
+   "A": "Paternalismo e filantropia apresentam a saúde como favor, e o texto fala em direito e cidadania.",
+   "B": "Liberalismo e meritocracia contrariam a ideia de política para todos.",
+   "D": "O texto não trata de nacionalismo nem de individualismo, que se opõe ao caráter coletivo do SUS.",
+   "E": "O texto não fala de revolucionarismo."
+  }
+ },
+ "2019-067": {
+  "certa": "Os textos questionam a explicação religiosa do mundo: Descartes busca Deus pela razão, e Rachels pergunta se há boa razão para crer no Criador. A modernidade é construída com o modelo centrado na razão humana (alternativa A).",
+  "erradas": {
+   "B": "A explicação mitológica é característica pré-moderna e não é defendida nos textos.",
+   "C": "A ordenação imanentista dispensa a transcendência, e Descartes contempla Deus.",
+   "D": "Os textos não tratam de contratualismo.",
+   "E": "Os textos não tratam de etnocentrismo."
+  }
+ },
+ "2019-068": {
+  "certa": "Mumbuca abastece a cidade com mantimentos e feira, e Campinho da Independência vende artesanato e comida a turistas. As estratégias territoriais buscam garantir a inserção econômica regional dessas comunidades (alternativa C).",
+  "erradas": {
+   "A": "O texto não fala em perdão de dívidas fiscais.",
+   "B": "As comunidades vendem para fora, e não buscam reserva de mercado local.",
+   "D": "Não há protecionismo tarifário em feiras e artesanato.",
+   "E": "As comunidades produzem e vendem, e o texto não trata de benefícios assistenciais."
+  }
+ },
+ "2019-069": {
+  "certa": "A vila surgiu em 2000 por invasão e ocupação de terras por camponeses, madeireiros e pecuaristas, sem planejamento do governo. É a expansão de frentes pioneiras na Amazônia (alternativa E).",
+  "erradas": {
+   "A": "O texto não trata de mecanização do processo produtivo na origem do povoado.",
+   "B": "A colonização dirigida é planejada pelo Estado, e aqui houve invasão à revelia do ordenamento.",
+   "C": "Não houve reforma agrária, e sim ocupação irregular.",
+   "D": "O povoado nasce na área rural, e não por expansão de franjas urbanas."
+  }
+ },
+ "2019-070": {
+  "certa": "O texto critica o corpo magro como ideal e o gordo como doente e estigmatizado, e lembra que é possível ser gordo e saudável. Assim, contesta os estereótipos consolidados sobre saúde e corpo (alternativa E).",
+  "erradas": {
+   "A": "O culto à magreza é atual, e não uma estética antiga.",
+   "B": "O texto não trata de crendices populares.",
+   "C": "O texto questiona a visão da mídia, e não a propagação de conclusões científicas.",
+   "D": "O texto não reitera os discursos hegemônicos, e sim os critica."
+  }
+ },
+ "2019-071": {
+  "certa": "Harvey afirma que as crises capitalistas levam a uma nova racionalização do processo de acumulação. Para os trabalhadores serem incluídos no novo processo produtivo, a condição é a qualificação profissional (alternativa D).",
+  "erradas": {
+   "A": "A associação sindical não é condição de entrada no novo processo produtivo.",
+   "B": "A participação eleitoral não está ligada à inclusão produtiva.",
+   "C": "A migração internacional não é a condição apontada.",
+   "E": "A regulamentação funcional não é a condição descrita; o novo processo exige novas habilidades."
+  }
+ },
+ "2019-072": {
+  "certa": "A Constituição de 1824 previa eleição em dois graus (cidadãos ativos escolhem eleitores, que escolhem os representantes), ou seja, voto indireto. E excluía quem não tivesse renda mínima, o que é o critério censitário (alternativa B).",
+  "erradas": {
+   "A": "Não havia sigilo individual do voto, e a representação não era popular, já que muitos eram excluídos.",
+   "C": "Havia restrições à participação, e não abertura política.",
+   "D": "O texto não trata de partidos ou supervisão estatal.",
+   "E": "O Império tinha regime monárquico com Poder Moderador, e o texto trata de eleições, não de sistema parlamentar."
+  }
+ },
+ "2019-073": {
+  "certa": "A Igreja adotou as fogueiras do solstício, festa pagã, associando-as a São João para fortalecer sua doutrina. É a apropriação de cerimônias seculares (alternativa C).",
+  "erradas": {
+   "A": "Ato ecumênico reúne diferentes religiões, o que não é descrito.",
+   "B": "O texto não trata de orientações bíblicas.",
+   "D": "O texto não fala em retomar ensinamentos apostólicos.",
+   "E": "As práticas absorvidas eram festas populares tradicionais, e não rituais fundamentalistas."
+  }
+ },
+ "2019-074": {
+  "certa": "Foucault diz que não existe um sujeito universal e fundador: o sujeito se constitui por práticas, regras e estilos do meio cultural. A subjetivação é, então, contingencial e se processa nas interações sociais (alternativa C).",
+  "erradas": {
+   "A": "O texto não reduz a subjetivação a preceitos jurídicos.",
+   "B": "Ele rejeita um sujeito universal baseado em pressupostos lógicos.",
+   "D": "Não há referência a princípios religiosos ou transcendentes.",
+   "E": "Foucault nega justamente a ideia de um sujeito essencial."
+  }
+ },
+ "2019-075": {
+  "certa": "Bacon fala em arrancar os segredos da natureza sob \"tortura\" experimental, e o Texto II mostra o ser humano desintegrado do todo, agindo de forma desarmônica. Ambos revelam a objetificação do espaço físico, tratado como objeto a ser dominado (alternativa A).",
+  "erradas": {
+   "B": "Os textos não retomam o criacionismo.",
+   "C": "Não se trata de recuperar um legado ancestral.",
+   "D": "O Texto II critica os efeitos da ação humana, sem afirmar a infalibilidade do método científico.",
+   "E": "A cosmovisão holística é a visão que o Texto II sugere estar perdida, e não a que se formou."
+  }
+ },
+ "2019-076": {
+  "certa": "Arendt analisa os campos de concentração como lugares tratados como irreais, o que leva à aceitação do extermínio como normal. A crítica se dirige à naturalização da segregação humana, que fundamenta projetos biopolíticos (alternativa D).",
+  "erradas": {
+   "A": "O texto não trata de ideário nacional que justifique desigualdades sociais.",
+   "B": "A alienação ideológica não é o foco do trecho.",
+   "C": "A cosmologia religiosa não é o fundamento descrito.",
+   "E": "O texto fala de segregação e extermínio, e não de enquadramento cultural que favoreça punições."
+  }
+ },
+ "2019-078": {
+  "certa": "Para Kant, a lei moral está dentro de nós (interioridade da norma) e o céu estrelado está fora, sobre nós (o mundo dos fenômenos). Fontela inverte: a lei \"cobrindo-me\" e o céu \"dentro de mim\". A inversão atinge a interioridade da norma e a fenomenalidade do mundo (alternativa E).",
+  "erradas": {
+   "A": "A liberdade e a obrigação da ação não são os termos invertidos no poema.",
+   "B": "O juízo a priori não aparece como ideia invertida.",
+   "C": "A boa vontade e a crítica da metafísica não são trocadas na releitura.",
+   "D": "A autoridade da razão e a dispensa do empírico não são os elementos que o poema inverte."
+  }
+ },
+ "2019-079": {
+  "certa": "Nas cidades-estado antigas, a cidadania plena era restrita: pequena nas aristocracias e oligarquias e maior nas democracias. O critério usual era o controle da terra, isto é, ser proprietário (alternativa A).",
+  "erradas": {
+   "B": "A liberdade de culto não definia a cidadania.",
+   "C": "Mulheres eram excluídas, e não havia igualdade de gênero.",
+   "D": "Os militares não eram excluídos; em muitas cidades, eram cidadãos.",
+   "E": "Não se exigia alfabetização para participar da política."
+  }
+ },
+ "2019-080": {
+  "certa": "Carvalho afirma que, na Revolta da Vacina, o povo defendia \"valores e direitos considerados acima da intervenção do Estado\" e não reivindicava participação política. A ação popular questionava o arbítrio governamental, ou seja, a imposição autoritária da vacinação obrigatória e das reformas (alternativa D).",
+  "erradas": {
+   "A": "A revolta não teve como causa a alta de preços.",
+   "B": "A política clientelista não é o alvo apontado pelo texto.",
+   "C": "As reformas urbanas contribuíram para o descontentamento, mas o texto destaca o questionamento da intervenção arbitrária do Estado, e não as reformas em si.",
+   "E": "As práticas eleitorais não foram questionadas; o texto diz que o povo não reivindicava participação política."
+  }
+ },
+ "2019-081": {
+  "certa": "O aumento do número de escravos recém-chegados ao Rio a partir da segunda metade do século XVIII está ligado à mineração em Minas Gerais, para onde o Rio era o principal porto. A mudança do tráfico se relaciona com a extração de metais preciosos (alternativa B).",
+  "erradas": {
+   "A": "A coleta das drogas do sertão ocorreu principalmente na Amazônia, com mão de obra indígena.",
+   "C": "A pecuária extensiva usava pouca mão de obra escrava e não explica a mudança.",
+   "D": "A extração de madeira no litoral foi importante no início da colonização.",
+   "E": "O fumo ligou-se sobretudo à Bahia, onde o número de escravos se estabilizou."
+  }
+ },
+ "2019-082": {
+  "certa": "O texto usa imagens simbólicas (\"novo Tempo\", \"Terra de sol, Terra de luz\") para convocar o povo à construção de Brasília, e mostra trabalhadores de diversos cantos do país chegando em paus-de-arara: migração inter-regional (alternativa A).",
+  "erradas": {
+   "B": "Não há organização sindical no trecho.",
+   "C": "O texto não trata de segurança territorial nem de estabilidade financeira.",
+   "D": "Não há referência a partidos; o consenso partidário não é o tema.",
+   "E": "O texto não trata de democracia ou eficácia dos transportes; os migrantes chegam em meios precários."
+  }
+ },
+ "2019-083": {
+  "certa": "O papa critica a \"globalização da exclusão e da indiferença\" e propõe a \"globalização da esperança\", nascida entre os pobres. A crítica é à disparidade econômica entre ricos e pobres no mundo globalizado (alternativa D).",
+  "erradas": {
+   "A": "O texto não trata de liberdade política.",
+   "B": "A mobilidade humana não é o alvo da crítica.",
+   "C": "A conectividade cultural não é o tema.",
+   "E": "A complementaridade comercial não é criticada; o foco é a exclusão dos pobres."
+  }
+ },
+ "2019-084": {
+  "certa": "A Declaração Universal dos Direitos Humanos afirmou, em escala mundial, o papel dos direitos humanos na convivência coletiva. Ela introduziu a defesa dos grupos vulneráveis nas relações internacionais (alternativa B).",
+  "erradas": {
+   "A": "A declaração não superou a soberania dos Estados, que continua sendo base das relações internacionais.",
+   "C": "O texto não afirma redução da truculência belicista.",
+   "D": "A declaração não gera impunidade; ela dá base à responsabilização por violações.",
+   "E": "Não há referência a inibir choques civilizacionais."
+  }
+ },
+ "2019-086": {
+  "certa": "Os ingleses, sem acesso às riquezas americanas por vias legais, usaram a pirataria apoiada pela rainha para saquear o ouro espanhol e conquistar as riquezas dos territórios americanos (alternativa B).",
+  "erradas": {
+   "A": "O texto não trata de restabelecer o crescimento da economia mercantil.",
+   "C": "A pirataria era ilegal em princípio e não legalizava a ocupação de possessões ibéricas.",
+   "D": "A tática atacava a Espanha, e não buscava adesão das potências europeias.",
+   "E": "O texto não aborda o fortalecimento das rotas de comércio."
+  }
+ },
+ "2019-087": {
+  "certa": "O texto destaca parcerias inéditas entre o Ministério do Trabalho e outros órgãos (Defesa, Exército, Ibama, ICMBio) nas ações fiscais. A estratégia é articular os órgãos públicos (alternativa A).",
+  "erradas": {
+   "B": "Não se fala em pressionar o Poder Legislativo.",
+   "C": "Não se defende ampliar a emissão de multas.",
+   "D": "Não há proposta de limitar a autonomia das empresas.",
+   "E": "O texto não trata de financiar pesquisas acadêmicas."
+  }
+ },
+ "2019-088": {
+  "certa": "O bônus demográfico ocorre quando há proporcionalmente muita gente em idade ativa. Para aproveitá-lo, o Estado deve estimular a qualificação da mão de obra, aumentando a produtividade desse grupo (alternativa C).",
+  "erradas": {
+   "A": "Atrair imigrantes não é a medida central para aproveitar a estrutura etária existente.",
+   "B": "Elevar a carga tributária não favorece o crescimento nem aproveita o bônus.",
+   "D": "Admitir exilados políticos não tem relação com o tema.",
+   "E": "Conceder aposentadorias beneficia a população idosa, e não aproveita o bônus."
+  }
+ },
+ "2019-089": {
+  "certa": "A noite prolongada de dois meses em Utqiagvik, no Alasca, acontece por causa da alta latitude. Perto do polo, o eixo inclinado da Terra mantém a região sem receber luz solar direta no inverno (alternativa D).",
+  "erradas": {
+   "A": "A continentalidade afeta amplitude térmica e umidade, e não a duração do dia.",
+   "B": "A maritimidade influencia a temperatura e as chuvas, mas não a duração da luz.",
+   "C": "A longitude determina o fuso horário, não a duração da noite.",
+   "E": "A altitude influencia a temperatura, e não a duração do dia."
+  }
+ },
+ "2019-090": {
+  "certa": "O texto afirma que a fome não se deve à falta de alimentos, pois há condições materiais para resolvê-la. Portanto, sua dimensão política está ligada ao padrão de distribuição de renda, que impede muitos de comprar comida (alternativa B).",
+  "erradas": {
+   "A": "O problema não é a produtividade, já que há alimentos suficientes.",
+   "C": "O texto não aponta dificuldade de armazenamento.",
+   "D": "O crescimento populacional não explica a fome, pois a produção basta.",
+   "E": "O custo de escoamento não é a causa apontada."
+  }
+ },
+ "2019-005-en": {
+  "certa": "No cartum, os alunos recebem livros impressos no \"Back to school\", e um deles cochicha: \"How do you turn this thing on?\". A graça está em ele tratar o livro como um aparelho eletrônico, pois não sabe como usar um livro impresso (alternativa E).",
+  "erradas": {
+   "A": "A pergunta não é sobre estar com o material do colega por engano; ambos têm um livro igual.",
+   "B": "Ele não duvida da capacidade do colega; ele quer ajuda para ligar o livro.",
+   "C": "Ele não se preocupa com a matéria do livro, e sim com o funcionamento do objeto.",
+   "D": "\"Turn on\" aqui significa ligar um aparelho, e não ter uma postura \"ligada\" em sala de aula."
+  }
+ },
+ "2019-006": {
+  "certa": "O anúncio \"Palavras têm poder\" diz que a liberdade de expressão traz responsabilidades e que publicar mensagens desrespeitosas é ato contrário à lei. A função social da campanha é conscientizar a população de que direitos implicam deveres (alternativa B).",
+  "erradas": {
+   "A": "O Ministério Público assina a campanha, mas o objetivo é educativo, e não de promover sua imagem.",
+   "C": "A campanha pede denúncia de quem se sente desrespeitado, mas sua função central é conscientizar sobre responsabilidade, e não coibir violações na mídia.",
+   "D": "Não há divulgação de políticas sociais específicas.",
+   "E": "O texto não ensina uma forma correta de se expressar, e sim alerta sobre as consequências das palavras."
+  }
+ },
+ "2019-010": {
+  "certa": "O cartaz usa verbos no imperativo (\"Fica calmo(a)\", \"Não dês troco\", \"Ajuda-o(a)\", \"Denuncia\") para falar com a vítima, com quem conhece a vítima e com quem conhece o agressor. Essa estratégia chama diferentes atores sociais com estruturas injuntivas (alternativa A).",
+  "erradas": {
+   "B": "As formas \"dês\", \"fica\" e \"troco\" são do português europeu, mas a estratégia que o enunciado pede é o chamamento a diferentes atores, e a variedade linguística é só um traço.",
+   "C": "O \"o(a)\" inclui os dois gêneros; não restringe o público a um grupo de vítimas.",
+   "D": "Há apenas \"STOP\" e \"Bullying\" em inglês, sem combinação de significados.",
+   "E": "O título expressa esperança, mas a estratégia da campanha é a orientação aos diferentes grupos."
+  }
+ },
+ "2019-012": {
+  "certa": "O Texto I é uma narrativa em quadrinhos feita por uma quadrinista surda, sem palavras, e o Texto II divulga seu trabalho. Os dois contribuem com o processo de acessibilidade, ao mostrar histórias compreensíveis sem depender do som ou do texto (alternativa D).",
+  "erradas": {
+   "A": "O Texto II descreve narrativas silenciosas, mas não incentiva a produção de roteiros só com imagens.",
+   "B": "Não há valorização de enredos românticos como objetivo.",
+   "C": "O texto cita a CCXP, mas a artista é o foco, e não o sucesso do evento.",
+   "E": "O Texto II diz que as obras não são HQs que perderam as palavras, mas sim que ganharam nova perspectiva; não se trata de questionar o padrão tradicional."
+  }
+ },
+ "2019-017": {
+  "certa": "O infográfico \"Os tipos cheios de si\" mostra perfis como o turista em tempo integral, o exibido humilde e a mãe orgulhosa demais, todos que postam demais sobre si. Isso revela exposição exagerada dos indivíduos (alternativa A).",
+  "erradas": {
+   "B": "O tom é bem-humorado, mas o infográfico critica a exposição, e não uma ingenuidade cômica.",
+   "C": "Os perfis não mostram engajamento social.",
+   "D": "Não se fala em avatares ou disfarce.",
+   "E": "Os perfis não mostram autocrítica; ao contrário, são pessoas \"cheias de si\"."
+  }
+ },
+ "2019-023": {
+  "certa": "O cartaz mostra um par de sapatos gastos e o texto \"Vamos calçar os sapatos dos refugiados e dar o primeiro passo para entender sua situação\". A imagem simboliza a necessidade de adesão à causa dos refugiados, convidando as pessoas a se colocarem no lugar deles (alternativa E).",
+  "erradas": {
+   "A": "O cartaz não critica as condições de vida, e sim convida à empatia.",
+   "B": "Os sapatos gastos sugerem caminhada, mas o objetivo não é revelar a trajetória dos refugiados.",
+   "C": "Não há pedido de doações.",
+   "D": "A carência não é denunciada; o convite é para entender a situação do outro."
+  }
+ },
+ "2019-026": {
+  "certa": "O Texto II mostra direitos garantidos ao idoso (atendimento preferencial, gratuidade em ônibus, assistência de um salário mínimo), enquanto o Texto I relata 16 mil denúncias de violação em seis meses e a falta de preparo do país. As regras do Estatuto contrastam com as condições de vida oferecidas pelo país (alternativa E).",
+  "erradas": {
+   "A": "Os textos não comparam com outros países.",
+   "B": "O Texto I fala em aumento de violência nas famílias, mas não diz que todas as famílias ignoram as regras.",
+   "C": "Não se afirma que o Estatuto alterou a qualidade de vida; ao contrário, mostra-se que ela ainda é precária.",
+   "D": "O Texto I pede políticas mais eficazes, e não revisão das regras do Estatuto."
+  }
+ },
+ "2019-031": {
+  "certa": "Na \"Cabeça de touro\", Picasso une um selim e um guidão de bicicleta para formar a cabeça do animal. O material descartado vira arte por meio da mudança de funcionalidade pela integração dos objetos (alternativa D).",
+  "erradas": {
+   "A": "Os objetos não são reciclados nem transformados em matéria-prima; eles mantêm sua forma original.",
+   "B": "As formas não são abstratas, e sim reconhecíveis como selim e guidão.",
+   "C": "A perenidade da escultura em bronze não é o que faz o descarte virar arte.",
+   "E": "Não há fragmentação da imagem: a cabeça do touro se forma por apenas duas peças."
+  }
+ },
+ "2019-036": {
+  "certa": "Vick Muniz reproduz com chocolate derretido a fotografia de Pollock pintando (respingando tinta). A originalidade está na apropriação parodística das técnicas e dos materiais: ele refaz a cena com um material inesperado (alternativa A).",
+  "erradas": {
+   "B": "A obra não trata dos sistemas de circulação da arte.",
+   "C": "A composição não é simplificada; ela reproduz a foto e os respingos.",
+   "D": "Não há contraposição de linguagens: tanto o original quanto a releitura são imagens fotográficas.",
+   "E": "A obra homenageia e retoma o processo de Pollock, em vez de criticar o abstracionismo."
+  }
+ },
+ "2019-043": {
+  "certa": "O texto tem o formato de um \"Super Trunfo\" (carta de jogo) com dados biográficos de Marcelo Gleiser. A subversão do gênero está em relacionar o universo lúdico, o jogo de cartas, a informações biográficas (alternativa C).",
+  "erradas": {
+   "A": "A carta cita física e astronomia, mas isso não é a subversão do gênero.",
+   "B": "A formação aparece em um dos campos, mas não é isso que subverte o gênero.",
+   "D": "Os livros aparecem como contribuição, mas não explicam a subversão.",
+   "E": "O nome e a imagem estão no início, o que é comum em cartas, e não subverte o gênero."
+  }
+ },
+ "2019-047": {
+  "certa": "O infográfico mostra que cada superfície (floresta, rio, pastagem, rodovia, cidade) reflete uma parte diferente da energia solar para o satélite. As imagens dependem da variação do albedo dos corpos físicos (alternativa A).",
+  "erradas": {
+   "B": "A profundidade do lençol freático não define a energia refletida captada pelo satélite.",
+   "C": "O campo magnético não interfere na formação dessas imagens.",
+   "D": "A qualidade dos recursos minerais não é o fator mostrado.",
+   "E": "A translação não explica as diferenças entre os alvos mostrados."
+  }
+ },
+ "2019-057": {
+  "certa": "No mapa, há desertos no Atacama, na Namíbia e na Austrália, mas não no Brasil, que está na mesma faixa de latitude. Isso ocorre pela influência da umidade das áreas florestais, que mantêm chuva e clima úmido (alternativa C).",
+  "erradas": {
+   "A": "Superfícies de alta refletividade ocorrem nos desertos, e não explicam sua ausência no Brasil.",
+   "B": "As altas pressões favorecem a aridez nas regiões desérticas e não explicam sua interrupção.",
+   "D": "As correntes frias explicam desertos litorâneos, como o Atacama e a Namíbia, e não a ausência no Brasil.",
+   "E": "As massas continentais não estão ausentes e não explicam a interrupção."
+  }
+ },
+ "2019-059": {
+  "certa": "A imagem mostra as fronteiras atuais sobrepostas à Pangeia. Essa divisão política só seria possível se a estrutura geológica da Terra fosse estável, sem deriva continental e movimento das placas (alternativa C).",
+  "erradas": {
+   "A": "O ciclo hidrológico não interfere na posição dos continentes.",
+   "B": "O processo erosivo remodela o relevo, mas não move continentes.",
+   "D": "O índice pluviométrico não altera a posição dos continentes.",
+   "E": "A pressão atmosférica não está ligada à deriva continental."
+  }
+ },
+ "2019-077": {
+  "certa": "A imagem é um grafite no Beco do Batman, e o texto fala de arte criada nas ruas, fora das instituições formais. Ela integra um movimento de apropriação dos espaços públicos (alternativa B).",
+  "erradas": {
+   "A": "A arte de rua não regula relações sociais, e sim ocupa e ressignifica o espaço.",
+   "C": "O grafite expressa diversidade, em vez de padronizar as culturas urbanas.",
+   "D": "O texto fala de arte fora dos formalismos tradicionais.",
+   "E": "O grafite não visa revitalizar patrimônios históricos."
+  }
+ },
+ "2019-085": {
+  "certa": "O muro diz \"Nuestra cultura no cabe en sus museos\" e mostra fotos de pessoas de povos originários dentro de molduras. O conflito vem da definição dos critérios de criação de acervos: quem decide o que é exposto e como, normalmente excluindo ou enquadrando essas culturas (alternativa B).",
+  "erradas": {
+   "A": "O mercado de obras de arte não é o foco da imagem.",
+   "C": "A ampliação de instituições de memória não é o assunto.",
+   "D": "O texto não trata de burocracia no acesso.",
+   "E": "A fragmentação de territórios não é o conflito apontado."
+  }
+ },
+ "2019-092": {
+  "certa": "O DNP devolve os prótons à matriz sem que passem pela ATP sintase, então a energia do gradiente se perde como calor e a produção de ATP diminui. Para compensar, a célula consome mais nutrientes (glicose e ácidos graxos) para tentar manter o ATP, o que causa o emagrecimento (alternativa E).",
+  "erradas": {
+   "A": "A cadeia respiratória não é obstruída: os elétrons continuam a ser transportados, e o que se perde é o gradiente de prótons.",
+   "B": "O ciclo de Krebs não é bloqueado pelo DNP; o que muda é o acoplamento na membrana interna.",
+   "C": "O DNP não reduz a produção de acetil CoA; a degradação de nutrientes continua e até aumenta.",
+   "D": "A glicólise ocorre no citoplasma e não é inibida pelo DNP."
+  }
+ },
+ "2019-093": {
+  "certa": "Pelo modelo atual, os átomos se combinam em proporções de números inteiros pequenos para formar compostos (lei das proporções definidas). O postulado 5 continua válido (alternativa E).",
+  "erradas": {
+   "A": "Os átomos são divisíveis (prótons, nêutrons, elétrons e partículas ainda menores).",
+   "B": "Átomos do mesmo elemento podem ter massas diferentes (isótopos).",
+   "C": "Elementos diferentes podem ter átomos com a mesma massa (isóbaros), então a diferença de massa não é universal.",
+   "D": "Em reações nucleares, os átomos são transformados, e não são indestrutíveis."
+  }
+ },
+ "2019-094": {
+  "certa": "A reação deve ser espontânea, liberar H2 e gerar calor. A espécie que reduz a água (E = −0,83 V) com maior diferença de potencial é o alumínio (par Al(OH)4⁻/Al, −2,33 V): ΔE ≈ 1,5 V, muito favorável e bastante exotérmica. A mistura comercial usa alumínio em pó com soda cáustica (alternativa A).",
+  "erradas": {
+   "B": "O par Co(OH)2/Co (−0,73 V) tem potencial maior que o da água, então o cobalto não reduz a água.",
+   "C": "Cu(OH)2 já está oxidado; a espécie reduzida seria o Cu, e mesmo assim, com −0,22 V, não reage com a água.",
+   "D": "Fe(OH)2 é a forma oxidada. O ferro metálico teria diferença de potencial de apenas 0,05 V, insuficiente para a reação rápida e exotérmica.",
+   "E": "O par PbO/Pb (−0,58 V) tem potencial maior que o da água, então o chumbo não reduz a água."
+  }
+ },
+ "2019-095": {
+  "certa": "Com o aterramento dos arames da cerca, a corrente induzida pelo campo magnético da rede é escoada para o solo, e quem encosta no arame não leva choque (alternativa A).",
+  "erradas": {
+   "B": "O fusível interromperia o circuito apenas por corrente excessiva no arame, e não elimina a tensão induzida que causa o choque.",
+   "C": "Aterrar a rede de alta tensão não elimina o campo magnético variável produzido pelas correntes.",
+   "D": "O fusível na rede não evita a indução, que ocorre com a corrente normal.",
+   "E": "O isolamento dos fios da rede não bloqueia o campo magnético."
+  }
+ },
+ "2019-096": {
+  "certa": "A vacina induz o organismo a produzir anticorpos, e eles combatem o verme dentro do corpo e previnem a doença antes da manifestação de sintomas. O tratamento tradicional só age depois do diagnóstico (alternativa E).",
+  "erradas": {
+   "A": "Os anticorpos não impedem a penetração das larvas pela pele.",
+   "B": "A vacina atua nas pessoas, e não elimina o caramujo hospedeiro.",
+   "C": "A vacina não bloqueia o acesso do verme a um órgão específico.",
+   "D": "A eliminação do verme ocorre no organismo, depois do contato, e não antes dele."
+  }
+ },
+ "2019-098": {
+  "certa": "O sabonete de aço inox não se desgasta com o uso, ou seja, não é consumido na reação que transforma a alicina (I) em outro composto (II). Isso é característico de um catalisador, que acelera a reação sem ser consumido (alternativa E).",
+  "erradas": {
+   "A": "Um ácido seria consumido ou alteraria o pH; o sabonete não se desgasta.",
+   "B": "Um redutor seria oxidado e se desgastaria.",
+   "C": "Um eletrólito conduz corrente em solução, o que não é o papel do aço.",
+   "D": "Um tensoativo reduz a tensão superficial, o que não explica a conversão química."
+  }
+ },
+ "2019-099": {
+  "certa": "O estrôncio-90 se assemelha quimicamente ao cálcio e pode substituí-lo em processos biológicos. Como o cálcio se concentra nos ossos, o estrôncio-90 se acumula predominantemente no tecido ósseo (alternativa E).",
+  "erradas": {
+   "A": "O tecido cartilaginoso tem pouco cálcio mineralizado.",
+   "B": "O sangue contém cálcio dissolvido, mas não é o local de acúmulo.",
+   "C": "O tecido muscular usa cálcio na contração, mas não o armazena.",
+   "D": "O tecido nervoso não armazena cálcio em quantidade relevante."
+  }
+ },
+ "2019-100": {
+  "certa": "O pneu da bicicleta A deforma menos, então sua pressão é maior: pA > pB. Como o pneu A é mais estreito, seu volume é menor, e, sendo a massa de ar proporcional ao volume, mA < mB (alternativa B).",
+  "erradas": {
+   "A": "pA < pB contraria a observação de que o pneu A deforma menos.",
+   "C": "Os volumes são diferentes, então as massas não são iguais.",
+   "D": "pA < pB e massas iguais contrariam os dados do enunciado.",
+   "E": "Como o pneu A tem volume menor, sua massa de ar é menor, e não maior."
+  }
+ },
+ "2019-102": {
+  "certa": "As cutias disputam as mesmas sementes, que são um recurso limitado, e roubam umas das outras. Essa relação entre indivíduos da mesma espécie é de competição (alternativa D).",
+  "erradas": {
+   "A": "Sinfilia é um tipo de associação vantajosa ou de convivência com insetos, o que não é o caso.",
+   "B": "No predatismo, um organismo mata outro para se alimentar; as cutias não se matam.",
+   "C": "No parasitismo, um organismo vive às custas de outro, causando-lhe dano, o que não ocorre aqui.",
+   "E": "No comensalismo, um organismo se beneficia sem prejudicar o outro, mas aqui o roubo prejudica quem enterrou."
+  }
+ },
+ "2019-104": {
+  "certa": "O resíduo contém pectina e açúcares (compostos de carbono) e alcaloides (compostos aminados, com nitrogênio). Ao se decompor no solo, eles reciclam carbono e nitrogênio, nutrientes importantes para as plantas (alternativa A).",
+  "erradas": {
+   "B": "O texto não trata de deslocar alumínio tóxico.",
+   "C": "A pectina não melhora a compactação do solo; ela é um polissacarídeo que se decompõe.",
+   "D": "A degradação de matéria orgânica não eleva o pH de forma característica.",
+   "E": "O resíduo é usado como fertilizante, o que contraria a ideia de inibir o crescimento da maioria das plantas."
+  }
+ },
+ "2019-105": {
+  "certa": "Na agricultura orgânica não se usam agrotóxicos, e o controle de insetos é feito com seus predadores naturais, o chamado controle biológico (alternativa D).",
+  "erradas": {
+   "A": "A adubação verde melhora o solo com plantas, mas não controla insetos.",
+   "B": "A compostagem produz adubo orgânico, sem controlar pragas.",
+   "C": "O controle da irrigação trata da água, e não dos insetos.",
+   "E": "As sementes com Rhizobium fixam nitrogênio, e não controlam pragas."
+  }
+ },
+ "2019-106": {
+  "certa": "A segunda lei de Mendel vale para genes em cromossomos diferentes. Genes fisicamente próximos no mesmo cromossomo (ligados) tendem a ser herdados juntos, o que contraria a distribuição independente (alternativa D).",
+  "erradas": {
+   "A": "Dominância e recessividade não alteram a segregação independente.",
+   "B": "Cada organismo recebe um conjunto de cada genitor, e isso não contraria a lei.",
+   "C": "Falhas de segregação são alterações pontuais, e não a explicação geral de exceção à lei.",
+   "E": "A não disjunção é uma anomalia e não explica a exceção mais comum, que é a ligação gênica."
+  }
+ },
+ "2019-107": {
+  "certa": "Na queda de 5 m, a velocidade é v = √(2gh) = 10 m/s. A quantidade de movimento do tijolo é 2,5 × 10 = 25 kg·m/s. Em 0,5 s, a força impulsiva média é F = 25/0,5 = 50 N. O peso de um tijolo é 25 N, então F equivale a 2 tijolos (alternativa A).",
+  "erradas": {
+   "B": "Com 5 tijolos, a força seria 125 N, o que dá um impulso maior que o do problema.",
+   "C": "10 tijolos corresponderiam a 250 N, muito acima do calculado.",
+   "D": "20 tijolos corresponderiam a 500 N, o que seria o caso se o choque durasse apenas 0,05 s.",
+   "E": "50 tijolos corresponderiam a 1250 N, muito acima do calculado."
+  }
+ },
+ "2019-108": {
+  "certa": "Os compostos da fração 4 têm cadeias maiores (C14 a C18), com maior superfície de contato e forças de dispersão de London mais intensas. Mais energia é necessária para separá-los, então entram em ebulição em temperaturas mais altas (alternativa D).",
+  "erradas": {
+   "A": "A densidade não determina a temperatura de ebulição.",
+   "B": "O número de ramificações é menor nas cadeias lineares maiores; ramificação reduz o ponto de ebulição.",
+   "C": "A solubilidade no petróleo não explica o ponto de ebulição.",
+   "E": "A destilação separa por ebulição, sem quebrar a cadeia carbônica."
+  }
+ },
+ "2019-110": {
+  "certa": "Retrovírus produzem DNA a partir de RNA (transcrição reversa), e o HIV é o exemplo clássico. O tratamento se baseia em antirretrovirais, que bloqueiam etapas do ciclo do vírus, como a transcriptase reversa, e dificultam sua reprodução (alternativa E).",
+  "erradas": {
+   "A": "Esses vírus infectam exclusivamente humanos e não dependem de vetores; controlar vetores não ajuda.",
+   "B": "Soros contêm anticorpos prontos, e não são mutagênicos.",
+   "C": "Equipamentos de proteção previnem o contágio, mas não tratam a infecção.",
+   "D": "Vacinas previnem a infecção, mas o enunciado fala de tratamento e de medicamentos."
+  }
+ },
+ "2019-111": {
+  "certa": "A proposta usa concreto reciclado moído no lugar do particulado rochoso graúdo, que é a brita. O benefício ambiental é a redução da extração da brita (alternativa A).",
+  "erradas": {
+   "B": "A areia não é substituída pelo concreto reciclado graúdo.",
+   "C": "A proposta não altera o consumo de água.",
+   "D": "O concreto reciclado seria usado para fabricar novo concreto, e não para reduzir seu consumo.",
+   "E": "O cimento continua necessário na mistura."
+  }
+ },
+ "2019-112": {
+  "certa": "A fluidez aumenta quando as interações entre fosfolipídios diminuem, o que ocorre com caudas mais curtas e com insaturações, cujas dobras impedem o empacotamento. A bicamada II reúne essas características e é a mais fluida (alternativa B).",
+  "erradas": {
+   "A": "Caudas longas e saturadas se empacotam firmemente e deixam a bicamada menos fluida.",
+   "C": "Mesmo com insaturações, as caudas mais longas aumentam as interações entre os fosfolipídios.",
+   "D": "Caudas longas e retas têm forte interação entre si, o que reduz a fluidez.",
+   "E": "Há insaturações, mas as caudas são mais longas, então a fluidez é menor que na bicamada II."
+  }
+ },
+ "2019-115": {
+  "certa": "Os fármacos persistem no esgoto e na água porque as estações de tratamento convencionais não os eliminam bem. Desenvolver novos processos nas estações de tratamento minimiza a permanência desses contaminantes nos recursos hídricos (alternativa D).",
+  "erradas": {
+   "A": "Esterco como fertilizante pode levar resíduos de medicamentos veterinários ao solo e à água.",
+   "B": "Ampliar a coleta sem tratamento adequado só leva os fármacos a outro ponto.",
+   "C": "Descartar medicamentos em lixões contamina solo e água subterrânea.",
+   "E": "O lodo contém fármacos e, usado na agricultura, os espalha no ambiente."
+  }
+ },
+ "2019-116": {
+  "certa": "No teste de chama, o calor excita os elétrons dos cátions metálicos para níveis mais externos. Ao voltarem a níveis mais internos, eles emitem radiação em cor característica. A emissão vem da transição eletrônica de um nível mais externo para outro mais interno (alternativa D).",
+  "erradas": {
+   "A": "A mudança de fase não emite luz de cor característica do elemento.",
+   "B": "A cor não vem da combustão do cátion com o oxigênio.",
+   "C": "A energia cinética dos elétrons em uma mesma órbita não varia por essa razão e não explica a emissão.",
+   "E": "A promoção a níveis mais energéticos absorve energia; a emissão ocorre no retorno ao nível menos energético."
+  }
+ },
+ "2019-118": {
+  "certa": "Os náuplios sobem em direção à lâmpada, ou seja, se movem em direção à luz. Esse comportamento é chamado de fototropismo (ou fototaxia) positivo (alternativa B).",
+  "erradas": {
+   "A": "O geotropismo trata da resposta à gravidade, e a luz é o estímulo aqui.",
+   "C": "O hidrotropismo é a resposta à água, que está em toda a garrafa.",
+   "D": "O termotropismo é a resposta à temperatura, que é ótima e uniforme.",
+   "E": "O quimiotropismo é a resposta a substâncias químicas, e não à luz."
+  }
+ },
+ "2019-119": {
+  "certa": "O xenônio tem 8 elétrons de valência (5s²5p⁶). No XeF₂, ele forma duas ligações covalentes com flúor, e cada ligação compartilha um par com o átomo central, que fica com 8 + 2 = 10 elétrons na camada de valência (3 pares isolados e 2 ligantes), expandindo o octeto (alternativa C).",
+  "erradas": {
+   "A": "6 seria menos elétrons do que o xenônio já tem.",
+   "B": "8 é o número do xenônio isolado, e não considera os dois pares compartilhados com o flúor.",
+   "D": "12 corresponderia a seis pares, o que o XeF₂ não tem.",
+   "E": "14 não corresponde ao XeF₂ (3 pares isolados + 2 ligações)."
+  }
+ },
+ "2019-121": {
+  "certa": "A eritropoetina estimula a produção de eritrócitos (hemácias), que transportam oxigênio. Mais oxigênio nos tecidos aumenta a produção de ATP pela respiração aeróbica e melhora o desempenho do atleta (alternativa C).",
+  "erradas": {
+   "A": "As hemácias não transportam lipídios para gastar calorias.",
+   "B": "O ATP não é transportado pelas hemácias.",
+   "D": "As proteínas são transportadas no plasma, e não pelos eritrócitos; a EPO não aumenta a massa muscular.",
+   "E": "A vitamina C e os vasos sanguíneos não são o foco da ação da EPO."
+  }
+ },
+ "2019-122": {
+  "certa": "A troca de calor é proporcional a k × A (área interna). O recipiente A tem área 6 × 0,4² = 0,96 m². O B tem 2(0,6·0,4 + 0,6·0,4 + 0,4·0,4) = 1,28 m². Como a massa de gelo fundida em B foi o dobro: kB·1,28 = 2·kA·0,96, logo kA/kB = 1,28/(2·0,96) ≈ 0,67 (alternativa B).",
+  "erradas": {
+   "A": "0,50 ocorreria se as áreas fossem iguais (kA/kB = 1/2).",
+   "C": "0,75 não resulta da razão das áreas e da fusão do dobro de gelo.",
+   "D": "1,33 seria a razão das áreas B/A, e não kA/kB.",
+   "E": "2,00 seria o caso se a fusão de gelo em A fosse o dobro da de B."
+  }
+ },
+ "2019-124": {
+  "certa": "A porta e os cobertores não produzem calor nem \"barram o frio\": são isolantes térmicos que minimizam a perda de calor da casa e dos corpos para o ambiente mais frio. A função de ambos é minimizar a perda de calor (alternativa C).",
+  "erradas": {
+   "A": "Porta e cobertores não aquecem; só a fonte de calor (corpo ou aquecedor) aquece.",
+   "B": "O frio não é uma entidade que entra; o que ocorre é a saída de calor.",
+   "D": "Também trata o frio como algo que entra, e os cobertores não aquecem por si.",
+   "E": "A porta não aquece a casa, apenas reduz a perda de calor."
+  }
+ },
+ "2019-125": {
+  "certa": "A glicose forma 2 ácidos láticos, que ainda armazenam energia: 2 × (−1344) = −2688 kJ. A via anaeróbica libera apenas 2800 − 2688 = 112 kJ por mol de glicose, bem menos que os 2800 kJ da via aeróbica (alternativa A).",
+  "erradas": {
+   "B": "467 kJ não resulta do cálculo (2800 − 2 × 1344).",
+   "C": "2688 kJ é a energia que ainda fica nos dois ácidos láticos, e não a liberada na conversão.",
+   "D": "O processo libera energia, e não absorve.",
+   "E": "2800 kJ é a energia liberada na combustão completa da glicose."
+  }
+ },
+ "2019-126": {
+  "certa": "Em áreas desmatadas, o ambiente é instável e as espécies pioneiras precisam recolonizar rápido. A estratégia 1 (alto potencial biótico, reprodução precoce, muitos descendentes) facilita a recolonização da área (alternativa C).",
+  "erradas": {
+   "A": "O tamanho pequeno dos descendentes não diminui a competição; o ponto central é o potencial biótico elevado.",
+   "B": "A longa duração da vida não gera muitos descendentes na estratégia 2.",
+   "D": "Uma área desmatada é instável, e a estratégia 2 se adapta a hábitats estáveis.",
+   "E": "Tamanho populacional constante não propicia colonização rápida."
+  }
+ },
+ "2019-128": {
+  "certa": "A conquista definitiva do ambiente terrestre veio quando a reprodução deixou de depender da água. A formação do tubo polínico (3), nas gimnospermas e angiospermas, permitiu que a fecundação ocorresse sem água livre (alternativa C).",
+  "erradas": {
+   "A": "Embriões protegidos no gametófito (1) já ocorrem em plantas que ainda dependem de água para a fecundação, como os musgos.",
+   "B": "Tecidos condutores (2) permitiram o crescimento, mas as plantas vasculares sem sementes ainda dependem da água para a fecundação.",
+   "D": "A polinização pelo vento (4) é uma forma de transporte do pólen, mas depende da existência do tubo polínico.",
+   "E": "Os frutos (5) auxiliam a dispersão das sementes, mas não foram o que libertou as plantas da água."
+  }
+ },
+ "2019-129": {
+  "certa": "Com a pupila contraída, os raios luminosos incidem quase paralelos ao eixo óptico, e passam pelo centro das estruturas refratoras do olho. Há menor desvio dos feixes refratados no interior do olho, o que melhora a nitidez (alternativa D).",
+  "erradas": {
+   "A": "Pupila menor reduz a luz que chega à retina, o que prejudica a imagem, e não explica a melhora da acuidade.",
+   "B": "A difração aumenta quando a abertura é menor, o que pioraria a imagem.",
+   "C": "O fenômeno não envolve polarização.",
+   "E": "As reflexões internas não são o fator explicado pelo texto."
+  }
+ },
+ "2019-130": {
+  "certa": "O rim biônico foi pensado para substituir a hemodiálise, que filtra o sangue e remove os resíduos nitrogenados do metabolismo. A principal função direta do dispositivo é a remoção de ureia (alternativa A).",
+  "erradas": {
+   "B": "A excreção de lipídios não é função do rim; eles são metabolizados pelo fígado.",
+   "C": "A vasopressina é um hormônio produzido no hipotálamo, e não sintetizado pelo rim.",
+   "D": "A amônia é transformada em ureia no fígado, e não pelo rim.",
+   "E": "A aldosterona é produzida nas glândulas suprarrenais."
+  }
+ },
+ "2019-132": {
+  "certa": "Huygens argumenta que os raios de luz se atravessam sem se atrapalhar e que isso não seria possível se a luz fosse matéria lançada, como uma flecha ou bala. Ele contesta, portanto, o modelo corpuscular defendido por Newton (alternativa C).",
+  "erradas": {
+   "A": "Huygens defendia a luz como onda propagada pelo éter, então não contesta essa ideia.",
+   "B": "O modelo ondulatório é o defendido por Huygens.",
+   "D": "O texto fala de \"extrema velocidade\" e não contesta a velocidade infinita.",
+   "E": "O texto não discute a ideia de que a luz seria produzida pelos olhos."
+  }
+ },
+ "2019-133": {
+  "certa": "O NaOH consumido tem 0,01 mol/L × 0,024 L = 2,4 × 10⁻⁴ mol. Como o ácido cítrico é triprótico, n(ácido) = 2,4 × 10⁻⁴/3 = 8 × 10⁻⁵ mol, o que dá 8 × 10⁻⁵ × 192 = 0,01536 g em 2,2 g de polpa. Em 100 g: ≈ 0,70 g. Esse valor atende aos mínimos do caju (0,3) e da graviola (0,6), mas não aos da acerola (0,8), cupuaçu (1,5) e maracujá (2,5) (alternativa C).",
+  "erradas": {
+   "A": "O caju atende, mas a graviola (mínimo 0,6) também.",
+   "B": "O maracujá exige acidez mínima de 2,5, muito acima de 0,70.",
+   "D": "A acerola (0,8) e o cupuaçu (1,5) exigem mais acidez do que a da amostra.",
+   "E": "O cupuaçu exige mínimo de 1,5, acima de 0,70."
+  }
+ },
+ "2019-134": {
+  "certa": "O sal passou do caldo (mais concentrado) para a batata (menos concentrada), a favor do gradiente de concentração. É difusão do soluto (alternativa E).",
+  "erradas": {
+   "A": "Osmose é a passagem do solvente (água) por membrana semipermeável, e não do sal.",
+   "B": "Fagocitose é a englobação de partículas sólidas, e o sal está dissolvido.",
+   "C": "Exocitose é saída de substâncias da célula, e aqui o sal entra na batata.",
+   "D": "Pinocitose é a englobação de gotículas de líquido pela célula, e o sal passa por difusão."
+  }
+ },
+ "2019-136": {
+  "certa": "A dose máxima é 500 mg × 20 kg = 10 000 mg = 10 g por dia. Em 5 dias: 50 g. Como 1 g ocupa 1 cm³, são 50 cm³ = 50 mL. O frasco que dá a quantidade exata é o de 50 mL (alternativa B).",
+  "erradas": {
+   "A": "10 mL é a dose de um dia, e o tratamento dura 5 dias.",
+   "C": "100 mL deixaria sobra de 50 mL.",
+   "D": "250 mL seria cinco vezes o necessário.",
+   "E": "500 mL seria dez vezes o necessário."
+  }
+ },
+ "2019-140": {
+  "certa": "A flor rosa mais valorizada ocorre com pH entre 7 (alcalino) e 8. Como x = 10^(−pH), pH < 8 dá x > 10⁻⁸ e pH > 7 dá x < 10⁻⁷. Portanto, 10⁻⁸ < x < 10⁻⁷ (alternativa E).",
+  "erradas": {
+   "A": "Valores acima de 10⁻⁸ incluem os de solo ácido (x ≥ 10⁻⁷), em que a flor seria azul.",
+   "B": "x < 10⁻⁷ inclui pH maior que 8, que não é o desejado.",
+   "C": "7 < x < 8 confunde pH com concentração.",
+   "D": "70 < x < 80 também confunde pH com concentração."
+  }
+ },
+ "2019-141": {
+  "certa": "Gastos: transporte = 1/5 do valor = 20%, mais a recompensa r. Como o gasto total não pode ultrapassar 100%, 20% + r ≤ 100%, logo r ≤ 80%. O maior percentual possível é 80% (alternativa E).",
+  "erradas": {
+   "A": "20% é o custo do transporte, e não a recompensa máxima.",
+   "B": "25% é menor que o máximo permitido pelo orçamento.",
+   "C": "40% é menor que o máximo.",
+   "D": "60% é menor que o máximo."
+  }
+ },
+ "2019-144": {
+  "certa": "0,00011 mm = 1,1 × 10⁻⁴ mm, porque a vírgula anda quatro casas até o primeiro algarismo diferente de zero (alternativa D).",
+  "erradas": {
+   "A": "1,1 × 10⁻¹ = 0,11.",
+   "B": "1,1 × 10⁻² = 0,011.",
+   "C": "1,1 × 10⁻³ = 0,0011.",
+   "E": "1,1 × 10⁻⁵ = 0,000011."
+  }
+ },
+ "2019-145": {
+  "certa": "O ataque é proporcional à experiência e ao quadrado do nível; a defesa, ao nível e ao quadrado da experiência. Como no início (nível 1, experiência 1) o ataque é 2 e a defesa é 1, ataque = 2 · exp · nível² e defesa = nível · exp². J1: 2 · 5 · 4² = 160. J2: 2 · 6² = 72. Diferença: 160 − 72 = 88 (alternativa B).",
+  "erradas": {
+   "A": "112 não resulta das forças calculadas.",
+   "C": "60 não resulta das forças calculadas.",
+   "D": "28 não resulta das forças calculadas.",
+   "E": "24 não resulta das forças calculadas."
+  }
+ },
+ "2019-146": {
+  "certa": "Área inicial: π · 3² = 27 m². Novo diâmetro de 14 m: raio 7, área π · 7² = 147 m². A área nova é 147 − 27 = 120 m², maior que os 100 m² de material. Logo, não será suficiente (alternativa E).",
+  "erradas": {
+   "A": "A área de 21 m² não corresponde à região ampliada; a conclusão de que o material seria suficiente também está errada.",
+   "B": "A área de 24 m² não corresponde à região ampliada (a coroa tem 120 m²), e o material não seria suficiente.",
+   "C": "A área de 48 m² resulta de um erro no cálculo dos raios e leva à conclusão incorreta de que o material bastaria.",
+   "D": "Conclui corretamente que o material não basta, mas 108 m² é a área de um círculo de raio 6 m, e não da coroa de 120 m²."
+  }
+ },
+ "2019-148": {
+  "certa": "Cada coluna representa um dia da semana. Somando os acertos dos cinco alunos em cada coluna, a segunda-feira (coluna 1) tem a maior soma: 11, contra 10 nos demais dias (alternativa A).",
+  "erradas": {
+   "B": "A terça-feira soma 10, abaixo de 11.",
+   "C": "A quarta-feira soma 10, abaixo de 11.",
+   "D": "A quinta-feira soma 10, abaixo de 11.",
+   "E": "A sexta-feira soma 10, abaixo de 11."
+  }
+ },
+ "2019-152": {
+  "certa": "A banheira de 0,3 m³ = 300 L será preenchida em 80%: 240 L. Cada embalagem rende 2,7 L, então 240 ÷ 2,7 ≈ 88,9. Como não se compra fração de embalagem, o mínimo é 89 (alternativa C).",
+  "erradas": {
+   "A": "9 seria obtido ao dividir por 27 L, por erro de unidade.",
+   "B": "12 não resulta da divisão de 240 L por 2,7 L.",
+   "D": "112 resultaria de usar 300 L e outro valor, sem considerar a divisão correta.",
+   "E": "134 resultaria de um erro de unidade ou de cálculo."
+  }
+ },
+ "2019-154": {
+  "certa": "O valor à vista é o valor presente das parcelas a 1% ao mês: 202,00/1,01 + 204,02/1,01² = 200 + 200 = R$ 400,00 (alternativa B).",
+  "erradas": {
+   "A": "398,02 resulta de desconto incorreto das parcelas.",
+   "C": "401,94 resulta de desconto incorreto das parcelas.",
+   "D": "404,00 resulta de somar parcelas descontadas de modo incorreto.",
+   "E": "406,02 é a soma das parcelas, sem descontar os juros."
+  }
+ },
+ "2019-155": {
+  "certa": "Cada um dos três primeiros sócios investiu 1 000 000/3 + 800 000/4 ≈ 333 333 + 200 000 = 533 333. O quarto investiu 200 000. O total é 1 800 000. Percentuais: 533 333/1 800 000 ≈ 29,63% (aprox. 29,60%) para cada um dos três e 200 000/1 800 000 ≈ 11,11% para o quarto (alternativa A).",
+  "erradas": {
+   "B": "28,70 e 13,89 resultam de usar proporções que não correspondem ao investimento de cada um.",
+   "C": "25% cada um só valeria se todos tivessem investido o mesmo.",
+   "D": "18,52 e 11,11 não somam 100% com três sócios e o quarto.",
+   "E": "12,96 e 13,89 resultam de proporções que não correspondem ao investimento."
+  }
+ },
+ "2019-156": {
+  "certa": "Valores inversamente proporcionais às idades 2, 3 e 5 são proporcionais a 1/2, 1/3 e 1/5, ou seja, a 15, 10 e 6 (multiplicando por 30). A soma é 31 partes; cada parte vale 31 000/31 = R$ 1 000. A máquina mais velha (5 anos) recebe 6 partes: R$ 6 000,00 (alternativa B).",
+  "erradas": {
+   "A": "R$ 3 100 seria 10% do total, e não a parte do mais velho.",
+   "C": "R$ 6 200 resulta de dividir por 5 o total.",
+   "D": "R$ 15 000 é o valor da máquina mais nova (15 partes).",
+   "E": "R$ 15 500 é a metade do total, o que não corresponde a nenhuma das partes."
+  }
+ },
+ "2019-157": {
+  "certa": "Em 2010 o rendimento foi 1 250 × 1,072 = R$ 1 340,00. Em 2020, 10% maior: 1 340 × 1,10 = R$ 1 474,00 (alternativa E).",
+  "erradas": {
+   "A": "R$ 1 340,00 é o valor de 2010, sem o aumento de 10% projetado para 2020.",
+   "B": "R$ 1 349,00 resulta de somar 7,2% e 10% de forma aditiva sobre outro valor, sem aplicar os aumentos em sequência.",
+   "C": "R$ 1 375,00 é 1 250 mais 10%, ignorando o aumento de 7,2% de 2010.",
+   "D": "R$ 1 465,00 resulta de somar os dois percentuais (17,2%) sobre 1 250, em vez de aplicá-los em sequência."
+  }
+ },
+ "2019-158": {
+  "certa": "A · f = 2 000 × 0,2 = 400. log 400 = log 4 + log 100 = 2 · log 2 + 2 = 2 × 0,3 + 2 = 2,6. Então Ms = 3,30 + 2,6 = 5,9, que está na faixa 5,0 ≤ Ms ≤ 5,9: terremoto moderado (alternativa C).",
+  "erradas": {
+   "A": "Pequeno exigiria Ms de no máximo 3,9.",
+   "B": "Ligeiro exigiria Ms entre 4,0 e 4,9.",
+   "D": "Grande exigiria Ms de pelo menos 6,0.",
+   "E": "Extremo exigiria Ms de pelo menos 10."
+  }
+ },
+ "2019-159": {
+  "certa": "A sequência repete o bloco 5, 4, 3, 2, 1, 2, 3, 4, de 8 termos. Dividindo 2 015 por 8, o resto é 7, então o 2 015º item é o 7º do bloco: 3, caixa de direção (alternativa E).",
+  "erradas": {
+   "A": "Rolamento (1) é o 5º termo do bloco, e o resto da divisão é 7.",
+   "B": "Catalisador (4) é o 2º e o 8º termos do bloco, e o resto é 7.",
+   "C": "Amortecedor (5) é o 1º termo do bloco, e o resto é 7.",
+   "D": "Pastilha de freio (2) é o 4º e o 6º termos do bloco, e o resto é 7."
+  }
+ },
+ "2019-160": {
+  "certa": "Sem restrição, formar 4 duplas com 8 pessoas dá 8!/(2⁴ · 4!) = 105 maneiras. Se os dois canhotos ficarem juntos, restam 6 pessoas em 3 duplas: 6!/(2³ · 3!) = 15. Logo, 105 − 15 = 90 (alternativa C).",
+  "erradas": {
+   "A": "69 não resulta da contagem das duplas.",
+   "B": "70 é o número de combinações de 8 em grupos de 4, e não de 4 duplas.",
+   "D": "104 resulta de subtrair apenas 1 dos 105 casos, ignorando que são 15 casos em que os canhotos formam dupla.",
+   "E": "105 é o total sem a restrição aos canhotos."
+  }
+ },
+ "2019-162": {
+  "certa": "Na escala 1:200, o volume real é 200³ = 8 000 000 vezes o da maquete. 45 cm³ × 8 · 10⁶ = 3,6 · 10⁸ cm³ = 360 000 L. Como o consumo é de 30 000 L por dia, 360 000/30 000 = 12 dias (alternativa C).",
+  "erradas": {
+   "A": "30 dias supõe um reservatório de 900 000 L, o que ignora a conversão correta de volume.",
+   "B": "15 dias supõe um reservatório de 450 000 L, o que ignora a conversão correta de volume.",
+   "D": "6 dias supõe um reservatório de 180 000 L, o que ignora a conversão correta de volume.",
+   "E": "3 dias supõe um reservatório de 90 000 L, o que ignora a conversão correta de volume."
+  }
+ },
+ "2019-164": {
+  "certa": "A probabilidade de perceber pelo menos uma placa é 1 − (1/2)ⁿ, em que n é o número total de placas. Precisamos de 1 − (1/2)ⁿ > 99/100, ou seja, (1/2)ⁿ < 1/100, que equivale a 2ⁿ > 100. Como 2⁶ = 64 e 2⁷ = 128, n = 7 placas. Já existe uma, então são necessárias 6 novas (alternativa D).",
+  "erradas": {
+   "A": "99 corresponde a usar a probabilidade da placa como se fosse 1/100 por placa, o que não ocorre.",
+   "B": "51 não resulta de 2ⁿ > 100.",
+   "C": "50 não resulta de 2ⁿ > 100.",
+   "E": "Com 1 nova placa (2 no total), a probabilidade seria 3/4, abaixo de 99/100."
+  }
+ },
+ "2019-165": {
+  "certa": "A soma das alturas dos 20 jogadores é 20 × 1,80 = 36 m. Com a troca por alguém 0,20 m mais baixo, a soma passa a 35,8 m. A nova média é 35,8/20 = 1,79 m (alternativa C).",
+  "erradas": {
+   "A": "1,60 resultaria de subtrair 0,20 da média inteira.",
+   "B": "1,78 resultaria de dividir 0,20 por 10, e não por 20.",
+   "D": "1,81 supõe que o novo jogador seja mais alto.",
+   "E": "1,82 supõe que o novo jogador seja bem mais alto, o que contraria o enunciado."
+  }
+ },
+ "2019-168": {
+  "certa": "Como 0 < X < 1, potências maiores diminuem o valor: X³ < X² < X, e a raiz aumenta: √X > X, e a raiz cúbica aumenta mais ainda: X^(1/3) > √X > X. Portanto, o maior IDH é o do terceiro país, X^(1/3) (alternativa C).",
+  "erradas": {
+   "A": "X é maior que X² e X³, mas menor que √X e X^(1/3).",
+   "B": "√X é maior que X, mas menor que X^(1/3), para 0 < X < 1.",
+   "D": "X² é menor que X para 0 < X < 1.",
+   "E": "X³ é o menor dos cinco valores."
+  }
+ },
+ "2019-172": {
+  "certa": "Basquete tem uma pessoa a mais, então o total de alunos é ímpar e a mediana é a altura do aluno do meio. O grupo de basquete (mais altos) inclui esse aluno do meio. A mediana 1,67 é a altura de F, então F joga basquete, e M (1,68) também. P (1,65) e J (1,66) são mais baixos que a mediana e jogam futebol (alternativa C).",
+  "erradas": {
+   "A": "Colocaria os quatro no basquete, mas P e J estão abaixo da mediana.",
+   "B": "Colocaria P no futebol e J no basquete, mas J (1,66) é mais baixo que a mediana 1,67.",
+   "D": "Colocaria F no futebol, mas F tem a altura da mediana e fica no grupo de basquete.",
+   "E": "Colocaria os quatro no futebol, mas M é mais alto que a mediana."
+  }
+ },
+ "2019-173": {
+  "certa": "Há 1 gerente (R$ 1 000 por semana) e X − 1 diaristas, e cada diarista recebe 2 × 80 = R$ 160 por semana. Logo, Y = 1 000 + 160(X − 1) = 160X + 840 (alternativa D).",
+  "erradas": {
+   "A": "Y = 80X + 920 conta apenas um dia de trabalho por diarista.",
+   "B": "Y = 80X + 1 000 também considera só um dia por diarista e conta o gerente à parte.",
+   "C": "Y = 80X + 1 080 não corresponde a nenhum cálculo coerente da folha.",
+   "E": "Y = 160X + 1 000 conta o gerente duas vezes (como se fosse diarista e somado à parte)."
+  }
+ },
+ "2019-176": {
+  "certa": "Seja F a fraude. P(I) = 0,20 e P(F|I) = 0,25, então P(F e I) = 0,05. P(F|não I) = 0,0625 e P(não I) = 0,80, então P(F e não I) = 0,05. P(F) = 0,10. Logo, P(I|F) = 0,05/0,10 = 0,5 (alternativa E).",
+  "erradas": {
+   "A": "0,05 é P(F e I), sem dividir por P(F).",
+   "B": "0,10 é P(F), a probabilidade total de fraude.",
+   "C": "0,1125 não resulta dos dados do problema.",
+   "D": "0,3125 não resulta dos dados do problema."
+  }
+ },
+ "2019-179": {
+  "certa": "Orçamento inicial: 10 000 + 40 000 + 2 500 × 40 = R$ 150 000. Com as mudanças: projeto 5 000; metro quadrado 3 125 × 40 = 125 000; total desejado 0,9 × 150 000 = 135 000. Os custos fixos devem ser 135 000 − 5 000 − 125 000 = R$ 5 000, um desconto de 35 000/40 000 = 87,5% (alternativa D).",
+  "erradas": {
+   "A": "23,3% não resulta do cálculo do novo orçamento.",
+   "B": "25% corresponde apenas ao acréscimo do metro quadrado.",
+   "C": "50% corresponde apenas à redução do projeto.",
+   "E": "100% eliminaria os custos fixos, o que deixaria o total em 130 000, abaixo dos 135 000 exigidos."
+  }
+ },
+ "2019-091": {
+  "certa": "Com n lâmpadas ligadas em paralelo com a TV, a resistência do conjunto é 200/(n + 4) (a TV vale 1/50 = 4/200). Em série com o cabo de 10 Ω, a tensão sobre a TV é 120 · [200/(n + 4)] / [10 + 200/(n + 4)] = 24 000/(240 + 10n). Ela precisa ser ≥ 90 V: 240 + 10n ≤ 266,7, logo n ≤ 2,67. O máximo é 2 lâmpadas (alternativa B).",
+  "erradas": {
+   "A": "Com 1 lâmpada a TV funciona, mas não é o número máximo.",
+   "C": "Com 3 lâmpadas, a tensão na TV cai para 24 000/270 ≈ 88,9 V, abaixo de 90 V.",
+   "D": "Com 4 lâmpadas, a tensão na TV cai para 24 000/280 ≈ 85,7 V.",
+   "E": "Com 5 lâmpadas, a tensão na TV cai para 24 000/290 ≈ 82,8 V."
+  }
+ },
+ "2019-097": {
+  "certa": "Sem energia cinética de translação no ponto mais baixo, toda a energia potencial perdida vira energia cinética de rotação. O disco desce de 410 mm até 1/3 de 410 mm, uma queda de 2/3 · 410 ≈ 273 mm = 0,273 m. Assim, E = m·g·Δh = 0,030 × 10 × 0,273 ≈ 8,2 × 10⁻² J (alternativa B).",
+  "erradas": {
+   "A": "4,10 × 10⁻² J resulta de usar apenas metade da altura da queda.",
+   "C": "1,23 × 10⁻¹ J resulta de usar a altura total de 410 mm, e não a queda de 2/3.",
+   "D": "8,20 × 10⁴ J erra a conversão de unidades (g e mm).",
+   "E": "1,23 × 10⁵ J erra a conversão de unidades (g e mm)."
+  }
+ },
+ "2019-101": {
+  "certa": "As estruturas da bixina, do licopeno e do β-caroteno têm uma longa sequência de ligações duplas alternadas com simples. Essa cadeia conjugada absorve luz visível e confere cor aos compostos (alternativa A).",
+  "erradas": {
+   "B": "Cadeias ramificadas não determinam a cor.",
+   "C": "Carbonos terciários não são responsáveis pela absorção de luz visível.",
+   "D": "A configuração cis das ligações duplas não é o que dá cor; o que importa é a conjugação.",
+   "E": "Carbonos sp³ interrompem a conjugação e não conferem cor."
+  }
+ },
+ "2019-103": {
+  "certa": "Quem tem protanopia não tem receptores para o vermelho e percebe as cores apenas com os cones de verde e azul. O cartão azul estimula somente os cones azuis, então as duas pessoas o veem igual. Todos os outros cartões têm componente vermelha (vermelho, magenta e amarelo) ou todas as cores (branco), e são percebidos de modo diferente (alternativa E).",
+  "erradas": {
+   "A": "O vermelho não é percebido por quem tem protanopia severa.",
+   "B": "O magenta é vermelho mais azul, e a pessoa com protanopia o enxerga só como azul.",
+   "C": "O amarelo é vermelho mais verde, e a pessoa com protanopia o enxerga só como verde.",
+   "D": "O branco combina as três cores, então a pessoa com protanopia não percebe o vermelho dele."
+  }
+ },
+ "2019-113": {
+  "certa": "A tabela indica 70 kcal em 10 g de castanha. Em 2,5 g há 17,5 kcal = 17 500 cal, e 50% aproveitado dá 8 750 cal. Q = m·c·ΔT → 8 750 = 350 × 1 × ΔT → ΔT = 25 °C. A temperatura final é 20 + 25 = 45 °C (alternativa C).",
+  "erradas": {
+   "A": "25 °C é só a variação, sem somar a temperatura inicial de 20 °C.",
+   "B": "27 °C resulta de usar uma energia muito menor que a calculada.",
+   "D": "50 °C corresponderia a usar 100% da energia da castanha com outro valor.",
+   "E": "70 °C confunde o valor energético em kcal com a temperatura."
+  }
+ },
+ "2019-114": {
+  "certa": "No ânodo da bateria zinco-ar, o zinco metálico é oxidado em meio alcalino, e a espécie formada é o íon complexo Zn(OH)₄²⁻ (aq), que aparece no esquema saindo do eletrodo de zinco (alternativa E).",
+  "erradas": {
+   "A": "O H₂ não se forma nesse sistema; o oxigênio é reduzido no eletrodo poroso.",
+   "B": "O O₂ é consumido no cátodo, e não formado no ânodo.",
+   "C": "A água é formada em outros processos, e o ânodo oxida o zinco.",
+   "D": "O OH⁻ é formado no cátodo (redução do O₂), e é consumido no ânodo."
+  }
+ },
+ "2019-117": {
+  "certa": "A fita deve sustentar o peso P = 80 × 10 = 800 N. As duas partes da fita fazem 10° com a horizontal, então 2T · sen 10° = 800 → T = 800/(2 × 0,17) ≈ 2 353 N ≈ 2,4 × 10³ N (alternativa D).",
+  "erradas": {
+   "A": "4,0 × 10² N é metade do peso, ignorando o ângulo.",
+   "B": "4,1 × 10² N resulta de dividir o peso por 2 e multiplicar por cos 10°.",
+   "C": "8,0 × 10² N é o peso, e não a tensão em cada lado.",
+   "E": "4,7 × 10³ N seria o resultado se a tensão fosse calculada sem dividir por 2."
+  }
+ },
+ "2019-120": {
+  "certa": "Os fragmentos reentraram acima do Rio e caíram no oceano, que fica a leste da cidade. Logo, em relação ao solo, o foguete se deslocou para leste: ele gira no mesmo sentido da rotação da Terra, mas com velocidade angular maior, por isso se afastou da cidade rumo ao mar (alternativa B).",
+  "erradas": {
+   "A": "Com velocidade angular igual à da Terra no mesmo sentido, o foguete ficaria parado em relação ao solo e cairia sobre a cidade.",
+   "C": "Se fosse inferior e no sentido oposto, ele se deslocaria para oeste em relação ao solo, para dentro do continente.",
+   "D": "Com sentido oposto, o foguete iria para oeste, e não para o oceano a leste.",
+   "E": "No sentido oposto, ele se deslocaria para oeste em relação ao solo."
+  }
+ },
+ "2019-123": {
+  "certa": "Nas duas equações há variação do número de oxidação: na primeira, a glicose é oxidada a ácido glucônico e o O₂ é reduzido; na segunda, o iodeto (I⁻) é oxidado a I₃⁻ e o H₂O₂ é reduzido. Ambas são reações de oxirredução (alternativa C).",
+  "erradas": {
+   "A": "Análise (decomposição) quebra uma substância em outras mais simples, o que não descreve as reações.",
+   "B": "Síntese junta substâncias simples em um único produto, e as reações têm mais de um produto.",
+   "D": "Complexação forma complexos com ligantes, e aqui só o I₃⁻ se parece com um, sem ser o foco.",
+   "E": "As reações não envolvem transferência de prótons entre ácido e base."
+  }
+ },
+ "2019-127": {
+  "certa": "A transesterificação do PET com um álcool troca o grupo do éster. Para formar tereftalato de metila (COOCH₃) e etanodiol, o reagente A é o metanol (CH₃OH) (alternativa B).",
+  "erradas": {
+   "A": "O metano não tem o grupo OH necessário para a transesterificação.",
+   "C": "O éter metílico não tem OH e não transfere o grupo metila ao éster.",
+   "D": "O ácido etanoico formaria ésteres de etila, e não de metila.",
+   "E": "O anidrido etanoico é um agente de acilação e formaria acetatos."
+  }
+ },
+ "2019-131": {
+  "certa": "O etanol sobe pelo papel por capilaridade: as forças de adesão entre o líquido e as fibras do papel, junto com a coesão do líquido, o puxam pelos poros contra a gravidade (alternativa D).",
+  "erradas": {
+   "A": "A evaporação retira o líquido, mas não o faz subir.",
+   "B": "A diferença de densidades não faz o líquido subir pelo papel.",
+   "C": "Não há reação química do etanol com o papel.",
+   "E": "A resistência ao escoamento se opõe ao movimento, e não o causa."
+  }
+ },
+ "2019-135": {
+  "certa": "Com abertura de 90° e altitude H = 1 000 m, cada foto cobre no solo uma faixa de 2 · H · tg 45° = 2 000 m. Com 20% de sobreposição, o deslocamento entre fotos é 80% × 2 000 = 1 600 m. A 50 m/s, o intervalo é 1 600/50 = 32 s (alternativa B).",
+  "erradas": {
+   "A": "40 s corresponde a 2 000 m, sem considerar a sobreposição.",
+   "C": "28 s não resulta do cálculo da faixa e da sobreposição.",
+   "D": "16 s corresponde à metade do deslocamento de 1 600 m.",
+   "E": "8 s corresponde a um deslocamento de 400 m, o que não resulta da cobertura de 2 000 m."
+  }
+ },
+ "2019-138": {
+  "certa": "Pelo gráfico, as vendas foram 700 (jul), 2 500 (ago), 2 500 (set), 2 800 (out) e 2 700 (nov). A média, que é o valor de dezembro, é 11 200/5 = 2 240. A redução de novembro para dezembro foi 2 700 − 2 240 = 460 por mês. Em janeiro: 1 780; fevereiro: 1 320; março: 860; abril: 400, menor que 700. Isso acontece em abril (alternativa D).",
+  "erradas": {
+   "A": "Em janeiro, as vendas seriam 1 780, bem acima de 700.",
+   "B": "Em fevereiro, as vendas seriam 1 320, acima de 700.",
+   "C": "Em março, as vendas seriam 860, ainda acima de 700.",
+   "E": "Em maio as vendas seriam negativas, mas já em abril caem abaixo de 700."
+  }
+ },
+ "2019-139": {
+  "certa": "Com o sol a pino, a sombra é a projeção ortogonal da escultura no solo. Como as letras são finas, espaçadas igualmente e em posição ortogonal ao solo, a sombra é uma faixa dividida em quatro segmentos, um por letra, separados pelos espaços entre elas (alternativa E).",
+  "erradas": {
+   "A": "Essa projeção não mostra as quatro letras separadas por espaços iguais.",
+   "B": "A sombra não reproduz o formato das letras: elas estão perpendiculares ao solo, então são vistas apenas pela espessura.",
+   "C": "A faixa contínua sem separações ignora o espaço entre as letras.",
+   "D": "O número ou a divisão dos segmentos não corresponde às quatro letras espaçadas."
+  }
+ },
+ "2019-149": {
+  "certa": "Quanto menor a catraca, mais a bicicleta avança por volta dos pedais, e a distância é inversamente proporcional ao diâmetro da catraca. Para avançar 50% a mais que com a de 7 cm, a nova catraca deve ter d = 7/1,5 ≈ 4,7 cm (alternativa C).",
+  "erradas": {
+   "A": "2,3 cm resulta de dividir 7 por 3, o que daria avanço 200% maior.",
+   "B": "3,5 cm resulta de dividir 7 por 2, o que daria avanço 100% maior.",
+   "D": "5,3 cm resulta de usar 7 × 0,75 (confundindo a relação).",
+   "E": "10,5 cm é 7 × 1,5, o que reduziria o avanço."
+  }
+ },
+ "2019-150": {
+  "certa": "Dia 1: temperatura menor que 10 °C e umidade menor que 40%, então o alerta cinza foi correto. Dia 12: a temperatura está em 40 °C, mas o alerta laranja exige temperatura entre 35 °C e 40 °C (sem incluir o 40), e o vermelho exige acima de 40 °C, então o laranja não se aplica. Dia 13: a temperatura passa de 40 °C, mas a umidade está em 40%, acima dos 25% exigidos para o vermelho. Só o dia 1 está correto (alternativa A).",
+  "erradas": {
+   "B": "O dia 12 não atende ao critério de temperatura do alerta laranja, interpretado com limites abertos.",
+   "C": "Inclui o dia 12, que não atende ao critério do alerta laranja.",
+   "D": "Inclui o dia 13, em que a umidade está acima de 25%.",
+   "E": "Inclui os dias 12 e 13, que não atendem aos critérios dos alertas."
+  }
+ },
+ "2019-151": {
+  "certa": "Cada placa é formada por um semicírculo de raio 20 cm sobre um quadrado de 40 cm de lado: h = 60 cm. A área é 1 600 + (3,14 × 20²)/2 = 1 600 + 628 = 2 228 cm². Para dez placas: 22 280 cm² (alternativa B).",
+  "erradas": {
+   "A": "16 628 resulta de errar a área da placa ou o número de placas.",
+   "C": "28 560 resulta de usar o retângulo 40 × 60 e outros valores de forma inadequada.",
+   "D": "41 120 não resulta da área da placa vezes dez.",
+   "E": "66 240 não resulta da área da placa vezes dez."
+  }
+ },
+ "2019-153": {
+  "certa": "O número de acidentes foi de 900 (2014) para 850 (2015): redução de 50 por ano. De 2015 até 2018 são três anos: 850 − 3 × 50 = 700 acidentes (alternativa D).",
+  "erradas": {
+   "A": "150 resultaria de reduzir 50 por ano durante 14 anos.",
+   "B": "450 resultaria de reduzir 50 por ano durante 8 anos.",
+   "C": "550 resultaria de reduzir 50 por ano durante 6 anos.",
+   "E": "800 é o valor de 2016, apenas um ano depois de 2015."
+  }
+ },
+ "2019-161": {
+  "certa": "Ao cortar um terço de cada aresta nos vértices do tetraedro regular, cada face triangular original vira um hexágono regular (4 hexágonos) e cada vértice removido deixa uma face triangular equilátera (4 triângulos). Total: 4 hexágonos regulares e 4 triângulos equiláteros (alternativa A).",
+  "erradas": {
+   "B": "Com 2 hexágonos, não se contariam as 4 faces originais do tetraedro.",
+   "C": "Os cortes a 1/3 produzem hexágonos e triângulos equiláteros, e não quadriláteros e triângulos isósceles.",
+   "D": "Quadriláteros e triângulos isósceles não resultam desses cortes.",
+   "E": "O tetraedro tem 4 faces, que viram 4 hexágonos, e não 3."
+  }
+ },
+ "2019-166": {
+  "certa": "A média ponderada é (0 × 52 + 1 × 5 + 2 × 2 + 3 × 1)/60 = (0 + 5 + 4 + 3)/60 = 12/60 = 0,2 garrafa por dia (alternativa B).",
+  "erradas": {
+   "A": "0,1 resulta de 6/60, somando só parte das garrafas.",
+   "C": "1,5 é a média simples dos valores 0, 1, 2 e 3, sem ponderar pelos dias.",
+   "D": "2,0 não resulta da média ponderada.",
+   "E": "3,0 é o maior valor da tabela, e não a média."
+  }
+ },
+ "2019-167": {
+  "certa": "1 jarda = 3 pés = 0,9144 m, então 1 pé = 0,3048 m = 30,48 cm. Como 1 polegada = 2,54 cm, 1 pé = 30,48/2,54 = 12 polegadas (alternativa D).",
+  "erradas": {
+   "A": "0,1200 não resulta da conversão de unidades.",
+   "B": "0,3048 é o pé em metros, e a pergunta é em polegadas.",
+   "C": "1,0800 não resulta da conversão de unidades.",
+   "E": "36,0000 é o número de polegadas em 1 jarda."
+  }
+ },
+ "2019-169": {
+  "certa": "A laje tem 8 m de largura por 8 m de altura (64 m²), mais 3 m por 7 m (21 m²) e 3 m por 5 m (15 m²): total de 100 m². Com 5 cm de espessura (0,05 m), o volume é 5 m³. Basta um caminhão com capacidade de 5 m³ (alternativa C).",
+  "erradas": {
+   "A": "Dez caminhões de 10 m³ trariam 100 m³, muito mais que os 5 m³ necessários.",
+   "B": "Cinco caminhões de 10 m³ trariam 50 m³, muito mais que o necessário.",
+   "D": "Dez caminhões de 2 m³ trariam 20 m³, mais que o necessário e mais caminhões que o mínimo.",
+   "E": "Um caminhão de 2 m³ não carrega os 5 m³ necessários."
+  }
+ },
+ "2019-171": {
+  "certa": "Tomando o lado menor da folha como 12 cm e o maior como 18 cm, o ponto E divide o lado de modo que DE = 12 cm e EC = 6 cm. O segmento AE é a hipotenusa de um triângulo retângulo com catetos 12 cm (altura da folha) e 6 cm: AE = √(12² + 6²) = √180 = 6√5 cm (alternativa D).",
+  "erradas": {
+   "A": "2√22 cm não resulta do teorema de Pitágoras com esses catetos.",
+   "B": "6√3 cm resultaria de catetos que não correspondem aos da figura.",
+   "C": "12 cm é apenas a altura da folha, e AE é a hipotenusa.",
+   "E": "12√2 cm resultaria de catetos de 12 e 12, e o segundo cateto é 6."
+  }
+ },
+ "2019-174": {
+  "certa": "Para haver match, o bar precisa estar dentro do raio de cada um: P (3 km) e Q (3 km) → distância ao menos até 3 km; R tem raio 2 km → no máximo 2 km; S tem raio 5 km, mas P tem 3 km → no máximo 3 km. O bar I (5; 6) está a √5 ≈ 2,2 km de Q, √2 ≈ 1,4 km de R e 3 km de S: atende a todos (alternativa A).",
+  "erradas": {
+   "B": "O bar II (4; 5) está a √8 ≈ 2,8 km de R, acima do raio de 2 km.",
+   "C": "O bar III (5; 5) está a √5 ≈ 2,2 km de R, acima do raio de 2 km.",
+   "D": "O bar IV (4; 6) está a √5 ≈ 2,2 km de R, acima do raio de 2 km.",
+   "E": "O bar V (3; 4) está a √18 ≈ 4,2 km de R, bem acima do raio de 2 km."
+  }
+ },
+ "2019-175": {
+  "certa": "No gráfico, para cada dia da semana, os pastéis estimados para a próxima semana são iguais às vendas de refrigerante mais caldo de cana na última semana. Somando os sete dias e subtraindo o total de pastéis vendidos na última semana, a diferença é de 27 pastéis a mais (alternativa B).",
+  "erradas": {
+   "A": "20 não resulta da diferença entre o total estimado e o vendido de pastéis.",
+   "C": "44 não resulta da diferença entre o total estimado e o vendido de pastéis.",
+   "D": "55 não resulta da diferença entre o total estimado e o vendido de pastéis.",
+   "E": "71 não resulta da diferença entre o total estimado e o vendido de pastéis."
+  }
+ },
+ "2019-178": {
+  "certa": "O volume do reservatório central é π · 2² · 3,30 = 13,2π m³. Cada cano guarda π · 0,05² · 20 = 0,05π m³, ou 0,2π para os quatro. No equilíbrio, a água ocupa o central (4π por metro de altura) e os quatro auxiliares (4 × 2,25π = 9π por metro), total de 13π por metro: 13π·h + 0,2π = 13,2π → h = 1,00 m (alternativa D).",
+  "erradas": {
+   "A": "1,44 m não resulta do balanço de volumes.",
+   "B": "1,16 m não resulta do balanço de volumes.",
+   "C": "1,10 m resultaria de errar a área total das bases.",
+   "E": "0,95 m resultaria de descontar demais o volume dos canos."
+  }
+ },
+ "2019-180": {
+  "certa": "h(t) = 4 + 4·sen(βt/2 − π/2) vale 6 quando sen(...) = 1/2. O argumento começa em −π/2 e cresce: sen = 1/2 em π/6, 5π/6 e 13π/6 (terceira vez). Precisamos que em t < 4 s o argumento passe de 13π/6: 4β/2 − π/2 > 13π/6 → 2β > 8π/3 → β > 4π/3 = 4 (com π = 3). O menor inteiro é 5 (alternativa D).",
+  "erradas": {
+   "A": "Com β = 1, em 4 s o argumento vale 2 − 1,5 = 0,5 rad, o que não chega a π/2 nem alcança 6 cm.",
+   "B": "Com β = 2, em 4 s o argumento vale 4 − 1,5 = 2,5 rad, bem abaixo dos 6,5 rad (13π/6) necessários.",
+   "C": "Com β = 4, em t = 4 s o argumento vale 8 − 1,5 = 6,5 rad, exatamente 13π/6; o valor 6 cm é atingido pela terceira vez só em t = 4 s, e não em menos de 4 s.",
+   "E": "β = 8 funciona, mas não é o menor valor inteiro possível."
+  }
+ },
+ "2019-109": {
+  "certa": "No campo magnético, o íon descreve circunferências com período T = 2πm/(qB). Em N voltas, o tempo de voo é t = N·T = N·2πm/(qB). Isolando a massa: m = qBt/(2πN) (alternativa A).",
+  "erradas": {
+   "B": "qBt/(πN) dobra a massa porque usa o período como πm/(qB), e não 2πm/(qB).",
+   "C": "2qBt/(πN) resulta de erros nos fatores numéricos e daria massa quatro vezes maior.",
+   "D": "qBt/N esquece o fator 2π do período da circunferência.",
+   "E": "2qBt/N esquece o fator π e coloca um 2 a mais."
+  }
+ },
+ "2019-137": {
+  "certa": "Para contar as colorações dos 12 vagões, escolhem-se primeiro 4 posições para o vermelho: C(12,4); dos 8 vagões restantes, 3 para o azul: C(8,3); dos 5 restantes, 3 para o verde: C(5,3); os 2 que sobram são amarelos: C(2,2). O total é C(12,4) × C(8,3) × C(5,3) × C(2,2) (alternativa E).",
+  "erradas": {
+   "A": "C(12,3) e C(12,2) escolhem sempre entre os 12 vagões, repetindo vagões já usados.",
+   "B": "Somar os casos, em vez de multiplicar, contaria só uma cor de cada vez.",
+   "C": "O fator 2 não aparece na contagem, e a ordem das escolhas já está embutida nas combinações.",
+   "D": "A soma e o fator 2 não representam o princípio multiplicativo da contagem."
+  }
+ },
+ "2019-142": {
+  "certa": "O consumo a cada minuto é a diferença entre pontos do gráfico: 20, 15, 5, 15, 20, 10, 20, 15 W. Pela planta: 20 W = sala (1), 15 W = suíte (4), 5 W = banheiro (5), 10 W = cozinha (6). Os cômodos visitados foram 1 → 4 → 5 → 4 → 1 → 6 → 1 → 4 (alternativa A).",
+  "erradas": {
+   "B": "1 → 2 → 3 consumiria 20, 13 e 2 W, valores diferentes dos primeiros do gráfico (20, 15, 5).",
+   "C": "Começa bem, mas termina em 2 → 3 (13 W e 2 W), enquanto o gráfico mostra 20 e 15 W nos dois últimos minutos.",
+   "D": "O segundo minuto seria no cômodo 2 (13 W), e o gráfico mostra 15 W.",
+   "E": "A sequência 1 → 4 → 2 usaria 13 W no terceiro minuto, e o gráfico mostra 5 W."
+  }
+ },
+ "2019-143": {
+  "certa": "Convertendo o gasto diário em reais: França 315 × 3,14 = R$ 989,10; EUA 390 × 2,78 = R$ 1 084,20; Austrália 400 × 2,14 = R$ 856,00; Canadá 410 × 2,10 = R$ 861,00; Reino Unido 290 × 4,24 = R$ 1 229,60. O menor custo é o da Austrália (alternativa A).",
+  "erradas": {
+   "B": "O Canadá custa R$ 861,00, mais caro que a Austrália (R$ 856,00).",
+   "C": "Os EUA custam R$ 1 084,20, acima do teto de R$ 1 000,00.",
+   "D": "A França custa R$ 989,10, dentro do teto, mas mais cara que a Austrália.",
+   "E": "O Reino Unido custa R$ 1 229,60, acima do teto de R$ 1 000,00."
+  }
+ },
+ "2019-147": {
+  "certa": "O consumo por minuto é kcal ÷ minutos: I = 20/10 = 2; II = 100/15 ≈ 6,7; III = 120/20 = 6; IV = 100/25 = 4; V = 80/30 ≈ 2,7. O maior consumo por minuto é o da atividade II (alternativa B).",
+  "erradas": {
+   "A": "A atividade I gasta 2 kcal por minuto, o menor valor.",
+   "C": "A atividade III é a que gasta mais no total (120 kcal), mas 6 kcal por minuto é menos que a II.",
+   "D": "A atividade IV gasta 4 kcal por minuto.",
+   "E": "A atividade V gasta cerca de 2,7 kcal por minuto."
+  }
+ },
+ "2019-163": {
+  "certa": "Até 6 m³ o valor é fixo (R$ 12,00): reta horizontal. De 6 a 10 m³, o valor cresce R$ 3,00 por m³ (inclinação 3). Acima de 10 m³, passa a crescer R$ 6,00 por m³ (inclinação maior), até 15 m³. O gráfico com trecho horizontal e dois trechos crescentes, o segundo mais inclinado, é o da alternativa A.",
+  "erradas": {
+   "B": "O último trecho é menos inclinado que o anterior, mas a tarifa sobe de 3 para 6.",
+   "C": "O último trecho é horizontal, o que indicaria valor constante acima de 10 m³.",
+   "D": "Falta o trecho intermediário: a inclinação não muda em 10 m³.",
+   "E": "O primeiro trecho não é horizontal, o que contraria o valor fixo de R$ 12,00."
+  }
+ },
+ "2019-170": {
+  "certa": "A concentração é q (g) dividida pelo volume de sangue em litros, que vale 8% da massa m: 0,08m. A concentração prejudicial é maior que 0,4 g/L: q/(0,08m) > 0,4 (alternativa E).",
+  "erradas": {
+   "A": "Usa 0,8m (80% da massa) no denominador, em vez de 0,08m (8%).",
+   "B": "Inverte a razão e compara com 0,8, o que não representa a concentração.",
+   "C": "Usa 0,4m no denominador e compara com 0,8, o que não representa o enunciado.",
+   "D": "Inverte a razão: 0,08m/q seria o inverso da concentração."
+  }
+ },
+ "2019-177": {
+  "certa": "A taxa de urbanização é urbana ÷ (urbana + rural): I = 8/12 ≈ 0,667; II = 10/18 ≈ 0,556; III = 11/16 ≈ 0,688; IV = 18/28 ≈ 0,643; V = 17/29 ≈ 0,586. A maior é a do município III (alternativa C).",
+  "erradas": {
+   "A": "O município I tem taxa de cerca de 66,7%, menor que a do III.",
+   "B": "O município II tem a menor taxa, cerca de 55,6%.",
+   "D": "O município IV tem a maior população urbana, mas a taxa é de cerca de 64,3%.",
+   "E": "O município V tem taxa de cerca de 58,6%."
+  }
+ },
  "2020-001-es": {
   "certa": "O título junta um nome próprio (Pablo) e “pueblo” (povo): é um homem comum, cansado, que volta para um bairro pobre e vê as paredes com velhos cartazes de promessas políticas, com “la decepción de la espera”. A letra contrapõe a individualidade de um sujeito a uma estrutura social marcada pela decepção com a atuação política.",
   "erradas": {

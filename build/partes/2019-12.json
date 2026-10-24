@@ -1,0 +1,245 @@
+{
+ "2019-091": {
+  "certa": "Com n lâmpadas ligadas em paralelo com a TV, a resistência do conjunto é 200/(n + 4) (a TV vale 1/50 = 4/200). Em série com o cabo de 10 Ω, a tensão sobre a TV é 120 · [200/(n + 4)] / [10 + 200/(n + 4)] = 24 000/(240 + 10n). Ela precisa ser ≥ 90 V: 240 + 10n ≤ 266,7, logo n ≤ 2,67. O máximo é 2 lâmpadas (alternativa B).",
+  "erradas": {
+   "A": "Com 1 lâmpada a TV funciona, mas não é o número máximo.",
+   "C": "Com 3 lâmpadas, a tensão na TV cai para 24 000/270 ≈ 88,9 V, abaixo de 90 V.",
+   "D": "Com 4 lâmpadas, a tensão na TV cai para 24 000/280 ≈ 85,7 V.",
+   "E": "Com 5 lâmpadas, a tensão na TV cai para 24 000/290 ≈ 82,8 V."
+  }
+ },
+ "2019-097": {
+  "certa": "Sem energia cinética de translação no ponto mais baixo, toda a energia potencial perdida vira energia cinética de rotação. O disco desce de 410 mm até 1/3 de 410 mm, uma queda de 2/3 · 410 ≈ 273 mm = 0,273 m. Assim, E = m·g·Δh = 0,030 × 10 × 0,273 ≈ 8,2 × 10⁻² J (alternativa B).",
+  "erradas": {
+   "A": "4,10 × 10⁻² J resulta de usar apenas metade da altura da queda.",
+   "C": "1,23 × 10⁻¹ J resulta de usar a altura total de 410 mm, e não a queda de 2/3.",
+   "D": "8,20 × 10⁴ J erra a conversão de unidades (g e mm).",
+   "E": "1,23 × 10⁵ J erra a conversão de unidades (g e mm)."
+  }
+ },
+ "2019-101": {
+  "certa": "As estruturas da bixina, do licopeno e do β-caroteno têm uma longa sequência de ligações duplas alternadas com simples. Essa cadeia conjugada absorve luz visível e confere cor aos compostos (alternativa A).",
+  "erradas": {
+   "B": "Cadeias ramificadas não determinam a cor.",
+   "C": "Carbonos terciários não são responsáveis pela absorção de luz visível.",
+   "D": "A configuração cis das ligações duplas não é o que dá cor; o que importa é a conjugação.",
+   "E": "Carbonos sp³ interrompem a conjugação e não conferem cor."
+  }
+ },
+ "2019-103": {
+  "certa": "Quem tem protanopia não tem receptores para o vermelho e percebe as cores apenas com os cones de verde e azul. O cartão azul estimula somente os cones azuis, então as duas pessoas o veem igual. Todos os outros cartões têm componente vermelha (vermelho, magenta e amarelo) ou todas as cores (branco), e são percebidos de modo diferente (alternativa E).",
+  "erradas": {
+   "A": "O vermelho não é percebido por quem tem protanopia severa.",
+   "B": "O magenta é vermelho mais azul, e a pessoa com protanopia o enxerga só como azul.",
+   "C": "O amarelo é vermelho mais verde, e a pessoa com protanopia o enxerga só como verde.",
+   "D": "O branco combina as três cores, então a pessoa com protanopia não percebe o vermelho dele."
+  }
+ },
+ "2019-113": {
+  "certa": "A tabela indica 70 kcal em 10 g de castanha. Em 2,5 g há 17,5 kcal = 17 500 cal, e 50% aproveitado dá 8 750 cal. Q = m·c·ΔT → 8 750 = 350 × 1 × ΔT → ΔT = 25 °C. A temperatura final é 20 + 25 = 45 °C (alternativa C).",
+  "erradas": {
+   "A": "25 °C é só a variação, sem somar a temperatura inicial de 20 °C.",
+   "B": "27 °C resulta de usar uma energia muito menor que a calculada.",
+   "D": "50 °C corresponderia a usar 100% da energia da castanha com outro valor.",
+   "E": "70 °C confunde o valor energético em kcal com a temperatura."
+  }
+ },
+ "2019-114": {
+  "certa": "No ânodo da bateria zinco-ar, o zinco metálico é oxidado em meio alcalino, e a espécie formada é o íon complexo Zn(OH)₄²⁻ (aq), que aparece no esquema saindo do eletrodo de zinco (alternativa E).",
+  "erradas": {
+   "A": "O H₂ não se forma nesse sistema; o oxigênio é reduzido no eletrodo poroso.",
+   "B": "O O₂ é consumido no cátodo, e não formado no ânodo.",
+   "C": "A água é formada em outros processos, e o ânodo oxida o zinco.",
+   "D": "O OH⁻ é formado no cátodo (redução do O₂), e é consumido no ânodo."
+  }
+ },
+ "2019-117": {
+  "certa": "A fita deve sustentar o peso P = 80 × 10 = 800 N. As duas partes da fita fazem 10° com a horizontal, então 2T · sen 10° = 800 → T = 800/(2 × 0,17) ≈ 2 353 N ≈ 2,4 × 10³ N (alternativa D).",
+  "erradas": {
+   "A": "4,0 × 10² N é metade do peso, ignorando o ângulo.",
+   "B": "4,1 × 10² N resulta de dividir o peso por 2 e multiplicar por cos 10°.",
+   "C": "8,0 × 10² N é o peso, e não a tensão em cada lado.",
+   "E": "4,7 × 10³ N seria o resultado se a tensão fosse calculada sem dividir por 2."
+  }
+ },
+ "2019-120": {
+  "certa": "Os fragmentos reentraram acima do Rio e caíram no oceano, que fica a leste da cidade. Logo, em relação ao solo, o foguete se deslocou para leste: ele gira no mesmo sentido da rotação da Terra, mas com velocidade angular maior, por isso se afastou da cidade rumo ao mar (alternativa B).",
+  "erradas": {
+   "A": "Com velocidade angular igual à da Terra no mesmo sentido, o foguete ficaria parado em relação ao solo e cairia sobre a cidade.",
+   "C": "Se fosse inferior e no sentido oposto, ele se deslocaria para oeste em relação ao solo, para dentro do continente.",
+   "D": "Com sentido oposto, o foguete iria para oeste, e não para o oceano a leste.",
+   "E": "No sentido oposto, ele se deslocaria para oeste em relação ao solo."
+  }
+ },
+ "2019-123": {
+  "certa": "Nas duas equações há variação do número de oxidação: na primeira, a glicose é oxidada a ácido glucônico e o O₂ é reduzido; na segunda, o iodeto (I⁻) é oxidado a I₃⁻ e o H₂O₂ é reduzido. Ambas são reações de oxirredução (alternativa C).",
+  "erradas": {
+   "A": "Análise (decomposição) quebra uma substância em outras mais simples, o que não descreve as reações.",
+   "B": "Síntese junta substâncias simples em um único produto, e as reações têm mais de um produto.",
+   "D": "Complexação forma complexos com ligantes, e aqui só o I₃⁻ se parece com um, sem ser o foco.",
+   "E": "As reações não envolvem transferência de prótons entre ácido e base."
+  }
+ },
+ "2019-127": {
+  "certa": "A transesterificação do PET com um álcool troca o grupo do éster. Para formar tereftalato de metila (COOCH₃) e etanodiol, o reagente A é o metanol (CH₃OH) (alternativa B).",
+  "erradas": {
+   "A": "O metano não tem o grupo OH necessário para a transesterificação.",
+   "C": "O éter metílico não tem OH e não transfere o grupo metila ao éster.",
+   "D": "O ácido etanoico formaria ésteres de etila, e não de metila.",
+   "E": "O anidrido etanoico é um agente de acilação e formaria acetatos."
+  }
+ },
+ "2019-131": {
+  "certa": "O etanol sobe pelo papel por capilaridade: as forças de adesão entre o líquido e as fibras do papel, junto com a coesão do líquido, o puxam pelos poros contra a gravidade (alternativa D).",
+  "erradas": {
+   "A": "A evaporação retira o líquido, mas não o faz subir.",
+   "B": "A diferença de densidades não faz o líquido subir pelo papel.",
+   "C": "Não há reação química do etanol com o papel.",
+   "E": "A resistência ao escoamento se opõe ao movimento, e não o causa."
+  }
+ },
+ "2019-135": {
+  "certa": "Com abertura de 90° e altitude H = 1 000 m, cada foto cobre no solo uma faixa de 2 · H · tg 45° = 2 000 m. Com 20% de sobreposição, o deslocamento entre fotos é 80% × 2 000 = 1 600 m. A 50 m/s, o intervalo é 1 600/50 = 32 s (alternativa B).",
+  "erradas": {
+   "A": "40 s corresponde a 2 000 m, sem considerar a sobreposição.",
+   "C": "28 s não resulta do cálculo da faixa e da sobreposição.",
+   "D": "16 s corresponde à metade do deslocamento de 1 600 m.",
+   "E": "8 s corresponde a um deslocamento de 400 m, o que não resulta da cobertura de 2 000 m."
+  }
+ },
+ "2019-138": {
+  "certa": "Pelo gráfico, as vendas foram 700 (jul), 2 500 (ago), 2 500 (set), 2 800 (out) e 2 700 (nov). A média, que é o valor de dezembro, é 11 200/5 = 2 240. A redução de novembro para dezembro foi 2 700 − 2 240 = 460 por mês. Em janeiro: 1 780; fevereiro: 1 320; março: 860; abril: 400, menor que 700. Isso acontece em abril (alternativa D).",
+  "erradas": {
+   "A": "Em janeiro, as vendas seriam 1 780, bem acima de 700.",
+   "B": "Em fevereiro, as vendas seriam 1 320, acima de 700.",
+   "C": "Em março, as vendas seriam 860, ainda acima de 700.",
+   "E": "Em maio as vendas seriam negativas, mas já em abril caem abaixo de 700."
+  }
+ },
+ "2019-139": {
+  "certa": "Com o sol a pino, a sombra é a projeção ortogonal da escultura no solo. Como as letras são finas, espaçadas igualmente e em posição ortogonal ao solo, a sombra é uma faixa dividida em quatro segmentos, um por letra, separados pelos espaços entre elas (alternativa E).",
+  "erradas": {
+   "A": "Essa projeção não mostra as quatro letras separadas por espaços iguais.",
+   "B": "A sombra não reproduz o formato das letras: elas estão perpendiculares ao solo, então são vistas apenas pela espessura.",
+   "C": "A faixa contínua sem separações ignora o espaço entre as letras.",
+   "D": "O número ou a divisão dos segmentos não corresponde às quatro letras espaçadas."
+  }
+ },
+ "2019-149": {
+  "certa": "Quanto menor a catraca, mais a bicicleta avança por volta dos pedais, e a distância é inversamente proporcional ao diâmetro da catraca. Para avançar 50% a mais que com a de 7 cm, a nova catraca deve ter d = 7/1,5 ≈ 4,7 cm (alternativa C).",
+  "erradas": {
+   "A": "2,3 cm resulta de dividir 7 por 3, o que daria avanço 200% maior.",
+   "B": "3,5 cm resulta de dividir 7 por 2, o que daria avanço 100% maior.",
+   "D": "5,3 cm resulta de usar 7 × 0,75 (confundindo a relação).",
+   "E": "10,5 cm é 7 × 1,5, o que reduziria o avanço."
+  }
+ },
+ "2019-150": {
+  "certa": "Dia 1: temperatura menor que 10 °C e umidade menor que 40%, então o alerta cinza foi correto. Dia 12: a temperatura está em 40 °C, mas o alerta laranja exige temperatura entre 35 °C e 40 °C (sem incluir o 40), e o vermelho exige acima de 40 °C, então o laranja não se aplica. Dia 13: a temperatura passa de 40 °C, mas a umidade está em 40%, acima dos 25% exigidos para o vermelho. Só o dia 1 está correto (alternativa A).",
+  "erradas": {
+   "B": "O dia 12 não atende ao critério de temperatura do alerta laranja, interpretado com limites abertos.",
+   "C": "Inclui o dia 12, que não atende ao critério do alerta laranja.",
+   "D": "Inclui o dia 13, em que a umidade está acima de 25%.",
+   "E": "Inclui os dias 12 e 13, que não atendem aos critérios dos alertas."
+  }
+ },
+ "2019-151": {
+  "certa": "Cada placa é formada por um semicírculo de raio 20 cm sobre um quadrado de 40 cm de lado: h = 60 cm. A área é 1 600 + (3,14 × 20²)/2 = 1 600 + 628 = 2 228 cm². Para dez placas: 22 280 cm² (alternativa B).",
+  "erradas": {
+   "A": "16 628 resulta de errar a área da placa ou o número de placas.",
+   "C": "28 560 resulta de usar o retângulo 40 × 60 e outros valores de forma inadequada.",
+   "D": "41 120 não resulta da área da placa vezes dez.",
+   "E": "66 240 não resulta da área da placa vezes dez."
+  }
+ },
+ "2019-153": {
+  "certa": "O número de acidentes foi de 900 (2014) para 850 (2015): redução de 50 por ano. De 2015 até 2018 são três anos: 850 − 3 × 50 = 700 acidentes (alternativa D).",
+  "erradas": {
+   "A": "150 resultaria de reduzir 50 por ano durante 14 anos.",
+   "B": "450 resultaria de reduzir 50 por ano durante 8 anos.",
+   "C": "550 resultaria de reduzir 50 por ano durante 6 anos.",
+   "E": "800 é o valor de 2016, apenas um ano depois de 2015."
+  }
+ },
+ "2019-161": {
+  "certa": "Ao cortar um terço de cada aresta nos vértices do tetraedro regular, cada face triangular original vira um hexágono regular (4 hexágonos) e cada vértice removido deixa uma face triangular equilátera (4 triângulos). Total: 4 hexágonos regulares e 4 triângulos equiláteros (alternativa A).",
+  "erradas": {
+   "B": "Com 2 hexágonos, não se contariam as 4 faces originais do tetraedro.",
+   "C": "Os cortes a 1/3 produzem hexágonos e triângulos equiláteros, e não quadriláteros e triângulos isósceles.",
+   "D": "Quadriláteros e triângulos isósceles não resultam desses cortes.",
+   "E": "O tetraedro tem 4 faces, que viram 4 hexágonos, e não 3."
+  }
+ },
+ "2019-166": {
+  "certa": "A média ponderada é (0 × 52 + 1 × 5 + 2 × 2 + 3 × 1)/60 = (0 + 5 + 4 + 3)/60 = 12/60 = 0,2 garrafa por dia (alternativa B).",
+  "erradas": {
+   "A": "0,1 resulta de 6/60, somando só parte das garrafas.",
+   "C": "1,5 é a média simples dos valores 0, 1, 2 e 3, sem ponderar pelos dias.",
+   "D": "2,0 não resulta da média ponderada.",
+   "E": "3,0 é o maior valor da tabela, e não a média."
+  }
+ },
+ "2019-167": {
+  "certa": "1 jarda = 3 pés = 0,9144 m, então 1 pé = 0,3048 m = 30,48 cm. Como 1 polegada = 2,54 cm, 1 pé = 30,48/2,54 = 12 polegadas (alternativa D).",
+  "erradas": {
+   "A": "0,1200 não resulta da conversão de unidades.",
+   "B": "0,3048 é o pé em metros, e a pergunta é em polegadas.",
+   "C": "1,0800 não resulta da conversão de unidades.",
+   "E": "36,0000 é o número de polegadas em 1 jarda."
+  }
+ },
+ "2019-169": {
+  "certa": "A laje tem 8 m de largura por 8 m de altura (64 m²), mais 3 m por 7 m (21 m²) e 3 m por 5 m (15 m²): total de 100 m². Com 5 cm de espessura (0,05 m), o volume é 5 m³. Basta um caminhão com capacidade de 5 m³ (alternativa C).",
+  "erradas": {
+   "A": "Dez caminhões de 10 m³ trariam 100 m³, muito mais que os 5 m³ necessários.",
+   "B": "Cinco caminhões de 10 m³ trariam 50 m³, muito mais que o necessário.",
+   "D": "Dez caminhões de 2 m³ trariam 20 m³, mais que o necessário e mais caminhões que o mínimo.",
+   "E": "Um caminhão de 2 m³ não carrega os 5 m³ necessários."
+  }
+ },
+ "2019-171": {
+  "certa": "Tomando o lado menor da folha como 12 cm e o maior como 18 cm, o ponto E divide o lado de modo que DE = 12 cm e EC = 6 cm. O segmento AE é a hipotenusa de um triângulo retângulo com catetos 12 cm (altura da folha) e 6 cm: AE = √(12² + 6²) = √180 = 6√5 cm (alternativa D).",
+  "erradas": {
+   "A": "2√22 cm não resulta do teorema de Pitágoras com esses catetos.",
+   "B": "6√3 cm resultaria de catetos que não correspondem aos da figura.",
+   "C": "12 cm é apenas a altura da folha, e AE é a hipotenusa.",
+   "E": "12√2 cm resultaria de catetos de 12 e 12, e o segundo cateto é 6."
+  }
+ },
+ "2019-174": {
+  "certa": "Para haver match, o bar precisa estar dentro do raio de cada um: P (3 km) e Q (3 km) → distância ao menos até 3 km; R tem raio 2 km → no máximo 2 km; S tem raio 5 km, mas P tem 3 km → no máximo 3 km. O bar I (5; 6) está a √5 ≈ 2,2 km de Q, √2 ≈ 1,4 km de R e 3 km de S: atende a todos (alternativa A).",
+  "erradas": {
+   "B": "O bar II (4; 5) está a √8 ≈ 2,8 km de R, acima do raio de 2 km.",
+   "C": "O bar III (5; 5) está a √5 ≈ 2,2 km de R, acima do raio de 2 km.",
+   "D": "O bar IV (4; 6) está a √5 ≈ 2,2 km de R, acima do raio de 2 km.",
+   "E": "O bar V (3; 4) está a √18 ≈ 4,2 km de R, bem acima do raio de 2 km."
+  }
+ },
+ "2019-175": {
+  "certa": "No gráfico, para cada dia da semana, os pastéis estimados para a próxima semana são iguais às vendas de refrigerante mais caldo de cana na última semana. Somando os sete dias e subtraindo o total de pastéis vendidos na última semana, a diferença é de 27 pastéis a mais (alternativa B).",
+  "erradas": {
+   "A": "20 não resulta da diferença entre o total estimado e o vendido de pastéis.",
+   "C": "44 não resulta da diferença entre o total estimado e o vendido de pastéis.",
+   "D": "55 não resulta da diferença entre o total estimado e o vendido de pastéis.",
+   "E": "71 não resulta da diferença entre o total estimado e o vendido de pastéis."
+  }
+ },
+ "2019-178": {
+  "certa": "O volume do reservatório central é π · 2² · 3,30 = 13,2π m³. Cada cano guarda π · 0,05² · 20 = 0,05π m³, ou 0,2π para os quatro. No equilíbrio, a água ocupa o central (4π por metro de altura) e os quatro auxiliares (4 × 2,25π = 9π por metro), total de 13π por metro: 13π·h + 0,2π = 13,2π → h = 1,00 m (alternativa D).",
+  "erradas": {
+   "A": "1,44 m não resulta do balanço de volumes.",
+   "B": "1,16 m não resulta do balanço de volumes.",
+   "C": "1,10 m resultaria de errar a área total das bases.",
+   "E": "0,95 m resultaria de descontar demais o volume dos canos."
+  }
+ },
+ "2019-180": {
+  "certa": "h(t) = 4 + 4·sen(βt/2 − π/2) vale 6 quando sen(...) = 1/2. O argumento começa em −π/2 e cresce: sen = 1/2 em π/6, 5π/6 e 13π/6 (terceira vez). Precisamos que em t < 4 s o argumento passe de 13π/6: 4β/2 − π/2 > 13π/6 → 2β > 8π/3 → β > 4π/3 = 4 (com π = 3). O menor inteiro é 5 (alternativa D).",
+  "erradas": {
+   "A": "Com β = 1, em 4 s o argumento vale 2 − 1,5 = 0,5 rad, o que não chega a π/2 nem alcança 6 cm.",
+   "B": "Com β = 2, em 4 s o argumento vale 4 − 1,5 = 2,5 rad, bem abaixo dos 6,5 rad (13π/6) necessários.",
+   "C": "Com β = 4, em t = 4 s o argumento vale 8 − 1,5 = 6,5 rad, exatamente 13π/6; o valor 6 cm é atingido pela terceira vez só em t = 4 s, e não em menos de 4 s.",
+   "E": "β = 8 funciona, mas não é o menor valor inteiro possível."
+  }
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "2019-092": {
+  "certa": "O DNP devolve os prótons à matriz sem que passem pela ATP sintase, então a energia do gradiente se perde como calor e a produção de ATP diminui. Para compensar, a célula consome mais nutrientes (glicose e ácidos graxos) para tentar manter o ATP, o que causa o emagrecimento (alternativa E).",
+  "erradas": {
+   "A": "A cadeia respiratória não é obstruída: os elétrons continuam a ser transportados, e o que se perde é o gradiente de prótons.",
+   "B": "O ciclo de Krebs não é bloqueado pelo DNP; o que muda é o acoplamento na membrana interna.",
+   "C": "O DNP não reduz a produção de acetil CoA; a degradação de nutrientes continua e até aumenta.",
+   "D": "A glicólise ocorre no citoplasma e não é inibida pelo DNP."
+  }
+ },
+ "2019-093": {
+  "certa": "Pelo modelo atual, os átomos se combinam em proporções de números inteiros pequenos para formar compostos (lei das proporções definidas). O postulado 5 continua válido (alternativa E).",
+  "erradas": {
+   "A": "Os átomos são divisíveis (prótons, nêutrons, elétrons e partículas ainda menores).",
+   "B": "Átomos do mesmo elemento podem ter massas diferentes (isótopos).",
+   "C": "Elementos diferentes podem ter átomos com a mesma massa (isóbaros), então a diferença de massa não é universal.",
+   "D": "Em reações nucleares, os átomos são transformados, e não são indestrutíveis."
+  }
+ },
+ "2019-094": {
+  "certa": "A reação deve ser espontânea, liberar H2 e gerar calor. A espécie que reduz a água (E = −0,83 V) com maior diferença de potencial é o alumínio (par Al(OH)4⁻/Al, −2,33 V): ΔE ≈ 1,5 V, muito favorável e bastante exotérmica. A mistura comercial usa alumínio em pó com soda cáustica (alternativa A).",
+  "erradas": {
+   "B": "O par Co(OH)2/Co (−0,73 V) tem potencial maior que o da água, então o cobalto não reduz a água.",
+   "C": "Cu(OH)2 já está oxidado; a espécie reduzida seria o Cu, e mesmo assim, com −0,22 V, não reage com a água.",
+   "D": "Fe(OH)2 é a forma oxidada. O ferro metálico teria diferença de potencial de apenas 0,05 V, insuficiente para a reação rápida e exotérmica.",
+   "E": "O par PbO/Pb (−0,58 V) tem potencial maior que o da água, então o chumbo não reduz a água."
+  }
+ },
+ "2019-095": {
+  "certa": "Com o aterramento dos arames da cerca, a corrente induzida pelo campo magnético da rede é escoada para o solo, e quem encosta no arame não leva choque (alternativa A).",
+  "erradas": {
+   "B": "O fusível interromperia o circuito apenas por corrente excessiva no arame, e não elimina a tensão induzida que causa o choque.",
+   "C": "Aterrar a rede de alta tensão não elimina o campo magnético variável produzido pelas correntes.",
+   "D": "O fusível na rede não evita a indução, que ocorre com a corrente normal.",
+   "E": "O isolamento dos fios da rede não bloqueia o campo magnético."
+  }
+ },
+ "2019-096": {
+  "certa": "A vacina induz o organismo a produzir anticorpos, e eles combatem o verme dentro do corpo e previnem a doença antes da manifestação de sintomas. O tratamento tradicional só age depois do diagnóstico (alternativa E).",
+  "erradas": {
+   "A": "Os anticorpos não impedem a penetração das larvas pela pele.",
+   "B": "A vacina atua nas pessoas, e não elimina o caramujo hospedeiro.",
+   "C": "A vacina não bloqueia o acesso do verme a um órgão específico.",
+   "D": "A eliminação do verme ocorre no organismo, depois do contato, e não antes dele."
+  }
+ },
+ "2019-098": {
+  "certa": "O sabonete de aço inox não se desgasta com o uso, ou seja, não é consumido na reação que transforma a alicina (I) em outro composto (II). Isso é característico de um catalisador, que acelera a reação sem ser consumido (alternativa E).",
+  "erradas": {
+   "A": "Um ácido seria consumido ou alteraria o pH; o sabonete não se desgasta.",
+   "B": "Um redutor seria oxidado e se desgastaria.",
+   "C": "Um eletrólito conduz corrente em solução, o que não é o papel do aço.",
+   "D": "Um tensoativo reduz a tensão superficial, o que não explica a conversão química."
+  }
+ },
+ "2019-099": {
+  "certa": "O estrôncio-90 se assemelha quimicamente ao cálcio e pode substituí-lo em processos biológicos. Como o cálcio se concentra nos ossos, o estrôncio-90 se acumula predominantemente no tecido ósseo (alternativa E).",
+  "erradas": {
+   "A": "O tecido cartilaginoso tem pouco cálcio mineralizado.",
+   "B": "O sangue contém cálcio dissolvido, mas não é o local de acúmulo.",
+   "C": "O tecido muscular usa cálcio na contração, mas não o armazena.",
+   "D": "O tecido nervoso não armazena cálcio em quantidade relevante."
+  }
+ },
+ "2019-100": {
+  "certa": "O pneu da bicicleta A deforma menos, então sua pressão é maior: pA > pB. Como o pneu A é mais estreito, seu volume é menor, e, sendo a massa de ar proporcional ao volume, mA < mB (alternativa B).",
+  "erradas": {
+   "A": "pA < pB contraria a observação de que o pneu A deforma menos.",
+   "C": "Os volumes são diferentes, então as massas não são iguais.",
+   "D": "pA < pB e massas iguais contrariam os dados do enunciado.",
+   "E": "Como o pneu A tem volume menor, sua massa de ar é menor, e não maior."
+  }
+ },
+ "2019-102": {
+  "certa": "As cutias disputam as mesmas sementes, que são um recurso limitado, e roubam umas das outras. Essa relação entre indivíduos da mesma espécie é de competição (alternativa D).",
+  "erradas": {
+   "A": "Sinfilia é um tipo de associação vantajosa ou de convivência com insetos, o que não é o caso.",
+   "B": "No predatismo, um organismo mata outro para se alimentar; as cutias não se matam.",
+   "C": "No parasitismo, um organismo vive às custas de outro, causando-lhe dano, o que não ocorre aqui.",
+   "E": "No comensalismo, um organismo se beneficia sem prejudicar o outro, mas aqui o roubo prejudica quem enterrou."
+  }
+ },
+ "2019-104": {
+  "certa": "O resíduo contém pectina e açúcares (compostos de carbono) e alcaloides (compostos aminados, com nitrogênio). Ao se decompor no solo, eles reciclam carbono e nitrogênio, nutrientes importantes para as plantas (alternativa A).",
+  "erradas": {
+   "B": "O texto não trata de deslocar alumínio tóxico.",
+   "C": "A pectina não melhora a compactação do solo; ela é um polissacarídeo que se decompõe.",
+   "D": "A degradação de matéria orgânica não eleva o pH de forma característica.",
+   "E": "O resíduo é usado como fertilizante, o que contraria a ideia de inibir o crescimento da maioria das plantas."
+  }
+ },
+ "2019-105": {
+  "certa": "Na agricultura orgânica não se usam agrotóxicos, e o controle de insetos é feito com seus predadores naturais, o chamado controle biológico (alternativa D).",
+  "erradas": {
+   "A": "A adubação verde melhora o solo com plantas, mas não controla insetos.",
+   "B": "A compostagem produz adubo orgânico, sem controlar pragas.",
+   "C": "O controle da irrigação trata da água, e não dos insetos.",
+   "E": "As sementes com Rhizobium fixam nitrogênio, e não controlam pragas."
+  }
+ },
+ "2019-106": {
+  "certa": "A segunda lei de Mendel vale para genes em cromossomos diferentes. Genes fisicamente próximos no mesmo cromossomo (ligados) tendem a ser herdados juntos, o que contraria a distribuição independente (alternativa D).",
+  "erradas": {
+   "A": "Dominância e recessividade não alteram a segregação independente.",
+   "B": "Cada organismo recebe um conjunto de cada genitor, e isso não contraria a lei.",
+   "C": "Falhas de segregação são alterações pontuais, e não a explicação geral de exceção à lei.",
+   "E": "A não disjunção é uma anomalia e não explica a exceção mais comum, que é a ligação gênica."
+  }
+ },
+ "2019-107": {
+  "certa": "Na queda de 5 m, a velocidade é v = √(2gh) = 10 m/s. A quantidade de movimento do tijolo é 2,5 × 10 = 25 kg·m/s. Em 0,5 s, a força impulsiva média é F = 25/0,5 = 50 N. O peso de um tijolo é 25 N, então F equivale a 2 tijolos (alternativa A).",
+  "erradas": {
+   "B": "Com 5 tijolos, a força seria 125 N, o que dá um impulso maior que o do problema.",
+   "C": "10 tijolos corresponderiam a 250 N, muito acima do calculado.",
+   "D": "20 tijolos corresponderiam a 500 N, o que seria o caso se o choque durasse apenas 0,05 s.",
+   "E": "50 tijolos corresponderiam a 1250 N, muito acima do calculado."
+  }
+ },
+ "2019-108": {
+  "certa": "Os compostos da fração 4 têm cadeias maiores (C14 a C18), com maior superfície de contato e forças de dispersão de London mais intensas. Mais energia é necessária para separá-los, então entram em ebulição em temperaturas mais altas (alternativa D).",
+  "erradas": {
+   "A": "A densidade não determina a temperatura de ebulição.",
+   "B": "O número de ramificações é menor nas cadeias lineares maiores; ramificação reduz o ponto de ebulição.",
+   "C": "A solubilidade no petróleo não explica o ponto de ebulição.",
+   "E": "A destilação separa por ebulição, sem quebrar a cadeia carbônica."
+  }
+ }
+}

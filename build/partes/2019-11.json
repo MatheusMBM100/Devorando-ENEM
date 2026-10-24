@@ -1,0 +1,110 @@
+{
+ "2019-157": {
+  "certa": "Em 2010 o rendimento foi 1 250 × 1,072 = R$ 1 340,00. Em 2020, 10% maior: 1 340 × 1,10 = R$ 1 474,00 (alternativa E).",
+  "erradas": {
+   "A": "R$ 1 340,00 é o valor de 2010, sem o aumento de 10% projetado para 2020.",
+   "B": "R$ 1 349,00 resulta de somar 7,2% e 10% de forma aditiva sobre outro valor, sem aplicar os aumentos em sequência.",
+   "C": "R$ 1 375,00 é 1 250 mais 10%, ignorando o aumento de 7,2% de 2010.",
+   "D": "R$ 1 465,00 resulta de somar os dois percentuais (17,2%) sobre 1 250, em vez de aplicá-los em sequência."
+  }
+ },
+ "2019-158": {
+  "certa": "A · f = 2 000 × 0,2 = 400. log 400 = log 4 + log 100 = 2 · log 2 + 2 = 2 × 0,3 + 2 = 2,6. Então Ms = 3,30 + 2,6 = 5,9, que está na faixa 5,0 ≤ Ms ≤ 5,9: terremoto moderado (alternativa C).",
+  "erradas": {
+   "A": "Pequeno exigiria Ms de no máximo 3,9.",
+   "B": "Ligeiro exigiria Ms entre 4,0 e 4,9.",
+   "D": "Grande exigiria Ms de pelo menos 6,0.",
+   "E": "Extremo exigiria Ms de pelo menos 10."
+  }
+ },
+ "2019-159": {
+  "certa": "A sequência repete o bloco 5, 4, 3, 2, 1, 2, 3, 4, de 8 termos. Dividindo 2 015 por 8, o resto é 7, então o 2 015º item é o 7º do bloco: 3, caixa de direção (alternativa E).",
+  "erradas": {
+   "A": "Rolamento (1) é o 5º termo do bloco, e o resto da divisão é 7.",
+   "B": "Catalisador (4) é o 2º e o 8º termos do bloco, e o resto é 7.",
+   "C": "Amortecedor (5) é o 1º termo do bloco, e o resto é 7.",
+   "D": "Pastilha de freio (2) é o 4º e o 6º termos do bloco, e o resto é 7."
+  }
+ },
+ "2019-160": {
+  "certa": "Sem restrição, formar 4 duplas com 8 pessoas dá 8!/(2⁴ · 4!) = 105 maneiras. Se os dois canhotos ficarem juntos, restam 6 pessoas em 3 duplas: 6!/(2³ · 3!) = 15. Logo, 105 − 15 = 90 (alternativa C).",
+  "erradas": {
+   "A": "69 não resulta da contagem das duplas.",
+   "B": "70 é o número de combinações de 8 em grupos de 4, e não de 4 duplas.",
+   "D": "104 resulta de subtrair apenas 1 dos 105 casos, ignorando que são 15 casos em que os canhotos formam dupla.",
+   "E": "105 é o total sem a restrição aos canhotos."
+  }
+ },
+ "2019-162": {
+  "certa": "Na escala 1:200, o volume real é 200³ = 8 000 000 vezes o da maquete. 45 cm³ × 8 · 10⁶ = 3,6 · 10⁸ cm³ = 360 000 L. Como o consumo é de 30 000 L por dia, 360 000/30 000 = 12 dias (alternativa C).",
+  "erradas": {
+   "A": "30 dias supõe um reservatório de 900 000 L, o que ignora a conversão correta de volume.",
+   "B": "15 dias supõe um reservatório de 450 000 L, o que ignora a conversão correta de volume.",
+   "D": "6 dias supõe um reservatório de 180 000 L, o que ignora a conversão correta de volume.",
+   "E": "3 dias supõe um reservatório de 90 000 L, o que ignora a conversão correta de volume."
+  }
+ },
+ "2019-164": {
+  "certa": "A probabilidade de perceber pelo menos uma placa é 1 − (1/2)ⁿ, em que n é o número total de placas. Precisamos de 1 − (1/2)ⁿ > 99/100, ou seja, (1/2)ⁿ < 1/100, que equivale a 2ⁿ > 100. Como 2⁶ = 64 e 2⁷ = 128, n = 7 placas. Já existe uma, então são necessárias 6 novas (alternativa D).",
+  "erradas": {
+   "A": "99 corresponde a usar a probabilidade da placa como se fosse 1/100 por placa, o que não ocorre.",
+   "B": "51 não resulta de 2ⁿ > 100.",
+   "C": "50 não resulta de 2ⁿ > 100.",
+   "E": "Com 1 nova placa (2 no total), a probabilidade seria 3/4, abaixo de 99/100."
+  }
+ },
+ "2019-165": {
+  "certa": "A soma das alturas dos 20 jogadores é 20 × 1,80 = 36 m. Com a troca por alguém 0,20 m mais baixo, a soma passa a 35,8 m. A nova média é 35,8/20 = 1,79 m (alternativa C).",
+  "erradas": {
+   "A": "1,60 resultaria de subtrair 0,20 da média inteira.",
+   "B": "1,78 resultaria de dividir 0,20 por 10, e não por 20.",
+   "D": "1,81 supõe que o novo jogador seja mais alto.",
+   "E": "1,82 supõe que o novo jogador seja bem mais alto, o que contraria o enunciado."
+  }
+ },
+ "2019-168": {
+  "certa": "Como 0 < X < 1, potências maiores diminuem o valor: X³ < X² < X, e a raiz aumenta: √X > X, e a raiz cúbica aumenta mais ainda: X^(1/3) > √X > X. Portanto, o maior IDH é o do terceiro país, X^(1/3) (alternativa C).",
+  "erradas": {
+   "A": "X é maior que X² e X³, mas menor que √X e X^(1/3).",
+   "B": "√X é maior que X, mas menor que X^(1/3), para 0 < X < 1.",
+   "D": "X² é menor que X para 0 < X < 1.",
+   "E": "X³ é o menor dos cinco valores."
+  }
+ },
+ "2019-172": {
+  "certa": "Basquete tem uma pessoa a mais, então o total de alunos é ímpar e a mediana é a altura do aluno do meio. O grupo de basquete (mais altos) inclui esse aluno do meio. A mediana 1,67 é a altura de F, então F joga basquete, e M (1,68) também. P (1,65) e J (1,66) são mais baixos que a mediana e jogam futebol (alternativa C).",
+  "erradas": {
+   "A": "Colocaria os quatro no basquete, mas P e J estão abaixo da mediana.",
+   "B": "Colocaria P no futebol e J no basquete, mas J (1,66) é mais baixo que a mediana 1,67.",
+   "D": "Colocaria F no futebol, mas F tem a altura da mediana e fica no grupo de basquete.",
+   "E": "Colocaria os quatro no futebol, mas M é mais alto que a mediana."
+  }
+ },
+ "2019-173": {
+  "certa": "Há 1 gerente (R$ 1 000 por semana) e X − 1 diaristas, e cada diarista recebe 2 × 80 = R$ 160 por semana. Logo, Y = 1 000 + 160(X − 1) = 160X + 840 (alternativa D).",
+  "erradas": {
+   "A": "Y = 80X + 920 conta apenas um dia de trabalho por diarista.",
+   "B": "Y = 80X + 1 000 também considera só um dia por diarista e conta o gerente à parte.",
+   "C": "Y = 80X + 1 080 não corresponde a nenhum cálculo coerente da folha.",
+   "E": "Y = 160X + 1 000 conta o gerente duas vezes (como se fosse diarista e somado à parte)."
+  }
+ },
+ "2019-176": {
+  "certa": "Seja F a fraude. P(I) = 0,20 e P(F|I) = 0,25, então P(F e I) = 0,05. P(F|não I) = 0,0625 e P(não I) = 0,80, então P(F e não I) = 0,05. P(F) = 0,10. Logo, P(I|F) = 0,05/0,10 = 0,5 (alternativa E).",
+  "erradas": {
+   "A": "0,05 é P(F e I), sem dividir por P(F).",
+   "B": "0,10 é P(F), a probabilidade total de fraude.",
+   "C": "0,1125 não resulta dos dados do problema.",
+   "D": "0,3125 não resulta dos dados do problema."
+  }
+ },
+ "2019-179": {
+  "certa": "Orçamento inicial: 10 000 + 40 000 + 2 500 × 40 = R$ 150 000. Com as mudanças: projeto 5 000; metro quadrado 3 125 × 40 = 125 000; total desejado 0,9 × 150 000 = 135 000. Os custos fixos devem ser 135 000 − 5 000 − 125 000 = R$ 5 000, um desconto de 35 000/40 000 = 87,5% (alternativa D).",
+  "erradas": {
+   "A": "23,3% não resulta do cálculo do novo orçamento.",
+   "B": "25% corresponde apenas ao acréscimo do metro quadrado.",
+   "C": "50% corresponde apenas à redução do projeto.",
+   "E": "100% eliminaria os custos fixos, o que deixaria o total em 130 000, abaixo dos 135 000 exigidos."
+  }
+ }
+}

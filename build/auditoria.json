@@ -14,9 +14,6 @@
  "2025-051": [
   "explicação com dúvida/hedge"
  ],
- "2025-084": [
-  "caracteres inválidos no enunciado"
- ],
  "2025-124": [
   "valor da alt. certa '0,80 m.' não aparece na explicação"
  ],
@@ -109,6 +106,9 @@
  "2023-097": [
   "valor da alt. certa '76.' não aparece na explicação"
  ],
+ "2023-119": [
+  "imagem minúscula img/2023-119-f1.webp"
+ ],
  "2023-128": [
   "explicações das erradas genéricas (3/4)"
  ],
@@ -129,6 +129,9 @@
  ],
  "2023-151": [
   "valor da alt. certa '11.' não aparece na explicação"
+ ],
+ "2023-177": [
+  "imagem minúscula img/2023-177-f0.webp"
  ],
  "2023-180": [
   "explicações das erradas genéricas (4/4)"
@@ -154,6 +157,9 @@
  "2022-110": [
   "explicações das erradas genéricas (3/4)"
  ],
+ "2022-132": [
+  "imagem minúscula img/2022-132-f1.webp"
+ ],
  "2022-133": [
   "explicações das erradas genéricas (3/4)"
  ],
@@ -166,6 +172,9 @@
  ],
  "2022-140": [
   "explicações das erradas genéricas (4/4)"
+ ],
+ "2022-141": [
+  "imagem minúscula img/2022-141-f0.webp"
  ],
  "2022-148": [
   "valor da alt. certa '3,60.' não aparece na explicação"
@@ -181,6 +190,10 @@
  ],
  "2022-161": [
   "valor da alt. certa '25.' não aparece na explicação"
+ ],
+ "2022-165": [
+  "imagem minúscula img/2022-165-f1.webp",
+  "imagem minúscula img/2022-165-f6.webp"
  ],
  "2022-168": [
   "explicações das erradas genéricas (4/4)"
@@ -240,17 +253,26 @@
  "2020-121": [
   "explicações das erradas genéricas (3/4)"
  ],
+ "2020-123": [
+  "imagem minúscula img/2020-123-f0.webp"
+ ],
  "2020-135": [
   "valor da alt. certa '102' não aparece na explicação"
  ],
  "2020-137": [
   "explicações das erradas genéricas (4/4)"
  ],
+ "2020-142": [
+  "imagem minúscula img/2020-142-f0.webp"
+ ],
  "2020-144": [
   "valor da alt. certa '17.' não aparece na explicação"
  ],
  "2020-154": [
   "explicações das erradas genéricas (4/4)"
+ ],
+ "2020-155": [
+  "imagem minúscula img/2020-155-f0.webp"
  ],
  "2020-163": [
   "explicações das erradas genéricas (3/4)"
@@ -263,5 +285,20 @@
  ],
  "2020-180": [
   "valor da alt. certa '26.' não aparece na explicação"
+ ],
+ "2019-005-en": [
+  "explicação com dúvida/hedge"
+ ],
+ "2019-021": [
+  "explicação com dúvida/hedge"
+ ],
+ "2019-042": [
+  "explicação com dúvida/hedge"
+ ],
+ "2019-145": [
+  "valor da alt. certa '88.' não aparece na explicação"
+ ],
+ "2019-146": [
+  "explicações das erradas genéricas (3/4)"
  ]
 }

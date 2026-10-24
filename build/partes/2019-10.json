@@ -1,0 +1,137 @@
+{
+ "2019-130": {
+  "certa": "O rim biônico foi pensado para substituir a hemodiálise, que filtra o sangue e remove os resíduos nitrogenados do metabolismo. A principal função direta do dispositivo é a remoção de ureia (alternativa A).",
+  "erradas": {
+   "B": "A excreção de lipídios não é função do rim; eles são metabolizados pelo fígado.",
+   "C": "A vasopressina é um hormônio produzido no hipotálamo, e não sintetizado pelo rim.",
+   "D": "A amônia é transformada em ureia no fígado, e não pelo rim.",
+   "E": "A aldosterona é produzida nas glândulas suprarrenais."
+  }
+ },
+ "2019-132": {
+  "certa": "Huygens argumenta que os raios de luz se atravessam sem se atrapalhar e que isso não seria possível se a luz fosse matéria lançada, como uma flecha ou bala. Ele contesta, portanto, o modelo corpuscular defendido por Newton (alternativa C).",
+  "erradas": {
+   "A": "Huygens defendia a luz como onda propagada pelo éter, então não contesta essa ideia.",
+   "B": "O modelo ondulatório é o defendido por Huygens.",
+   "D": "O texto fala de \"extrema velocidade\" e não contesta a velocidade infinita.",
+   "E": "O texto não discute a ideia de que a luz seria produzida pelos olhos."
+  }
+ },
+ "2019-133": {
+  "certa": "O NaOH consumido tem 0,01 mol/L × 0,024 L = 2,4 × 10⁻⁴ mol. Como o ácido cítrico é triprótico, n(ácido) = 2,4 × 10⁻⁴/3 = 8 × 10⁻⁵ mol, o que dá 8 × 10⁻⁵ × 192 = 0,01536 g em 2,2 g de polpa. Em 100 g: ≈ 0,70 g. Esse valor atende aos mínimos do caju (0,3) e da graviola (0,6), mas não aos da acerola (0,8), cupuaçu (1,5) e maracujá (2,5) (alternativa C).",
+  "erradas": {
+   "A": "O caju atende, mas a graviola (mínimo 0,6) também.",
+   "B": "O maracujá exige acidez mínima de 2,5, muito acima de 0,70.",
+   "D": "A acerola (0,8) e o cupuaçu (1,5) exigem mais acidez do que a da amostra.",
+   "E": "O cupuaçu exige mínimo de 1,5, acima de 0,70."
+  }
+ },
+ "2019-134": {
+  "certa": "O sal passou do caldo (mais concentrado) para a batata (menos concentrada), a favor do gradiente de concentração. É difusão do soluto (alternativa E).",
+  "erradas": {
+   "A": "Osmose é a passagem do solvente (água) por membrana semipermeável, e não do sal.",
+   "B": "Fagocitose é a englobação de partículas sólidas, e o sal está dissolvido.",
+   "C": "Exocitose é saída de substâncias da célula, e aqui o sal entra na batata.",
+   "D": "Pinocitose é a englobação de gotículas de líquido pela célula, e o sal passa por difusão."
+  }
+ },
+ "2019-136": {
+  "certa": "A dose máxima é 500 mg × 20 kg = 10 000 mg = 10 g por dia. Em 5 dias: 50 g. Como 1 g ocupa 1 cm³, são 50 cm³ = 50 mL. O frasco que dá a quantidade exata é o de 50 mL (alternativa B).",
+  "erradas": {
+   "A": "10 mL é a dose de um dia, e o tratamento dura 5 dias.",
+   "C": "100 mL deixaria sobra de 50 mL.",
+   "D": "250 mL seria cinco vezes o necessário.",
+   "E": "500 mL seria dez vezes o necessário."
+  }
+ },
+ "2019-140": {
+  "certa": "A flor rosa mais valorizada ocorre com pH entre 7 (alcalino) e 8. Como x = 10^(−pH), pH < 8 dá x > 10⁻⁸ e pH > 7 dá x < 10⁻⁷. Portanto, 10⁻⁸ < x < 10⁻⁷ (alternativa E).",
+  "erradas": {
+   "A": "Valores acima de 10⁻⁸ incluem os de solo ácido (x ≥ 10⁻⁷), em que a flor seria azul.",
+   "B": "x < 10⁻⁷ inclui pH maior que 8, que não é o desejado.",
+   "C": "7 < x < 8 confunde pH com concentração.",
+   "D": "70 < x < 80 também confunde pH com concentração."
+  }
+ },
+ "2019-141": {
+  "certa": "Gastos: transporte = 1/5 do valor = 20%, mais a recompensa r. Como o gasto total não pode ultrapassar 100%, 20% + r ≤ 100%, logo r ≤ 80%. O maior percentual possível é 80% (alternativa E).",
+  "erradas": {
+   "A": "20% é o custo do transporte, e não a recompensa máxima.",
+   "B": "25% é menor que o máximo permitido pelo orçamento.",
+   "C": "40% é menor que o máximo.",
+   "D": "60% é menor que o máximo."
+  }
+ },
+ "2019-144": {
+  "certa": "0,00011 mm = 1,1 × 10⁻⁴ mm, porque a vírgula anda quatro casas até o primeiro algarismo diferente de zero (alternativa D).",
+  "erradas": {
+   "A": "1,1 × 10⁻¹ = 0,11.",
+   "B": "1,1 × 10⁻² = 0,011.",
+   "C": "1,1 × 10⁻³ = 0,0011.",
+   "E": "1,1 × 10⁻⁵ = 0,000011."
+  }
+ },
+ "2019-145": {
+  "certa": "O ataque é proporcional à experiência e ao quadrado do nível; a defesa, ao nível e ao quadrado da experiência. Como no início (nível 1, experiência 1) o ataque é 2 e a defesa é 1, ataque = 2 · exp · nível² e defesa = nível · exp². J1: 2 · 5 · 4² = 160. J2: 2 · 6² = 72. Diferença: 160 − 72 = 88 (alternativa B).",
+  "erradas": {
+   "A": "112 não resulta das forças calculadas.",
+   "C": "60 não resulta das forças calculadas.",
+   "D": "28 não resulta das forças calculadas.",
+   "E": "24 não resulta das forças calculadas."
+  }
+ },
+ "2019-146": {
+  "certa": "Área inicial: π · 3² = 27 m². Novo diâmetro de 14 m: raio 7, área π · 7² = 147 m². A área nova é 147 − 27 = 120 m², maior que os 100 m² de material. Logo, não será suficiente (alternativa E).",
+  "erradas": {
+   "A": "A área de 21 m² não corresponde à região ampliada; a conclusão de que o material seria suficiente também está errada.",
+   "B": "A área de 24 m² não corresponde à região ampliada (a coroa tem 120 m²), e o material não seria suficiente.",
+   "C": "A área de 48 m² resulta de um erro no cálculo dos raios e leva à conclusão incorreta de que o material bastaria.",
+   "D": "Conclui corretamente que o material não basta, mas 108 m² é a área de um círculo de raio 6 m, e não da coroa de 120 m²."
+  }
+ },
+ "2019-148": {
+  "certa": "Cada coluna representa um dia da semana. Somando os acertos dos cinco alunos em cada coluna, a segunda-feira (coluna 1) tem a maior soma: 11, contra 10 nos demais dias (alternativa A).",
+  "erradas": {
+   "B": "A terça-feira soma 10, abaixo de 11.",
+   "C": "A quarta-feira soma 10, abaixo de 11.",
+   "D": "A quinta-feira soma 10, abaixo de 11.",
+   "E": "A sexta-feira soma 10, abaixo de 11."
+  }
+ },
+ "2019-152": {
+  "certa": "A banheira de 0,3 m³ = 300 L será preenchida em 80%: 240 L. Cada embalagem rende 2,7 L, então 240 ÷ 2,7 ≈ 88,9. Como não se compra fração de embalagem, o mínimo é 89 (alternativa C).",
+  "erradas": {
+   "A": "9 seria obtido ao dividir por 27 L, por erro de unidade.",
+   "B": "12 não resulta da divisão de 240 L por 2,7 L.",
+   "D": "112 resultaria de usar 300 L e outro valor, sem considerar a divisão correta.",
+   "E": "134 resultaria de um erro de unidade ou de cálculo."
+  }
+ },
+ "2019-154": {
+  "certa": "O valor à vista é o valor presente das parcelas a 1% ao mês: 202,00/1,01 + 204,02/1,01² = 200 + 200 = R$ 400,00 (alternativa B).",
+  "erradas": {
+   "A": "398,02 resulta de desconto incorreto das parcelas.",
+   "C": "401,94 resulta de desconto incorreto das parcelas.",
+   "D": "404,00 resulta de somar parcelas descontadas de modo incorreto.",
+   "E": "406,02 é a soma das parcelas, sem descontar os juros."
+  }
+ },
+ "2019-155": {
+  "certa": "Cada um dos três primeiros sócios investiu 1 000 000/3 + 800 000/4 ≈ 333 333 + 200 000 = 533 333. O quarto investiu 200 000. O total é 1 800 000. Percentuais: 533 333/1 800 000 ≈ 29,63% (aprox. 29,60%) para cada um dos três e 200 000/1 800 000 ≈ 11,11% para o quarto (alternativa A).",
+  "erradas": {
+   "B": "28,70 e 13,89 resultam de usar proporções que não correspondem ao investimento de cada um.",
+   "C": "25% cada um só valeria se todos tivessem investido o mesmo.",
+   "D": "18,52 e 11,11 não somam 100% com três sócios e o quarto.",
+   "E": "12,96 e 13,89 resultam de proporções que não correspondem ao investimento."
+  }
+ },
+ "2019-156": {
+  "certa": "Valores inversamente proporcionais às idades 2, 3 e 5 são proporcionais a 1/2, 1/3 e 1/5, ou seja, a 15, 10 e 6 (multiplicando por 30). A soma é 31 partes; cada parte vale 31 000/31 = R$ 1 000. A máquina mais velha (5 anos) recebe 6 partes: R$ 6 000,00 (alternativa B).",
+  "erradas": {
+   "A": "R$ 3 100 seria 10% do total, e não a parte do mais velho.",
+   "C": "R$ 6 200 resulta de dividir por 5 o total.",
+   "D": "R$ 15 000 é o valor da máquina mais nova (15 partes).",
+   "E": "R$ 15 500 é a metade do total, o que não corresponde a nenhuma das partes."
+  }
+ }
+}
