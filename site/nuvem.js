@@ -202,23 +202,21 @@
     if (!usuario) return Promise.resolve([]);
     if (turmasAlunoCache && Date.now() - turmasAlunoCache.t < 300000) return turmasAlunoCache.p;
     var p = db.collection("turmas").where("alunos", "array-contains", usuario.uid).get().then(function (qs) {
-      var o = []; qs.forEach(function (d) { o.push({ id: d.id, nome: (d.data() || {}).nome || d.id }); }); return o;
+      var o = []; qs.forEach(function (d) { o.push({ id: d.id, nome: (d.data() || {}).nome || d.id, ranking: !!(d.data() || {}).ranking }); }); return o;
     }).catch(function () { turmasAlunoCache = null; return []; });
     turmasAlunoCache = { t: Date.now(), p: p };
     return p;
   }
-  function atualizaRanking(forcar) {
-    if (!usuario || !perfil) return Promise.resolve();
-    var ligado = !!APP.pref("rankingOn");
-    if (!forcar && (!ligado || Date.now() - rankingTs < 90000)) return Promise.resolve();
+  // O ranking só existe nas turmas em que o administrador o ligou; o aluno não escolhe nem é consultado.
+  function atualizaRanking() {
+    if (!usuario || !perfil || Date.now() - rankingTs < 90000) return Promise.resolve();
     rankingTs = Date.now();
     var s = APP.stats();
-    var apelido = (APP.pref("apelido") || String(perfil.nome || "").split(" ")[0] || "Aluno").slice(0, 20);
+    var apelido = (String(perfil.nome || "").trim().split(/\s+/)[0] || "Aluno").slice(0, 20);
     return turmasDoAluno().then(function (ts) {
-      return Promise.all(ts.map(function (t) {
-        var ref = db.doc("turmas/" + t.id + "/ranking/" + usuario.uid);
-        return ligado ? ref.set({ apelido: apelido, semana: s.semana, semIni: s.semIni, respondidas: s.respondidas, acertos: s.acertos, atualizado: new Date().toISOString() })
-                      : ref.delete();
+      return Promise.all(ts.filter(function (t) { return t.ranking; }).map(function (t) {
+        return db.doc("turmas/" + t.id + "/ranking/" + usuario.uid)
+          .set({ apelido: apelido, semana: s.semana, semIni: s.semIni, respondidas: s.respondidas, acertos: s.acertos, atualizado: new Date().toISOString() });
       }));
     }).catch(function () {});
   }
@@ -226,8 +224,7 @@
     if (!usuario) return Promise.resolve([]);
     var semIni = APP.stats().semIni;
     return turmasDoAluno().then(function (ts) {
-      return Promise.all(ts.map(function (t) {
-        if (!APP.pref("rankingOn")) return { turmaNome: t.nome, itens: [] };   // só quem participa vê a lista
+      return Promise.all(ts.filter(function (t) { return t.ranking; }).map(function (t) {
         return db.collection("turmas/" + t.id + "/ranking").get().then(function (qs) {
           var it = [];
           qs.forEach(function (d) {
@@ -238,7 +235,7 @@
           it.sort(function (a, b) { return b.semana - a.semana || (b.acerto || 0) - (a.acerto || 0) || a.apelido.localeCompare(b.apelido); });
           return { turmaNome: t.nome, itens: it };
         }).catch(function () { return { turmaNome: t.nome, itens: [] }; });
-      }));
+      })).then(function (gs) { return gs.filter(function (g) { return g.itens.length; }); });
     });
   }
   window.__sync = function () {

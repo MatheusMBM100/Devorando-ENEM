@@ -104,6 +104,22 @@
       cx.appendChild(voltar);
       cx.appendChild(el("h3", null, t.nome || id));
 
+      // ranking da turma: só o administrador liga; os alunos nunca são consultados
+      var cRk = el("div", "card");
+      var ligado = !!t.ranking;
+      cRk.appendChild(el("h4", "sub", "Ranking da turma"));
+      cRk.appendChild(el("p", "muted", ligado ? "Ligado: os alunos desta turma veem um ranking semanal (primeiro nome, questões da semana e acerto geral)." : "Desligado: os alunos não veem nada, nem sabem que o recurso existe."));
+      var bRk = el("button", ligado ? "ghost mini" : "btn mini", ligado ? "Desligar ranking" : "Ligar ranking"); bRk.type = "button";
+      bRk.addEventListener("click", function () {
+        if (!ligado && !confirm("Ligar o ranking? Todos os alunos desta turma passam a aparecer nele, com o primeiro nome.")) return;
+        bRk.disabled = true;
+        var p = db.doc("turmas/" + id).update({ ranking: !ligado });
+        if (ligado) p = p.then(function () { return db.collection("turmas/" + id + "/ranking").get(); }).then(function (qs) { var a = []; qs.forEach(function (x) { a.push(db.doc("turmas/" + id + "/ranking/" + x.id).delete()); }); return Promise.all(a); });
+        p.then(function () { if (window.NUVEM.recarregaTurmas) window.NUVEM.recarregaTurmas(); abrirTurma(cx, id); }).catch(function () { bRk.disabled = false; alert("Não foi possível alterar. Confira se as regras do Firestore foram publicadas."); });
+      });
+      cRk.appendChild(bRk);
+      cx.appendChild(cRk);
+
       cx.appendChild(visaoTurma(alunos, stats, res, nomeDe));
 
       // alunos
