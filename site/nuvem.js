@@ -54,6 +54,25 @@
     return v || "";
   }
 
+  // validação do e-mail no cadastro: formato, confirmação e sugestão para erros de digitação comuns
+  var EMAIL_OK = /^[^\s@,;]+@[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)*\.[a-z]{2,}$/i;
+  var DOMINIOS = ["gmail.com", "hotmail.com", "outlook.com", "yahoo.com", "yahoo.com.br", "icloud.com", "live.com", "uol.com.br", "bol.com.br", "terra.com.br", "outlook.com.br", "hotmail.com.br", "msn.com", "me.com", "proton.me", "protonmail.com"];
+  function dist(a, b) {
+    var d = [], i, j;
+    for (i = 0; i <= a.length; i++) { d[i] = [i]; }
+    for (j = 1; j <= b.length; j++) d[0][j] = j;
+    for (i = 1; i <= a.length; i++) for (j = 1; j <= b.length; j++)
+      d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    return d[a.length][b.length];
+  }
+  function sugestaoEmail(email) {
+    var p = email.toLowerCase().split("@"), dom = p[1] || "";
+    if (DOMINIOS.indexOf(dom) >= 0) return null;
+    var melhor = null, md = 3;
+    DOMINIOS.forEach(function (d) { var x = dist(dom, d); if (x < md) { md = x; melhor = d; } });
+    return melhor && md <= 2 ? p[0] + "@" + melhor : null;
+  }
+
   function mostrarLogin(modo) {
     modo = modo || "entrar";
     overlay.hidden = false;
@@ -79,7 +98,11 @@
     }
     var le = el("label", "l", "E-mail"); le.htmlFor = "a-email"; form.appendChild(le);
     var em = el("input"); em.type = "email"; em.id = "a-email"; em.autocomplete = "email"; form.appendChild(em);
+    var em2;
     if (modo === "criar") {
+      var le2 = el("label", "l", "Repita o e-mail"); le2.htmlFor = "a-email2"; form.appendChild(le2);
+      em2 = el("input"); em2.type = "email"; em2.id = "a-email2"; em2.autocomplete = "off"; form.appendChild(em2);
+      em2.addEventListener("paste", function (e) { e.preventDefault(); });   // obriga a digitar de novo, e não colar
       var lt = el("label", "l", "Telefone (com DDD)"); lt.htmlFor = "a-tel"; form.appendChild(lt);
       tel = el("input"); tel.type = "tel"; tel.id = "a-tel"; tel.autocomplete = "tel"; tel.placeholder = "(11) 91234-5678"; tel.maxLength = 20; form.appendChild(tel);
     }
@@ -111,6 +134,13 @@
       var p;
       if (modo === "criar") {
         if (!nome.value.trim()) { msg(card, "Informe seu nome.", "erro"); ok.disabled = false; return; }
+        if (!EMAIL_OK.test(email)) { msg(card, "Esse e-mail não parece válido. Confira se tem @ e um domínio, por exemplo nome@gmail.com.", "erro"); ok.disabled = false; em.focus(); return; }
+        if (em2.value.trim().toLowerCase() !== email.toLowerCase()) { msg(card, "Os dois e-mails não são iguais. Confira e digite de novo.", "erro"); ok.disabled = false; em2.focus(); return; }
+        var sug = sugestaoEmail(email);
+        if (sug && em.dataset.confirmado !== email) {
+          msg(card, "Você quis dizer " + sug + "? Corrija o e-mail acima, ou clique em Criar conta de novo se ele estiver certo.", "erro");
+          em.dataset.confirmado = email; ok.disabled = false; return;
+        }
         if (!telValido(tel.value)) { msg(card, "Informe um telefone válido com DDD, por exemplo (11) 91234-5678.", "erro"); ok.disabled = false; tel.focus(); return; }
         cadastro = p = auth.createUserWithEmailAndPassword(email, senha).then(function (cred) {
           var nm = nome.value.trim(), criado = new Date().toISOString();
