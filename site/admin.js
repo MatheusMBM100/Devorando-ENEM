@@ -109,6 +109,14 @@
       cRk.appendChild(el("h4", "sub", "Ranking da turma"));
       cRk.appendChild(el("p", "muted", "Só você vê esta lista. Os alunos não sabem que ela existe, a menos que você libere para algum deles."));
       var rk = {}; rs[5].forEach(function (x) { rk[x.id] = x.data() || {}; });
+      // aluno que ainda não abriu o site depois da atualização não tem registro: cria um com os totais que já existem,
+      // para que apareça no ranking dos alunos liberados (o registro dele se atualiza sozinho no próximo acesso)
+      alunos.forEach(function (uid) {
+        if (rk[uid]) return;
+        var s = stats[uid] || {}, nm = String(nomeDe(uid) || "Aluno").trim().split(/\s+/)[0].slice(0, 20) || "Aluno";
+        var base = { apelido: nm, semana: 0, semIni: "", respondidas: s.respondidas || 0, acertos: s.acertos || 0, atualizado: new Date().toISOString() };
+        db.doc("turmas/" + id + "/ranking/" + uid).set(base).catch(function () {});
+      });
       var itensRk = alunos.map(function (uid) {
         var x = rk[uid] || {}, s = stats[uid] || {};
         return { uid: uid, nome: nomeDe(uid), dias: x.d || null, respondidas: x.respondidas != null ? x.respondidas : (s.respondidas || 0), acertos: x.acertos != null ? x.acertos : (s.acertos || 0) };

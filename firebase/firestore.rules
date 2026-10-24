@@ -59,12 +59,19 @@ service cloud.firestore {
       }
 
       // Ranking: todo aluno da turma grava o próprio registro (só o administrador lê sempre).
+      // O administrador também cria o registro de quem ainda não o gravou, para todos aparecerem na lista.
       // O aluno só lê o ranking se o administrador marcar verRanking = true no perfil dele (users/{uid}).
       match /ranking/{uid} {
         allow read: if logado() && (ehAdmin()
           || (request.auth.uid in get(/databases/$(database)/documents/turmas/$(turma)).data.alunos
               && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.get('verRanking', false) == true));
-        allow create, update: if logado() && request.auth.uid == uid && ativa()
+        allow create: if logado()
+          && ((request.auth.uid == uid && ativa()
+               && request.auth.uid in get(/databases/$(database)/documents/turmas/$(turma)).data.alunos)
+              || (ehAdmin() && uid in get(/databases/$(database)/documents/turmas/$(turma)).data.alunos))
+          && request.resource.data.keys().hasOnly(['apelido', 'semana', 'semIni', 'respondidas', 'acertos', 'd', 'atualizado'])
+          && request.resource.data.apelido is string && request.resource.data.apelido.size() <= 20;
+        allow update: if logado() && request.auth.uid == uid && ativa()
           && request.auth.uid in get(/databases/$(database)/documents/turmas/$(turma)).data.alunos
           && request.resource.data.keys().hasOnly(['apelido', 'semana', 'semIni', 'respondidas', 'acertos', 'd', 'atualizado'])
           && request.resource.data.apelido is string && request.resource.data.apelido.size() <= 20;
