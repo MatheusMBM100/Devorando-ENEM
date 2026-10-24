@@ -58,6 +58,17 @@ service cloud.firestore {
         allow write: if ehAdmin();
       }
 
+      // Ranking opcional: o aluno que participa grava o próprio registro; só quem é da turma (e o administrador) lê.
+      match /ranking/{uid} {
+        allow read: if logado() && (ehAdmin()
+          || request.auth.uid in get(/databases/$(database)/documents/turmas/$(turma)).data.alunos);
+        allow create, update: if logado() && request.auth.uid == uid && ativa()
+          && request.auth.uid in get(/databases/$(database)/documents/turmas/$(turma)).data.alunos
+          && request.resource.data.keys().hasOnly(['apelido', 'semana', 'semIni', 'respondidas', 'acertos', 'atualizado'])
+          && request.resource.data.apelido is string && request.resource.data.apelido.size() <= 20;
+        allow delete: if logado() && (request.auth.uid == uid || ehAdmin());
+      }
+
       // Resultados: o aluno grava e lê o próprio; o administrador lê e apaga todos.
       match /resultados/{res} {
         allow read: if logado() && (ehAdmin() || resource.data.uid == request.auth.uid);

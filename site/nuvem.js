@@ -193,8 +193,53 @@
       db.doc("userData/" + usuario.uid).set({ json: json, updatedAt: agora }),
       db.doc("userStats/" + usuario.uid).set({ respondidas: s.respondidas, acertos: s.acertos, simulados: s.simulados,
         ultimo_pct: s.ultimo_pct, por_materia: s.por_materia, updatedAt: agora })
-    ]).then(function () { estado("☁✔", "Dados sincronizados"); })
+    ]).then(function () { estado("☁✔", "Dados sincronizados"); atualizaRanking(); })
       .catch(function () { estado("☁!", "Falha ao sincronizar; tentaremos de novo na próxima alteração"); });
+  }
+  // ---------- ranking da turma (opcional, por turma) ----------
+  var turmasAlunoCache = null, rankingTs = 0;
+  function turmasDoAluno() {
+    if (!usuario) return Promise.resolve([]);
+    if (turmasAlunoCache && Date.now() - turmasAlunoCache.t < 300000) return turmasAlunoCache.p;
+    var p = db.collection("turmas").where("alunos", "array-contains", usuario.uid).get().then(function (qs) {
+      var o = []; qs.forEach(function (d) { o.push({ id: d.id, nome: (d.data() || {}).nome || d.id }); }); return o;
+    }).catch(function () { turmasAlunoCache = null; return []; });
+    turmasAlunoCache = { t: Date.now(), p: p };
+    return p;
+  }
+  function atualizaRanking(forcar) {
+    if (!usuario || !perfil) return Promise.resolve();
+    var ligado = !!APP.pref("rankingOn");
+    if (!forcar && (!ligado || Date.now() - rankingTs < 90000)) return Promise.resolve();
+    rankingTs = Date.now();
+    var s = APP.stats();
+    var apelido = (APP.pref("apelido") || String(perfil.nome || "").split(" ")[0] || "Aluno").slice(0, 20);
+    return turmasDoAluno().then(function (ts) {
+      return Promise.all(ts.map(function (t) {
+        var ref = db.doc("turmas/" + t.id + "/ranking/" + usuario.uid);
+        return ligado ? ref.set({ apelido: apelido, semana: s.semana, semIni: s.semIni, respondidas: s.respondidas, acertos: s.acertos, atualizado: new Date().toISOString() })
+                      : ref.delete();
+      }));
+    }).catch(function () {});
+  }
+  function ranking() {
+    if (!usuario) return Promise.resolve([]);
+    var semIni = APP.stats().semIni;
+    return turmasDoAluno().then(function (ts) {
+      return Promise.all(ts.map(function (t) {
+        if (!APP.pref("rankingOn")) return { turmaNome: t.nome, itens: [] };   // só quem participa vê a lista
+        return db.collection("turmas/" + t.id + "/ranking").get().then(function (qs) {
+          var it = [];
+          qs.forEach(function (d) {
+            var x = d.data() || {};
+            it.push({ uid: d.id, eu: d.id === usuario.uid, apelido: x.apelido || "Aluno", semana: x.semIni === semIni ? (x.semana || 0) : 0,
+              acerto: x.respondidas ? Math.round(100 * x.acertos / x.respondidas) : null });
+          });
+          it.sort(function (a, b) { return b.semana - a.semana || (b.acerto || 0) - (a.acerto || 0) || a.apelido.localeCompare(b.apelido); });
+          return { turmaNome: t.nome, itens: it };
+        }).catch(function () { return { turmaNome: t.nome, itens: [] }; });
+      }));
+    });
   }
   window.__sync = function () {
     if (!usuario) return;
@@ -659,7 +704,7 @@
     var ac2 = el("div", "acoes"); ac2.appendChild(bs); cx.appendChild(ac2); cx.appendChild(ss);
   }
 
-  window.NUVEM = { avisaEmail: avisaEmail, atualizaAvisosAdmin: atualizaAvisosAdmin, rotula: rotula, renderConta: renderConta, renderAlunos: renderAlunos, db: db, auth: auth, el: el, baixar: baixar, user: function () { return usuario; }, perfil: function () { return perfil; },
+  window.NUVEM = { ranking: ranking, atualizaRanking: atualizaRanking, avisaEmail: avisaEmail, atualizaAvisosAdmin: atualizaAvisosAdmin, rotula: rotula, renderConta: renderConta, renderAlunos: renderAlunos, db: db, auth: auth, el: el, baixar: baixar, user: function () { return usuario; }, perfil: function () { return perfil; },
     logado: function () { return !!usuario; }, ehAdmin: function () { return !!(perfil && perfil.is_admin); },
     enviarReporte: enviarReporte, simuladosTurma: simuladosTurma, publicarTurma: publicarTurma, enviarResultado: enviarResultado,
     turmasAdmin: function () { return perfil && perfil.is_admin ? turmasCache : []; }, recarregaTurmas: recarregaTurmas };

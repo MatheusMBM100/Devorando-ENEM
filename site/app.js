@@ -38,10 +38,10 @@
   function notifica() { if (typeof window.__sync === "function") window.__sync(); }
   function salvar() { try { localStorage.setItem(KEY, JSON.stringify(respostas)); } catch (e) {} notifica(); }
   var PKEY = "enem:prefs:v1";
-  var prefs = { meta: 10, semana: 50, tema: "auto", notif: false, atv: {} };   // metas, tema, avisos e contagem de questões por dia
+  var prefs = { meta: 10, semana: 50, tema: "auto", notif: false, rankingOn: false, apelido: "", atv: {} };   // metas, tema, avisos e contagem de questões por dia
   function normPrefs(pp) {
     pp = pp || {};
-    return { meta: pp.meta || 10, semana: pp.semana || 50, tema: pp.tema === "claro" || pp.tema === "escuro" ? pp.tema : "auto", notif: !!pp.notif, notifAdmin: !!pp.notifAdmin, atv: pp.atv || {} };
+    return { meta: pp.meta || 10, semana: pp.semana || 50, tema: pp.tema === "claro" || pp.tema === "escuro" ? pp.tema : "auto", notif: !!pp.notif, notifAdmin: !!pp.notifAdmin, rankingOn: !!pp.rankingOn, apelido: String(pp.apelido || "").slice(0, 20), atv: pp.atv || {} };
   }
   try { prefs = normPrefs(JSON.parse(localStorage.getItem(PKEY) || "null")); } catch (e) {}
   function aplicaTema() {
@@ -67,6 +67,7 @@
     for (var i = 0; i < 7; i++) { n += prefs.atv[diaStr(d)] || 0; d.setDate(d.getDate() + 1); }
     return n;
   }
+  function inicioSemana() { var d = new Date(); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return diaStr(d); }
   function sequencia() {
     var n = 0, d = new Date();
     if (!prefs.atv[diaStr(d)]) d.setDate(d.getDate() - 1);   // a sequência só quebra quando o dia acaba
@@ -658,6 +659,18 @@
     n.appendChild(aviso);
     p.appendChild(n);
 
+    if (logado) {
+      var rk = el("div", "card"); rk.appendChild(el("h3", null, "Ranking da turma"));
+      var ck2 = el("input"); ck2.type = "checkbox"; ck2.checked = !!prefs.rankingOn;
+      linha(rk, "Aparecer no ranking das minhas turmas", "Opcional. Os colegas de turma veem seu apelido, as questões da semana e seu acerto. Você só vê o ranking se participar.", ck2);
+      var ap = el("input"); ap.type = "text"; ap.maxLength = 20; ap.value = prefs.apelido || ""; ap.placeholder = "Apelido (ex.: seu primeiro nome)"; ap.style.maxWidth = "260px";
+      linha(rk, "Apelido no ranking", "Use um apelido se não quiser mostrar seu nome.", ap);
+      function atualizaRk() { if (window.NUVEM && window.NUVEM.atualizaRanking) window.NUVEM.atualizaRanking(true); }
+      ck2.addEventListener("change", function () { prefs.rankingOn = ck2.checked; salvarPrefs(); atualizaRk(); });
+      ap.addEventListener("change", function () { prefs.apelido = ap.value.trim().slice(0, 20); salvarPrefs(); atualizaRk(); });
+      p.appendChild(rk);
+    }
+
     var ins = el("div", "card"); ins.appendChild(el("h3", null, "Instalar no celular"));
     var standalone = window.matchMedia && matchMedia("(display-mode: standalone)").matches || navigator.standalone;
     if (standalone) ins.appendChild(el("p", "muted", "✔ O Devorando ENEM já está instalado neste aparelho."));
@@ -1199,6 +1212,40 @@
       }).catch(function () {});
     }
 
+    // ranking da turma (opcional)
+    if (window.NUVEM && window.NUVEM.ranking) {
+      var cr2 = el("div", "card"); cr2.hidden = true;
+      p.appendChild(cr2);
+      window.NUVEM.ranking().then(function (grupos) {
+        if (!grupos.length) return;
+        cr2.hidden = false;
+        cr2.appendChild(el("h3", null, "Ranking da semana"));
+        if (!prefs.rankingOn) {
+          cr2.appendChild(el("p", "muted", "Veja como você está em relação à sua turma. A participação é opcional: você escolhe o apelido que aparece e pode sair quando quiser."));
+          var bj = el("button", "btn mini", "Participar do ranking"); bj.type = "button";
+          bj.addEventListener("click", function () { prefs.rankingOn = true; salvarPrefs(); if (window.NUVEM.atualizaRanking) window.NUVEM.atualizaRanking(true); setTimeout(renderInicio, 800); });
+          cr2.appendChild(bj);
+          return;
+        }
+        grupos.forEach(function (g) {
+          cr2.appendChild(el("b", null, g.turmaNome));
+          var mi = -1; g.itens.forEach(function (x, i) { if (x.eu) mi = i; });
+          var mostrar = g.itens.slice(0, 10);
+          if (mi >= 10) mostrar.push(g.itens[mi]);
+          mostrar.forEach(function (x) {
+            var pos = g.itens.indexOf(x) + 1;
+            var row = el("div", "hist-row novo"); if (x.eu) row.style.fontWeight = "700";
+            row.appendChild(el("span", null, (pos === 1 ? "🥇" : pos === 2 ? "🥈" : pos === 3 ? "🥉" : pos + "º") + "  " + x.apelido + (x.eu ? " (você)" : "")));
+            row.appendChild(el("span", "muted", x.semana + " questões · " + (x.acerto == null ? "–" : x.acerto + "%")));
+            row.appendChild(el("span"));
+            cr2.appendChild(row);
+          });
+          if (g.itens.length < 2) cr2.appendChild(el("p", "muted", "Por enquanto só você participa nesta turma."));
+        });
+        cr2.appendChild(el("p", "muted", "Ordenado pelas questões respondidas na semana (segunda a domingo). O acerto é o geral de cada pessoa."));
+      }).catch(function () {});
+    }
+
     var nv = el("div", "card"); nv.id = "lista-novos";
     nv.appendChild(el("h3", null, "Simulados novos e em andamento"));
     if (!novos.length) nv.appendChild(el("p", "muted", "Nenhum simulado criado ainda. Clique em “Criar novo simulado”."));
@@ -1350,7 +1397,7 @@
         n++; var o = pm[matDe(q)] = pm[matDe(q)] || { n: 0, ok: 0 };
         o.n++; if (respostas[id].ok) { ok++; o.ok++; }
       });
-      return { respondidas: n, acertos: ok, simulados: hist.length, ultimo_pct: hist.length ? pct(hist[0]).p : null, por_materia: pm };
+      return { respondidas: n, acertos: ok, simulados: hist.length, ultimo_pct: hist.length ? pct(hist[0]).p : null, por_materia: pm, semana: feitasSemana(), semIni: inicioSemana() };
     }
   };
 
