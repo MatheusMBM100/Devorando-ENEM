@@ -735,7 +735,7 @@
   }
 
   // ---------- simulado ----------
-  var cfg = { nome: "", anos: {}, mats: {}, ass: {}, n: 20, minq: 0, mostrar: true, novas: false, erradas: false, marcadas: false, igual: true };
+  var cfg = { nome: "", anos: {}, mats: {}, ass: {}, n: 20, minq: 0, mostrar: false, novas: true, erradas: false, marcadas: false, igual: true };
   anos.forEach(function (a) { cfg.anos[a] = true; });
   MATS.forEach(function (m) { cfg.mats[m] = m !== "Espanhol"; });
 
@@ -1051,9 +1051,16 @@
     st.addEventListener("change", function () { cfg.minq = parseInt(st.value, 10) || 0; });
     f.appendChild(st);
 
+    var caixas = {};
     function check(txt, chave) {
-      var lb = el("label", "check"); var cx = el("input"); cx.type = "checkbox"; cx.checked = cfg[chave];
-      cx.addEventListener("change", function () { cfg[chave] = cx.checked; refresca(); });
+      var lb = el("label", "check"); var cx = el("input"); cx.type = "checkbox"; cx.checked = cfg[chave]; caixas[chave] = cx;
+      cx.addEventListener("change", function () {
+        cfg[chave] = cx.checked;
+        // "ainda não respondi" e "errei antes" se excluem: marcar um desmarca o outro
+        var outro = chave === "novas" ? "erradas" : chave === "erradas" ? "novas" : null;
+        if (cx.checked && outro && cfg[outro]) { cfg[outro] = false; caixas[outro].checked = false; }
+        refresca();
+      });
       lb.appendChild(cx); lb.appendChild(document.createTextNode(" " + txt));
       f.appendChild(lb);
     }

@@ -208,15 +208,17 @@
     return p;
   }
   // Todo aluno de turma grava seus números (só o administrador os vê sempre); o aluno só enxerga o ranking se o administrador liberar para ele.
-  function atualizaRanking() {
-    if (!usuario || !perfil || Date.now() - rankingTs < 90000) return Promise.resolve();
+  function atualizaRanking(forcar) {
+    if (!usuario || !perfil || (!forcar && Date.now() - rankingTs < 90000)) return Promise.resolve();
     rankingTs = Date.now();
     var s = APP.stats();
     var apelido = (String(perfil.nome || "").trim().split(/\s+/)[0] || "Aluno").slice(0, 20);
     return turmasDoAluno().then(function (ts) {
       return Promise.all(ts.map(function (t) {
-        return db.doc("turmas/" + t.id + "/ranking/" + usuario.uid)
-          .set({ apelido: apelido, semana: s.semana, semIni: s.semIni, respondidas: s.respondidas, acertos: s.acertos, d: s.dias, atualizado: new Date().toISOString() });
+        var ref = db.doc("turmas/" + t.id + "/ranking/" + usuario.uid);
+        var base = { apelido: apelido, semana: s.semana, semIni: s.semIni, respondidas: s.respondidas, acertos: s.acertos, atualizado: new Date().toISOString() };
+        // se as regras ainda não aceitam o campo "d" (acertos por dia), grava sem ele
+        return ref.set(Object.assign({ d: s.dias }, base)).catch(function () { return ref.set(base); });
       }));
     }).catch(function () {});
   }
@@ -353,6 +355,7 @@
       if (d && (Object.keys(d.respostas || {}).length || (d.hist || []).length || (d.novos || []).length || Object.keys(d.marcadas || {}).length)) APP.importar(d);
       else enviar();   // primeira vez: leva para a nuvem o que já havia neste navegador
       APP.rerender();
+      atualizaRanking(true).then(function () { APP.rerender(); });   // garante o registro do aluno no ranking já no login
     }).catch(function (e) { if (e && e.message === "desativado") return; estado("☁!", "Não foi possível carregar seus dados da nuvem"); });
   }
 
