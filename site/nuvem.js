@@ -479,10 +479,41 @@
         .catch(function () { alert("Não foi possível apagar."); });
     });
     acs.appendChild(bx);
+    var be = el("button", "ghost mini", "Editar cadastro"); be.type = "button";
+    acs.appendChild(be);
     var bp = el("button", "ghost mini", "Imprimir / PDF"); bp.type = "button";
     bp.addEventListener("click", function () { window.print(); });
     acs.appendChild(bp);
     c.appendChild(acs);
+
+    // edição dos dados de cadastro (para corrigir erros de digitação)
+    var fe = el("div", "cfg-form"); fe.hidden = true; fe.style.marginTop = "12px";
+    function campoE(rot, val, tipo) {
+      fe.appendChild(el("label", "l", rot));
+      var i = el("input"); i.type = tipo || "text"; i.value = val || ""; fe.appendChild(i); return i;
+    }
+    var eN = campoE("Nome", l.p.nome); eN.maxLength = 60;
+    var eT = campoE("Telefone (com DDD)", telFmt(l.p.telefone), "tel"); eT.maxLength = 20;
+    var eE = campoE("E-mail de contato", l.p.email, "email");
+    fe.appendChild(el("p", "muted", "Atenção: isto corrige o cadastro mostrado na lista e nos relatórios. O e-mail que a pessoa usa para entrar no site (login) não muda por aqui, e continua o do cadastro original."));
+    var sE = el("button", "btn mini", "Salvar alterações"); sE.type = "button";
+    var mE = el("p", "muted"); mE.setAttribute("aria-live", "polite");
+    sE.addEventListener("click", function () {
+      var nm = eN.value.trim(), em = eE.value.trim(), tl = soDigitos(eT.value);
+      if (!nm) { mE.textContent = "Informe o nome."; return; }
+      if (eT.value.trim() && !telValido(eT.value)) { mE.textContent = "Telefone inválido: use DDD e número, por exemplo (11) 91234-5678."; return; }
+      if (!EMAIL_OK.test(em)) { mE.textContent = "E-mail inválido."; return; }
+      sE.disabled = true; mE.textContent = "Salvando…";
+      db.doc("users/" + l.p.id).update({ nome: nm, telefone: tl, email: em }).then(function () {
+        l.p.nome = nm; l.p.telefone = tl; l.p.email = em;
+        mE.textContent = "✔ Cadastro atualizado.";
+        if (redesenha) redesenha();
+        detalhe(cx, l, redesenha);
+      }).catch(function () { mE.textContent = "Não foi possível salvar. Confira se as regras do Firestore foram publicadas."; sE.disabled = false; });
+    });
+    fe.appendChild(sE); fe.appendChild(mE);
+    be.addEventListener("click", function () { fe.hidden = !fe.hidden; if (!fe.hidden) eN.focus(); });
+    c.appendChild(fe);
     var corpo = el("div"); c.appendChild(corpo);
     cx.appendChild(c);
     c.scrollIntoView({ behavior: "smooth", block: "nearest" });

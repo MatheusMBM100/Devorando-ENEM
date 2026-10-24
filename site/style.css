@@ -202,7 +202,7 @@ select, input[type="search"] { width: 100%; padding: 8px 10px; border: 1px solid
 .cfg-linha small { display: block; color: var(--muted); font-size: .85rem; }
 .cfg-linha input[type="number"] { width: 90px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--ink); }
 .cfg-form label.l { display: block; font-weight: 600; margin: 12px 0 4px; }
-.cfg-form input[type="text"], .cfg-form input[type="tel"], .cfg-form input[type="password"] { width: 100%; max-width: 380px; padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--ink); }
+.cfg-form input[type="text"], .cfg-form input[type="tel"], .cfg-form input[type="password"], .cfg-form input[type="email"] { width: 100%; max-width: 380px; padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--ink); }
 .cfg-form input[readonly] { opacity: .7; }
 .toast { position: fixed; right: 16px; bottom: 16px; max-width: 320px; background: var(--brand); color: var(--brand-ink); padding: 12px 16px; border-radius: 10px; font-weight: 600; cursor: pointer; z-index: 50; box-shadow: 0 4px 16px rgba(0,0,0,.25); }
 .meta-topo { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
