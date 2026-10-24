@@ -66,7 +66,7 @@ service cloud.firestore {
               && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.get('verRanking', false) == true));
         allow create, update: if logado() && request.auth.uid == uid && ativa()
           && request.auth.uid in get(/databases/$(database)/documents/turmas/$(turma)).data.alunos
-          && request.resource.data.keys().hasOnly(['apelido', 'semana', 'semIni', 'respondidas', 'acertos', 'atualizado'])
+          && request.resource.data.keys().hasOnly(['apelido', 'semana', 'semIni', 'respondidas', 'acertos', 'd', 'atualizado'])
           && request.resource.data.apelido is string && request.resource.data.apelido.size() <= 20;
         allow delete: if ehAdmin();
       }

@@ -68,6 +68,16 @@
     return n;
   }
   function inicioSemana() { var d = new Date(); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return diaStr(d); }
+  // questões respondidas e acertos por dia (cada questão conta uma vez, na data da última resposta); base do ranking por período
+  function diasResp() {
+    var o = {};
+    Object.keys(respostas).forEach(function (id) {
+      var r = respostas[id]; if (!r || !r.t) return;
+      var k = diaStr(r.t), x = o[k] || (o[k] = [0, 0]);
+      x[0]++; if (r.ok) x[1]++;
+    });
+    return o;
+  }
   function sequencia() {
     var n = 0, d = new Date();
     if (!prefs.atv[diaStr(d)]) d.setDate(d.getDate() - 1);   // a sequência só quebra quando o dia acaba
@@ -1207,22 +1217,12 @@
       window.NUVEM.ranking().then(function (grupos) {
         if (!grupos.length) return;
         cr2.hidden = false;
-        cr2.appendChild(el("h3", null, "Ranking da semana"));
+        cr2.appendChild(el("h3", null, "Ranking da turma"));
         grupos.forEach(function (g) {
           cr2.appendChild(el("b", null, g.turmaNome));
-          var mi = -1; g.itens.forEach(function (x, i) { if (x.eu) mi = i; });
-          var mostrar = g.itens.slice(0, 10);
-          if (mi >= 10) mostrar.push(g.itens[mi]);
-          mostrar.forEach(function (x) {
-            var pos = g.itens.indexOf(x) + 1;
-            var row = el("div", "hist-row novo"); if (x.eu) row.style.fontWeight = "700";
-            row.appendChild(el("span", null, (pos === 1 ? "🥇" : pos === 2 ? "🥈" : pos === 3 ? "🥉" : pos + "º") + "  " + x.apelido + (x.eu ? " (você)" : "")));
-            row.appendChild(el("span", "muted", x.semana + " questões · " + (x.acerto == null ? "–" : x.acerto + "%")));
-            row.appendChild(el("span"));
-            cr2.appendChild(row);
-          });
+          var corpo = el("div"); cr2.appendChild(corpo);
+          window.NUVEM.montaRanking(corpo, g.itens, { limite: 10 });
         });
-        cr2.appendChild(el("p", "muted", "Ordenado pelas questões respondidas na semana (segunda a domingo). O acerto é o geral de cada pessoa."));
       }).catch(function () {});
     }
 
@@ -1377,7 +1377,7 @@
         n++; var o = pm[matDe(q)] = pm[matDe(q)] || { n: 0, ok: 0 };
         o.n++; if (respostas[id].ok) { ok++; o.ok++; }
       });
-      return { respondidas: n, acertos: ok, simulados: hist.length, ultimo_pct: hist.length ? pct(hist[0]).p : null, por_materia: pm, semana: feitasSemana(), semIni: inicioSemana() };
+      return { respondidas: n, acertos: ok, simulados: hist.length, ultimo_pct: hist.length ? pct(hist[0]).p : null, por_materia: pm, semana: feitasSemana(), semIni: inicioSemana(), dias: diasResp() };
     }
   };
 

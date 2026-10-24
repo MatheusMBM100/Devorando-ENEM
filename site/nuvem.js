@@ -216,7 +216,7 @@
     return turmasDoAluno().then(function (ts) {
       return Promise.all(ts.map(function (t) {
         return db.doc("turmas/" + t.id + "/ranking/" + usuario.uid)
-          .set({ apelido: apelido, semana: s.semana, semIni: s.semIni, respondidas: s.respondidas, acertos: s.acertos, atualizado: new Date().toISOString() });
+          .set({ apelido: apelido, semana: s.semana, semIni: s.semIni, respondidas: s.respondidas, acertos: s.acertos, d: s.dias, atualizado: new Date().toISOString() });
       }));
     }).catch(function () {});
   }
@@ -229,15 +229,96 @@
           var it = [];
           qs.forEach(function (d) {
             var x = d.data() || {};
-            it.push({ uid: d.id, eu: d.id === usuario.uid, apelido: x.apelido || "Aluno", semana: x.semIni === semIni ? (x.semana || 0) : 0,
-              acerto: x.respondidas ? Math.round(100 * x.acertos / x.respondidas) : null });
+            it.push({ uid: d.id, eu: d.id === usuario.uid, nome: x.apelido || "Aluno", dias: x.d || null, respondidas: x.respondidas || 0, acertos: x.acertos || 0 });
           });
-          it.sort(function (a, b) { return b.semana - a.semana || (b.acerto || 0) - (a.acerto || 0) || a.apelido.localeCompare(b.apelido); });
           return { turmaNome: t.nome, itens: it };
         }).catch(function () { return { turmaNome: t.nome, itens: [] }; });
       })).then(function (gs) { return gs.filter(function (g) { return g.itens.length; }); });
     });
   }
+  // ---------- componente de ranking: critério (acertos, % ou questões) e período ----------
+  var rkUI = { crit: "acertos", per: "semana", de: "", ate: "", minimo: 10 };
+  function parseDia(k) { var p = String(k).split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function intervalo() {
+    var h = new Date(); h.setHours(0, 0, 0, 0);
+    var ini = null, fim = new Date(h.getFullYear(), h.getMonth(), h.getDate(), 23, 59, 59);
+    if (rkUI.per === "semana") { ini = new Date(h); ini.setDate(ini.getDate() - ((ini.getDay() + 6) % 7)); }
+    else if (rkUI.per === "7") { ini = new Date(h); ini.setDate(ini.getDate() - 6); }
+    else if (rkUI.per === "30") { ini = new Date(h); ini.setDate(ini.getDate() - 29); }
+    else if (rkUI.per === "mes") { ini = new Date(h.getFullYear(), h.getMonth(), 1); }
+    else if (rkUI.per === "datas") {
+      ini = rkUI.de ? new Date(rkUI.de + "T00:00:00") : null;
+      fim = rkUI.ate ? new Date(rkUI.ate + "T23:59:59") : fim;
+    }
+    return [ini, fim];
+  }
+  function somaPeriodo(it, iv) {
+    var ini = iv[0], fim = iv[1];
+    if (!it.dias) return ini ? { n: 0, ok: 0 } : { n: it.respondidas || 0, ok: it.acertos || 0 };   // sem detalhe por dia: só o total geral
+    var n = 0, ok = 0;
+    Object.keys(it.dias).forEach(function (k) {
+      var dt = parseDia(k);
+      if ((ini && dt < ini) || dt > fim) return;
+      n += it.dias[k][0]; ok += it.dias[k][1];
+    });
+    return { n: n, ok: ok };
+  }
+  // itens: [{ uid, nome, eu, dias, respondidas, acertos }]; opts: { limite, extra(item, linha) }
+  function montaRanking(cx, itens, opts) {
+    opts = opts || {};
+    cx.textContent = "";
+    var barra = el("div", "filtro-linha");
+    function sel(valores, atual, fn) {
+      var s = el("select");
+      valores.forEach(function (v) { var o = el("option", null, v[1]); o.value = v[0]; s.appendChild(o); });
+      s.value = atual; s.addEventListener("change", function () { fn(s.value); montaRanking(cx, itens, opts); });
+      return s;
+    }
+    barra.appendChild(sel([["acertos", "Ordenar por: nº de acertos"], ["pct", "Ordenar por: % de acertos"], ["n", "Ordenar por: questões respondidas"]], rkUI.crit, function (v) { rkUI.crit = v; }));
+    barra.appendChild(sel([["semana", "Período: esta semana"], ["7", "Últimos 7 dias"], ["30", "Últimos 30 dias"], ["mes", "Este mês"], ["tudo", "Todo o histórico"], ["datas", "Escolher datas…"]], rkUI.per, function (v) { rkUI.per = v; }));
+    cx.appendChild(barra);
+    if (rkUI.per === "datas") {
+      var bd = el("div", "filtro-linha");
+      var de = el("input"); de.type = "date"; de.value = rkUI.de; de.title = "De";
+      var ate = el("input"); ate.type = "date"; ate.value = rkUI.ate; ate.title = "Até";
+      de.addEventListener("change", function () { rkUI.de = de.value; montaRanking(cx, itens, opts); });
+      ate.addEventListener("change", function () { rkUI.ate = ate.value; montaRanking(cx, itens, opts); });
+      bd.appendChild(el("span", "muted", "De")); bd.appendChild(de); bd.appendChild(el("span", "muted", "até")); bd.appendChild(ate);
+      cx.appendChild(bd);
+    }
+    var iv = intervalo();
+    var linhas = itens.map(function (it) {
+      var s = somaPeriodo(it, iv);
+      return { it: it, n: s.n, ok: s.ok, pct: s.n ? Math.round(1000 * s.ok / s.n) / 10 : null };
+    });
+    var poucas = function (l) { return rkUI.crit === "pct" && l.n < rkUI.minimo; };
+    linhas.sort(function (a, b) {
+      if (rkUI.crit === "pct" && poucas(a) !== poucas(b)) return poucas(a) ? 1 : -1;
+      var ka = rkUI.crit === "pct" ? (a.pct == null ? -1 : a.pct) : rkUI.crit === "n" ? a.n : a.ok;
+      var kb = rkUI.crit === "pct" ? (b.pct == null ? -1 : b.pct) : rkUI.crit === "n" ? b.n : b.ok;
+      return kb - ka || b.ok - a.ok || b.n - a.n || String(a.it.nome).localeCompare(String(b.it.nome));
+    });
+    var mostrar = linhas;
+    if (opts.limite && linhas.length > opts.limite) {
+      mostrar = linhas.slice(0, opts.limite);
+      linhas.forEach(function (l, i) { if (l.it.eu && i >= opts.limite) mostrar.push(l); });
+    }
+    if (!linhas.length) cx.appendChild(el("p", "muted", "Sem alunos para mostrar."));
+    mostrar.forEach(function (l) {
+      var pos = linhas.indexOf(l) + 1;
+      var row = el("div", "hist-row novo"); if (l.it.eu) row.style.fontWeight = "700";
+      row.appendChild(el("span", null, (pos === 1 && l.n ? "🥇" : pos === 2 && l.n ? "🥈" : pos === 3 && l.n ? "🥉" : pos + "º") + "  " + l.it.nome + (l.it.eu ? " (você)" : "")));
+      var princ = rkUI.crit === "pct" ? (l.pct == null ? "–" : l.pct + "%") : rkUI.crit === "n" ? l.n + " questões" : l.ok + " acertos";
+      var det = rkUI.crit === "pct" ? l.ok + " acertos em " + l.n + " questões" : rkUI.crit === "n" ? l.ok + " acertos · " + (l.pct == null ? "–" : l.pct + "%") : l.n + " questões · " + (l.pct == null ? "–" : l.pct + "%");
+      var info = el("span", "muted"); info.appendChild(document.createTextNode(princ + " · " + det + (poucas(l) ? " · poucas questões" : "")));
+      row.appendChild(info);
+      if (opts.extra) opts.extra(l.it, row); else row.appendChild(el("span"));
+      cx.appendChild(row);
+    });
+    var nota = "Cada questão conta uma vez, na data da última vez em que foi respondida." + (rkUI.crit === "pct" ? " No ranking por %, quem respondeu menos de " + rkUI.minimo + " questões no período fica no fim." : "");
+    cx.appendChild(el("p", "muted", nota));
+  }
+
   window.__sync = function () {
     if (!usuario) return;
     clearTimeout(timer);
@@ -701,7 +782,7 @@
     var ac2 = el("div", "acoes"); ac2.appendChild(bs); cx.appendChild(ac2); cx.appendChild(ss);
   }
 
-  window.NUVEM = { ranking: ranking, atualizaRanking: atualizaRanking, avisaEmail: avisaEmail, atualizaAvisosAdmin: atualizaAvisosAdmin, rotula: rotula, renderConta: renderConta, renderAlunos: renderAlunos, db: db, auth: auth, el: el, baixar: baixar, user: function () { return usuario; }, perfil: function () { return perfil; },
+  window.NUVEM = { montaRanking: montaRanking, ranking: ranking, atualizaRanking: atualizaRanking, avisaEmail: avisaEmail, atualizaAvisosAdmin: atualizaAvisosAdmin, rotula: rotula, renderConta: renderConta, renderAlunos: renderAlunos, db: db, auth: auth, el: el, baixar: baixar, user: function () { return usuario; }, perfil: function () { return perfil; },
     logado: function () { return !!usuario; }, ehAdmin: function () { return !!(perfil && perfil.is_admin); },
     enviarReporte: enviarReporte, simuladosTurma: simuladosTurma, publicarTurma: publicarTurma, enviarResultado: enviarResultado,
     turmasAdmin: function () { return perfil && perfil.is_admin ? turmasCache : []; }, recarregaTurmas: recarregaTurmas };

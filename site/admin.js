@@ -106,30 +106,27 @@
 
       // ranking da turma: o administrador sempre vê; escolhe, aluno por aluno, quem também pode ver
       var cRk = el("div", "card");
-      cRk.appendChild(el("h4", "sub", "Ranking da semana"));
+      cRk.appendChild(el("h4", "sub", "Ranking da turma"));
       cRk.appendChild(el("p", "muted", "Só você vê esta lista. Os alunos não sabem que ela existe, a menos que você libere para algum deles."));
-      var semIni = (function () { var x = new Date(); x.setDate(x.getDate() - ((x.getDay() + 6) % 7)); return x.getFullYear() + "-" + (x.getMonth() + 1) + "-" + x.getDate(); })();
       var rk = {}; rs[5].forEach(function (x) { rk[x.id] = x.data() || {}; });
-      var itens = alunos.map(function (uid) {
+      var itensRk = alunos.map(function (uid) {
         var x = rk[uid] || {}, s = stats[uid] || {};
-        return { uid: uid, semana: x.semIni === semIni ? (x.semana || 0) : 0, acerto: s.respondidas ? Math.round(100 * s.acertos / s.respondidas) : null };
-      }).sort(function (a, b) { return b.semana - a.semana || (b.acerto || 0) - (a.acerto || 0); });
-      if (!itens.length) cRk.appendChild(el("p", "muted", "Esta turma ainda não tem alunos."));
-      itens.forEach(function (it, k) {
-        var linha = el("div", "hist-row novo");
-        linha.appendChild(el("span", null, (k + 1) + "º  " + nomeDe(it.uid)));
-        linha.appendChild(el("span", "muted", it.semana + " questões · " + (it.acerto == null ? "–" : it.acerto + "%")));
-        var u = users[it.uid] || {};
-        var bv = el("button", u.verRanking ? "btn mini" : "ghost mini", u.verRanking ? "Aluno vê: sim" : "Aluno vê: não"); bv.type = "button";
-        bv.addEventListener("click", function () {
-          var novo = !u.verRanking; bv.disabled = true;
-          db.doc("users/" + it.uid).update({ verRanking: novo }).then(function () { u.verRanking = novo; users[it.uid] = u; bv.disabled = false; bv.textContent = novo ? "Aluno vê: sim" : "Aluno vê: não"; bv.className = novo ? "btn mini" : "ghost mini"; })
-            .catch(function () { bv.disabled = false; alert("Não foi possível alterar. Confira se as regras do Firestore foram publicadas."); });
-        });
-        linha.appendChild(bv);
-        cRk.appendChild(linha);
+        return { uid: uid, nome: nomeDe(uid), dias: x.d || null, respondidas: x.respondidas != null ? x.respondidas : (s.respondidas || 0), acertos: x.acertos != null ? x.acertos : (s.acertos || 0) };
       });
-      cRk.appendChild(el("p", "muted", "Ordenado pelas questões respondidas na semana (segunda a domingo). Quando você libera, o aluno passa a ver o ranking de sua turma na tela inicial, no próximo acesso."));
+      if (!itensRk.length) cRk.appendChild(el("p", "muted", "Esta turma ainda não tem alunos."));
+      else {
+        var corpoRk = el("div"); cRk.appendChild(corpoRk);
+        N.montaRanking(corpoRk, itensRk, { extra: function (it, linha) {
+          var u = users[it.uid] || {};
+          var bv = el("button", u.verRanking ? "btn mini" : "ghost mini", u.verRanking ? "Aluno vê: sim" : "Aluno vê: não"); bv.type = "button";
+          bv.addEventListener("click", function () {
+            var novo = !u.verRanking; bv.disabled = true;
+            db.doc("users/" + it.uid).update({ verRanking: novo }).then(function () { u.verRanking = novo; users[it.uid] = u; bv.disabled = false; bv.textContent = novo ? "Aluno vê: sim" : "Aluno vê: não"; bv.className = novo ? "btn mini" : "ghost mini"; })
+              .catch(function () { bv.disabled = false; alert("Não foi possível alterar. Confira se as regras do Firestore foram publicadas."); });
+          });
+          linha.appendChild(bv);
+        } });
+      }
       cx.appendChild(cRk);
 
       cx.appendChild(visaoTurma(alunos, stats, res, nomeDe));
