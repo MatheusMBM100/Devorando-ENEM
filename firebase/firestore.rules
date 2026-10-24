@@ -58,15 +58,14 @@ service cloud.firestore {
         allow write: if ehAdmin();
       }
 
-      // Ranking: só existe nas turmas em que o administrador ligou (campo ranking = true no documento da turma).
-      // O aluno da turma grava o próprio registro e lê o ranking; nas turmas sem ranking, nenhum aluno lê nem grava.
+      // Ranking: todo aluno da turma grava o próprio registro (só o administrador lê sempre).
+      // O aluno só lê o ranking se o administrador marcar verRanking = true no perfil dele (users/{uid}).
       match /ranking/{uid} {
         allow read: if logado() && (ehAdmin()
           || (request.auth.uid in get(/databases/$(database)/documents/turmas/$(turma)).data.alunos
-              && get(/databases/$(database)/documents/turmas/$(turma)).data.get('ranking', false) == true));
+              && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.get('verRanking', false) == true));
         allow create, update: if logado() && request.auth.uid == uid && ativa()
           && request.auth.uid in get(/databases/$(database)/documents/turmas/$(turma)).data.alunos
-          && get(/databases/$(database)/documents/turmas/$(turma)).data.get('ranking', false) == true
           && request.resource.data.keys().hasOnly(['apelido', 'semana', 'semIni', 'respondidas', 'acertos', 'atualizado'])
           && request.resource.data.apelido is string && request.resource.data.apelido.size() <= 20;
         allow delete: if ehAdmin();

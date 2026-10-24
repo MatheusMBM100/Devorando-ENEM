@@ -202,29 +202,29 @@
     if (!usuario) return Promise.resolve([]);
     if (turmasAlunoCache && Date.now() - turmasAlunoCache.t < 300000) return turmasAlunoCache.p;
     var p = db.collection("turmas").where("alunos", "array-contains", usuario.uid).get().then(function (qs) {
-      var o = []; qs.forEach(function (d) { o.push({ id: d.id, nome: (d.data() || {}).nome || d.id, ranking: !!(d.data() || {}).ranking }); }); return o;
+      var o = []; qs.forEach(function (d) { o.push({ id: d.id, nome: (d.data() || {}).nome || d.id }); }); return o;
     }).catch(function () { turmasAlunoCache = null; return []; });
     turmasAlunoCache = { t: Date.now(), p: p };
     return p;
   }
-  // O ranking só existe nas turmas em que o administrador o ligou; o aluno não escolhe nem é consultado.
+  // Todo aluno de turma grava seus números (só o administrador os vê sempre); o aluno só enxerga o ranking se o administrador liberar para ele.
   function atualizaRanking() {
     if (!usuario || !perfil || Date.now() - rankingTs < 90000) return Promise.resolve();
     rankingTs = Date.now();
     var s = APP.stats();
     var apelido = (String(perfil.nome || "").trim().split(/\s+/)[0] || "Aluno").slice(0, 20);
     return turmasDoAluno().then(function (ts) {
-      return Promise.all(ts.filter(function (t) { return t.ranking; }).map(function (t) {
+      return Promise.all(ts.map(function (t) {
         return db.doc("turmas/" + t.id + "/ranking/" + usuario.uid)
           .set({ apelido: apelido, semana: s.semana, semIni: s.semIni, respondidas: s.respondidas, acertos: s.acertos, atualizado: new Date().toISOString() });
       }));
     }).catch(function () {});
   }
   function ranking() {
-    if (!usuario) return Promise.resolve([]);
+    if (!usuario || !perfil || !perfil.verRanking) return Promise.resolve([]);
     var semIni = APP.stats().semIni;
     return turmasDoAluno().then(function (ts) {
-      return Promise.all(ts.filter(function (t) { return t.ranking; }).map(function (t) {
+      return Promise.all(ts.map(function (t) {
         return db.collection("turmas/" + t.id + "/ranking").get().then(function (qs) {
           var it = [];
           qs.forEach(function (d) {
@@ -262,7 +262,7 @@
         auth.signOut().then(function () { APP.limpar(); mostrarLogin("entrar"); msg(overlay.querySelector(".auth-card"), "Esta conta está desativada. Fale com o administrador.", "erro"); });
         throw new Error("desativado");
       }
-      perfil = { email: p.email || user.email, nome: p.nome || user.displayName || "", telefone: p.telefone || "", createdAt: p.createdAt || "", is_admin: !!rs[1].exists };
+      perfil = { verRanking: !!p.verRanking, email: p.email || user.email, nome: p.nome || user.displayName || "", telefone: p.telefone || "", createdAt: p.createdAt || "", is_admin: !!rs[1].exists };
       areaUsuario();
       if (perfil.is_admin) { recarregaTurmas(); vigiaAdmin(); }
       return db.doc("userData/" + user.uid).get();
