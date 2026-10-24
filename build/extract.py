@@ -468,4 +468,4 @@ def main(years):
 
 
 if __name__ == "__main__":
-    main([int(y) for y in sys.argv[1:]] or [2025, 2024, 2023, 2022, 2021, 2020])
+    main([int(y) for y in sys.argv[1:]] or [2025, 2024, 2023, 2022, 2021, 2020, 2019])
